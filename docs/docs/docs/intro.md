@@ -4,46 +4,79 @@ title: Introdução
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Apresentação
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## O Projeto
+Espaço para inserir o vídeo de apresentação do projeto ao final do módulo.
 
-## Getting Started
+## Empresa parceira
 
-Get started by **creating a new site**.
+### Descrição da empresa
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## O Problema
 
-### What you'll need
+## Objetivo
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## A Solução
 
-## Generate a new site
+## Apresentações da Sprint Review
 
-Generate a new Docusaurus site using the **classic template**.
+- Sprint 1: Em breve
+- Sprint 2: Em breve
+- Sprint 3: Em breve
+- Sprint 4: Em breve
+- Sprint 5: Em breve
 
-The classic template will automatically be added to your project after you run the command:
+## Integrantes da equipe
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+<div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+  <div style={{ margin: 10, textAlign: 'center' }}>
+    <a href="https://www.linkedin.com/in/davi-abreu-da-silveira/">
+      <img src={require("../static/img/Davi.png").default} style={{ borderRadius: '10%', width: 120 }} alt="Davi Abreu" />
+      <br />
+      <sub><b>Davi Abreu</b></sub>
+    </a>
+  </div>
+  <div style={{ margin: 10, textAlign: 'center' }}>
+    <a href="https://www.linkedin.com/in/iisabelledantas/">
+      <img src={require("../static/img/Isa.png").default} style={{ borderRadius: '10%', width: 120 }} alt="Isabelle Dantas" />
+      <br />
+      <sub><b>Isabelle Dantas</b></sub>
+    </a>
+  </div>
+  <div style={{ margin: 10, textAlign: 'center' }}>
+    <a href="https://www.linkedin.com/in/julia-lika-ishikawa">
+      <img src={require("../static/img/Lika.png").default} style={{ borderRadius: '10%', width: 120 }} alt="Júlia Lika" />
+      <br />
+      <sub><b>Júlia Lika</b></sub>
+    </a>
+  </div>
+  <div style={{ margin: 10, textAlign: 'center' }}>
+    <a href="https://www.linkedin.com/in/lucas-nepomuceno-ismart/">
+      <img src={require("../static/img/Lucas.png").default} style={{ borderRadius: '10%', width: 120 }} alt="Lucas Nepomuceno" />
+      <br />
+      <sub><b>Lucas Nepomuceno</b></sub>
+    </a>
+  </div>
+  <div style={{ margin: 10, textAlign: 'center' }}>
+    <a href="https://www.linkedin.com/in/luizapetenazzi">
+      <img src={require("../static/img/Luiza.png").default} style={{ borderRadius: '10%', width: 120 }} alt="Luiza Petenazzi" />
+      <br />
+      <sub><b>Luiza Petenazzi</b></sub>
+    </a>
+  </div>
+  <div style={{ margin: 10, textAlign: 'center' }}>
+    <a href="https://www.linkedin.com/in/marcelo-c-3257702bb/">
+      <img src={require("../static/img/Marcelo.png").default} style={{ borderRadius: '10%', width: 120 }} alt="Marcelo Conde" />
+      <br />
+      <sub><b>Marcelo Conde</b></sub>
+    </a>
+  </div>
+  <div style={{ margin: 10, textAlign: 'center' }}>
+    <a href="https://www.linkedin.com/in/pabloazevedo/">
+      <img src={require("../static/img/Pablo.png").default} style={{ borderRadius: '10%', width: 120 }} alt="Pablo Azevedo" />
+      <br />
+      <sub><b>Pablo Azevedo</b></sub>
+    </a>
+  </div>
+</div>

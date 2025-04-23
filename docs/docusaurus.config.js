@@ -3,8 +3,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'SOD',
+  tagline: 'SOD',
   favicon: 'img/favicon.ico',
 
   url: 'https://your-docusaurus-site.example.com',
@@ -47,17 +47,18 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'SOD',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'logo SOD',
+          src: 'img/logo.png',
+          srcDark: 'img/logo_dark_mode.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentação',
             // Não adicione "to" aqui, pois isso pode causar comportamento inesperado
           },
           {

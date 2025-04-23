@@ -15,6 +15,9 @@ Instituto de Pesquisas Tecnológicas do Estado de São Paulo - IPT
 ### Descrição da empresa
 O Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT) é uma instituição de pesquisa vinculada à Secretaria de Desenvolvimento Econômico do Estado de São Paulo, com o objetivo de promover inovação tecnológica, desenvolvimento e transferência de conhecimento para a indústria, o governo e a sociedade. Com 125 anos de existência, o IPT atua em diversos setores, incluindo engenharia, materiais, meio ambiente, energia e saúde, focando em soluções tecnológicas e sustentáveis para atender às necessidades do mercado e melhorar a qualidade de vida das pessoas.
 
+## O Problema
+Existe a necessidade de criar uma solução inovadora para auxiliar na detecção automática e monitoramento de fissuras em edificações, principalmente em revestimentos de argamassa, que frequentemente causam risco à integridade estrutural das construções e aumentam os custos com manutenção corretiva. A falta de ferramentas eficazes e automatizadas para avaliar a gravidade e a evolução dessas fissuras pode resultar em danos imprevistos, comprometendo a segurança dos usuários e gerando perdas financeiras significativas devido à manutenção inadequada ou tardia.
+
 
 
 ## Apresentações da Sprint Review

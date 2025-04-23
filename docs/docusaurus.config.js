@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SOD',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'SOD',
   favicon: 'img/favicon.ico',
 
   url: 'https://your-docusaurus-site.example.com',

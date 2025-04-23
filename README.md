@@ -75,3 +75,20 @@
 - [Rodrigo Nicola](https://www.linkedin.com/in/rodrigo-mangoni-nicola-537027158/)
 - [Filipe Gonçalves](https://www.linkedin.com/in/filipe-gon%C3%A7alves-08a55015b/)
 
+## 📜 Descrição
+
+O SOD (Sistema Óptico de Detecção) é uma solução desenvolvida para auxiliar na detecção automática e monitoramento de fissuras em edificações. Utilizando técnicas de processamento de imagens e inteligência artificial, o sistema identifica, analisa e monitora fissuras por meio de imagens capturadas por drones ou câmeras de alta resolução. 
+
+## 📁 Estrutura de Pastas
+
+A ser definida conforme o desenvolvimento do projeto.
+
+## 💻 Execução do Projeto
+
+A ser definida conforme o desenvolvimento do projeto.
+
+## 🗃 Histórico de lançamentos
+
+* 0.1.0 - 
+    - Início do projeto
+

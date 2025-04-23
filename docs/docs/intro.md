@@ -10,14 +10,12 @@ sidebar_position: 1
 Espaço para inserir o vídeo de apresentação do projeto ao final do módulo.
 
 ## Empresa parceira
+Instituto de Pesquisas Tecnológicas do Estado de São Paulo - IPT
 
 ### Descrição da empresa
+O Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT) é uma instituição de pesquisa vinculada à Secretaria de Desenvolvimento Econômico do Estado de São Paulo, com o objetivo de promover inovação tecnológica, desenvolvimento e transferência de conhecimento para a indústria, o governo e a sociedade. Com 125 anos de existência, o IPT atua em diversos setores, incluindo engenharia, materiais, meio ambiente, energia e saúde, focando em soluções tecnológicas e sustentáveis para atender às necessidades do mercado e melhorar a qualidade de vida das pessoas.
 
-## O Problema
 
-## Objetivo
-
-## A Solução
 
 ## Apresentações da Sprint Review
 

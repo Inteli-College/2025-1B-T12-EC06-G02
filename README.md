@@ -8,8 +8,8 @@
 
 ## 👥 Grupo - SOD
 <p align="center">
-  <img src="img/logo_dark_mode.png#gh-dark-mode-only" alt="Logo SOD Dark" width="300">
-  <img src="img/logo.png#gh-light-mode-only" alt="Logo SOD" width="300">
+  <img src="docs/static/img/logo_dark_mode.png#gh-dark-mode-only" alt="Logo SOD Dark" width="300">
+  <img src="docs/static/img/logo.png#gh-light-mode-only" alt="Logo SOD" width="300">
 </p>
 
 ## 👨‍🎓 Integrantes: 

@@ -7,11 +7,14 @@ const config = {
   tagline: 'SOD',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  // Set the production url of your site here
+  url: 'https://Inteli-College.github.io',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/2025-1B-T12-EC06-G02/',
 
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'Inteli-College', // Usually your GitHub org/user name.
+  projectName: '2025-1B-T12-EC06-G02', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -62,7 +65,7 @@ const config = {
             // Não adicione "to" aqui, pois isso pode causar comportamento inesperado
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Inteli-College/2025-1A-T12-EC05-G02',
             label: 'GitHub',
             position: 'right',
           },

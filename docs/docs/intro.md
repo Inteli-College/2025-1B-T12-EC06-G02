@@ -18,7 +18,11 @@ O Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT) é uma inst
 ## O Problema
 Existe a necessidade de criar uma solução inovadora para auxiliar na detecção automática e monitoramento de fissuras em edificações, principalmente em revestimentos de argamassa, que frequentemente causam risco à integridade estrutural das construções e aumentam os custos com manutenção corretiva. A falta de ferramentas eficazes e automatizadas para avaliar a gravidade e a evolução dessas fissuras pode resultar em danos imprevistos, comprometendo a segurança dos usuários e gerando perdas financeiras significativas devido à manutenção inadequada ou tardia.
 
+## Objetivo
+Desenvolver um algoritmo especializado na identificação, análise e monitoramento de fissuras em revestimentos de argamassa. Por meio do uso de imagens capturadas por drones ou câmeras de alta resolução, aliado a técnicas avançadas de processamento de imagens e inteligência artificial, o algoritmo proporcionará uma solução automatizada e precisa para diagnosticar fissuras em edifícios, prever a sua evolução ao longo do tempo e permitir a tomada de decisões de manutenção preventiva mais eficazes.
 
+## A Solução
+Um software para a detecção e monitoramento de fissuras em edificações que utiliza técnicas avançadas de processamento de imagens e inteligência artificial para identificar fissuras, classificar sua gravidade e prever sua evolução ao longo do tempo, permitindo manutenções preventivas e aumentando a segurança das edificações.
 
 ## Apresentações da Sprint Review
 

@@ -62,3 +62,16 @@
   </table>
 </div>
 
+## 👩‍🏫 Professores:
+
+### Orientador(a) 
+- [Rodrigo Mangoni Nicola](https://www.linkedin.com/in/rodrigo-mangoni-nicola-537027158/)
+
+### Instrutores
+- [Lisane Valdo](https://www.linkedin.com/in/lisane-valdo/)
+- [Murilo Zanini de Carvalho](https://www.linkedin.com/in/murilo-zanini-de-carvalho-0980415b/)
+- [Guilherme Cestari](https://www.linkedin.com/in/gui-cestari/)
+- [Geraldo Magela Severino Vasconcelos](https://www.linkedin.com/in/geraldo-magela-severino-vasconcelos-22b1b220/)
+- [Rodrigo Nicola](https://www.linkedin.com/in/rodrigo-mangoni-nicola-537027158/)
+- [Filipe Gonçalves](https://www.linkedin.com/in/filipe-gon%C3%A7alves-08a55015b/)
+

@@ -37,7 +37,7 @@
       <td align="center">
         <a href="https://www.linkedin.com/in/lucas-nepomuceno-ismart/">
           <img src="docs/static/img/Lucas.png" style="border-radius: 10%; width: 150px;" alt="Lucas Nepomuceno"/><br>
-          <sub><b>Lucas Nepomuceno</b></sub>
+          <sub><b>Lucas Santos</b></sub>
         </a>
       </td>
       <td align="center">

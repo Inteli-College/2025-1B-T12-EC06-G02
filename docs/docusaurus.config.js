@@ -51,6 +51,7 @@ const config = {
         logo: {
           alt: 'logo SOD',
           src: 'img/logo.png',
+          srcDark: 'img/logo_dark_mode.png',
         },
         items: [
           {

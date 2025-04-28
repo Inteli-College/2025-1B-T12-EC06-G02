@@ -9,11 +9,11 @@ custom_edit_url: null
 
 &nbsp;&nbsp;&nbsp;&nbsp;A matriz de riscos é uma ferramenta fundamental de gestão que permite visualizar, classificar e priorizar os potenciais riscos e oportunidades associados a um projeto. Esta representação gráfica cruza a probabilidade de ocorrência de cada evento com seu respectivo impacto, permitindo uma avaliação sistemática que serve de base para decisões estratégicas e alocação de recursos. No contexto do desenvolvimento de soluções tecnológicas inovadoras, como o algoritmo de processamento digital de imagens para identificação de fissuras proposto pelo IPT, a matriz de riscos torna-se particularmente valiosa, pois projetos pioneiros carregam consigo tanto grandes desafios quanto oportunidades transformadoras.
 
-<p style={{textAlign: 'center'}}>Figura 1 - Canvas Proposta de Valor</p>
+<p style={{textAlign: 'center'}}>Figura 1 - Matriz de Riscos</p>
 
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("../../../static/img/matrizes-de-riscos.png").default} style={{width: 800}} alt="Canva Proposta de valor" />
+        <img src={require("../../../static/img/matrizes-de-riscos.png").default} style={{width: 800}} alt="Matriz de Riscos" />
         <br />
     </div>
 </div>

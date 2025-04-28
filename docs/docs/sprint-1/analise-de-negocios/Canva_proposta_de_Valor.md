@@ -11,3 +11,31 @@ custom_edit_url: null
 
 O Value Proposition Canvas é uma ferramenta fundamental para alinhar as necessidades dos clientes com a oferta de valor de um produto ou serviço. Desenvolvido por Alexander Osterwalder como complemento ao Business Model Canvas, este framework ajuda a estruturar e visualizar como uma solução resolve problemas específicos dos usuários. No contexto do projeto de desenvolvimento do algoritmo para processamento digital de imagens na identificação de fissuras em revestimentos de argamassa, o Value Proposition Canvas nos permite mapear claramente como a solução tecnológica proposta pelo IPT atenderá às necessidades do mercado da construção civil e manutenção predial.
 
+## Segmento de Clientes
+
+### Perfil do Cliente
+O lado direito do canvas representa o perfil do cliente e é composto por três seções principais que descrevem em detalhes quem são os usuários-alvo da solução:
+
+#### Quem São
+- Empresas de construção civil e manutenção predial
+- Engenheiros civis e técnicos de inspeção
+- Consultorias de fiscalização de obras
+
+#### Dores dos Clientes
+As dores representam os problemas, obstáculos e riscos que os clientes enfrentam atualmente:
+
+- Identificação tardia de fissuras que leva a danos estruturais maiores
+- Custos elevados em manutenções corretivas quando problemas não são detectados precocemente
+- Inspeções manuais imprecisas que dependem da experiência visual dos técnicos
+- Ausência de histórico documentado da evolução das patologias
+- Dificuldade em priorizar intervenções devido à falta de dados quantitativos
+
+#### Ganhos Esperados
+Os ganhos descrevem os benefícios e resultados positivos que os clientes desejam alcançar:
+
+- Detecção automatizada e precisa de patologias estruturais
+- Economia significativa em manutenções através de intervenções preventivas
+- Aumento da segurança estrutural das edificações
+- Melhor alocação de recursos de manutenção
+- Decisões baseadas em dados concretos e análises técnicas
+

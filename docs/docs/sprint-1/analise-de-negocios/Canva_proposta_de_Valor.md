@@ -39,3 +39,35 @@ Os ganhos descrevem os benefícios e resultados positivos que os clientes deseja
 - Melhor alocação de recursos de manutenção
 - Decisões baseadas em dados concretos e análises técnicas
 
+## Proposta de Valor
+
+### Mapa de Valor
+O lado esquerdo do canvas representa a proposta de valor e é composto por três seções que descrevem como o produto atende às necessidades identificadas:
+
+#### Produtos e Serviços
+Os principais elementos da solução que serão oferecidos:
+
+- Software de análise automática para identificação de fissuras
+- Interface de visualização intuitiva para apresentação dos resultados
+- Relatórios automatizados sobre o estado das patologias
+- Sistema de alertas para casos críticos
+- Banco de dados histórico para monitoramento da evolução
+
+#### Criadores de Ganho
+Aspectos da solução que geram os benefícios esperados pelos clientes:
+
+- Algoritmos de IA especializados para detecção precisa
+- Integração simplificada com drones e câmeras de alta resolução
+- Classificação automatizada da gravidade das fissuras
+- Capacidade de previsão da evolução das patologias
+- Geração de relatórios técnicos customizáveis
+
+#### Aliviadores de Dor
+Elementos da solução que resolvem os problemas identificados:
+
+- Redução significativa do tempo necessário para inspeções
+- Detecção precoce de problemas estruturais antes de agravamento
+- Monitoramento contínuo e sistemático das edificações
+- Priorização eficiente de intervenções baseada em dados
+- Minimização dos riscos associados a falhas estruturais
+

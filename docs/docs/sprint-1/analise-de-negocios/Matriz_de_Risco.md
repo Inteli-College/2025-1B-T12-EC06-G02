@@ -31,3 +31,16 @@ Ao analisar esta matriz no contexto do projeto de identificação de fissuras em
 - **Limitações na integração com equipamentos** (Impacto Alto): Desafios de compatibilidade com hardware de captura.
 - **Falta de dados reais para treinamento** (Impacto Baixo): Aparece com baixa probabilidade (10%), possivelmente porque já existem dados disponíveis ou alternativas viáveis.
 
+## Análise das Oportunidades
+
+### Oportunidades de Alta Probabilidade (90%-70%)
+- **Melhorias no pipeline de desenvolvimento** (Impacto Moderado): Ganhos de eficiência no processo de desenvolvimento.
+- **Automação de relatórios técnicos** (Impacto Alto): Benefício significativo que poderá agregar valor substancial ao produto.
+- **Economia em manutenções** (Impacto Moderado): Benefício direto para o cliente, sendo um dos principais argumentos de venda.
+
+### Oportunidades de Média Probabilidade (50%)
+- **Parcerias estratégicas com construtoras** (Impacto Alto): Potencial para expandir a adoção da tecnologia e criar canais de distribuição.
+
+### Oportunidades de Menor Probabilidade (30%-10%)
+- **Diminuição de acidentes estruturais** (Impacto Muito Alto): Benefício social significativo, embora com probabilidade relativamente baixa.
+

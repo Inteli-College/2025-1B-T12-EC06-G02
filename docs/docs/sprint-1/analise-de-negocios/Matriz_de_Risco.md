@@ -44,3 +44,11 @@ Ao analisar esta matriz no contexto do projeto de identificação de fissuras em
 ### Oportunidades de Menor Probabilidade (30%-10%)
 - **Diminuição de acidentes estruturais** (Impacto Muito Alto): Benefício social significativo, embora com probabilidade relativamente baixa.
 
+## Análise de Padrões
+
+1. **Riscos Técnicos Predominantes**: A maioria das ameaças está relacionada a desafios técnicos (precisão do algoritmo, sistema de previsão, classificação de fissuras), indicando que o projeto tem componentes tecnológicos complexos e inovadores.
+
+2. **Oportunidades de Negócio**: As oportunidades estão mais concentradas em benefícios de negócio (economia, parcerias, automação), sugerindo que, se os desafios técnicos forem superados, o potencial de mercado é significativo.
+
+3. **Concentração de Riscos Críticos**: Os riscos de maior gravidade (vermelho) estão principalmente nas células de alta probabilidade e alto impacto, indicando que o projeto tem desafios importantes que precisam ser endereçados prioritariamente.
+

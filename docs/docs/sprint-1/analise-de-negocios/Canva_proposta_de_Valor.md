@@ -71,3 +71,8 @@ Elementos da solução que resolvem os problemas identificados:
 - Priorização eficiente de intervenções baseada em dados
 - Minimização dos riscos associados a falhas estruturais
 
+## Conclusão
+
+O Value Proposition Canvas desenvolvido para o projeto de identificação de fissuras em edificações demonstra um claro alinhamento entre as necessidades do mercado da construção civil e a solução tecnológica proposta. A combinação de processamento digital de imagens com inteligência artificial apresenta potencial para transformar significativamente os processos de inspeção e manutenção predial, oferecendo ganhos tanto em eficiência operacional quanto em segurança estrutural.
+
+A implementação deste projeto pelo IPT, com sua credibilidade e expertise de 125 anos no setor, representa uma oportunidade de introduzir uma inovação disruptiva no mercado brasileiro de manutenção predial. O desenvolvimento iterativo, começando com um MVP focado nas funcionalidades essenciais e evoluindo com base no feedback dos usuários, permitirá validar a proposta de valor na prática e realizar ajustes conforme necessário.

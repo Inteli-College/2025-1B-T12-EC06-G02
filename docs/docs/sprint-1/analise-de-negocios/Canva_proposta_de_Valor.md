@@ -11,6 +11,17 @@ custom_edit_url: null
 
 O Value Proposition Canvas é uma ferramenta fundamental para alinhar as necessidades dos clientes com a oferta de valor de um produto ou serviço. Desenvolvido por Alexander Osterwalder como complemento ao Business Model Canvas, este framework ajuda a estruturar e visualizar como uma solução resolve problemas específicos dos usuários. No contexto do projeto de desenvolvimento do algoritmo para processamento digital de imagens na identificação de fissuras em revestimentos de argamassa, o Value Proposition Canvas nos permite mapear claramente como a solução tecnológica proposta pelo IPT atenderá às necessidades do mercado da construção civil e manutenção predial.
 
+<p style={{textAlign: 'center'}}>Figura 1 - Canvas Proposta de Valor</p>
+
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/canvas-proposta-de-valor.png").default} style={{width: 800}} alt="Canva Proposta de valor" />
+        <br />
+    </div>
+</div>
+
+<p style={{textAlign: 'center'}}>Fonte: Os autores (2025)</p>
+
 ## Segmento de Clientes
 
 ### Perfil do Cliente

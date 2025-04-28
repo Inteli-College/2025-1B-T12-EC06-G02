@@ -52,3 +52,6 @@ Ao analisar esta matriz no contexto do projeto de identificação de fissuras em
 
 3. **Concentração de Riscos Críticos**: Os riscos de maior gravidade (vermelho) estão principalmente nas células de alta probabilidade e alto impacto, indicando que o projeto tem desafios importantes que precisam ser endereçados prioritariamente.
 
+## Conclusão
+
+A matriz de riscos apresenta um projeto com desafios técnicos significativos, mas com potencial de mercado promissor. Os riscos estão bem identificados e distribuídos de forma realista entre probabilidade e impacto. O balanceamento entre ameaças e oportunidades sugere um projeto inovador que, apesar dos desafios técnicos, tem potencial para trazer benefícios significativos para o setor de construção civil.

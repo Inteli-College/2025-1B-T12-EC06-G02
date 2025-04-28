@@ -8,9 +8,9 @@ custom_edit_url: null
 
 ## 1. Introdução
 
-&emsp;Este documento descreve o modelo de negócios para o Instituto de Pesquisas Tecnológicas (IPT), com foco no desenvolvimento de soluções de identificação e monitoramento de fissuras em fachadas de edificações.
+&emsp;Este documento descreve o modelo de negócios para o projeto de desenvolvimento de uma solução automatizada para a identificação, classificação e monitoramento de fissuras em fachadas de edificações. A tecnologia combina processamento digital de imagens (PDI), inteligência artificial (IA) e imagens captadas por drones e câmeras de alta resolução.  
 
-&emsp;O Business Model Canvas a seguir detalha os principais componentes estratégicos para viabilizar o projeto.
+&emsp;O foco é criar um produto de fácil uso, que aumente a segurança estrutural, reduza custos de manutenção corretiva e otimize a gestão predial preventiva.
 
 <div align="center" width="100%">
 
@@ -22,68 +22,107 @@ custom_edit_url: null
 
 </div>
 
-## 2. Business Model Canvas
+## 2. Business Model Canvas Detalhado
 
-### 2.1 Parcerias Chave
-- **Fundação de Apoio ao IPT (FIPT):** Atua como facilitadora para projetos de P&D e captação de recursos.
-- **INTELI - Instituto de Tecnologia e Liderança:** Fornece apoio acadêmico e técnico, além de contribuir com inovação e jovens talentos.
-- **Empresas de tecnologia de drones e câmeras:** São fornecedoras de equipamentos essenciais para a coleta de dados visuais.
-- **Indústria da construção civil:** Potenciais clientes e parceiros estratégicos, interessados em soluções inovadoras de inspeção predial.
+### 2.1 Proposta de Valor
+**Descrição:**  
+A solução proposta entrega benefícios diretos para empresas de construção, manutenção e fiscalização predial:
 
-### 2.2 Atividades Chave
-- **Coleta de imagens:** Realizada por drones e câmeras de alta resolução, cobrindo áreas extensas de fachadas.
-- **Desenvolvimento de algoritmo de processamento de imagens:** Criação de um sistema de IA capaz de detectar e classificar fissuras automaticamente.
-- **Treinamento de modelos de IA:** Uso de banco de imagens para treinar redes neurais especializadas na detecção de anomalias.
-- **Análise e correlação com causas patológicas:** Avaliação técnica para identificar as possíveis causas das fissuras detectadas.
-- **Geração de relatórios automáticos:** Criação de documentos técnicos com resultados das inspeções, prontos para análise dos clientes.
+- **Automatização da inspeção predial:** Reduz o esforço humano e padroniza o processo de diagnóstico de fissuras.
+- **Diagnóstico rápido e preciso:** Facilita a tomada de decisões corretivas e preventivas.
+- **Redução de custos:** Permite identificar problemas antes que evoluam, evitando grandes obras de reparo.
+- **Aumento da segurança:** Minimiza riscos de falhas estruturais que podem afetar a segurança dos usuários.
+- **Interface amigável:** Permite engenheiros civis e técnicos interpretarem rapidamente os dados de inspeção.
+- **Geração de relatórios automáticos:** Relatórios técnicos prontos para uso em manutenção e fiscalização.
 
-### 2.3 Proposta de Valor
-- **Automatização do processo de inspeção:** Agiliza e padroniza a detecção de fissuras, reduzindo erros humanos.
-- **Redução de custos de manutenção:** Antecipação de problemas diminui gastos com reformas corretivas emergenciais.
-- **Aumento da segurança:** Monitoramento constante minimiza riscos estruturais e de acidentes.
-- **Manutenção preventiva otimizada:** Melhor planejamento de intervenções técnicas, prolongando a vida útil dos edifícios.
-- **Fortalecimento da imagem institucional:** Empresas que adotam a tecnologia mostram compromisso com inovação e segurança.
+
+### 2.2 Segmentos de Clientes
+**Descrição:**  
+O público-alvo é composto por empresas e profissionais que necessitam de inspeções regulares ou preventivas:
+
+- **Empresas de manutenção predial:** Monitoramento contínuo do estado das fachadas.
+- **Construtoras:** Controle de qualidade em obras novas e assistências técnicas.
+- **Empresas de inspeção e consultoria técnica:** Laudos técnicos e avaliações periódicas.
+- **Seguradoras:** Avaliação de riscos para imóveis segurados.
+- **Órgãos públicos:** Gestão de manutenção de edifícios públicos e patrimônio histórico.
+
+
+### 2.3 Canais
+**Descrição:**  
+Como o produto será distribuído e comunicado aos clientes:
+
+- **Venda direta (B2B):** Licenciamento de uso anual para empresas de construção, manutenção e consultoria.
+- **Parcerias estratégicas:** Com empresas de inspeção predial e integradores de tecnologia.
+- **Participação em eventos e feiras técnicas:** Divulgação em eventos da construção civil e tecnologia.
+- **Canais digitais:** Websites institucionais, redes sociais técnicas e contatos comerciais diretos.
+
 
 ### 2.4 Relacionamento com Clientes
-- **Suporte técnico especializado:** Atendimento personalizado para esclarecimento de dúvidas e manutenção de sistemas.
-- **Desenvolvimento de projetos customizados:** Adaptação das soluções conforme as necessidades específicas de cada cliente ou obra.
-- **Parcerias de longo prazo:** Criação de contratos de manutenção contínua e atualizações periódicas no sistema.
+**Descrição:**  
+Estratégias para atrair e manter clientes:
 
-### 2.5 Segmentos de Mercado
-- **Bionanomanufatura:** Biotecnologia, Nanotecnologia, Microfabricação, Química e EPIs.
-- **Cidades, Infraestrutura e Meio Ambiente:** Planejamento Territorial, Obras Civis, Riscos, Recursos Hídricos, Florestas.
-- **Energia:** Geração, Infraestrutura, Eficiência, Energias Limpas.
-- **Habitação e Edificações:** Conforto, Desempenho, Segurança, Materiais, Sustentabilidade.
-- **Materiais Avançados:** Metálicos, Poliméricos, Compósitos, Celulósicos, Corrosão.
-- **Tecnologias Digitais:** IoT, Sistemas Embarcados, Sistemas de Transportes, IA, Analytics.
-- **Tecnologias Regulatórias e Metrológicas:** Mecânica, Elétrica, Vazão, Aerodinâmica, Química.
+- **Suporte técnico especializado:** Apoio durante a instalação, operação e atualização da solução.
+- **Atualizações contínuas:** Melhorias constantes baseadas em novos dados de campo e evolução das fissuras.
+- **Serviços de personalização:** Customização de funcionalidades específicas para grandes clientes.
+- **Treinamento e capacitação:** Workshops e cursos de formação para equipes técnicas de empresas clientes.
 
-### 2.6 Canais
-- **Venda direta por projetos:** Acordos bilaterais para execução de serviços ou implementação da solução.
-- **Parcerias institucionais:** Cooperação com universidades, órgãos públicos e entidades técnicas.
-- **Fundação de Apoio ao IPT:** Uso da FIPT para facilitar contratos e gestão administrativa de projetos.
-- **Eventos de construção civil e tecnologia:** Participação ativa em feiras e congressos para divulgar a solução.
 
-### 2.7 Recursos Chave
-- **Infraestrutura laboratorial do IPT (LMPC):** Espaços equipados para ensaios, testes e análises técnicas.
-- **Equipe técnica e pesquisadores especializados:** Engenheiros, analistas de dados, especialistas em materiais de construção.
-- **Banco de dados de imagens:** Conjunto de imagens etiquetadas de fachadas com diferentes tipos de fissuras.
-- **Artigos técnicos e normativos:** Referências para embasar os critérios de classificação e análise.
-- **Softwares especializados:** Ferramentas de processamento de imagem e treinamento de IA.
+### 2.5 Fontes de Receita
+**Descrição:**  
+Mecanismos de geração de receita para o projeto:
 
-### 2.8 Estrutura de Custos
-- **Desenvolvimento e treinamento de algoritmos:** Custo de mão de obra e computação de alta performance.
-- **Manutenção de infraestrutura de TI:** Servidores, armazenamento de dados, redes.
-- **Aquisição e manutenção de drones e câmeras:** Equipamentos necessários para captação de imagens.
-- **Mão de obra especializada:** Pesquisadores, desenvolvedores, técnicos de campo.
-- **Certificações e conformidade:** Processos para garantir que os produtos estejam dentro das normas ABNT/INMETRO.
+- **Venda de licenças anuais de software:** Para uso corporativo em inspeções prediais.
+- **Projetos de customização:** Desenvolvimento de módulos ou relatórios específicos para clientes de grande porte.
+- **Treinamentos técnicos:** Cursos pagos para capacitação no uso do sistema.
+- **Serviços de manutenção e atualizações:** Planos anuais para suporte técnico e upgrades.
 
-### 2.9 Fontes de Receita
-- **Venda de projetos e serviços especializados:** Prestação de serviços de inspeção, monitoramento e análises técnicas.
-- **Apoio de dotações públicas:** Recursos do Governo do Estado de São Paulo, via IPT, para fomentar inovação.
-- **Licenciamento da tecnologia:** Comercialização do uso do algoritmo para outras empresas de inspeção e manutenção.
 
-## 3. Conclusão
+### 2.6 Atividades-Chave
+**Descrição:**  
+Principais atividades para desenvolvimento e sucesso da solução:
 
-&emsp;O Business Model Canvas elaborado propõe um modelo sustentável para inovação no monitoramento de patologias em edificações, utilizando inteligência artificial, tecnologias de inspeção visual e forte apoio técnico.  
-Essa iniciativa do IPT fortalece sua atuação no setor de habitação e edificações, promovendo segurança, eficiência e inovação para seus clientes públicos e privados.
+- **Desenvolvimento do algoritmo de detecção:** Treinamento de IA para identificação e classificação de fissuras.
+- **Criação da interface gráfica de usuário (GUI):** Para visualização intuitiva dos resultados.
+- **Integração com sistemas de captura de imagens:** Comunicação com drones e câmeras de alta resolução.
+- **Realização de testes e validação em campo:** Aplicação em edifícios reais para garantir precisão.
+- **Atualizações e evolução tecnológica:** Baseadas em feedback dos usuários e novos estudos.
+
+
+### 2.7 Recursos-Chave
+**Descrição:**  
+Ativos e competências essenciais para o desenvolvimento do projeto:
+
+- **Equipe de desenvolvimento de software e IA:** Engenheiros de software, especialistas em IA e engenheiros civis.
+- **Banco de dados de imagens de fachadas:** Base para treinamento e validação do algoritmo.
+- **Equipamentos de captura de imagem:** Drones e câmeras de alta resolução para captação de dados reais.
+- **Infraestrutura de TI:** Servidores para armazenamento de dados, treinamento e operação da IA.
+- **Expertise técnico em patologias construtivas:** Apoio técnico do IPT para definição de padrões de classificação.
+
+
+### 2.8 Parcerias-Chave
+**Descrição:**  
+Parceiros estratégicos que suportam o desenvolvimento e crescimento do projeto:
+
+- **Instituto de Pesquisas Tecnológicas (IPT):** Validação técnica dos métodos de inspeção e caracterização de fissuras.
+- **Fabricantes de drones e câmeras:** Fornecimento e suporte na integração de tecnologias de captura de imagem.
+- **Empresas de inspeção técnica e consultorias:** Validação comercial e testes piloto.
+- **Universidades e centros de pesquisa:** Apoio para estudos de novas técnicas de fissuração e inteligência artificial.
+
+
+### 2.9 Estrutura de Custos
+**Descrição:**  
+Principais custos envolvidos no desenvolvimento e operação do produto:
+
+- **Desenvolvimento de software:** Salários da equipe técnica e licenças de ferramentas de desenvolvimento.
+- **Compra e manutenção de equipamentos:** Drones, câmeras, infraestrutura de TI.
+- **Testes de campo e validação:** Custos logísticos e de mão de obra para realização dos ensaios práticos.
+- **Infraestrutura de servidores:** Custo de armazenamento de imagens e processamento da IA.
+- **Ações de marketing técnico:** Produção de materiais de divulgação e participação em eventos.
+
+
+# 3. Conclusão
+
+&emsp; O Business Model Canvas descrito estrutura um projeto focado no setor de inspeção predial, combinando robótica móvel, visão computacional e inteligência artificial.
+Com ele, busca-se entregar valor ao mercado por meio de soluções de detecção automática de fissuras, aumentando a segurança, reduzindo custos e promovendo a manutenção inteligente de edificações.
+
+&emsp;A implementação desse modelo permitirá criar um produto viável comercialmente, tecnicamente validado e com potencial de expansão para múltiplos segmentos da construção civil.

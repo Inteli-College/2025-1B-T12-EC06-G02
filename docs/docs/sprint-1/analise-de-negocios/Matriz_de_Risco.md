@@ -12,3 +12,22 @@ A matriz de riscos é uma ferramenta fundamental de gestão que permite visualiz
 Nossa matriz de riscos está estruturada em duas seções complementares: ameaças e oportunidades. As ameaças representam eventos que podem prejudicar o sucesso do projeto, enquanto as oportunidades indicam caminhos para potencializar resultados positivos. A análise utiliza uma escala de probabilidade gradativa (10%, 30%, 50%, 70% e 90%) combinada com níveis de impacto que variam de "Muito Baixo" a "Muito Alto". Esta estrutura permite mapear cenários desde dificuldades técnicas (como falhas no sistema de previsão e limitações na classificação de fissuras) até barreiras de implementação (como resistência à adoção e restrições orçamentárias), bem como benefícios potenciais (como economia em manutenções e automação de relatórios técnicos).
 
 Ao analisar esta matriz no contexto do projeto de identificação de fissuras em edificações, obtemos uma visão abrangente dos fatores que podem influenciar o sucesso da iniciativa, desde os desafios de implementação da tecnologia até seu potencial de transformação no mercado. Esta compreensão holística permite o desenvolvimento de estratégias robustas de mitigação de riscos e aproveitamento de oportunidades, maximizando as chances de entrega de uma solução que efetivamente atenda às necessidades do setor e gere valor tanto para o IPT quanto para os usuários finais da tecnologia.
+
+## Análise das Ameaças
+
+### Ameaças de Alta Probabilidade (90%)
+- **Dificuldades na validação em campo** (Impacto Alto): Representa um risco crítico, indicando que haverá desafios significativos para testar o algoritmo em condições reais, potencialmente atrasando a validação da solução.
+
+### Ameaças de Probabilidade Significativa (70%)
+- **Condições climáticas afetando capturas** (Impacto Baixo): Pode prejudicar a qualidade das imagens coletadas, mas tem impacto relativamente controlável.
+- **Dificuldade na classificação de fissuras** (Impacto Moderado): Desafio técnico que pode afetar a precisão do sistema, mas não compromete completamente a solução.
+- **Falhas no sistema de previsão** (Impacto Muito Alto): Uma das ameaças mais críticas, indicando que o algoritmo pode não conseguir prever adequadamente a evolução das fissuras, comprometendo uma funcionalidade central.
+
+### Ameaças de Média Probabilidade (50%)
+- **Resistência à adoção** e **Baixa precisão do algoritmo** (Impacto Alto): Problemas que podem comprometer significativamente o sucesso comercial e a eficácia técnica da solução.
+
+### Ameaças de Menor Probabilidade (30%-10%)
+- **Restrições orçamentárias** (Impacto Moderado): Poderia limitar recursos disponíveis para o desenvolvimento.
+- **Limitações na integração com equipamentos** (Impacto Alto): Desafios de compatibilidade com hardware de captura.
+- **Falta de dados reais para treinamento** (Impacto Baixo): Aparece com baixa probabilidade (10%), possivelmente porque já existem dados disponíveis ou alternativas viáveis.
+

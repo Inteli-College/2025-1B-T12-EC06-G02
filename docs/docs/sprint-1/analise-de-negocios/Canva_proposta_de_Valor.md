@@ -3,7 +3,7 @@ sidebar_position: 3
 custom_edit_url: null
 ---
 
-# Canva Proposta de Valor
+# Canvas Proposta de Valor
 
 ## Introdução
 

@@ -9,7 +9,7 @@ custom_edit_url: null
 
 ## Introdução
 
-O Value Proposition Canvas é uma ferramenta fundamental para alinhar as necessidades dos clientes com a oferta de valor de um produto ou serviço. Desenvolvido por Alexander Osterwalder como complemento ao Business Model Canvas, este framework ajuda a estruturar e visualizar como uma solução resolve problemas específicos dos usuários. No contexto do projeto de desenvolvimento do algoritmo para processamento digital de imagens na identificação de fissuras em revestimentos de argamassa, o Value Proposition Canvas nos permite mapear claramente como a solução tecnológica proposta pelo IPT atenderá às necessidades do mercado da construção civil e manutenção predial.
+&nbsp;&nbsp;&nbsp;&nbsp;O Value Proposition Canvas é uma ferramenta fundamental para alinhar as necessidades dos clientes com a oferta de valor de um produto ou serviço. Desenvolvido por Alexander Osterwalder como complemento ao Business Model Canvas, este framework ajuda a estruturar e visualizar como uma solução resolve problemas específicos dos usuários. No contexto do projeto de desenvolvimento do algoritmo para processamento digital de imagens na identificação de fissuras em revestimentos de argamassa, o Value Proposition Canvas nos permite mapear claramente como a solução tecnológica proposta pelo IPT atenderá às necessidades do mercado da construção civil e manutenção predial.
 
 <p style={{textAlign: 'center'}}>Figura 1 - Canvas Proposta de Valor</p>
 
@@ -25,7 +25,7 @@ O Value Proposition Canvas é uma ferramenta fundamental para alinhar as necessi
 ## Segmento de Clientes
 
 ### Perfil do Cliente
-O lado direito do canvas representa o perfil do cliente e é composto por três seções principais que descrevem em detalhes quem são os usuários-alvo da solução:
+&nbsp;&nbsp;&nbsp;&nbsp;O lado direito do canvas representa o perfil do cliente e é composto por três seções principais que descrevem em detalhes quem são os usuários-alvo da solução:
 
 #### Quem São
 - Empresas de construção civil e manutenção predial
@@ -33,7 +33,7 @@ O lado direito do canvas representa o perfil do cliente e é composto por três 
 - Consultorias de fiscalização de obras
 
 #### Dores dos Clientes
-As dores representam os problemas, obstáculos e riscos que os clientes enfrentam atualmente:
+&nbsp;&nbsp;&nbsp;&nbsp;As dores representam os problemas, obstáculos e riscos que os clientes enfrentam atualmente:
 
 - Identificação tardia de fissuras que leva a danos estruturais maiores
 - Custos elevados em manutenções corretivas quando problemas não são detectados precocemente
@@ -42,7 +42,7 @@ As dores representam os problemas, obstáculos e riscos que os clientes enfrenta
 - Dificuldade em priorizar intervenções devido à falta de dados quantitativos
 
 #### Ganhos Esperados
-Os ganhos descrevem os benefícios e resultados positivos que os clientes desejam alcançar:
+&nbsp;&nbsp;&nbsp;&nbsp;Os ganhos descrevem os benefícios e resultados positivos que os clientes desejam alcançar:
 
 - Detecção automatizada e precisa de patologias estruturais
 - Economia significativa em manutenções através de intervenções preventivas
@@ -53,10 +53,10 @@ Os ganhos descrevem os benefícios e resultados positivos que os clientes deseja
 ## Proposta de Valor
 
 ### Mapa de Valor
-O lado esquerdo do canvas representa a proposta de valor e é composto por três seções que descrevem como o produto atende às necessidades identificadas:
+&nbsp;&nbsp;&nbsp;&nbsp;O lado esquerdo do canvas representa a proposta de valor e é composto por três seções que descrevem como o produto atende às necessidades identificadas:
 
 #### Produtos e Serviços
-Os principais elementos da solução que serão oferecidos:
+&nbsp;&nbsp;&nbsp;&nbsp;Os principais elementos da solução que serão oferecidos:
 
 - Software de análise automática para identificação de fissuras
 - Interface de visualização intuitiva para apresentação dos resultados
@@ -65,7 +65,7 @@ Os principais elementos da solução que serão oferecidos:
 - Banco de dados histórico para monitoramento da evolução
 
 #### Criadores de Ganho
-Aspectos da solução que geram os benefícios esperados pelos clientes:
+&nbsp;&nbsp;&nbsp;&nbsp;Aspectos da solução que geram os benefícios esperados pelos clientes:
 
 - Algoritmos de IA especializados para detecção precisa
 - Integração simplificada com drones e câmeras de alta resolução
@@ -74,7 +74,7 @@ Aspectos da solução que geram os benefícios esperados pelos clientes:
 - Geração de relatórios técnicos customizáveis
 
 #### Aliviadores de Dor
-Elementos da solução que resolvem os problemas identificados:
+&nbsp;&nbsp;&nbsp;&nbsp;Elementos da solução que resolvem os problemas identificados:
 
 - Redução significativa do tempo necessário para inspeções
 - Detecção precoce de problemas estruturais antes de agravamento
@@ -84,6 +84,9 @@ Elementos da solução que resolvem os problemas identificados:
 
 ## Conclusão
 
-O Value Proposition Canvas desenvolvido para o projeto de identificação de fissuras em edificações demonstra um claro alinhamento entre as necessidades do mercado da construção civil e a solução tecnológica proposta. A combinação de processamento digital de imagens com inteligência artificial apresenta potencial para transformar significativamente os processos de inspeção e manutenção predial, oferecendo ganhos tanto em eficiência operacional quanto em segurança estrutural.
+&nbsp;&nbsp;&nbsp;&nbsp;O Value Proposition Canvas desenvolvido para o projeto de identificação de fissuras em edificações demonstra um claro alinhamento entre as necessidades do mercado da construção civil e a solução tecnológica proposta. A combinação de processamento digital de imagens com inteligência artificial apresenta potencial para transformar significativamente os processos de inspeção e manutenção predial, oferecendo ganhos tanto em eficiência operacional quanto em segurança estrutural.
 
-A implementação deste projeto pelo IPT, com sua credibilidade e expertise de 125 anos no setor, representa uma oportunidade de introduzir uma inovação disruptiva no mercado brasileiro de manutenção predial. O desenvolvimento iterativo, começando com um MVP focado nas funcionalidades essenciais e evoluindo com base no feedback dos usuários, permitirá validar a proposta de valor na prática e realizar ajustes conforme necessário.
+&nbsp;&nbsp;&nbsp;&nbsp;A implementação deste projeto pelo IPT, com sua credibilidade e expertise de 125 anos no setor, representa uma oportunidade de introduzir uma inovação disruptiva no mercado brasileiro de manutenção predial. O desenvolvimento iterativo, começando com um MVP focado nas funcionalidades essenciais e evoluindo com base no feedback dos usuários, permitirá validar a proposta de valor na prática e realizar ajustes conforme necessário.
+
+## Referências Bibliográficas
+&nbsp;&nbsp;&nbsp;&nbsp;Osterwalder, A., Pigneur, Y., Bernarda, G., & Smith, A. (2014). Value Proposition Design: How to Create Products and Services Customers Want. John Wiley & Sons.

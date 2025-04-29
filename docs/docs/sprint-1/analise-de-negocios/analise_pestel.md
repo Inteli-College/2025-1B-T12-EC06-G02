@@ -19,7 +19,7 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 &emsp; Este fator examina políticas governamentais, regulamentações e a estabilidade política que possam acelerar ou dificultar o desenvolvimento de uma empresa (Suhr, 2021). Tais aspectos são especialmente relevantes no caso do IPT, por se tratar de um órgão público vinculado ao Governo do Estado de São Paulo.
 
-&emsp; Um dos elementos mais favoráveis atualmente é a existência de incentivos governamentais, tanto em âmbito federal quanto estadual, voltados à promoção da inovação. Essa convergência tem viabilizado articulações institucionais mais eficazes e atraído investimentos para o Estado, contribuindo para um ambiente político mais estável e cooperativo. O próprio IPT desenvolve projetos de pesquisa, desenvolvimento e inovação (PD&I) em parceria com empresas que se beneficiam de políticas como a Lei do Bem e a Lei da Informática (IPT, s.d).
+&emsp; Um dos elementos mais favoráveis atualmente é a existência de incentivos governamentais, tanto em âmbito federal quanto estadual, voltados à promoção da inovação. Essa convergência tem viabilizado articulações institucionais mais eficazes e atraído investimentos para o Estado, contribuindo para um ambiente político mais estável e cooperativo. O próprio IPT desenvolve projetos de pesquisa, desenvolvimento e inovação (PD&I) em parceria com empresas que se beneficiam de políticas como a Lei do Bem e a Lei da Informática (INSTITUTO DE PESQUISAS TECNOLÓGICAS, s.d).
 
 &emsp; Além disso, o Instituto está inserido em um ecossistema governamental fortemente comprometido com a inovação. Sua vinculação à Secretaria de Ciência, Tecnologia e Inovação do Estado reforça esse posicionamento. Recentemente, essa secretaria lançou o Programa de Inovação do Estado de São Paulo, uma iniciativa que fortalece o ambiente institucional voltado ao desenvolvimento científico e tecnológico, apoiando empresas inovadoras, promovendo a internacionalização de startups paulistas consolidadas e desburocratizando o acesso ao Sistema Paulista de Ambientes de Inovação (SPAI). (FAPESP, 2024). 
 
@@ -49,7 +49,7 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 &emsp; O ambiente corporativo também acompanha essa tendência de transformação digital. De acordo com levantamento da MIA, o mercado de Centros de Serviços Compartilhados (CSCs) no Brasil manteve crescimento em 2024, com cada vez mais empresas aderindo ao modelo, impulsionado pelo foco em automação e eficiência (Dino, 2025). Complementarmente, segundo o LinkedIn, 70% das competências utilizadas em diferentes setores deverão mudar até 2030 devido ao impacto da inteligência artificial, e um quarto dos profissionais brasileiros já planeja priorizar o aprendizado em IA ainda este ano (Brandão, 2025). Casos como o da Petrobras, que implementou tecnologia para monitoramento remoto de plataformas de petróleo a centenas de quilômetros da costa, evidenciam o avanço tecnológico no setor produtivo (g1 ES, 2022).
 
-&emsp; No âmbito institucional, esse movimento se traduz na estrutura financeira do IPT: atualmente, 61% da receita do instituto é proveniente da venda de projetos, superando os 39% oriundos de dotações orçamentárias do Estado de São Paulo. Tal dado reforça a atratividade de seus serviços em um contexto de crescente digitalização (IPT, 2025).
+&emsp; No âmbito institucional, esse movimento se traduz na estrutura financeira do IPT: atualmente, 61% da receita do instituto é proveniente da venda de projetos, superando os 39% oriundos de dotações orçamentárias do Estado de São Paulo. Tal dado reforça a atratividade de seus serviços em um contexto de crescente digitalização (INSTITUTO DE PESQUISAS TECNOLÓGICAS, 2025).
 
 &emsp; No entanto, é preciso cautela diante de certos aspectos sociais negativos que persistem no Brasil. Em 2024, o contrabando, a falsificação e a pirataria geraram um prejuízo estimado em meio trilhão de reais à economia nacional (Asmetro-SN, 2025). Também foram registradas possíveis fraudes em repasses de recursos públicos, como apontado em auditoria da CGU acerca do INSS (Poder360, 2025). Além disso, há riscos concretos à integridade física dos profissionais do IPT durante atividades de campo: há relatos recentes de tentativas de roubo de equipamentos, como drones, sendo necessária a atuação da Polícia Militar para garantir a segurança da equipe.
 
@@ -72,11 +72,41 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 ## Fatores Ambientais
 
-&emsp; Este aspecto envolve condições naturais como clima, vegetação e relevo, que podem impactar tanto o ramo de atuação da empresa quanto o bem-estar dos seus colaboradores. Também se incluem aqui preocupações com sustentabilidade e regulamentações ambientais (Suhr, 2021).
+&emsp; Este aspecto envolve condições naturais como clima, vegetação e relevo, que podem impactar tanto o ramo de atuação da empresa quanto o bem-estar dos seus colaboradores. Também se incluem aqui preocupações com sustentabilidade e regulamentações ambientais (Suhr, 2021). Em relação ao IPT, por se tratar de uma empresa de tecnologia, o clima, vegetação e relevo do ambiente, apesar de considerados para entender onde sediar a organização, estes não são elementos relevantes para essa análise.
+
+&emsp; Por outro lado, deve-se atentar aos indíces de poluição da cidade de São Paulo que podem afetar significativamente à saúde dos trabalhadores. Em 2024, São Paulo ficou, por dois dias consecutivos, no topo do ranking de cidade mais poluída do mundo, de acordo com o monitoramento agência suíça IQAir (Laforé, 2024). Isso adicionado à baixa umidade relativa do ar, cria situações de restrição para os trabalhadores paulistas que, segundo recomendação da Defesa Civil, deveriam "manter-se bem hidratado, proteger-se do sol, manter ambientes internos úmidos através de vaporizadores, toalhas molhadas e recipientes com água, além de evitar exercícios físicos ao ar livre nas horas mais quentes".
+
+&emsp; Com relação às regulamentações governamentais acerca de sustentabilidade e uso de materiais poluidores, destaca-se que "o IPT, devido à sua natureza jurídica, é isento de licenciamento ambiental e outras licenças" (INSTITUTO DE PESQUISAS TECNOLÓGICAS, 2024). Não obstante, por se encontrar nas adjacências da Reserva Florestal da Cidade Universitária “Armando de Salles Oliveira” - CUASO, trata-se de uma boa prática verificar a preservação da fauna e flora da região.
+
+&emsp; Em suma, embora fatores naturais como clima e relevo tenham impacto limitado na operação do IPT, aspectos ambientais como a poluição atmosférica e a umidade relativa do ar demandam atenção constante, especialmente em função do bem-estar dos colaboradores. Do ponto de vista institucional, mesmo que o instituto esteja isento de licenciamento ambiental, sua localização em área sensível ambientalmente impõe a adoção de medidas de monitoramento e mitigação como forma de demonstrar responsabilidade socioambiental e alinhamento com boas práticas de governança.
+
 
 ## Fatores Legais
 
-&emsp; Diz respeito ao conjunto de leis e normas que a empresa precisa cumprir para operar legalmente. No contexto deste projeto, destacam-se legislações como a **Lei Geral de Proteção de Dados (LGPD)**, o **Marco Civil da Internet**, entre outras normas que regulam o uso de tecnologias e dados sensíveis.
+&emsp; No âmbito legal, a principal preocupação do IPT é adequar-se à Lei nº 896, de 17 de dezembro de 1975, que trata das suas funções e objetivos. Por ser uma empresa pública, esse instituto está isento da maioria das licenças necessárias. Entretanto, o IPT deve estar atento aos seguintes certificados, como pode-se ver nos seus [documentos institucionais](https://ipt.br/documentos-institucionais/):
+
+- Auto de Vistoria do Corpo de Bombeiros (AVCB);
+- Certificado de Regularidade das edificações - Prefeitura Municipal de São Paulo
+(PMSP);
+- Certificado de Dispensa de Licença - Companhia Ambiental do Estado de São Paulo (CETESB)
+- entre outros
+
+Para a obtenção do alvará de funcionamento.
+
+&emsp; Além disso, por se tratar de um Instituto de Pesquisa, também deve obter alvará para importação e exportação de produtos controlados, alvará para produtos químicos controlados para fins comerciais, credenciamento de laboratórios junto à ANVISA, entre outros.
+
+&emsp; Em especial, para o projeto, é importante atentar-se para a Lei Geral de Proteção de Dados (LGPD) que guiará o uso consciente de imagens para o treinamento do modelo de classificação.
+
+## Conclusão
+
+&emsp; A partir da Análise PESTEL, têm-se uma perspectiva preliminar, mas crítica em casos extremos da viabilidade de uma empresa ou projeto. No caso do IPT, localizado em São Paulo, Brasil, nenhum dos fatores contextuais inviabiliza o projeto ou a empresa. Entretanto, essa análise foi útil para compreender os aspectos que dificultam ou aceleram a organização.
+
+&emsp; Com respeito aos aspectos que aceleram o projeto ou a organização, cita-se a vontade política do governo estadual, a isenção de licenciamento ambientais e a receptividade brasileira à inovação. Esses três aspectos criam um ambiente propício à um instituto de pesquisas como um IPT e receptivo às tecnologias relacionadas a Inteligência Artificial que é o caso do projeto da SOD.
+
+&emsp; Já em relação aos aspectos dificultadores, cita-se a corrupção pública e privada, a crise econômica e a poluição da cidade sede. Relacionados à diferentes fatores, essas características do ambiente contextual são prejudiciais ao financiamento do projeto, implementação em larga escala e bem-estar dos trabalhadores. Frisa-se, porém, que esses aspectos são apenas dificultadores e não inviabilizadores.
+
+&emsp; Conclui-se, portanto, a análise PESTEL com uma perspectiva otimista que se traduz no crescimento recente da venda de projetos do IPT e a ascensão de ferramentas de inteligência artificial.
+
 
 ## Bibliografia
 
@@ -100,19 +130,21 @@ G1 ES. Petrobras desenvolve tecnologia para monitoramento remoto de plataformas.
 
 FAPESP. *Secretaria de Ciência, Tecnologia e Inovação lança Programa Paulista de Inovação*. 2024. Disponível em: https://agencia.fapesp.br/secretaria-de-ciencia-tecnologia-e-inovacao-lanca-programa-paulista-de-inovacao/51616. Acesso em: 29 abr. 2025.
 
-FREITAS, F. Brasil é o quarto país que mais acessa o ChatGPT • Tecnoblog. Disponível em: <https://tecnoblog.net/noticias/brasil-e-o-quarto-pais-que-mais-acessa-o-chatgpt/>. Acesso em: 29 abr. 2025.
+FREITAS, F. Brasil é o quarto país que mais acessa o ChatGPT • Tecnoblog. Disponível em: https://tecnoblog.net/noticias/brasil-e-o-quarto-pais-que-mais-acessa-o-chatgpt/. Acesso em: 29 abr. 2025.
 
 HELDER, D. Brasil terá déficit de 530 mil profissionais de tecnologia até 2025, mostra estudo do Google. G1, 31 maio 2023. 
 
 Hora 1. *Pesquisa mostra que brasileiros passam 9h por dia ao celular ou em outros aparelhos eletrônicos*. 25 ago. 2023. Disponível em: https://g1.globo.com/hora1/noticia/2023/08/25/pesquisa-mostra-que-brasileiros-passam-9h-por-dia-ao-celular-ou-em-outros-aparelhos-eletronicos.ghtml. Acesso em: 29 abr. 2025.
 
-IPT. *Apresentação Institucional ao Inteli*. 2025. Instituto de Pesquisas Tecnológicas.
+INSTITUTO DE PESQUISAS TECNOLÓGICAS. *Apresentação Institucional ao Inteli*. 2025. Instituto de Pesquisas Tecnológicas.
 
-IPT. *Folder Institucional*. Instituto de Pesquisas Tecnológicas. Disponível em: https://ipt.br/wp-content/uploads/2024/03/Folder-Institucional-IPT.pdf. Acesso em: 29 abr. 2025.
+INSTITUTO DE PESQUISAS TECNOLÓGICAS. *Folder Institucional*. Instituto de Pesquisas Tecnológicas. Disponível em: https://ipt.br/wp-content/uploads/2024/03/Folder-Institucional-IPT.pdf. Acesso em: 29 abr. 2025.
+
+INSTITUTO DE PESQUISAS TECNOLÓGICAS. RELATÓRIO DE SUSTENTABILIDADE 2024IPT. [s.l: s.n.]. Disponível em: <https://ipt.br/wp-content/uploads/2025/04/Relatorio-de-Sustentabilidade-2024-1.pdf>. Acesso em: 29 abr. 2025.
 
 NUNES, J. S. Cinco fatores que distanciam o Brasil da fronteira tecnológica. Gazetadopovo.com.br, 4 jul. 2019. 
 
-PODER360. *64% da possível fraude no INSS foram em 2 anos de Lula*. 2025. Disponível em: <https://www.poder360.com.br/poder-governo/64-da-possivel-fraude-no-inss-foram-em-2-anos-de-lula/>. Acesso em: 29 abr. 2025.
+PODER360. *64% da possível fraude no INSS foram em 2 anos de Lula*. 2025. Disponível em: https://www.poder360.com.br/poder-governo/64-da-possivel-fraude-no-inss-foram-em-2-anos-de-lula/. Acesso em: 29 abr. 2025.
 
 SÃO PAULO (Estado). *Lei nº 896, de 17 de dezembro de 1975*. Dispõe sobre a criação e funcionamento do Instituto de Pesquisas Tecnológicas. Disponível em: https://www.al.sp.gov.br/repositorio/legislacao/lei/1975/lei-896-17.12.1975.html. Acesso em: 29 abr. 2025.
 

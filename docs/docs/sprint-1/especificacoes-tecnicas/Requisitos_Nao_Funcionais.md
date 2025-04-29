@@ -29,7 +29,7 @@ O processamento de cada imagem enviada deve ser concluído em, no máximo, 10 se
 
 ### RNF03 - Precisão Mínima de Detecção
 **Descrição**:  
-O algoritmo de identificação de fissuras deve alcançar uma acurácia mínima de 80% nas imagens analisadas, conforme validação por inspeções humanas.
+O algoritmo de identificação de fissuras deve alcançar uma acurácia mínima de 75% nas imagens analisadas, conforme validação por inspeções humanas.
 
 ---
 
@@ -47,7 +47,7 @@ O sistema deve manter um registro local das imagens processadas, incluindo suas 
 
 ### RNF06 - Compatibilidade com Imagens de Alta Resolução
 **Descrição**:  
-O sistema deve aceitar e processar imagens com resolução de até 4K sem perdas significativas de desempenho ou qualidade de análise.
+O sistema deve aceitar e processar imagens de alta resolução sem perdas significativas de desempenho ou qualidade de análise.
 
 ---
 

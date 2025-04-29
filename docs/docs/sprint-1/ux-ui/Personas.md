@@ -35,4 +35,44 @@ Entre as principais necessidades da persona, destacam-se a agilidade na análise
 
 A adoção de uma solução tecnológica que atenda essas demandas terá um impacto direto na produtividade e na confiabilidade do trabalho de Carolina, possibilitando diagnósticos mais objetivos, rastreáveis e auditáveis. Carolina representa um perfil de usuária que exige precisão técnica, facilidade de uso e suporte a processos científicos rigorosos, sendo de grande importÂncia que o sistema seja desenhado para integrar essas necessidades de forma intuitiva e eficiente para o usuário
 
-## Persona 02: 
+## Persona 02: Técnico de edificações
+
+&emsp; A persona de Carlos Eduardo representa o técnico de edificações especializado na inspeção e monitoramento de patologias em construções civis, constituindo uma parte importante da solução. Nesse sentido, sua escolha como persona destaca a importância de uma solução que seja capaz de identificar fissuras de forma eficiente e confiável. 
+
+&emsp; Segue a abaixo as informações sobre a persona do técnico de edificações:
+
+<div align="center" width="100%">
+
+<sub>Figura 2 - Persona: Tecnico de edificações</sub>
+
+![Persona Carlos Eduardo](/img/CarlosEduardo.png)
+
+<sup>Fonte: Autoria própria </sup>
+
+<sup> [Link da imagem](https://www.figma.com/design/AiH9nrIMPmuJx5uXk1Bi59/Personas--Copy-?node-id=2004-125&t=Zqu1Zq1kvCrw5p4s-0)</sup>
+
+</div>
+
+**Sobre**
+
+&emsp; Carlos Eduardo é formado como Técnico em Edificações pelo Instituto de São Paulo, com oito anos de experiência na construção civil, com ênfase em inspeção e monitoramento de patologias em edificações. Atualmente, atua como consultor técnico para empresas de engenharia diagnóstica, realizando inspeções periódicas, relatórios técnicos e planos de manutenção preventiva. Sua especialização em patologias das construções o tornou uma referência na identificação e classificação de fissuras em revestimentos de argamassa, área em que acumula vasta experiência prática.
+
+**Tarefas**
+
+&emsp; De acordo com a norma do CREA (Conselho Regional de Engenharia) [NF-CCEEC03_97 (CEEC)](https://www.creaes.org.br/creaes/Portals/0/Documentos/Legislacao/Normas%20Atualizadas/CEEC/NFCCEEC03_97.pdf), o técnico pode se responsabilizar por reformas em edificações de até 80 m², além de serviços de conservação e manutenção predial, mas não por interferências em estruturas de concreto armado ou metálicas. Nesse sentido, as principais tarefas de Eduardo são acompanhar a execução das etapas de construção, realizar a leitura e interpretação de projetos, controlar a manutenção e conservação de edifícios e prestar assistência técnica.
+
+**Dores**
+
+&emsp; As principais dores da persona do técnico de edificações são o excesso de imagens a serem analisadas manualmente durante o processo de identificação de fissuras e a necessidade de precisão diagnóstica nesse processo, além do monitoramento constante da evolução das fissuras.
+
+**Necessidades**
+
+&emsp; A principal necessidade da persona de Carlos Eduardo é um sistema capaz de automatizar a identificação de fissuras em edificações, processando uma grande quantidade de imagens e, assim, reduzindo a necessidade de análise manual. Além disso, o sistema deve ser capaz de elaborar relatórios de forma automática.
+
+**Impacto da solução**
+
+&emsp; Os principais impactos esperados com a implementação da solução proposta são o aumento da precisão dos diagnósticos técnicos, a facilitação do monitoramento contínuo das edificações, a redução do tempo dedicado à elaboração dos relatórios e o fornecimento de dados para embasar suas recomendações.
+
+**Desejo**
+
+&emsp; O principal desejo da persona de Carlos Eduardo é melhorar a eficiência no processo de identificação das fissuras, assim como na geração automática dos relatórios.

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/yallist/README",
+  "title": "yallist",
+  "description": "Yet Another Linked List",
+  "source": "@site/docs/node_modules/yallist/README.md",
+  "sourceDirName": "node_modules/yallist",
+  "slug": "/node_modules/yallist/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/yallist/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/yallist/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/xml-js/"
+  },
+  "next": {
+    "title": "YAML <a href=\"https://www.npmjs.com/package/yaml\"><img align=\"right\" src=\"https://badge.fury.io/js/yaml.svg\" title=\"npm package\" /></a>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/yaml/"
+  }
+}

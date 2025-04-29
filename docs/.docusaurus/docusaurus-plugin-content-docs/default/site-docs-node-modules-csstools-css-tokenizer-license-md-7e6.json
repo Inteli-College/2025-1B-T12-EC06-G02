@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/css-tokenizer/LICENSE",
+  "title": "LICENSE",
+  "description": "The MIT License (MIT)",
+  "source": "@site/docs/node_modules/@csstools/css-tokenizer/LICENSE.md",
+  "sourceDirName": "node_modules/@csstools/css-tokenizer",
+  "slug": "/node_modules/@csstools/css-tokenizer/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-tokenizer/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/css-tokenizer/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to CSS Tokenizer",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-tokenizer/CHANGELOG"
+  },
+  "next": {
+    "title": "Media Query List Parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/media-query-list-parser/"
+  }
+}

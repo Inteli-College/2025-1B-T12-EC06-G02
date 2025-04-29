@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-number/README",
+  "title": "is-number [![NPM version](https://img.shields.io/npm/v/is-number.svg?style=flat)](https://www.npmjs.com/package/is-number) [![NPM monthly downloads](https://img.shields.io/npm/dm/is-number.svg?style=flat)](https://npmjs.org/package/is-number) [![NPM total downloads](https://img.shields.io/npm/dt/is-number.svg?style=flat)](https://npmjs.org/package/is-number) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/is-number.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/is-number)",
+  "description": "Returns true if the value is a finite number.",
+  "source": "@site/docs/node_modules/is-number/README.md",
+  "sourceDirName": "node_modules/is-number",
+  "slug": "/node_modules/is-number/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-number/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-number/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-npm",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-npm/"
+  },
+  "next": {
+    "title": "is-obj [![Build Status](https://travis-ci.org/sindresorhus/is-obj.svg?branch=master)](https://travis-ci.org/sindresorhus/is-obj)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-obj/"
+  }
+}

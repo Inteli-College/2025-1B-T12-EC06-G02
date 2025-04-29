@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/schema-utils/node_modules/json-schema-traverse/README",
+  "title": "json-schema-traverse",
+  "description": "Traverse JSON Schema passing each schema object to callback",
+  "source": "@site/docs/node_modules/schema-utils/node_modules/json-schema-traverse/README.md",
+  "sourceDirName": "node_modules/schema-utils/node_modules/json-schema-traverse",
+  "slug": "/node_modules/schema-utils/node_modules/json-schema-traverse/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/schema-utils/node_modules/json-schema-traverse/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/schema-utils/node_modules/json-schema-traverse/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ajv-keywords",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/schema-utils/node_modules/ajv-keywords/"
+  },
+  "next": {
+    "title": "section-matter [![NPM version](https://img.shields.io/npm/v/section-matter.svg?style=flat)](https://www.npmjs.com/package/section-matter) [![NPM monthly downloads](https://img.shields.io/npm/dm/section-matter.svg?style=flat)](https://npmjs.org/package/section-matter) [![NPM total downloads](https://img.shields.io/npm/dt/section-matter.svg?style=flat)](https://npmjs.org/package/section-matter) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/section-matter.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/section-matter)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/section-matter/"
+  }
+}

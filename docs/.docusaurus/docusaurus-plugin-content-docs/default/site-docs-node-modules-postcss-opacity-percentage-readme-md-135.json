@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-opacity-percentage/README",
+  "title": "PostCSS Opacity Percentage",
+  "description": "Test",
+  "source": "@site/docs/node_modules/postcss-opacity-percentage/README.md",
+  "sourceDirName": "node_modules/postcss-opacity-percentage",
+  "slug": "/node_modules/postcss-opacity-percentage/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-opacity-percentage/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-opacity-percentage/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "[postcss][postcss]-normalize-whitespace",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-normalize-whitespace/"
+  },
+  "next": {
+    "title": "MIT License",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-opacity-percentage/LICENSE"
+  }
+}

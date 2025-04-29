@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/deepmerge/readme",
+  "title": "deepmerge",
+  "description": "Merges the enumerable properties of two or more objects deeply.",
+  "source": "@site/docs/node_modules/deepmerge/readme.md",
+  "sourceDirName": "node_modules/deepmerge",
+  "slug": "/node_modules/deepmerge/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/deepmerge/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/deepmerge/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/deep-extend/CHANGELOG"
+  },
+  "next": {
+    "title": "[4.3.1](https://github.com/TehShrike/deepmerge/releases/tag/v4.3.1)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/deepmerge/changelog"
+  }
+}

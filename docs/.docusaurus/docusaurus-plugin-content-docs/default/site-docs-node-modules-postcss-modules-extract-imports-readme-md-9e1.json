@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-modules-extract-imports/README",
+  "title": "CSS Modules: Extract Imports",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/postcss-modules-extract-imports/README.md",
+  "sourceDirName": "node_modules/postcss-modules-extract-imports",
+  "slug": "/node_modules/postcss-modules-extract-imports/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-modules-extract-imports/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-modules-extract-imports/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "6.1.2",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-minify-selectors/node_modules/postcss-selector-parser/CHANGELOG"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-modules-local-by-default/"
+  }
+}

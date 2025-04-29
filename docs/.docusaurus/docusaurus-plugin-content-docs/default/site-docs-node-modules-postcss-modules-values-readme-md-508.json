@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-modules-values/README",
+  "title": "CSS Modules: Values",
+  "description": "Pass arbitrary values between your module files",
+  "source": "@site/docs/node_modules/postcss-modules-values/README.md",
+  "sourceDirName": "node_modules/postcss-modules-values",
+  "slug": "/node_modules/postcss-modules-values/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-modules-values/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-modules-values/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Change Log",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-modules-scope/CHANGELOG"
+  },
+  "next": {
+    "title": "Change Log",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-modules-values/CHANGELOG"
+  }
+}

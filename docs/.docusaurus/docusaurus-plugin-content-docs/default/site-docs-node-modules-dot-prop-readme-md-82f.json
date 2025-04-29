@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/dot-prop/readme",
+  "title": "dot-prop [![Build Status](https://travis-ci.com/sindresorhus/dot-prop.svg?branch=master)](https://travis-ci.com/github/sindresorhus/dot-prop)",
+  "description": "Get, set, or delete a property from a nested object using a dot path",
+  "source": "@site/docs/node_modules/dot-prop/readme.md",
+  "sourceDirName": "node_modules/dot-prop",
+  "slug": "/node_modules/dot-prop/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/dot-prop/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/dot-prop/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dot Case",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dot-case/"
+  },
+  "next": {
+    "title": "is-obj [![Build Status](https://travis-ci.org/sindresorhus/is-obj.svg?branch=master)](https://travis-ci.org/sindresorhus/is-obj)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dot-prop/node_modules/is-obj/"
+  }
+}

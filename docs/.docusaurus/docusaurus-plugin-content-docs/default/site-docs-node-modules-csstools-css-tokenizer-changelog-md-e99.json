@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/css-tokenizer/CHANGELOG",
+  "title": "Changes to CSS Tokenizer",
+  "description": "3.0.3",
+  "source": "@site/docs/node_modules/@csstools/css-tokenizer/CHANGELOG.md",
+  "sourceDirName": "node_modules/@csstools/css-tokenizer",
+  "slug": "/node_modules/@csstools/css-tokenizer/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-tokenizer/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/css-tokenizer/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CSS Tokenizer",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-tokenizer/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-tokenizer/LICENSE"
+  }
+}

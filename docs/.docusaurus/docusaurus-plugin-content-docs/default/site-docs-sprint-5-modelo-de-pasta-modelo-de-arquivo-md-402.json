@@ -1,0 +1,28 @@
+{
+  "id": "sprint-5/modelo_de_pasta/modelo_de_arquivo",
+  "title": "Título da Página",
+  "description": "",
+  "source": "@site/docs/sprint-5/modelo_de_pasta/modelo_de_arquivo.md",
+  "sourceDirName": "sprint-5/modelo_de_pasta",
+  "slug": "/sprint-5/modelo_de_pasta/modelo_de_arquivo",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-5/modelo_de_pasta/modelo_de_arquivo",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Modelo de Pasta",
+    "permalink": "/2025-1B-T12-EC06-G02/category/modelo-de-pasta-3"
+  },
+  "next": {
+    "title": "@algolia/autocomplete-core",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@algolia/autocomplete-core/"
+  }
+}

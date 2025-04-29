@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@docusaurus/theme-classic/README",
+  "title": "Docusaurus Theme Classic",
+  "description": "The classic theme for Docusaurus.",
+  "source": "@site/docs/node_modules/@docusaurus/theme-classic/README.md",
+  "sourceDirName": "node_modules/@docusaurus/theme-classic",
+  "slug": "/node_modules/@docusaurus/theme-classic/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/theme-classic/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@docusaurus/theme-classic/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@docusaurus/preset-classic",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/preset-classic/"
+  },
+  "next": {
+    "title": "@docusaurus/theme-common",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/theme-common/"
+  }
+}

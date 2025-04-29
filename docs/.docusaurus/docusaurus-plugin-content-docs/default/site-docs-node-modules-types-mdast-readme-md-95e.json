@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@types/mdast/README",
+  "title": "Installation",
+  "description": "npm install --save @types/mdast",
+  "source": "@site/docs/node_modules/@types/mdast/README.md",
+  "sourceDirName": "node_modules/@types/mdast",
+  "slug": "/node_modules/@types/mdast/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/mdast/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@types/mdast/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/json-schema/"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/mdx/"
+  }
+}

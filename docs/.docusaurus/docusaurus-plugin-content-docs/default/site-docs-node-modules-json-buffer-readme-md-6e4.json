@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/json-buffer/README",
+  "title": "json-buffer",
+  "description": "JSON functions that can convert buffers!",
+  "source": "@site/docs/node_modules/json-buffer/README.md",
+  "sourceDirName": "node_modules/json-buffer",
+  "slug": "/node_modules/json-buffer/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/json-buffer/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/json-buffer/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "jsesc",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/jsesc/"
+  },
+  "next": {
+    "title": "json-parse-even-better-errors",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/json-parse-even-better-errors/"
+  }
+}

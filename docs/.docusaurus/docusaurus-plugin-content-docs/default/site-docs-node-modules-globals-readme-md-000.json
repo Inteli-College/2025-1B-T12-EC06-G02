@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/globals/readme",
+  "title": "globals [![Build Status](https://travis-ci.org/sindresorhus/globals.svg?branch=master)](https://travis-ci.org/sindresorhus/globals)",
+  "description": "Global identifiers from different JavaScript environments",
+  "source": "@site/docs/node_modules/globals/readme.md",
+  "sourceDirName": "node_modules/globals",
+  "slug": "/node_modules/globals/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/globals/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/globals/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/global-prefix/node_modules/which/CHANGELOG"
+  },
+  "next": {
+    "title": "globby",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/globby/"
+  }
+}

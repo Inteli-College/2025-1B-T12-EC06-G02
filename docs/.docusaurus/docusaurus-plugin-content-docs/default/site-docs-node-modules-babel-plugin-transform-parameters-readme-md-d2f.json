@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-parameters/README",
+  "title": "@babel/plugin-transform-parameters",
+  "description": "Compile ES2015 default and rest parameters to ES5",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-parameters/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-parameters",
+  "slug": "/node_modules/@babel/plugin-transform-parameters/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-parameters/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-parameters/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-optional-chaining",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-optional-chaining/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-private-methods",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-private-methods/"
+  }
+}

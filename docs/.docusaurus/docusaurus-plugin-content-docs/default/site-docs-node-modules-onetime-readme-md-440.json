@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/onetime/readme",
+  "title": "onetime [![Build Status](https://travis-ci.com/sindresorhus/onetime.svg?branch=master)](https://travis-ci.com/github/sindresorhus/onetime)",
+  "description": "Ensure a function is only called once",
+  "source": "@site/docs/node_modules/onetime/readme.md",
+  "sourceDirName": "node_modules/onetime",
+  "slug": "/node_modules/onetime/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/onetime/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/onetime/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "once",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/once/"
+  },
+  "next": {
+    "title": "open",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/open/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/fs-monkey/docs/api/patchFs",
+  "title": "patchFs(vol[, fs])",
+  "description": "Rewrites Node's filesystem module fs with fs-like object.",
+  "source": "@site/docs/node_modules/fs-monkey/docs/api/patchFs.md",
+  "sourceDirName": "node_modules/fs-monkey/docs/api",
+  "slug": "/node_modules/fs-monkey/docs/api/patchFs",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-monkey/docs/api/patchFs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/fs-monkey/docs/api/patchFs.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "fs-monkey",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-monkey/"
+  },
+  "next": {
+    "title": "patchRequire(vol[, unixifyPaths[, Module]])",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-monkey/docs/api/patchRequire"
+  }
+}

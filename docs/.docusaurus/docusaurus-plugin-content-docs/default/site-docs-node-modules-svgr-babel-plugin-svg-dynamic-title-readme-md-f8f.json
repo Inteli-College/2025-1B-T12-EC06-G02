@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@svgr/babel-plugin-svg-dynamic-title/README",
+  "title": "@svgr/babel-plugin-svg-dynamic-title",
+  "description": "Install",
+  "source": "@site/docs/node_modules/@svgr/babel-plugin-svg-dynamic-title/README.md",
+  "sourceDirName": "node_modules/@svgr/babel-plugin-svg-dynamic-title",
+  "slug": "/node_modules/@svgr/babel-plugin-svg-dynamic-title/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/babel-plugin-svg-dynamic-title/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@svgr/babel-plugin-svg-dynamic-title/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@svgr/babel-plugin-replace-jsx-attribute-value",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/babel-plugin-replace-jsx-attribute-value/"
+  },
+  "next": {
+    "title": "@svgr/babel-plugin-svg-em-dimensions",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/babel-plugin-svg-em-dimensions/"
+  }
+}

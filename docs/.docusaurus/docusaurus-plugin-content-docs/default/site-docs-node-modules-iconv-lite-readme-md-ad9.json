@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/iconv-lite/README",
+  "title": "README",
+  "description": "Pure JS character encoding conversion Build Status",
+  "source": "@site/docs/node_modules/iconv-lite/README.md",
+  "sourceDirName": "node_modules/iconv-lite",
+  "slug": "/node_modules/iconv-lite/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/iconv-lite/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/iconv-lite/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.1.0",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/human-signals/CHANGELOG"
+  },
+  "next": {
+    "title": "0.4.24 / 2018-08-22",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/iconv-lite/Changelog"
+  }
+}

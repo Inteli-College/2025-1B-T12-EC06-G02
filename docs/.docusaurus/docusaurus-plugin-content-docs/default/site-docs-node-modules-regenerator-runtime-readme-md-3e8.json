@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/regenerator-runtime/README",
+  "title": "regenerator-runtime",
+  "description": "Standalone runtime for",
+  "source": "@site/docs/node_modules/regenerator-runtime/README.md",
+  "sourceDirName": "node_modules/regenerator-runtime",
+  "slug": "/node_modules/regenerator-runtime/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/regenerator-runtime/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/regenerator-runtime/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "regenerate-unicode-properties [![regenerate-unicode-properties on npm](https://img.shields.io/npm/v/regenerate-unicode-properties)](https://www.npmjs.com/package/regenerate-unicode-properties)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/regenerate-unicode-properties/"
+  },
+  "next": {
+    "title": "regenerator-transform",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/regenerator-transform/"
+  }
+}

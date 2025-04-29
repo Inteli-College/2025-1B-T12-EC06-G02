@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/acorn/README",
+  "title": "Acorn",
+  "description": "A tiny, fast JavaScript parser written in JavaScript.",
+  "source": "@site/docs/node_modules/acorn/README.md",
+  "sourceDirName": "node_modules/acorn",
+  "slug": "/node_modules/acorn/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/acorn/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "0.6.3 / 2022-01-22",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/accepts/node_modules/negotiator/HISTORY"
+  },
+  "next": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn/CHANGELOG"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/trough/readme",
+  "title": "trough",
+  "description": "Build",
+  "source": "@site/docs/node_modules/trough/readme.md",
+  "sourceDirName": "node_modules/trough",
+  "slug": "/node_modules/trough/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/trough/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/trough/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "trim-lines",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/trim-lines/"
+  },
+  "next": {
+    "title": "tslib",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/tslib/"
+  }
+}

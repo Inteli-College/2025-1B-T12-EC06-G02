@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-unique-selectors/node_modules/postcss-selector-parser/CHANGELOG",
+  "title": "6.1.2",
+  "description": "- Fixed: erroneous trailing combinators in pseudos",
+  "source": "@site/docs/node_modules/postcss-unique-selectors/node_modules/postcss-selector-parser/CHANGELOG.md",
+  "sourceDirName": "node_modules/postcss-unique-selectors/node_modules/postcss-selector-parser",
+  "slug": "/node_modules/postcss-unique-selectors/node_modules/postcss-selector-parser/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-unique-selectors/node_modules/postcss-selector-parser/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-unique-selectors/node_modules/postcss-selector-parser/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "API Documentation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-unique-selectors/node_modules/postcss-selector-parser/API"
+  },
+  "next": {
+    "title": "postcss-value-parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-value-parser/"
+  }
+}

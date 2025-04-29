@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-color-hex-alpha/CHANGELOG",
+  "title": "Changes to PostCSS Color Hex Alpha",
+  "description": "10.0.0",
+  "source": "@site/docs/node_modules/postcss-color-hex-alpha/CHANGELOG.md",
+  "sourceDirName": "node_modules/postcss-color-hex-alpha",
+  "slug": "/node_modules/postcss-color-hex-alpha/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-color-hex-alpha/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-color-hex-alpha/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Color Hex Alpha [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-color-hex-alpha/"
+  },
+  "next": {
+    "title": "The MIT License (MIT)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-color-hex-alpha/LICENSE"
+  }
+}

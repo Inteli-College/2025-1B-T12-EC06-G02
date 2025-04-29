@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/lilconfig/readme",
+  "title": "Lilconfig ⚙️",
+  "description": "npm version",
+  "source": "@site/docs/node_modules/lilconfig/readme.md",
+  "sourceDirName": "node_modules/lilconfig",
+  "slug": "/node_modules/lilconfig/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/lilconfig/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/lilconfig/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "leven [![Build Status](https://travis-ci.org/sindresorhus/leven.svg?branch=master)](https://travis-ci.org/sindresorhus/leven)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/leven/"
+  },
+  "next": {
+    "title": "lines-and-columns",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/lines-and-columns/"
+  }
+}

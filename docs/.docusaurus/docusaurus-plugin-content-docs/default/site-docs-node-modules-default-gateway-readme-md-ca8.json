@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/default-gateway/README",
+  "title": "default-gateway",
+  "description": "Obtains the machine's default gateway through exec calls to OS routing interfaces.",
+  "source": "@site/docs/node_modules/default-gateway/README.md",
+  "sourceDirName": "node_modules/default-gateway",
+  "slug": "/node_modules/default-gateway/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/default-gateway/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/default-gateway/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "[4.3.1](https://github.com/TehShrike/deepmerge/releases/tag/v4.3.1)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/deepmerge/changelog"
+  },
+  "next": {
+    "title": "defer-to-connect",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/defer-to-connect/"
+  }
+}

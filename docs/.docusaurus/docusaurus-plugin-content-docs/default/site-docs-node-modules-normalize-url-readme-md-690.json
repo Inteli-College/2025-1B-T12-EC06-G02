@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/normalize-url/readme",
+  "title": "normalize-url [![Coverage Status](https://codecov.io/gh/sindresorhus/normalize-url/branch/main/graph/badge.svg)](https://codecov.io/gh/sindresorhus/normalize-url)",
+  "description": "Normalize a URL",
+  "source": "@site/docs/node_modules/normalize-url/readme.md",
+  "sourceDirName": "node_modules/normalize-url",
+  "slug": "/node_modules/normalize-url/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/normalize-url/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/normalize-url/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "normalize-range",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/normalize-range/"
+  },
+  "next": {
+    "title": "npm-run-path [![Build Status](https://travis-ci.org/sindresorhus/npm-run-path.svg?branch=master)](https://travis-ci.org/sindresorhus/npm-run-path)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/npm-run-path/"
+  }
+}

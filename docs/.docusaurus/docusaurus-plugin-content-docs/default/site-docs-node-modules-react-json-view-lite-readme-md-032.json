@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/react-json-view-lite/README",
+  "title": "README",
+  "description": "react-json-view-lite is a tiny component for React allowing to render JSON as a tree. It focused on the balance between performance for large JSON inputs and functionality. It might not have all the rich features (suce as customization, copy, json editinng) but still provides more than just rendering json with highlighting - e.g. ability to collapse/expand nested objects and override css. It is written in TypeScript and has no dependencies.",
+  "source": "@site/docs/node_modules/react-json-view-lite/README.md",
+  "sourceDirName": "node_modules/react-json-view-lite",
+  "slug": "/node_modules/react-json-view-lite/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-json-view-lite/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/react-json-view-lite/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "react-is",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-is/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-loadable/"
+  }
+}

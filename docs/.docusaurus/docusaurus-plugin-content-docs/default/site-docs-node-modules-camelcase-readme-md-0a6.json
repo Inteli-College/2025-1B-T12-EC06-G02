@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/camelcase/readme",
+  "title": "camelcase",
+  "description": "Convert a dash/dot/underscore/space separated string to camelCase or PascalCase: foo-bar → fooBar",
+  "source": "@site/docs/node_modules/camelcase/readme.md",
+  "sourceDirName": "node_modules/camelcase",
+  "slug": "/node_modules/camelcase/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/camelcase/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/camelcase/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Camel Case",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/camel-case/"
+  },
+  "next": {
+    "title": "caniuse-api [![Build Status](https://travis-ci.org/Nyalab/caniuse-api.svg?branch=master)](https://travis-ci.org/Nyalab/caniuse-api) [![Build status](https://ci.appveyor.com/api/projects/status/6j3na522bv3bxfa5/branch/master?svg=true)](https://ci.appveyor.com/project/MoOx/caniuse-api/branch/master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/caniuse-api/"
+  }
+}

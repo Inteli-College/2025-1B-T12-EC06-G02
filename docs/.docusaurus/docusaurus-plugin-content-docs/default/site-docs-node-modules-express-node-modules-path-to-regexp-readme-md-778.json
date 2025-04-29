@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/express/node_modules/path-to-regexp/Readme",
+  "title": "Path-to-RegExp",
+  "description": "Turn an Express-style path string such as /user/:name into a regular expression.",
+  "source": "@site/docs/node_modules/express/node_modules/path-to-regexp/Readme.md",
+  "sourceDirName": "node_modules/express/node_modules/path-to-regexp",
+  "slug": "/node_modules/express/node_modules/path-to-regexp/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/node_modules/path-to-regexp/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/express/node_modules/path-to-regexp/Readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "0.5.4 / 2021-12-10",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/node_modules/content-disposition/HISTORY"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/extend/"
+  }
+}

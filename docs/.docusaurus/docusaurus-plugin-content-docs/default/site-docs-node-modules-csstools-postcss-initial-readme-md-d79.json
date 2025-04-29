@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-initial/README",
+  "title": "PostCSS Initial [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install @csstools/postcss-initial --save-dev",
+  "source": "@site/docs/node_modules/@csstools/postcss-initial/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-initial",
+  "slug": "/node_modules/@csstools/postcss-initial/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-initial/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-initial/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-ic-unit/LICENSE"
+  },
+  "next": {
+    "title": "Changes to PostCSS Initial",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-initial/CHANGELOG"
+  }
+}

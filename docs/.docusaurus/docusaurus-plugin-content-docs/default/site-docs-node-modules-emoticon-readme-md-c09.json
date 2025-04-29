@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/emoticon/readme",
+  "title": "emoticon",
+  "description": "Build",
+  "source": "@site/docs/node_modules/emoticon/readme.md",
+  "sourceDirName": "node_modules/emoticon",
+  "slug": "/node_modules/emoticon/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/emoticon/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/emoticon/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/emojis-list/LICENSE"
+  },
+  "next": {
+    "title": "Encode URL",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/encodeurl/"
+  }
+}

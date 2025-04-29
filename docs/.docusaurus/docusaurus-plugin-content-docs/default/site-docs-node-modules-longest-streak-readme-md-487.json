@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/longest-streak/readme",
+  "title": "longest-streak",
+  "description": "Build",
+  "source": "@site/docs/node_modules/longest-streak/readme.md",
+  "sourceDirName": "node_modules/longest-streak",
+  "slug": "/node_modules/longest-streak/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/longest-streak/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/longest-streak/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "lodash.uniq v4.5.0",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/lodash.uniq/"
+  },
+  "next": {
+    "title": "loose-envify",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/loose-envify/"
+  }
+}

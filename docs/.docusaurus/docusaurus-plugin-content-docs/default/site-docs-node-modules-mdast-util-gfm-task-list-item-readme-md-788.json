@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mdast-util-gfm-task-list-item/readme",
+  "title": "mdast-util-gfm-task-list-item",
+  "description": "Build",
+  "source": "@site/docs/node_modules/mdast-util-gfm-task-list-item/readme.md",
+  "sourceDirName": "node_modules/mdast-util-gfm-task-list-item",
+  "slug": "/node_modules/mdast-util-gfm-task-list-item/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-gfm-task-list-item/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mdast-util-gfm-task-list-item/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "markdown-table",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-gfm-table/node_modules/markdown-table/"
+  },
+  "next": {
+    "title": "mdast-util-mdx",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-mdx/"
+  }
+}

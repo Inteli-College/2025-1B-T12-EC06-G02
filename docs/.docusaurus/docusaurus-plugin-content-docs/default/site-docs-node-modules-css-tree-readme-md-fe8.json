@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/css-tree/README",
+  "title": "README",
+  "description": "<img align=\"right\" width=\"111\" height=\"111\"",
+  "source": "@site/docs/node_modules/css-tree/README.md",
+  "sourceDirName": "node_modules/css-tree",
+  "slug": "/node_modules/css-tree/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-tree/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/css-tree/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "css-select [![NPM version](http://img.shields.io/npm/v/css-select.svg)](https://npmjs.org/package/css-select) [![Build Status](https://travis-ci.com/fb55/css-select.svg?branch=master)](http://travis-ci.com/fb55/css-select) [![Downloads](https://img.shields.io/npm/dm/css-select.svg)](https://npmjs.org/package/css-select) [![Coverage](https://coveralls.io/repos/fb55/css-select/badge.svg?branch=master)](https://coveralls.io/r/fb55/css-select)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-select/"
+  },
+  "next": {
+    "title": "css-what",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-what/"
+  }
+}

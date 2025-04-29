@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-oklab-function/README",
+  "title": "PostCSS OKLab Function [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "[PostCSS OKLab Function] lets you use oklab and oklch color functions in",
+  "source": "@site/docs/node_modules/@csstools/postcss-oklab-function/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-oklab-function",
+  "slug": "/node_modules/@csstools/postcss-oklab-function/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-oklab-function/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-oklab-function/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-normalize-display-values/LICENSE"
+  },
+  "next": {
+    "title": "Changes to PostCSS OKLab Function",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-oklab-function/CHANGELOG"
+  }
+}

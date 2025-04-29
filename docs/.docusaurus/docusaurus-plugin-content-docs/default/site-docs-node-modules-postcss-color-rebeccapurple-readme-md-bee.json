@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-color-rebeccapurple/README",
+  "title": "PostCSS RebeccaPurple [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install postcss-color-rebeccapurple --save-dev",
+  "source": "@site/docs/node_modules/postcss-color-rebeccapurple/README.md",
+  "sourceDirName": "node_modules/postcss-color-rebeccapurple",
+  "slug": "/node_modules/postcss-color-rebeccapurple/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-color-rebeccapurple/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-color-rebeccapurple/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The MIT License (MIT)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-color-hex-alpha/LICENSE"
+  },
+  "next": {
+    "title": "Changes to PostCSS RebeccaPurple",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-color-rebeccapurple/CHANGELOG"
+  }
+}

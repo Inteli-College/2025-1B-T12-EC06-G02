@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/gray-matter/CHANGELOG",
+  "title": "Release history",
+  "description": "4.0.0 - 2018-04-01",
+  "source": "@site/docs/node_modules/gray-matter/CHANGELOG.md",
+  "sourceDirName": "node_modules/gray-matter",
+  "slug": "/node_modules/gray-matter/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/gray-matter/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/gray-matter/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "gray-matter [![NPM version](https://img.shields.io/npm/v/gray-matter.svg?style=flat)](https://www.npmjs.com/package/gray-matter) [![NPM monthly downloads](https://img.shields.io/npm/dm/gray-matter.svg?style=flat)](https://npmjs.org/package/gray-matter) [![NPM total downloads](https://img.shields.io/npm/dt/gray-matter.svg?style=flat)](https://npmjs.org/package/gray-matter) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/gray-matter.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/gray-matter)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/gray-matter/"
+  },
+  "next": {
+    "title": "argparse",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/gray-matter/node_modules/argparse/"
+  }
+}

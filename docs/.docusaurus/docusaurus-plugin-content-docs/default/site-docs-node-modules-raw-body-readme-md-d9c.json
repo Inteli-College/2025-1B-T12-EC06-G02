@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/raw-body/README",
+  "title": "raw-body",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/raw-body/README.md",
+  "sourceDirName": "node_modules/raw-body",
+  "slug": "/node_modules/raw-body/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/raw-body/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/raw-body/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.2.1 / 2019-05-10",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/range-parser/HISTORY"
+  },
+  "next": {
+    "title": "2.5.2 / 2023-02-21",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/raw-body/HISTORY"
+  }
+}

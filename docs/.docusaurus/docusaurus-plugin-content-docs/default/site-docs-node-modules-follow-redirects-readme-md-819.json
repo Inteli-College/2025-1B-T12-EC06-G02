@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/follow-redirects/README",
+  "title": "README",
+  "description": "Follow Redirects",
+  "source": "@site/docs/node_modules/follow-redirects/README.md",
+  "sourceDirName": "node_modules/follow-redirects",
+  "slug": "/node_modules/follow-redirects/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/follow-redirects/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/follow-redirects/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "flat [![Build Status](https://secure.travis-ci.org/hughsk/flat.png?branch=master)](http://travis-ci.org/hughsk/flat)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/flat/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fork-ts-checker-webpack-plugin/"
+  }
+}

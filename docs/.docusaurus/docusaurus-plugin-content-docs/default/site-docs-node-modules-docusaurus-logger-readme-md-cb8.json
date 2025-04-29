@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@docusaurus/logger/README",
+  "title": "@docusaurus/logger",
+  "description": "An encapsulated logger for semantically formatting console messages.",
+  "source": "@site/docs/node_modules/@docusaurus/logger/README.md",
+  "sourceDirName": "node_modules/@docusaurus/logger",
+  "slug": "/node_modules/@docusaurus/logger/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/logger/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@docusaurus/logger/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@docusaurus/cssnano-preset",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/cssnano-preset/"
+  },
+  "next": {
+    "title": "@docusaurus/mdx-loader",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/mdx-loader/"
+  }
+}

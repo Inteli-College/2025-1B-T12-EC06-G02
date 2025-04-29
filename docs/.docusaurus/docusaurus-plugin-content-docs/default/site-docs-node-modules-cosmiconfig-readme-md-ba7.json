@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cosmiconfig/README",
+  "title": "cosmiconfig",
+  "description": "codecov",
+  "source": "@site/docs/node_modules/cosmiconfig/README.md",
+  "sourceDirName": "node_modules/cosmiconfig",
+  "slug": "/node_modules/cosmiconfig/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cosmiconfig/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cosmiconfig/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "core-util-is",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/core-util-is/"
+  },
+  "next": {
+    "title": "cross-spawn",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cross-spawn/"
+  }
+}

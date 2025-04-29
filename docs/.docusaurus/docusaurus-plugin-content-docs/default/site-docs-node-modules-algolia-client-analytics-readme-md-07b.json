@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@algolia/client-analytics/README",
+  "title": "README",
+  "description": "The perfect starting point to integrate Algolia within your JavaScript project",
+  "source": "@site/docs/node_modules/@algolia/client-analytics/README.md",
+  "sourceDirName": "node_modules/@algolia/client-analytics",
+  "slug": "/node_modules/@algolia/client-analytics/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@algolia/client-analytics/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@algolia/client-analytics/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@algolia/client-abtesting/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@algolia/client-insights/"
+  }
+}

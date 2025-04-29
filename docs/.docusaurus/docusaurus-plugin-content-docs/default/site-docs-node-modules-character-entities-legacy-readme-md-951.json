@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/character-entities-legacy/readme",
+  "title": "character-entities-legacy",
+  "description": "Build",
+  "source": "@site/docs/node_modules/character-entities-legacy/readme.md",
+  "sourceDirName": "node_modules/character-entities-legacy",
+  "slug": "/node_modules/character-entities-legacy/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/character-entities-legacy/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/character-entities-legacy/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "character-entities-html4",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/character-entities-html4/"
+  },
+  "next": {
+    "title": "character-reference-invalid",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/character-reference-invalid/"
+  }
+}

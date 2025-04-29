@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/README",
+  "title": "@babel/plugin-bugfix-safari-class-field-initializer-scope",
+  "description": "Wrap class field initializers with IIFE to workaround https://webkit.org/b/236843",
+  "source": "@site/docs/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope",
+  "slug": "/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-bugfix-firefox-class-in-computed-class-key",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-bugfix-firefox-class-in-computed-class-key/"
+  },
+  "next": {
+    "title": "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/"
+  }
+}

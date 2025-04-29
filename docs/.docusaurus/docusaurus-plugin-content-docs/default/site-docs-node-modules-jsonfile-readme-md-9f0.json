@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/jsonfile/README",
+  "title": "Node.js - jsonfile",
+  "description": "Easily read/write JSON files in Node.js. Note: this module cannot be used in the browser.",
+  "source": "@site/docs/node_modules/jsonfile/README.md",
+  "sourceDirName": "node_modules/jsonfile",
+  "slug": "/node_modules/jsonfile/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/jsonfile/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/jsonfile/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/json5/LICENSE"
+  },
+  "next": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/jsonfile/CHANGELOG"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/global-prefix/node_modules/which/CHANGELOG",
+  "title": "Changes",
+  "description": "1.3.1",
+  "source": "@site/docs/node_modules/global-prefix/node_modules/which/CHANGELOG.md",
+  "sourceDirName": "node_modules/global-prefix/node_modules/which",
+  "slug": "/node_modules/global-prefix/node_modules/which/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/global-prefix/node_modules/which/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/global-prefix/node_modules/which/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "which",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/global-prefix/node_modules/which/"
+  },
+  "next": {
+    "title": "globals [![Build Status](https://travis-ci.org/sindresorhus/globals.svg?branch=master)](https://travis-ci.org/sindresorhus/globals)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/globals/"
+  }
+}

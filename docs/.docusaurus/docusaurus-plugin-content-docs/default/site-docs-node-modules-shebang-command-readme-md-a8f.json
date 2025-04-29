@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/shebang-command/readme",
+  "title": "shebang-command [![Build Status](https://travis-ci.org/kevva/shebang-command.svg?branch=master)](https://travis-ci.org/kevva/shebang-command)",
+  "description": "Get the command from a shebang",
+  "source": "@site/docs/node_modules/shebang-command/readme.md",
+  "sourceDirName": "node_modules/shebang-command",
+  "slug": "/node_modules/shebang-command/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/shebang-command/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/shebang-command/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "shallowequal [![Build Status](https://travis-ci.org/dashed/shallowequal.svg)](https://travis-ci.org/dashed/shallowequal) [![Downloads](https://img.shields.io/npm/dm/shallowequal.svg)](https://npmjs.com/shallowequal) [![npm version](https://img.shields.io/npm/v/shallowequal.svg?style=flat)](https://www.npmjs.com/package/shallowequal)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/shallowequal/"
+  },
+  "next": {
+    "title": "shebang-regex [![Build Status](https://travis-ci.org/sindresorhus/shebang-regex.svg?branch=master)](https://travis-ci.org/sindresorhus/shebang-regex)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/shebang-regex/"
+  }
+}

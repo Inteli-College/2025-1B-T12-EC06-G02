@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/utils-merge/README",
+  "title": "utils-merge",
+  "description": "Version",
+  "source": "@site/docs/node_modules/utils-merge/README.md",
+  "sourceDirName": "node_modules/utils-merge",
+  "slug": "/node_modules/utils-merge/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/utils-merge/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/utils-merge/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Support",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/utility-types/SUPPORT"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/uuid/"
+  }
+}

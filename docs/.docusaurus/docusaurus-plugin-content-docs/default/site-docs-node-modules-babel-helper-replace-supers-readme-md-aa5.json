@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helper-replace-supers/README",
+  "title": "@babel/helper-replace-supers",
+  "description": "Helper function to replace supers",
+  "source": "@site/docs/node_modules/@babel/helper-replace-supers/README.md",
+  "sourceDirName": "node_modules/@babel/helper-replace-supers",
+  "slug": "/node_modules/@babel/helper-replace-supers/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-replace-supers/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helper-replace-supers/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/helper-remap-async-to-generator",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-remap-async-to-generator/"
+  },
+  "next": {
+    "title": "@babel/helper-skip-transparent-expression-wrappers",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-skip-transparent-expression-wrappers/"
+  }
+}

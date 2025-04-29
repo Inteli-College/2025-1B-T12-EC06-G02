@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/css-prefers-color-scheme/README",
+  "title": "Prefers Color Scheme [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install css-prefers-color-scheme --save-dev",
+  "source": "@site/docs/node_modules/css-prefers-color-scheme/README.md",
+  "sourceDirName": "node_modules/css-prefers-color-scheme",
+  "slug": "/node_modules/css-prefers-color-scheme/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-prefers-color-scheme/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/css-prefers-color-scheme/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "jest-worker",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-minimizer-webpack-plugin/node_modules/jest-worker/"
+  },
+  "next": {
+    "title": "Changes to Prefers Color Scheme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-prefers-color-scheme/CHANGELOG"
+  }
+}

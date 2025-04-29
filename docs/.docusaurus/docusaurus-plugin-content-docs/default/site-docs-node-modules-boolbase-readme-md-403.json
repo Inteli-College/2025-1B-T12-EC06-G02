@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/boolbase/README",
+  "title": "README",
+  "description": "This very simple module provides two basic functions, one that always returns true (trueFunc) and one that always returns false (falseFunc).",
+  "source": "@site/docs/node_modules/boolbase/README.md",
+  "sourceDirName": "node_modules/boolbase",
+  "slug": "/node_modules/boolbase/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/boolbase/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/boolbase/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "bonjour-service",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/bonjour-service/"
+  },
+  "next": {
+    "title": "boxen",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/boxen/"
+  }
+}

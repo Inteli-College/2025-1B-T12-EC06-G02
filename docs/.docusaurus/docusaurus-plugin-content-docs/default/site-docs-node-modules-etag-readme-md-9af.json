@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/etag/README",
+  "title": "etag",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/etag/README.md",
+  "sourceDirName": "node_modules/etag",
+  "slug": "/node_modules/etag/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/etag/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/etag/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/eta/"
+  },
+  "next": {
+    "title": "1.8.1 / 2017-09-12",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/etag/HISTORY"
+  }
+}

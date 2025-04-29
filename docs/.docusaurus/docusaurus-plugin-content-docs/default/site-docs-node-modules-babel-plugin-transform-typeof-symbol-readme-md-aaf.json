@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-typeof-symbol/README",
+  "title": "@babel/plugin-transform-typeof-symbol",
+  "description": "This transformer wraps all typeof expressions with a method that replicates native behaviour. (ie. returning “symbol” for symbols)",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-typeof-symbol/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-typeof-symbol",
+  "slug": "/node_modules/@babel/plugin-transform-typeof-symbol/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-typeof-symbol/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-typeof-symbol/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-template-literals",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-template-literals/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-typescript",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-typescript/"
+  }
+}

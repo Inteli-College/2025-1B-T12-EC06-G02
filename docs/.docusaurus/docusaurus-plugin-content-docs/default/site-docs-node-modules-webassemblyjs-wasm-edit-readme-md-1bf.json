@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@webassemblyjs/wasm-edit/README",
+  "title": "@webassemblyjs/wasm-edit",
+  "description": "Rewrite a WASM binary",
+  "source": "@site/docs/node_modules/@webassemblyjs/wasm-edit/README.md",
+  "sourceDirName": "node_modules/@webassemblyjs/wasm-edit",
+  "slug": "/node_modules/@webassemblyjs/wasm-edit/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@webassemblyjs/wasm-edit/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@webassemblyjs/wasm-edit/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Parser function for floating point hexadecimals",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@webassemblyjs/floating-point-hex-parser/"
+  },
+  "next": {
+    "title": "@webassemblyjs/wasm-parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@webassemblyjs/wasm-parser/"
+  }
+}

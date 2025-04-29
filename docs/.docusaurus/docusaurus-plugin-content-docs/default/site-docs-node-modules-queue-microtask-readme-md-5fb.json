@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/queue-microtask/README",
+  "title": "queue-microtask [![ci][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]",
+  "description": "[ci-image]//img.shields.io/github/workflow/status/feross/queue-microtask/ci/master",
+  "source": "@site/docs/node_modules/queue-microtask/README.md",
+  "sourceDirName": "node_modules/queue-microtask",
+  "slug": "/node_modules/queue-microtask/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/queue-microtask/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/queue-microtask/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/queue/"
+  },
+  "next": {
+    "title": "quick-lru [![Build Status](https://travis-ci.org/sindresorhus/quick-lru.svg?branch=master)](https://travis-ci.org/sindresorhus/quick-lru) [![Coverage Status](https://coveralls.io/repos/github/sindresorhus/quick-lru/badge.svg?branch=master)](https://coveralls.io/github/sindresorhus/quick-lru?branch=master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/quick-lru/"
+  }
+}

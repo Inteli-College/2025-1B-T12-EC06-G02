@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mdast-util-directive/readme",
+  "title": "mdast-util-directive",
+  "description": "Build",
+  "source": "@site/docs/node_modules/mdast-util-directive/readme.md",
+  "sourceDirName": "node_modules/mdast-util-directive",
+  "slug": "/node_modules/mdast-util-directive/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-directive/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mdast-util-directive/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/math-intrinsics/CHANGELOG"
+  },
+  "next": {
+    "title": "mdast-util-find-and-replace",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-find-and-replace/"
+  }
+}

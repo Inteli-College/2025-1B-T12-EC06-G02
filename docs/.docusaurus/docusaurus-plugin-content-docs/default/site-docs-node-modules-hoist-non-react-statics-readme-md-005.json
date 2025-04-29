@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/hoist-non-react-statics/README",
+  "title": "hoist-non-react-statics",
+  "description": "NPM version",
+  "source": "@site/docs/node_modules/hoist-non-react-statics/README.md",
+  "sourceDirName": "node_modules/hoist-non-react-statics",
+  "slug": "/node_modules/hoist-non-react-statics/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/hoist-non-react-statics/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/hoist-non-react-statics/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "history &middot; [![npm package][npm-badge]][npm] [![Travis][build-badge]][build]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/history/"
+  },
+  "next": {
+    "title": "3.3.2 (January 22, 2020)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hoist-non-react-statics/CHANGELOG"
+  }
+}

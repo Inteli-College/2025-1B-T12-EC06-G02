@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helper-define-polyfill-provider/node_modules/debug/README",
+  "title": "debug",
+  "description": "OpenCollective",
+  "source": "@site/docs/node_modules/@babel/helper-define-polyfill-provider/node_modules/debug/README.md",
+  "sourceDirName": "node_modules/@babel/helper-define-polyfill-provider/node_modules/debug",
+  "slug": "/node_modules/@babel/helper-define-polyfill-provider/node_modules/debug/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-define-polyfill-provider/node_modules/debug/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helper-define-polyfill-provider/node_modules/debug/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/helper-define-polyfill-provider",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-define-polyfill-provider/"
+  },
+  "next": {
+    "title": "@babel/helper-member-expression-to-functions",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-member-expression-to-functions/"
+  }
+}

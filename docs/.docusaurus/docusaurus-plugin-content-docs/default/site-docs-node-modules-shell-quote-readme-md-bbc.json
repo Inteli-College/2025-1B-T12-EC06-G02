@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/shell-quote/README",
+  "title": "shell-quote <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+  "description": "github actions",
+  "source": "@site/docs/node_modules/shell-quote/README.md",
+  "sourceDirName": "node_modules/shell-quote",
+  "slug": "/node_modules/shell-quote/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/shell-quote/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/shell-quote/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "shebang-regex [![Build Status](https://travis-ci.org/sindresorhus/shebang-regex.svg?branch=master)](https://travis-ci.org/sindresorhus/shebang-regex)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/shebang-regex/"
+  },
+  "next": {
+    "title": "Security Policy",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/shell-quote/security"
+  }
+}

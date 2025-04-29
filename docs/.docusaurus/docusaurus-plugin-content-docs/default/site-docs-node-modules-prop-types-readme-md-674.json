@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/prop-types/README",
+  "title": "prop-types [![Build Status](https://travis-ci.com/facebook/prop-types.svg?branch=main)](https://travis-ci.org/facebook/prop-types)",
+  "description": "Runtime type checking for React props and similar objects.",
+  "source": "@site/docs/node_modules/prop-types/README.md",
+  "sourceDirName": "node_modules/prop-types",
+  "slug": "/node_modules/prop-types/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/prop-types/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/prop-types/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/prompts/"
+  },
+  "next": {
+    "title": "property-information",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/property-information/"
+  }
+}

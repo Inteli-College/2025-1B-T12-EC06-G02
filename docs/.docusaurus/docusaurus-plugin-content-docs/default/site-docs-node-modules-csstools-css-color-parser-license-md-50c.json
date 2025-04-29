@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/css-color-parser/LICENSE",
+  "title": "LICENSE",
+  "description": "The MIT License (MIT)",
+  "source": "@site/docs/node_modules/@csstools/css-color-parser/LICENSE.md",
+  "sourceDirName": "node_modules/@csstools/css-color-parser",
+  "slug": "/node_modules/@csstools/css-color-parser/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-color-parser/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/css-color-parser/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to CSS Color Parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-color-parser/CHANGELOG"
+  },
+  "next": {
+    "title": "CSS Parser Algorithms",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-parser-algorithms/"
+  }
+}

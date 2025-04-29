@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/html-tags/readme",
+  "title": "html-tags",
+  "description": "List of standard HTML tags",
+  "source": "@site/docs/node_modules/html-tags/readme.md",
+  "sourceDirName": "node_modules/html-tags",
+  "slug": "/node_modules/html-tags/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-tags/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/html-tags/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Commander.js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-minifier-terser/node_modules/commander/"
+  },
+  "next": {
+    "title": "html-void-elements",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-void-elements/"
+  }
+}

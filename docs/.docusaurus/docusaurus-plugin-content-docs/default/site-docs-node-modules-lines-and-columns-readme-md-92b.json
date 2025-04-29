@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/lines-and-columns/README",
+  "title": "lines-and-columns",
+  "description": "Maps lines and columns to character offsets and back. This is useful for parsers",
+  "source": "@site/docs/node_modules/lines-and-columns/README.md",
+  "sourceDirName": "node_modules/lines-and-columns",
+  "slug": "/node_modules/lines-and-columns/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/lines-and-columns/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/lines-and-columns/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lilconfig ⚙️",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/lilconfig/"
+  },
+  "next": {
+    "title": "loader-runner",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/loader-runner/"
+  }
+}

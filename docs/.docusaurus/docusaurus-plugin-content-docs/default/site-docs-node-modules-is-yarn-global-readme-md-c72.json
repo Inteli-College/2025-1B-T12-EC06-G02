@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-yarn-global/README",
+  "title": "is-yarn-global",
+  "description": "Check if installed by yarn globally without any fs calls",
+  "source": "@site/docs/node_modules/is-yarn-global/README.md",
+  "sourceDirName": "node_modules/is-yarn-global",
+  "slug": "/node_modules/is-yarn-global/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-yarn-global/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-yarn-global/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-wsl [![Build Status](https://travis-ci.org/sindresorhus/is-wsl.svg?branch=master)](https://travis-ci.org/sindresorhus/is-wsl)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-wsl/"
+  },
+  "next": {
+    "title": "isarray",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/isarray/"
+  }
+}

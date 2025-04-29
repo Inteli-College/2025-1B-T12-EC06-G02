@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/utility-types/CHANGELOG",
+  "title": "CHANGELOG",
+  "description": "All changelogs can be found in Releases",
+  "source": "@site/docs/node_modules/utility-types/CHANGELOG.md",
+  "sourceDirName": "node_modules/utility-types",
+  "slug": "/node_modules/utility-types/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/utility-types/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/utility-types/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/utility-types/"
+  },
+  "next": {
+    "title": "Security Policy",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/utility-types/SECURITY"
+  }
+}

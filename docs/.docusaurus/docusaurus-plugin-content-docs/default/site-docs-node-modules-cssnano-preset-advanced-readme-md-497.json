@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cssnano-preset-advanced/README",
+  "title": "cssnano-preset-advanced",
+  "description": "Advanced optimisations for cssnano; may or may not break your CSS!",
+  "source": "@site/docs/node_modules/cssnano-preset-advanced/README.md",
+  "sourceDirName": "node_modules/cssnano-preset-advanced",
+  "slug": "/node_modules/cssnano-preset-advanced/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssnano-preset-advanced/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cssnano-preset-advanced/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cssnano",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssnano/"
+  },
+  "next": {
+    "title": "cssnano-preset-default",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssnano-preset-default/"
+  }
+}

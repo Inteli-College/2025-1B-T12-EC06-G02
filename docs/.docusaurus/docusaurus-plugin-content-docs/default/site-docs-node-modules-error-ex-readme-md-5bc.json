@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/error-ex/README",
+  "title": "node-error-ex [![Travis-CI.org Build Status](https://img.shields.io/travis/Qix-/node-error-ex.svg?style=flat-square)](https://travis-ci.org/Qix-/node-error-ex) [![Coveralls.io Coverage Rating](https://img.shields.io/coveralls/Qix-/node-error-ex.svg?style=flat-square)](https://coveralls.io/r/Qix-/node-error-ex)",
+  "description": "Easily subclass and customize new Error types",
+  "source": "@site/docs/node_modules/error-ex/README.md",
+  "sourceDirName": "node_modules/error-ex",
+  "slug": "/node_modules/error-ex/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/error-ex/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/error-ex/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "entities [![NPM version](https://img.shields.io/npm/v/entities.svg)](https://npmjs.org/package/entities) [![Downloads](https://img.shields.io/npm/dm/entities.svg)](https://npmjs.org/package/entities) [![Node.js CI](https://github.com/fb55/entities/actions/workflows/nodejs-test.yml/badge.svg)](https://github.com/fb55/entities/actions/workflows/nodejs-test.yml)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/entities/"
+  },
+  "next": {
+    "title": "es-define-property <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/es-define-property/"
+  }
+}

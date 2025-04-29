@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/analise-de-negocios/Canva_proposta_de_Valor",
+  "title": "Canva Proposta de Valor",
+  "description": "Detalha a proposta de valor do projeto, identificando as dores dos clientes que são solucionadas, os ganhos oferecidos e como os produtos/serviços se diferenciam no mercado.",
+  "source": "@site/docs/sprint-1/analise-de-negocios/Canva_proposta_de_Valor.md",
+  "sourceDirName": "sprint-1/analise-de-negocios",
+  "slug": "/sprint-1/analise-de-negocios/Canva_proposta_de_Valor",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/Canva_proposta_de_Valor",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Matriz de Risco",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/Matriz_de_Risco"
+  },
+  "next": {
+    "title": "Análise PESTEL",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise_pestel"
+  }
+}

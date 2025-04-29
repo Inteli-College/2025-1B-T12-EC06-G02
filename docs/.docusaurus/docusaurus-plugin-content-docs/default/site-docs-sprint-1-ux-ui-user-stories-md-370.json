@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/ux-ui/User_Stories",
+  "title": "User Stories",
+  "description": "Documenta pelo menos quatro histórias de usuário no formato \"Como (persona), quero (necessidade) para (objetivo)\", com contextualização do problema, justificativa da importância e referência direta às personas.",
+  "source": "@site/docs/sprint-1/ux-ui/User_Stories.md",
+  "sourceDirName": "sprint-1/ux-ui",
+  "slug": "/sprint-1/ux-ui/User_Stories",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/ux-ui/User_Stories",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Personas",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/ux-ui/Personas"
+  },
+  "next": {
+    "title": "Arquitetura da Informação",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/ux-ui/Arquitetura_Informacao"
+  }
+}

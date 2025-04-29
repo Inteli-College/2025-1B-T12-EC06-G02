@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-runtime/README",
+  "title": "@babel/plugin-transform-runtime",
+  "description": "Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-runtime/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-runtime",
+  "slug": "/node_modules/@babel/plugin-transform-runtime/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-runtime/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-runtime/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-reserved-words",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-reserved-words/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-shorthand-properties",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-shorthand-properties/"
+  }
+}

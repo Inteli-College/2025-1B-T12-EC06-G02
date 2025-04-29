@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/toidentifier/README",
+  "title": "toidentifier",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/toidentifier/README.md",
+  "sourceDirName": "node_modules/toidentifier",
+  "slug": "/node_modules/toidentifier/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/toidentifier/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/toidentifier/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "to-regex-range [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/to-regex-range.svg?style=flat)](https://www.npmjs.com/package/to-regex-range) [![NPM monthly downloads](https://img.shields.io/npm/dm/to-regex-range.svg?style=flat)](https://npmjs.org/package/to-regex-range) [![NPM total downloads](https://img.shields.io/npm/dt/to-regex-range.svg?style=flat)](https://npmjs.org/package/to-regex-range) [![Linux Build Status](https://img.shields.io/travis/micromatch/to-regex-range.svg?style=flat&label=Travis)](https://travis-ci.org/micromatch/to-regex-range)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/to-regex-range/"
+  },
+  "next": {
+    "title": "1.0.1 / 2021-11-14",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/toidentifier/HISTORY"
+  }
+}

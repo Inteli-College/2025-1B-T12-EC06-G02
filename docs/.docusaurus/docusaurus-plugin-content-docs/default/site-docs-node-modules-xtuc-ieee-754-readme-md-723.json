@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@xtuc/ieee754/README",
+  "title": "ieee754 [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]",
+  "description": "[travis-image]//img.shields.io/travis/feross/ieee754/master.svg",
+  "source": "@site/docs/node_modules/@xtuc/ieee754/README.md",
+  "sourceDirName": "node_modules/@xtuc/ieee754",
+  "slug": "/node_modules/@xtuc/ieee754/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@xtuc/ieee754/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@xtuc/ieee754/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@webassemblyjs/wast-parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@webassemblyjs/wast-printer/"
+  },
+  "next": {
+    "title": "long.js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@xtuc/long/"
+  }
+}

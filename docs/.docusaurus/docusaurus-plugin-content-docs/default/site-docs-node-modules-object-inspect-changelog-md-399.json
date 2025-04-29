@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/object-inspect/CHANGELOG",
+  "title": "Changelog",
+  "description": "All notable changes to this project will be documented in this file.",
+  "source": "@site/docs/node_modules/object-inspect/CHANGELOG.md",
+  "sourceDirName": "node_modules/object-inspect",
+  "slug": "/node_modules/object-inspect/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/object-inspect/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/object-inspect/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "object-assign [![Build Status](https://travis-ci.org/sindresorhus/object-assign.svg?branch=master)](https://travis-ci.org/sindresorhus/object-assign)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/object-assign/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/object-keys/"
+  }
+}

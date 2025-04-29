@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/randombytes/README",
+  "title": "randombytes",
+  "description": "Version Build Status",
+  "source": "@site/docs/node_modules/randombytes/README.md",
+  "sourceDirName": "node_modules/randombytes",
+  "slug": "/node_modules/randombytes/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/randombytes/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/randombytes/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "quick-lru [![Build Status](https://travis-ci.org/sindresorhus/quick-lru.svg?branch=master)](https://travis-ci.org/sindresorhus/quick-lru) [![Coverage Status](https://coveralls.io/repos/github/sindresorhus/quick-lru/badge.svg?branch=master)](https://coveralls.io/github/sindresorhus/quick-lru?branch=master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/quick-lru/"
+  },
+  "next": {
+    "title": "range-parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/range-parser/"
+  }
+}

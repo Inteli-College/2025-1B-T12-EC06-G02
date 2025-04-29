@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/rimraf/README",
+  "title": "README",
+  "description": "Build Status Dependency Status devDependency Status",
+  "source": "@site/docs/node_modules/rimraf/README.md",
+  "sourceDirName": "node_modules/rimraf",
+  "slug": "/node_modules/rimraf/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/rimraf/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/rimraf/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security Policy",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/reusify/SECURITY"
+  },
+  "next": {
+    "title": "v3.0",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/rimraf/CHANGELOG"
+  }
+}

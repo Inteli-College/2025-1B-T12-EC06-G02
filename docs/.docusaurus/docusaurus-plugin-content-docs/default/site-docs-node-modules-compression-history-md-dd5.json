@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/compression/HISTORY",
+  "title": "1.8.0 / 2025-02-10",
+  "description": "* Use res.headersSent when available",
+  "source": "@site/docs/node_modules/compression/HISTORY.md",
+  "sourceDirName": "node_modules/compression",
+  "slug": "/node_modules/compression/HISTORY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/compression/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/compression/HISTORY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "compression",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/compression/"
+  },
+  "next": {
+    "title": "configstore",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/configstore/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/registry-auth-token/README",
+  "title": "registry-auth-token",
+  "description": "npm versionnpm",
+  "source": "@site/docs/node_modules/registry-auth-token/README.md",
+  "sourceDirName": "node_modules/registry-auth-token",
+  "slug": "/node_modules/registry-auth-token/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/registry-auth-token/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/registry-auth-token/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "regexpu-core [![Build status](https://github.com/mathiasbynens/regexpu-core/workflows/run-checks/badge.svg)](https://github.com/mathiasbynens/regexpu-core/actions?query=workflow%3Arun-checks) [![regexpu-core on npm](https://img.shields.io/npm/v/regexpu-core)](https://www.npmjs.com/package/regexpu-core)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/regexpu-core/"
+  },
+  "next": {
+    "title": "Change Log",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/registry-auth-token/CHANGELOG"
+  }
+}

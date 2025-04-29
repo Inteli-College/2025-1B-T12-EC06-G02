@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/vfile-location/readme",
+  "title": "vfile-location",
+  "description": "Build",
+  "source": "@site/docs/node_modules/vfile-location/readme.md",
+  "sourceDirName": "node_modules/vfile-location",
+  "slug": "/node_modules/vfile-location/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/vfile-location/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/vfile-location/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/vfile/"
+  },
+  "next": {
+    "title": "vfile-message",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/vfile-message/"
+  }
+}

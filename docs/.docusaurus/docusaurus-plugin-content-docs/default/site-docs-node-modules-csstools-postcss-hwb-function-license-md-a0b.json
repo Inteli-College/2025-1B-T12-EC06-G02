@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-hwb-function/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT No Attribution (MIT-0)",
+  "source": "@site/docs/node_modules/@csstools/postcss-hwb-function/LICENSE.md",
+  "sourceDirName": "node_modules/@csstools/postcss-hwb-function",
+  "slug": "/node_modules/@csstools/postcss-hwb-function/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-hwb-function/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-hwb-function/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to PostCSS HWB Function",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-hwb-function/CHANGELOG"
+  },
+  "next": {
+    "title": "PostCSS IC Unit [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-ic-unit/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-stepped-value-functions/README",
+  "title": "PostCSS Stepped Value Functions [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install @csstools/postcss-stepped-value-functions --save-dev",
+  "source": "@site/docs/node_modules/@csstools/postcss-stepped-value-functions/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-stepped-value-functions",
+  "slug": "/node_modules/@csstools/postcss-stepped-value-functions/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-stepped-value-functions/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-stepped-value-functions/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-sign-functions/LICENSE"
+  },
+  "next": {
+    "title": "Changes to PostCSS Stepped Value Functions",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-stepped-value-functions/CHANGELOG"
+  }
+}

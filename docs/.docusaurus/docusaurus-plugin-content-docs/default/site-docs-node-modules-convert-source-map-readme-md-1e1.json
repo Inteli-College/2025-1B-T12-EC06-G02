@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/convert-source-map/README",
+  "title": "convert-source-map [![Build Status][ci-image]][ci-url]",
+  "description": "Converts a source-map from/to  different formats and allows adding/changing properties.",
+  "source": "@site/docs/node_modules/convert-source-map/README.md",
+  "sourceDirName": "node_modules/convert-source-map",
+  "slug": "/node_modules/convert-source-map/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/convert-source-map/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/convert-source-map/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.0.5 / 2023-01-29",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/content-type/HISTORY"
+  },
+  "next": {
+    "title": "cookie",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cookie/"
+  }
+}

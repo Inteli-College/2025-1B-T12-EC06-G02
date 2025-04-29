@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mdast-util-mdxjs-esm/readme",
+  "title": "mdast-util-mdxjs-esm",
+  "description": "Build",
+  "source": "@site/docs/node_modules/mdast-util-mdxjs-esm/readme.md",
+  "sourceDirName": "node_modules/mdast-util-mdxjs-esm",
+  "slug": "/node_modules/mdast-util-mdxjs-esm/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-mdxjs-esm/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mdast-util-mdxjs-esm/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "mdast-util-mdx-jsx",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-mdx-jsx/"
+  },
+  "next": {
+    "title": "mdast-util-phrasing",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-phrasing/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/arg/README",
+  "title": "Arg",
+  "description": "arg is an unopinionated, no-frills CLI argument parser.",
+  "source": "@site/docs/node_modules/arg/README.md",
+  "sourceDirName": "node_modules/arg",
+  "slug": "/node_modules/arg/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/arg/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/arg/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "anymatch [![Build Status](https://travis-ci.org/micromatch/anymatch.svg?branch=master)](https://travis-ci.org/micromatch/anymatch) [![Coverage Status](https://img.shields.io/coveralls/micromatch/anymatch.svg?branch=master)](https://coveralls.io/r/micromatch/anymatch?branch=master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/anymatch/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/arg/LICENSE"
+  }
+}

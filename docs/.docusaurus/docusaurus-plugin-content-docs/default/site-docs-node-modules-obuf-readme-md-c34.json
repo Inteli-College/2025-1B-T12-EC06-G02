@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/obuf/README",
+  "title": "obuf - Offset buffer implementation.",
+  "description": "Byte buffer specialized for data in chunks with special cases for dropping",
+  "source": "@site/docs/node_modules/obuf/README.md",
+  "sourceDirName": "node_modules/obuf",
+  "slug": "/node_modules/obuf/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/obuf/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/obuf/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "4.1.7 / 2024-12-18",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/object.assign/CHANGELOG"
+  },
+  "next": {
+    "title": "on-finished",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/on-finished/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/webpackbar/README",
+  "title": "README",
+  "description": "npm version",
+  "source": "@site/docs/node_modules/webpackbar/README.md",
+  "sourceDirName": "node_modules/webpackbar",
+  "slug": "/node_modules/webpackbar/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/webpackbar/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "webpack-sources",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-sources/"
+  },
+  "next": {
+    "title": "emoji-regex [![Build status](https://travis-ci.org/mathiasbynens/emoji-regex.svg?branch=master)](https://travis-ci.org/mathiasbynens/emoji-regex)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/emoji-regex/"
+  }
+}

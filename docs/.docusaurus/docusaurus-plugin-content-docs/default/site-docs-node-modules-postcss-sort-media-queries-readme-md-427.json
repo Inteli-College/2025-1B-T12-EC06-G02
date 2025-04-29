@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-sort-media-queries/README",
+  "title": "PostCSS Sort Media Queries",
+  "description": "[PostCSS]//github.com/postcss/postcss",
+  "source": "@site/docs/node_modules/postcss-sort-media-queries/README.md",
+  "sourceDirName": "node_modules/postcss-sort-media-queries",
+  "slug": "/node_modules/postcss-sort-media-queries/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-sort-media-queries/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-sort-media-queries/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "7.1.0",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-selector-parser/CHANGELOG"
+  },
+  "next": {
+    "title": "[postcss][postcss]-svgo",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-svgo/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@svgr/babel-plugin-add-jsx-attribute/README",
+  "title": "@svgr/babel-plugin-add-jsx-attribute",
+  "description": "Install",
+  "source": "@site/docs/node_modules/@svgr/babel-plugin-add-jsx-attribute/README.md",
+  "sourceDirName": "node_modules/@svgr/babel-plugin-add-jsx-attribute",
+  "slug": "/node_modules/@svgr/babel-plugin-add-jsx-attribute/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/babel-plugin-add-jsx-attribute/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@svgr/babel-plugin-add-jsx-attribute/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "micromark-util-types",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@slorber/remark-comment/node_modules/micromark-util-types/"
+  },
+  "next": {
+    "title": "Change Log",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/babel-plugin-add-jsx-attribute/CHANGELOG"
+  }
+}

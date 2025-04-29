@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/safer-buffer/Porting-Buffer",
+  "title": "Porting to the Buffer.from/Buffer.alloc API",
+  "description": "Overview",
+  "source": "@site/docs/node_modules/safer-buffer/Porting-Buffer.md",
+  "sourceDirName": "node_modules/safer-buffer",
+  "slug": "/node_modules/safer-buffer/Porting-Buffer",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/safer-buffer/Porting-Buffer",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/safer-buffer/Porting-Buffer.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "safer-buffer [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![javascript style guide][standard-image]][standard-url] [![Security Responsible Disclosure][secuirty-image]][secuirty-url]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/safer-buffer/"
+  },
+  "next": {
+    "title": "sax js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/sax/"
+  }
+}

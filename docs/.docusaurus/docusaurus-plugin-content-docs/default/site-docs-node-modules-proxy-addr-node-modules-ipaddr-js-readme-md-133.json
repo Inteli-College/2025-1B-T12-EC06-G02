@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/proxy-addr/node_modules/ipaddr.js/README",
+  "title": "ipaddr.js — an IPv6 and IPv4 address manipulation library [![Build Status](https://travis-ci.org/whitequark/ipaddr.js.svg)](https://travis-ci.org/whitequark/ipaddr.js)",
+  "description": "ipaddr.js is a small (1.9K minified and gzipped) library for manipulating",
+  "source": "@site/docs/node_modules/proxy-addr/node_modules/ipaddr.js/README.md",
+  "sourceDirName": "node_modules/proxy-addr/node_modules/ipaddr.js",
+  "slug": "/node_modules/proxy-addr/node_modules/ipaddr.js/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/proxy-addr/node_modules/ipaddr.js/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/proxy-addr/node_modules/ipaddr.js/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.0.7 / 2021-05-31",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/proxy-addr/HISTORY"
+  },
+  "next": {
+    "title": "Punycode.js [![punycode on npm](https://img.shields.io/npm/v/punycode)](https://www.npmjs.com/package/punycode) [![](https://data.jsdelivr.com/v1/package/npm/punycode/badge)](https://www.jsdelivr.com/package/npm/punycode)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/punycode/"
+  }
+}

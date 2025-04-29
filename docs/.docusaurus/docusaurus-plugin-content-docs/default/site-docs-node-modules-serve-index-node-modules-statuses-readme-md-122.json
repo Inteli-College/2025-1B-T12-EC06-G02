@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/serve-index/node_modules/statuses/README",
+  "title": "Statuses",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/serve-index/node_modules/statuses/README.md",
+  "sourceDirName": "node_modules/serve-index/node_modules/statuses",
+  "slug": "/node_modules/serve-index/node_modules/statuses/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-index/node_modules/statuses/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/serve-index/node_modules/statuses/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Polyfill for Object.setPrototypeOf",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-index/node_modules/setprototypeof/"
+  },
+  "next": {
+    "title": "1.5.0 / 2018-03-27",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-index/node_modules/statuses/HISTORY"
+  }
+}

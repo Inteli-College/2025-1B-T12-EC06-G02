@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@mdx-js/mdx/readme",
+  "title": "@mdx-js/mdx",
+  "description": "Build",
+  "source": "@site/docs/node_modules/@mdx-js/mdx/readme.md",
+  "sourceDirName": "node_modules/@mdx-js/mdx",
+  "slug": "/node_modules/@mdx-js/mdx/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@mdx-js/mdx/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@mdx-js/mdx/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@leichtgewicht/ip-codec",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@leichtgewicht/ip-codec/"
+  },
+  "next": {
+    "title": "Source Map",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@mdx-js/mdx/node_modules/source-map/"
+  }
+}

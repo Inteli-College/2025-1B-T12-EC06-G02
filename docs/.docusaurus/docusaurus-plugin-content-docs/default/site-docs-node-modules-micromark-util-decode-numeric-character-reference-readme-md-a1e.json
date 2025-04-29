@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/micromark-util-decode-numeric-character-reference/readme",
+  "title": "micromark-util-decode-numeric-character-reference",
+  "description": "Build",
+  "source": "@site/docs/node_modules/micromark-util-decode-numeric-character-reference/readme.md",
+  "sourceDirName": "node_modules/micromark-util-decode-numeric-character-reference",
+  "slug": "/node_modules/micromark-util-decode-numeric-character-reference/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-decode-numeric-character-reference/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/micromark-util-decode-numeric-character-reference/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "micromark-util-combine-extensions",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-combine-extensions/"
+  },
+  "next": {
+    "title": "micromark-util-decode-string",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-decode-string/"
+  }
+}

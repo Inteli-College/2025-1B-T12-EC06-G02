@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/css-calc/README",
+  "title": "CSS Calc <img src=\"https://cssdb.org/images/css.svg\" alt=\"for CSS\" width=\"90\" height=\"90\" align=\"right\">",
+  "description": "Implemented from//drafts.csswg.org/css-values-4/ on 2023-02-17",
+  "source": "@site/docs/node_modules/@csstools/css-calc/README.md",
+  "sourceDirName": "node_modules/@csstools/css-calc",
+  "slug": "/node_modules/@csstools/css-calc/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-calc/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/css-calc/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/color-helpers/LICENSE"
+  },
+  "next": {
+    "title": "Changes to CSS Calc",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-calc/CHANGELOG"
+  }
+}

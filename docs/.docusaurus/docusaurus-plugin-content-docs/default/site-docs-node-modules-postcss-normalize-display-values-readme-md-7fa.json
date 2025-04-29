@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-normalize-display-values/README",
+  "title": "[postcss][postcss]-normalize-display-values",
+  "description": "Normalize display property values with PostCSS.",
+  "source": "@site/docs/node_modules/postcss-normalize-display-values/README.md",
+  "sourceDirName": "node_modules/postcss-normalize-display-values",
+  "slug": "/node_modules/postcss-normalize-display-values/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-normalize-display-values/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-normalize-display-values/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "postcss-normalize-charset",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-normalize-charset/"
+  },
+  "next": {
+    "title": "[postcss][postcss]-normalize-positions",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-normalize-positions/"
+  }
+}

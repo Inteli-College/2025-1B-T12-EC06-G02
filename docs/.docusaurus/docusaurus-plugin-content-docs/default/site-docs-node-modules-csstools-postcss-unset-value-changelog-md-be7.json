@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-unset-value/CHANGELOG",
+  "title": "Changes to PostCSS Unset Value",
+  "description": "4.0.0",
+  "source": "@site/docs/node_modules/@csstools/postcss-unset-value/CHANGELOG.md",
+  "sourceDirName": "node_modules/@csstools/postcss-unset-value",
+  "slug": "/node_modules/@csstools/postcss-unset-value/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-unset-value/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-unset-value/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Unset Value [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-unset-value/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-unset-value/LICENSE"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/registry-url/readme",
+  "title": "registry-url",
+  "description": "Get the set npm registry URL",
+  "source": "@site/docs/node_modules/registry-url/readme.md",
+  "sourceDirName": "node_modules/registry-url",
+  "slug": "/node_modules/registry-url/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/registry-url/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/registry-url/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Change Log",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/registry-auth-token/CHANGELOG"
+  },
+  "next": {
+    "title": "regjsgen [![Build status][ci-img]][ci] [![Code coverage status][codecov-img]][codecov]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/regjsgen/"
+  }
+}

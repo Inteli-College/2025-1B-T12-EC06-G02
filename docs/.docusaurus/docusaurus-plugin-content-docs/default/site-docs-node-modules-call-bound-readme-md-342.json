@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/call-bound/README",
+  "title": "call-bound <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+  "description": "github actions",
+  "source": "@site/docs/node_modules/call-bound/README.md",
+  "sourceDirName": "node_modules/call-bound",
+  "slug": "/node_modules/call-bound/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/call-bound/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/call-bound/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/call-bind-apply-helpers/CHANGELOG"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/call-bound/CHANGELOG"
+  }
+}

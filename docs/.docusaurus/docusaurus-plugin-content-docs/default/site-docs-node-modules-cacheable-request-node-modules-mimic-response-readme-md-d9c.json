@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cacheable-request/node_modules/mimic-response/readme",
+  "title": "mimic-response",
+  "description": "Mimic a Node.js HTTP response stream",
+  "source": "@site/docs/node_modules/cacheable-request/node_modules/mimic-response/readme.md",
+  "sourceDirName": "node_modules/cacheable-request/node_modules/mimic-response",
+  "slug": "/node_modules/cacheable-request/node_modules/mimic-response/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cacheable-request/node_modules/mimic-response/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cacheable-request/node_modules/mimic-response/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cacheable-request/"
+  },
+  "next": {
+    "title": "call-bind <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/call-bind/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/csso/README",
+  "title": "README",
+  "description": "NPM version",
+  "source": "@site/docs/node_modules/csso/README.md",
+  "sourceDirName": "node_modules/csso",
+  "slug": "/node_modules/csso/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/csso/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/csso/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cssnano-utils",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssnano-utils/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/csso/node_modules/css-tree/"
+  }
+}

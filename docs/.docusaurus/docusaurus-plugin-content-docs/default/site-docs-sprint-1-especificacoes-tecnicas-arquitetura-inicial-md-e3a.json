@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/especificacoes-tecnicas/Arquitetura_Inicial",
+  "title": "Arquitetura Inicial",
+  "description": "Apresenta a proposta arquitetural do sistema, descrevendo os módulos principais, suas responsabilidades, as interfaces entre componentes e as tecnologias previstas, acompanhada de diagramas explicativos.",
+  "source": "@site/docs/sprint-1/especificacoes-tecnicas/Arquitetura_Inicial.md",
+  "sourceDirName": "sprint-1/especificacoes-tecnicas",
+  "slug": "/sprint-1/especificacoes-tecnicas/Arquitetura_Inicial",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/especificacoes-tecnicas/Arquitetura_Inicial",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Requisitos Não Funcionais",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais"
+  },
+  "next": {
+    "title": "Design Centrado no Usuário",
+    "permalink": "/2025-1B-T12-EC06-G02/category/design-centrado-no-usuário"
+  }
+}

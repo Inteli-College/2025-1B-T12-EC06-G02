@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/finalhandler/SECURITY",
+  "title": "Security Policies and Procedures",
+  "description": "Reporting a Bug",
+  "source": "@site/docs/node_modules/finalhandler/SECURITY.md",
+  "sourceDirName": "node_modules/finalhandler",
+  "slug": "/node_modules/finalhandler/SECURITY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/finalhandler/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/finalhandler/SECURITY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "v1.3.1 / 2024-09-11",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/finalhandler/HISTORY"
+  },
+  "next": {
+    "title": "find-cache-dir",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/find-cache-dir/"
+  }
+}

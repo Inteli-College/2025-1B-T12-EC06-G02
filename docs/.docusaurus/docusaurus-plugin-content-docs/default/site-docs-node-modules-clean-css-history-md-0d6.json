@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/clean-css/History",
+  "title": "[5.3.3 / 2023-11-30](https://github.com/clean-css/clean-css/compare/v5.3.2...v5.3.3)",
+  "description": "* Fixed issue #1262 - dynamically require os for edge runtime compatibility.",
+  "source": "@site/docs/node_modules/clean-css/History.md",
+  "sourceDirName": "node_modules/clean-css",
+  "slug": "/node_modules/clean-css/History",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/clean-css/History",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/clean-css/History.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/clean-css/"
+  },
+  "next": {
+    "title": "clean-stack [![Build Status](https://travis-ci.org/sindresorhus/clean-stack.svg?branch=master)](https://travis-ci.org/sindresorhus/clean-stack)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/clean-stack/"
+  }
+}

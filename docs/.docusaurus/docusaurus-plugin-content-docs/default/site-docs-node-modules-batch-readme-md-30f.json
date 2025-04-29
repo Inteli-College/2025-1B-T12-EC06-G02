@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/batch/Readme",
+  "title": "batch",
+  "description": "Simple async batch with concurrency control and progress reporting.",
+  "source": "@site/docs/node_modules/batch/Readme.md",
+  "sourceDirName": "node_modules/batch",
+  "slug": "/node_modules/batch/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/batch/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/batch/Readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/balanced-match/LICENSE"
+  },
+  "next": {
+    "title": "0.6.1 / 2017-05-16",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/batch/History"
+  }
+}

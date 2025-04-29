@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/shallow-clone/README",
+  "title": "shallow-clone [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/shallow-clone.svg?style=flat)](https://www.npmjs.com/package/shallow-clone) [![NPM monthly downloads](https://img.shields.io/npm/dm/shallow-clone.svg?style=flat)](https://npmjs.org/package/shallow-clone) [![NPM total downloads](https://img.shields.io/npm/dt/shallow-clone.svg?style=flat)](https://npmjs.org/package/shallow-clone) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/shallow-clone.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/shallow-clone)",
+  "description": "Creates a shallow clone of any JavaScript value.",
+  "source": "@site/docs/node_modules/shallow-clone/README.md",
+  "sourceDirName": "node_modules/shallow-clone",
+  "slug": "/node_modules/shallow-clone/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/shallow-clone/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/shallow-clone/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Polyfill for Object.setPrototypeOf",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/setprototypeof/"
+  },
+  "next": {
+    "title": "shallowequal [![Build Status](https://travis-ci.org/dashed/shallowequal.svg)](https://travis-ci.org/dashed/shallowequal) [![Downloads](https://img.shields.io/npm/dm/shallowequal.svg)](https://npmjs.com/shallowequal) [![npm version](https://img.shields.io/npm/v/shallowequal.svg?style=flat)](https://www.npmjs.com/package/shallowequal)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/shallowequal/"
+  }
+}

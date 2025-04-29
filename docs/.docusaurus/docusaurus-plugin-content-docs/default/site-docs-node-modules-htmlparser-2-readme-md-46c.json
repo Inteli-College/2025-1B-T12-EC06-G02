@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/htmlparser2/README",
+  "title": "htmlparser2",
+  "description": "NPM version",
+  "source": "@site/docs/node_modules/htmlparser2/README.md",
+  "sourceDirName": "node_modules/htmlparser2",
+  "slug": "/node_modules/htmlparser2/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/htmlparser2/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/htmlparser2/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-webpack-plugin/"
+  },
+  "next": {
+    "title": "Can I cache this? [![Build Status](https://travis-ci.org/kornelski/http-cache-semantics.svg?branch=master)](https://travis-ci.org/kornelski/http-cache-semantics)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/http-cache-semantics/"
+  }
+}

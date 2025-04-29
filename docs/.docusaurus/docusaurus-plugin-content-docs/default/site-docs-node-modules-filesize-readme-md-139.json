@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/filesize/README",
+  "title": "filesize.js",
+  "description": "build status  downloads CDNJS version",
+  "source": "@site/docs/node_modules/filesize/README.md",
+  "sourceDirName": "node_modules/filesize",
+  "slug": "/node_modules/filesize/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/filesize/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/filesize/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/file-loader/node_modules/schema-utils/CHANGELOG"
+  },
+  "next": {
+    "title": "fill-range [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/fill-range.svg?style=flat)](https://www.npmjs.com/package/fill-range) [![NPM monthly downloads](https://img.shields.io/npm/dm/fill-range.svg?style=flat)](https://npmjs.org/package/fill-range) [![NPM total downloads](https://img.shields.io/npm/dt/fill-range.svg?style=flat)](https://npmjs.org/package/fill-range) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/fill-range.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/fill-range)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fill-range/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/css-parser-algorithms/LICENSE",
+  "title": "LICENSE",
+  "description": "The MIT License (MIT)",
+  "source": "@site/docs/node_modules/@csstools/css-parser-algorithms/LICENSE.md",
+  "sourceDirName": "node_modules/@csstools/css-parser-algorithms",
+  "slug": "/node_modules/@csstools/css-parser-algorithms/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-parser-algorithms/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/css-parser-algorithms/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to CSS Parser Algorithms",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-parser-algorithms/CHANGELOG"
+  },
+  "next": {
+    "title": "CSS Tokenizer",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-tokenizer/"
+  }
+}

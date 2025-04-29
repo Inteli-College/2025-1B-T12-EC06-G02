@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/hast-util-whitespace/readme",
+  "title": "hast-util-whitespace",
+  "description": "Build",
+  "source": "@site/docs/node_modules/hast-util-whitespace/readme.md",
+  "sourceDirName": "node_modules/hast-util-whitespace",
+  "slug": "/node_modules/hast-util-whitespace/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/hast-util-whitespace/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/hast-util-whitespace/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "property-information",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hast-util-to-parse5/node_modules/property-information/"
+  },
+  "next": {
+    "title": "hastscript",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hastscript/"
+  }
+}

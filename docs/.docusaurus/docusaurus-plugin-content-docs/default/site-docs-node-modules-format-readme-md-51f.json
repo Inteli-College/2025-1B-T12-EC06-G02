@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/format/Readme",
+  "title": "format",
+  "description": "printf, sprintf, and vsprintf for JavaScript",
+  "source": "@site/docs/node_modules/format/Readme.md",
+  "sourceDirName": "node_modules/format",
+  "slug": "/node_modules/format/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/format/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/format/Readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "form-data-encoder",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/form-data-encoder/"
+  },
+  "next": {
+    "title": "forwarded",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/forwarded/"
+  }
+}

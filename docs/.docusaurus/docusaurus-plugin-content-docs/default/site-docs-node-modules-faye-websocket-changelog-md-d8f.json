@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/faye-websocket/CHANGELOG",
+  "title": "CHANGELOG",
+  "description": "0.11.4 / 2021-05-24",
+  "source": "@site/docs/node_modules/faye-websocket/CHANGELOG.md",
+  "sourceDirName": "node_modules/faye-websocket",
+  "slug": "/node_modules/faye-websocket/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/faye-websocket/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/faye-websocket/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "faye-websocket",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/faye-websocket/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/faye-websocket/LICENSE"
+  }
+}

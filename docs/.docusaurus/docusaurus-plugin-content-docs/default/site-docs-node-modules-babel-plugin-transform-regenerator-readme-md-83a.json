@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-regenerator/README",
+  "title": "@babel/plugin-transform-regenerator",
+  "description": "Explode async and generator functions into a state machine.",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-regenerator/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-regenerator",
+  "slug": "/node_modules/@babel/plugin-transform-regenerator/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-regenerator/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-regenerator/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-react-pure-annotations",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-react-pure-annotations/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-regexp-modifiers",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-regexp-modifiers/"
+  }
+}

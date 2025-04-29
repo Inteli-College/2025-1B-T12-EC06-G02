@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cookie-signature/History",
+  "title": "1.0.6 / 2015-02-03",
+  "description": "* use npm test instead of make test to run tests",
+  "source": "@site/docs/node_modules/cookie-signature/History.md",
+  "sourceDirName": "node_modules/cookie-signature",
+  "slug": "/node_modules/cookie-signature/History",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cookie-signature/History",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cookie-signature/History.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cookie-signature",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cookie-signature/"
+  },
+  "next": {
+    "title": "copy-text-to-clipboard",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/copy-text-to-clipboard/"
+  }
+}

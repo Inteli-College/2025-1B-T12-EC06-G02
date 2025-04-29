@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-page-break/README",
+  "title": "postcss-page-break",
+  "description": "NPM Package",
+  "source": "@site/docs/node_modules/postcss-page-break/README.md",
+  "sourceDirName": "node_modules/postcss-page-break",
+  "slug": "/node_modules/postcss-page-break/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-page-break/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-page-break/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-overflow-shorthand/LICENSE"
+  },
+  "next": {
+    "title": "Change Log",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-page-break/CHANGELOG"
+  }
+}

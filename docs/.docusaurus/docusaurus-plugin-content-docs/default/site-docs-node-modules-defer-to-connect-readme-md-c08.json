@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/defer-to-connect/README",
+  "title": "defer-to-connect",
+  "description": "The safe way to handle the connect socket event",
+  "source": "@site/docs/node_modules/defer-to-connect/README.md",
+  "sourceDirName": "node_modules/defer-to-connect",
+  "slug": "/node_modules/defer-to-connect/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/defer-to-connect/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/defer-to-connect/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "default-gateway",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/default-gateway/"
+  },
+  "next": {
+    "title": "define-data-property <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/define-data-property/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/pupa/readme",
+  "title": "pupa",
+  "description": "Simple micro templating",
+  "source": "@site/docs/node_modules/pupa/readme.md",
+  "sourceDirName": "node_modules/pupa",
+  "slug": "/node_modules/pupa/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/pupa/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/pupa/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Punycode.js [![punycode on npm](https://img.shields.io/npm/v/punycode)](https://www.npmjs.com/package/punycode) [![](https://data.jsdelivr.com/v1/package/npm/punycode/badge)](https://www.jsdelivr.com/package/npm/punycode)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/punycode/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/qs/"
+  }
+}

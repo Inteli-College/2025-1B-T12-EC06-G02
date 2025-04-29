@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/requires-port/README",
+  "title": "requires-port",
+  "description": "Made by unshiftVersion npmBuild StatusDependenciesCoverage StatusIRC channel",
+  "source": "@site/docs/node_modules/requires-port/README.md",
+  "sourceDirName": "node_modules/requires-port",
+  "slug": "/node_modules/requires-port/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/requires-port/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/requires-port/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "require-like",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/require-like/"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/resolve/SECURITY"
+  }
+}

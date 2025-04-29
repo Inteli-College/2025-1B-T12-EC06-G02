@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/acorn-walk/README",
+  "title": "Acorn AST walker",
+  "description": "An abstract syntax tree walker for the",
+  "source": "@site/docs/node_modules/acorn-walk/README.md",
+  "sourceDirName": "node_modules/acorn-walk",
+  "slug": "/node_modules/acorn-walk/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn-walk/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/acorn-walk/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Acorn-JSX",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn-jsx/"
+  },
+  "next": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn-walk/CHANGELOG"
+  }
+}

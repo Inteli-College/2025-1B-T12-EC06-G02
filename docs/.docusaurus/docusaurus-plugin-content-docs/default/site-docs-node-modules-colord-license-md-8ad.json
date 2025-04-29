@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/colord/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT License",
+  "source": "@site/docs/node_modules/colord/LICENSE.md",
+  "sourceDirName": "node_modules/colord",
+  "slug": "/node_modules/colord/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/colord/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/colord/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/colord/CHANGELOG"
+  },
+  "next": {
+    "title": "🌈Colorette",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/colorette/"
+  }
+}

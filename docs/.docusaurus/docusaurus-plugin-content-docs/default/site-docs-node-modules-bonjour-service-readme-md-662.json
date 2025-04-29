@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/bonjour-service/README",
+  "title": "bonjour-service",
+  "description": "GitHub Workflow Status npm bundle size GitHub Release Date npm GitHub DeepScan grade",
+  "source": "@site/docs/node_modules/bonjour-service/README.md",
+  "sourceDirName": "node_modules/bonjour-service",
+  "slug": "/node_modules/bonjour-service/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/bonjour-service/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/bonjour-service/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security Policies and Procedures",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/body-parser/SECURITY"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/boolbase/"
+  }
+}

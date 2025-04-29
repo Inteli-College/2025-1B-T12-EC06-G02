@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/colord/CHANGELOG",
+  "title": "CHANGELOG",
+  "description": "2.9.3",
+  "source": "@site/docs/node_modules/colord/CHANGELOG.md",
+  "sourceDirName": "node_modules/colord",
+  "slug": "/node_modules/colord/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/colord/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/colord/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/colord/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/colord/LICENSE"
+  }
+}

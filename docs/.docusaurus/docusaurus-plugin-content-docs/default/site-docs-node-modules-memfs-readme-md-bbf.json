@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/memfs/README",
+  "title": "memfs",
+  "description": "In-memory file-system with Node's fs API.",
+  "source": "@site/docs/node_modules/memfs/README.md",
+  "sourceDirName": "node_modules/memfs",
+  "slug": "/node_modules/memfs/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/memfs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/memfs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "0.3.0 / 2014-09-07",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/media-typer/HISTORY"
+  },
+  "next": {
+    "title": "merge-descriptors",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/merge-descriptors/"
+  }
+}

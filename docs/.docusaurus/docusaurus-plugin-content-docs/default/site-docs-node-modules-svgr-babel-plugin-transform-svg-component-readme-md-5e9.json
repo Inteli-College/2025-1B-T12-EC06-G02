@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@svgr/babel-plugin-transform-svg-component/README",
+  "title": "@svgr/babel-plugin-transform-svg-component",
+  "description": "Install",
+  "source": "@site/docs/node_modules/@svgr/babel-plugin-transform-svg-component/README.md",
+  "sourceDirName": "node_modules/@svgr/babel-plugin-transform-svg-component",
+  "slug": "/node_modules/@svgr/babel-plugin-transform-svg-component/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/babel-plugin-transform-svg-component/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@svgr/babel-plugin-transform-svg-component/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@svgr/babel-plugin-transform-react-native-svg",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/babel-plugin-transform-react-native-svg/"
+  },
+  "next": {
+    "title": "@svgr/babel-preset",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/babel-preset/"
+  }
+}

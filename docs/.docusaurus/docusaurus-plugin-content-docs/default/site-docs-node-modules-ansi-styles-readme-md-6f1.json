@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/ansi-styles/readme",
+  "title": "ansi-styles [![Build Status](https://travis-ci.org/chalk/ansi-styles.svg?branch=master)](https://travis-ci.org/chalk/ansi-styles)",
+  "description": "ANSI escape codes for styling strings in the terminal",
+  "source": "@site/docs/node_modules/ansi-styles/readme.md",
+  "sourceDirName": "node_modules/ansi-styles",
+  "slug": "/node_modules/ansi-styles/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/ansi-styles/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/ansi-styles/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ansi-regex",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ansi-regex/"
+  },
+  "next": {
+    "title": "anymatch [![Build Status](https://travis-ci.org/micromatch/anymatch.svg?branch=master)](https://travis-ci.org/micromatch/anymatch) [![Coverage Status](https://img.shields.io/coveralls/micromatch/anymatch.svg?branch=master)](https://coveralls.io/r/micromatch/anymatch?branch=master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/anymatch/"
+  }
+}

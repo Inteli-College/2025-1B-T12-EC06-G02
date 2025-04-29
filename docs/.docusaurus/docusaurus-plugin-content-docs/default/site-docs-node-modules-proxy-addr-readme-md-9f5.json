@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/proxy-addr/README",
+  "title": "proxy-addr",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/proxy-addr/README.md",
+  "sourceDirName": "node_modules/proxy-addr",
+  "slug": "/node_modules/proxy-addr/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/proxy-addr/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/proxy-addr/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/proto-list/"
+  },
+  "next": {
+    "title": "2.0.7 / 2021-05-31",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/proxy-addr/HISTORY"
+  }
+}

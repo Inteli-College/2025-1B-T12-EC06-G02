@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/serve-static/README",
+  "title": "serve-static",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/serve-static/README.md",
+  "sourceDirName": "node_modules/serve-static",
+  "slug": "/node_modules/serve-static/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-static/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/serve-static/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.5.0 / 2018-03-27",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-index/node_modules/statuses/HISTORY"
+  },
+  "next": {
+    "title": "1.16.2 / 2024-09-11",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-static/HISTORY"
+  }
+}

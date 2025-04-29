@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-modules-commonjs/README",
+  "title": "@babel/plugin-transform-modules-commonjs",
+  "description": "This plugin transforms ES2015 modules to CommonJS",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-modules-commonjs/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-modules-commonjs",
+  "slug": "/node_modules/@babel/plugin-transform-modules-commonjs/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-modules-commonjs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-modules-commonjs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-modules-amd",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-modules-amd/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-modules-systemjs",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-modules-systemjs/"
+  }
+}

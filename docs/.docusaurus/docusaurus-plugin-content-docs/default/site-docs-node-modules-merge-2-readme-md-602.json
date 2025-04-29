@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/merge2/README",
+  "title": "merge2",
+  "description": "Merge multiple streams into one stream in sequence or parallel.",
+  "source": "@site/docs/node_modules/merge2/README.md",
+  "sourceDirName": "node_modules/merge2",
+  "slug": "/node_modules/merge2/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/merge2/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/merge2/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "merge-stream",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/merge-stream/"
+  },
+  "next": {
+    "title": "Methods",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/methods/"
+  }
+}

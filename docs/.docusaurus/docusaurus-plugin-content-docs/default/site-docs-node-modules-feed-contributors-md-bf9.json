@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/feed/CONTRIBUTORS",
+  "title": "CONTRIBUTORS",
+  "description": "Ben McCormick",
+  "source": "@site/docs/node_modules/feed/CONTRIBUTORS.md",
+  "sourceDirName": "node_modules/feed",
+  "slug": "/node_modules/feed/CONTRIBUTORS",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/feed/CONTRIBUTORS",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/feed/CONTRIBUTORS.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "How to contribute",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/feed/CONTRIBUTING"
+  },
+  "next": {
+    "title": "figures [![Build Status](https://travis-ci.org/sindresorhus/figures.svg?branch=master)](https://travis-ci.org/sindresorhus/figures)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/figures/"
+  }
+}

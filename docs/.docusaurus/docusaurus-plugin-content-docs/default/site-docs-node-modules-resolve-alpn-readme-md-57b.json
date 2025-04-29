@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/resolve-alpn/README",
+  "title": "resolve-alpn",
+  "description": "Node CI",
+  "source": "@site/docs/node_modules/resolve-alpn/README.md",
+  "sourceDirName": "node_modules/resolve-alpn",
+  "slug": "/node_modules/resolve-alpn/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/resolve-alpn/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/resolve-alpn/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/resolve/SECURITY"
+  },
+  "next": {
+    "title": "resolve-from [![Build Status](https://travis-ci.org/sindresorhus/resolve-from.svg?branch=master)](https://travis-ci.org/sindresorhus/resolve-from)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/resolve-from/"
+  }
+}

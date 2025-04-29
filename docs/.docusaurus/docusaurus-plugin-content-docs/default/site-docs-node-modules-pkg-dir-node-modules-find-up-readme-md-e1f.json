@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/pkg-dir/node_modules/find-up/readme",
+  "title": "find-up",
+  "description": "Find a file or directory by walking up parent directories",
+  "source": "@site/docs/node_modules/pkg-dir/node_modules/find-up/readme.md",
+  "sourceDirName": "node_modules/pkg-dir/node_modules/find-up",
+  "slug": "/node_modules/pkg-dir/node_modules/find-up/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-dir/node_modules/find-up/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/pkg-dir/node_modules/find-up/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "pkg-dir",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-dir/"
+  },
+  "next": {
+    "title": "locate-path",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-dir/node_modules/locate-path/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@webassemblyjs/floating-point-hex-parser/README",
+  "title": "Parser function for floating point hexadecimals",
+  "description": "license",
+  "source": "@site/docs/node_modules/@webassemblyjs/floating-point-hex-parser/README.md",
+  "sourceDirName": "node_modules/@webassemblyjs/floating-point-hex-parser",
+  "slug": "/node_modules/@webassemblyjs/floating-point-hex-parser/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@webassemblyjs/floating-point-hex-parser/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@webassemblyjs/floating-point-hex-parser/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@webassemblyjs/ast",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@webassemblyjs/ast/"
+  },
+  "next": {
+    "title": "@webassemblyjs/wasm-edit",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@webassemblyjs/wasm-edit/"
+  }
+}

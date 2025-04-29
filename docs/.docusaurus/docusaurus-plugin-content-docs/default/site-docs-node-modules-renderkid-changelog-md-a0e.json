@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/renderkid/CHANGELOG",
+  "title": "Renderkid Changelog",
+  "description": "3.0.0",
+  "source": "@site/docs/node_modules/renderkid/CHANGELOG.md",
+  "sourceDirName": "node_modules/renderkid",
+  "slug": "/node_modules/renderkid/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/renderkid/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "RenderKid",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/"
+  },
+  "next": {
+    "title": "Security Policy",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/SECURITY"
+  }
+}

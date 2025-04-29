@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/process-nextick-args/license",
+  "title": "Copyright (c) 2015 Calvin Metcalf",
+  "description": "Permission is hereby granted, free of charge, to any person obtaining a copy",
+  "source": "@site/docs/node_modules/process-nextick-args/license.md",
+  "sourceDirName": "node_modules/process-nextick-args",
+  "slug": "/node_modules/process-nextick-args/license",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/process-nextick-args/license",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/process-nextick-args/license.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "process-nextick-args",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/process-nextick-args/"
+  },
+  "next": {
+    "title": "readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/prompts/"
+  }
+}

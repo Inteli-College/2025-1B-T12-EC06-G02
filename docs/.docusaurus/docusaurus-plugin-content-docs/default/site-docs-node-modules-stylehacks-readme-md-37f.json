@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/stylehacks/README",
+  "title": "stylehacks",
+  "description": "Detect/remove browser hacks from CSS files.",
+  "source": "@site/docs/node_modules/stylehacks/README.md",
+  "sourceDirName": "node_modules/stylehacks",
+  "slug": "/node_modules/stylehacks/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/stylehacks/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/stylehacks/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "style-to-object",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/style-to-object/"
+  },
+  "next": {
+    "title": "postcss-selector-parser [![test](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml/badge.svg)](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/stylehacks/node_modules/postcss-selector-parser/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helper-annotate-as-pure/README",
+  "title": "@babel/helper-annotate-as-pure",
+  "description": "Helper function to annotate paths and nodes with #PURE comment",
+  "source": "@site/docs/node_modules/@babel/helper-annotate-as-pure/README.md",
+  "sourceDirName": "node_modules/@babel/helper-annotate-as-pure",
+  "slug": "/node_modules/@babel/helper-annotate-as-pure/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-annotate-as-pure/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helper-annotate-as-pure/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/generator",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/generator/"
+  },
+  "next": {
+    "title": "@babel/helper-compilation-targets",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-compilation-targets/"
+  }
+}

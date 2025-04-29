@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/react-loadable-ssr-addon-v5-slorber/README",
+  "title": "React Loadable SSR Add-on",
+  "description": "Server Side Render add-on for React Loadable. Load splitted chunks was never that easy.",
+  "source": "@site/docs/node_modules/react-loadable-ssr-addon-v5-slorber/README.md",
+  "sourceDirName": "node_modules/react-loadable-ssr-addon-v5-slorber",
+  "slug": "/node_modules/react-loadable-ssr-addon-v5-slorber/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-loadable-ssr-addon-v5-slorber/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/react-loadable-ssr-addon-v5-slorber/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-loadable/"
+  },
+  "next": {
+    "title": "AUTHORS",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-loadable-ssr-addon-v5-slorber/AUTHORS"
+  }
+}

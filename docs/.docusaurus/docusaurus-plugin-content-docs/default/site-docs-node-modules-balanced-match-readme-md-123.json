@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/balanced-match/README",
+  "title": "balanced-match",
+  "description": "Match balanced string pairs, like { and } or ` and `. Supports regular expressions as well!",
+  "source": "@site/docs/node_modules/balanced-match/README.md",
+  "sourceDirName": "node_modules/balanced-match",
+  "slug": "/node_modules/balanced-match/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/balanced-match/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/balanced-match/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "bail",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/bail/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/balanced-match/LICENSE"
+  }
+}

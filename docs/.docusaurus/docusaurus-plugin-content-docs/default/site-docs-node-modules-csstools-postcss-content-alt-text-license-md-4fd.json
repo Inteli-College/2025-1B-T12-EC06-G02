@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-content-alt-text/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT No Attribution (MIT-0)",
+  "source": "@site/docs/node_modules/@csstools/postcss-content-alt-text/LICENSE.md",
+  "sourceDirName": "node_modules/@csstools/postcss-content-alt-text",
+  "slug": "/node_modules/@csstools/postcss-content-alt-text/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-content-alt-text/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-content-alt-text/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to PostCSS Content Alt Text",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-content-alt-text/CHANGELOG"
+  },
+  "next": {
+    "title": "PostCSS Exponential Functions [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-exponential-functions/"
+  }
+}

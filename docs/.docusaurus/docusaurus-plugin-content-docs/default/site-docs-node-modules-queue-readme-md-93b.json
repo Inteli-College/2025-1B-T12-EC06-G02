@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/queue/readme",
+  "title": "readme",
+  "description": "Asynchronous function queue with adjustable concurrency.",
+  "source": "@site/docs/node_modules/queue/readme.md",
+  "sourceDirName": "node_modules/queue",
+  "slug": "/node_modules/queue/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/queue/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/queue/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/qs/LICENSE"
+  },
+  "next": {
+    "title": "queue-microtask [![ci][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/queue-microtask/"
+  }
+}

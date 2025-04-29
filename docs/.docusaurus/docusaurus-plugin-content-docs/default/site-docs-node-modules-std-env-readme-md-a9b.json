@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/std-env/README",
+  "title": "std-env",
+  "description": "npm",
+  "source": "@site/docs/node_modules/std-env/README.md",
+  "sourceDirName": "node_modules/std-env",
+  "slug": "/node_modules/std-env/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/std-env/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/std-env/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.0.1 / 2021-01-03",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/statuses/HISTORY"
+  },
+  "next": {
+    "title": "string-width",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/string-width/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/renderkid/node_modules/domhandler/readme",
+  "title": "domhandler [![Build Status](https://travis-ci.com/fb55/domhandler.svg?branch=master)](https://travis-ci.com/fb55/domhandler)",
+  "description": "The DOM handler creates a tree containing all nodes of a page.",
+  "source": "@site/docs/node_modules/renderkid/node_modules/domhandler/readme.md",
+  "sourceDirName": "node_modules/renderkid/node_modules/domhandler",
+  "slug": "/node_modules/renderkid/node_modules/domhandler/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/node_modules/domhandler/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/renderkid/node_modules/domhandler/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "dom-serializer [![Build Status](https://travis-ci.com/cheeriojs/dom-serializer.svg?branch=master)](https://travis-ci.com/cheeriojs/dom-serializer)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/node_modules/dom-serializer/"
+  },
+  "next": {
+    "title": "domutils [![Build Status](https://travis-ci.com/fb55/domutils.svg?branch=master)](https://travis-ci.com/fb55/domutils)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/node_modules/domutils/"
+  }
+}

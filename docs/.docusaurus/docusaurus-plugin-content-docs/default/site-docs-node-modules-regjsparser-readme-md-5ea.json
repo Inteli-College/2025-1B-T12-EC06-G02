@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/regjsparser/README",
+  "title": "RegJSParser",
+  "description": "Parsing the JavaScript's RegExp in JavaScript.",
+  "source": "@site/docs/node_modules/regjsparser/README.md",
+  "sourceDirName": "node_modules/regjsparser",
+  "slug": "/node_modules/regjsparser/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/regjsparser/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/regjsparser/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "regjsgen [![Build status][ci-img]][ci] [![Code coverage status][codecov-img]][codecov]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/regjsgen/"
+  },
+  "next": {
+    "title": "jsesc [![Build status](https://travis-ci.org/mathiasbynens/jsesc.svg?branch=master)](https://travis-ci.org/mathiasbynens/jsesc) [![Code coverage status](https://coveralls.io/repos/mathiasbynens/jsesc/badge.svg)](https://coveralls.io/r/mathiasbynens/jsesc)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/regjsparser/node_modules/jsesc/"
+  }
+}

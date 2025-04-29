@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helpers/README",
+  "title": "@babel/helpers",
+  "description": "Collection of helper functions used by Babel transforms.",
+  "source": "@site/docs/node_modules/@babel/helpers/README.md",
+  "sourceDirName": "node_modules/@babel/helpers",
+  "slug": "/node_modules/@babel/helpers/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helpers/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helpers/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/helper-wrap-function",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-wrap-function/"
+  },
+  "next": {
+    "title": "@babel/parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/parser/"
+  }
+}

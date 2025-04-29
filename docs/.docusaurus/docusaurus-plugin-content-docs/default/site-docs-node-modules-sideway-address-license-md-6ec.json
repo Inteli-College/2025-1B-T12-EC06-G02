@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@sideway/address/LICENSE",
+  "title": "LICENSE",
+  "description": "Copyright (c) 2019-2020, Sideway, Inc. and Project contributors",
+  "source": "@site/docs/node_modules/@sideway/address/LICENSE.md",
+  "sourceDirName": "node_modules/@sideway/address",
+  "slug": "/node_modules/@sideway/address/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sideway/address/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@sideway/address/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@sideway/address",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sideway/address/"
+  },
+  "next": {
+    "title": "@sideway/formula",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sideway/formula/"
+  }
+}

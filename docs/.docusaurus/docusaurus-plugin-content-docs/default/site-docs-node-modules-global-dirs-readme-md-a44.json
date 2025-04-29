@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/global-dirs/readme",
+  "title": "global-dirs",
+  "description": "Get the directory of globally installed packages and binaries",
+  "source": "@site/docs/node_modules/global-dirs/readme.md",
+  "sourceDirName": "node_modules/global-dirs",
+  "slug": "/node_modules/global-dirs/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/global-dirs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/global-dirs/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Glob To Regular Expression",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/glob-to-regexp/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/global-dirs/node_modules/ini/"
+  }
+}

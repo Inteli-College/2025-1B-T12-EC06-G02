@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/escape-goat/readme",
+  "title": "readme",
+  "description": "Escape a string for use in HTML or the inverse",
+  "source": "@site/docs/node_modules/escape-goat/readme.md",
+  "sourceDirName": "node_modules/escape-goat",
+  "slug": "/node_modules/escape-goat/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/escape-goat/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/escape-goat/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "escalade [![CI](https://github.com/lukeed/escalade/workflows/CI/badge.svg)](https://github.com/lukeed/escalade/actions) [![licenses](https://licenses.dev/b/npm/escalade)](https://licenses.dev/npm/escalade) [![codecov](https://badgen.now.sh/codecov/c/github/lukeed/escalade)](https://codecov.io/gh/lukeed/escalade)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/escalade/"
+  },
+  "next": {
+    "title": "escape-html",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/escape-html/"
+  }
+}

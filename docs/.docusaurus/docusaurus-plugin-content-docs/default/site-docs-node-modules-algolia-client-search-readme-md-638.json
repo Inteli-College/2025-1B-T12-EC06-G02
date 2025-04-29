@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@algolia/client-search/README",
+  "title": "README",
+  "description": "The perfect starting point to integrate Algolia within your JavaScript project",
+  "source": "@site/docs/node_modules/@algolia/client-search/README.md",
+  "sourceDirName": "node_modules/@algolia/client-search",
+  "slug": "/node_modules/@algolia/client-search/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@algolia/client-search/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@algolia/client-search/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@algolia/client-query-suggestions/"
+  },
+  "next": {
+    "title": "events [![Build Status](https://travis-ci.org/Gozala/events.png?branch=master)](https://travis-ci.org/Gozala/events)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@algolia/events/"
+  }
+}

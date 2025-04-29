@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/micromark-util-chunked/readme",
+  "title": "micromark-util-chunked",
+  "description": "Build",
+  "source": "@site/docs/node_modules/micromark-util-chunked/readme.md",
+  "sourceDirName": "node_modules/micromark-util-chunked",
+  "slug": "/node_modules/micromark-util-chunked/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-chunked/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/micromark-util-chunked/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "micromark-util-character",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-character/"
+  },
+  "next": {
+    "title": "micromark-util-classify-character",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-classify-character/"
+  }
+}

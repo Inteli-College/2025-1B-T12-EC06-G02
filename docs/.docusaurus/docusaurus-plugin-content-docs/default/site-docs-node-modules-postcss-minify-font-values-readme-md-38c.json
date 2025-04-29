@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-minify-font-values/README",
+  "title": "postcss-minify-font-values [![Build Status][ci-img]][ci]",
+  "description": "Minify font declarations with PostCSS.",
+  "source": "@site/docs/node_modules/postcss-minify-font-values/README.md",
+  "sourceDirName": "node_modules/postcss-minify-font-values",
+  "slug": "/node_modules/postcss-minify-font-values/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-minify-font-values/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-minify-font-values/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "6.1.2",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-merge-rules/node_modules/postcss-selector-parser/CHANGELOG"
+  },
+  "next": {
+    "title": "[postcss][postcss]-minify-gradients",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-minify-gradients/"
+  }
+}

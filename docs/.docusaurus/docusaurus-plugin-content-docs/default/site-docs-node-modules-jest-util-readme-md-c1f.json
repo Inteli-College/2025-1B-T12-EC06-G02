@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/jest-util/Readme",
+  "title": "@jest/utils",
+  "description": "This packages is a collection of utilities and helper functions",
+  "source": "@site/docs/node_modules/jest-util/Readme.md",
+  "sourceDirName": "node_modules/jest-util",
+  "slug": "/node_modules/jest-util/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/jest-util/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/jest-util/Readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "isobject [![NPM version](https://img.shields.io/npm/v/isobject.svg?style=flat)](https://www.npmjs.com/package/isobject) [![NPM monthly downloads](https://img.shields.io/npm/dm/isobject.svg?style=flat)](https://npmjs.org/package/isobject)  [![NPM total downloads](https://img.shields.io/npm/dt/isobject.svg?style=flat)](https://npmjs.org/package/isobject) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/isobject.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/isobject)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/isobject/"
+  },
+  "next": {
+    "title": "jest-worker",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/jest-worker/"
+  }
+}

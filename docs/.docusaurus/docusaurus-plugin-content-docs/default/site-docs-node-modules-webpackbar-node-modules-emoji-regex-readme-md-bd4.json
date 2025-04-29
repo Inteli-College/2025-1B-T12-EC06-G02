@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/webpackbar/node_modules/emoji-regex/README",
+  "title": "emoji-regex [![Build status](https://travis-ci.org/mathiasbynens/emoji-regex.svg?branch=master)](https://travis-ci.org/mathiasbynens/emoji-regex)",
+  "description": "emoji-regex offers a regular expression to match all emoji symbols (including textual representations of emoji) as per the Unicode Standard.",
+  "source": "@site/docs/node_modules/webpackbar/node_modules/emoji-regex/README.md",
+  "sourceDirName": "node_modules/webpackbar/node_modules/emoji-regex",
+  "slug": "/node_modules/webpackbar/node_modules/emoji-regex/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/emoji-regex/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/webpackbar/node_modules/emoji-regex/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/"
+  },
+  "next": {
+    "title": "string-width",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/string-width/"
+  }
+}

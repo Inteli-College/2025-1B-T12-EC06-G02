@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/webpack-dev-server/README",
+  "title": "README",
+  "description": "npm",
+  "source": "@site/docs/node_modules/webpack-dev-server/README.md",
+  "sourceDirName": "node_modules/webpack-dev-server",
+  "slug": "/node_modules/webpack-dev-server/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-dev-server/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/webpack-dev-server/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-dev-middleware/"
+  },
+  "next": {
+    "title": "ws: a Node.js WebSocket library",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-dev-server/node_modules/ws/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/hpack.js/node_modules/readable-stream/CONTRIBUTING",
+  "title": "Developer's Certificate of Origin 1.1",
+  "description": "By making a contribution to this project, I certify that:",
+  "source": "@site/docs/node_modules/hpack.js/node_modules/readable-stream/CONTRIBUTING.md",
+  "sourceDirName": "node_modules/hpack.js/node_modules/readable-stream",
+  "slug": "/node_modules/hpack.js/node_modules/readable-stream/CONTRIBUTING",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/hpack.js/node_modules/readable-stream/CONTRIBUTING",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/hpack.js/node_modules/readable-stream/CONTRIBUTING.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "readable-stream",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hpack.js/node_modules/readable-stream/"
+  },
+  "next": {
+    "title": "GOVERNANCE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hpack.js/node_modules/readable-stream/GOVERNANCE"
+  }
+}

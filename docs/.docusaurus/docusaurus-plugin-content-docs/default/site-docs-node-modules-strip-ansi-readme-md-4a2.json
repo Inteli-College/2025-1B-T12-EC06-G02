@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/strip-ansi/readme",
+  "title": "strip-ansi [![Build Status](https://travis-ci.org/chalk/strip-ansi.svg?branch=master)](https://travis-ci.org/chalk/strip-ansi)",
+  "description": "Strip ANSI escape codes from a string",
+  "source": "@site/docs/node_modules/strip-ansi/readme.md",
+  "sourceDirName": "node_modules/strip-ansi",
+  "slug": "/node_modules/strip-ansi/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/strip-ansi/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/strip-ansi/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "stringify-object [![Build Status](https://secure.travis-ci.org/yeoman/stringify-object.svg?branch=master)](http://travis-ci.org/yeoman/stringify-object)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/stringify-object/"
+  },
+  "next": {
+    "title": "strip-bom-string [![NPM version](https://img.shields.io/npm/v/strip-bom-string.svg?style=flat)](https://www.npmjs.com/package/strip-bom-string) [![NPM monthly downloads](https://img.shields.io/npm/dm/strip-bom-string.svg?style=flat)](https://npmjs.org/package/strip-bom-string)  [![NPM total downloads](https://img.shields.io/npm/dt/strip-bom-string.svg?style=flat)](https://npmjs.org/package/strip-bom-string) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/strip-bom-string.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/strip-bom-string)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/strip-bom-string/"
+  }
+}

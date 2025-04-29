@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/indent-string/readme",
+  "title": "indent-string [![Build Status](https://travis-ci.org/sindresorhus/indent-string.svg?branch=master)](https://travis-ci.org/sindresorhus/indent-string)",
+  "description": "Indent each line in a string",
+  "source": "@site/docs/node_modules/indent-string/readme.md",
+  "sourceDirName": "node_modules/indent-string",
+  "slug": "/node_modules/indent-string/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/indent-string/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/indent-string/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "iMurmurHash.js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/imurmurhash/"
+  },
+  "next": {
+    "title": "inflight",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/inflight/"
+  }
+}

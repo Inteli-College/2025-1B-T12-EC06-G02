@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/parse-json/readme",
+  "title": "parse-json",
+  "description": "Parse JSON with more helpful errors",
+  "source": "@site/docs/node_modules/parse-json/readme.md",
+  "sourceDirName": "node_modules/parse-json",
+  "slug": "/node_modules/parse-json/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-json/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/parse-json/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-entities/node_modules/@types/unist/"
+  },
+  "next": {
+    "title": "node-parse-numeric-range",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-numeric-range/"
+  }
+}

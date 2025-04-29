@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-syntax-typescript/README",
+  "title": "@babel/plugin-syntax-typescript",
+  "description": "Allow parsing of TypeScript syntax",
+  "source": "@site/docs/node_modules/@babel/plugin-syntax-typescript/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-syntax-typescript",
+  "slug": "/node_modules/@babel/plugin-syntax-typescript/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-syntax-typescript/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-syntax-typescript/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-syntax-jsx",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-syntax-jsx/"
+  },
+  "next": {
+    "title": "@babel/plugin-syntax-unicode-sets-regex",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-syntax-unicode-sets-regex/"
+  }
+}

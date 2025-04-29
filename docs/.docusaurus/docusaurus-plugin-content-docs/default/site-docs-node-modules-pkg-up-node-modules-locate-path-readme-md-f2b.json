@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/pkg-up/node_modules/locate-path/readme",
+  "title": "locate-path [![Build Status](https://travis-ci.org/sindresorhus/locate-path.svg?branch=master)](https://travis-ci.org/sindresorhus/locate-path)",
+  "description": "Get the first path that exists on disk of multiple paths",
+  "source": "@site/docs/node_modules/pkg-up/node_modules/locate-path/readme.md",
+  "sourceDirName": "node_modules/pkg-up/node_modules/locate-path",
+  "slug": "/node_modules/pkg-up/node_modules/locate-path/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/locate-path/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/pkg-up/node_modules/locate-path/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "find-up [![Build Status: Linux and macOS](https://travis-ci.org/sindresorhus/find-up.svg?branch=master)](https://travis-ci.org/sindresorhus/find-up) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/l0cyjmvh5lq72vq2/branch/master?svg=true)](https://ci.appveyor.com/project/sindresorhus/find-up/branch/master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/find-up/"
+  },
+  "next": {
+    "title": "p-limit [![Build Status](https://travis-ci.org/sindresorhus/p-limit.svg?branch=master)](https://travis-ci.org/sindresorhus/p-limit)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/p-limit/"
+  }
+}

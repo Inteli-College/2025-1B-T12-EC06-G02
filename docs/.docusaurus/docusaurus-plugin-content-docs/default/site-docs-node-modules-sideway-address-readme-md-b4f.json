@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@sideway/address/README",
+  "title": "@sideway/address",
+  "description": "Validate email address and domain.",
+  "source": "@site/docs/node_modules/@sideway/address/README.md",
+  "sourceDirName": "node_modules/@sideway/address",
+  "slug": "/node_modules/@sideway/address/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sideway/address/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@sideway/address/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@polka/url [![npm](https://badgen.now.sh/npm/v/@polka/url)](https://npmjs.org/package/@polka/url) [![licenses](https://licenses.dev/b/npm/%40polka%2Furl)](https://licenses.dev/npm/%40polka%2Furl)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@polka/url/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sideway/address/LICENSE"
+  }
+}

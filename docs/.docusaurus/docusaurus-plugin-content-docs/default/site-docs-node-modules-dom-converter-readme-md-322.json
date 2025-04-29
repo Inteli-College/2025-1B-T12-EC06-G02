@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/dom-converter/README",
+  "title": "README",
+  "description": "Converts bare objects to DOM objects, compatible with htmlparser2's DOM objects.",
+  "source": "@site/docs/node_modules/dom-converter/README.md",
+  "sourceDirName": "node_modules/dom-converter",
+  "slug": "/node_modules/dom-converter/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/dom-converter/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/dom-converter/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "dns-packet",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dns-packet/"
+  },
+  "next": {
+    "title": "dom-serializer [![Build Status](https://travis-ci.com/cheeriojs/dom-serializer.svg?branch=master)](https://travis-ci.com/cheeriojs/dom-serializer)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dom-serializer/"
+  }
+}

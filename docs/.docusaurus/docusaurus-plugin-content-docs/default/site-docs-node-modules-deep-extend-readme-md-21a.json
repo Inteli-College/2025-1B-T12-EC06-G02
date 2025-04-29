@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/deep-extend/README",
+  "title": "Deep Extend",
+  "description": "Recursive object extending.",
+  "source": "@site/docs/node_modules/deep-extend/README.md",
+  "sourceDirName": "node_modules/deep-extend",
+  "slug": "/node_modules/deep-extend/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/deep-extend/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/deep-extend/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "decompress-response [![Build Status](https://travis-ci.com/sindresorhus/decompress-response.svg?branch=master)](https://travis-ci.com/sindresorhus/decompress-response)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/decompress-response/"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/deep-extend/CHANGELOG"
+  }
+}

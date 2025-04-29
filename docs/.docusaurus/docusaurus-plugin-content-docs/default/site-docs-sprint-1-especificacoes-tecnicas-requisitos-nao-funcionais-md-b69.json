@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais",
+  "title": "Requisitos Não Funcionais",
+  "description": "Especifica os atributos de qualidade do sistema como tempo de resposta, confiabilidade, segurança, escalabilidade e acessibilidade, incluindo justificativas baseadas nas necessidades dos usuários e contexto de uso.",
+  "source": "@site/docs/sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md",
+  "sourceDirName": "sprint-1/especificacoes-tecnicas",
+  "slug": "/sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Requisitos Funcionais",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/especificacoes-tecnicas/Requisitos_Funcionais"
+  },
+  "next": {
+    "title": "Arquitetura Inicial",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/especificacoes-tecnicas/Arquitetura_Inicial"
+  }
+}

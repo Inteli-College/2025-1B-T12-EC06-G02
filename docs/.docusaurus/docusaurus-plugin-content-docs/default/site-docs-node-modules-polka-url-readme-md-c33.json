@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@polka/url/readme",
+  "title": "@polka/url [![npm](https://badgen.now.sh/npm/v/@polka/url)](https://npmjs.org/package/@polka/url) [![licenses](https://licenses.dev/b/npm/%40polka%2Furl)](https://licenses.dev/npm/%40polka%2Furl)",
+  "description": "Super fast, memoized req.url parser; not limited to Polka!",
+  "source": "@site/docs/node_modules/@polka/url/readme.md",
+  "sourceDirName": "node_modules/@polka/url",
+  "slug": "/node_modules/@polka/url/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@polka/url/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@polka/url/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@pnpm/npm-conf [![Build Status](https://travis-ci.com/pnpm/npm-conf.svg?branch=master)](https://travis-ci.com/pnpm/npm-conf)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@pnpm/npm-conf/"
+  },
+  "next": {
+    "title": "@sideway/address",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sideway/address/"
+  }
+}

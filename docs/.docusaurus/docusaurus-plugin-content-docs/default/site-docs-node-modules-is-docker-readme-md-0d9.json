@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-docker/readme",
+  "title": "is-docker",
+  "description": "Check if the process is running inside a Docker container",
+  "source": "@site/docs/node_modules/is-docker/readme.md",
+  "sourceDirName": "node_modules/is-docker",
+  "slug": "/node_modules/is-docker/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-docker/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-docker/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-decimal",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-decimal/"
+  },
+  "next": {
+    "title": "is-extendable [![NPM version](https://badge.fury.io/js/is-extendable.svg)](http://badge.fury.io/js/is-extendable)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-extendable/"
+  }
+}

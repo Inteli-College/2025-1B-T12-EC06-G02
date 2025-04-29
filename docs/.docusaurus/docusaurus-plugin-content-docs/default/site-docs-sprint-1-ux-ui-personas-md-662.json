@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/ux-ui/Personas",
+  "title": "Personas",
+  "description": "Apresenta ao menos duas personas completas baseadas em pesquisa real, incluindo dados demográficos, comportamentais, nível de letramento digital, dores, desejos e cenários de uso do sistema.",
+  "source": "@site/docs/sprint-1/ux-ui/Personas.md",
+  "sourceDirName": "sprint-1/ux-ui",
+  "slug": "/sprint-1/ux-ui/Personas",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/ux-ui/Personas",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Design Centrado no Usuário",
+    "permalink": "/2025-1B-T12-EC06-G02/category/design-centrado-no-usuário"
+  },
+  "next": {
+    "title": "User Stories",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/ux-ui/User_Stories"
+  }
+}

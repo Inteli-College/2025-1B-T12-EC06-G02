@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/parse-entities/node_modules/@types/unist/README",
+  "title": "Installation",
+  "description": "npm install --save @types/unist",
+  "source": "@site/docs/node_modules/parse-entities/node_modules/@types/unist/README.md",
+  "sourceDirName": "node_modules/parse-entities/node_modules/@types/unist",
+  "slug": "/node_modules/parse-entities/node_modules/@types/unist/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-entities/node_modules/@types/unist/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/parse-entities/node_modules/@types/unist/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "parse-entities",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-entities/"
+  },
+  "next": {
+    "title": "parse-json",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-json/"
+  }
+}

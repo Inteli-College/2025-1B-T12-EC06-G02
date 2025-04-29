@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cli-table3/node_modules/string-width/readme",
+  "title": "string-width",
+  "description": "Get the visual width of a string - the number of columns required to display it",
+  "source": "@site/docs/node_modules/cli-table3/node_modules/string-width/readme.md",
+  "sourceDirName": "node_modules/cli-table3/node_modules/string-width",
+  "slug": "/node_modules/cli-table3/node_modules/string-width/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cli-table3/node_modules/string-width/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cli-table3/node_modules/string-width/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "emoji-regex [![Build status](https://travis-ci.org/mathiasbynens/emoji-regex.svg?branch=master)](https://travis-ci.org/mathiasbynens/emoji-regex)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cli-table3/node_modules/emoji-regex/"
+  },
+  "next": {
+    "title": "clone-deep [![NPM version](https://img.shields.io/npm/v/clone-deep.svg?style=flat)](https://www.npmjs.com/package/clone-deep) [![NPM monthly downloads](https://img.shields.io/npm/dm/clone-deep.svg?style=flat)](https://npmjs.org/package/clone-deep) [![NPM total downloads](https://img.shields.io/npm/dt/clone-deep.svg?style=flat)](https://npmjs.org/package/clone-deep) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/clone-deep.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/clone-deep)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/clone-deep/"
+  }
+}

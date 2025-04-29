@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/react-loadable/README",
+  "title": "README",
+  "description": "IMPORTANT: this is a minimalistic fork to solve the componentWillMount warning for the facebook/docusaurus project.",
+  "source": "@site/docs/node_modules/react-loadable/README.md",
+  "sourceDirName": "node_modules/react-loadable",
+  "slug": "/node_modules/react-loadable/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-loadable/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/react-loadable/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-json-view-lite/"
+  },
+  "next": {
+    "title": "React Loadable SSR Add-on",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-loadable-ssr-addon-v5-slorber/"
+  }
+}

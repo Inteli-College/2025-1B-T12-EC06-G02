@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-json-strings/README",
+  "title": "@babel/plugin-transform-json-strings",
+  "description": "Escape U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR in JS strings",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-json-strings/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-json-strings",
+  "slug": "/node_modules/@babel/plugin-transform-json-strings/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-json-strings/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-json-strings/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-function-name",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-function-name/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-literals",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-literals/"
+  }
+}

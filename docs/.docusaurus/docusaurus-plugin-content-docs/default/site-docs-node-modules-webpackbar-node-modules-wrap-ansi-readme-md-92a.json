@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/webpackbar/node_modules/wrap-ansi/readme",
+  "title": "wrap-ansi [![Build Status](https://travis-ci.com/chalk/wrap-ansi.svg?branch=master)](https://travis-ci.com/chalk/wrap-ansi) [![Coverage Status](https://coveralls.io/repos/github/chalk/wrap-ansi/badge.svg?branch=master)](https://coveralls.io/github/chalk/wrap-ansi?branch=master)",
+  "description": "Wordwrap a string with ANSI escape codes",
+  "source": "@site/docs/node_modules/webpackbar/node_modules/wrap-ansi/readme.md",
+  "sourceDirName": "node_modules/webpackbar/node_modules/wrap-ansi",
+  "slug": "/node_modules/webpackbar/node_modules/wrap-ansi/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/wrap-ansi/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/webpackbar/node_modules/wrap-ansi/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "string-width",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/string-width/"
+  },
+  "next": {
+    "title": "websocket-driver [![Build Status](https://travis-ci.org/faye/websocket-driver-node.svg)](https://travis-ci.org/faye/websocket-driver-node)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-driver/"
+  }
+}

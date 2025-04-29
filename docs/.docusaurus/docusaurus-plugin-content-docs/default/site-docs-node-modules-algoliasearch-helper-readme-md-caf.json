@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/algoliasearch-helper/README",
+  "title": "README",
+  "description": "Coming from V1 (or js client v2)? Read the migration guide to the new version of the Helper.",
+  "source": "@site/docs/node_modules/algoliasearch-helper/README.md",
+  "sourceDirName": "node_modules/algoliasearch-helper",
+  "slug": "/node_modules/algoliasearch-helper/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/algoliasearch-helper/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/algoliasearch-helper/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/algoliasearch/"
+  },
+  "next": {
+    "title": "ansi-align",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ansi-align/"
+  }
+}

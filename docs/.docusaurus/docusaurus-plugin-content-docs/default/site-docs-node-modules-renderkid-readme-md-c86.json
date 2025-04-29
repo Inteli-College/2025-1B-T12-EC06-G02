@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/renderkid/README",
+  "title": "RenderKid",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/renderkid/README.md",
+  "sourceDirName": "node_modules/renderkid",
+  "slug": "/node_modules/renderkid/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/renderkid/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "remark-stringify",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/remark-stringify/"
+  },
+  "next": {
+    "title": "Renderkid Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/CHANGELOG"
+  }
+}

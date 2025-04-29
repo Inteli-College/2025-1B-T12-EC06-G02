@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@jridgewell/source-map/README",
+  "title": "@jridgewell/source-map",
+  "description": "Packages @jridgewell/trace-mapping and @jridgewell/gen-mapping into the familiar source-map API",
+  "source": "@site/docs/node_modules/@jridgewell/source-map/README.md",
+  "sourceDirName": "node_modules/@jridgewell/source-map",
+  "slug": "/node_modules/@jridgewell/source-map/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/source-map/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@jridgewell/source-map/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@jridgewell/set-array",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/set-array/"
+  },
+  "next": {
+    "title": "@jridgewell/sourcemap-codec",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/sourcemap-codec/"
+  }
+}

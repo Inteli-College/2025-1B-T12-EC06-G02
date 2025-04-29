@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-syntax-unicode-sets-regex/README",
+  "title": "@babel/plugin-syntax-unicode-sets-regex",
+  "description": "Parse regular expressions' unicodeSets (v) flag.",
+  "source": "@site/docs/node_modules/@babel/plugin-syntax-unicode-sets-regex/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-syntax-unicode-sets-regex",
+  "slug": "/node_modules/@babel/plugin-syntax-unicode-sets-regex/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-syntax-unicode-sets-regex/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-syntax-unicode-sets-regex/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-syntax-typescript",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-syntax-typescript/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-arrow-functions",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-arrow-functions/"
+  }
+}

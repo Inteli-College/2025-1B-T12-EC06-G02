@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/html-minifier-terser/README",
+  "title": "HTMLMinifier",
+  "description": "NPM version",
+  "source": "@site/docs/node_modules/html-minifier-terser/README.md",
+  "sourceDirName": "node_modules/html-minifier-terser",
+  "slug": "/node_modules/html-minifier-terser/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-minifier-terser/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/html-minifier-terser/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "html-escaper [![Build Status](https://travis-ci.org/WebReflection/html-escaper.svg?branch=master)](https://travis-ci.org/WebReflection/html-escaper) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/html-escaper/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/html-escaper?branch=master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-escaper/"
+  },
+  "next": {
+    "title": "Commander.js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-minifier-terser/node_modules/commander/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@types/istanbul-reports/README",
+  "title": "Installation",
+  "description": "npm install --save @types/istanbul-reports",
+  "source": "@site/docs/node_modules/@types/istanbul-reports/README.md",
+  "sourceDirName": "node_modules/@types/istanbul-reports",
+  "slug": "/node_modules/@types/istanbul-reports/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/istanbul-reports/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@types/istanbul-reports/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/istanbul-lib-report/"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/json-schema/"
+  }
+}

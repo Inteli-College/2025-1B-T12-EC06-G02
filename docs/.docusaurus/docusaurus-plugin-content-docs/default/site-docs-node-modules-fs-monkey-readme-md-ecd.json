@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/fs-monkey/README",
+  "title": "fs-monkey",
+  "description": "Monkey-patches for filesystem related things.",
+  "source": "@site/docs/node_modules/fs-monkey/README.md",
+  "sourceDirName": "node_modules/fs-monkey",
+  "slug": "/node_modules/fs-monkey/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-monkey/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/fs-monkey/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Node.js: fs-extra",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-extra/"
+  },
+  "next": {
+    "title": "patchFs(vol[, fs])",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-monkey/docs/api/patchFs"
+  }
+}

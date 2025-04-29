@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-binary-path/readme",
+  "title": "is-binary-path [![Build Status](https://travis-ci.org/sindresorhus/is-binary-path.svg?branch=master)](https://travis-ci.org/sindresorhus/is-binary-path)",
+  "description": "Check if a file path is a binary file",
+  "source": "@site/docs/node_modules/is-binary-path/readme.md",
+  "sourceDirName": "node_modules/is-binary-path",
+  "slug": "/node_modules/is-binary-path/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-binary-path/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-binary-path/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "node-is-arrayish [![Travis-CI.org Build Status](https://img.shields.io/travis/Qix-/node-is-arrayish.svg?style=flat-square)](https://travis-ci.org/Qix-/node-is-arrayish) [![Coveralls.io Coverage Rating](https://img.shields.io/coveralls/Qix-/node-is-arrayish.svg?style=flat-square)](https://coveralls.io/r/Qix-/node-is-arrayish)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-arrayish/"
+  },
+  "next": {
+    "title": "is-ci",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-ci/"
+  }
+}

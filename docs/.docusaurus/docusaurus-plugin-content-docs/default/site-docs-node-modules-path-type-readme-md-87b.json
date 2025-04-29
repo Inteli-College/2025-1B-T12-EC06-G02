@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/path-type/readme",
+  "title": "path-type [![Build Status](https://travis-ci.org/sindresorhus/path-type.svg?branch=master)](https://travis-ci.org/sindresorhus/path-type)",
+  "description": "Check if a path is a file, directory, or symlink",
+  "source": "@site/docs/node_modules/path-type/readme.md",
+  "sourceDirName": "node_modules/path-type",
+  "slug": "/node_modules/path-type/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/path-type/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/path-type/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Path-to-RegExp",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/path-to-regexp/"
+  },
+  "next": {
+    "title": "picocolors",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/picocolors/"
+  }
+}

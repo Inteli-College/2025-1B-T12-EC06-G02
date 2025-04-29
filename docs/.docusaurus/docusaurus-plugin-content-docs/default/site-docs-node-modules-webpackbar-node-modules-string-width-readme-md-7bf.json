@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/webpackbar/node_modules/string-width/readme",
+  "title": "string-width",
+  "description": "Get the visual width of a string - the number of columns required to display it",
+  "source": "@site/docs/node_modules/webpackbar/node_modules/string-width/readme.md",
+  "sourceDirName": "node_modules/webpackbar/node_modules/string-width",
+  "slug": "/node_modules/webpackbar/node_modules/string-width/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/string-width/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/webpackbar/node_modules/string-width/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "emoji-regex [![Build status](https://travis-ci.org/mathiasbynens/emoji-regex.svg?branch=master)](https://travis-ci.org/mathiasbynens/emoji-regex)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/emoji-regex/"
+  },
+  "next": {
+    "title": "wrap-ansi [![Build Status](https://travis-ci.com/chalk/wrap-ansi.svg?branch=master)](https://travis-ci.com/chalk/wrap-ansi) [![Coverage Status](https://coveralls.io/repos/github/chalk/wrap-ansi/badge.svg?branch=master)](https://coveralls.io/github/chalk/wrap-ansi?branch=master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/wrap-ansi/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/gray-matter/node_modules/js-yaml/README",
+  "title": "JS-YAML - YAML 1.2 parser / writer for JavaScript",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/gray-matter/node_modules/js-yaml/README.md",
+  "sourceDirName": "node_modules/gray-matter/node_modules/js-yaml",
+  "slug": "/node_modules/gray-matter/node_modules/js-yaml/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/gray-matter/node_modules/js-yaml/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/gray-matter/node_modules/js-yaml/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/gray-matter/node_modules/argparse/CHANGELOG"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/gray-matter/node_modules/js-yaml/CHANGELOG"
+  }
+}

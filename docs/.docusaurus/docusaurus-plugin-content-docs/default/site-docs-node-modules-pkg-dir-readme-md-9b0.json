@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/pkg-dir/readme",
+  "title": "pkg-dir",
+  "description": "Find the root directory of a Node.js project or npm package",
+  "source": "@site/docs/node_modules/pkg-dir/readme.md",
+  "sourceDirName": "node_modules/pkg-dir",
+  "slug": "/node_modules/pkg-dir/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-dir/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/pkg-dir/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Release history",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/picomatch/CHANGELOG"
+  },
+  "next": {
+    "title": "find-up",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-dir/node_modules/find-up/"
+  }
+}

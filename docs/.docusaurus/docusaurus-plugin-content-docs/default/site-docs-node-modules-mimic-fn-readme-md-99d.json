@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mimic-fn/readme",
+  "title": "mimic-fn [![Build Status](https://travis-ci.org/sindresorhus/mimic-fn.svg?branch=master)](https://travis-ci.org/sindresorhus/mimic-fn)",
+  "description": "Make a function mimic another one",
+  "source": "@site/docs/node_modules/mimic-fn/readme.md",
+  "sourceDirName": "node_modules/mimic-fn",
+  "slug": "/node_modules/mimic-fn/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mimic-fn/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mimic-fn/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.1.35 / 2022-03-12",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mime-types/HISTORY"
+  },
+  "next": {
+    "title": "mimic-response [![Build Status](https://travis-ci.com/sindresorhus/mimic-response.svg?branch=master)](https://travis-ci.com/sindresorhus/mimic-response)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mimic-response/"
+  }
+}

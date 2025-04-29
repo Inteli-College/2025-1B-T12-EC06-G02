@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mdast-util-from-markdown/readme",
+  "title": "mdast-util-from-markdown",
+  "description": "Build",
+  "source": "@site/docs/node_modules/mdast-util-from-markdown/readme.md",
+  "sourceDirName": "node_modules/mdast-util-from-markdown",
+  "slug": "/node_modules/mdast-util-from-markdown/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-from-markdown/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mdast-util-from-markdown/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "escape-string-regexp",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-find-and-replace/node_modules/escape-string-regexp/"
+  },
+  "next": {
+    "title": "mdast-util-frontmatter",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-frontmatter/"
+  }
+}

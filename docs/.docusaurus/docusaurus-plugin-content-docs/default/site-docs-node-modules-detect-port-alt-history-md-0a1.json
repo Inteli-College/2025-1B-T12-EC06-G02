@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/detect-port-alt/HISTORY",
+  "title": "1.1.2 / 2017-05-11",
+  "description": "* fix: should double check 0.0.0.0 and localhost (#20)",
+  "source": "@site/docs/node_modules/detect-port-alt/HISTORY.md",
+  "sourceDirName": "node_modules/detect-port-alt",
+  "slug": "/node_modules/detect-port-alt/HISTORY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/detect-port-alt/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/detect-port-alt/HISTORY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contributing to detect-port",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/detect-port-alt/CONTRIBUTING"
+  },
+  "next": {
+    "title": "devlop",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/devlop/"
+  }
+}

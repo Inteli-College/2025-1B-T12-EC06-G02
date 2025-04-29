@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@types/eslint-scope/README",
+  "title": "Installation",
+  "description": "npm install --save @types/eslint-scope",
+  "source": "@site/docs/node_modules/@types/eslint-scope/README.md",
+  "sourceDirName": "node_modules/@types/eslint-scope",
+  "slug": "/node_modules/@types/eslint-scope/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/eslint-scope/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@types/eslint-scope/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/eslint/"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/estree/"
+  }
+}

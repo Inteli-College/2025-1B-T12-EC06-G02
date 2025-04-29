@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mini-css-extract-plugin/README",
+  "title": "README",
+  "description": "mini-css-extract-plugin",
+  "source": "@site/docs/node_modules/mini-css-extract-plugin/README.md",
+  "sourceDirName": "node_modules/mini-css-extract-plugin",
+  "slug": "/node_modules/mini-css-extract-plugin/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mini-css-extract-plugin/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mini-css-extract-plugin/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "mimic-response [![Build Status](https://travis-ci.com/sindresorhus/mimic-response.svg?branch=master)](https://travis-ci.com/sindresorhus/mimic-response)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mimic-response/"
+  },
+  "next": {
+    "title": "minimalistic-assert",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/minimalistic-assert/"
+  }
+}

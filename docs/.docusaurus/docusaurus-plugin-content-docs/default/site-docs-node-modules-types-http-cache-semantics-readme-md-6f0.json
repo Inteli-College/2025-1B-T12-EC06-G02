@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@types/http-cache-semantics/README",
+  "title": "Installation",
+  "description": "npm install --save @types/http-cache-semantics",
+  "source": "@site/docs/node_modules/@types/http-cache-semantics/README.md",
+  "sourceDirName": "node_modules/@types/http-cache-semantics",
+  "slug": "/node_modules/@types/http-cache-semantics/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/http-cache-semantics/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@types/http-cache-semantics/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/html-minifier-terser/"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/http-errors/"
+  }
+}

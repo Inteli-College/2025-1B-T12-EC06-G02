@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-preset-env/CHANGELOG",
+  "title": "Changes to PostCSS Preset Env",
+  "description": "10.1.6",
+  "source": "@site/docs/node_modules/postcss-preset-env/CHANGELOG.md",
+  "sourceDirName": "node_modules/postcss-preset-env",
+  "slug": "/node_modules/postcss-preset-env/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-preset-env/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-preset-env/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Preset Env [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-preset-env/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-preset-env/LICENSE"
+  }
+}

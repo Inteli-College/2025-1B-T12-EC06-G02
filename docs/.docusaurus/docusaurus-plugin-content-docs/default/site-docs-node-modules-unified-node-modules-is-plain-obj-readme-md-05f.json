@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/unified/node_modules/is-plain-obj/readme",
+  "title": "is-plain-obj",
+  "description": "Check if a value is a plain object",
+  "source": "@site/docs/node_modules/unified/node_modules/is-plain-obj/readme.md",
+  "sourceDirName": "node_modules/unified/node_modules/is-plain-obj",
+  "slug": "/node_modules/unified/node_modules/is-plain-obj/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/unified/node_modules/is-plain-obj/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/unified/node_modules/is-plain-obj/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "[![unified][logo]][site]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/unified/"
+  },
+  "next": {
+    "title": "unique-string",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/unique-string/"
+  }
+}

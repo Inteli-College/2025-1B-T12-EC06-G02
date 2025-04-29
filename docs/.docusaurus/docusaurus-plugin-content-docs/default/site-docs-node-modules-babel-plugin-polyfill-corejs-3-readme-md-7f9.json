@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/babel-plugin-polyfill-corejs3/README",
+  "title": "babel-plugin-polyfill-corejs3",
+  "description": "Install",
+  "source": "@site/docs/node_modules/babel-plugin-polyfill-corejs3/README.md",
+  "sourceDirName": "node_modules/babel-plugin-polyfill-corejs3",
+  "slug": "/node_modules/babel-plugin-polyfill-corejs3/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/babel-plugin-polyfill-corejs3/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/babel-plugin-polyfill-corejs3/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "babel-plugin-polyfill-corejs2",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/babel-plugin-polyfill-corejs2/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/babel-plugin-polyfill-corejs3/core-js-compat/"
+  }
+}

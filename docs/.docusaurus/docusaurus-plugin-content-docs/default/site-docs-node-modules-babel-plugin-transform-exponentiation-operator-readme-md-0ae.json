@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-exponentiation-operator/README",
+  "title": "@babel/plugin-transform-exponentiation-operator",
+  "description": "Compile exponentiation operator to ES5",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-exponentiation-operator/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-exponentiation-operator",
+  "slug": "/node_modules/@babel/plugin-transform-exponentiation-operator/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-exponentiation-operator/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-exponentiation-operator/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-dynamic-import",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-dynamic-import/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-export-namespace-from",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-export-namespace-from/"
+  }
+}

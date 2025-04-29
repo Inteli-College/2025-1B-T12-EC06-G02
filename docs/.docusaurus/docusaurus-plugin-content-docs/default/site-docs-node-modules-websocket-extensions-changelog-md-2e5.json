@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/websocket-extensions/CHANGELOG",
+  "title": "CHANGELOG",
+  "description": "0.1.4 / 2020-06-02",
+  "source": "@site/docs/node_modules/websocket-extensions/CHANGELOG.md",
+  "sourceDirName": "node_modules/websocket-extensions",
+  "slug": "/node_modules/websocket-extensions/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-extensions/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/websocket-extensions/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "websocket-extensions [![Build status](https://secure.travis-ci.org/faye/websocket-extensions-node.svg)](http://travis-ci.org/faye/websocket-extensions-node)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-extensions/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-extensions/LICENSE"
+  }
+}

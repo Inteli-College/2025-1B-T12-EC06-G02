@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/pkg-up/node_modules/find-up/readme",
+  "title": "find-up [![Build Status: Linux and macOS](https://travis-ci.org/sindresorhus/find-up.svg?branch=master)](https://travis-ci.org/sindresorhus/find-up) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/l0cyjmvh5lq72vq2/branch/master?svg=true)](https://ci.appveyor.com/project/sindresorhus/find-up/branch/master)",
+  "description": "Find a file or directory by walking up parent directories",
+  "source": "@site/docs/node_modules/pkg-up/node_modules/find-up/readme.md",
+  "sourceDirName": "node_modules/pkg-up/node_modules/find-up",
+  "slug": "/node_modules/pkg-up/node_modules/find-up/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/find-up/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/pkg-up/node_modules/find-up/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "pkg-up [![Build Status](https://travis-ci.org/sindresorhus/pkg-up.svg?branch=master)](https://travis-ci.org/sindresorhus/pkg-up)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/"
+  },
+  "next": {
+    "title": "locate-path [![Build Status](https://travis-ci.org/sindresorhus/locate-path.svg?branch=master)](https://travis-ci.org/sindresorhus/locate-path)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/locate-path/"
+  }
+}

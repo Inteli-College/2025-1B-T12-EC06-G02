@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-svgo/README",
+  "title": "[postcss][postcss]-svgo",
+  "description": "Optimise inline SVG with PostCSS.",
+  "source": "@site/docs/node_modules/postcss-svgo/README.md",
+  "sourceDirName": "node_modules/postcss-svgo",
+  "slug": "/node_modules/postcss-svgo/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-svgo/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-svgo/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Sort Media Queries",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-sort-media-queries/"
+  },
+  "next": {
+    "title": "[postcss][postcss]-unique-selectors",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-unique-selectors/"
+  }
+}

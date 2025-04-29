@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/char-regex/README",
+  "title": "Char Regex [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/char-regex/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/char-regex)",
+  "description": "A regex to match any full character, considering weird character ranges. Tested on every single emoji and unicode character. Based on the Lodash implementation.",
+  "source": "@site/docs/node_modules/char-regex/README.md",
+  "sourceDirName": "node_modules/char-regex",
+  "slug": "/node_modules/char-regex/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/char-regex/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/char-regex/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "supports-color [![Build Status](https://travis-ci.org/chalk/supports-color.svg?branch=master)](https://travis-ci.org/chalk/supports-color)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/chalk/node_modules/supports-color/"
+  },
+  "next": {
+    "title": "character-entities",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/character-entities/"
+  }
+}

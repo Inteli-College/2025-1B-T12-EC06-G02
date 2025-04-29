@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/hpack.js/node_modules/string_decoder/README",
+  "title": "string_decoder",
+  "description": "Node-core v8.9.4 string_decoder for userland",
+  "source": "@site/docs/node_modules/hpack.js/node_modules/string_decoder/README.md",
+  "sourceDirName": "node_modules/hpack.js/node_modules/string_decoder",
+  "slug": "/node_modules/hpack.js/node_modules/string_decoder/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/hpack.js/node_modules/string_decoder/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/hpack.js/node_modules/string_decoder/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "safe-buffer [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hpack.js/node_modules/safe-buffer/"
+  },
+  "next": {
+    "title": "html-entities",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-entities/"
+  }
+}

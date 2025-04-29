@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/fastq/SECURITY",
+  "title": "Security Policy",
+  "description": "Supported Versions",
+  "source": "@site/docs/node_modules/fastq/SECURITY.md",
+  "sourceDirName": "node_modules/fastq",
+  "slug": "/node_modules/fastq/SECURITY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/fastq/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/fastq/SECURITY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "fastq",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fastq/"
+  },
+  "next": {
+    "title": "fault",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fault/"
+  }
+}

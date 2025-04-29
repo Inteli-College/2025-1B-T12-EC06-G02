@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/fastq/README",
+  "title": "fastq",
+  "description": "ci",
+  "source": "@site/docs/node_modules/fastq/README.md",
+  "sourceDirName": "node_modules/fastq",
+  "slug": "/node_modules/fastq/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/fastq/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/fastq/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "fast-uri",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fast-uri/"
+  },
+  "next": {
+    "title": "Security Policy",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fastq/SECURITY"
+  }
+}

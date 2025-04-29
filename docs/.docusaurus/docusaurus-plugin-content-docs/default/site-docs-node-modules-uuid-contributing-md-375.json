@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/uuid/CONTRIBUTING",
+  "title": "Contributing",
+  "description": "Please feel free to file GitHub Issues or propose Pull Requests. We're always happy to discuss improvements to this library!",
+  "source": "@site/docs/node_modules/uuid/CONTRIBUTING.md",
+  "sourceDirName": "node_modules/uuid",
+  "slug": "/node_modules/uuid/CONTRIBUTING",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/uuid/CONTRIBUTING",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/uuid/CONTRIBUTING.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/uuid/CHANGELOG"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/uuid/LICENSE"
+  }
+}

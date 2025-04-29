@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/sort-css-media-queries/README",
+  "title": "sort-css-media-queries",
+  "description": "types",
+  "source": "@site/docs/node_modules/sort-css-media-queries/README.md",
+  "sourceDirName": "node_modules/sort-css-media-queries",
+  "slug": "/node_modules/sort-css-media-queries/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/sort-css-media-queries/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/sort-css-media-queries/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/sockjs/"
+  },
+  "next": {
+    "title": "Source Map",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/source-map/"
+  }
+}

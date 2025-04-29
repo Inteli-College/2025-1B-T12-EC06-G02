@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/minimalistic-assert/readme",
+  "title": "minimalistic-assert",
+  "description": "very minimalistic assert module.",
+  "source": "@site/docs/node_modules/minimalistic-assert/readme.md",
+  "sourceDirName": "node_modules/minimalistic-assert",
+  "slug": "/node_modules/minimalistic-assert/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/minimalistic-assert/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/minimalistic-assert/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mini-css-extract-plugin/"
+  },
+  "next": {
+    "title": "minimatch",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/minimatch/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss/README",
+  "title": "PostCSS",
+  "description": "<img align=\"right\" width=\"95\" height=\"95\"",
+  "source": "@site/docs/node_modules/postcss/README.md",
+  "sourceDirName": "node_modules/postcss",
+  "slug": "/node_modules/postcss/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "path-exists [![Build Status](https://travis-ci.org/sindresorhus/path-exists.svg?branch=master)](https://travis-ci.org/sindresorhus/path-exists)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/path-exists/"
+  },
+  "next": {
+    "title": "PostCSS Attribute Case Insensitive [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-attribute-case-insensitive/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/chokidar/README",
+  "title": "Chokidar [![Weekly downloads](https://img.shields.io/npm/dw/chokidar.svg)](https://github.com/paulmillr/chokidar) [![Yearly downloads](https://img.shields.io/npm/dy/chokidar.svg)](https://github.com/paulmillr/chokidar)",
+  "description": "Minimal and efficient cross-platform file watching library",
+  "source": "@site/docs/node_modules/chokidar/README.md",
+  "sourceDirName": "node_modules/chokidar",
+  "slug": "/node_modules/chokidar/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/chokidar/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/chokidar/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cheerio-select [![NPM version](http://img.shields.io/npm/v/cheerio-select.svg)](https://npmjs.org/package/cheerio-select) [![Build Status](https://travis-ci.org/cheeriojs/cheerio-select.svg?branch=master)](http://travis-ci.org/cheeriojs/cheerio-select) [![Downloads](https://img.shields.io/npm/dm/cheerio-select.svg)](https://npmjs.org/package/cheerio-select) [![Coverage](https://coveralls.io/repos/cheeriojs/cheerio-select/badge.svg?branch=master)](https://coveralls.io/r/cheeriojs/cheerio-select)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cheerio-select/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/chrome-trace-event/"
+  }
+}

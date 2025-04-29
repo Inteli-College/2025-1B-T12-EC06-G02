@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/on-finished/README",
+  "title": "on-finished",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/on-finished/README.md",
+  "sourceDirName": "node_modules/on-finished",
+  "slug": "/node_modules/on-finished/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/on-finished/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/on-finished/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "obuf - Offset buffer implementation.",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/obuf/"
+  },
+  "next": {
+    "title": "2.4.1 / 2022-02-22",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/on-finished/HISTORY"
+  }
+}

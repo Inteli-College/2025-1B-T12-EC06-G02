@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-async-generator-functions/README",
+  "title": "@babel/plugin-transform-async-generator-functions",
+  "description": "Turn async generator functions into ES2015 generators",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-async-generator-functions/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-async-generator-functions",
+  "slug": "/node_modules/@babel/plugin-transform-async-generator-functions/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-async-generator-functions/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-async-generator-functions/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-arrow-functions",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-arrow-functions/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-async-to-generator",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-async-to-generator/"
+  }
+}

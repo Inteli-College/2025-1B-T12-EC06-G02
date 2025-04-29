@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/react-dev-utils/node_modules/loader-utils/README",
+  "title": "loader-utils",
+  "description": "Methods",
+  "source": "@site/docs/node_modules/react-dev-utils/node_modules/loader-utils/README.md",
+  "sourceDirName": "node_modules/react-dev-utils/node_modules/loader-utils",
+  "slug": "/node_modules/react-dev-utils/node_modules/loader-utils/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-dev-utils/node_modules/loader-utils/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/react-dev-utils/node_modules/loader-utils/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "react-dev-utils",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-dev-utils/"
+  },
+  "next": {
+    "title": "react-dom",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-dom/"
+  }
+}

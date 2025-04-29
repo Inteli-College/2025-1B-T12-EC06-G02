@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/dot-case/README",
+  "title": "Dot Case",
+  "description": "NPM version",
+  "source": "@site/docs/node_modules/dot-case/README.md",
+  "sourceDirName": "node_modules/dot-case",
+  "slug": "/node_modules/dot-case/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/dot-case/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/dot-case/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "domutils [![Node.js CI](https://github.com/fb55/domutils/actions/workflows/nodejs-test.yml/badge.svg)](https://github.com/fb55/domutils/actions/workflows/nodejs-test.yml)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/domutils/"
+  },
+  "next": {
+    "title": "dot-prop [![Build Status](https://travis-ci.com/sindresorhus/dot-prop.svg?branch=master)](https://travis-ci.com/github/sindresorhus/dot-prop)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dot-prop/"
+  }
+}

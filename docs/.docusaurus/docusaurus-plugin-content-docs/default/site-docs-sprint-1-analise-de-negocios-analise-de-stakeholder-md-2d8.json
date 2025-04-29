@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/analise-de-negocios/analise_de_stakeholder",
+  "title": "Análise de Stakeholders",
+  "description": "Mapeia todos os envolvidos no projeto, avaliando como cada fator externo afeta os diferentes stakeholders e estabelecendo estratégias de gerenciamento de expectativas.",
+  "source": "@site/docs/sprint-1/analise-de-negocios/analise_de_stakeholder.md",
+  "sourceDirName": "sprint-1/analise-de-negocios",
+  "slug": "/sprint-1/analise-de-negocios/analise_de_stakeholder",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise_de_stakeholder",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Análise PESTEL",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise_pestel"
+  },
+  "next": {
+    "title": "Escopo Técnico do Projeto",
+    "permalink": "/2025-1B-T12-EC06-G02/category/escopo-técnico-do-projeto"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/react-loadable-ssr-addon-v5-slorber/AUTHORS",
+  "title": "AUTHORS",
+  "description": "react-loadable-ssr-addon is authored by:",
+  "source": "@site/docs/node_modules/react-loadable-ssr-addon-v5-slorber/AUTHORS.md",
+  "sourceDirName": "node_modules/react-loadable-ssr-addon-v5-slorber",
+  "slug": "/node_modules/react-loadable-ssr-addon-v5-slorber/AUTHORS",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-loadable-ssr-addon-v5-slorber/AUTHORS",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/react-loadable-ssr-addon-v5-slorber/AUTHORS.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "React Loadable SSR Add-on",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-loadable-ssr-addon-v5-slorber/"
+  },
+  "next": {
+    "title": "react-router",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-router/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/emojilib/README",
+  "title": ":book: emojilib [![Travis CI build status](https://img.shields.io/travis/muan/emojilib.svg?style=flat-square)](https://travis-ci.org/muan/emojilib) [![NPM](https://img.shields.io/npm/dt/emojilib.svg?style=flat-square&colorB=fd7463)](https://www.npmjs.com/package/emojilib) [![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square&colorB=f1d04a)](https://github.com/feross/standard)",
+  "description": "Emoji keyword library.",
+  "source": "@site/docs/node_modules/emojilib/README.md",
+  "sourceDirName": "node_modules/emojilib",
+  "slug": "/node_modules/emojilib/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/emojilib/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/emojilib/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "emoji-regex [![Build status](https://travis-ci.org/mathiasbynens/emoji-regex.svg?branch=main)](https://travis-ci.org/mathiasbynens/emoji-regex)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/emoji-regex/"
+  },
+  "next": {
+    "title": "emojis-list",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/emojis-list/"
+  }
+}

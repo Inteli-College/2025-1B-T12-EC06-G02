@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-modules-umd/README",
+  "title": "@babel/plugin-transform-modules-umd",
+  "description": "This plugin transforms ES2015 modules to UMD",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-modules-umd/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-modules-umd",
+  "slug": "/node_modules/@babel/plugin-transform-modules-umd/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-modules-umd/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-modules-umd/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-modules-systemjs",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-modules-systemjs/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-named-capturing-groups-regex",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-named-capturing-groups-regex/"
+  }
+}

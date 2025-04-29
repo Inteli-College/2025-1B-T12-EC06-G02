@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/http2-wrapper/README",
+  "title": "http2-wrapper",
+  "description": "HTTP/2 client, just with the familiar https API",
+  "source": "@site/docs/node_modules/http2-wrapper/README.md",
+  "sourceDirName": "node_modules/http2-wrapper",
+  "slug": "/node_modules/http2-wrapper/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/http2-wrapper/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/http2-wrapper/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "http-proxy-middleware",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/http-proxy-middleware/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/human-signals/"
+  }
+}

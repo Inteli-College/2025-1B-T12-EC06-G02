@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/html-escaper/README",
+  "title": "html-escaper [![Build Status](https://travis-ci.org/WebReflection/html-escaper.svg?branch=master)](https://travis-ci.org/WebReflection/html-escaper) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/html-escaper/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/html-escaper?branch=master)",
+  "description": "A simple module to escape/unescape common problematic entities.",
+  "source": "@site/docs/node_modules/html-escaper/README.md",
+  "sourceDirName": "node_modules/html-escaper",
+  "slug": "/node_modules/html-escaper/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-escaper/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/html-escaper/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "html-entities",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-entities/"
+  },
+  "next": {
+    "title": "HTMLMinifier",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/html-minifier-terser/"
+  }
+}

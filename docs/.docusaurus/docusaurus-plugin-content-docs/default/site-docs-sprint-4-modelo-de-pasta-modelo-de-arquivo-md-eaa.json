@@ -1,0 +1,28 @@
+{
+  "id": "sprint-4/modelo_de_pasta/modelo_de_arquivo",
+  "title": "Título da Página",
+  "description": "",
+  "source": "@site/docs/sprint-4/modelo_de_pasta/modelo_de_arquivo.md",
+  "sourceDirName": "sprint-4/modelo_de_pasta",
+  "slug": "/sprint-4/modelo_de_pasta/modelo_de_arquivo",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-4/modelo_de_pasta/modelo_de_arquivo",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Modelo de Pasta",
+    "permalink": "/2025-1B-T12-EC06-G02/category/modelo-de-pasta-2"
+  },
+  "next": {
+    "title": "Sprint 5",
+    "permalink": "/2025-1B-T12-EC06-G02/category/sprint-5"
+  }
+}

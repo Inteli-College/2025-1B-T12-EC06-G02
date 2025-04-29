@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/trim-lines/readme",
+  "title": "trim-lines",
+  "description": "Build",
+  "source": "@site/docs/node_modules/trim-lines/readme.md",
+  "sourceDirName": "node_modules/trim-lines",
+  "slug": "/node_modules/trim-lines/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/trim-lines/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/trim-lines/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "totalist [![build status](https://badgen.now.sh/github/status/lukeed/totalist)](https://github.com/lukeed/totalist/actions) [![codecov](https://badgen.now.sh/codecov/c/github/lukeed/totalist)](https://codecov.io/gh/lukeed/totalist)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/totalist/"
+  },
+  "next": {
+    "title": "trough",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/trough/"
+  }
+}

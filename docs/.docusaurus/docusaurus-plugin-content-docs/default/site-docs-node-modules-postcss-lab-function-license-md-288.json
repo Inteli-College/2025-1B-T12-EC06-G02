@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-lab-function/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT No Attribution (MIT-0)",
+  "source": "@site/docs/node_modules/postcss-lab-function/LICENSE.md",
+  "sourceDirName": "node_modules/postcss-lab-function",
+  "slug": "/node_modules/postcss-lab-function/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-lab-function/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-lab-function/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to PostCSS Lab Function",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-lab-function/CHANGELOG"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-loader/"
+  }
+}

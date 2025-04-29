@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/handle-thing/README",
+  "title": "Handle Thing",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/handle-thing/README.md",
+  "sourceDirName": "node_modules/handle-thing",
+  "slug": "/node_modules/handle-thing/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/handle-thing/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/handle-thing/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "gzip-size [![Build Status](https://travis-ci.com/sindresorhus/gzip-size.svg?branch=master)](https://travis-ci.com/github/sindresorhus/gzip-size)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/gzip-size/"
+  },
+  "next": {
+    "title": "has-flag [![Build Status](https://travis-ci.org/sindresorhus/has-flag.svg?branch=master)](https://travis-ci.org/sindresorhus/has-flag)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/has-flag/"
+  }
+}

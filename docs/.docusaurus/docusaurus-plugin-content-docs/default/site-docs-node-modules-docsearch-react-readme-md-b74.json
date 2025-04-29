@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@docsearch/react/README",
+  "title": "@docsearch/react",
+  "description": "React package for DocSearch, the best search experience for docs.",
+  "source": "@site/docs/node_modules/@docsearch/react/README.md",
+  "sourceDirName": "node_modules/@docsearch/react",
+  "slug": "/node_modules/@docsearch/react/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docsearch/react/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@docsearch/react/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@docsearch/css",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docsearch/css/"
+  },
+  "next": {
+    "title": "@docusaurus/babel",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/babel/"
+  }
+}

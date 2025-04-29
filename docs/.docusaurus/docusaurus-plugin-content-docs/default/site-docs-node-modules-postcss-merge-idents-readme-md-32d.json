@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-merge-idents/README",
+  "title": "[postcss][postcss]-merge-idents",
+  "description": "Merge keyframe and counter style identifiers.",
+  "source": "@site/docs/node_modules/postcss-merge-idents/README.md",
+  "sourceDirName": "node_modules/postcss-merge-idents",
+  "slug": "/node_modules/postcss-merge-idents/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-merge-idents/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-merge-idents/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-logical/LICENSE"
+  },
+  "next": {
+    "title": "[postcss][postcss]-merge-longhand",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-merge-longhand/"
+  }
+}

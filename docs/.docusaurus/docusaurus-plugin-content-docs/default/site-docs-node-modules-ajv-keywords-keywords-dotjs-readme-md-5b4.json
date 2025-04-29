@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/ajv-keywords/keywords/dotjs/README",
+  "title": "README",
+  "description": "These files are compiled dot templates from dot folder.",
+  "source": "@site/docs/node_modules/ajv-keywords/keywords/dotjs/README.md",
+  "sourceDirName": "node_modules/ajv-keywords/keywords/dotjs",
+  "slug": "/node_modules/ajv-keywords/keywords/dotjs/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/ajv-keywords/keywords/dotjs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/ajv-keywords/keywords/dotjs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ajv-keywords",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ajv-keywords/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/algoliasearch/"
+  }
+}

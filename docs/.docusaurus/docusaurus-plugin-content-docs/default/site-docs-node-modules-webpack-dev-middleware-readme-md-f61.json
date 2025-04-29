@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/webpack-dev-middleware/README",
+  "title": "README",
+  "description": "npm",
+  "source": "@site/docs/node_modules/webpack-dev-middleware/README.md",
+  "sourceDirName": "node_modules/webpack-dev-middleware",
+  "slug": "/node_modules/webpack-dev-middleware/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-dev-middleware/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/webpack-dev-middleware/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-bundle-analyzer/node_modules/commander/CHANGELOG"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-dev-server/"
+  }
+}

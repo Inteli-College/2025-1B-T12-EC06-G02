@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-place/CHANGELOG",
+  "title": "Changes to PostCSS Place Properties",
+  "description": "10.0.0",
+  "source": "@site/docs/node_modules/postcss-place/CHANGELOG.md",
+  "sourceDirName": "node_modules/postcss-place",
+  "slug": "/node_modules/postcss-place/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-place/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-place/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Place Properties [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-place/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-place/LICENSE"
+  }
+}

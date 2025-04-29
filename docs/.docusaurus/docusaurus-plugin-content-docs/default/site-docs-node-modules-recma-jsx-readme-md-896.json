@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/recma-jsx/readme",
+  "title": "recma-jsx",
+  "description": "Build",
+  "source": "@site/docs/node_modules/recma-jsx/readme.md",
+  "sourceDirName": "node_modules/recma-jsx",
+  "slug": "/node_modules/recma-jsx/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/recma-jsx/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/recma-jsx/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "recma-build-jsx",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/recma-build-jsx/"
+  },
+  "next": {
+    "title": "recma-parse",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/recma-parse/"
+  }
+}

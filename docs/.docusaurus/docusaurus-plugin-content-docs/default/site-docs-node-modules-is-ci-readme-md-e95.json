@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-ci/README",
+  "title": "is-ci",
+  "description": "Returns true if the current environment is a Continuous Integration",
+  "source": "@site/docs/node_modules/is-ci/README.md",
+  "sourceDirName": "node_modules/is-ci",
+  "slug": "/node_modules/is-ci/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-ci/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-ci/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-binary-path [![Build Status](https://travis-ci.org/sindresorhus/is-binary-path.svg?branch=master)](https://travis-ci.org/sindresorhus/is-binary-path)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-binary-path/"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-ci/CHANGELOG"
+  }
+}

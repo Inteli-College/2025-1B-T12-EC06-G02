@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/joi/LICENSE",
+  "title": "LICENSE",
+  "description": "Copyright (c) 2012-2022, Project contributors.",
+  "source": "@site/docs/node_modules/joi/LICENSE.md",
+  "sourceDirName": "node_modules/joi",
+  "slug": "/node_modules/joi/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/joi/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/joi/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "joi",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/joi/"
+  },
+  "next": {
+    "title": "Overview [![Build Status](https://travis-ci.org/lydell/js-tokens.svg?branch=master)](https://travis-ci.org/lydell/js-tokens)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/js-tokens/"
+  }
+}

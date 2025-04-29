@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/yocto-queue/readme",
+  "title": "yocto-queue [![](https://badgen.net/bundlephobia/minzip/yocto-queue)](https://bundlephobia.com/result?p=yocto-queue)",
+  "description": "Tiny queue data structure",
+  "source": "@site/docs/node_modules/yocto-queue/readme.md",
+  "sourceDirName": "node_modules/yocto-queue",
+  "slug": "/node_modules/yocto-queue/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/yocto-queue/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/yocto-queue/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "YAML <a href=\"https://www.npmjs.com/package/yaml\"><img align=\"right\" src=\"https://badge.fury.io/js/yaml.svg\" title=\"npm package\" /></a>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/yaml/"
+  },
+  "next": {
+    "title": "zwitch",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/zwitch/"
+  }
+}

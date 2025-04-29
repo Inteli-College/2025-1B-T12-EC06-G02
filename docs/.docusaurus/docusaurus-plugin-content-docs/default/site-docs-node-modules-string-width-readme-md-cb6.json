@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/string-width/readme",
+  "title": "string-width",
+  "description": "Get the visual width of a string - the number of columns required to display it",
+  "source": "@site/docs/node_modules/string-width/readme.md",
+  "sourceDirName": "node_modules/string-width",
+  "slug": "/node_modules/string-width/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/string-width/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/string-width/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "std-env",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/std-env/"
+  },
+  "next": {
+    "title": "ansi-regex",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/string-width/node_modules/ansi-regex/"
+  }
+}

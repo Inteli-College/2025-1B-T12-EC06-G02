@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/esutils/README",
+  "title": "README",
+  "description": "esutils Build Status",
+  "source": "@site/docs/node_modules/esutils/README.md",
+  "sourceDirName": "node_modules/esutils",
+  "slug": "/node_modules/esutils/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/esutils/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/esutils/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "estree-walker",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/estree-walker/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/eta/"
+  }
+}

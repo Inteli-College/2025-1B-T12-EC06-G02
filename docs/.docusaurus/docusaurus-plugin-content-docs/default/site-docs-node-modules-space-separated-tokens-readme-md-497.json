@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/space-separated-tokens/readme",
+  "title": "space-separated-tokens",
+  "description": "Build",
+  "source": "@site/docs/node_modules/space-separated-tokens/readme.md",
+  "sourceDirName": "node_modules/space-separated-tokens",
+  "slug": "/node_modules/space-separated-tokens/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/space-separated-tokens/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/space-separated-tokens/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/source-map-support/LICENSE"
+  },
+  "next": {
+    "title": "SPDY Server for node.js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/spdy/"
+  }
+}

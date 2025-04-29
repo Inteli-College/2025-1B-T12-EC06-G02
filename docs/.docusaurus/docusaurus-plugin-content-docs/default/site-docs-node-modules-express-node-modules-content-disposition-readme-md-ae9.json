@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/express/node_modules/content-disposition/README",
+  "title": "content-disposition",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/express/node_modules/content-disposition/README.md",
+  "sourceDirName": "node_modules/express/node_modules/content-disposition",
+  "slug": "/node_modules/express/node_modules/content-disposition/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/node_modules/content-disposition/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/express/node_modules/content-disposition/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "4.21.2 / 2024-11-06",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/History"
+  },
+  "next": {
+    "title": "0.5.4 / 2021-12-10",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/node_modules/content-disposition/HISTORY"
+  }
+}

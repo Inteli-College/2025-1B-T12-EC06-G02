@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cookie/SECURITY",
+  "title": "Security Policies and Procedures",
+  "description": "Reporting a Bug",
+  "source": "@site/docs/node_modules/cookie/SECURITY.md",
+  "sourceDirName": "node_modules/cookie",
+  "slug": "/node_modules/cookie/SECURITY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cookie/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cookie/SECURITY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cookie",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cookie/"
+  },
+  "next": {
+    "title": "cookie-signature",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cookie-signature/"
+  }
+}

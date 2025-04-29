@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-unicode-property-regex/README",
+  "title": "@babel/plugin-transform-unicode-property-regex",
+  "description": "Compile Unicode property escapes in Unicode regular expressions to ES5.",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-unicode-property-regex/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-unicode-property-regex",
+  "slug": "/node_modules/@babel/plugin-transform-unicode-property-regex/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-unicode-property-regex/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-unicode-property-regex/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-unicode-escapes",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-unicode-escapes/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-unicode-regex",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-unicode-regex/"
+  }
+}

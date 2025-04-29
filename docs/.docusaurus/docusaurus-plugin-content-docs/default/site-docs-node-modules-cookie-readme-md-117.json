@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cookie/README",
+  "title": "cookie",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/cookie/README.md",
+  "sourceDirName": "node_modules/cookie",
+  "slug": "/node_modules/cookie/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cookie/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cookie/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "convert-source-map [![Build Status][ci-image]][ci-url]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/convert-source-map/"
+  },
+  "next": {
+    "title": "Security Policies and Procedures",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cookie/SECURITY"
+  }
+}

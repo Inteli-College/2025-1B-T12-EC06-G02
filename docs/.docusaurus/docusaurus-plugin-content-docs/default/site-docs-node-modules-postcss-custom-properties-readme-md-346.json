@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-custom-properties/README",
+  "title": "PostCSS Custom Properties [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install postcss-custom-properties --save-dev",
+  "source": "@site/docs/node_modules/postcss-custom-properties/README.md",
+  "sourceDirName": "node_modules/postcss-custom-properties",
+  "slug": "/node_modules/postcss-custom-properties/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-custom-properties/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-custom-properties/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "The MIT License (MIT)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-custom-media/LICENSE"
+  },
+  "next": {
+    "title": "Changes to PostCSS Custom Properties",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-custom-properties/CHANGELOG"
+  }
+}

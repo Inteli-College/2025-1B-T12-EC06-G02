@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/lowercase-keys/readme",
+  "title": "lowercase-keys",
+  "description": "Lowercase the keys of an object",
+  "source": "@site/docs/node_modules/lowercase-keys/readme.md",
+  "sourceDirName": "node_modules/lowercase-keys",
+  "slug": "/node_modules/lowercase-keys/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/lowercase-keys/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/lowercase-keys/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Lower Case",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/lower-case/"
+  },
+  "next": {
+    "title": "lru cache",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/lru-cache/"
+  }
+}

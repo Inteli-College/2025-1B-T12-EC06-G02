@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/electron-to-chromium/README",
+  "title": "README",
+  "description": "Made by @kilianvalkhof",
+  "source": "@site/docs/node_modules/electron-to-chromium/README.md",
+  "sourceDirName": "node_modules/electron-to-chromium",
+  "slug": "/node_modules/electron-to-chromium/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/electron-to-chromium/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/electron-to-chromium/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "EE First",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ee-first/"
+  },
+  "next": {
+    "title": "emoji-regex [![Build status](https://travis-ci.org/mathiasbynens/emoji-regex.svg?branch=main)](https://travis-ci.org/mathiasbynens/emoji-regex)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/emoji-regex/"
+  }
+}

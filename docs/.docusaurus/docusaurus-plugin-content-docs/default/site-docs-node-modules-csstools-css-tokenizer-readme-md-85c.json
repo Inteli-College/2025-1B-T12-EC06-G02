@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/css-tokenizer/README",
+  "title": "CSS Tokenizer",
+  "description": "Implemented from//www.w3.org/TR/2021/CRD-css-syntax-3-20211224/",
+  "source": "@site/docs/node_modules/@csstools/css-tokenizer/README.md",
+  "sourceDirName": "node_modules/@csstools/css-tokenizer",
+  "slug": "/node_modules/@csstools/css-tokenizer/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-tokenizer/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/css-tokenizer/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-parser-algorithms/LICENSE"
+  },
+  "next": {
+    "title": "Changes to CSS Tokenizer",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/css-tokenizer/CHANGELOG"
+  }
+}

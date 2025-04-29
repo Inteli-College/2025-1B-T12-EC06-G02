@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/websocket-extensions/README",
+  "title": "websocket-extensions [![Build status](https://secure.travis-ci.org/faye/websocket-extensions-node.svg)](http://travis-ci.org/faye/websocket-extensions-node)",
+  "description": "A minimal framework that supports the implementation of WebSocket extensions in",
+  "source": "@site/docs/node_modules/websocket-extensions/README.md",
+  "sourceDirName": "node_modules/websocket-extensions",
+  "slug": "/node_modules/websocket-extensions/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-extensions/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/websocket-extensions/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-driver/LICENSE"
+  },
+  "next": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-extensions/CHANGELOG"
+  }
+}

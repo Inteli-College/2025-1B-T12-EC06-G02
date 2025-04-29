@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-typescript/README",
+  "title": "@babel/plugin-transform-typescript",
+  "description": "Transform TypeScript into ES.next",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-typescript/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-typescript",
+  "slug": "/node_modules/@babel/plugin-transform-typescript/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-typescript/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-typescript/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-typeof-symbol",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-typeof-symbol/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-unicode-escapes",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-unicode-escapes/"
+  }
+}

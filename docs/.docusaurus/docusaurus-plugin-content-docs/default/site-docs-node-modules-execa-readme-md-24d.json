@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/execa/readme",
+  "title": "readme",
+  "description": "Coverage Status",
+  "source": "@site/docs/node_modules/execa/readme.md",
+  "sourceDirName": "node_modules/execa",
+  "slug": "/node_modules/execa/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/execa/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/execa/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security Policy",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/events/security"
+  },
+  "next": {
+    "title": "Readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/"
+  }
+}

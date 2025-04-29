@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-discard-comments/README",
+  "title": "[postcss][postcss]-discard-comments",
+  "description": "Discard comments in your CSS files with PostCSS.",
+  "source": "@site/docs/node_modules/postcss-discard-comments/README.md",
+  "sourceDirName": "node_modules/postcss-discard-comments",
+  "slug": "/node_modules/postcss-discard-comments/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-discard-comments/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-discard-comments/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-dir-pseudo-class/LICENSE"
+  },
+  "next": {
+    "title": "[postcss][postcss]-discard-duplicates",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-discard-duplicates/"
+  }
+}

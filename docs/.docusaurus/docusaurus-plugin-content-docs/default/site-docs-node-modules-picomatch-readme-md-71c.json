@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/picomatch/README",
+  "title": "README",
+  "description": "Picomatch",
+  "source": "@site/docs/node_modules/picomatch/README.md",
+  "sourceDirName": "node_modules/picomatch",
+  "slug": "/node_modules/picomatch/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/picomatch/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/picomatch/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "picocolors",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/picocolors/"
+  },
+  "next": {
+    "title": "Release history",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/picomatch/CHANGELOG"
+  }
+}

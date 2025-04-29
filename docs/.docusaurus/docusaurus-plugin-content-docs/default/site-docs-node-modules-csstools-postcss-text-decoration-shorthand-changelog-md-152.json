@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-text-decoration-shorthand/CHANGELOG",
+  "title": "Changes to PostCSS Text Decoration Shorthand",
+  "description": "4.0.2",
+  "source": "@site/docs/node_modules/@csstools/postcss-text-decoration-shorthand/CHANGELOG.md",
+  "sourceDirName": "node_modules/@csstools/postcss-text-decoration-shorthand",
+  "slug": "/node_modules/@csstools/postcss-text-decoration-shorthand/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-text-decoration-shorthand/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-text-decoration-shorthand/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Text Decoration Shorthand [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-text-decoration-shorthand/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-text-decoration-shorthand/LICENSE"
+  }
+}

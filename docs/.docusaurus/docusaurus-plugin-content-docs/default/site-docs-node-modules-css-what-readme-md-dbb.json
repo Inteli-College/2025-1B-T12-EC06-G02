@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/css-what/readme",
+  "title": "css-what",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/css-what/readme.md",
+  "sourceDirName": "node_modules/css-what",
+  "slug": "/node_modules/css-what/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-what/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/css-what/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-tree/"
+  },
+  "next": {
+    "title": "cssdb [<img src=\"https://cssdb.org/images/css.svg\" alt=\"\" width=\"90\" height=\"90\" align=\"right\">][cssdb]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssdb/"
+  }
+}

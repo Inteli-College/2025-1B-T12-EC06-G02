@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/eta/README",
+  "title": "README",
+  "description": "eta (η)",
+  "source": "@site/docs/node_modules/eta/README.md",
+  "sourceDirName": "node_modules/eta",
+  "slug": "/node_modules/eta/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/eta/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/eta/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/esutils/"
+  },
+  "next": {
+    "title": "etag",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/etag/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@jridgewell/resolve-uri/README",
+  "title": "@jridgewell/resolve-uri",
+  "description": "Resolve a URI relative to an optional base URI",
+  "source": "@site/docs/node_modules/@jridgewell/resolve-uri/README.md",
+  "sourceDirName": "node_modules/@jridgewell/resolve-uri",
+  "slug": "/node_modules/@jridgewell/resolve-uri/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/resolve-uri/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@jridgewell/resolve-uri/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@jridgewell/gen-mapping",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/gen-mapping/"
+  },
+  "next": {
+    "title": "@jridgewell/set-array",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/set-array/"
+  }
+}

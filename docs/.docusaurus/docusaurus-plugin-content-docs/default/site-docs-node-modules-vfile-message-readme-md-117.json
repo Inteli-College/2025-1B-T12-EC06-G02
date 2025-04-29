@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/vfile-message/readme",
+  "title": "vfile-message",
+  "description": "Build",
+  "source": "@site/docs/node_modules/vfile-message/readme.md",
+  "sourceDirName": "node_modules/vfile-message",
+  "slug": "/node_modules/vfile-message/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/vfile-message/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/vfile-message/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "vfile-location",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/vfile-location/"
+  },
+  "next": {
+    "title": "watchpack",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/watchpack/"
+  }
+}

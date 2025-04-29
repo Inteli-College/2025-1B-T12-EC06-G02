@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/side-channel-map/CHANGELOG",
+  "title": "Changelog",
+  "description": "All notable changes to this project will be documented in this file.",
+  "source": "@site/docs/node_modules/side-channel-map/CHANGELOG.md",
+  "sourceDirName": "node_modules/side-channel-map",
+  "slug": "/node_modules/side-channel-map/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/side-channel-map/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/side-channel-map/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "side-channel-map <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/side-channel-map/"
+  },
+  "next": {
+    "title": "side-channel-weakmap <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/side-channel-weakmap/"
+  }
+}

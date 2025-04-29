@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@discoveryjs/json-ext/README",
+  "title": "json-ext",
+  "description": "NPM version",
+  "source": "@site/docs/node_modules/@discoveryjs/json-ext/README.md",
+  "sourceDirName": "node_modules/@discoveryjs/json-ext",
+  "slug": "/node_modules/@discoveryjs/json-ext/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@discoveryjs/json-ext/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@discoveryjs/json-ext/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/utilities/LICENSE"
+  },
+  "next": {
+    "title": "@docsearch/css",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docsearch/css/"
+  }
+}

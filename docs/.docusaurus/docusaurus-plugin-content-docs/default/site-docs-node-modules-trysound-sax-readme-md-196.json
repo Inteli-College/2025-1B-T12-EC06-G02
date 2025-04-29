@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@trysound/sax/README",
+  "title": "svg/sax",
+  "description": "A maintained fork of sax-js sax-style parser for XML and HTML.",
+  "source": "@site/docs/node_modules/@trysound/sax/README.md",
+  "sourceDirName": "node_modules/@trysound/sax",
+  "slug": "/node_modules/@trysound/sax/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@trysound/sax/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@trysound/sax/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "http-timer",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@szmarczak/http-timer/"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/body-parser/"
+  }
+}

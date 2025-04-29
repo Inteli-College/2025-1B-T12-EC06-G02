@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-logical/README",
+  "title": "PostCSS Logical Properties and Values [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install postcss-logical --save-dev",
+  "source": "@site/docs/node_modules/postcss-logical/README.md",
+  "sourceDirName": "node_modules/postcss-logical",
+  "slug": "/node_modules/postcss-logical/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-logical/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-logical/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "semver(1) -- The semantic versioner for npm",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-loader/node_modules/semver/"
+  },
+  "next": {
+    "title": "Changes to PostCSS Logical Properties",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-logical/CHANGELOG"
+  }
+}

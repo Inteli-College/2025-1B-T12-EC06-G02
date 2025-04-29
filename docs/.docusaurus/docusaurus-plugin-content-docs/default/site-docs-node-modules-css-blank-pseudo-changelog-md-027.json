@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/css-blank-pseudo/CHANGELOG",
+  "title": "Changes to CSS Blank Pseudo",
+  "description": "7.0.1",
+  "source": "@site/docs/node_modules/css-blank-pseudo/CHANGELOG.md",
+  "sourceDirName": "node_modules/css-blank-pseudo",
+  "slug": "/node_modules/css-blank-pseudo/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-blank-pseudo/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/css-blank-pseudo/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Blank Pseudo [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-blank-pseudo/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-blank-pseudo/LICENSE"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/react-is/README",
+  "title": "react-is",
+  "description": "This package allows you to test arbitrary values and see if they're a particular React element type.",
+  "source": "@site/docs/node_modules/react-is/README.md",
+  "sourceDirName": "node_modules/react-is",
+  "slug": "/node_modules/react-is/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-is/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/react-is/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "react-helmet-async",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-helmet-async/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-json-view-lite/"
+  }
+}

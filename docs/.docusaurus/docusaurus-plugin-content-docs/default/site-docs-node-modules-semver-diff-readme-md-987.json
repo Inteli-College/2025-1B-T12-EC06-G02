@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/semver-diff/readme",
+  "title": "semver-diff",
+  "description": "Get the diff type of two semver versions: 0.0.1 0.0.2 → patch",
+  "source": "@site/docs/node_modules/semver-diff/readme.md",
+  "sourceDirName": "node_modules/semver-diff",
+  "slug": "/node_modules/semver-diff/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/semver-diff/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/semver-diff/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "semver(1) -- The semantic versioner for npm",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/semver/"
+  },
+  "next": {
+    "title": "semver(1) -- The semantic versioner for npm",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/semver-diff/node_modules/semver/"
+  }
+}

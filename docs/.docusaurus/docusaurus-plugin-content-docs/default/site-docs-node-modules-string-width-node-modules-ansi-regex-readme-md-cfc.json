@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/string-width/node_modules/ansi-regex/readme",
+  "title": "ansi-regex",
+  "description": "Regular expression for matching ANSI escape codes",
+  "source": "@site/docs/node_modules/string-width/node_modules/ansi-regex/readme.md",
+  "sourceDirName": "node_modules/string-width/node_modules/ansi-regex",
+  "slug": "/node_modules/string-width/node_modules/ansi-regex/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/string-width/node_modules/ansi-regex/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/string-width/node_modules/ansi-regex/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "string-width",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/string-width/"
+  },
+  "next": {
+    "title": "strip-ansi",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/string-width/node_modules/strip-ansi/"
+  }
+}

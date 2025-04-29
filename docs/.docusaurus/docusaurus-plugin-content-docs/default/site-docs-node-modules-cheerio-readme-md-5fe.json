@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cheerio/Readme",
+  "title": "Readme",
+  "description": "cheerio",
+  "source": "@site/docs/node_modules/cheerio/Readme.md",
+  "sourceDirName": "node_modules/cheerio",
+  "slug": "/node_modules/cheerio/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cheerio/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cheerio/Readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "character-reference-invalid",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/character-reference-invalid/"
+  },
+  "next": {
+    "title": "cheerio-select [![NPM version](http://img.shields.io/npm/v/cheerio-select.svg)](https://npmjs.org/package/cheerio-select) [![Build Status](https://travis-ci.org/cheeriojs/cheerio-select.svg?branch=master)](http://travis-ci.org/cheeriojs/cheerio-select) [![Downloads](https://img.shields.io/npm/dm/cheerio-select.svg)](https://npmjs.org/package/cheerio-select) [![Coverage](https://coveralls.io/repos/cheeriojs/cheerio-select/badge.svg?branch=master)](https://coveralls.io/r/cheeriojs/cheerio-select)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cheerio-select/"
+  }
+}

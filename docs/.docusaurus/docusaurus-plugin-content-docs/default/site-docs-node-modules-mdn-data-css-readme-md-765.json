@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mdn-data/css/readme",
+  "title": "MDN CSS data",
+  "description": "This folder contains data about the different features of the CSS language.",
+  "source": "@site/docs/node_modules/mdn-data/css/readme.md",
+  "sourceDirName": "node_modules/mdn-data/css",
+  "slug": "/node_modules/mdn-data/css/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdn-data/css/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mdn-data/css/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdn-data/CHANGELOG"
+  },
+  "next": {
+    "title": "media-typer",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/media-typer/"
+  }
+}

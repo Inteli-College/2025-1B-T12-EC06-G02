@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/resolve-from/readme",
+  "title": "resolve-from [![Build Status](https://travis-ci.org/sindresorhus/resolve-from.svg?branch=master)](https://travis-ci.org/sindresorhus/resolve-from)",
+  "description": "Resolve the path of a module like require.resolve() but from a given path",
+  "source": "@site/docs/node_modules/resolve-from/readme.md",
+  "sourceDirName": "node_modules/resolve-from",
+  "slug": "/node_modules/resolve-from/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/resolve-from/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/resolve-from/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "resolve-alpn",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/resolve-alpn/"
+  },
+  "next": {
+    "title": "resolve-pathname [![Travis][build-badge]][build] [![npm package][npm-badge]][npm]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/resolve-pathname/"
+  }
+}

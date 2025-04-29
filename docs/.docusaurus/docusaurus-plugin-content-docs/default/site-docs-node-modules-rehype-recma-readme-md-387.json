@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/rehype-recma/readme",
+  "title": "rehype-recma",
+  "description": "Build",
+  "source": "@site/docs/node_modules/rehype-recma/readme.md",
+  "sourceDirName": "node_modules/rehype-recma",
+  "slug": "/node_modules/rehype-recma/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/rehype-recma/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/rehype-recma/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "rehype-raw",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/rehype-raw/"
+  },
+  "next": {
+    "title": "relateurl [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][david-image]][david-url]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/relateurl/"
+  }
+}

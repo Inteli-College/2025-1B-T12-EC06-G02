@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/micromark-util-encode/readme",
+  "title": "micromark-util-encode",
+  "description": "Build",
+  "source": "@site/docs/node_modules/micromark-util-encode/readme.md",
+  "sourceDirName": "node_modules/micromark-util-encode",
+  "slug": "/node_modules/micromark-util-encode/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-encode/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/micromark-util-encode/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "micromark-util-decode-string",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-decode-string/"
+  },
+  "next": {
+    "title": "micromark-util-events-to-acorn",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-util-events-to-acorn/"
+  }
+}

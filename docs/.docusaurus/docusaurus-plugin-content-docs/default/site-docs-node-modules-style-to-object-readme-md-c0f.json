@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/style-to-object/README",
+  "title": "style-to-object",
+  "description": "NPM",
+  "source": "@site/docs/node_modules/style-to-object/README.md",
+  "sourceDirName": "node_modules/style-to-object",
+  "slug": "/node_modules/style-to-object/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/style-to-object/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/style-to-object/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "style-to-js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/style-to-js/"
+  },
+  "next": {
+    "title": "stylehacks",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/stylehacks/"
+  }
+}

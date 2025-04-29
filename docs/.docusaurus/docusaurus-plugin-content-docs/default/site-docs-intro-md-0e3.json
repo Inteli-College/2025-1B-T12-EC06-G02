@@ -1,0 +1,25 @@
+{
+  "id": "intro",
+  "title": "Introdução",
+  "description": "O Projeto",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/2025-1B-T12-EC06-G02/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "slug": "/",
+    "title": "Introdução",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Sprint 1",
+    "permalink": "/2025-1B-T12-EC06-G02/category/sprint-1"
+  }
+}

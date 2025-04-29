@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/parent-module/readme",
+  "title": "parent-module [![Build Status](https://travis-ci.org/sindresorhus/parent-module.svg?branch=master)](https://travis-ci.org/sindresorhus/parent-module)",
+  "description": "Get the path of the parent module",
+  "source": "@site/docs/node_modules/parent-module/readme.md",
+  "sourceDirName": "node_modules/parent-module",
+  "slug": "/node_modules/parent-module/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/parent-module/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/parent-module/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Param Case",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/param-case/"
+  },
+  "next": {
+    "title": "parse-entities",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-entities/"
+  }
+}

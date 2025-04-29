@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/json-parse-even-better-errors/README",
+  "title": "json-parse-even-better-errors",
+  "description": "json-parse-even-better-errors",
+  "source": "@site/docs/node_modules/json-parse-even-better-errors/README.md",
+  "sourceDirName": "node_modules/json-parse-even-better-errors",
+  "slug": "/node_modules/json-parse-even-better-errors/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/json-parse-even-better-errors/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/json-parse-even-better-errors/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "json-buffer",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/json-buffer/"
+  },
+  "next": {
+    "title": "Change Log",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/json-parse-even-better-errors/CHANGELOG"
+  }
+}

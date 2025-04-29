@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/ci-info/README",
+  "title": "ci-info",
+  "description": "Get details about the current Continuous Integration environment.",
+  "source": "@site/docs/node_modules/ci-info/README.md",
+  "sourceDirName": "node_modules/ci-info",
+  "slug": "/node_modules/ci-info/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/ci-info/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/ci-info/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "node-trace-event changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/chrome-trace-event/CHANGES"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ci-info/CHANGELOG"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@pnpm/network.ca-file/node_modules/graceful-fs/README",
+  "title": "graceful-fs",
+  "description": "graceful-fs functions as a drop-in replacement for the fs module,",
+  "source": "@site/docs/node_modules/@pnpm/network.ca-file/node_modules/graceful-fs/README.md",
+  "sourceDirName": "node_modules/@pnpm/network.ca-file/node_modules/graceful-fs",
+  "slug": "/node_modules/@pnpm/network.ca-file/node_modules/graceful-fs/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@pnpm/network.ca-file/node_modules/graceful-fs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@pnpm/network.ca-file/node_modules/graceful-fs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ca-file.docs",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@pnpm/network.ca-file/dist/ca-file.docs"
+  },
+  "next": {
+    "title": "@pnpm/npm-conf [![Build Status](https://travis-ci.com/pnpm/npm-conf.svg?branch=master)](https://travis-ci.com/pnpm/npm-conf)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@pnpm/npm-conf/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helper-wrap-function/README",
+  "title": "@babel/helper-wrap-function",
+  "description": "Helper to wrap functions inside a function call.",
+  "source": "@site/docs/node_modules/@babel/helper-wrap-function/README.md",
+  "sourceDirName": "node_modules/@babel/helper-wrap-function",
+  "slug": "/node_modules/@babel/helper-wrap-function/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-wrap-function/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helper-wrap-function/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/helper-validator-option",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-validator-option/"
+  },
+  "next": {
+    "title": "@babel/helpers",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helpers/"
+  }
+}

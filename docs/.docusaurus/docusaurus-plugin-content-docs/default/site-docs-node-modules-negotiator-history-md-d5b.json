@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/negotiator/HISTORY",
+  "title": "unreleased",
+  "description": "* Added an option preferred encodings array #59",
+  "source": "@site/docs/node_modules/negotiator/HISTORY.md",
+  "sourceDirName": "node_modules/negotiator",
+  "slug": "/node_modules/negotiator/HISTORY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/negotiator/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/negotiator/HISTORY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "negotiator",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/negotiator/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/neo-async/"
+  }
+}

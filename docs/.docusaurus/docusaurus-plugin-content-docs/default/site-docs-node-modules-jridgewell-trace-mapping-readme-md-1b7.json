@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@jridgewell/trace-mapping/README",
+  "title": "@jridgewell/trace-mapping",
+  "description": "Trace the original position through a source map",
+  "source": "@site/docs/node_modules/@jridgewell/trace-mapping/README.md",
+  "sourceDirName": "node_modules/@jridgewell/trace-mapping",
+  "slug": "/node_modules/@jridgewell/trace-mapping/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/trace-mapping/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@jridgewell/trace-mapping/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@jridgewell/sourcemap-codec",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/sourcemap-codec/"
+  },
+  "next": {
+    "title": "@leichtgewicht/ip-codec",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@leichtgewicht/ip-codec/"
+  }
+}

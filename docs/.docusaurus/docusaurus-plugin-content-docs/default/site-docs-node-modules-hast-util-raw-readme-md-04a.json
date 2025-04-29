@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/hast-util-raw/readme",
+  "title": "hast-util-raw",
+  "description": "Build",
+  "source": "@site/docs/node_modules/hast-util-raw/readme.md",
+  "sourceDirName": "node_modules/hast-util-raw",
+  "slug": "/node_modules/hast-util-raw/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/hast-util-raw/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/hast-util-raw/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "hast-util-parse-selector",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hast-util-parse-selector/"
+  },
+  "next": {
+    "title": "hast-util-to-estree",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hast-util-to-estree/"
+  }
+}

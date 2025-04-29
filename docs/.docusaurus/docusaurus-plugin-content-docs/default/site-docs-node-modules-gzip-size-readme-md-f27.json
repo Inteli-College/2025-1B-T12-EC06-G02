@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/gzip-size/readme",
+  "title": "gzip-size [![Build Status](https://travis-ci.com/sindresorhus/gzip-size.svg?branch=master)](https://travis-ci.com/github/sindresorhus/gzip-size)",
+  "description": "Get the gzipped size of a string or buffer",
+  "source": "@site/docs/node_modules/gzip-size/readme.md",
+  "sourceDirName": "node_modules/gzip-size",
+  "slug": "/node_modules/gzip-size/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/gzip-size/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/gzip-size/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/gray-matter/node_modules/js-yaml/CHANGELOG"
+  },
+  "next": {
+    "title": "Handle Thing",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/handle-thing/"
+  }
+}

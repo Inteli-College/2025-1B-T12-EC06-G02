@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/buffer-from/readme",
+  "title": "Buffer From",
+  "description": "A ponyfill for Buffer.from, uses native implementation if available.",
+  "source": "@site/docs/node_modules/buffer-from/readme.md",
+  "sourceDirName": "node_modules/buffer-from",
+  "slug": "/node_modules/buffer-from/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/buffer-from/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/buffer-from/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Browserslist [![Cult Of Martians][cult-img]][cult]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/browserslist/"
+  },
+  "next": {
+    "title": "Bytes utility",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/bytes/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-discard-unused/README",
+  "title": "[postcss][postcss]-discard-unused",
+  "description": "Discard unused counter styles, keyframes and fonts.",
+  "source": "@site/docs/node_modules/postcss-discard-unused/README.md",
+  "sourceDirName": "node_modules/postcss-discard-unused",
+  "slug": "/node_modules/postcss-discard-unused/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-discard-unused/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-discard-unused/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Discard Overridden",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-discard-overridden/"
+  },
+  "next": {
+    "title": "postcss-selector-parser [![test](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml/badge.svg)](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-discard-unused/node_modules/postcss-selector-parser/"
+  }
+}

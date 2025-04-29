@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/http-deceiver/README",
+  "title": "HTTP Deceiver",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/http-deceiver/README.md",
+  "sourceDirName": "node_modules/http-deceiver",
+  "slug": "/node_modules/http-deceiver/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/http-deceiver/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/http-deceiver/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Can I cache this? [![Build Status](https://travis-ci.org/kornelski/http-cache-semantics.svg?branch=master)](https://travis-ci.org/kornelski/http-cache-semantics)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/http-cache-semantics/"
+  },
+  "next": {
+    "title": "http-errors",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/http-errors/"
+  }
+}

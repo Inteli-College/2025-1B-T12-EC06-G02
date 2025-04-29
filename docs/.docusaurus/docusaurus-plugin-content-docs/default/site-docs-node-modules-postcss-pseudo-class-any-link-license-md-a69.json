@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-pseudo-class-any-link/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT No Attribution (MIT-0)",
+  "source": "@site/docs/node_modules/postcss-pseudo-class-any-link/LICENSE.md",
+  "sourceDirName": "node_modules/postcss-pseudo-class-any-link",
+  "slug": "/node_modules/postcss-pseudo-class-any-link/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-pseudo-class-any-link/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-pseudo-class-any-link/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to PostCSS Pseudo Class Any Link",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-pseudo-class-any-link/CHANGELOG"
+  },
+  "next": {
+    "title": "[postcss][postcss]-reduce-idents",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-reduce-idents/"
+  }
+}

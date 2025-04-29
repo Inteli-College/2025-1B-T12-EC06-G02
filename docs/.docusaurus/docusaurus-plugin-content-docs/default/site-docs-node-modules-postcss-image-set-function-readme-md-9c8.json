@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-image-set-function/README",
+  "title": "PostCSS image-set() Function [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/postcss-image-set-function/README.md",
+  "sourceDirName": "node_modules/postcss-image-set-function",
+  "slug": "/node_modules/postcss-image-set-function/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-image-set-function/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-image-set-function/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-gap-properties/LICENSE"
+  },
+  "next": {
+    "title": "Changes to PostCSS image-set() Function",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-image-set-function/CHANGELOG"
+  }
+}

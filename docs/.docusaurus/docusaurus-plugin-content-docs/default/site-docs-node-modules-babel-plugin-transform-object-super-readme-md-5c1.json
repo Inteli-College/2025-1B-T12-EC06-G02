@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-object-super/README",
+  "title": "@babel/plugin-transform-object-super",
+  "description": "Compile ES2015 object super to ES5",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-object-super/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-object-super",
+  "slug": "/node_modules/@babel/plugin-transform-object-super/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-object-super/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-object-super/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-object-rest-spread",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-object-rest-spread/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-optional-catch-binding",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-optional-catch-binding/"
+  }
+}

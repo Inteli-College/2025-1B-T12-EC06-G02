@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-path-cwd/readme",
+  "title": "is-path-cwd [![Build Status](https://travis-ci.org/sindresorhus/is-path-cwd.svg?branch=master)](https://travis-ci.org/sindresorhus/is-path-cwd)",
+  "description": "Check if a path is the current working directory",
+  "source": "@site/docs/node_modules/is-path-cwd/readme.md",
+  "sourceDirName": "node_modules/is-path-cwd",
+  "slug": "/node_modules/is-path-cwd/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-path-cwd/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-path-cwd/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-obj [![Build Status](https://travis-ci.org/sindresorhus/is-obj.svg?branch=master)](https://travis-ci.org/sindresorhus/is-obj)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-obj/"
+  },
+  "next": {
+    "title": "is-path-inside",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-path-inside/"
+  }
+}

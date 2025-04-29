@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/invariant/README",
+  "title": "invariant",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/invariant/README.md",
+  "sourceDirName": "node_modules/invariant",
+  "slug": "/node_modules/invariant/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/invariant/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/invariant/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/interpret/"
+  },
+  "next": {
+    "title": "2.2.4 / 2018-03-13",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/invariant/CHANGELOG"
+  }
+}

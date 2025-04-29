@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/jsesc/README",
+  "title": "jsesc",
+  "description": "Given some data, jsesc returns a stringified representation of that data. jsesc is similar to JSON.stringify() except:",
+  "source": "@site/docs/node_modules/jsesc/README.md",
+  "sourceDirName": "node_modules/jsesc",
+  "slug": "/node_modules/jsesc/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/jsesc/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/jsesc/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/js-yaml/CHANGELOG"
+  },
+  "next": {
+    "title": "json-buffer",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/json-buffer/"
+  }
+}

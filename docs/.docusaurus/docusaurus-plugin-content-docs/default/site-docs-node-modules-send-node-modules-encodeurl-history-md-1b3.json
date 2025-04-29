@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/send/node_modules/encodeurl/HISTORY",
+  "title": "1.0.2 / 2018-01-21",
+  "description": "* Fix encoding % as last character",
+  "source": "@site/docs/node_modules/send/node_modules/encodeurl/HISTORY.md",
+  "sourceDirName": "node_modules/send/node_modules/encodeurl",
+  "slug": "/node_modules/send/node_modules/encodeurl/HISTORY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/send/node_modules/encodeurl/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/send/node_modules/encodeurl/HISTORY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "encodeurl",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/send/node_modules/encodeurl/"
+  },
+  "next": {
+    "title": "Serialize JavaScript",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serialize-javascript/"
+  }
+}

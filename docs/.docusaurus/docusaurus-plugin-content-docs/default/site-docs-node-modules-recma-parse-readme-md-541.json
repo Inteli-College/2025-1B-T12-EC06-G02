@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/recma-parse/readme",
+  "title": "recma-parse",
+  "description": "Build",
+  "source": "@site/docs/node_modules/recma-parse/readme.md",
+  "sourceDirName": "node_modules/recma-parse",
+  "slug": "/node_modules/recma-parse/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/recma-parse/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/recma-parse/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "recma-jsx",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/recma-jsx/"
+  },
+  "next": {
+    "title": "recma-stringify",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/recma-stringify/"
+  }
+}

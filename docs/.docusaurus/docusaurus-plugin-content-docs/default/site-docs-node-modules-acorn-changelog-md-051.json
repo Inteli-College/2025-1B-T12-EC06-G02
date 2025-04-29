@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/acorn/CHANGELOG",
+  "title": "CHANGELOG",
+  "description": "8.14.1 (2025-03-05)",
+  "source": "@site/docs/node_modules/acorn/CHANGELOG.md",
+  "sourceDirName": "node_modules/acorn",
+  "slug": "/node_modules/acorn/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/acorn/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Acorn",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn/"
+  },
+  "next": {
+    "title": "Acorn-JSX",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn-jsx/"
+  }
+}

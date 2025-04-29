@@ -1,0 +1,30 @@
+{
+  "id": "node_modules/@pnpm/network.ca-file/dist/ca-file.docs",
+  "title": "ca-file.docs",
+  "description": "A component for reading the certificate authority data from a text file",
+  "source": "@site/docs/node_modules/@pnpm/network.ca-file/dist/ca-file.docs.mdx",
+  "sourceDirName": "node_modules/@pnpm/network.ca-file/dist",
+  "slug": "/node_modules/@pnpm/network.ca-file/dist/ca-file.docs",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@pnpm/network.ca-file/dist/ca-file.docs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@pnpm/network.ca-file/dist/ca-file.docs.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "labels": [
+      "ca",
+      "certificate authority"
+    ],
+    "description": "A component for reading the certificate authority data from a text file"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ca-file.docs",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@pnpm/network.ca-file/ca-file.docs"
+  },
+  "next": {
+    "title": "graceful-fs",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@pnpm/network.ca-file/node_modules/graceful-fs/"
+  }
+}

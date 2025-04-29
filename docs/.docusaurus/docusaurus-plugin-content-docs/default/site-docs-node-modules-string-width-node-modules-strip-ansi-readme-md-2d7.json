@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/string-width/node_modules/strip-ansi/readme",
+  "title": "strip-ansi",
+  "description": "Strip ANSI escape codes from a string",
+  "source": "@site/docs/node_modules/string-width/node_modules/strip-ansi/readme.md",
+  "sourceDirName": "node_modules/string-width/node_modules/strip-ansi",
+  "slug": "/node_modules/string-width/node_modules/strip-ansi/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/string-width/node_modules/strip-ansi/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/string-width/node_modules/strip-ansi/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ansi-regex",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/string-width/node_modules/ansi-regex/"
+  },
+  "next": {
+    "title": "string_decoder",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/string_decoder/"
+  }
+}

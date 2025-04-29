@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/rtlcss/README",
+  "title": "RTLCSS",
+  "description": "Join the chat at https://gitter.im/MohammadYounes/rtlcss",
+  "source": "@site/docs/node_modules/rtlcss/README.md",
+  "sourceDirName": "node_modules/rtlcss",
+  "slug": "/node_modules/rtlcss/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/rtlcss/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/rtlcss/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "v3.0",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/rimraf/CHANGELOG"
+  },
+  "next": {
+    "title": "RTLCSS Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/rtlcss/CHANGELOG"
+  }
+}

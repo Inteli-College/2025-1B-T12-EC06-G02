@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/tapable/README",
+  "title": "Tapable",
+  "description": "The tapable package expose many Hook classes, which can be used to create hooks for plugins.",
+  "source": "@site/docs/node_modules/tapable/README.md",
+  "sourceDirName": "node_modules/tapable",
+  "slug": "/node_modules/tapable/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/tapable/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/tapable/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/svgo/node_modules/commander/CHANGELOG"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/terser/"
+  }
+}

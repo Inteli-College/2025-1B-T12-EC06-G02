@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-new-target/README",
+  "title": "@babel/plugin-transform-new-target",
+  "description": "Transforms new.target meta property",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-new-target/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-new-target",
+  "slug": "/node_modules/@babel/plugin-transform-new-target/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-new-target/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-new-target/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-named-capturing-groups-regex",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-named-capturing-groups-regex/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-nullish-coalescing-operator",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-nullish-coalescing-operator/"
+  }
+}

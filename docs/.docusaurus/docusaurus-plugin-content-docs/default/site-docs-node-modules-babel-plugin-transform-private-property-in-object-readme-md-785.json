@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-private-property-in-object/README",
+  "title": "@babel/plugin-transform-private-property-in-object",
+  "description": "This plugin transforms checks for a private property in an object",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-private-property-in-object/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-private-property-in-object",
+  "slug": "/node_modules/@babel/plugin-transform-private-property-in-object/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-private-property-in-object/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-private-property-in-object/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-private-methods",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-private-methods/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-property-literals",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-property-literals/"
+  }
+}

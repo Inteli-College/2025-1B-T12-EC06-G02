@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-page-break/CHANGELOG",
+  "title": "Change Log",
+  "description": "This project adheres to Semantic Versioning.",
+  "source": "@site/docs/node_modules/postcss-page-break/CHANGELOG.md",
+  "sourceDirName": "node_modules/postcss-page-break",
+  "slug": "/node_modules/postcss-page-break/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-page-break/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-page-break/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "postcss-page-break",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-page-break/"
+  },
+  "next": {
+    "title": "PostCSS Place Properties [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-place/"
+  }
+}

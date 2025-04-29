@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/analise-de-negocios/Matriz_de_Risco",
+  "title": "Matriz de Risco",
+  "description": "Identifica e classifica os principais riscos do projeto por impacto e probabilidade, incluindo estratégias de mitigação para cada risco e planos de contingência para os cenários mais críticos.",
+  "source": "@site/docs/sprint-1/analise-de-negocios/Matriz_de_Risco.md",
+  "sourceDirName": "sprint-1/analise-de-negocios",
+  "slug": "/sprint-1/analise-de-negocios/Matriz_de_Risco",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/Matriz_de_Risco",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Business Model Canvas",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/Business_Model_Canvas"
+  },
+  "next": {
+    "title": "Canva Proposta de Valor",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/Canva_proposta_de_Valor"
+  }
+}

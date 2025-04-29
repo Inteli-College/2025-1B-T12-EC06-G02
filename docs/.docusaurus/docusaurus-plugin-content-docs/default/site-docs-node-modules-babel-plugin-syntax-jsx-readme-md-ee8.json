@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-syntax-jsx/README",
+  "title": "@babel/plugin-syntax-jsx",
+  "description": "Allow parsing of jsx",
+  "source": "@site/docs/node_modules/@babel/plugin-syntax-jsx/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-syntax-jsx",
+  "slug": "/node_modules/@babel/plugin-syntax-jsx/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-syntax-jsx/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-syntax-jsx/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-syntax-import-attributes",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-syntax-import-attributes/"
+  },
+  "next": {
+    "title": "@babel/plugin-syntax-typescript",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-syntax-typescript/"
+  }
+}

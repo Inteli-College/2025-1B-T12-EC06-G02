@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/duplexer/README",
+  "title": "duplexer",
+  "description": "build status dependency status",
+  "source": "@site/docs/node_modules/duplexer/README.md",
+  "sourceDirName": "node_modules/duplexer",
+  "slug": "/node_modules/duplexer/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/duplexer/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/duplexer/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dunder-proto/CHANGELOG"
+  },
+  "next": {
+    "title": "East Asian Width",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/eastasianwidth/"
+  }
+}

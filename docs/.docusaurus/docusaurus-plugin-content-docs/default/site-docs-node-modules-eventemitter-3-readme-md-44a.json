@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/eventemitter3/README",
+  "title": "EventEmitter3",
+  "description": "Version npmBuild StatusDependenciesCoverage StatusIRC channel",
+  "source": "@site/docs/node_modules/eventemitter3/README.md",
+  "sourceDirName": "node_modules/eventemitter3",
+  "slug": "/node_modules/eventemitter3/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/eventemitter3/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/eventemitter3/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Eval - require() for module content!",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/eval/"
+  },
+  "next": {
+    "title": "events [![Build Status](https://travis-ci.org/Gozala/events.png?branch=master)](https://travis-ci.org/Gozala/events)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/events/"
+  }
+}

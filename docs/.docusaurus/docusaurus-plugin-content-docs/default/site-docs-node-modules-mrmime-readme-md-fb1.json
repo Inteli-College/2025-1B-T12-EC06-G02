@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mrmime/readme",
+  "title": "readme",
+  "description": "A tiny (2.8kB) and fast utility for getting a MIME type from an extension or filename",
+  "source": "@site/docs/node_modules/mrmime/readme.md",
+  "sourceDirName": "node_modules/mrmime",
+  "slug": "/node_modules/mrmime/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mrmime/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mrmime/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/minimist/CHANGELOG"
+  },
+  "next": {
+    "title": "ms",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ms/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/estree-util-value-to-estree/README",
+  "title": "estree-util-value-to-estree",
+  "description": "github actions",
+  "source": "@site/docs/node_modules/estree-util-value-to-estree/README.md",
+  "sourceDirName": "node_modules/estree-util-value-to-estree",
+  "slug": "/node_modules/estree-util-value-to-estree/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/estree-util-value-to-estree/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/estree-util-value-to-estree/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Source Map",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/estree-util-to-js/node_modules/source-map/"
+  },
+  "next": {
+    "title": "MIT License",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/estree-util-value-to-estree/LICENSE"
+  }
+}

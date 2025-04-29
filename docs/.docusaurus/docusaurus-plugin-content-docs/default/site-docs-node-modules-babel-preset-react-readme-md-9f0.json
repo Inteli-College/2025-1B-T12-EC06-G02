@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/preset-react/README",
+  "title": "@babel/preset-react",
+  "description": "Babel preset for all React plugins.",
+  "source": "@site/docs/node_modules/@babel/preset-react/README.md",
+  "sourceDirName": "node_modules/@babel/preset-react",
+  "slug": "/node_modules/@babel/preset-react/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/preset-react/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/preset-react/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/preset-modules",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/preset-modules/"
+  },
+  "next": {
+    "title": "@babel/preset-typescript",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/preset-typescript/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@docusaurus/module-type-aliases/README",
+  "title": "@docusaurus/module-type-aliases",
+  "description": "Docusaurus module type aliases.",
+  "source": "@site/docs/node_modules/@docusaurus/module-type-aliases/README.md",
+  "sourceDirName": "node_modules/@docusaurus/module-type-aliases",
+  "slug": "/node_modules/@docusaurus/module-type-aliases/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/module-type-aliases/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@docusaurus/module-type-aliases/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Docusaurus admonitions",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/mdx-loader/src/remark/admonitions/"
+  },
+  "next": {
+    "title": "@docusaurus/plugin-content-blog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/plugin-content-blog/"
+  }
+}

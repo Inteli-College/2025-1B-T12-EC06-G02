@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/decompress-response/readme",
+  "title": "decompress-response [![Build Status](https://travis-ci.com/sindresorhus/decompress-response.svg?branch=master)](https://travis-ci.com/sindresorhus/decompress-response)",
+  "description": "Decompress a HTTP response if needed",
+  "source": "@site/docs/node_modules/decompress-response/readme.md",
+  "sourceDirName": "node_modules/decompress-response",
+  "slug": "/node_modules/decompress-response/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/decompress-response/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/decompress-response/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "decode-named-character-reference",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/decode-named-character-reference/"
+  },
+  "next": {
+    "title": "Deep Extend",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/deep-extend/"
+  }
+}

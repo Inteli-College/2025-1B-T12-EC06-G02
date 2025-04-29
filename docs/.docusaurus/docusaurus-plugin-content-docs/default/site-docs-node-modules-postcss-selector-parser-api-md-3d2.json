@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-selector-parser/API",
+  "title": "API Documentation",
+  "description": "*Please use only this documented API when working with the parser. Methods",
+  "source": "@site/docs/node_modules/postcss-selector-parser/API.md",
+  "sourceDirName": "node_modules/postcss-selector-parser",
+  "slug": "/node_modules/postcss-selector-parser/API",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-selector-parser/API",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-selector-parser/API.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "postcss-selector-parser [![test](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml/badge.svg)](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-selector-parser/"
+  },
+  "next": {
+    "title": "7.1.0",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-selector-parser/CHANGELOG"
+  }
+}

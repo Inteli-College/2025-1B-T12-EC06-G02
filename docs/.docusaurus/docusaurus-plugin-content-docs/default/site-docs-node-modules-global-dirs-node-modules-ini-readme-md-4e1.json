@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/global-dirs/node_modules/ini/README",
+  "title": "README",
+  "description": "An ini format parser and serializer for node.",
+  "source": "@site/docs/node_modules/global-dirs/node_modules/ini/README.md",
+  "sourceDirName": "node_modules/global-dirs/node_modules/ini",
+  "slug": "/node_modules/global-dirs/node_modules/ini/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/global-dirs/node_modules/ini/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/global-dirs/node_modules/ini/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "global-dirs",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/global-dirs/"
+  },
+  "next": {
+    "title": "global-modules [![NPM version](https://img.shields.io/npm/v/global-modules.svg?style=flat)](https://www.npmjs.com/package/global-modules) [![NPM monthly downloads](https://img.shields.io/npm/dm/global-modules.svg?style=flat)](https://npmjs.org/package/global-modules) [![NPM total downloads](https://img.shields.io/npm/dt/global-modules.svg?style=flat)](https://npmjs.org/package/global-modules) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/global-modules.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/global-modules)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/global-modules/"
+  }
+}

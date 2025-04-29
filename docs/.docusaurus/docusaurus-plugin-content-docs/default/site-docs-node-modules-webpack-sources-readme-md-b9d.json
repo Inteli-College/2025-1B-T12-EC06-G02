@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/webpack-sources/README",
+  "title": "webpack-sources",
+  "description": "Contains multiple classes which represent a Source. A Source can be asked for source code, size, source map and hash.",
+  "source": "@site/docs/node_modules/webpack-sources/README.md",
+  "sourceDirName": "node_modules/webpack-sources",
+  "slug": "/node_modules/webpack-sources/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-sources/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/webpack-sources/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-merge/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/"
+  }
+}

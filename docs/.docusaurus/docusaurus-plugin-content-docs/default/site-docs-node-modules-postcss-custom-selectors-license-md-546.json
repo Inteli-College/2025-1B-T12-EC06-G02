@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-custom-selectors/LICENSE",
+  "title": "The MIT License (MIT)",
+  "description": "Copyright © PostCSS",
+  "source": "@site/docs/node_modules/postcss-custom-selectors/LICENSE.md",
+  "sourceDirName": "node_modules/postcss-custom-selectors",
+  "slug": "/node_modules/postcss-custom-selectors/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-custom-selectors/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-custom-selectors/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to PostCSS Custom Selectors",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-custom-selectors/CHANGELOG"
+  },
+  "next": {
+    "title": "PostCSS Dir Pseudo Class [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-dir-pseudo-class/"
+  }
+}

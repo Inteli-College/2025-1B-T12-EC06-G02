@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/quick-lru/readme",
+  "title": "quick-lru [![Build Status](https://travis-ci.org/sindresorhus/quick-lru.svg?branch=master)](https://travis-ci.org/sindresorhus/quick-lru) [![Coverage Status](https://coveralls.io/repos/github/sindresorhus/quick-lru/badge.svg?branch=master)](https://coveralls.io/github/sindresorhus/quick-lru?branch=master)",
+  "description": "Simple “Least Recently Used” (LRU) cache",
+  "source": "@site/docs/node_modules/quick-lru/readme.md",
+  "sourceDirName": "node_modules/quick-lru",
+  "slug": "/node_modules/quick-lru/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/quick-lru/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/quick-lru/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "queue-microtask [![ci][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/queue-microtask/"
+  },
+  "next": {
+    "title": "randombytes",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/randombytes/"
+  }
+}

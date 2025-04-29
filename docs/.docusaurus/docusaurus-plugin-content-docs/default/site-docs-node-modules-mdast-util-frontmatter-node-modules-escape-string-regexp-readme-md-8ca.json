@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/readme",
+  "title": "escape-string-regexp",
+  "description": "Escape RegExp special characters",
+  "source": "@site/docs/node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/readme.md",
+  "sourceDirName": "node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp",
+  "slug": "/node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mdast-util-frontmatter/node_modules/escape-string-regexp/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "mdast-util-frontmatter",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-frontmatter/"
+  },
+  "next": {
+    "title": "mdast-util-gfm",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-gfm/"
+  }
+}

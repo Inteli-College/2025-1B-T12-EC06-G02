@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/url-loader/CHANGELOG",
+  "title": "Changelog",
+  "description": "All notable changes to this project will be documented in this file. See standard-version for commit guidelines.",
+  "source": "@site/docs/node_modules/url-loader/CHANGELOG.md",
+  "sourceDirName": "node_modules/url-loader",
+  "slug": "/node_modules/url-loader/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/url-loader/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/url-loader/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/url-loader/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/url-loader/node_modules/schema-utils/"
+  }
+}

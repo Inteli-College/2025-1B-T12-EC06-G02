@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-ci/CHANGELOG",
+  "title": "Changelog",
+  "description": "v3.0.1",
+  "source": "@site/docs/node_modules/is-ci/CHANGELOG.md",
+  "sourceDirName": "node_modules/is-ci",
+  "slug": "/node_modules/is-ci/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-ci/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-ci/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-ci",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-ci/"
+  },
+  "next": {
+    "title": "is-core-module <sup>[![Version Badge][2]][1]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-core-module/"
+  }
+}

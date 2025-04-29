@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/micromark-extension-directive/readme",
+  "title": "micromark-extension-directive",
+  "description": "Build",
+  "source": "@site/docs/node_modules/micromark-extension-directive/readme.md",
+  "sourceDirName": "node_modules/micromark-extension-directive",
+  "slug": "/node_modules/micromark-extension-directive/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-extension-directive/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/micromark-extension-directive/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "micromark-core-commonmark",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-core-commonmark/"
+  },
+  "next": {
+    "title": "micromark-extension-frontmatter",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark-extension-frontmatter/"
+  }
+}

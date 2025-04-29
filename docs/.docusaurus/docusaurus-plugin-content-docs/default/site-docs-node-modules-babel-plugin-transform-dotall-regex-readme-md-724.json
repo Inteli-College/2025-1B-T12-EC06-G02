@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-dotall-regex/README",
+  "title": "@babel/plugin-transform-dotall-regex",
+  "description": "Compile regular expressions using the s (dotAll) flag to ES5.",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-dotall-regex/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-dotall-regex",
+  "slug": "/node_modules/@babel/plugin-transform-dotall-regex/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-dotall-regex/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-dotall-regex/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-destructuring",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-destructuring/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-duplicate-keys",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-duplicate-keys/"
+  }
+}

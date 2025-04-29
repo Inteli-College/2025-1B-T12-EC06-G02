@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helper-create-class-features-plugin/README",
+  "title": "@babel/helper-create-class-features-plugin",
+  "description": "Compile class public and private fields, private methods and decorators to ES6",
+  "source": "@site/docs/node_modules/@babel/helper-create-class-features-plugin/README.md",
+  "sourceDirName": "node_modules/@babel/helper-create-class-features-plugin",
+  "slug": "/node_modules/@babel/helper-create-class-features-plugin/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-create-class-features-plugin/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helper-create-class-features-plugin/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/helper-compilation-targets",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-compilation-targets/"
+  },
+  "next": {
+    "title": "@babel/helper-create-regexp-features-plugin",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-create-regexp-features-plugin/"
+  }
+}

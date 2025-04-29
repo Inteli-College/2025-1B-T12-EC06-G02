@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/webpack/SECURITY",
+  "title": "Reporting Security Issues",
+  "description": "If you discover a security issue in webpack, please report it by sending an",
+  "source": "@site/docs/node_modules/webpack/SECURITY.md",
+  "sourceDirName": "node_modules/webpack",
+  "slug": "/node_modules/webpack/SECURITY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/webpack/SECURITY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpack-bundle-analyzer/"
+  }
+}

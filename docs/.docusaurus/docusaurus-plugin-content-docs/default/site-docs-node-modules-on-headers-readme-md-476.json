@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/on-headers/README",
+  "title": "on-headers",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/on-headers/README.md",
+  "sourceDirName": "node_modules/on-headers",
+  "slug": "/node_modules/on-headers/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/on-headers/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/on-headers/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.4.1 / 2022-02-22",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/on-finished/HISTORY"
+  },
+  "next": {
+    "title": "1.0.2 / 2019-02-21",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/on-headers/HISTORY"
+  }
+}

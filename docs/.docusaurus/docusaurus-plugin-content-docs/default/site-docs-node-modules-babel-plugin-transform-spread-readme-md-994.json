@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-spread/README",
+  "title": "@babel/plugin-transform-spread",
+  "description": "Compile ES2015 spread to ES5",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-spread/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-spread",
+  "slug": "/node_modules/@babel/plugin-transform-spread/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-spread/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-spread/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-shorthand-properties",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-shorthand-properties/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-sticky-regex",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-sticky-regex/"
+  }
+}

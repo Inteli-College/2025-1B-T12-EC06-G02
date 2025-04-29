@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/react-router-dom/README",
+  "title": "react-router-dom",
+  "description": "DOM bindings for React Router.",
+  "source": "@site/docs/node_modules/react-router-dom/README.md",
+  "sourceDirName": "node_modules/react-router-dom",
+  "slug": "/node_modules/react-router-dom/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-router-dom/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/react-router-dom/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "React Router Config",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-router-config/"
+  },
+  "next": {
+    "title": "readable-stream",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/readable-stream/"
+  }
+}

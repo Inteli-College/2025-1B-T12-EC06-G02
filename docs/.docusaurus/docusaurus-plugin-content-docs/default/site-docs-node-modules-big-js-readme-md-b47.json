@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/big.js/README",
+  "title": "big.js",
+  "description": "A small, fast JavaScript library for arbitrary-precision decimal arithmetic.",
+  "source": "@site/docs/node_modules/big.js/README.md",
+  "sourceDirName": "node_modules/big.js",
+  "slug": "/node_modules/big.js/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/big.js/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/big.js/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "0.6.1 / 2017-05-16",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/batch/History"
+  },
+  "next": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/big.js/CHANGELOG"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-regexp/readme",
+  "title": "is-regexp [![Build Status](https://travis-ci.org/sindresorhus/is-regexp.svg?branch=master)](https://travis-ci.org/sindresorhus/is-regexp)",
+  "description": "Check whether a variable is a regular expression",
+  "source": "@site/docs/node_modules/is-regexp/readme.md",
+  "sourceDirName": "node_modules/is-regexp",
+  "slug": "/node_modules/is-regexp/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-regexp/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-regexp/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-plain-object [![NPM version](https://img.shields.io/npm/v/is-plain-object.svg?style=flat)](https://www.npmjs.com/package/is-plain-object) [![NPM monthly downloads](https://img.shields.io/npm/dm/is-plain-object.svg?style=flat)](https://npmjs.org/package/is-plain-object) [![NPM total downloads](https://img.shields.io/npm/dt/is-plain-object.svg?style=flat)](https://npmjs.org/package/is-plain-object) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/is-plain-object.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/is-plain-object)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-plain-object/"
+  },
+  "next": {
+    "title": "is-root [![Build Status](https://travis-ci.org/sindresorhus/is-root.svg?branch=master)](https://travis-ci.org/sindresorhus/is-root)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-root/"
+  }
+}

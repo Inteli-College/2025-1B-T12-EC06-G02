@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/parse-numeric-range/README",
+  "title": "node-parse-numeric-range",
+  "description": "Parses expressions like 1-10,20-30. Returns an energetic (as opposed to lazy) array.",
+  "source": "@site/docs/node_modules/parse-numeric-range/README.md",
+  "sourceDirName": "node_modules/parse-numeric-range",
+  "slug": "/node_modules/parse-numeric-range/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-numeric-range/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/parse-numeric-range/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "parse-json",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse-json/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/parse5/"
+  }
+}

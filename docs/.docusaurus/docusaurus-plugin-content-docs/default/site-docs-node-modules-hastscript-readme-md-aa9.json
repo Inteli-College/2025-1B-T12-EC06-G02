@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/hastscript/readme",
+  "title": "hastscript",
+  "description": "Build",
+  "source": "@site/docs/node_modules/hastscript/readme.md",
+  "sourceDirName": "node_modules/hastscript",
+  "slug": "/node_modules/hastscript/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/hastscript/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/hastscript/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "hast-util-whitespace",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/hast-util-whitespace/"
+  },
+  "next": {
+    "title": "he [![Build status](https://travis-ci.org/mathiasbynens/he.svg?branch=master)](https://travis-ci.org/mathiasbynens/he) [![Code coverage status](https://codecov.io/github/mathiasbynens/he/coverage.svg?branch=master)](https://codecov.io/github/mathiasbynens/he?branch=master) [![Dependency status](https://gemnasium.com/mathiasbynens/he.svg)](https://gemnasium.com/mathiasbynens/he)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/he/"
+  }
+}

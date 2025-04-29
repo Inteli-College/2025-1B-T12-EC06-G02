@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/domelementtype/readme",
+  "title": "readme",
+  "description": "All the types of nodes in htmlparser2's DOM.",
+  "source": "@site/docs/node_modules/domelementtype/readme.md",
+  "sourceDirName": "node_modules/domelementtype",
+  "slug": "/node_modules/domelementtype/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/domelementtype/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/domelementtype/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "dom-serializer [![Build Status](https://travis-ci.com/cheeriojs/dom-serializer.svg?branch=master)](https://travis-ci.com/cheeriojs/dom-serializer)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dom-serializer/"
+  },
+  "next": {
+    "title": "domhandler [![Build Status](https://travis-ci.com/fb55/domhandler.svg?branch=master)](https://travis-ci.com/fb55/domhandler)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/domhandler/"
+  }
+}

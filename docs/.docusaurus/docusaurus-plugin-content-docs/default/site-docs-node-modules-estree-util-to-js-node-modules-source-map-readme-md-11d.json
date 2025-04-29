@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/estree-util-to-js/node_modules/source-map/README",
+  "title": "Source Map",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/estree-util-to-js/node_modules/source-map/README.md",
+  "sourceDirName": "node_modules/estree-util-to-js/node_modules/source-map",
+  "slug": "/node_modules/estree-util-to-js/node_modules/source-map/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/estree-util-to-js/node_modules/source-map/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/estree-util-to-js/node_modules/source-map/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "estree-util-to-js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/estree-util-to-js/"
+  },
+  "next": {
+    "title": "estree-util-value-to-estree",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/estree-util-value-to-estree/"
+  }
+}

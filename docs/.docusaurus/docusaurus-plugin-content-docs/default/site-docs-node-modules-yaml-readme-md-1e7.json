@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/yaml/README",
+  "title": "YAML <a href=\"https://www.npmjs.com/package/yaml\"><img align=\"right\" src=\"https://badge.fury.io/js/yaml.svg\" title=\"npm package\" /></a>",
+  "description": "yaml is a JavaScript parser and stringifier for YAML, a human friendly data serialization standard. It supports both parsing and stringifying data using all versions of YAML, along with all common data schemas. As a particularly distinguishing feature, yaml fully supports reading and writing comments and blank lines in YAML documents.",
+  "source": "@site/docs/node_modules/yaml/README.md",
+  "sourceDirName": "node_modules/yaml",
+  "slug": "/node_modules/yaml/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/yaml/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/yaml/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "yallist",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/yallist/"
+  },
+  "next": {
+    "title": "yocto-queue [![](https://badgen.net/bundlephobia/minzip/yocto-queue)](https://bundlephobia.com/result?p=yocto-queue)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/yocto-queue/"
+  }
+}

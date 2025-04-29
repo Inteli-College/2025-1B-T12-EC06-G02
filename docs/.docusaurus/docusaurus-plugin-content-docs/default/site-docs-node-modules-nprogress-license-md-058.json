@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/nprogress/License",
+  "title": "License",
+  "description": "Copyright (c) 2013-2014 Rico Sta. Cruz",
+  "source": "@site/docs/node_modules/nprogress/License.md",
+  "sourceDirName": "node_modules/nprogress",
+  "slug": "/node_modules/nprogress/License",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/nprogress/License",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/nprogress/License.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "History",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/nprogress/History"
+  },
+  "next": {
+    "title": "Notes",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/nprogress/Notes"
+  }
+}

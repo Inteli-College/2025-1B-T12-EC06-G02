@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/websocket-extensions/lib/pipeline/README",
+  "title": "Extension pipelining",
+  "description": "websocket-extensions models the extension negotiation and processing pipeline",
+  "source": "@site/docs/node_modules/websocket-extensions/lib/pipeline/README.md",
+  "sourceDirName": "node_modules/websocket-extensions/lib/pipeline",
+  "slug": "/node_modules/websocket-extensions/lib/pipeline/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-extensions/lib/pipeline/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/websocket-extensions/lib/pipeline/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-extensions/LICENSE"
+  },
+  "next": {
+    "title": "which",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/which/"
+  }
+}

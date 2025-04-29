@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/accepts/node_modules/negotiator/HISTORY",
+  "title": "0.6.3 / 2022-01-22",
+  "description": "* Revert \"Lazy-load modules from main entry point\"",
+  "source": "@site/docs/node_modules/accepts/node_modules/negotiator/HISTORY.md",
+  "sourceDirName": "node_modules/accepts/node_modules/negotiator",
+  "slug": "/node_modules/accepts/node_modules/negotiator/HISTORY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/accepts/node_modules/negotiator/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/accepts/node_modules/negotiator/HISTORY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "negotiator",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/accepts/node_modules/negotiator/"
+  },
+  "next": {
+    "title": "Acorn",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn/"
+  }
+}

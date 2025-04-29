@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/thunky/README",
+  "title": "thunky",
+  "description": "Delay the evaluation of a paramless async function and cache the result (see thunk).",
+  "source": "@site/docs/node_modules/thunky/README.md",
+  "sourceDirName": "node_modules/thunky",
+  "slug": "/node_modules/thunky/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/thunky/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/thunky/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/terser-webpack-plugin/"
+  },
+  "next": {
+    "title": "tiny-invariant 🔬💥",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/tiny-invariant/"
+  }
+}

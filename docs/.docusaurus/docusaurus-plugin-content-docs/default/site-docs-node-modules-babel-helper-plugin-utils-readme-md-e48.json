@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helper-plugin-utils/README",
+  "title": "@babel/helper-plugin-utils",
+  "description": "General utilities for plugins to use",
+  "source": "@site/docs/node_modules/@babel/helper-plugin-utils/README.md",
+  "sourceDirName": "node_modules/@babel/helper-plugin-utils",
+  "slug": "/node_modules/@babel/helper-plugin-utils/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-plugin-utils/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helper-plugin-utils/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/helper-optimise-call-expression",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-optimise-call-expression/"
+  },
+  "next": {
+    "title": "@babel/helper-remap-async-to-generator",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-remap-async-to-generator/"
+  }
+}

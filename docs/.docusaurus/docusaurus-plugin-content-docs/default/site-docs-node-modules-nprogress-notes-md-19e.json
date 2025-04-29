@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/nprogress/Notes",
+  "title": "Notes",
+  "description": "Testing",
+  "source": "@site/docs/node_modules/nprogress/Notes.md",
+  "sourceDirName": "node_modules/nprogress",
+  "slug": "/node_modules/nprogress/Notes",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/nprogress/Notes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/nprogress/Notes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "License",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/nprogress/License"
+  },
+  "next": {
+    "title": "nth-check [![Build Status](https://travis-ci.org/fb55/nth-check.svg)](https://travis-ci.org/fb55/nth-check)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/nth-check/"
+  }
+}

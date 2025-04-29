@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/especificacoes-tecnicas/Requisitos_Funcionais",
+  "title": "Requisitos Funcionais",
+  "description": "Cataloga todas as funcionalidades do sistema com descrições claras de seu propósito, comportamento esperado e tipo de usuário que irá interagir com cada uma, organizadas por prioridade e módulos.",
+  "source": "@site/docs/sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md",
+  "sourceDirName": "sprint-1/especificacoes-tecnicas",
+  "slug": "/sprint-1/especificacoes-tecnicas/Requisitos_Funcionais",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/especificacoes-tecnicas/Requisitos_Funcionais",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Escopo Técnico do Projeto",
+    "permalink": "/2025-1B-T12-EC06-G02/category/escopo-técnico-do-projeto"
+  },
+  "next": {
+    "title": "Requisitos Não Funcionais",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais"
+  }
+}

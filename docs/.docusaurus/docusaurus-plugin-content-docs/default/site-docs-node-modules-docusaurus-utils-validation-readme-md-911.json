@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@docusaurus/utils-validation/README",
+  "title": "@docusaurus/utils-validation",
+  "description": "Node validation utility functions for Docusaurus packages.",
+  "source": "@site/docs/node_modules/@docusaurus/utils-validation/README.md",
+  "sourceDirName": "node_modules/@docusaurus/utils-validation",
+  "slug": "/node_modules/@docusaurus/utils-validation/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/utils-validation/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@docusaurus/utils-validation/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@docusaurus/utils",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/utils-common/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@hapi/hoek/"
+  }
+}

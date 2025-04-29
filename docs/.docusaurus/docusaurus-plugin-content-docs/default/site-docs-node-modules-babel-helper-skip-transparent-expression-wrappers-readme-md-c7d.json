@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helper-skip-transparent-expression-wrappers/README",
+  "title": "@babel/helper-skip-transparent-expression-wrappers",
+  "description": "Helper which skips types and parentheses",
+  "source": "@site/docs/node_modules/@babel/helper-skip-transparent-expression-wrappers/README.md",
+  "sourceDirName": "node_modules/@babel/helper-skip-transparent-expression-wrappers",
+  "slug": "/node_modules/@babel/helper-skip-transparent-expression-wrappers/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-skip-transparent-expression-wrappers/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helper-skip-transparent-expression-wrappers/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/helper-replace-supers",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-replace-supers/"
+  },
+  "next": {
+    "title": "@babel/helper-string-parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-string-parser/"
+  }
+}

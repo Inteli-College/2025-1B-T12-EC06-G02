@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/parser/README",
+  "title": "@babel/parser",
+  "description": "A JavaScript parser",
+  "source": "@site/docs/node_modules/@babel/parser/README.md",
+  "sourceDirName": "node_modules/@babel/parser",
+  "slug": "/node_modules/@babel/parser/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/parser/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/parser/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/helpers",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helpers/"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/parser/CHANGELOG"
+  }
+}

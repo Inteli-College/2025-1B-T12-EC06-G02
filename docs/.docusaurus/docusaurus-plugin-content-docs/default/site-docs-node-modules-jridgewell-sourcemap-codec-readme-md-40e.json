@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@jridgewell/sourcemap-codec/README",
+  "title": "@jridgewell/sourcemap-codec",
+  "description": "Encode/decode the mappings property of a sourcemap.",
+  "source": "@site/docs/node_modules/@jridgewell/sourcemap-codec/README.md",
+  "sourceDirName": "node_modules/@jridgewell/sourcemap-codec",
+  "slug": "/node_modules/@jridgewell/sourcemap-codec/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/sourcemap-codec/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@jridgewell/sourcemap-codec/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@jridgewell/source-map",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/source-map/"
+  },
+  "next": {
+    "title": "@jridgewell/trace-mapping",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@jridgewell/trace-mapping/"
+  }
+}

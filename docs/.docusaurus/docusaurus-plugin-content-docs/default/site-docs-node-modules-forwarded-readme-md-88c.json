@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/forwarded/README",
+  "title": "forwarded",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/forwarded/README.md",
+  "sourceDirName": "node_modules/forwarded",
+  "slug": "/node_modules/forwarded/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/forwarded/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/forwarded/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "format",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/format/"
+  },
+  "next": {
+    "title": "0.2.0 / 2021-05-31",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/forwarded/HISTORY"
+  }
+}

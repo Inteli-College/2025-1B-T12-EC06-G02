@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/copy-webpack-plugin/node_modules/slash/readme",
+  "title": "slash",
+  "description": "Convert Windows backslash paths to slash paths: foo\\\\bar ➔ foo/bar",
+  "source": "@site/docs/node_modules/copy-webpack-plugin/node_modules/slash/readme.md",
+  "sourceDirName": "node_modules/copy-webpack-plugin/node_modules/slash",
+  "slug": "/node_modules/copy-webpack-plugin/node_modules/slash/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/copy-webpack-plugin/node_modules/slash/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/copy-webpack-plugin/node_modules/slash/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "globby",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/copy-webpack-plugin/node_modules/globby/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/core-js/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/serve-handler/node_modules/bytes/History",
+  "title": "3.0.0 / 2017-08-31",
+  "description": "* Change \"kB\" to \"KB\" in format output",
+  "source": "@site/docs/node_modules/serve-handler/node_modules/bytes/History.md",
+  "sourceDirName": "node_modules/serve-handler/node_modules/bytes",
+  "slug": "/node_modules/serve-handler/node_modules/bytes/History",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-handler/node_modules/bytes/History",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/serve-handler/node_modules/bytes/History.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bytes utility",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-handler/node_modules/bytes/"
+  },
+  "next": {
+    "title": "mime-db",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-handler/node_modules/mime-db/"
+  }
+}

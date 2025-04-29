@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@slorber/remark-comment/node_modules/micromark-factory-space/readme",
+  "title": "micromark-factory-space",
+  "description": "Build",
+  "source": "@site/docs/node_modules/@slorber/remark-comment/node_modules/micromark-factory-space/readme.md",
+  "sourceDirName": "node_modules/@slorber/remark-comment/node_modules/micromark-factory-space",
+  "slug": "/node_modules/@slorber/remark-comment/node_modules/micromark-factory-space/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@slorber/remark-comment/node_modules/micromark-factory-space/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@slorber/remark-comment/node_modules/micromark-factory-space/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "remark-comment",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@slorber/remark-comment/"
+  },
+  "next": {
+    "title": "micromark-util-character",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@slorber/remark-comment/node_modules/micromark-util-character/"
+  }
+}

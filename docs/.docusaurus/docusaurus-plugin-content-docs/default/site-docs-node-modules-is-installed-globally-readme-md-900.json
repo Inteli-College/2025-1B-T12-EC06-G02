@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-installed-globally/readme",
+  "title": "is-installed-globally",
+  "description": "Check if your package was installed globally",
+  "source": "@site/docs/node_modules/is-installed-globally/readme.md",
+  "sourceDirName": "node_modules/is-installed-globally",
+  "slug": "/node_modules/is-installed-globally/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-installed-globally/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-installed-globally/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-hexadecimal",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-hexadecimal/"
+  },
+  "next": {
+    "title": "is-npm",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-npm/"
+  }
+}

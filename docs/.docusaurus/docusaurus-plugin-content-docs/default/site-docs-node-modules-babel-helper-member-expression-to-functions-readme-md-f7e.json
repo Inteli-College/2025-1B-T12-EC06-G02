@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/helper-member-expression-to-functions/README",
+  "title": "@babel/helper-member-expression-to-functions",
+  "description": "Helper function to replace certain member expressions with function calls",
+  "source": "@site/docs/node_modules/@babel/helper-member-expression-to-functions/README.md",
+  "sourceDirName": "node_modules/@babel/helper-member-expression-to-functions",
+  "slug": "/node_modules/@babel/helper-member-expression-to-functions/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-member-expression-to-functions/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/helper-member-expression-to-functions/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "debug",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-define-polyfill-provider/node_modules/debug/"
+  },
+  "next": {
+    "title": "@babel/helper-module-imports",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/helper-module-imports/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/get-proto/README",
+  "title": "get-proto <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+  "description": "github actions",
+  "source": "@site/docs/node_modules/get-proto/README.md",
+  "sourceDirName": "node_modules/get-proto",
+  "slug": "/node_modules/get-proto/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/get-proto/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/get-proto/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/get-own-enumerable-property-symbols/CHANGELOG"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/get-proto/CHANGELOG"
+  }
+}

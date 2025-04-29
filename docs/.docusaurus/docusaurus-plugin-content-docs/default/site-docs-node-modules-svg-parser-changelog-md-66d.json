@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/svg-parser/CHANGELOG",
+  "title": "svg-parser changelog",
+  "description": "2.0.3",
+  "source": "@site/docs/node_modules/svg-parser/CHANGELOG.md",
+  "sourceDirName": "node_modules/svg-parser",
+  "slug": "/node_modules/svg-parser/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/svg-parser/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/svg-parser/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "svg-parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/svg-parser/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/svgo/"
+  }
+}

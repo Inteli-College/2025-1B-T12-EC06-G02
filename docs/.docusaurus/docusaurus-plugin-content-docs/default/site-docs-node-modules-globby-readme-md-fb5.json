@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/globby/readme",
+  "title": "globby",
+  "description": "User-friendly glob matching",
+  "source": "@site/docs/node_modules/globby/readme.md",
+  "sourceDirName": "node_modules/globby",
+  "slug": "/node_modules/globby/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/globby/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/globby/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "globals [![Build Status](https://travis-ci.org/sindresorhus/globals.svg?branch=master)](https://travis-ci.org/sindresorhus/globals)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/globals/"
+  },
+  "next": {
+    "title": "gopd <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/gopd/"
+  }
+}

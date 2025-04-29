@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@docusaurus/plugin-content-docs/README",
+  "title": "@docusaurus/plugin-content-docs",
+  "description": "Docs plugin for Docusaurus.",
+  "source": "@site/docs/node_modules/@docusaurus/plugin-content-docs/README.md",
+  "sourceDirName": "node_modules/@docusaurus/plugin-content-docs",
+  "slug": "/node_modules/@docusaurus/plugin-content-docs/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/plugin-content-docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@docusaurus/plugin-content-docs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@docusaurus/plugin-content-blog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/plugin-content-blog/"
+  },
+  "next": {
+    "title": "Sidebars",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docusaurus/plugin-content-docs/src/sidebars/"
+  }
+}

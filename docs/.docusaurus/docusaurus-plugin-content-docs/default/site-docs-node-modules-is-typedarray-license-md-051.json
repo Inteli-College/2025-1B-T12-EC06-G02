@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-typedarray/LICENSE",
+  "title": "LICENSE",
+  "description": "This software is released under the MIT license:",
+  "source": "@site/docs/node_modules/is-typedarray/LICENSE.md",
+  "sourceDirName": "node_modules/is-typedarray",
+  "slug": "/node_modules/is-typedarray/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-typedarray/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-typedarray/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-typedarray [![locked](http://badges.github.io/stability-badges/dist/locked.svg)](http://github.com/badges/stability-badges)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-typedarray/"
+  },
+  "next": {
+    "title": "is-wsl [![Build Status](https://travis-ci.org/sindresorhus/is-wsl.svg?branch=master)](https://travis-ci.org/sindresorhus/is-wsl)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-wsl/"
+  }
+}

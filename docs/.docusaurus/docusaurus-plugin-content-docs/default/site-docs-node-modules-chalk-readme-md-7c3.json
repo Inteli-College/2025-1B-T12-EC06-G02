@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/chalk/readme",
+  "title": "readme",
+  "description": "Terminal string styling done right",
+  "source": "@site/docs/node_modules/chalk/readme.md",
+  "sourceDirName": "node_modules/chalk",
+  "slug": "/node_modules/chalk/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/chalk/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/chalk/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ccount",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ccount/"
+  },
+  "next": {
+    "title": "supports-color [![Build Status](https://travis-ci.org/chalk/supports-color.svg?branch=master)](https://travis-ci.org/chalk/supports-color)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/chalk/node_modules/supports-color/"
+  }
+}

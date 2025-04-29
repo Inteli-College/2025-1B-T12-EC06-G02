@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/react-error-overlay/README",
+  "title": "react-error-overlay",
+  "description": "react-error-overlay is an overlay which displays when there is a runtime error.",
+  "source": "@site/docs/node_modules/react-error-overlay/README.md",
+  "sourceDirName": "node_modules/react-error-overlay",
+  "slug": "/node_modules/react-error-overlay/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-error-overlay/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/react-error-overlay/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "react-dom",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-dom/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react-fast-compare/"
+  }
+}

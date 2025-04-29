@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/path-parse/README",
+  "title": "path-parse [![Build Status](https://travis-ci.org/jbgutierrez/path-parse.svg?branch=master)](https://travis-ci.org/jbgutierrez/path-parse)",
+  "description": "Node.js path.parse(pathString) ponyfill.",
+  "source": "@site/docs/node_modules/path-parse/README.md",
+  "sourceDirName": "node_modules/path-parse",
+  "slug": "/node_modules/path-parse/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/path-parse/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/path-parse/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "path-key [![Build Status](https://travis-ci.org/sindresorhus/path-key.svg?branch=master)](https://travis-ci.org/sindresorhus/path-key)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/path-key/"
+  },
+  "next": {
+    "title": "Path-to-RegExp",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/path-to-regexp/"
+  }
+}

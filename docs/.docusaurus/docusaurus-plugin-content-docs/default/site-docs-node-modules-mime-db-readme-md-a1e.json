@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mime-db/README",
+  "title": "mime-db",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/mime-db/README.md",
+  "sourceDirName": "node_modules/mime-db",
+  "slug": "/node_modules/mime-db/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mime-db/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mime-db/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mime/CHANGELOG"
+  },
+  "next": {
+    "title": "1.52.0 / 2022-02-21",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mime-db/HISTORY"
+  }
+}

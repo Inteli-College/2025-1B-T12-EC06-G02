@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/fs-monkey/docs/api/patchRequire",
+  "title": "patchRequire(vol[, unixifyPaths[, Module]])",
+  "description": "Patches Node's module module to use a given fs-like object vol for module loading.",
+  "source": "@site/docs/node_modules/fs-monkey/docs/api/patchRequire.md",
+  "sourceDirName": "node_modules/fs-monkey/docs/api",
+  "slug": "/node_modules/fs-monkey/docs/api/patchRequire",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-monkey/docs/api/patchRequire",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/fs-monkey/docs/api/patchRequire.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "patchFs(vol[, fs])",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-monkey/docs/api/patchFs"
+  },
+  "next": {
+    "title": "fs.realpath",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs.realpath/"
+  }
+}

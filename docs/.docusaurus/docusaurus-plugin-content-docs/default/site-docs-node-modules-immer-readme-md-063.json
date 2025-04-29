@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/immer/readme",
+  "title": "readme",
+  "description": "npm Build Status Coverage Status code style: prettier OpenCollective OpenCollective Gitpod Ready-to-Code",
+  "source": "@site/docs/node_modules/immer/readme.md",
+  "sourceDirName": "node_modules/immer",
+  "slug": "/node_modules/immer/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/immer/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/immer/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "image-size",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/image-size/"
+  },
+  "next": {
+    "title": "import-fresh",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/import-fresh/"
+  }
+}

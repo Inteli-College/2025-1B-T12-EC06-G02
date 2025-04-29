@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-reduce-transforms/README",
+  "title": "[postcss][postcss]-reduce-transforms",
+  "description": "Reduce transform functions with PostCSS.",
+  "source": "@site/docs/node_modules/postcss-reduce-transforms/README.md",
+  "sourceDirName": "node_modules/postcss-reduce-transforms",
+  "slug": "/node_modules/postcss-reduce-transforms/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-reduce-transforms/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-reduce-transforms/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "[postcss][postcss]-reduce-initial",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-reduce-initial/"
+  },
+  "next": {
+    "title": "PostCSS Replace Overflow Wrap [![CSS Standard Status][css-img]][css] [![Build Status][ci-img]][ci]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-replace-overflow-wrap/"
+  }
+}

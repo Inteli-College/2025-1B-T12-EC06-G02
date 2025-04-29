@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/compressible/node_modules/mime-db/HISTORY",
+  "title": "1.54.0 / 2025-03-17",
+  "description": "* Update mime type for DCM format (#362)",
+  "source": "@site/docs/node_modules/compressible/node_modules/mime-db/HISTORY.md",
+  "sourceDirName": "node_modules/compressible/node_modules/mime-db",
+  "slug": "/node_modules/compressible/node_modules/mime-db/HISTORY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/compressible/node_modules/mime-db/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/compressible/node_modules/mime-db/HISTORY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "mime-db",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/compressible/node_modules/mime-db/"
+  },
+  "next": {
+    "title": "compression",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/compression/"
+  }
+}

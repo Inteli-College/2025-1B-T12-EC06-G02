@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-replace-overflow-wrap/README",
+  "title": "PostCSS Replace Overflow Wrap [![CSS Standard Status][css-img]][css] [![Build Status][ci-img]][ci]",
+  "description": "[PostCSS] plugin to replace overflow-wrap with word-wrap. May optionally retain both declarations.",
+  "source": "@site/docs/node_modules/postcss-replace-overflow-wrap/README.md",
+  "sourceDirName": "node_modules/postcss-replace-overflow-wrap",
+  "slug": "/node_modules/postcss-replace-overflow-wrap/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-replace-overflow-wrap/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-replace-overflow-wrap/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "[postcss][postcss]-reduce-transforms",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-reduce-transforms/"
+  },
+  "next": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-replace-overflow-wrap/CHANGELOG"
+  }
+}

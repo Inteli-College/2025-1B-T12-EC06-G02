@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@types/connect/README",
+  "title": "Installation",
+  "description": "npm install --save @types/connect",
+  "source": "@site/docs/node_modules/@types/connect/README.md",
+  "sourceDirName": "node_modules/@types/connect",
+  "slug": "/node_modules/@types/connect/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/connect/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@types/connect/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/bonjour/"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/connect-history-api-fallback/"
+  }
+}

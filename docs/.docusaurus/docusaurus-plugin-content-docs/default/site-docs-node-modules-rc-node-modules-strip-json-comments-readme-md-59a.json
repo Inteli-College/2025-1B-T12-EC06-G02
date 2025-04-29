@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/rc/node_modules/strip-json-comments/readme",
+  "title": "strip-json-comments [![Build Status](https://travis-ci.org/sindresorhus/strip-json-comments.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-json-comments)",
+  "description": "Strip comments from JSON. Lets you use comments in your JSON files!",
+  "source": "@site/docs/node_modules/rc/node_modules/strip-json-comments/readme.md",
+  "sourceDirName": "node_modules/rc/node_modules/strip-json-comments",
+  "slug": "/node_modules/rc/node_modules/strip-json-comments/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/rc/node_modules/strip-json-comments/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/rc/node_modules/strip-json-comments/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "rc",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/rc/"
+  },
+  "next": {
+    "title": "react",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/react/"
+  }
+}

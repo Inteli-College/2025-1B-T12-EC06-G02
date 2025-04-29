@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@szmarczak/http-timer/README",
+  "title": "http-timer",
+  "description": "Timings for HTTP requests",
+  "source": "@site/docs/node_modules/@szmarczak/http-timer/README.md",
+  "sourceDirName": "node_modules/@szmarczak/http-timer",
+  "slug": "/node_modules/@szmarczak/http-timer/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@szmarczak/http-timer/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@szmarczak/http-timer/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@svgr/webpack",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@svgr/webpack/"
+  },
+  "next": {
+    "title": "svg/sax",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@trysound/sax/"
+  }
+}

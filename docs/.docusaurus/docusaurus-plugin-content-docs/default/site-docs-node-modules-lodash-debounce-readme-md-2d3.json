@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/lodash.debounce/README",
+  "title": "lodash.debounce v4.0.8",
+  "description": "The lodash method _.debounce exported as a Node.js module.",
+  "source": "@site/docs/node_modules/lodash.debounce/README.md",
+  "sourceDirName": "node_modules/lodash.debounce",
+  "slug": "/node_modules/lodash.debounce/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/lodash.debounce/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/lodash.debounce/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "release",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/lodash/release"
+  },
+  "next": {
+    "title": "lodash.memoize v4.1.2",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/lodash.memoize/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/call-bound/CHANGELOG",
+  "title": "Changelog",
+  "description": "All notable changes to this project will be documented in this file.",
+  "source": "@site/docs/node_modules/call-bound/CHANGELOG.md",
+  "sourceDirName": "node_modules/call-bound",
+  "slug": "/node_modules/call-bound/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/call-bound/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/call-bound/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "call-bound <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/call-bound/"
+  },
+  "next": {
+    "title": "callsites [![Build Status](https://travis-ci.org/sindresorhus/callsites.svg?branch=master)](https://travis-ci.org/sindresorhus/callsites)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/callsites/"
+  }
+}

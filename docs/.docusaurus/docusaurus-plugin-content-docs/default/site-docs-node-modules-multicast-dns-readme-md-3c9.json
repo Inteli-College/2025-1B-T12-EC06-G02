@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/multicast-dns/README",
+  "title": "multicast-dns",
+  "description": "Low level multicast-dns implementation in pure javascript",
+  "source": "@site/docs/node_modules/multicast-dns/README.md",
+  "sourceDirName": "node_modules/multicast-dns",
+  "slug": "/node_modules/multicast-dns/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/multicast-dns/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/multicast-dns/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "license",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ms/license"
+  },
+  "next": {
+    "title": "Nano ID",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/nanoid/"
+  }
+}

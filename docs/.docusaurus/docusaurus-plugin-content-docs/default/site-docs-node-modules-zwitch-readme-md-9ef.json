@@ -1,0 +1,20 @@
+{
+  "id": "node_modules/zwitch/readme",
+  "title": "zwitch",
+  "description": "Build",
+  "source": "@site/docs/node_modules/zwitch/readme.md",
+  "sourceDirName": "node_modules/zwitch",
+  "slug": "/node_modules/zwitch/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/zwitch/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/zwitch/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "yocto-queue [![](https://badgen.net/bundlephobia/minzip/yocto-queue)](https://bundlephobia.com/result?p=yocto-queue)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/yocto-queue/"
+  }
+}

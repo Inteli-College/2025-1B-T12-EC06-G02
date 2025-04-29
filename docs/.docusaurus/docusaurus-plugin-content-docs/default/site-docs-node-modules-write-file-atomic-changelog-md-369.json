@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/write-file-atomic/CHANGELOG",
+  "title": "3.0.0",
+  "description": "* Implement options.tmpfileCreated callback.",
+  "source": "@site/docs/node_modules/write-file-atomic/CHANGELOG.md",
+  "sourceDirName": "node_modules/write-file-atomic",
+  "slug": "/node_modules/write-file-atomic/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/write-file-atomic/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/write-file-atomic/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/write-file-atomic/"
+  },
+  "next": {
+    "title": "ws: a Node.js WebSocket library",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ws/"
+  }
+}

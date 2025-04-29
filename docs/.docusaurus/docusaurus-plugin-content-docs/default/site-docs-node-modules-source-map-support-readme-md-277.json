@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/source-map-support/README",
+  "title": "Source Map Support",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/source-map-support/README.md",
+  "sourceDirName": "node_modules/source-map-support",
+  "slug": "/node_modules/source-map-support/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/source-map-support/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/source-map-support/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Source Map JS",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/source-map-js/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/source-map-support/LICENSE"
+  }
+}

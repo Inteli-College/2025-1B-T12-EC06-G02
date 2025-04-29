@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/p-retry/readme",
+  "title": "p-retry",
+  "description": "Retry a promise-returning or async function",
+  "source": "@site/docs/node_modules/p-retry/readme.md",
+  "sourceDirName": "node_modules/p-retry",
+  "slug": "/node_modules/p-retry/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/p-retry/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/p-retry/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "p-map [![Build Status](https://travis-ci.org/sindresorhus/p-map.svg?branch=master)](https://travis-ci.org/sindresorhus/p-map)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/p-map/"
+  },
+  "next": {
+    "title": "p-try [![Build Status](https://travis-ci.org/sindresorhus/p-try.svg?branch=master)](https://travis-ci.org/sindresorhus/p-try)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/p-try/"
+  }
+}

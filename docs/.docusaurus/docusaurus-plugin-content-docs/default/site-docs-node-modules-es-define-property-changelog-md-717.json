@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/es-define-property/CHANGELOG",
+  "title": "Changelog",
+  "description": "All notable changes to this project will be documented in this file.",
+  "source": "@site/docs/node_modules/es-define-property/CHANGELOG.md",
+  "sourceDirName": "node_modules/es-define-property",
+  "slug": "/node_modules/es-define-property/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/es-define-property/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/es-define-property/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "es-define-property <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/es-define-property/"
+  },
+  "next": {
+    "title": "es-errors <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/es-errors/"
+  }
+}

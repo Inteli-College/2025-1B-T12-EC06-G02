@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/gopd/CHANGELOG",
+  "title": "Changelog",
+  "description": "All notable changes to this project will be documented in this file.",
+  "source": "@site/docs/node_modules/gopd/CHANGELOG.md",
+  "sourceDirName": "node_modules/gopd",
+  "slug": "/node_modules/gopd/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/gopd/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/gopd/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "gopd <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/gopd/"
+  },
+  "next": {
+    "title": "readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/got/"
+  }
+}

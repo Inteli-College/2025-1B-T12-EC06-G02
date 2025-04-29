@@ -25,104 +25,103 @@ custom_edit_url: null
 ## 2. Business Model Canvas Detalhado
 
 ### 2.1 Proposta de Valor
-**Descrição:**  
-A solução proposta entrega benefícios diretos para empresas de construção, manutenção e fiscalização predial:
+&emsp;A proposta de valor do projeto consiste em oferecer uma solução utilizando tecnologia para o setor de manutenção predial e construção civil. A ferramenta proporciona a automação da inspeção de fachadas, por meio da detecção e análise de fissuras utilizando visão computacional e IA, garantindo:
 
-- **Automatização da inspeção predial:** Reduz o esforço humano e padroniza o processo de diagnóstico de fissuras.
-- **Diagnóstico rápido e preciso:** Facilita a tomada de decisões corretivas e preventivas.
-- **Redução de custos:** Permite identificar problemas antes que evoluam, evitando grandes obras de reparo.
-- **Aumento da segurança:** Minimiza riscos de falhas estruturais que podem afetar a segurança dos usuários.
-- **Interface amigável:** Permite engenheiros civis e técnicos interpretarem rapidamente os dados de inspeção.
-- **Geração de relatórios automáticos:** Relatórios técnicos prontos para uso em manutenção e fiscalização.
+- Inspeção mais rápida, com menor dependência de análise manual;
+- Acompanhamento da evolução das fissuras com registros históricos;
+- Prevenção de falhas estruturais, gerando uma maior segurança na integridade estrutural;
+- Relatórios automáticos prontos que auxiliem os colaboradores nas tomadas de decisão em relação às rachaduras;
+- Redução de custos com manutenção corretiva.
 
 
-### 2.2 Segmentos de Clientes
-**Descrição:**  
-O público-alvo é composto por empresas e profissionais que necessitam de inspeções regulares ou preventivas:
 
-- **Empresas de manutenção predial:** Monitoramento contínuo do estado das fachadas.
-- **Construtoras:** Controle de qualidade em obras novas e assistências técnicas.
-- **Empresas de inspeção e consultoria técnica:** Laudos técnicos e avaliações periódicas.
-- **Seguradoras:** Avaliação de riscos para imóveis segurados.
-- **Órgãos públicos:** Gestão de manutenção de edifícios públicos e patrimônio histórico.
+### 2.2 Segmentos de Mercado
+&emsp;O projeto é voltado para clientes que necessitam de inspeções técnicas regulares, preventivas ou de diagnóstico estrutural:
+
+- Empresas de manutenção predial, responsáveis pela gestão de edifícios residenciais e comerciais;
+- Construtoras, que podem utilizar a tecnologia em obras novas e assistência técnica pós-entrega;
+- Consultorias técnicas e empresas de inspeção, para diagnósticos especializados e geração de laudos;
+- Seguradoras, que desejam mitigar riscos em propriedades seguradas;
+- Órgãos públicos, como prefeituras e instituições de preservação de patrimônio, para controle e monitoramento de imóveis públicos.
+
 
 
 ### 2.3 Canais
-**Descrição:**  
-Como o produto será distribuído e comunicado aos clientes:
+&emsp;A entrega da solução ao cliente ocorrerá por meio de diferentes canais de comunicação, comercialização e suporte:
 
-- **Venda direta (B2B):** Licenciamento de uso anual para empresas de construção, manutenção e consultoria.
-- **Parcerias estratégicas:** Com empresas de inspeção predial e integradores de tecnologia.
-- **Participação em eventos e feiras técnicas:** Divulgação em eventos da construção civil e tecnologia.
-- **Canais digitais:** Websites institucionais, redes sociais técnicas e contatos comerciais diretos.
+- Venda direta B2B, com contato técnico e comercial;
+- Feiras e eventos de tecnologia e construção civil, com demonstrações presenciais;
+- Plataformas digitais, como site oficial, redes sociais e apresentações em marketplaces técnicos especializados;
+- Parcerias institucionais com entidades do setor.
 
 
-### 2.4 Relacionamento com Clientes
-**Descrição:**  
-Estratégias para atrair e manter clientes:
 
-- **Suporte técnico especializado:** Apoio durante a instalação, operação e atualização da solução.
-- **Atualizações contínuas:** Melhorias constantes baseadas em novos dados de campo e evolução das fissuras.
-- **Serviços de personalização:** Customização de funcionalidades específicas para grandes clientes.
-- **Treinamento e capacitação:** Workshops e cursos de formação para equipes técnicas de empresas clientes.
+### 2.4 Relação com Clientes
+&emsp;A relação com o cliente será sustentada com base em confiança técnica, suporte contínuo e personalização:
+
+- Suporte técnico especializado, disponível durante e após a implantação;
+- Atualizações regulares com base em feedbacks e inovações do setor;
+- Customizações específicas, como ajustes na interface ou nos relatórios;
+- Capacitação e treinamento da equipe técnica do cliente final, garantindo autonomia no uso da ferramenta.
+
 
 
 ### 2.5 Fontes de Receita
-**Descrição:**  
-Mecanismos de geração de receita para o projeto:
+&emsp;O modelo de receita é baseado principalmente em serviços de licenciamento e suporte:
 
-- **Venda de licenças anuais de software:** Para uso corporativo em inspeções prediais.
-- **Projetos de customização:** Desenvolvimento de módulos ou relatórios específicos para clientes de grande porte.
-- **Treinamentos técnicos:** Cursos pagos para capacitação no uso do sistema.
-- **Serviços de manutenção e atualizações:** Planos anuais para suporte técnico e upgrades.
+- Licenças anuais de uso do software para empresas;
+- Planos de suporte técnico e atualizações contínuas, com modelos escaláveis;
+- Customização sob demanda, para grandes clientes com necessidades específicas;
+- Treinamentos técnicos pagos, presenciais ou online, para capacitação de equipes.
+
 
 
 ### 2.6 Atividades-Chave
-**Descrição:**  
-Principais atividades para desenvolvimento e sucesso da solução:
+&emsp;As principais atividades executadas para o sucesso da solução incluem:
 
-- **Desenvolvimento do algoritmo de detecção:** Treinamento de IA para identificação e classificação de fissuras.
-- **Criação da interface gráfica de usuário (GUI):** Para visualização intuitiva dos resultados.
-- **Integração com sistemas de captura de imagens:** Comunicação com drones e câmeras de alta resolução.
-- **Realização de testes e validação em campo:** Aplicação em edifícios reais para garantir precisão.
-- **Atualizações e evolução tecnológica:** Baseadas em feedback dos usuários e novos estudos.
+- Desenvolvimento do algoritmo principal, com IA treinada para detecção e classificação de fissuras;
+- Criação da interface gráfica, permitindo visualização intuitiva das imagens e relatórios;
+- Integração com equipamentos de captura, como drones e câmeras;
+- Testes e validações em campo, em diferentes tipos de edificações;
+- Melhoria contínua a partir de feedbacks dos usuários e evolução da tecnologia.
+
 
 
 ### 2.7 Recursos-Chave
-**Descrição:**  
-Ativos e competências essenciais para o desenvolvimento do projeto:
+&emsp;Os ativos e conhecimentos fundamentais para viabilizar o projeto incluem:
 
-- **Equipe de desenvolvimento de software e IA:** Engenheiros de software, especialistas em IA e engenheiros civis.
-- **Banco de dados de imagens de fachadas:** Base para treinamento e validação do algoritmo.
-- **Equipamentos de captura de imagem:** Drones e câmeras de alta resolução para captação de dados reais.
-- **Infraestrutura de TI:** Servidores para armazenamento de dados, treinamento e operação da IA.
-- **Expertise técnico em patologias construtivas:** Apoio técnico do IPT para definição de padrões de classificação.
+- Equipe técnica especializada, composta por desenvolvedores, engenheiros civis e cientistas de dados;
+- Infraestrutura de TI, para treinamento de modelos e armazenamento seguro das imagens;
+- Banco de dados de imagens de fachadas, para alimentar o aprendizado de máquina;
+- Equipamentos de captura de imagem, como drones e câmeras de alta definição;
+- Apoio técnico do IPT, com expertise em patologia de materiais e validação em campo.
+
 
 
 ### 2.8 Parcerias-Chave
-**Descrição:**  
-Parceiros estratégicos que suportam o desenvolvimento e crescimento do projeto:
+&emsp;As parcerias fortalecem o projeto, agregando valor técnico, operacional e comercial:
 
-- **Instituto de Pesquisas Tecnológicas (IPT):** Validação técnica dos métodos de inspeção e caracterização de fissuras.
-- **Fabricantes de drones e câmeras:** Fornecimento e suporte na integração de tecnologias de captura de imagem.
-- **Empresas de inspeção técnica e consultorias:** Validação comercial e testes piloto.
-- **Universidades e centros de pesquisa:** Apoio para estudos de novas técnicas de fissuração e inteligência artificial.
+- IPT (Instituto de Pesquisas Tecnológicas), como validador técnico e laboratório de testes;
+- Fabricantes e distribuidores de drones e câmeras, essenciais para captura dos dados;
+- Consultorias de engenharia civil, como canais de entrada e validação em campo;
+- Instituições acadêmicas e de pesquisa, colaborando para aprimoramento contínuo.
 
+---
 
 ### 2.9 Estrutura de Custos
-**Descrição:**  
-Principais custos envolvidos no desenvolvimento e operação do produto:
+&emsp;Os principais custos relacionados ao desenvolvimento e operação do produto incluem:
 
-- **Desenvolvimento de software:** Salários da equipe técnica e licenças de ferramentas de desenvolvimento.
-- **Compra e manutenção de equipamentos:** Drones, câmeras, infraestrutura de TI.
-- **Testes de campo e validação:** Custos logísticos e de mão de obra para realização dos ensaios práticos.
-- **Infraestrutura de servidores:** Custo de armazenamento de imagens e processamento da IA.
-- **Ações de marketing técnico:** Produção de materiais de divulgação e participação em eventos.
+- Desenvolvimento de software (salários, ferramentas, infraestrutura);
+- Aquisição e manutenção de equipamentos (câmeras, drones, servidores);
+- Gastos com validações em campo, incluindo deslocamentos e testes técnicos;
+- Custos de marketing e divulgação, para atingir os canais corretos;
+- Atualizações e suporte técnico, ao longo do ciclo de vida do produto.
 
+---
 
-# 3. Conclusão
+## 3. Conclusão
 
-&emsp; O Business Model Canvas descrito estrutura um projeto focado no setor de inspeção predial, combinando robótica móvel, visão computacional e inteligência artificial.
+&emsp;O Business Model Canvas descrito estrutura um projeto focado no setor de inspeção predial, combinando robótica móvel, visão computacional e inteligência artificial.  
 Com ele, busca-se entregar valor ao mercado por meio de soluções de detecção automática de fissuras, aumentando a segurança, reduzindo custos e promovendo a manutenção inteligente de edificações.
 
 &emsp;A implementação desse modelo permitirá criar um produto viável comercialmente, tecnicamente validado e com potencial de expansão para múltiplos segmentos da construção civil.

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/qs/LICENSE",
+  "title": "LICENSE",
+  "description": "BSD 3-Clause License",
+  "source": "@site/docs/node_modules/qs/LICENSE.md",
+  "sourceDirName": "node_modules/qs",
+  "slug": "/node_modules/qs/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/qs/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/qs/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/qs/CHANGELOG"
+  },
+  "next": {
+    "title": "readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/queue/"
+  }
+}

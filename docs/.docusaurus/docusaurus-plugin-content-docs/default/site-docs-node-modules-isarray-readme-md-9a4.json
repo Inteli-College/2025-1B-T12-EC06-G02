@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/isarray/README",
+  "title": "isarray",
+  "description": "Array#isArray for older browsers.",
+  "source": "@site/docs/node_modules/isarray/README.md",
+  "sourceDirName": "node_modules/isarray",
+  "slug": "/node_modules/isarray/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/isarray/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/isarray/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-yarn-global",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-yarn-global/"
+  },
+  "next": {
+    "title": "isexe",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/isexe/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/mdast-util-gfm-footnote/readme",
+  "title": "mdast-util-gfm-footnote",
+  "description": "Build",
+  "source": "@site/docs/node_modules/mdast-util-gfm-footnote/readme.md",
+  "sourceDirName": "node_modules/mdast-util-gfm-footnote",
+  "slug": "/node_modules/mdast-util-gfm-footnote/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-gfm-footnote/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/mdast-util-gfm-footnote/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "mdast-util-gfm-autolink-literal",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-gfm-autolink-literal/"
+  },
+  "next": {
+    "title": "mdast-util-gfm-strikethrough",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mdast-util-gfm-strikethrough/"
+  }
+}

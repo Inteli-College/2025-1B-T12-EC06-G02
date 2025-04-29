@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/terser/PATRONS",
+  "title": "Our patrons",
+  "description": "These are the first-tier patrons from Patreon (notice: The Terser Patreon is shutting down in favor of opencollective). My appreciation goes to everyone on this list for supporting the project!",
+  "source": "@site/docs/node_modules/terser/PATRONS.md",
+  "sourceDirName": "node_modules/terser",
+  "slug": "/node_modules/terser/PATRONS",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/terser/PATRONS",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/terser/PATRONS.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/terser/CHANGELOG"
+  },
+  "next": {
+    "title": "Commander.js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/terser/node_modules/commander/"
+  }
+}

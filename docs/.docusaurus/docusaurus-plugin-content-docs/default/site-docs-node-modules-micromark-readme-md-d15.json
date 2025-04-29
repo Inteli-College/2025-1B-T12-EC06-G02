@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/micromark/readme",
+  "title": "micromark",
+  "description": "Build",
+  "source": "@site/docs/node_modules/micromark/readme.md",
+  "sourceDirName": "node_modules/micromark",
+  "slug": "/node_modules/micromark/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/micromark/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.1.2 / 2016-01-17",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/methods/HISTORY"
+  },
+  "next": {
+    "title": "debug",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/micromark/node_modules/debug/"
+  }
+}

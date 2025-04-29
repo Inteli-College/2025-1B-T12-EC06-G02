@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@docsearch/css/README",
+  "title": "@docsearch/css",
+  "description": "Style package for DocSearch, the best search experience for docs.",
+  "source": "@site/docs/node_modules/@docsearch/css/README.md",
+  "sourceDirName": "node_modules/@docsearch/css",
+  "slug": "/node_modules/@docsearch/css/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docsearch/css/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@docsearch/css/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "json-ext",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@discoveryjs/json-ext/"
+  },
+  "next": {
+    "title": "@docsearch/react",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@docsearch/react/"
+  }
+}

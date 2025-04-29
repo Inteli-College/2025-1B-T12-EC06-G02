@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/core-js-pure/actual/README",
+  "title": "README",
+  "description": "This folder contains entry points for all core-js features with dependencies. It's the recommended way for usage only required features.",
+  "source": "@site/docs/node_modules/core-js-pure/actual/README.md",
+  "sourceDirName": "node_modules/core-js-pure/actual",
+  "slug": "/node_modules/core-js-pure/actual/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/core-js-pure/actual/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/core-js-pure/actual/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/core-js-pure/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/core-js-pure/es/"
+  }
+}

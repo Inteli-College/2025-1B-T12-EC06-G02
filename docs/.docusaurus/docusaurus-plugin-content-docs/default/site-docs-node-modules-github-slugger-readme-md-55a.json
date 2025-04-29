@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/github-slugger/README",
+  "title": "github-slugger",
+  "description": "npm",
+  "source": "@site/docs/node_modules/github-slugger/README.md",
+  "sourceDirName": "node_modules/github-slugger",
+  "slug": "/node_modules/github-slugger/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/github-slugger/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/github-slugger/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "get-stream",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/get-stream/"
+  },
+  "next": {
+    "title": "Glob",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/glob/"
+  }
+}

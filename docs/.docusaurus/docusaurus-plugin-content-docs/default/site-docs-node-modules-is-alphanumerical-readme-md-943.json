@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/is-alphanumerical/readme",
+  "title": "is-alphanumerical",
+  "description": "Build",
+  "source": "@site/docs/node_modules/is-alphanumerical/readme.md",
+  "sourceDirName": "node_modules/is-alphanumerical",
+  "slug": "/node_modules/is-alphanumerical/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-alphanumerical/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/is-alphanumerical/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-alphabetical",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-alphabetical/"
+  },
+  "next": {
+    "title": "node-is-arrayish [![Travis-CI.org Build Status](https://img.shields.io/travis/Qix-/node-is-arrayish.svg?style=flat-square)](https://travis-ci.org/Qix-/node-is-arrayish) [![Coveralls.io Coverage Rating](https://img.shields.io/coveralls/Qix-/node-is-arrayish.svg?style=flat-square)](https://coveralls.io/r/Qix-/node-is-arrayish)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/is-arrayish/"
+  }
+}

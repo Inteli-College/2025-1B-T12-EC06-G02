@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/latest-version/readme",
+  "title": "latest-version",
+  "description": "Get the latest version of an npm package",
+  "source": "@site/docs/node_modules/latest-version/readme.md",
+  "sourceDirName": "node_modules/latest-version",
+  "slug": "/node_modules/latest-version/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/latest-version/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/latest-version/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/kleur/"
+  },
+  "next": {
+    "title": "leven [![Build Status](https://travis-ci.org/sindresorhus/leven.svg?branch=master)](https://travis-ci.org/sindresorhus/leven)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/leven/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/README",
+  "title": "@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly",
+  "description": "Transform static class fields assignments that are affected by https://crbug.com/v8/12421",
+  "source": "@site/docs/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly",
+  "slug": "/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/"
+  },
+  "next": {
+    "title": "@babel/plugin-proposal-private-property-in-object",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-proposal-private-property-in-object/"
+  }
+}

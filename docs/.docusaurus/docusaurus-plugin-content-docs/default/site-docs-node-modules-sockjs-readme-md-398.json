@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/sockjs/README",
+  "title": "README",
+  "description": "NPM version",
+  "source": "@site/docs/node_modules/sockjs/README.md",
+  "sourceDirName": "node_modules/sockjs",
+  "slug": "/node_modules/sockjs/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/sockjs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/sockjs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Snake Case",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/snake-case/"
+  },
+  "next": {
+    "title": "sort-css-media-queries",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/sort-css-media-queries/"
+  }
+}

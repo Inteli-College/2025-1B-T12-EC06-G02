@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/unique-string/readme",
+  "title": "unique-string",
+  "description": "Generate a unique random string",
+  "source": "@site/docs/node_modules/unique-string/readme.md",
+  "sourceDirName": "node_modules/unique-string",
+  "slug": "/node_modules/unique-string/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/unique-string/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/unique-string/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-plain-obj",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/unified/node_modules/is-plain-obj/"
+  },
+  "next": {
+    "title": "unist-util-is",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/unist-util-is/"
+  }
+}

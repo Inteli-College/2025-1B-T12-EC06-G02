@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/compressible/HISTORY",
+  "title": "2.0.18 / 2020-01-05",
+  "description": "* deps: mime-db@'>= 1.43.0 < 2'",
+  "source": "@site/docs/node_modules/compressible/HISTORY.md",
+  "sourceDirName": "node_modules/compressible",
+  "slug": "/node_modules/compressible/HISTORY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/compressible/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/compressible/HISTORY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "compressible",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/compressible/"
+  },
+  "next": {
+    "title": "mime-db",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/compressible/node_modules/mime-db/"
+  }
+}

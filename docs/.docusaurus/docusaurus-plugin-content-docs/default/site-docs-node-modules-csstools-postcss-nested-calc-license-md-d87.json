@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-nested-calc/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT No Attribution (MIT-0)",
+  "source": "@site/docs/node_modules/@csstools/postcss-nested-calc/LICENSE.md",
+  "sourceDirName": "node_modules/@csstools/postcss-nested-calc",
+  "slug": "/node_modules/@csstools/postcss-nested-calc/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-nested-calc/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-nested-calc/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to PostCSS Nested Calc",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-nested-calc/CHANGELOG"
+  },
+  "next": {
+    "title": "PostCSS Normalize Display Values [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-normalize-display-values/"
+  }
+}

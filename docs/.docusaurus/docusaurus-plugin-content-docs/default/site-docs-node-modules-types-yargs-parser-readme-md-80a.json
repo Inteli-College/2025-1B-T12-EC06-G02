@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@types/yargs-parser/README",
+  "title": "Installation",
+  "description": "npm install --save @types/yargs-parser",
+  "source": "@site/docs/node_modules/@types/yargs-parser/README.md",
+  "sourceDirName": "node_modules/@types/yargs-parser",
+  "slug": "/node_modules/@types/yargs-parser/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/yargs-parser/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@types/yargs-parser/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/yargs/"
+  },
+  "next": {
+    "title": "structuredClone polyfill",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@ungap/structured-clone/"
+  }
+}

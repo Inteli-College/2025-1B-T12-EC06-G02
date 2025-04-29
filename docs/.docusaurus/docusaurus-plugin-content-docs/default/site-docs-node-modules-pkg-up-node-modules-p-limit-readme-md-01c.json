@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/pkg-up/node_modules/p-limit/readme",
+  "title": "p-limit [![Build Status](https://travis-ci.org/sindresorhus/p-limit.svg?branch=master)](https://travis-ci.org/sindresorhus/p-limit)",
+  "description": "Run multiple promise-returning & async functions with limited concurrency",
+  "source": "@site/docs/node_modules/pkg-up/node_modules/p-limit/readme.md",
+  "sourceDirName": "node_modules/pkg-up/node_modules/p-limit",
+  "slug": "/node_modules/pkg-up/node_modules/p-limit/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/p-limit/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/pkg-up/node_modules/p-limit/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "locate-path [![Build Status](https://travis-ci.org/sindresorhus/locate-path.svg?branch=master)](https://travis-ci.org/sindresorhus/locate-path)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/locate-path/"
+  },
+  "next": {
+    "title": "p-locate [![Build Status](https://travis-ci.org/sindresorhus/p-locate.svg?branch=master)](https://travis-ci.org/sindresorhus/p-locate)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/pkg-up/node_modules/p-locate/"
+  }
+}

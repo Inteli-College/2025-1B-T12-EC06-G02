@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/nanoid/README",
+  "title": "Nano ID",
+  "description": "<img src=\"https://ai.github.io/nanoid/logo.svg\" align=\"right\"",
+  "source": "@site/docs/node_modules/nanoid/README.md",
+  "sourceDirName": "node_modules/nanoid",
+  "slug": "/node_modules/nanoid/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/nanoid/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/nanoid/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "multicast-dns",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/multicast-dns/"
+  },
+  "next": {
+    "title": "negotiator",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/negotiator/"
+  }
+}

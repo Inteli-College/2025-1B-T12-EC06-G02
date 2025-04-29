@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/websocket-driver/README",
+  "title": "websocket-driver [![Build Status](https://travis-ci.org/faye/websocket-driver-node.svg)](https://travis-ci.org/faye/websocket-driver-node)",
+  "description": "This module provides a complete implementation of the WebSocket protocols that",
+  "source": "@site/docs/node_modules/websocket-driver/README.md",
+  "sourceDirName": "node_modules/websocket-driver",
+  "slug": "/node_modules/websocket-driver/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-driver/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/websocket-driver/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "wrap-ansi [![Build Status](https://travis-ci.com/chalk/wrap-ansi.svg?branch=master)](https://travis-ci.com/chalk/wrap-ansi) [![Coverage Status](https://coveralls.io/repos/github/chalk/wrap-ansi/badge.svg?branch=master)](https://coveralls.io/github/chalk/wrap-ansi?branch=master)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/webpackbar/node_modules/wrap-ansi/"
+  },
+  "next": {
+    "title": "CHANGELOG",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/websocket-driver/CHANGELOG"
+  }
+}

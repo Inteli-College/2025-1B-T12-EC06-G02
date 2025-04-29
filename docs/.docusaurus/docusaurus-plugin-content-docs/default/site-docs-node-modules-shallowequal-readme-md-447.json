@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/shallowequal/README",
+  "title": "shallowequal [![Build Status](https://travis-ci.org/dashed/shallowequal.svg)](https://travis-ci.org/dashed/shallowequal) [![Downloads](https://img.shields.io/npm/dm/shallowequal.svg)](https://npmjs.com/shallowequal) [![npm version](https://img.shields.io/npm/v/shallowequal.svg?style=flat)](https://www.npmjs.com/package/shallowequal)",
+  "description": "Greenkeeper badge",
+  "source": "@site/docs/node_modules/shallowequal/README.md",
+  "sourceDirName": "node_modules/shallowequal",
+  "slug": "/node_modules/shallowequal/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/shallowequal/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/shallowequal/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "shallow-clone [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/shallow-clone.svg?style=flat)](https://www.npmjs.com/package/shallow-clone) [![NPM monthly downloads](https://img.shields.io/npm/dm/shallow-clone.svg?style=flat)](https://npmjs.org/package/shallow-clone) [![NPM total downloads](https://img.shields.io/npm/dt/shallow-clone.svg?style=flat)](https://npmjs.org/package/shallow-clone) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/shallow-clone.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/shallow-clone)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/shallow-clone/"
+  },
+  "next": {
+    "title": "shebang-command [![Build Status](https://travis-ci.org/kevva/shebang-command.svg?branch=master)](https://travis-ci.org/kevva/shebang-command)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/shebang-command/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/dunder-proto/README",
+  "title": "dunder-proto <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+  "description": "github actions",
+  "source": "@site/docs/node_modules/dunder-proto/README.md",
+  "sourceDirName": "node_modules/dunder-proto",
+  "slug": "/node_modules/dunder-proto/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/dunder-proto/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/dunder-proto/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "is-obj [![Build Status](https://travis-ci.org/sindresorhus/is-obj.svg?branch=master)](https://travis-ci.org/sindresorhus/is-obj)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dot-prop/node_modules/is-obj/"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/dunder-proto/CHANGELOG"
+  }
+}

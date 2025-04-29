@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/widest-line/readme",
+  "title": "widest-line",
+  "description": "Get the visual width of the widest line in a string - the number of columns required to display it",
+  "source": "@site/docs/node_modules/widest-line/readme.md",
+  "sourceDirName": "node_modules/widest-line",
+  "slug": "/node_modules/widest-line/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/widest-line/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/widest-line/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/which/CHANGELOG"
+  },
+  "next": {
+    "title": "wildcard",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/wildcard/"
+  }
+}

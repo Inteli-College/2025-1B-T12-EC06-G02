@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/form-data-encoder/readme",
+  "title": "form-data-encoder",
+  "description": "Encode FormData content into the multipart/form-data format",
+  "source": "@site/docs/node_modules/form-data-encoder/readme.md",
+  "sourceDirName": "node_modules/form-data-encoder",
+  "slug": "/node_modules/form-data-encoder/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/form-data-encoder/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/form-data-encoder/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tapable",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fork-ts-checker-webpack-plugin/node_modules/tapable/"
+  },
+  "next": {
+    "title": "format",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/format/"
+  }
+}

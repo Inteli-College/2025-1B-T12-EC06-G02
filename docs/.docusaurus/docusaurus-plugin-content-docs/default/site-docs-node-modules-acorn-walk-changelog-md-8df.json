@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/acorn-walk/CHANGELOG",
+  "title": "CHANGELOG",
+  "description": "8.3.4 (2024-09-09)",
+  "source": "@site/docs/node_modules/acorn-walk/CHANGELOG.md",
+  "sourceDirName": "node_modules/acorn-walk",
+  "slug": "/node_modules/acorn-walk/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn-walk/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/acorn-walk/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Acorn AST walker",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/acorn-walk/"
+  },
+  "next": {
+    "title": "address",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/address/"
+  }
+}

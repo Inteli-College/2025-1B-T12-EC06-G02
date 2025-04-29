@@ -1,0 +1,28 @@
+{
+  "id": "sprint-1/analise-de-negocios/analise_pestel",
+  "title": "Análise PESTEL",
+  "description": "Avalia os fatores externos (Políticos, Econômicos, Sociais, Tecnológicos, Ambientais e Legais) que podem influenciar o sucesso do projeto, identificando oportunidades e ameaças no ambiente macro.",
+  "source": "@site/docs/sprint-1/analise-de-negocios/analise_pestel.md",
+  "sourceDirName": "sprint-1/analise-de-negocios",
+  "slug": "/sprint-1/analise-de-negocios/analise_pestel",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise_pestel",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": null,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "custom_edit_url": null
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Canva Proposta de Valor",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/Canva_proposta_de_Valor"
+  },
+  "next": {
+    "title": "Análise de Stakeholders",
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise_de_stakeholder"
+  }
+}

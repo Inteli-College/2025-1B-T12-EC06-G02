@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/rechoir/README",
+  "title": "rechoir [![Build Status](https://secure.travis-ci.org/tkellen/js-rechoir.png)](http://travis-ci.org/tkellen/js-rechoir)",
+  "description": "Require any supported file as a node module.",
+  "source": "@site/docs/node_modules/rechoir/README.md",
+  "sourceDirName": "node_modules/rechoir",
+  "slug": "/node_modules/rechoir/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/rechoir/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/rechoir/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "reading-time",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/reading-time/"
+  },
+  "next": {
+    "title": "recma-build-jsx",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/recma-build-jsx/"
+  }
+}

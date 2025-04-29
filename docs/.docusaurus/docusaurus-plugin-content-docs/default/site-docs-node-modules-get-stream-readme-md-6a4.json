@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/get-stream/readme",
+  "title": "get-stream",
+  "description": "Get a stream as a string, buffer, or array",
+  "source": "@site/docs/node_modules/get-stream/readme.md",
+  "sourceDirName": "node_modules/get-stream",
+  "slug": "/node_modules/get-stream/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/get-stream/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/get-stream/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/get-proto/CHANGELOG"
+  },
+  "next": {
+    "title": "github-slugger",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/github-slugger/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/selector-resolve-nested/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT No Attribution (MIT-0)",
+  "source": "@site/docs/node_modules/@csstools/selector-resolve-nested/LICENSE.md",
+  "sourceDirName": "node_modules/@csstools/selector-resolve-nested",
+  "slug": "/node_modules/@csstools/selector-resolve-nested/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/selector-resolve-nested/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/selector-resolve-nested/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to Selector Resolve Nested",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/selector-resolve-nested/CHANGELOG"
+  },
+  "next": {
+    "title": "Selector Specificity",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/selector-specificity/"
+  }
+}

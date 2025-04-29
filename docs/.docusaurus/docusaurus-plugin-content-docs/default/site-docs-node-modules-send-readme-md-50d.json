@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/send/README",
+  "title": "send",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/send/README.md",
+  "sourceDirName": "node_modules/send",
+  "slug": "/node_modules/send/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/send/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/send/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "semver(1) -- The semantic versioner for npm",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/semver-diff/node_modules/semver/"
+  },
+  "next": {
+    "title": "0.19.0 / 2024-09-10",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/send/HISTORY"
+  }
+}

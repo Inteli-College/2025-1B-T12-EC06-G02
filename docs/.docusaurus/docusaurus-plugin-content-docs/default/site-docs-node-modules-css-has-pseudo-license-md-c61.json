@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/css-has-pseudo/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT No Attribution (MIT-0)",
+  "source": "@site/docs/node_modules/css-has-pseudo/LICENSE.md",
+  "sourceDirName": "node_modules/css-has-pseudo",
+  "slug": "/node_modules/css-has-pseudo/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-has-pseudo/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/css-has-pseudo/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to CSS Has Pseudo",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-has-pseudo/CHANGELOG"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-loader/"
+  }
+}

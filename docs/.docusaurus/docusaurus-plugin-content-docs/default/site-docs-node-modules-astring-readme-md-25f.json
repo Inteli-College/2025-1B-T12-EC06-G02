@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/astring/README",
+  "title": "Astring",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/astring/README.md",
+  "sourceDirName": "node_modules/astring",
+  "slug": "/node_modules/astring/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/astring/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/astring/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "array-union [![Build Status](https://travis-ci.org/sindresorhus/array-union.svg?branch=master)](https://travis-ci.org/sindresorhus/array-union)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/array-union/"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/astring/CHANGELOG"
+  }
+}

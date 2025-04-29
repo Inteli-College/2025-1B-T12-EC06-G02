@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/selector-specificity/README",
+  "title": "Selector Specificity",
+  "description": "Usage",
+  "source": "@site/docs/node_modules/@csstools/selector-specificity/README.md",
+  "sourceDirName": "node_modules/@csstools/selector-specificity",
+  "slug": "/node_modules/@csstools/selector-specificity/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/selector-specificity/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/selector-specificity/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/selector-resolve-nested/LICENSE"
+  },
+  "next": {
+    "title": "Changes to Selector Specificity",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/selector-specificity/CHANGELOG"
+  }
+}

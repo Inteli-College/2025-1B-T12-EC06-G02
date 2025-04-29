@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/serve-handler/node_modules/bytes/Readme",
+  "title": "Bytes utility",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/serve-handler/node_modules/bytes/Readme.md",
+  "sourceDirName": "node_modules/serve-handler/node_modules/bytes",
+  "slug": "/node_modules/serve-handler/node_modules/bytes/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-handler/node_modules/bytes/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/serve-handler/node_modules/bytes/Readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "serve-handler",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-handler/"
+  },
+  "next": {
+    "title": "3.0.0 / 2017-08-31",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-handler/node_modules/bytes/History"
+  }
+}

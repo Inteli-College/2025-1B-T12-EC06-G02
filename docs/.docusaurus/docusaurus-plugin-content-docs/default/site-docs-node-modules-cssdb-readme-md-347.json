@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cssdb/README",
+  "title": "cssdb [<img src=\"https://cssdb.org/images/css.svg\" alt=\"\" width=\"90\" height=\"90\" align=\"right\">][cssdb]",
+  "description": "NPM Version",
+  "source": "@site/docs/node_modules/cssdb/README.md",
+  "sourceDirName": "node_modules/cssdb",
+  "slug": "/node_modules/cssdb/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssdb/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cssdb/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "css-what",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-what/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssdb/LICENSE"
+  }
+}

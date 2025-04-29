@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/postcss-ic-unit/README",
+  "title": "PostCSS IC Unit [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+  "description": "[PostCSS IC Unit] lets you use the ic length unit, following the [CSS Values and Units Module] specification.",
+  "source": "@site/docs/node_modules/@csstools/postcss-ic-unit/README.md",
+  "sourceDirName": "node_modules/@csstools/postcss-ic-unit",
+  "slug": "/node_modules/@csstools/postcss-ic-unit/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-ic-unit/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/postcss-ic-unit/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-hwb-function/LICENSE"
+  },
+  "next": {
+    "title": "Changes to PostCSS IC Unit",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/postcss-ic-unit/CHANGELOG"
+  }
+}

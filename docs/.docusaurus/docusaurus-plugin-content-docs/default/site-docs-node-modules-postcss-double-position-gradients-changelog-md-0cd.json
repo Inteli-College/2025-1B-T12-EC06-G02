@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-double-position-gradients/CHANGELOG",
+  "title": "Changes to PostCSS Double Position Gradients",
+  "description": "6.0.1",
+  "source": "@site/docs/node_modules/postcss-double-position-gradients/CHANGELOG.md",
+  "sourceDirName": "node_modules/postcss-double-position-gradients",
+  "slug": "/node_modules/postcss-double-position-gradients/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-double-position-gradients/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-double-position-gradients/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "PostCSS Double Position Gradients [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS\" width=\"90\" height=\"90\" align=\"right\">][postcss]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-double-position-gradients/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-double-position-gradients/LICENSE"
+  }
+}

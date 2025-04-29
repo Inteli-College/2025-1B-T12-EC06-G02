@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-reduce-initial/README",
+  "title": "[postcss][postcss]-reduce-initial",
+  "description": "Reduce initial definitions to the actual initial value, where possible.",
+  "source": "@site/docs/node_modules/postcss-reduce-initial/README.md",
+  "sourceDirName": "node_modules/postcss-reduce-initial",
+  "slug": "/node_modules/postcss-reduce-initial/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-reduce-initial/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-reduce-initial/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "[postcss][postcss]-reduce-idents",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-reduce-idents/"
+  },
+  "next": {
+    "title": "[postcss][postcss]-reduce-transforms",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-reduce-transforms/"
+  }
+}

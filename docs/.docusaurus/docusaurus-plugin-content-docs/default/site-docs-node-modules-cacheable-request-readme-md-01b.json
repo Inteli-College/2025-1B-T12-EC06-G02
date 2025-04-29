@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cacheable-request/README",
+  "title": "README",
+  "description": "Wrap native HTTP requests with RFC compliant cache support",
+  "source": "@site/docs/node_modules/cacheable-request/README.md",
+  "sourceDirName": "node_modules/cacheable-request",
+  "slug": "/node_modules/cacheable-request/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cacheable-request/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cacheable-request/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cacheable-lookup",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cacheable-lookup/"
+  },
+  "next": {
+    "title": "mimic-response",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cacheable-request/node_modules/mimic-response/"
+  }
+}

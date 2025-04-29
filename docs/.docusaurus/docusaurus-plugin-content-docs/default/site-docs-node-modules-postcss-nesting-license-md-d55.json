@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-nesting/LICENSE",
+  "title": "LICENSE",
+  "description": "MIT No Attribution (MIT-0)",
+  "source": "@site/docs/node_modules/postcss-nesting/LICENSE.md",
+  "sourceDirName": "node_modules/postcss-nesting",
+  "slug": "/node_modules/postcss-nesting/LICENSE",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-nesting/LICENSE",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-nesting/LICENSE.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changes to PostCSS Nesting",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-nesting/CHANGELOG"
+  },
+  "next": {
+    "title": "postcss-normalize-charset",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-normalize-charset/"
+  }
+}

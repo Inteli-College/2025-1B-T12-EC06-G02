@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/null-loader/node_modules/schema-utils/README",
+  "title": "README",
+  "description": "<img width=\"160\" height=\"160\"",
+  "source": "@site/docs/node_modules/null-loader/node_modules/schema-utils/README.md",
+  "sourceDirName": "node_modules/null-loader/node_modules/schema-utils",
+  "slug": "/node_modules/null-loader/node_modules/schema-utils/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/null-loader/node_modules/schema-utils/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/null-loader/node_modules/schema-utils/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/null-loader/CHANGELOG"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/null-loader/node_modules/schema-utils/CHANGELOG"
+  }
+}

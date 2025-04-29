@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/fs.realpath/README",
+  "title": "fs.realpath",
+  "description": "A backwards-compatible fs.realpath for Node v6 and above",
+  "source": "@site/docs/node_modules/fs.realpath/README.md",
+  "sourceDirName": "node_modules/fs.realpath",
+  "slug": "/node_modules/fs.realpath/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs.realpath/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/fs.realpath/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "patchRequire(vol[, unixifyPaths[, Module]])",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/fs-monkey/docs/api/patchRequire"
+  },
+  "next": {
+    "title": "function-bind <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/function-bind/"
+  }
+}

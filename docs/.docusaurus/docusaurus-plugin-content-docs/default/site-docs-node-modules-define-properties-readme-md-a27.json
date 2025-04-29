@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/define-properties/README",
+  "title": "define-properties <sup>[![Version Badge][npm-version-svg]][package-url]</sup>",
+  "description": "github actions",
+  "source": "@site/docs/node_modules/define-properties/README.md",
+  "sourceDirName": "node_modules/define-properties",
+  "slug": "/node_modules/define-properties/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/define-properties/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/define-properties/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "define-lazy-prop [![Build Status](https://travis-ci.org/sindresorhus/define-lazy-prop.svg?branch=master)](https://travis-ci.org/sindresorhus/define-lazy-prop)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/define-lazy-prop/"
+  },
+  "next": {
+    "title": "Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/define-properties/CHANGELOG"
+  }
+}

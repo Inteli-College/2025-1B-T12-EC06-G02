@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/css-prefers-color-scheme/CHANGELOG",
+  "title": "Changes to Prefers Color Scheme",
+  "description": "10.0.0",
+  "source": "@site/docs/node_modules/css-prefers-color-scheme/CHANGELOG.md",
+  "sourceDirName": "node_modules/css-prefers-color-scheme",
+  "slug": "/node_modules/css-prefers-color-scheme/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-prefers-color-scheme/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/css-prefers-color-scheme/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Prefers Color Scheme [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-prefers-color-scheme/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-prefers-color-scheme/LICENSE"
+  }
+}

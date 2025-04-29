@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/terser/node_modules/commander/CHANGELOG",
+  "title": "2.20.3 / 2019-10-11",
+  "description": "* Support Node.js 0.10 (Revert #1059)",
+  "source": "@site/docs/node_modules/terser/node_modules/commander/CHANGELOG.md",
+  "sourceDirName": "node_modules/terser/node_modules/commander",
+  "slug": "/node_modules/terser/node_modules/commander/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/terser/node_modules/commander/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/terser/node_modules/commander/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Commander.js",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/terser/node_modules/commander/"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/terser-webpack-plugin/"
+  }
+}

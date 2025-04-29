@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/core-util-is/README",
+  "title": "core-util-is",
+  "description": "The util.is* functions introduced in Node v0.12.",
+  "source": "@site/docs/node_modules/core-util-is/README.md",
+  "sourceDirName": "node_modules/core-util-is",
+  "slug": "/node_modules/core-util-is/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/core-util-is/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/core-util-is/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/core-js-pure/web/"
+  },
+  "next": {
+    "title": "cosmiconfig",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cosmiconfig/"
+  }
+}

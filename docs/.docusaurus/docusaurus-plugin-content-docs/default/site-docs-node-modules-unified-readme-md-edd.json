@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/unified/readme",
+  "title": "[![unified][logo]][site]",
+  "description": "Build",
+  "source": "@site/docs/node_modules/unified/readme.md",
+  "sourceDirName": "node_modules/unified",
+  "slug": "/node_modules/unified/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/unified/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/unified/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "unicode-property-aliases-ecmascript [![Build status](https://travis-ci.org/mathiasbynens/unicode-property-aliases-ecmascript.svg?branch=main)](https://travis-ci.org/mathiasbynens/unicode-property-aliases-ecmascript) [![unicode-property-aliases-ecmascript on npm](https://img.shields.io/npm/v/unicode-property-aliases-ecmascript)](https://www.npmjs.com/package/unicode-property-aliases-ecmascript)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/unicode-property-aliases-ecmascript/"
+  },
+  "next": {
+    "title": "is-plain-obj",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/unified/node_modules/is-plain-obj/"
+  }
+}

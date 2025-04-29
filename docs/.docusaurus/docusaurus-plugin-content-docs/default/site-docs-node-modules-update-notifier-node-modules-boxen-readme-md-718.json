@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/update-notifier/node_modules/boxen/readme",
+  "title": "boxen",
+  "description": "Create boxes in the terminal",
+  "source": "@site/docs/node_modules/update-notifier/node_modules/boxen/readme.md",
+  "sourceDirName": "node_modules/update-notifier/node_modules/boxen",
+  "slug": "/node_modules/update-notifier/node_modules/boxen/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/update-notifier/node_modules/boxen/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/update-notifier/node_modules/boxen/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "update-notifier",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/update-notifier/"
+  },
+  "next": {
+    "title": "camelcase",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/update-notifier/node_modules/camelcase/"
+  }
+}

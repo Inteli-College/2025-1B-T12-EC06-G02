@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@ampproject/remapping/README",
+  "title": "@ampproject/remapping",
+  "description": "Remap sequential sourcemaps through transformations to point at the original source code",
+  "source": "@site/docs/node_modules/@ampproject/remapping/README.md",
+  "sourceDirName": "node_modules/@ampproject/remapping",
+  "slug": "/node_modules/@ampproject/remapping/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@ampproject/remapping/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@ampproject/remapping/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@algolia/recommend/"
+  },
+  "next": {
+    "title": "@babel/code-frame",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/code-frame/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/express/History",
+  "title": "4.21.2 / 2024-11-06",
+  "description": "* deps: path-to-regexp@0.1.12",
+  "source": "@site/docs/node_modules/express/History.md",
+  "sourceDirName": "node_modules/express",
+  "slug": "/node_modules/express/History",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/History",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/express/History.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/"
+  },
+  "next": {
+    "title": "content-disposition",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/express/node_modules/content-disposition/"
+  }
+}

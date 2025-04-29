@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@csstools/media-query-list-parser/CHANGELOG",
+  "title": "Changes to Media Query List Parser",
+  "description": "4.0.2",
+  "source": "@site/docs/node_modules/@csstools/media-query-list-parser/CHANGELOG.md",
+  "sourceDirName": "node_modules/@csstools/media-query-list-parser",
+  "slug": "/node_modules/@csstools/media-query-list-parser/CHANGELOG",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/media-query-list-parser/CHANGELOG",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@csstools/media-query-list-parser/CHANGELOG.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Media Query List Parser",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/media-query-list-parser/"
+  },
+  "next": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@csstools/media-query-list-parser/LICENSE"
+  }
+}

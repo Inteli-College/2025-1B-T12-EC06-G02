@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@types/yargs/README",
+  "title": "Installation",
+  "description": "npm install --save @types/yargs",
+  "source": "@site/docs/node_modules/@types/yargs/README.md",
+  "sourceDirName": "node_modules/@types/yargs",
+  "slug": "/node_modules/@types/yargs/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/yargs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@types/yargs/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/ws/"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@types/yargs-parser/"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/preset-modules/README",
+  "title": "@babel/preset-modules",
+  "description": "ℹ️ Starting from @babel/preset-env 7.9.0, you can enable the bugfixes: true option to get the same behavior as using @babel/preset-modules, but with support for custom targets.",
+  "source": "@site/docs/node_modules/@babel/preset-modules/README.md",
+  "sourceDirName": "node_modules/@babel/preset-modules",
+  "slug": "/node_modules/@babel/preset-modules/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/preset-modules/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/preset-modules/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Contributing",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/preset-env/CONTRIBUTING"
+  },
+  "next": {
+    "title": "@babel/preset-react",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/preset-react/"
+  }
+}

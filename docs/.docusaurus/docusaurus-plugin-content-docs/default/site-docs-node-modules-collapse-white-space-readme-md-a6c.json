@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/collapse-white-space/readme",
+  "title": "collapse-white-space",
+  "description": "Build",
+  "source": "@site/docs/node_modules/collapse-white-space/readme.md",
+  "sourceDirName": "node_modules/collapse-white-space",
+  "slug": "/node_modules/collapse-white-space/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/collapse-white-space/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/collapse-white-space/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "clsx [![CI](https://github.com/lukeed/clsx/workflows/CI/badge.svg)](https://github.com/lukeed/clsx/actions?query=workflow%3ACI) [![codecov](https://badgen.net/codecov/c/github/lukeed/clsx)](https://codecov.io/gh/lukeed/clsx) [![licenses](https://licenses.dev/b/npm/clsx)](https://licenses.dev/npm/clsx)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/clsx/"
+  },
+  "next": {
+    "title": "color-convert",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/color-convert/"
+  }
+}

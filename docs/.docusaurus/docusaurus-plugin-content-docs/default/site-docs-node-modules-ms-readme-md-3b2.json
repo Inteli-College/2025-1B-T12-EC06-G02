@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/ms/readme",
+  "title": "ms",
+  "description": "CI",
+  "source": "@site/docs/node_modules/ms/readme.md",
+  "sourceDirName": "node_modules/ms",
+  "slug": "/node_modules/ms/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/ms/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/ms/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "readme",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/mrmime/"
+  },
+  "next": {
+    "title": "license",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/ms/license"
+  }
+}

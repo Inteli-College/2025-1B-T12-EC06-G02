@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/unist-util-position/readme",
+  "title": "unist-util-position",
+  "description": "Build",
+  "source": "@site/docs/node_modules/unist-util-position/readme.md",
+  "sourceDirName": "node_modules/unist-util-position",
+  "slug": "/node_modules/unist-util-position/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/unist-util-position/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/unist-util-position/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "unist-util-is",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/unist-util-is/"
+  },
+  "next": {
+    "title": "unist-util-position-from-estree",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/unist-util-position-from-estree/"
+  }
+}

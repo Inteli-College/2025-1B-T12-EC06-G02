@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/debounce/Readme",
+  "title": "debounce",
+  "description": "Useful for implementing behavior that should only happen after a repeated",
+  "source": "@site/docs/node_modules/debounce/Readme.md",
+  "sourceDirName": "node_modules/debounce",
+  "slug": "/node_modules/debounce/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/debounce/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/debounce/Readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CSSType",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/csstype/"
+  },
+  "next": {
+    "title": "1.2.1 / 2021-03-09",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/debounce/History"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/finalhandler/HISTORY",
+  "title": "v1.3.1 / 2024-09-11",
+  "description": "* deps: encodeurl@~2.0.0",
+  "source": "@site/docs/node_modules/finalhandler/HISTORY.md",
+  "sourceDirName": "node_modules/finalhandler",
+  "slug": "/node_modules/finalhandler/HISTORY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/finalhandler/HISTORY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/finalhandler/HISTORY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "finalhandler",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/finalhandler/"
+  },
+  "next": {
+    "title": "Security Policies and Procedures",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/finalhandler/SECURITY"
+  }
+}

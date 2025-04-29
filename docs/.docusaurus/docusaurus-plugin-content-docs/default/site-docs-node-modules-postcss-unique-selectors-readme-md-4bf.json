@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-unique-selectors/README",
+  "title": "[postcss][postcss]-unique-selectors",
+  "description": "Ensure CSS selectors are unique.",
+  "source": "@site/docs/node_modules/postcss-unique-selectors/README.md",
+  "sourceDirName": "node_modules/postcss-unique-selectors",
+  "slug": "/node_modules/postcss-unique-selectors/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-unique-selectors/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-unique-selectors/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "[postcss][postcss]-svgo",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-svgo/"
+  },
+  "next": {
+    "title": "postcss-selector-parser [![test](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml/badge.svg)](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-unique-selectors/node_modules/postcss-selector-parser/"
+  }
+}

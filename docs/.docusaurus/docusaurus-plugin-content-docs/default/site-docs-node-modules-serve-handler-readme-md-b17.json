@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/serve-handler/README",
+  "title": "serve-handler",
+  "description": "Tests",
+  "source": "@site/docs/node_modules/serve-handler/README.md",
+  "sourceDirName": "node_modules/serve-handler",
+  "slug": "/node_modules/serve-handler/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-handler/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/serve-handler/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Serialize JavaScript",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serialize-javascript/"
+  },
+  "next": {
+    "title": "Bytes utility",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/serve-handler/node_modules/bytes/"
+  }
+}

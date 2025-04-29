@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/proto-list/README",
+  "title": "README",
+  "description": "A list of objects, bound by their prototype chain.",
+  "source": "@site/docs/node_modules/proto-list/README.md",
+  "sourceDirName": "node_modules/proto-list",
+  "slug": "/node_modules/proto-list/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/proto-list/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/proto-list/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "property-information",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/property-information/"
+  },
+  "next": {
+    "title": "proxy-addr",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/proxy-addr/"
+  }
+}

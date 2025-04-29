@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/node-emoji/README",
+  "title": "README",
+  "description": "node-emoji",
+  "source": "@site/docs/node_modules/node-emoji/README.md",
+  "sourceDirName": "node_modules/node-emoji",
+  "slug": "/node_modules/node-emoji/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/node-emoji/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/node-emoji/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "No Case",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/no-case/"
+  },
+  "next": {
+    "title": "MIT License",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/node-emoji/LICENSE"
+  }
+}

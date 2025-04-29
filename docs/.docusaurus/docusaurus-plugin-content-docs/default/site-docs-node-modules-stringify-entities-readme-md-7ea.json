@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/stringify-entities/readme",
+  "title": "stringify-entities",
+  "description": "Build Status",
+  "source": "@site/docs/node_modules/stringify-entities/readme.md",
+  "sourceDirName": "node_modules/stringify-entities",
+  "slug": "/node_modules/stringify-entities/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/stringify-entities/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/stringify-entities/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "string_decoder",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/string_decoder/"
+  },
+  "next": {
+    "title": "stringify-object [![Build Status](https://secure.travis-ci.org/yeoman/stringify-object.svg?branch=master)](http://travis-ci.org/yeoman/stringify-object)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/stringify-object/"
+  }
+}

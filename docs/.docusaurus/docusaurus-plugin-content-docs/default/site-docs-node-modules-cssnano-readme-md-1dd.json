@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/cssnano/README",
+  "title": "cssnano",
+  "description": "For documentation, please see the following links:",
+  "source": "@site/docs/node_modules/cssnano/README.md",
+  "sourceDirName": "node_modules/cssnano",
+  "slug": "/node_modules/cssnano/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssnano/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/cssnano/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cssesc [![Build status](https://travis-ci.org/mathiasbynens/cssesc.svg?branch=master)](https://travis-ci.org/mathiasbynens/cssesc) [![Code coverage status](https://img.shields.io/codecov/c/github/mathiasbynens/cssesc.svg)](https://codecov.io/gh/mathiasbynens/cssesc)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssesc/"
+  },
+  "next": {
+    "title": "cssnano-preset-advanced",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/cssnano-preset-advanced/"
+  }
+}

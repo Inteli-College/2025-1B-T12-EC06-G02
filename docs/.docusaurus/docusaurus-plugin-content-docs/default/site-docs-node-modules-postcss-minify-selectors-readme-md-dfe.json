@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-minify-selectors/README",
+  "title": "[postcss][postcss]-minify-selectors",
+  "description": "Minify selectors with PostCSS.",
+  "source": "@site/docs/node_modules/postcss-minify-selectors/README.md",
+  "sourceDirName": "node_modules/postcss-minify-selectors",
+  "slug": "/node_modules/postcss-minify-selectors/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-minify-selectors/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-minify-selectors/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "postcss-minify-params [![Build Status][ci-img]][ci]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-minify-params/"
+  },
+  "next": {
+    "title": "postcss-selector-parser [![test](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml/badge.svg)](https://github.com/postcss/postcss-selector-parser/actions/workflows/test.yml)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-minify-selectors/node_modules/postcss-selector-parser/"
+  }
+}

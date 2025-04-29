@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@sinclair/typebox/readme",
+  "title": "readme",
+  "description": "TypeBox",
+  "source": "@site/docs/node_modules/@sinclair/typebox/readme.md",
+  "sourceDirName": "node_modules/@sinclair/typebox",
+  "slug": "/node_modules/@sinclair/typebox/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sinclair/typebox/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@sinclair/typebox/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sideway/pinpoint/LICENSE"
+  },
+  "next": {
+    "title": "is",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@sindresorhus/is/"
+  }
+}

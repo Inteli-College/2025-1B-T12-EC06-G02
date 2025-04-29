@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/@babel/plugin-transform-literals/README",
+  "title": "@babel/plugin-transform-literals",
+  "description": "Compile ES2015 unicode string and number literals to ES5",
+  "source": "@site/docs/node_modules/@babel/plugin-transform-literals/README.md",
+  "sourceDirName": "node_modules/@babel/plugin-transform-literals",
+  "slug": "/node_modules/@babel/plugin-transform-literals/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-literals/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/@babel/plugin-transform-literals/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "@babel/plugin-transform-json-strings",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-json-strings/"
+  },
+  "next": {
+    "title": "@babel/plugin-transform-logical-assignment-operators",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/@babel/plugin-transform-logical-assignment-operators/"
+  }
+}

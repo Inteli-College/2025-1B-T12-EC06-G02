@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/color-name/README",
+  "title": "README",
+  "description": "A JSON with color names and its values. Based on http://dev.w3.org/csswg/css-color/#named-colors.",
+  "source": "@site/docs/node_modules/color-name/README.md",
+  "sourceDirName": "node_modules/color-name",
+  "slug": "/node_modules/color-name/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/color-name/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/color-name/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.0.0 - 2016-01-07",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/color-convert/CHANGELOG"
+  },
+  "next": {
+    "title": "README",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/colord/"
+  }
+}

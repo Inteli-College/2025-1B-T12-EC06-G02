@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/renderkid/SECURITY",
+  "title": "Security Policy",
+  "description": "Supported Versions",
+  "source": "@site/docs/node_modules/renderkid/SECURITY.md",
+  "sourceDirName": "node_modules/renderkid",
+  "slug": "/node_modules/renderkid/SECURITY",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/SECURITY",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/renderkid/SECURITY.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Renderkid Changelog",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/CHANGELOG"
+  },
+  "next": {
+    "title": "css-select [![NPM version](http://img.shields.io/npm/v/css-select.svg)](https://npmjs.org/package/css-select) [![Build Status](https://travis-ci.com/fb55/css-select.svg?branch=master)](http://travis-ci.com/fb55/css-select) [![Downloads](https://img.shields.io/npm/dm/css-select.svg)](https://npmjs.org/package/css-select) [![Coverage](https://coveralls.io/repos/fb55/css-select/badge.svg?branch=master)](https://coveralls.io/r/fb55/css-select)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/renderkid/node_modules/css-select/"
+  }
+}

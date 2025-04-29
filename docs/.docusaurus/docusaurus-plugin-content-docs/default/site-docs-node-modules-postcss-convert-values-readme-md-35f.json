@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/postcss-convert-values/README",
+  "title": "[postcss][postcss]-convert-values",
+  "description": "Convert values with PostCSS (e.g. ms -> s)",
+  "source": "@site/docs/node_modules/postcss-convert-values/README.md",
+  "sourceDirName": "node_modules/postcss-convert-values",
+  "slug": "/node_modules/postcss-convert-values/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-convert-values/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/postcss-convert-values/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "[postcss][postcss]-colormin",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-colormin/"
+  },
+  "next": {
+    "title": "PostCSS Custom Media [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/postcss-custom-media/"
+  }
+}

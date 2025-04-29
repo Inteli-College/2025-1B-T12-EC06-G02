@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/css-has-pseudo/README",
+  "title": "PostCSS Has Pseudo [<img src=\"https://postcss.github.io/postcss/logo.svg\" alt=\"PostCSS Logo\" width=\"90\" height=\"90\" align=\"right\">][PostCSS]",
+  "description": "npm install css-has-pseudo --save-dev",
+  "source": "@site/docs/node_modules/css-has-pseudo/README.md",
+  "sourceDirName": "node_modules/css-has-pseudo",
+  "slug": "/node_modules/css-has-pseudo/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-has-pseudo/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/css-has-pseudo/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "license",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-declaration-sorter/license"
+  },
+  "next": {
+    "title": "Changes to CSS Has Pseudo",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-has-pseudo/CHANGELOG"
+  }
+}

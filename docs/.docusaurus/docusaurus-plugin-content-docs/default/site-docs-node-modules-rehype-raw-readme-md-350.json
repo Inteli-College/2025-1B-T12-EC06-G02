@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/rehype-raw/readme",
+  "title": "rehype-raw",
+  "description": "Build",
+  "source": "@site/docs/node_modules/rehype-raw/readme.md",
+  "sourceDirName": "node_modules/rehype-raw",
+  "slug": "/node_modules/rehype-raw/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/rehype-raw/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/rehype-raw/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "jsesc [![Build status](https://travis-ci.org/mathiasbynens/jsesc.svg?branch=master)](https://travis-ci.org/mathiasbynens/jsesc) [![Code coverage status](https://coveralls.io/repos/mathiasbynens/jsesc/badge.svg)](https://coveralls.io/r/mathiasbynens/jsesc)",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/regjsparser/node_modules/jsesc/"
+  },
+  "next": {
+    "title": "rehype-recma",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/rehype-recma/"
+  }
+}

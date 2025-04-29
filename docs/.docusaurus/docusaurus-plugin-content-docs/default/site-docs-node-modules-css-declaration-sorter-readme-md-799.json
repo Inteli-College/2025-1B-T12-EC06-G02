@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/css-declaration-sorter/readme",
+  "title": "readme",
+  "description": "npm",
+  "source": "@site/docs/node_modules/css-declaration-sorter/readme.md",
+  "sourceDirName": "node_modules/css-declaration-sorter",
+  "slug": "/node_modules/css-declaration-sorter/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-declaration-sorter/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/css-declaration-sorter/readme.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "LICENSE",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-blank-pseudo/LICENSE"
+  },
+  "next": {
+    "title": "license",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/css-declaration-sorter/license"
+  }
+}

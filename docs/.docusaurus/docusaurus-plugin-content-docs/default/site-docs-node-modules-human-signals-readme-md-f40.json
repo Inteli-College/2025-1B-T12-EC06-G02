@@ -1,0 +1,24 @@
+{
+  "id": "node_modules/human-signals/README",
+  "title": "README",
+  "description": "Codecov",
+  "source": "@site/docs/node_modules/human-signals/README.md",
+  "sourceDirName": "node_modules/human-signals",
+  "slug": "/node_modules/human-signals/",
+  "permalink": "/2025-1B-T12-EC06-G02/node_modules/human-signals/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/node_modules/human-signals/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "http2-wrapper",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/http2-wrapper/"
+  },
+  "next": {
+    "title": "2.1.0",
+    "permalink": "/2025-1B-T12-EC06-G02/node_modules/human-signals/CHANGELOG"
+  }
+}

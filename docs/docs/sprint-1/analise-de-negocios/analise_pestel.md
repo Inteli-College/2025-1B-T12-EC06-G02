@@ -58,7 +58,17 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 ## Fatores Tecnológicos
 
-&emsp; Avalia-se o nível de desenvolvimento tecnológico do ambiente em que a empresa opera, incluindo acesso a infraestrutura, inovação, automação, e disponibilidade de mão de obra qualificada na área de tecnologia (Suhr, 2021). 
+&emsp; No aspecto dos fatores tecnológicos, avalia-se o nível de desenvolvimento tecnológico do ambiente em que a empresa opera, incluindo acesso à infraestrutura, inovação, automação e disponibilidade de mão de obra qualificada na área de tecnologia (Suhr, 2021). Nesse sentido, apesar do avanço de iniciativas pontuais em inovação, o cenário tecnológico brasileiro ainda enfrenta sérios entraves estruturais. 
+
+&emsp; Por exemplo, boa parte da indústria nacional opera com maquinário obsoleto. Segundo levantamento da Confederação Nacional da Indústria (CNI), apenas 2% das empresas possuem máquinas com até 2,5 anos de uso, enquanto 28% utilizam equipamentos com 10 a 15 anos de idade, sendo que a média de idade das máquinas e equipamentos industriais é de 14 anos (CNN Brasil, 2024). Isso tem relação com os fatores econômicos já analisados. Gino Paulucci Jr., presidente do conselho da Associação Brasileira da Indústria de Máquinas e Equipamentos (Abimaq), aponta que as elevadas taxas de juros limitam severamente a capacidade de investimento das empresas, perpetuando esse cenário de defasagem tecnológica (CNN Brasil, 2024).
+
+&emsp; Ademias, os setores da economia brasileira com maior participação no Produto Interno Bruto (PIB) são justamente aqueles menos intensivos em pesquisa, desenvolvimento e inovação. Enquanto nas economias da Organização para a Cooperação e Desenvolvimento Econômico (OCDE) predominam segmentos de alta tecnologia, como equipamentos eletrônicos, automotivos, farmacêuticos e de softwares, no Brasil ainda predominam setores de baixa e média-baixa intensidade tecnológica (Gazeta do Povo, 2024). Esse descompasso compromete o alcance da fronteira tecnológica e afeta negativamente a competitividade do país.
+
+&emsp; Paralelamente, a educação, pilar fundamental para a inovação tecnológica, também representa um desafio. Especialistas alertam para a baixa qualidade do ensino brasileiro em comparação com países concorrentes no mercado global, o que compromete a formação de profissionais criativos e inovadores — essenciais para o desenvolvimento tecnológico sustentado (Gazeta do Povo, 2024).
+
+&emsp; A escassez de mão de obra qualificada agrava ainda mais esse panorama. Um estudo realizado pelo Google, em parceria com a Associação Brasileira de Startups (Abstartups), mostra que, entre 2021 e 2025, o Brasil formará cerca de 53 mil profissionais por ano na área de tecnologia, enquanto a demanda acumulada no mesmo período será de aproximadamente 800 mil pessoas. Isso representa um déficit de 530 mil profissionais no setor (G1, 2023).
+
+&emsp; Em síntese, o acesso a equipamentos modernos no Brasil é escasso, o país investe ainda pouco em tecnologia e há escassez de mão de obra qualificada. Tais fatores representam obstáculos significativos para empresas como o IPT, que dependem de um ambiente tecnologicamente desenvolvido para promover soluções de vanguarda.
 
 ## Fatores Ambientais
 

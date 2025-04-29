@@ -20,7 +20,7 @@ custom_edit_url: null
 <p style={{textAlign: 'center'}}>Figura 1: Persona Carolina Silva - Pesquisadora</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("..\docs\static\img\persona_pesquisa.png").default} style={{width: 800}} alt="Imagem informativa de Carolina Silva." />
+        <img src={require("../../../static/img/persona_pesquisa.png").default} style={{width: 800}} alt="Imagem informativa de Carolina Silva." />
         <br />
     </div>
 </div>
@@ -41,17 +41,14 @@ A adoção de uma solução tecnológica que atenda essas demandas terá um impa
 
 &emsp; Segue a abaixo as informações sobre a persona do técnico de edificações:
 
-<div align="center" width="100%">
-
-<sub>Figura 2 - Persona: Tecnico de edificações</sub>
-
-![Persona Carlos Eduardo](/img/CarlosEduardo.png)
-
-<sup>Fonte: Autoria própria </sup>
-
-<sup> [Link da imagem](https://www.figma.com/design/AiH9nrIMPmuJx5uXk1Bi59/Personas--Copy-?node-id=2004-125&t=Zqu1Zq1kvCrw5p4s-0)</sup>
-
+<p style={{textAlign: 'center'}}>Figura 2: Persona Carlos Eduardo - Técnico</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/CarlosEduardo.png").default} style={{width: 800}} alt="Imagem informativa de Carolina Silva." />
+        <br />
+    </div>
 </div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 **Sobre**
 

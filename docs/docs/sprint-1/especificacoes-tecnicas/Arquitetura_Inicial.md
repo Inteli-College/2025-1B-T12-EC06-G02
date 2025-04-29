@@ -5,6 +5,8 @@ custom_edit_url: null
 
 # Arquitetura Inicial
 
+A arquitetura de software representa o alicerce fundamental sobre o qual todo o sistema é construído, definindo sua estrutura, comportamento e propriedades essenciais. Para o sistema óptico de detecção [de fissuras em revestimentos], uma arquitetura bem planejada é crucial pois fornece uma visão clara da organização e integração dos componentes do sistema, facilita a comunicação entre equipes técnicas e stakeholders do projeto, permite a identificação precoce de riscos e pontos de atenção, estabelece as bases para a escalabilidade e manutenibilidade do software, assegura que requisitos não-funcionais como desempenho, segurança e usabilidade sejam adequadamente atendidos, e define os limites e interfaces entre os diferentes módulos, facilitando o desenvolvimento paralelo
+
 Para considerar a arquitetura inicial, toma-se como base a ideia de MVP do projeto, que consiste em quatro funções: detecção de fissuras em revestimentos de argamassa, interface para visualização das fissuras identificadas, geração de relatórios de forma automatizada sobre as fissuras, e um sistema de alertas para notificar sobre fissuras que demandam atenção imediata. 
 
 Dessa maneira, a arquitetura inicial proposta foi estruturada de forma a atender de forma eficiente estes e outros requisitos, que podem ser consultados na seção de "Requisitos Funcionais". Além disso, ela foi estruturada em módulos, que serão detalhados adiante.
@@ -41,6 +43,19 @@ O fluxo de processamento inicia-se com a captura de imagens pelo drone, que são
 
 O Processador de Dados, componente independente da API REST, organiza as informações recebidas, criando relações entre as fissuras detectadas, as imagens originais e os metadados da inspeção. Os dados processados são então disponibilizados para o frontend, onde são apresentados através da interface do usuário, gerando relatórios detalhados e alertas quando necessário.
 
+Esse fluxo pode ser visualizado no diagrama abaixo.
+
+```mermaid
+    flowchart TD
+    A[Upload da Imagem] --> B[Processamento pela IA]
+    B --> C{Nível de Confiança\nda IA?}
+    C -->|Alta Confiança| D[Inclusão Direta no Relatório]
+    C -->|Baixa Confiança| E[Análise por Profissional]
+    E --> D
+    D --> F[Relatório Final]
+
+```
+
 ## Interação Humana e Verificação Manual
 Um aspecto dessa arquitetura que foi pensado pelo grupo e deve ser mencionado é a possibilidade de intervenção humana no processo de análise. Ele permite que o pesquisador do projeto possa realizar análises manuais de imagens nas quais a IA não alcançou um alto nível de acurácia. Esta característica é implementada através de uma interface específica no frontend, onde imagens com baixa confiabilidade de classificação são sinalizadas para revisão.
 
@@ -48,11 +63,9 @@ Essa arquitetura atende aos requisitos e necessidades do parceiro de forma efici
 
 ```mermaid
 flowchart TB
-    %% Dispositivos físicos
-    subgraph "Robô"
-        drone("Drone")
-        camera("Câmera")
-        drone --- camera
+    %% Upload de imagens
+    subgraph "Upload de arquivos"
+        arquivos("Arquivos")
     end
 
     %% Sistema de IA
@@ -86,7 +99,7 @@ flowchart TB
     end
 
     %% Fluxo de dados
-    camera -->|"Imagens"| api
+    arquivos -->|"Imagens"| api
     api -->|"Dados para Análise"| ia
     classify -->|"Resultados"| proc
     proc <-->|"Armazenamento/Consulta"| db

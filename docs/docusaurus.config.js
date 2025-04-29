@@ -24,6 +24,11 @@ const config = {
     locales: ['en'],
   },
 
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
+  },
+
   presets: [
     [
       'classic',
@@ -42,12 +47,23 @@ const config = {
       }),
     ],
   ],
-  
-  // REMOVA O PLUGIN DE REDIRECIONAMENTO
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Configure color mode explicitly
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+      // Enable mermaid in the theme config
+      mermaid: {
+        theme: {
+          light: 'neutral',
+          dark: 'dark',
+        },
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'SOD',

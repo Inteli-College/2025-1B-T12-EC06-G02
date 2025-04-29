@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@docusaurus/plugin-client-redirects": "^3.7.0"
+    "@docusaurus/plugin-client-redirects": "^3.7.0",
+    "@docusaurus/theme-mermaid": "^3.7.0"
   }
 }

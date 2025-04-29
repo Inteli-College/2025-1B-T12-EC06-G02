@@ -43,11 +43,22 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 ## Fatores Sociais
 
-&emsp; Analisam-se elementos demográficos, culturais e comportamentais da sociedade. Este fator investiga a receptividade do público aos produtos e serviços da empresa, bem como características sociais que possam afetar instituições como o IPT. Analisa-se essas tendências a fim de compreender as preferências dos consumidores, alinhar a viabilidade de um negócio ou até estratégias de marketing(Cláudio Perin, 2024; Suhr, 2021).
+&emsp; Analisam-se, neste fator, os elementos demográficos, culturais e comportamentais da sociedade. Em especial, investiga-se a receptividade do público aos produtos e serviços da empresa, bem como características sociais que possam afetar instituições como o IPT. Visa-se, desta forma, compreender as preferências dos consumidores, alinhar a viabilidade de um negócio ou até estratégias de marketing (Perin, 2024; Suhr, 2021).
+
+&emsp; O cenário social brasileiro mostra-se amplamente favorável à digitalização. A crescente aceitação de soluções tecnológicas pela população é refletida no sucesso de iniciativas públicas como o aplicativo gov.br, lançado em 2019, que hoje possui avaliação de 4,7 estrelas na Google Play Store, sendo isso obtido via mais de 9,48 milhões de avaliações (Play Store, 2025). Ademais, o Brasil é o segundo país do mundo mais dependente de tecnologia, com média de nove horas diárias de uso de celulares e outros dispositivos eletrônicos (G1, 2023). Além disso, em janeiro de 2024, o país ocupava a quarta colocação mundial em acessos ao ChatGPT, sendo responsável por 5,16% do tráfego global da ferramenta, e liderando o uso na América Latina (Tecnoblog, 2024).
+
+&emsp; O ambiente corporativo também acompanha essa tendência de transformação digital. De acordo com levantamento da MIA, o mercado de Centros de Serviços Compartilhados (CSCs) no Brasil manteve crescimento em 2024, com cada vez mais empresas aderindo ao modelo, impulsionado pelo foco em automação e eficiência (Valor Econômico, 2025). Complementarmente, segundo o LinkedIn, 70% das competências utilizadas em diferentes setores deverão mudar até 2030 devido ao impacto da inteligência artificial, e um quarto dos profissionais brasileiros já planeja priorizar o aprendizado em IA ainda este ano (Brandão, 2025). Casos como o da Petrobras, que implementou tecnologia para monitoramento remoto de plataformas de petróleo a centenas de quilômetros da costa, evidenciam o avanço tecnológico no setor produtivo (G1, 2022).
+
+&emsp; No âmbito institucional, esse movimento se traduz na estrutura financeira do IPT: atualmente, 61% da receita do instituto é proveniente da venda de projetos, superando os 39% oriundos de dotações orçamentárias do Estado de São Paulo. Tal dado reforça a atratividade de seus serviços em um contexto de crescente digitalização (IPT, 2024).
+
+&emsp; No entanto, é preciso cautela diante de certos aspectos sociais negativos que persistem no Brasil. Em 2024, o contrabando, a falsificação e a pirataria geraram um prejuízo estimado em meio trilhão de reais à economia nacional (Asmetro-SN, 2025). Também foram registradas possíveis fraudes em repasses de recursos públicos, como apontado em auditoria da CGU acerca do INSS (Poder360, 2025). Além disso, há riscos concretos à integridade física dos profissionais do IPT durante atividades de campo: há relatos recentes de tentativas de roubo de equipamentos, como drones, sendo necessária a atuação da Polícia Militar para garantir a segurança da equipe.
+
+&emsp; Em suma, as preferências dos brasileiros — tanto do consumidor comum quanto do empresariado — demonstram crescente afinidade com o uso de tecnologias, o que representa uma excelente oportunidade para os negócios do IPT e para os clientes que contratam seus serviços. Essa tendência é evidenciada pela composição majoritária da receita do instituto baseada na venda de projetos. Entretanto, o presente desvio social na sociedade brasileira impõe desafios importantes, como o combate à fraude, ao contrabando, à pirataria e à garantia da segurança dos funcionários da instituição em suas operações.
+
 
 ## Fatores Tecnológicos
 
-&emsp; Avalia-se o nível de desenvolvimento tecnológico do ambiente em que a empresa opera, incluindo acesso a infraestrutura, inovação, automação, e disponibilidade de mão de obra qualificada na área de tecnologia (Suhr, 2021).
+&emsp; Avalia-se o nível de desenvolvimento tecnológico do ambiente em que a empresa opera, incluindo acesso a infraestrutura, inovação, automação, e disponibilidade de mão de obra qualificada na área de tecnologia (Suhr, 2021). 
 
 ## Fatores Ambientais
 
@@ -62,6 +73,8 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 AGÊNCIA BRASIL. *BC está tateando ajuste da Selic diante de guerra de tarifas*. 2025. Disponível em: https://agenciabrasil.ebc.com.br/economia/noticia/2025-04/bc-esta-tateando-ajuste-da-selic-diante-de-guerra-de-tarifas. Acesso em: 29 abr. 2025.
 
 BANDNEWS FM. *Índice Nacional da Construção Civil de fevereiro diminui em comparação a janeiro*. 2025. Disponível em: https://www.band.uol.com.br/bandnews-fm/rio-de-janeiro/noticias/indice-nacional-da-construcao-civil-de-fevereiro-diminui-em-comparacao-a-janeiro-202503121202. Acesso em: 29 abr. 2025.
+
+BRANDÃO, M. De IA a automação de processos: 15 competências que mais crescem no Brasil, segundo o LinkedIn. Disponível em: https://consumidormoderno.com.br/de-ia-a-automacao-de-processos-15-competencias-que-mais-crescem-no-brasil-segundo-o-linkedin/. Acesso em: 29 abr. 2025. 
 
 BRASIL. *Lei nº 8.112, de 11 de dezembro de 1990*. Dispõe sobre o regime jurídico dos servidores públicos civis da União. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l8112cons.htm. Acesso em: 29 abr. 2025.
 

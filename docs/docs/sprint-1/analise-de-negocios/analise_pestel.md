@@ -5,19 +5,19 @@ slug: /sprint-1/analise-de-negocios/analise-pestel
 
 # Análise PESTEL
 
-&emsp; Existem diversas metodologias para avaliar o cenário em que uma empresa está inserida, bem como a viabilidade de um novo negócio nesse contexto. A escolha da abordagem mais adequada dependerá do tipo de ambiente a ser analisado (Perin, 2024). Perin (2024) propõe três categorias de ambiente: **interno**, **operacional** e **contextual**.
+&emsp; Existem diversas metodologias para avaliar o cenário em que uma empresa está inserida, bem como a viabilidade de um novo negócio nesse contexto. A escolha da abordagem mais adequada dependerá do tipo de ambiente a ser analisado (Cláudio Perin, 2024). Cláudio Perin (2024) propõe três categorias de ambiente: **interno**, **operacional** e **contextual**.
 
 &emsp; Os dois primeiros dizem respeito ao ambiente interno da empresa. O **ambiente interno** refere-se às forças e fraquezas organizacionais, enquanto o **ambiente operacional** está relacionado ao cenário competitivo em que a empresa atua. Para esses casos, ferramentas como as **Cinco Forças de Porter** e o **framework VRIO** são particularmente indicadas.
 
 &emsp; Já o **ambiente contextual** abrange fatores externos e mais amplos, indiretamente relacionados à empresa e ao seu modelo de negócios. É nesse contexto que se aplica a **Análise PESTEL**, que considera os fatores **Políticos**, **Econômicos**, **Sociais**, **Tecnológicos**, **Ambientais** (do inglês, *Environmental*) e **Legais**. A seguir, exploraremos cada um desses aspectos.
 
 :::warning [Aviso]
-A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diretamente suas iniciativas, modelo de negócios e área de atuação (Sudan, 2021). Nessa análise, focar-se-á em especial em políticas que afetem o projeto de visão computacional.
+A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diretamente suas iniciativas, modelo de negócios e área de atuação (Suhr, 2021). Nessa análise, focar-se-á em especial em políticas que afetem o projeto de visão computacional.
 :::
 
 ## Fatores Políticos
 
-&emsp; Este fator examina políticas governamentais, regulamentações e a estabilidade política que possam acelerar ou dificultar o desenvolvimento de uma empresa (Sudan, 2021). Tais aspectos são especialmente relevantes no caso do IPT, por se tratar de um órgão público vinculado ao Governo do Estado de São Paulo.
+&emsp; Este fator examina políticas governamentais, regulamentações e a estabilidade política que possam acelerar ou dificultar o desenvolvimento de uma empresa (Suhr, 2021). Tais aspectos são especialmente relevantes no caso do IPT, por se tratar de um órgão público vinculado ao Governo do Estado de São Paulo.
 
 &emsp; Um dos elementos mais favoráveis atualmente é a existência de incentivos governamentais, tanto em âmbito federal quanto estadual, voltados à promoção da inovação. Essa convergência tem viabilizado articulações institucionais mais eficazes e atraído investimentos para o Estado, contribuindo para um ambiente político mais estável e cooperativo. O próprio IPT desenvolve projetos de pesquisa, desenvolvimento e inovação (PD&I) em parceria com empresas que se beneficiam de políticas como a Lei do Bem e a Lei da Informática (IPT, s.d).
 
@@ -31,7 +31,7 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 ## Fatores Econômicos
 
-&emsp; Considera-se aqui o impacto da conjuntura econômica sobre a empresa. Aspectos como inflação e taxa de juros influenciam diretamente o desempenho dos negócios, uma vez que afetam tanto a demanda por seus produtos quanto as opções de financiamento disponíveis (Sudan, 2021). Esses dois indíces foram analisados mais detalhadamente neste projeto, mesmo que a análise econômicas possa também ser abordada em termos de nível de renda da população e empregabilidade (Sudan, 2021)
+&emsp; Considera-se aqui o impacto da conjuntura econômica sobre a empresa. Aspectos como inflação e taxa de juros influenciam diretamente o desempenho dos negócios, uma vez que afetam tanto a demanda por seus produtos quanto as opções de financiamento disponíveis (Suhr, 2021). Esses dois indíces foram analisados mais detalhadamente neste projeto, mesmo que a análise econômicas possa também ser abordada em termos de nível de renda da população e empregabilidade (Suhr, 2021)
 
 &emsp; No cenário atual, observa-se um aumento significativo no Índice de Preços ao Produtor (IPP), que acumulou alta de 9,69% nos últimos 12 meses — o maior avanço desde a pandemia de Covid-19 (Valor Econômico, 2025). Além disso, o setor da construção civil, que representa uma importante fatia do mercado atendido pelo Laboratório de Materiais para Produtos de Construção do IPT, também apresenta sinais de pressão inflacionária.
 
@@ -43,16 +43,40 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 ## Fatores Sociais
 
-&emsp; Analisam-se elementos demográficos, culturais e comportamentais da sociedade. Este fator investiga a receptividade do público aos produtos e serviços da empresa, bem como características sociais que possam afetar instituições como o IPT. Analisa-se essas tendências a fim de compreender as preferências dos consumidores, alinhar a viabilidade de um negócio ou até estratégias de marketing(Perin, 2024; Sudan, 2021).
+&emsp; Analisam-se elementos demográficos, culturais e comportamentais da sociedade. Este fator investiga a receptividade do público aos produtos e serviços da empresa, bem como características sociais que possam afetar instituições como o IPT. Analisa-se essas tendências a fim de compreender as preferências dos consumidores, alinhar a viabilidade de um negócio ou até estratégias de marketing(Cláudio Perin, 2024; Suhr, 2021).
 
 ## Fatores Tecnológicos
 
-&emsp; Avalia-se o nível de desenvolvimento tecnológico do ambiente em que a empresa opera, incluindo acesso a infraestrutura, inovação, automação, e disponibilidade de mão de obra qualificada na área de tecnologia (Sudan, 2021).
+&emsp; Avalia-se o nível de desenvolvimento tecnológico do ambiente em que a empresa opera, incluindo acesso a infraestrutura, inovação, automação, e disponibilidade de mão de obra qualificada na área de tecnologia (Suhr, 2021).
 
 ## Fatores Ambientais
 
-&emsp; Este aspecto envolve condições naturais como clima, vegetação e relevo, que podem impactar tanto o ramo de atuação da empresa quanto o bem-estar dos seus colaboradores. Também se incluem aqui preocupações com sustentabilidade e regulamentações ambientais (Sudan, 2021).
+&emsp; Este aspecto envolve condições naturais como clima, vegetação e relevo, que podem impactar tanto o ramo de atuação da empresa quanto o bem-estar dos seus colaboradores. Também se incluem aqui preocupações com sustentabilidade e regulamentações ambientais (Suhr, 2021).
 
 ## Fatores Legais
 
 &emsp; Diz respeito ao conjunto de leis e normas que a empresa precisa cumprir para operar legalmente. No contexto deste projeto, destacam-se legislações como a **Lei Geral de Proteção de Dados (LGPD)**, o **Marco Civil da Internet**, entre outras normas que regulam o uso de tecnologias e dados sensíveis.
+
+## Bibliografia
+
+AGÊNCIA BRASIL. *BC está tateando ajuste da Selic diante de guerra de tarifas*. 2025. Disponível em: https://agenciabrasil.ebc.com.br/economia/noticia/2025-04/bc-esta-tateando-ajuste-da-selic-diante-de-guerra-de-tarifas. Acesso em: 29 abr. 2025.
+
+BANDNEWS FM. *Índice Nacional da Construção Civil de fevereiro diminui em comparação a janeiro*. 2025. Disponível em: https://www.band.uol.com.br/bandnews-fm/rio-de-janeiro/noticias/indice-nacional-da-construcao-civil-de-fevereiro-diminui-em-comparacao-a-janeiro-202503121202. Acesso em: 29 abr. 2025.
+
+BRASIL. *Lei nº 8.112, de 11 de dezembro de 1990*. Dispõe sobre o regime jurídico dos servidores públicos civis da União. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l8112cons.htm. Acesso em: 29 abr. 2025.
+
+CLAUDIO PERIN. A Análise Pestel. Disponível em: https://www.youtube.com/watch?v=59WaRcY07hs. Acesso em: 29 abr. 2025.
+
+CNN BRASIL. *Bloqueio de valores do X e da Starlink gera instabilidade jurídica e econômica, diz advogado à CNN*. 2024. Disponível em: https://www.cnnbrasil.com.br/politica/bloqueio-de-valores-do-x-e-da-starlink-gera-instabilidade-juridica-e-economica-diz-advogado-a-cnn/. Acesso em: 29 abr. 2025.
+
+FAPESP. *Secretaria de Ciência, Tecnologia e Inovação lança Programa Paulista de Inovação*. 2024. Disponível em: https://agencia.fapesp.br/secretaria-de-ciencia-tecnologia-e-inovacao-lanca-programa-paulista-de-inovacao/51616. Acesso em: 29 abr. 2025.
+
+IPT. *Folder Institucional*. Instituto de Pesquisas Tecnológicas. Disponível em: https://ipt.br/wp-content/uploads/2024/03/Folder-Institucional-IPT.pdf. Acesso em: 29 abr. 2025.
+
+SÃO PAULO (Estado). *Lei nº 896, de 17 de dezembro de 1975*. Dispõe sobre a criação e funcionamento do Instituto de Pesquisas Tecnológicas. Disponível em: https://www.al.sp.gov.br/repositorio/legislacao/lei/1975/lei-896-17.12.1975.html. Acesso em: 29 abr. 2025.
+
+SUHR, R. Análise Pestel: o que é, por que usar e como fazer. Disponível em: https://mereo.com/blog/analise-pestel/. Acesso em: 29 abr. 2025. 
+
+VALOR ECONÔMICO. *Índice de preços ao produtor sobe 0,13% em janeiro e acumula alta de 9,69% em 12 meses*. 2025. Disponível em: https://valor.globo.com/brasil/noticia/2025/03/14/indice-de-precos-ao-produtor-sobe-013percent-em-janeiro-e-acumula-alta-de-969percent-em-12-meses.ghtml. Acesso em: 29 abr. 2025.
+
+

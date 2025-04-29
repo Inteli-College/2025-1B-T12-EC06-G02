@@ -13,21 +13,21 @@ custom_edit_url: null
 
 ## Persona 01: Pesquisadora
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foi criada a persona Carolina Silva, uma das nossas principais personas, representando pesquisadoras que atuam na análise e monitoramento de materiais de revestimento predial, diretamente envolvidas na avaliação técnica de fissuras. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foi criada a persona Mariana Ribeiro, uma das nossas principais personas, representando pesquisadoras que atuam na análise e monitoramento de materiais de revestimento predial, diretamente envolvidas na avaliação técnica de fissuras. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abaixo está descrita a persona que representa as pesquisadoras no contexto do projeto:
 
-<p style={{textAlign: 'center'}}>Figura 1: Persona Carolina Silva - Pesquisadora</p>
+<p style={{textAlign: 'center'}}>Figura 1: Persona Mariana Ribeiro - Pesquisadora</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("../../../static/img/persona_pesquisa.png").default} style={{width: 800}} alt="Imagem informativa de Carolina Silva." />
+        <img src={require("../../../static/img/persona_pesquisa.png").default} style={{width: 800}} alt="Imagem informativa de Mariana Ribeiro." />
         <br />
     </div>
 </div>
 <p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 
-A persona desenvolvida para o projeto é Carolina Silva, uma pesquisadora sênior no Laboratório de Materiais para Produtos de Construção (LMPC) do IPT. Com 38 anos e doutorado em Engenharia de Materiais, Carolina atua em pesquisas aplicadas focadas na durabilidade e no desempenho de materiais de construção, especialmente na análise de patologias como fissuras em revestimentos de fachadas.
+A persona desenvolvida para o projeto é Mariana Ribeiro, uma pesquisadora sênior no Laboratório de Materiais para Produtos de Construção (LMPC) do IPT. Com 38 anos e doutorado em Engenharia de Materiais, Carolina atua em pesquisas aplicadas focadas na durabilidade e no desempenho de materiais de construção, especialmente na análise de patologias como fissuras em revestimentos de fachadas.
 
 Seu perfil é altamente técnico e analítico, prezando por soluções que tragam precisão e confiabilidade aos processos de inspeção predial. Carolina busca ferramentas que possam automatizar a detecção de fissuras facilitando o acompanhamento da evolução dos problemas ao longo do tempo.
 
@@ -44,7 +44,7 @@ A adoção de uma solução tecnológica que atenda essas demandas terá um impa
 <p style={{textAlign: 'center'}}>Figura 2: Persona Carlos Eduardo - Técnico</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("../../../static/img/CarlosEduardo.png").default} style={{width: 800}} alt="Imagem informativa de Carolina Silva." />
+        <img src={require("../../../static/img/CarlosEduardo.png").default} style={{width: 800}} alt="Imagem informativa de Carlos Eduardo." />
         <br />
     </div>
 </div>

@@ -17,7 +17,17 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 ## Fatores Políticos
 
-&emsp; Este fator examina políticas governamentais, regulamentações e estabilidade política que possam acelerar ou dificultar o desenvolvimento da empresa (Sudan, 2021). Tais elementos são especialmente relevantes no caso do IPT, por ser um órgão público.
+&emsp; Este fator examina políticas governamentais, regulamentações e a estabilidade política que possam acelerar ou dificultar o desenvolvimento de uma empresa (SUDAN, 2021). Tais aspectos são especialmente relevantes no caso do IPT, por se tratar de um órgão público vinculado ao Governo do Estado de São Paulo.
+
+&emsp; Um dos elementos mais favoráveis atualmente é a existência de incentivos governamentais, tanto em âmbito federal quanto estadual, voltados à promoção da inovação. Essa convergência tem viabilizado articulações institucionais mais eficazes e atraído investimentos para o Estado, contribuindo para um ambiente político mais estável e cooperativo. O próprio IPT desenvolve projetos de pesquisa, desenvolvimento e inovação (PD&I) em parceria com empresas que se beneficiam de políticas como a Lei do Bem e a Lei da Informática (IPT, s.d).
+
+&emsp; Além disso, o Instituto está inserido em um ecossistema governamental fortemente comprometido com a inovação. Sua vinculação à Secretaria de Ciência, Tecnologia e Inovação do Estado reforça esse posicionamento. Recentemente, essa secretaria lançou o Programa de Inovação do Estado de São Paulo, uma iniciativa que fortalece o ambiente institucional voltado ao desenvolvimento científico e tecnológico, apoiando empresas inovadoras, promovendo a internacionalização de startups paulistas consolidadas e desburocratizando o acesso ao Sistema Paulista de Ambientes de Inovação (SPAI). (FAPESP, 2024). 
+
+&emsp; Apesar desse cenário promissor, o país ainda enfrenta episódios pontuais de instabilidade jurídica. Um exemplo recente é o bloqueio judicial de valores das empresas X e Starlink, o que gerou preocupação entre especialistas quanto à segurança jurídica e aos impactos sobre o ambiente de negócios no Brasil (CNN BRASIL, 2024). Contudo, no caso específico do IPT, existem salvaguardas legais que minimizam significativamente tais riscos.
+
+&emsp; O Instituto é amparado por uma legislação estadual própria — a Lei nº 896, de 17 de dezembro de 1975 — que assegura sua autonomia e impede sua extinção ou reestruturação sem respaldo legal (SÃO PAULO, 1975). Ademais, a estabilidade funcional de seus servidores, prevista na Lei nº 8.112, de 11 de dezembro de 1990, garante a continuidade das atividades institucionais e protege o órgão contra mudanças abruptas na gestão pública (BRASIL, 1990).
+
+&emsp; Diante disso, conclui-se que, embora o cenário político nacional apresente desafios esporádicos, o IPT encontra-se politicamente resguardado. Sua atuação está sustentada por marcos legais robustos, alinhamento entre os governos estadual e federal e uma estrutura administrativa orientada à inovação e ao serviço público.
 
 ## Fatores Econômicos
 

@@ -5,7 +5,7 @@ custom_edit_url: null
 
 # Análise dos stakeholders
 
-&emsp; Stakeholder representa o público estratégico, seja um grupo de pessoas, seja um indivíduo, que é impactado pelas ações de um empreendimento, de uma empresa, de um negócio ou de um projeto. Nesse sentido, pode-se ser classificado em stakeholders internos e externos à organização, como também primários, com ligação direta ao projeto, e secundários,  com ligação indireta ao projeto. Assim, segue a classificação dos stakeholders do presente projeto:
+&emsp; Stakeholder representa o público estratégico, seja um grupo de pessoas ou um indivíduo, que é impactado pelas ações de um empreendimento, de uma empresa, de um negócio ou de um projeto. Nesse sentido, pode-se ser classificado em stakeholders internos e externos à organização, como também primários, com ligação direta ao projeto, e secundários, com ligação indireta ao projeto. Tendo isso em vista, essa análise é fundamental para uma compreensão inicial de todas as pessoas que utilizarão ou serão impactadas pela solução a ser desenvolvida, permitindo, assim, a construção de um escopo coerente com as necessidades desse público. Assim, segue a classificação dos stakeholders do presente projeto:
 
 1. **Primários e internos**  
 * Engenheiro civil: Profissional responsável pelo planejamento, execução e supervisão de obras, garantindo a segurança.  
@@ -52,7 +52,7 @@ custom_edit_url: null
 
 &emsp; Stakeholders com grande interesse no projeto, mas com baixa capacidade de influência, assim, devem ser mantidos informados para garantir seu engajamento e apoio. Portanto, os stakeholders presentes neste quadrante são operadores do drone e proprietários de edifícios.
 
-&emsp; Portanto, a identificação e a categorização corretas dos stakeholders são fundamentais para a gestão eficiente do projeto. Nesse sentido, ao classificá-los conforme sua influência e interesse, foi possível estabelecer uma estratégia de gestão voltada para a identificação das principais pessoas impactadas pelo projeto, bem como do grau de importância de cada uma. Dessa forma, o projeto assegura maior controle sobre fatores externos e internos, promovendo uma execução alinhada aos seus objetivos.
+&emsp; Portanto, a identificação e a categorização corretas dos stakeholders são fundamentais para a gestão eficiente do projeto. Nesse sentido, ao classificá-los conforme sua influência e interesse, foi possível estabelecer uma estratégia de gestão voltada para a identificação das principais pessoas impactadas pelo projeto, bem como do grau de importância de cada uma. Com base nessa análise, é possível obter uma base mais sólida para a construção da [persona](../ux-ui/Personas.md), garantindo maior controle sobre fatores internos e externos, além de promover uma execução alinhada aos objetivos do projeto.
 
 **REFERÊNCIAS:** 
 

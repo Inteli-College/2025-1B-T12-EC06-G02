@@ -5,11 +5,22 @@ custom_edit_url: null
 
 # Arquitetura da Informação
 
+## Contexto
+
 A arquitetura da informação é importante por seu papel de estruturar e organizar os conteúdos e funcionalidades de um sistema de forma clara que facilite a navegação e a compreensão por parte dos usuários. Em sistemas técnicos, como o de inspeção e análise de fissuras, essa organização é ajuda a garantir que os usuários encontrem rapidamente o que precisam, executem suas tarefas com precisão e mantenham o foco no objetivo principal: gerar relatórios técnicos confiáveis e precisos sobre as fissuras identificadas. Neste projeto, a arquitetura da informação foi pensada para refletir a lógica do trabalho de campo de técnicos e pesquisadores, organizando o fluxo desde o envio das imagens até a geração do relatório final. O resultado é um sistema intuitivo, funcional e preparado para o uso em ambiente local.
 
-A arquitetura da informação foi estruturada para garantir fluidez no fluxo de tarefas, clareza na navegação e controle total do usuário sobre os dados que estão sendo manipulados, com base na análise da arquitetura inicial do projeto e dos requisitos funcionais desenvolvidos. Além disso, foi considerado que o sistema já utilizado pelo parceiro já contempla funcionalidades de armazenamento histórico, de modo que o escopo deste sistema local foca exclusivamente na inspeção, análise e geração de relatórios.
+## Diagrama
 
-adiciona imagem
+A arquitetura da informação foi estruturada para garantir fluidez no fluxo de tarefas, clareza na navegação e controle total do usuário sobre os dados que estão sendo manipulados, com base na análise da arquitetura inicial do projeto, encontrada na seção que aborda o escopo técnico do projeto, e nas necessidades das personas, encontrada em um outro arquivo da seção de design centrado no usuário. Além disso, foi considerado que o sistema já utilizado pelo parceiro já contempla funcionalidades de armazenamento histórico, de modo que o escopo deste sistema local foca exclusivamente na inspeção, análise e geração de relatórios.
+
+<p style={{textAlign: 'center'}}>Figura 1: Diagrama da Arquitetura da Informação</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/arquiteturaInfo.png").default} style={{width: 800}} alt="Imagem informativa de Mariana Ribeiro." />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 O ponto de entrada do sistema é a Tela Inicial, que apresenta duas funções principais: iniciar uma nova inspeção, acessar o relatório gerado. A funcionalidade de "Nova Inspeção" conduz o usuário por uma sequência organizada de tarefas, começando pelo preenchimento dos metadados da obra (nome da edificação, data da inspeção e observações relevantes). Em seguida, é realizado o upload das imagens capturadas das fachadas ou andares. O formulário exige que cada imagem seja associada a uma fachada específica (Norte, Sul, Leste ou Oeste) ou ao andar correspondente da edificação, permitindo assim uma segmentação espacial para uma leitura técnica e precisa, refletindo diretamente na distribuição das patologias identificadas para o relatório final.
 

@@ -7,7 +7,7 @@ custom_edit_url: null
 
 ## Conceito
 
-&emsp;Dentro de um projeto, as User Stories são fundamentais para traduzir as necessidades dos usuários em requisitos claros e focados. Elas descrevem, de maneira simples e eficaz, o que o usuário precisa realizar na plataforma e qual benefício espera alcançar. Isso garante que as funcionalidades desenvolvidas estejam alinhadas com os fluxos reais de trabalho e objetivos da persona.
+&emsp; Após a elaboração das [personas](../ux-ui/Personas.md), é necessário identificar as principais funcionalidades que devem estar presentes na aplicação para atender às suas necessidades. Nesse contexto, as User Stories são fundamentais para traduzir as necessidades dos usuários em requisitos claros e focados. Elas descrevem, de maneira simples e eficaz, o que o usuário precisa realizar na plataforma e qual benefício espera alcançar. Isso garante que as funcionalidades desenvolvidas estejam alinhadas com os fluxos reais de trabalho e objetivos da persona.
 
 ## User Stories - Mariana Ribeiro
 
@@ -15,19 +15,9 @@ custom_edit_url: null
 
 A seguir, estão as User Stories elaboradas para guiar o desenvolvimento do sistema para atender às suas necessidades específicas.
 
-
-####  Login no sistema de análise
-| - | 01 |
-| --- | --- |
-| Persona | Mariana Ribeiro - Pesquisadora |
-| User Story | "Como pesquisadora, quero realizar login de forma segura e rápida para acessar o sistema de análise de fissuras sem perder tempo no início do trabalho." |
-| Critério de aceite 1 | CR1: Carolina deve poder inserir suas credenciais (e-mail institucional e senha) para acessar o sistema. |
-| Critério de aceite 2 | CR2: Em caso de erro de login, o sistema deve oferecer a opção de recuperação de senha via e-mail institucional. |
----
-
 #### Analisar imagens de fachadas para detecção de fissuras
 
-| -- | 02 |
+| -- | 01 |
 | --- | --- |
 | Persona | Mariana Ribeiro - Pesquisadora |
 | User Story | "Como pesquisadora, quero visualizar e analisar imagens de fachadas para identificar automaticamente fissuras e classificá-las por gravidade." |
@@ -37,7 +27,7 @@ A seguir, estão as User Stories elaboradas para guiar o desenvolvimento do sist
 
 
 #### Gerar relatórios técnicos automáticos
-| -- | 03 |
+| -- | 02 |
 | --- | --- |
 | Persona | Mariana Ribeiro - Pesquisadora|
 | User Story | "Como pesquisadora, quero gerar relatórios técnicos automáticos a partir das análises de fissuras para documentar o estado das fachadas de forma prática e padronizada." |

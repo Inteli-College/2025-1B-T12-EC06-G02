@@ -9,7 +9,7 @@ A arquitetura de software representa o alicerce fundamental sobre o qual todo o 
 
 Para considerar a arquitetura inicial, toma-se como base a ideia de MVP do projeto, que consiste em quatro funções: detecção de fissuras em revestimentos de argamassa, interface para visualização das fissuras identificadas, geração de relatórios de forma automatizada sobre as fissuras, e um sistema de alertas para notificar sobre fissuras que demandam atenção imediata. 
 
-Dessa maneira, a arquitetura inicial proposta foi estruturada de forma a atender de forma eficiente estes e outros requisitos, que podem ser consultados na seção de "Requisitos Funcionais". Além disso, ela foi estruturada em módulos, que serão detalhados adiante.
+Dessa maneira, a arquitetura inicial proposta foi estruturada de forma a atender de forma eficiente estes e outros requisitos, que podem ser consultados na seção de [Requisitos Funcionais](./Requisitos_Funcionais.md). Além disso, ela foi estruturada em módulos, que serão detalhados adiante.
 
 De forma resumida, tem-se o módulo de captura, constituído por drone equipado com câmera de alta resolução para aquisição das imagens das fachadas; (2) o sistema de inteligência artificial, responsável pelo processamento das imagens, detecção e classificação das fissuras quanto à sua gravidade; (3) o backend, que integra a API REST e o processador de dados, gerenciando o fluxo de informações e o armazenamento em banco de dados; e (4) o frontend, que disponibiliza a interface do usuário, o gerador de relatórios e o sistema de alertas.
 
@@ -59,7 +59,7 @@ Esse fluxo pode ser visualizado no diagrama abaixo.
 ## Interação Humana e Verificação Manual
 Um aspecto dessa arquitetura que foi pensado pelo grupo e deve ser mencionado é a possibilidade de intervenção humana no processo de análise. Ele permite que o pesquisador do projeto possa realizar análises manuais de imagens nas quais a IA não alcançou um alto nível de acurácia. Esta característica é implementada através de uma interface específica no frontend, onde imagens com baixa confiabilidade de classificação são sinalizadas para revisão.
 
-Essa arquitetura atende aos requisitos e necessidades do parceiro de forma eficiente. A representação dela pode ser encontrada no diagrama abaixo.
+Essa arquitetura atende aos requisitos e necessidades do parceiro de forma eficiente, considerando tanto os [Requisitos Funcionais](./Requisitos_Funcionais.md) quanto os [Requisitos Não Funcionais](./Requisitos_Nao_Funcionais.md) estabelecidos para o projeto. A representação dela pode ser encontrada no diagrama abaixo.
 
 ```mermaid
 flowchart TB

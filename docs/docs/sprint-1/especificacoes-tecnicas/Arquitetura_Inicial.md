@@ -105,3 +105,5 @@ flowchart TB
     proc <-->|"Armazenamento/Consulta"| db
     proc -->|"Dados Processados"| ui
 ```
+
+Dessa forma, a arquitetura inicial proposta estabelece fundamentos sólidos para o sistema de detecção de fissuras, integrando tecnologias de captura, processamento inteligente e visualização de forma coesa. Além dos aspectos técnicos abordados, um elemento fundamental que deverá ser incorporado é a conformidade com normas técnicas de engenharia, como a NBR 15575, garantindo que o sistema produza documentação válida do ponto de vista legal e regulatório. Esta conformidade fortalecerá a aplicabilidade prática da solução no mercado, transformando dados visuais em informações técnicas que atendam tanto às necessidades tecnológicas quanto às exigências do setor.

@@ -32,7 +32,7 @@ Um software para a detecção e monitoramento de fissuras em edificações que u
 
 ## Apresentações da Sprint Review
 
-- Sprint 1: Em breve
+- Sprint 1: [Link da Apresentação](https://www.canva.com/design/DAGmDGK0Juw/5zK5xsdb1bs6sSiYo70f0Q/edit?utm_content=DAGmDGK0Juw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - Sprint 2: Em breve
 - Sprint 3: Em breve
 - Sprint 4: Em breve

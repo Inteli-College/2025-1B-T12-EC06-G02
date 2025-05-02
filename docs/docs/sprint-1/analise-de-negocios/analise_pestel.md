@@ -5,19 +5,32 @@ slug: /sprint-1/analise-de-negocios/analise-pestel
 
 # Análise PESTEL
 
+&emsp; Nesta sprint, diversas metodologias foram empregadas com o objetivo de proporcionar à SOD uma compreensão aprofundada tanto da solução a ser entregue quanto do papel de sua equipe na resolução do problema em questão. Dentre os instrumentos utilizados, destacam-se o [Canvas Proposta de Valor](./Canva_proposta_de_Valor.md), o [Business Model Canvas](./Business_Model_Canvas.md) e a [Matriz de Risco](./Matriz_de_Risco.md), os quais auxiliaram na construção de uma visão estratégica do projeto.
+
+&emsp; Todavia, nenhuma dessas ferramentas seria suficiente sem a devida análise do contexto em que o parceiro se encontra inserido. Isso, pois esse fator influencia diretamente a viabilidade da iniciativa. Sendo assim, recorre-se à análise PESTEL, buscando-se responder às seguintes perguntas:  
+- *Essa solução é possível de ser implementada no cenário brasileiro?*  
+- *As imposições legais sobre o parceiro o restringem de alguma forma a obter a solução da SOD?*  
+- *Essa solução está em um ambiente propício para ser acelerada/aprimorada?*
+
+&emsp; As respostas a tais questões serão delineadas na seção a seguir, permitindo um juízo mais acurado acerca da pertinência e do potencial da solução proposta.
+
+## Por que usar a Análise PESTEL?
+
 &emsp; Existem diversas metodologias para avaliar o cenário em que uma empresa está inserida, bem como a viabilidade de um novo negócio nesse contexto. A escolha da abordagem mais adequada dependerá do tipo de ambiente a ser analisado (Cláudio Perin, 2024). Cláudio Perin (2024) propõe três categorias de ambiente: **interno**, **operacional** e **contextual**.
 
 &emsp; Os dois primeiros dizem respeito ao ambiente interno da empresa. O **ambiente interno** refere-se às forças e fraquezas organizacionais, enquanto o **ambiente operacional** está relacionado ao cenário competitivo em que a empresa atua. Para esses casos, ferramentas como as **Cinco Forças de Porter** e o **framework VRIO** são particularmente indicadas.
 
-&emsp; Já o **ambiente contextual** abrange fatores externos e mais amplos, indiretamente relacionados à empresa e ao seu modelo de negócios. É nesse contexto que se aplica a **Análise PESTEL**, que considera os fatores **Políticos**, **Econômicos**, **Sociais**, **Tecnológicos**, **Ambientais** (do inglês, *Environmental*) e **Legais**. A seguir, exploraremos cada um desses aspectos.
+&emsp; Já o **ambiente contextual** abrange fatores externos e mais amplos, indiretamente relacionados à empresa e ao seu modelo de negócios. É nesse contexto que se aplica a **Análise PESTEL**, que considera os fatores **Políticos**, **Econômicos**, **Sociais**, **Tecnológicos**, **Ambientais** (do inglês, *Environmental*) e **Legais**. A seguir, exploraremos cada um desses aspectos. Essa análise é especialmente indicada no caso do IPT, pois trata-se de um órgão público.
 
 :::warning [Aviso]
 A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diretamente suas iniciativas, modelo de negócios e área de atuação (Suhr, 2021). Nessa análise, focar-se-á em especial em políticas que afetem o projeto de visão computacional.
 :::
 
-## Fatores Políticos
+## Análise 
 
-&emsp; Este fator examina políticas governamentais, regulamentações e a estabilidade política que possam acelerar ou dificultar o desenvolvimento de uma empresa (Suhr, 2021). Tais aspectos são especialmente relevantes no caso do IPT, por se tratar de um órgão público vinculado ao Governo do Estado de São Paulo.
+### 1. Fatores Políticos
+
+&emsp; Este fator examina políticas governamentais, regulamentações e a estabilidade política que possam acelerar ou dificultar o desenvolvimento de uma empresa (Suhr, 2021). Tais aspectos são especialmente relevantes no caso do IPT, por se tratar de um órgão público vinculado ao Governo do Estado de São Paulo, como já citado.
 
 &emsp; Um dos elementos mais favoráveis atualmente é a existência de incentivos governamentais, tanto em âmbito federal quanto estadual, voltados à promoção da inovação. Essa convergência tem viabilizado articulações institucionais mais eficazes e atraído investimentos para o Estado, contribuindo para um ambiente político mais estável e cooperativo. O próprio IPT desenvolve projetos de pesquisa, desenvolvimento e inovação (PD&I) em parceria com empresas que se beneficiam de políticas como a Lei do Bem e a Lei da Informática (INSTITUTO DE PESQUISAS TECNOLÓGICAS, s.d).
 
@@ -29,9 +42,9 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 &emsp; Diante disso, conclui-se que, embora o cenário político nacional apresente desafios esporádicos, o IPT encontra-se politicamente resguardado. Sua atuação está sustentada por marcos legais robustos, alinhamento entre os governos estadual e federal e uma estrutura administrativa orientada à inovação e ao serviço público.
 
-## Fatores Econômicos
+### 2. Fatores Econômicos
 
-&emsp; Considera-se aqui o impacto da conjuntura econômica sobre a empresa. Aspectos como inflação e taxa de juros influenciam diretamente o desempenho dos negócios, uma vez que afetam tanto a demanda por seus produtos quanto as opções de financiamento disponíveis (Suhr, 2021). Esses dois indíces foram analisados mais detalhadamente neste projeto, mesmo que a análise econômicas possa também ser abordada em termos de nível de renda da população e empregabilidade (Suhr, 2021)
+&emsp; Considera-se aqui o impacto da conjuntura econômica sobre a empresa. Aspectos como inflação e taxa de juros influenciam diretamente o desempenho dos negócios, uma vez que afetam tanto a demanda por seus produtos quanto as opções de financiamento disponíveis (Suhr, 2021). Esses dois índices foram analisados mais detalhadamente neste projeto, mesmo que a análise econômica possa também ser abordada em termos de nível de renda da população e empregabilidade (Suhr, 2021)
 
 &emsp; No cenário atual, observa-se um aumento significativo no Índice de Preços ao Produtor (IPP), que acumulou alta de 9,69% nos últimos 12 meses — o maior avanço desde a pandemia de Covid-19 (Valor Econômico, 2025). Além disso, o setor da construção civil, que representa uma importante fatia do mercado atendido pelo Laboratório de Materiais para Produtos de Construção do IPT, também apresenta sinais de pressão inflacionária.
 
@@ -41,7 +54,7 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 &emsp; Portanto, embora haja alguma estabilidade no setor industrial diretamente relacionado ao IPT, o cenário econômico geral se mostra adverso, marcado por inflação elevada, juros altos e aumento dos custos no setor da construção. Esses fatores impõem desafios à manutenção da competitividade e à viabilidade de novos investimentos, configurando um ambiente econômico desfavorável.
 
-## Fatores Sociais
+### 3. Fatores Sociais
 
 &emsp; Analisam-se, neste fator, os elementos demográficos, culturais e comportamentais da sociedade. Em especial, investiga-se a receptividade do público aos produtos e serviços da empresa, bem como características sociais que possam afetar instituições como o IPT. Visa-se, desta forma, compreender as preferências dos consumidores, alinhar a viabilidade de um negócio ou até estratégias de marketing (Perin, 2024; Suhr, 2021).
 
@@ -56,13 +69,13 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 &emsp; Em suma, as preferências dos brasileiros — tanto do consumidor comum quanto do empresariado — demonstram crescente afinidade com o uso de tecnologias, o que representa uma excelente oportunidade para os negócios do IPT e para os clientes que contratam seus serviços. Essa tendência é evidenciada pela composição majoritária da receita do instituto baseada na venda de projetos. Entretanto, o presente desvio social na sociedade brasileira impõe desafios importantes, como o combate à fraude, ao contrabando, à pirataria e à garantia da segurança dos funcionários da instituição em suas operações.
 
 
-## Fatores Tecnológicos
+### 4. Fatores Tecnológicos
 
 &emsp; No aspecto dos fatores tecnológicos, avalia-se o nível de desenvolvimento tecnológico do ambiente em que a empresa opera, incluindo acesso à infraestrutura, inovação, automação e disponibilidade de mão de obra qualificada na área de tecnologia (Suhr, 2021). Nesse sentido, apesar do avanço de iniciativas pontuais em inovação, o cenário tecnológico brasileiro ainda enfrenta sérios entraves estruturais. 
 
 &emsp; Por exemplo, boa parte da indústria nacional opera com maquinário obsoleto. Segundo levantamento da Confederação Nacional da Indústria (CNI), apenas 2% das empresas possuem máquinas com até 2,5 anos de uso, enquanto 28% utilizam equipamentos com 10 a 15 anos de idade, sendo que a média de idade das máquinas e equipamentos industriais é de 14 anos (Silva, 2023). Isso tem relação com os fatores econômicos já analisados. Gino Paulucci Jr., presidente do conselho da Associação Brasileira da Indústria de Máquinas e Equipamentos (Abimaq), aponta que as elevadas taxas de juros limitam severamente a capacidade de investimento das empresas, perpetuando esse cenário de defasagem tecnológica (Silva, 2023).
 
-&emsp; Ademias, os setores da economia brasileira com maior participação no Produto Interno Bruto (PIB) são justamente aqueles menos intensivos em pesquisa, desenvolvimento e inovação. Enquanto nas economias da Organização para a Cooperação e Desenvolvimento Econômico (OCDE) predominam segmentos de alta tecnologia, como equipamentos eletrônicos, automotivos, farmacêuticos e de softwares, no Brasil ainda predominam setores de baixa e média-baixa intensidade tecnológica (Nunes, 2019). Esse descompasso compromete o alcance da fronteira tecnológica e afeta negativamente a competitividade do país.
+&emsp; Ademais, os setores da economia brasileira com maior participação no Produto Interno Bruto (PIB) são justamente aqueles menos intensivos em pesquisa, desenvolvimento e inovação. Enquanto nas economias da Organização para a Cooperação e Desenvolvimento Econômico (OCDE) predominam segmentos de alta tecnologia, como equipamentos eletrônicos, automotivos, farmacêuticos e de softwares, no Brasil ainda predominam setores de baixa e média-baixa intensidade tecnológica (Nunes, 2019). Esse descompasso compromete o alcance da fronteira tecnológica e afeta negativamente a competitividade do país.
 
 &emsp; Paralelamente, a educação, pilar fundamental para a inovação tecnológica, também representa um desafio. Especialistas alertam para a baixa qualidade do ensino brasileiro em comparação com países concorrentes no mercado global, o que compromete a formação de profissionais criativos e inovadores — essenciais para o desenvolvimento tecnológico sustentado (Nunes, 2019).
 
@@ -70,20 +83,20 @@ A Análise PESTEL foca em fatores externos à empresa, mas que influenciam diret
 
 &emsp; Em síntese, o acesso a equipamentos modernos no Brasil é escasso, o país investe ainda pouco em tecnologia e há escassez de mão de obra qualificada. Tais fatores representam obstáculos significativos para empresas como o IPT, que dependem de um ambiente tecnologicamente desenvolvido para promover soluções de vanguarda.
 
-## Fatores Ambientais
+### 5. Fatores Ambientais
 
 &emsp; Este aspecto envolve condições naturais como clima, vegetação e relevo, que podem impactar tanto o ramo de atuação da empresa quanto o bem-estar dos seus colaboradores. Também se incluem aqui preocupações com sustentabilidade e regulamentações ambientais (Suhr, 2021). Em relação ao IPT, por se tratar de uma empresa de tecnologia, o clima, vegetação e relevo do ambiente, apesar de considerados para entender onde sediar a organização, estes não são elementos relevantes para essa análise.
 
-&emsp; Por outro lado, deve-se atentar aos indíces de poluição da cidade de São Paulo que podem afetar significativamente à saúde dos trabalhadores. Em 2024, São Paulo ficou, por dois dias consecutivos, no topo do ranking de cidade mais poluída do mundo, de acordo com o monitoramento agência suíça IQAir (Laforé, 2024). Isso adicionado à baixa umidade relativa do ar, cria situações de restrição para os trabalhadores paulistas que, segundo recomendação da Defesa Civil, deveriam "manter-se bem hidratado, proteger-se do sol, manter ambientes internos úmidos através de vaporizadores, toalhas molhadas e recipientes com água, além de evitar exercícios físicos ao ar livre nas horas mais quentes".
+&emsp; Por outro lado, deve-se atentar aos índices de poluição da cidade de São Paulo que podem afetar significativamente a saúde dos trabalhadores. Em 2024, São Paulo ficou, por dois dias consecutivos, no topo do ranking de cidade mais poluída do mundo, de acordo com o monitoramento agência suíça IQAir (Laforé, 2024). Isso adicionado à baixa umidade relativa do ar, cria situações de restrição para os trabalhadores paulistas que, segundo recomendação da Defesa Civil, deveriam "manter-se bem hidratado, proteger-se do sol, manter ambientes internos úmidos através de vaporizadores, toalhas molhadas e recipientes com água, além de evitar exercícios físicos ao ar livre nas horas mais quentes".
 
 &emsp; Com relação às regulamentações governamentais acerca de sustentabilidade e uso de materiais poluidores, destaca-se que "o IPT, devido à sua natureza jurídica, é isento de licenciamento ambiental e outras licenças" (INSTITUTO DE PESQUISAS TECNOLÓGICAS, 2024). Não obstante, por se encontrar nas adjacências da Reserva Florestal da Cidade Universitária “Armando de Salles Oliveira” - CUASO, trata-se de uma boa prática verificar a preservação da fauna e flora da região.
 
 &emsp; Em suma, embora fatores naturais como clima e relevo tenham impacto limitado na operação do IPT, aspectos ambientais como a poluição atmosférica e a umidade relativa do ar demandam atenção constante, especialmente em função do bem-estar dos colaboradores. Do ponto de vista institucional, mesmo que o instituto esteja isento de licenciamento ambiental, sua localização em área sensível ambientalmente impõe a adoção de medidas de monitoramento e mitigação como forma de demonstrar responsabilidade socioambiental e alinhamento com boas práticas de governança.
 
 
-## Fatores Legais
+### 6. Fatores Legais
 
-&emsp; No âmbito legal, a principal preocupação do IPT é adequar-se à Lei nº 896, de 17 de dezembro de 1975, que trata das suas funções e objetivos. Por ser uma empresa pública, esse instituto está isento da maioria das licenças necessárias. Entretanto, o IPT deve estar atento aos seguintes certificados, como pode-se ver nos seus [documentos institucionais](https://ipt.br/documentos-institucionais/):
+&emsp; No âmbito legal, a principal preocupação do IPT é adequar-se à Lei nº 896, de 17 de dezembro de 1975, que trata das suas funções e objetivos. Por ser uma empresa pública, esse instituto está isento da maioria das licenças necessárias. Entretanto, o IPT deve estar atento aos seguintes certificados, como se pode ver nos seus [documentos institucionais](https://ipt.br/documentos-institucionais/):
 
 - Auto de Vistoria do Corpo de Bombeiros (AVCB);
 - Certificado de Regularidade das edificações - Prefeitura Municipal de São Paulo
@@ -105,7 +118,20 @@ Para a obtenção do alvará de funcionamento.
 
 &emsp; Já em relação aos aspectos dificultadores, cita-se a corrupção pública e privada, a crise econômica e a poluição da cidade sede. Relacionados à diferentes fatores, essas características do ambiente contextual são prejudiciais ao financiamento do projeto, implementação em larga escala e bem-estar dos trabalhadores. Frisa-se, porém, que esses aspectos são apenas dificultadores e não inviabilizadores.
 
-&emsp; Conclui-se, portanto, a análise PESTEL com uma perspectiva otimista que se traduz no crescimento recente da venda de projetos do IPT e a ascensão de ferramentas de inteligência artificial.
+### Respostas
+
+&emsp; Conclui-se, portanto, a análise PESTEL sob uma ótica predominantemente otimista, cujas respostas às indagações iniciais reafirmam a viabilidade e o potencial da solução proposta:
+
+- **"Essa solução é possível de ser implementada no cenário brasileiro?"**  
+  **R:** Sim. Observa-se que tanto o governo quanto o setor empresarial demonstram receptividade a propostas dessa natureza. Contudo, é imperioso atentar-se à escalabilidade do projeto, de modo a mitigar riscos atrelados à corrupção e à criminalidade, bem como garantir sua sustentabilidade financeira, especialmente frente às elevadas taxas de juros vigentes.
+
+- **"As imposições legais sobre o parceiro o restringem de alguma forma a obter a solução da SOD?"**  
+  **R:** Não. Ao contrário, o arcabouço legal vigente faculta ao parceiro o direito de utilizar tal solução e inclusive de "requerer o registro de patentes e de direitos de pesquisas" conforme disposto no Art. 2º, parágrafo VIII (São Paulo, 1975), desde que tal prerrogativa esteja em conformidade com o objetivo maior do referido artigo, a saber: "atender à demanda de ciência e tecnologia dos setores público e privado [...] bem como contribuir para o desenvolvimento do conhecimento científico e tecnológico".
+
+- **"Essa solução está em um ambiente propício para ser acelerada/aprimorada?"**  
+  **R:** Sim. Do ponto de vista jurídico-institucional, verifica-se que é incumbência do Instituto "formar e desenvolver equipes de pesquisa, capazes de contribuir para o equacionamento e a solução de problemas de tecnologia industrial do Estado e do País" (Art. 2º, inciso III – São Paulo, 1975). Assim, finda a presente Prova de Conceito (POC), a estrutura do Instituto se revela adequada para o contínuo aperfeiçoamento do projeto. Ademais, as recentes iniciativas do Governo Estadual corroboram um ambiente fértil ao florescimento da inteligência artificial e demais inovações tecnológicas. Apesar das adversidades econômicas e de escândalos envolvendo outras entidades públicas, a credibilidade institucional do IPT lhe confere relativa estabilidade e prestígio.
+
+
 
 
 ## Bibliografia
@@ -140,7 +166,7 @@ INSTITUTO DE PESQUISAS TECNOLÓGICAS. *Apresentação Institucional ao Inteli*. 
 
 INSTITUTO DE PESQUISAS TECNOLÓGICAS. *Folder Institucional*. Instituto de Pesquisas Tecnológicas. Disponível em: https://ipt.br/wp-content/uploads/2024/03/Folder-Institucional-IPT.pdf. Acesso em: 29 abr. 2025.
 
-INSTITUTO DE PESQUISAS TECNOLÓGICAS. RELATÓRIO DE SUSTENTABILIDADE 2024IPT. [s.l: s.n.]. Disponível em: <https://ipt.br/wp-content/uploads/2025/04/Relatorio-de-Sustentabilidade-2024-1.pdf>. Acesso em: 29 abr. 2025.
+INSTITUTO DE PESQUISAS TECNOLÓGICAS. RELATÓRIO DE SUSTENTABILIDADE 2024IPT. [s.l: s.n.]. Disponível em: https://ipt.br/wp-content/uploads/2025/04/Relatorio-de-Sustentabilidade-2024-1.pdf. Acesso em: 29 abr. 2025.
 
 NUNES, J. S. Cinco fatores que distanciam o Brasil da fronteira tecnológica. Gazetadopovo.com.br, 4 jul. 2019. 
 

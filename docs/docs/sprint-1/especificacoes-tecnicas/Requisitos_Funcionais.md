@@ -6,7 +6,7 @@ custom_edit_url: null
 # Requisitos Funcionais
 
 ## Introdução
-Os requisitos funcionais representam as funcionalidades específicas que o sistema deve possuir para atender às necessidades dos usuários e cumprir seus objetivos. Eles descrevem de forma clara e objetiva o que o software deve realizar, orientando o desenvolvimento e garantindo que os resultados esperados sejam alcançados.
+Os requisitos funcionais representam as funcionalidades específicas que o sistema deve possuir para atender às necessidades dos usuários e cumprir seus objetivos. Esses requisitos são formados a base da nossa visão geral da função do software e da [Arquitetura Inicial](./Arquitetura_Inicial.md). Eles descrevem de forma clara e objetiva o que o nosso software deve realizar, orientando o desenvolvimento e garantindo que os resultados esperados sejam alcançados.
 
 Cada funcionalidade a seguir é acompanhada do seu propósito e identifica o tipo de usuário que irá interagir com ela.
 

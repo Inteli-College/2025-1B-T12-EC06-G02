@@ -6,7 +6,7 @@ custom_edit_url: null
 # Requisitos Não Funcionais
 
 ## Introdução
-Os requisitos não funcionais especificam os padrões de qualidade que o sistema deve seguir, abordando aspectos como desempenho, usabilidade, confiabilidade e escalabilidade. Embora não definam funcionalidades diretas, são essenciais para assegurar que o sistema opere corretamente, sendo eficiente e de alta qualidade para a experiência do usuário.
+Os requisitos não funcionais, diferente dos requisitos funcionais, especificam os padrões de qualidade que o sistema deve seguir, abordando aspectos como desempenho, usabilidade, confiabilidade e escalabilidade. Embora não definam funcionalidades diretas, são essenciais para assegurar que o nosso sistema opere corretamente, sendo eficiente e de alta qualidade para a experiência do usuário.
 
 Esses requisitos foram definidos considerando:
 - A necessidade de rapidez e confiabilidade no ambiente de inspeções prediais.

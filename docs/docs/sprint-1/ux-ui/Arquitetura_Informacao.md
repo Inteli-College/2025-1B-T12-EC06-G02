@@ -11,7 +11,7 @@ A arquitetura da informação é importante por seu papel de estruturar e organi
 
 ## Diagrama
 
-A arquitetura da informação foi estruturada para garantir fluidez no fluxo de tarefas, clareza na navegação e controle total do usuário sobre os dados que estão sendo manipulados, com base na análise da arquitetura inicial do projeto, encontrada na seção que aborda o escopo técnico do projeto, e nas necessidades das personas, encontrada em um outro arquivo da seção de design centrado no usuário. Além disso, foi considerado que o sistema já utilizado pelo parceiro já contempla funcionalidades de armazenamento histórico, de modo que o escopo deste sistema local foca exclusivamente na inspeção, análise e geração de relatórios.
+A arquitetura da informação foi estruturada para garantir fluidez no fluxo de tarefas, clareza na navegação e controle total do usuário sobre os dados que estão sendo manipulados, com base na análise da [Arquitetura Inicial](../especificacoes-tecnicas/Arquitetura_Inicial.md), e nas necessidades das [Personas](../ux-ui/Personas.md). Além disso, foi considerado que o sistema já utilizado pelo parceiro já contempla funcionalidades de armazenamento histórico, de modo que o escopo deste sistema local foca exclusivamente na inspeção, análise e geração de relatórios.
 
 <p style={{textAlign: 'center'}}>Figura 1: Diagrama da Arquitetura da Informação</p>
 <div style={{margin: 25}}>
@@ -34,3 +34,6 @@ Todo o conteúdo é organizado com base em uma estrutura hierárquica simples e 
 
 Importante destacar que não há funcionalidade de histórico incorporada neste sistema local, pois o sistema oficial utilizado pelo parceiro já contempla esse recurso. Dessa forma, este sistema atua de forma complementar e independente, mantendo foco na inspeção e análise pontual. O fluxo de informação respeita a ordem natural da tarefa dos usuários e garante controle, precisão e agilidade em todas as etapas do processo.
 
+## Conclusão 
+
+A arquitetura da informação desenvolvida foi projetada com foco na usabilidade do sistema e na eficiência técnica, refletindo a lógica operacional dos dados pelos profissionais. O sistema organiza o fluxo de trabalho desde o envio das imagens até a geração de relatórios técnicos, promovendo uma navegação intuitiva e funcional. A estrutura hierárquica é simples, com menus e formulários adaptados ao vocabulário técnico dos usuários, evitando sobrecarga de informações e facilitando a execução das tarefas de maneira fluida. O resultado é uma solução precisa, ágil e centrada nas necessidades reais dos técnicos e pesquisadores, contribuindo para o objetivo final de trabalho dos mesmos.

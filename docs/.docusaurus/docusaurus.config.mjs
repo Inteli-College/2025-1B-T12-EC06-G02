@@ -21,6 +21,21 @@ export default {
     "path": "i18n",
     "localeConfigs": {}
   },
+  "themes": [
+    "@docusaurus/theme-mermaid"
+  ],
+  "markdown": {
+    "mermaid": true,
+    "format": "mdx",
+    "mdx1Compat": {
+      "comments": true,
+      "admonitions": true,
+      "headingIds": true
+    },
+    "anchors": {
+      "maintainCase": false
+    }
+  },
   "presets": [
     [
       "classic",
@@ -38,6 +53,18 @@ export default {
     ]
   ],
   "themeConfig": {
+    "colorMode": {
+      "defaultMode": "light",
+      "disableSwitch": false,
+      "respectPrefersColorScheme": true
+    },
+    "mermaid": {
+      "theme": {
+        "light": "neutral",
+        "dark": "dark"
+      },
+      "options": {}
+    },
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
       "title": "SOD",
@@ -280,11 +307,6 @@ export default {
         }
       ]
     },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
-    },
     "docs": {
       "versionPersistence": "localStorage",
       "sidebar": {
@@ -326,23 +348,10 @@ export default {
   ],
   "customFields": {},
   "plugins": [],
-  "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
   "clientModules": [],
   "titleDelimiter": "|",
-  "noIndex": false,
-  "markdown": {
-    "format": "mdx",
-    "mermaid": false,
-    "mdx1Compat": {
-      "comments": true,
-      "admonitions": true,
-      "headingIds": true
-    },
-    "anchors": {
-      "maintainCase": false
-    }
-  }
+  "noIndex": false
 };

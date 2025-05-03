@@ -1,28 +1,28 @@
 {
   "id": "sprint-1/analise-de-negocios/analise_pestel",
   "title": "Análise PESTEL",
-  "description": "Avalia os fatores externos (Políticos, Econômicos, Sociais, Tecnológicos, Ambientais e Legais) que podem influenciar o sucesso do projeto, identificando oportunidades e ameaças no ambiente macro.",
+  "description": "&emsp; Nesta sprint, diversas metodologias foram empregadas com o objetivo de proporcionar à SOD uma compreensão aprofundada tanto da solução a ser entregue quanto do papel de sua equipe na resolução do problema em questão. Dentre os instrumentos utilizados, destacam-se o Canvas Proposta de Valor, o Business Model Canvas e a Matriz de Risco, os quais auxiliaram na construção de uma visão estratégica do projeto.",
   "source": "@site/docs/sprint-1/analise-de-negocios/analise_pestel.md",
   "sourceDirName": "sprint-1/analise-de-negocios",
-  "slug": "/sprint-1/analise-de-negocios/analise_pestel",
-  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise_pestel",
+  "slug": "/sprint-1/analise-de-negocios/analise-pestel",
+  "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise-pestel",
   "draft": false,
   "unlisted": false,
-  "editUrl": null,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/sprint-1/analise-de-negocios/analise_pestel.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 4,
   "frontMatter": {
     "sidebar_position": 4,
-    "custom_edit_url": null
+    "slug": "/sprint-1/analise-de-negocios/analise-pestel"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Canva Proposta de Valor",
+    "title": "Canvas Proposta de Valor",
     "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/Canva_proposta_de_Valor"
   },
   "next": {
-    "title": "Análise de Stakeholders",
+    "title": "Análise dos stakeholders",
     "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise_de_stakeholder"
   }
 }

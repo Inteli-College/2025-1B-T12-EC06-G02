@@ -1,7 +1,7 @@
 {
   "id": "sprint-1/analise-de-negocios/Business_Model_Canvas",
   "title": "Business Model Canvas",
-  "description": "Apresenta o modelo de negócios completo utilizando os 9 blocos do Business Model Canvas, com explicações detalhadas de cada componente (segmentos de clientes, proposta de valor, canais, etc.) e visualização integrada do modelo.",
+  "description": "1. Introdução",
   "source": "@site/docs/sprint-1/analise-de-negocios/Business_Model_Canvas.md",
   "sourceDirName": "sprint-1/analise-de-negocios",
   "slug": "/sprint-1/analise-de-negocios/Business_Model_Canvas",
@@ -22,7 +22,7 @@
     "permalink": "/2025-1B-T12-EC06-G02/category/análise-de-negócios"
   },
   "next": {
-    "title": "Matriz de Risco",
+    "title": "Matriz de Riscos",
     "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/Matriz_de_Risco"
   }
 }

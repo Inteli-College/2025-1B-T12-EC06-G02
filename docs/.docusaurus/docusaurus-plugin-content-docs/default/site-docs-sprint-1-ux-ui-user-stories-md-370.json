@@ -1,7 +1,7 @@
 {
   "id": "sprint-1/ux-ui/User_Stories",
   "title": "User Stories",
-  "description": "Documenta pelo menos quatro histórias de usuário no formato \"Como (persona), quero (necessidade) para (objetivo)\", com contextualização do problema, justificativa da importância e referência direta às personas.",
+  "description": "Conceito",
   "source": "@site/docs/sprint-1/ux-ui/User_Stories.md",
   "sourceDirName": "sprint-1/ux-ui",
   "slug": "/sprint-1/ux-ui/User_Stories",

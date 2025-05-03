@@ -1,7 +1,7 @@
 {
   "id": "sprint-1/analise-de-negocios/analise_de_stakeholder",
-  "title": "Análise de Stakeholders",
-  "description": "Mapeia todos os envolvidos no projeto, avaliando como cada fator externo afeta os diferentes stakeholders e estabelecendo estratégias de gerenciamento de expectativas.",
+  "title": "Análise dos stakeholders",
+  "description": "&emsp; Stakeholder representa o público estratégico, seja um grupo de pessoas ou um indivíduo, que é impactado pelas ações de um empreendimento, de uma empresa, de um negócio ou de um projeto. Nesse sentido, pode-se ser classificado em stakeholders internos e externos à organização, como também primários, com ligação direta ao projeto, e secundários, com ligação indireta ao projeto. Tendo isso em vista, essa análise é fundamental para uma compreensão inicial de todas as pessoas que utilizarão ou serão impactadas pela solução a ser desenvolvida, permitindo, assim, a construção de um escopo coerente com as necessidades desse público. Assim, segue a classificação dos stakeholders do presente projeto:",
   "source": "@site/docs/sprint-1/analise-de-negocios/analise_de_stakeholder.md",
   "sourceDirName": "sprint-1/analise-de-negocios",
   "slug": "/sprint-1/analise-de-negocios/analise_de_stakeholder",
@@ -19,7 +19,7 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Análise PESTEL",
-    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise_pestel"
+    "permalink": "/2025-1B-T12-EC06-G02/sprint-1/analise-de-negocios/analise-pestel"
   },
   "next": {
     "title": "Escopo Técnico do Projeto",

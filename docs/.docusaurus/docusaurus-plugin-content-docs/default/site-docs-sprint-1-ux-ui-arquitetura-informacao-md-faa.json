@@ -1,7 +1,7 @@
 {
   "id": "sprint-1/ux-ui/Arquitetura_Informacao",
   "title": "Arquitetura da Informação",
-  "description": "Estabelece a estrutura de navegação do sistema com diagramas de relação entre informações (sitemap) e sequência de acesso (fluxo do usuário), demonstrando como o conteúdo é organizado para facilitar a interação das personas.",
+  "description": "Contexto",
   "source": "@site/docs/sprint-1/ux-ui/Arquitetura_Informacao.md",
   "sourceDirName": "sprint-1/ux-ui",
   "slug": "/sprint-1/ux-ui/Arquitetura_Informacao",

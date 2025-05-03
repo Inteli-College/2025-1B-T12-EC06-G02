@@ -1,7 +1,7 @@
 {
   "id": "sprint-1/especificacoes-tecnicas/Arquitetura_Inicial",
   "title": "Arquitetura Inicial",
-  "description": "Apresenta a proposta arquitetural do sistema, descrevendo os módulos principais, suas responsabilidades, as interfaces entre componentes e as tecnologias previstas, acompanhada de diagramas explicativos.",
+  "description": "A arquitetura de software representa o alicerce fundamental sobre o qual todo o sistema é construído, definindo sua estrutura, comportamento e propriedades essenciais. Para o sistema óptico de detecção [de fissuras em revestimentos], uma arquitetura bem planejada é crucial pois fornece uma visão clara da organização e integração dos componentes do sistema, facilita a comunicação entre equipes técnicas e stakeholders do projeto, permite a identificação precoce de riscos e pontos de atenção, estabelece as bases para a escalabilidade e manutenibilidade do software, assegura que requisitos não-funcionais como desempenho, segurança e usabilidade sejam adequadamente atendidos, e define os limites e interfaces entre os diferentes módulos, facilitando o desenvolvimento paralelo",
   "source": "@site/docs/sprint-1/especificacoes-tecnicas/Arquitetura_Inicial.md",
   "sourceDirName": "sprint-1/especificacoes-tecnicas",
   "slug": "/sprint-1/especificacoes-tecnicas/Arquitetura_Inicial",

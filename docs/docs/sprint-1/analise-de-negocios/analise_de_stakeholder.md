@@ -27,10 +27,10 @@ custom_edit_url: null
 * Parceiros tecnológicos: Empresas fornecedoras de equipamentos tecnológicos, como drones e câmeras de captura de imagem de grande resolução.   
 * Proprietários de edifícios: Pessoas ou organizações que detêm a posse dos imóveis e se interessam por sua valorização, manutenção e segurança, como condomínios. 
 
-<p style={{textAlign: 'center'}}>Figura 2: Persona Carlos Eduardo - Técnico</p>
+<p style={{textAlign: 'center'}}>Figura 1: Análise de stakeholder</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("../../../static/img/Matrix.png").default} style={{width: 800}} alt="Imagem informativa de Carolina Silva." />
+        <img src={require("../../../static/img/Matrix.png").default} style={{width: 800}} alt="Análise de Stakeholders" />
         <br />
     </div>
 </div>

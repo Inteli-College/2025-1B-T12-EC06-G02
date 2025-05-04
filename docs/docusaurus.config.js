@@ -94,14 +94,14 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/',
+                label: 'Github',
+                to: 'https://github.com/Inteli-College/2025-1B-T12-EC06-G02',
               },
             ],
           },
           // Resto do footer continua igual
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SOD, todos os direitos reservados`,
       },
       prism: {
         theme: prismThemes.github,

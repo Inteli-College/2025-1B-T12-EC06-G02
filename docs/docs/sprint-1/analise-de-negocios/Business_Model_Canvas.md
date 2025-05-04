@@ -10,16 +10,6 @@ custom_edit_url: null
 &emsp;O Business Model Canvas é uma ferramenta estratégica que permite visualizar e estruturar os principais elementos de um modelo de negócios. Ele é composto por nove blocos que abrangem desde a proposta de valor até os segmentos de mercado, canais de distribuição, fontes de receita, estrutura de custos, entre outros. Essa abordagem facilita a análise e o planejamento de como uma organização cria, entrega e captura valor.
 &emsp;Este documento possui como foco criar um produto de fácil uso, que aumente a segurança estrutural, reduza custos de manutenção corretiva e otimize a gestão predial preventiva.
 
-<div align="center" width="100%">
-
-<sub>Figura 1 - Business Model Canvas</sub>
-
-![Business Model Canvas - Instituto de Pesquisas Tecnológicas](/img/Business-Model-Canvas.svg)
-
-<sup>Fonte: Autoria própria </sup>
-
-</div>
-
 <p style={{textAlign: 'center'}}>Figura 1: Business Model Canvas</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>

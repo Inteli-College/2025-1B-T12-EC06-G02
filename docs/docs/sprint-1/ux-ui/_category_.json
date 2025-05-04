@@ -1,0 +1,8 @@
+{
+  "label": "Design Centrado no Usuário",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Reúne os elementos que sustentam o design da interface do sistema com foco na experiência do usuário. Isso inclui perfis de usuários (personas), suas histórias de uso (user stories), e a estrutura da navegação da interface (arquitetura da informação).",
+  }
+}

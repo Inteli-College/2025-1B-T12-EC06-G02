@@ -3,15 +3,18 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'SOD',
+  tagline: 'SOD',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  // Set the production url of your site here
+  url: 'https://Inteli-College.github.io',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/2025-1B-T12-EC06-G02/',
 
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'Inteli-College', // Usually your GitHub org/user name.
+  projectName: '2025-1B-T12-EC06-G02', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -19,6 +22,11 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+  },
+
+  themes: ['@docusaurus/theme-mermaid'],
+  markdown: {
+    mermaid: true,
   },
 
   presets: [
@@ -39,29 +47,41 @@ const config = {
       }),
     ],
   ],
-  
-  // REMOVA O PLUGIN DE REDIRECIONAMENTO
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Configure color mode explicitly
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+      // Enable mermaid in the theme config
+      mermaid: {
+        theme: {
+          light: 'neutral',
+          dark: 'dark',
+        },
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'SOD',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'logo SOD',
+          src: 'img/logo.png',
+          srcDark: 'img/logo_dark_mode.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentação',
             // Não adicione "to" aqui, pois isso pode causar comportamento inesperado
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Inteli-College/2025-1A-T12-EC05-G02',
             label: 'GitHub',
             position: 'right',
           },
@@ -74,14 +94,14 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/intro',
+                label: 'Github',
+                to: 'https://github.com/Inteli-College/2025-1B-T12-EC06-G02',
               },
             ],
           },
           // Resto do footer continua igual
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SOD, todos os direitos reservados`,
       },
       prism: {
         theme: prismThemes.github,

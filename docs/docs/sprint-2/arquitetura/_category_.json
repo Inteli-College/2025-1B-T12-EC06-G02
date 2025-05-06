@@ -1,0 +1,9 @@
+{
+    "label": "Atualizações da Arquitetura",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "Documentação das alterações realizadas na arquitetura do sistema, incluindo a proposta geral e a estrutura da informação."
+    }
+  }
+  

@@ -1,0 +1,9 @@
+{
+    "label": "Web App",
+    "position": 5,
+    "link": {
+      "type": "generated-index",
+      "description": "Documentação da estrutura do aplicativo web, incluindo layout de páginas e componentes principais."
+    }
+  }
+  

@@ -1,0 +1,9 @@
+{
+    "label": "Diagramas",
+    "position": 3,
+    "link": {
+      "type": "generated-index",
+      "description": "Diagramas de apoio ao desenvolvimento, como o de sequência, para ilustrar o fluxo entre os componentes do sistema."
+    }
+  }
+  

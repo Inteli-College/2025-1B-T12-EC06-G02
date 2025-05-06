@@ -1,0 +1,9 @@
+{
+    "label": "Conexão com Drone",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "Integração do sistema com o hardware do drone, incluindo testes de conectividade e envio de comandos."
+    }
+  }
+  

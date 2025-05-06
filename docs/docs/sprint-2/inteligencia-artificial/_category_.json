@@ -1,9 +1,0 @@
-{
-    "label": "Inteligência Artificial",
-    "position": 2,
-    "link": {
-      "type": "generated-index",
-      "description": "Desenvolvimento do modelo de IA que compõe a lógica preditiva do sistema, incluindo definição de algoritmos e métricas de avaliação."
-    }
-  }
-  

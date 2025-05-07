@@ -7,11 +7,11 @@ custom_edit_url: null
 
 ## Visão Geral do Projeto
 
-Este documento apresenta o protótipo de alta fidelidade desenvolvido para o Sistema Óptico de Detecção (SOD), elaborado no Figma para guiar as funcionalidades do sistema. Este protótipo visual define a interface de usuário para uma solução de detecção e monitoramento automatizado de fissuras em revestimentos de argamassa em fachadas de edifícios, utilizando processamento digital de imagens e inteligência artificial.
+&emsp;Este documento apresenta o protótipo de alta fidelidade desenvolvido para o Sistema Óptico de Detecção (SOD), elaborado no Figma para guiar as funcionalidades do sistema. Este protótipo visual define a interface de usuário para uma solução de detecção e monitoramento automatizado de fissuras em revestimentos de argamassa em fachadas de edifícios, utilizando processamento digital de imagens e inteligência artificial.
 
-O protótipo de alta fidelidade estabelece as diretrizes visuais e funcionais que orientarão o desenvolvimento técnico posterior, garantindo que a solução final atenda às necessidades específicas dos usuários.
+&emsp;O protótipo de alta fidelidade estabelece as diretrizes visuais e funcionais que orientarão o desenvolvimento técnico posterior, garantindo que a solução final atenda às necessidades específicas dos usuários.
 
-## 🎨 [Clique aqui](https://www.figma.com/design/e0U9SYE12jTbnNo0Vsk5wH/SOD--Prot%C3%B3tipo-de-Alta-Fidelidade?node-id=40-2&t=Bu3nD0T638fHJHYe-1) para acessar o Figma do projeto
+### 🎨 [Clique aqui](https://www.figma.com/design/e0U9SYE12jTbnNo0Vsk5wH/SOD--Prot%C3%B3tipo-de-Alta-Fidelidade?node-id=40-2&t=Bu3nD0T638fHJHYe-1) para acessar o Figma do projeto
 
 ## Design Centrado nas Personas
 
@@ -37,7 +37,7 @@ Como técnico experiente em inspeção e monitoramento, Carlos necessita:
 
 ### 1. Tela de Login
 
-A tela de login foi projetada com simplicidade para acesso rápido por ambas as personas, oferecendo segurança sem comprometer a eficiência.
+&emsp;A tela de login foi projetada com simplicidade para acesso rápido por ambas as personas, oferecendo segurança sem comprometer a eficiência.
 
 **Benefícios para Mariana:** Acesso seguro aos dados de pesquisa com credenciais específicas.
 
@@ -63,7 +63,7 @@ A tela de login foi projetada com simplicidade para acesso rápido por ambas as 
 
 ### 2. Tela Inicial (Home)
 
-A home page apresenta as funcionalidades mais utilizadas por ambas as personas, com design intuitivo e foco nas tarefas principais.
+&emsp;A home page apresenta as funcionalidades mais utilizadas por ambas as personas, com design intuitivo e foco nas tarefas principais.
 
 **Benefícios para Mariana:** Acesso direto ao histórico para análise comparativa de dados.
 
@@ -80,7 +80,7 @@ A home page apresenta as funcionalidades mais utilizadas por ambas as personas, 
 
 ### 3. Tela de Upload de Imagens
 
-Interface que permite tanto o upload manual quanto a captura em tempo real via drone, com visualização imediata das imagens.
+&emsp;Interface que permite tanto o upload manual quanto a captura em tempo real via drone, com visualização imediata das imagens.
 
 **Benefícios para Mariana:** Organização sistemática das imagens para análise científica.
 
@@ -97,7 +97,7 @@ Interface que permite tanto o upload manual quanto a captura em tempo real via d
 
 ### 4. Tela de Auditoria de Imagens
 
-Interface que exibe imagens cujo processamento automatizado não atingiu o limiar mínimo de 75% de acurácia, permitindo avaliação individual pelo usuário. Esta etapa garante a qualidade da análise, combinando a automação com a expertise humana.
+&emsp;Interface que exibe imagens cujo processamento automatizado não atingiu o limiar mínimo de 75% de acurácia, permitindo avaliação individual pelo usuário. Esta etapa garante a qualidade da análise, combinando a automação com a expertise humana.
 
 **Benefícios para Mariana:** Controle de qualidade científico sobre o processo automatizado, possibilitando ajustes metodológicos e validação técnica dos resultados.
 
@@ -123,7 +123,7 @@ Interface que exibe imagens cujo processamento automatizado não atingiu o limia
 
 ### 5. Tela de Insights e Relatório
 
-Esta interface apresenta informações técnicas categorizadas, atendendo à necessidade de precisão diagnóstica.
+&emsp;Esta interface apresenta informações técnicas categorizadas, atendendo à necessidade de precisão diagnóstica.
 
 **Benefícios para Mariana:** Categorização científica das fissuras (retração, térmicas) permitindo análises aprofundadas e comparativas.
 
@@ -140,9 +140,10 @@ Esta interface apresenta informações técnicas categorizadas, atendendo à nec
 
 ### 6. Tela de Conexão com Drone
 
-Interface simplificada para conexão com dispositivos de captura, atendendo à necessidade de inspeções remotas.
+&emsp;Interface simplificada para conexão com dispositivos de captura, atendendo à necessidade de inspeções remotas.
 
 **Benefícios para Mariana:** Padronização da captura de imagens para maior consistência nas análises.
+
 **Benefícios para Carlos:** Acesso remoto a áreas de difícil inspeção manual, aumentando a segurança e eficiência.
 
 <p style={{textAlign: 'center'}}>Figura 8: Tela de conexão com o drone</p>
@@ -174,7 +175,7 @@ Interface simplificada para conexão com dispositivos de captura, atendendo à n
 
 ### 7. Tela de Histórico de Relatórios
 
-Interface que permite acesso organizado a todos os relatórios anteriormente gerados pelo sistema, apresentando-os em ordem cronológica com data e hora precisas para fácil identificação.
+&emsp;Interface que permite acesso organizado a todos os relatórios anteriormente gerados pelo sistema, apresentando-os em ordem cronológica com data e hora precisas para fácil identificação.
 
 **Benefícios para Mariana:** Acesso estruturado a relatórios datados com precisão, permitindo correlacionar resultados com diversas variáveis, essencial para estabelecer padrões científicos de evolução das fissuras.
 
@@ -195,7 +196,7 @@ Interface que permite acesso organizado a todos os relatórios anteriormente ger
 
 **Impacto para Mariana:** Redução do tempo dedicado à análise manual, permitindo foco na interpretação avançada dos resultados e em pesquisas mais aprofundadas.
 
-**Impacto para Carlos:** Eliminação da necessidade de análise manual de extensos conjuntos de imagens, aumentando significativamente sua produtividade em campo.
+**Impacto para Carlos:** Eliminação da necessidade de análise manual de extensos conjuntos de imagens, aumentando sua produtividade em campo.
 
 ### Sistema de Auditoria com Limiar de Acurácia
 
@@ -217,14 +218,10 @@ Interface que permite acesso organizado a todos os relatórios anteriormente ger
 
 ## Conclusão
 
-O protótipo de alta fidelidade desenvolvido no Figma para o Sistema Óptico de Detecção representa um guia visual e funcional completo para o desenvolvimento da solução final. Este protótipo materializa a visão de uma ferramenta que integra as necessidades específicas tanto da pesquisadora Mariana Ribeiro quanto do técnico Carlos Eduardo, estabelecendo uma ponte entre o rigor científico e a praticidade operacional.
+&emsp;O protótipo de alta fidelidade desenvolvido no Figma para o Sistema Óptico de Detecção representa um guia visual e funcional completo para o desenvolvimento da solução final. Este protótipo materializa a visão de uma ferramenta que integra as necessidades específicas tanto da pesquisadora Mariana Ribeiro quanto do técnico Carlos Eduardo, estabelecendo uma ponte entre o rigor científico e a praticidade operacional.
 
-As funcionalidades projetadas através deste protótipo de alta fidelidade incluem automação de análise de imagens com sistema de auditoria para casos de baixa acurácia, categorização padronizada de fissuras, geração automática de relatórios e monitoramento longitudinal - elementos essenciais para transformar a experiência de ambas as personas.
+&emsp;As funcionalidades projetadas através deste protótipo de alta fidelidade incluem automação de análise de imagens com sistema de auditoria para casos de baixa acurácia, categorização padronizada de fissuras, geração automática de relatórios e monitoramento longitudinal: elementos essenciais para transformar a experiência de ambas as personas.
 
-O sistema de auditoria com limiar de 75% de acurácia representa um diferencial significativo, pois combina a eficiência da automação com a expertise técnica humana, garantindo resultados confiáveis mesmo em casos de difícil interpretação algorítmica.
+&emsp;O sistema de auditoria com limiar de 75% de acurácia representa um diferencial, pois combina a eficiência da automação com a expertise técnica humana, garantindo resultados confiáveis mesmo em casos de difícil interpretação algorítmica.
 
-Para Mariana, o sistema promete oferecer a precisão e a rastreabilidade necessárias para sustentar seu trabalho científico no LMPC, permitindo análises mais robustas sobre o comportamento de fissuras em revestimentos de argamassa.
-
-Para Carlos, a interface projetada representa uma revolução potencial em sua rotina de inspeções, com funcionalidades que automatizariam processos que antes consumiam horas de trabalho manual.
-
-Este protótipo de alta fidelidade estabelece as bases para o desenvolvimento de uma solução digital que pode transformar significativamente os processos de inspeção predial, integrando as necessidades de diferentes perfis profissionais em uma interface coesa e eficiente.
+&emsp;Este protótipo de alta fidelidade estabelece as bases para o desenvolvimento de uma solução digital que pode transformar os processos de inspeção predial, integrando as necessidades de diferentes perfis profissionais em uma interface coesa e eficiente.

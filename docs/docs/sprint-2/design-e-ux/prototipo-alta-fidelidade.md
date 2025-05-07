@@ -100,3 +100,35 @@ Feedback claro sobre problemas técnicos, permitindo resolução rápida de difi
 
 [IMAGEM 5: Tela de erro mostrando falha na comunicação]
 
+## Principais Funcionalidades Projetadas
+
+### Automação da Análise de Imagens
+
+**Impacto para Mariana:** Redução do tempo dedicado à análise manual, permitindo foco na interpretação avançada dos resultados e em pesquisas mais aprofundadas.
+
+**Impacto para Carlos:** Eliminação da necessidade de análise manual de extensos conjuntos de imagens, aumentando significativamente sua produtividade em campo.
+
+### Sistema de Auditoria com Limiar de Acurácia
+
+**Impacto para Mariana:** Garantia de rigor científico ao estabelecer um mecanismo de validação para casos onde o algoritmo apresenta menor confiança, mantendo a integridade metodológica da pesquisa.
+
+**Impacto para Carlos:** Combinação ideal entre eficiência e confiabilidade, permitindo intervenção humana apenas nos casos realmente necessários, otimizando seu tempo em campo.
+
+### Categorização Padronizada
+
+**Impacto para Mariana:** Sistematização da classificação de fissuras, garantindo consistência entre diferentes análises e estudos longitudinais.
+
+**Impacto para Carlos:** Maior precisão nos diagnósticos técnicos, fortalecendo a confiabilidade de seus relatórios e recomendações.
+
+### Geração Automática de Relatórios
+
+**Impacto para Mariana:** Padronização dos relatórios técnicos, facilitando a comparação entre estudos e a publicação de resultados científicos.
+
+**Impacto para Carlos:** Redução drástica do tempo dedicado à elaboração de documentação, permitindo atender mais clientes e projetos.
+
+### Monitoramento Longitudinal
+
+**Impacto para Mariana:** Facilidade para acompanhar a evolução de patologias ao longo do tempo, elemento crucial para pesquisas sobre durabilidade de materiais.
+
+**Impacto para Carlos:** Capacidade de demonstrar claramente aos clientes a progressão dos problemas, fundamentando recomendações de manutenção preventiva.
+

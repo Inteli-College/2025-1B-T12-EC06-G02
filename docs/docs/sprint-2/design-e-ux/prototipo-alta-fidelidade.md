@@ -15,7 +15,7 @@ O protótipo de alta fidelidade estabelece as diretrizes visuais e funcionais qu
 
 ## Design Centrado nas Personas
 
-A interface foi projetada considerando as necessidades específicas de nossas duas principais personas:
+A interface foi projetada considerando as necessidades específicas de nossas duas principais [personas](../../sprint-1/ux-ui/Personas.md):
 
 ### Para Mariana Ribeiro (Pesquisadora)
 
@@ -40,45 +40,103 @@ Como técnico experiente em inspeção e monitoramento, Carlos necessita:
 A tela de login foi projetada com simplicidade para acesso rápido por ambas as personas, oferecendo segurança sem comprometer a eficiência.
 
 **Benefícios para Mariana:** Acesso seguro aos dados de pesquisa com credenciais específicas.
+
 **Benefícios para Carlos:** Entrada rápida no sistema durante inspeções em campo.
 
-[IMAGEM 3: Tela de Login com campos de e-mail e senha, botões de login e criar conta]
+<p style={{textAlign: 'center'}}>Figura 1: Tela de login</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/TeladeLogin.png").default} style={{width: 800}} alt="Tela de login" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
+
+<p style={{textAlign: 'center'}}>Figura 2: Tela de Cadastro</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/TeladeCadastro.png").default} style={{width: 800}} alt="Tela de Cadastro" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 ### 2. Tela Inicial (Home)
 
 A home page apresenta as funcionalidades mais utilizadas por ambas as personas, com design intuitivo e foco nas tarefas principais.
 
 **Benefícios para Mariana:** Acesso direto ao histórico para análise comparativa de dados.
+
 **Benefícios para Carlos:** Conexão rápida com drone e upload de imagens para otimizar o trabalho em campo.
 
-[IMAGEM 2: Tela inicial com saudação e botões principais]
+<p style={{textAlign: 'center'}}>Figura 3: Home Page</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/Home-Page-Inicial.png").default} style={{width: 800}} alt="Home page" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 ### 3. Tela de Upload de Imagens
 
 Interface que permite tanto o upload manual quanto a captura em tempo real via drone, com visualização imediata das imagens.
 
 **Benefícios para Mariana:** Organização sistemática das imagens para análise científica.
+
 **Benefícios para Carlos:** Visualização rápida das capturas e processamento imediato, reduzindo o tempo de inspeção.
 
-[IMAGEM 4: Tela de upload mostrando miniaturas de fissuras e botão de iniciar processamento]
+<p style={{textAlign: 'center'}}>Figura 4: Home Page com upload de imagens manual</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/Home-Page-Com-Upload.png").default} style={{width: 800}} alt="Home page com upload de imagens" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 ### 4. Tela de Auditoria de Imagens
 
 Interface que exibe imagens cujo processamento automatizado não atingiu o limiar mínimo de 75% de acurácia, permitindo avaliação individual pelo usuário. Esta etapa garante a qualidade da análise, combinando a automação com a expertise humana.
 
 **Benefícios para Mariana:** Controle de qualidade científico sobre o processo automatizado, possibilitando ajustes metodológicos e validação técnica dos resultados.
+
 **Benefícios para Carlos:** Capacidade de aplicar sua experiência prática para casos ambíguos, garantindo que seu conhecimento técnico agregue valor onde a automação encontra limitações.
 
-[INSERIR IMAGEM: Tela de auditoria mostrando uma imagem para validação manual]
+<p style={{textAlign: 'center'}}>Figura 5: Tela de auditoria de imagem</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/Processodeauditoria.png").default} style={{width: 800}} alt="Tela de auditoria de imagens" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
+
+<p style={{textAlign: 'center'}}>Figura 6: Processo de auditoria de uma imagem</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/Analiseminunciosa.png").default} style={{width: 800}} alt="Tela de auditoria de uma imagem" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 ### 5. Tela de Insights e Relatório
 
 Esta interface apresenta informações técnicas categorizadas, atendendo à necessidade de precisão diagnóstica.
 
 **Benefícios para Mariana:** Categorização científica das fissuras (retração, térmicas) permitindo análises aprofundadas e comparativas.
+
 **Benefícios para Carlos:** Visualização direta e quantitativa dos problemas identificados, facilitando a elaboração de recomendações técnicas.
 
-[IMAGEM 1: Tela de insights mostrando dados quantitativos: 03 fissuras de retração, 13 fissuras térmicas e 12 riscos]
+<p style={{textAlign: 'center'}}>Figura 7: Tela de insights do relatório</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/Insightsdorelatorio.png").default} style={{width: 800}} alt="Tela de insights do relatório" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 ### 6. Tela de Conexão com Drone
 

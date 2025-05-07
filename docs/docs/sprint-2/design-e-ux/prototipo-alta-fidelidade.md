@@ -132,3 +132,16 @@ Feedback claro sobre problemas técnicos, permitindo resolução rápida de difi
 
 **Impacto para Carlos:** Capacidade de demonstrar claramente aos clientes a progressão dos problemas, fundamentando recomendações de manutenção preventiva.
 
+## Conclusão
+
+O protótipo de alta fidelidade desenvolvido no Figma para o Sistema Óptico de Detecção representa um guia visual e funcional completo para o desenvolvimento da solução final. Este protótipo materializa a visão de uma ferramenta que integra as necessidades específicas tanto da pesquisadora Mariana Ribeiro quanto do técnico Carlos Eduardo, estabelecendo uma ponte entre o rigor científico e a praticidade operacional.
+
+As funcionalidades projetadas através deste protótipo de alta fidelidade incluem automação de análise de imagens com sistema de auditoria para casos de baixa acurácia, categorização padronizada de fissuras, geração automática de relatórios e monitoramento longitudinal - elementos essenciais para transformar a experiência de ambas as personas.
+
+O sistema de auditoria com limiar de 75% de acurácia representa um diferencial significativo, pois combina a eficiência da automação com a expertise técnica humana, garantindo resultados confiáveis mesmo em casos de difícil interpretação algorítmica.
+
+Para Mariana, o sistema promete oferecer a precisão e a rastreabilidade necessárias para sustentar seu trabalho científico no LMPC, permitindo análises mais robustas sobre o comportamento de fissuras em revestimentos de argamassa.
+
+Para Carlos, a interface projetada representa uma revolução potencial em sua rotina de inspeções, com funcionalidades que automatizariam processos que antes consumiam horas de trabalho manual.
+
+Este protótipo de alta fidelidade estabelece as bases para o desenvolvimento de uma solução digital que pode transformar significativamente os processos de inspeção predial, integrando as necessidades de diferentes perfis profissionais em uma interface coesa e eficiente.

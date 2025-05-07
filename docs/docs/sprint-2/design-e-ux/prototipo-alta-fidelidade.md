@@ -145,16 +145,49 @@ Interface simplificada para conexão com dispositivos de captura, atendendo à n
 **Benefícios para Mariana:** Padronização da captura de imagens para maior consistência nas análises.
 **Benefícios para Carlos:** Acesso remoto a áreas de difícil inspeção manual, aumentando a segurança e eficiência.
 
-[IMAGEM 6: Tela de busca de drones disponíveis mostrando DISP01 e DISP02]
+<p style={{textAlign: 'center'}}>Figura 8: Tela de conexão com o drone</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/ConectandocomoDrone.png").default} style={{width: 800}} alt="Figura 8: Tela de conexão com o drone" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
-### 7. Tela de Falha na Comunicação
+<p style={{textAlign: 'center'}}>Figura 9: Sucesso na conexão com o drone</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/Sucessonaconexao.png").default} style={{width: 800}} alt="Figura 8: Tela de sucesso na conexão com o drone" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
-Feedback claro sobre problemas técnicos, permitindo resolução rápida de dificuldades.
+<p style={{textAlign: 'center'}}>Figura 10: Falha na conexão com o drone</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/Falhanacomunicacao.png").default} style={{width: 800}} alt="Figura 8: Tela de falha na conexão com o drone" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
-**Benefícios para Mariana:** Garantia da integridade dos dados coletados.
-**Benefícios para Carlos:** Redução de tempo perdido com falhas técnicas durante inspeções.
+### 7. Tela de Histórico de Relatórios
 
-[IMAGEM 5: Tela de erro mostrando falha na comunicação]
+Interface que permite acesso organizado a todos os relatórios anteriormente gerados pelo sistema, apresentando-os em ordem cronológica com data e hora precisas para fácil identificação.
+
+**Benefícios para Mariana:** Acesso estruturado a relatórios datados com precisão, permitindo correlacionar resultados com diversas variáveis, essencial para estabelecer padrões científicos de evolução das fissuras.
+
+**Benefícios para Carlos:** Acesso rápido aos relatórios mais recentes, com possibilidade de download imediato através dos ícones intuitivos, otimizando o tempo em campo e facilitando a apresentação de dados durante visitas técnicas aos clientes.
+
+<p style={{textAlign: 'center'}}>Figura 11: Tela de histórico de relatórios</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/wireframe/Abadehistorico.png").default} style={{width: 800}} alt="Tela de histórico de relatórios" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 ## Principais Funcionalidades Projetadas
 
@@ -181,12 +214,6 @@ Feedback claro sobre problemas técnicos, permitindo resolução rápida de difi
 **Impacto para Mariana:** Padronização dos relatórios técnicos, facilitando a comparação entre estudos e a publicação de resultados científicos.
 
 **Impacto para Carlos:** Redução drástica do tempo dedicado à elaboração de documentação, permitindo atender mais clientes e projetos.
-
-### Monitoramento Longitudinal
-
-**Impacto para Mariana:** Facilidade para acompanhar a evolução de patologias ao longo do tempo, elemento crucial para pesquisas sobre durabilidade de materiais.
-
-**Impacto para Carlos:** Capacidade de demonstrar claramente aos clientes a progressão dos problemas, fundamentando recomendações de manutenção preventiva.
 
 ## Conclusão
 

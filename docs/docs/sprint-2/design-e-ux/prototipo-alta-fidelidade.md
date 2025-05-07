@@ -11,9 +11,7 @@ Este documento apresenta o protótipo de alta fidelidade desenvolvido para o Sis
 
 O protótipo de alta fidelidade estabelece as diretrizes visuais e funcionais que orientarão o desenvolvimento técnico posterior, garantindo que a solução final atenda às necessidades específicas dos usuários.
 
-## Link do Projeto no Figma
-
-[INSERIR LINK DO FIGMA]
+## 🎨 [Clique aqui](https://www.figma.com/design/e0U9SYE12jTbnNo0Vsk5wH/SOD--Prot%C3%B3tipo-de-Alta-Fidelidade?node-id=40-2&t=Bu3nD0T638fHJHYe-1) para acessar o Figma do projeto
 
 ## Design Centrado nas Personas
 

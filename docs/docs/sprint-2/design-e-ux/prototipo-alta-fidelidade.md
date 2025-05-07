@@ -11,3 +11,27 @@ Este documento apresenta o protótipo de alta fidelidade desenvolvido para o Sis
 
 O protótipo de alta fidelidade estabelece as diretrizes visuais e funcionais que orientarão o desenvolvimento técnico posterior, garantindo que a solução final atenda às necessidades específicas dos usuários.
 
+## Link do Projeto no Figma
+
+[INSERIR LINK DO FIGMA]
+
+## Design Centrado nas Personas
+
+A interface foi projetada considerando as necessidades específicas de nossas duas principais personas:
+
+### Para Mariana Ribeiro (Pesquisadora)
+
+Como pesquisadora sênior com doutorado em Engenharia de Materiais, Mariana necessita:
+- Precisão técnica e confiabilidade nos diagnósticos
+- Sistematização da análise de fissuras
+- Rastreabilidade dos dados para pesquisas longitudinais
+- Padronização de relatórios técnicos
+
+### Para Carlos Eduardo (Técnico de Edificações)
+
+Como técnico experiente em inspeção e monitoramento, Carlos necessita:
+- Agilidade no processamento de grande volume de imagens
+- Facilidade na geração de relatórios automáticos
+- Interface intuitiva para uso em campo
+- Automação da identificação de problemas estruturais
+

@@ -22,7 +22,7 @@ Percebe-se que esse _dataset_ não é abrangente. Portanto, há um risco maior d
 <p style={{textAlign: 'center'}}>Figura 1: Fissura de Retração Antes do Processamento</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("../../../../static/img/retracao.png").default} style={{width: 800}} alt="Imagem de fissura de retração sem qualquer tratamento" />
+        <img src={require("../../../../static/img/retracao.png").default} alt="Imagem de fissura de retração sem qualquer tratamento" />
         <br />
     </div>
 </div>
@@ -42,17 +42,17 @@ Percebe-se que esse _dataset_ não é abrangente. Portanto, há um risco maior d
 <p style={{textAlign: 'center'}}>Figura 2: Fórmula de Correção</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("../../../../static/img/formula.png").default} style={{width: 800}} alt="Fórmula de correção" />
+        <img src={require("../../../../static/img/formula.png").default} alt="Fórmula de correção" />
         <br />
     </div>
 </div>
 <p style={{textAlign: 'center'}}>Fonte: CHUN, P. et <i>al</i> (2020). </p>
 
 Em que:
-Ia = imagem após a correção
-Ib = imagem antes da correção
-Im = filtro de mediana antes da correção
-bm = valor máximo do pixel (ibid.)
+- Ia = imagem após a correção
+- Ib = imagem antes da correção
+- Im = filtro de mediana antes da correção
+- bm = valor máximo do pixel (ibid.)
 
 &emsp; Isso permite que se corrija diferenças em contrastes e sombras sem que se perca variações locais pequenas, como as rachaduras. Isso pode ser percebido na Figura 3.
 
@@ -74,16 +74,13 @@ bm = valor máximo do pixel (ibid.)
 <p style={{textAlign: 'center'}}>Figura 4: Comparação</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("../../../../static/img/efeito-correcao.png").default} style={{width: 800}} alt="Comparação entre a imagem sem correção e a imagem pré-processada" />
+        <img src={require("../../../../static/img/comparacao.png").default} style={{width: 800}} alt="Comparação entre a imagem sem correção e a imagem pré-processada" />
         <br />
     </div>
 </div>
-<p style={{textAlign: 'center'}}>Fonte: CHUN, P. et <i>al</i> (2020). </p>
-<small>À esquerda vê-se a imagem sem correção. À direita, a imagem pré-processada. OBS: Para efeitos de comparação, redimensionou-se ambas as imagens.</small>
+<p style={{textAlign: 'center'}}>Fonte: CHUN, P. et <i>al</i> (2020). <br/> <small> Legenda: À esquerda vê-se a imagem sem correção. À direita, a imagem pré-processada. <br/> OBS: Para efeitos de comparação, redimensionou-se ambas as imagens.</small></p>
 
-&emsp; Como se percebe, remove-se a complexidade da imagem transformando-a em escala de cinza. Além disso, as rachaduras estão mais realçadas (na medida do possível), enquanto algumas manchas, principalmente no centro da parede foram retiradas.
-
-&emsp; imagens como essa serão usadas no treinamento da IA na seção que se segue.
+&emsp; Como se percebe, remove-se a complexidade da imagem transformando-a em escala de cinza. Além disso, as rachaduras estão mais realçadas (na medida do possível), enquanto algumas manchas, principalmente no centro da parede foram retiradas. Imagens como essa serão usadas no treinamento da IA na seção que se segue.
 
 
 ## Bibliografia

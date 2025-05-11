@@ -51,7 +51,7 @@ flowchart TB
 
 ```
 
-O servidor foi segmentado em três módulos independentes:
+&emsp; O servidor foi segmentado em três módulos independentes:
 
 * **API**: responsável pela mediação das requisições e pelo armazenamento dos dados;
 
@@ -59,6 +59,22 @@ O servidor foi segmentado em três módulos independentes:
 
 * **Geração de Relatórios**: organiza os resultados de forma compreensível para o usuário final.
 
-Todos os módulos do servidor se conectam a uma base de dados central, que funciona como repositório unificado das informações do sistema.
+&emsp; Todos os módulos do servidor se conectam a uma base de dados central, que funciona como repositório unificado das informações do sistema.
 
-Portanto, a atualização da arquitetura proporcionou avanços nos aspectos de integração, automação e organização do sistema, com enfâse para a integração de drones na coleta de imagens. Assim, essas mudanças são essenciais para a continuidade e evolução do projeto.
+&emsp; Portanto, a atualização da arquitetura proporcionou avanços nos aspectos de integração, automação e organização do sistema, com enfâse para a integração de drones na coleta de imagens. Assim, essas mudanças são essenciais para a continuidade e evolução do projeto.
+
+## Atualização da Arquitetura da Informação
+
+&emsp; Anteriormente, a arquitetura da solução era composta por um fluxo de inspeção segmentado em três etapas principais: inserção de metadados, upload de imagens e análise técnica. O preenchimento dos metadados (local, data, observações) e o envio das imagens eram realizados manualmente pelo usuário. Além disso, não havia integração com APIs para armazenamento centralizado das informações, o que limitava a escalabilidade e dificultava a persistência estruturada dos dados. A visualização de relatórios era possível com opções básicas de download, sem a disponibilização de um histórico consolidado das inspeções anteriores.
+
+<div align="center" width="100%">
+
+<sub>Figura 1 - Arquitetura da informação atualizada</sub>
+
+![Arquitetura da informação atualizada](/img/arquiteturaInfoSprint2.png)
+
+<sup>Fonte: Autoria própria </sup>
+
+</div>
+
+&emsp; Com a arquitetura atualizada, o fluxo da funcionalidade de "Nova Inspeção" foi completamente reestruturado, passando a ser dividido em três etapas principais: inserção de metadados, upload das imagens e validação automatizada. No entanto, a nova solução passou a integrar APIs específicas para o armazenamento eficiente das informações em banco de dados. Além disso,  para garantir a confiabilidade dos resultados, a arquitetura contempla um mecanismo no qual as imagens são encaminhadas para análise manual por técnicos em casos em que o sistema identifica baixa acurácia nas previsões do modelo. Por fim, a interface de relatórios foi aprimorada com a inclusão de um histórico de inspeções, permitindo acesso contínuo e organizado aos registros anteriores.

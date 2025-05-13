@@ -21,7 +21,6 @@
   6. O servidor envia a resposta ao Proxy, que redireciona ao navegador.
   7. O navegador apresenta a resposta ao usuário.
 
-
 ### Diagrama de Sequência do Algoritmo de IA
 
 ![Diagrama de Sequência do Algoritmo de IA](/img/diagramas-de-sequencia/ia.svg)
@@ -53,25 +52,22 @@
 ### Servidor Proxy Reverso
 
 &emsp;A Proxy de Tunelamento utilizado em desenvolvimento será substituído por um servidor proxy reverso (NGINX, Apache ou Cloudflare). O proxy reverso será responsável por:
-
   * **Proteção HTTPS:** Gerenciar certificados SSL/TLS (Let's Encrypt com renovação automática).
   * **Desempenho:** Realizar cache de conteúdo e balanceamento de carga.
   * **Segurança Adicional:** Atuar como um Web Application Firewall (WAF) para bloquear ataques de rede.
   * **Compatibilidade:** Suporte a IPv4 e IPv6 (Dual-Stack).
 
 ### Endereço IP Público
-
 &emsp;Para que o Web App seja acessível na internet, será configurado um endereço IP público. Existem duas opções principais:
 
   * **IP Público Estático:** Um endereço IP fixo atribuído ao servidor, garantindo que o endereço não mude. Ideal para ambientes de produção.
   * **DNS Dinâmico:** Utilizado em casos onde o IP pode mudar, configurado com um serviço de DNS dinâmico (Cloudflare, AWS Route 53).
-* Nos provedores de nuvem (AWS, Azure, Google Cloud):
 
+* Nos provedores de nuvem (AWS, Azure, Google Cloud):
   * O IP público geralmente é atribuído automaticamente, mas pode ser configurado como **IP estático (Elastic IP no AWS)**.
   * Suporte a **dual-stack (IPv4 e IPv6)**, garantindo compatibilidade com todas as redes.
 
 ### Banco de Dados
-
   * **Segurança:** Comunicação criptografada (TLS/SSL) e autenticação segura.
   * **Desempenho:** Backup automático, alta disponibilidade (Multi-AZ) e escalabilidade.
   * **Tipo de Banco de Dados:** SQL (PostgreSQL) para dados estruturados.
@@ -79,7 +75,6 @@
   * **Auditoria:** Registros de acesso e modificação de dados serão monitorados para segurança.
 
 ### Algoritmo de IA
-
 &emsp;O Algoritmo de IA será executado em um **serviço de computação em nuvem (AWS SageMaker, Google AI Platform, Azure ML)**. Configurações para produção:
 
   * **Escalabilidade:** Configurado para lidar com múltiplas solicitações simultâneas (serviços serverless ou instâncias dedicadas).
@@ -88,7 +83,6 @@
   * **Armazenamento de Dados:** Resultados e variáveis serão armazenados em um banco de dados seguro (SQL ou NoSQL).
 
 ### Fluxo em Produção do Web App
-
 1. O usuário acessa o Web App em uma URL pública com HTTPS.
 2. O servidor proxy reverso (NGINX, Cloudflare) recebe a requisição e aplica regras de segurança (WAF).
 3. O proxy encaminha a requisição ao servidor de aplicação na nuvem.
@@ -98,7 +92,6 @@
 7. O proxy reverso entrega a resposta ao usuário.
 
 ### Fluxo em Produção da IA
-
 1. O usuário acessa o Web App e realiza a autenticação segura (OAuth 2.0).
 2. A aplicação envia uma solicitação ao servidor, que realiza a verificação do usuário.
 3. O servidor aciona o serviço de IA na nuvem (AWS SageMaker, Azure ML).

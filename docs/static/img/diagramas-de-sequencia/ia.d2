@@ -1,0 +1,27 @@
+# d2 -w input.d2 out.svg
+# d2 --theme=300 --dark-theme=200 -l elk --pad 0 ./input.d2
+
+Diagrama de Sequência do Processamento do Algoritmo de IA: {
+    shape: sequence_diagram
+    usuario: Usuário {shape: Person}
+    aplicacao: Aplicação
+    ia: Algoritmo de IA
+    banco: Banco de Dados
+    Gerando um relatório: {
+        usuario -> aplicacao: Requisição de processamento
+        aplicacao -> ia: Inicia processamento
+        ia -> ia: Processamento dos dados
+        ia -> banco: Publicação das variáveis
+        ia -> aplicacao: Resultados do processamento
+        aplicacao -> usuario: Resultados do processamento
+    }
+    
+    Recuperando um relatório através do histórico: {
+        usuario -> aplicacao: Requisição de visualização de relatórios
+        aplicacao -> banco: Requisição de dados
+        banco -> ia: Dados para processamento
+        ia -> ia: Processamento dos dados
+        ia -> aplicacao: Resultados do processamento
+        aplicacao -> usuario: Resultados do processamento
+    }
+  }

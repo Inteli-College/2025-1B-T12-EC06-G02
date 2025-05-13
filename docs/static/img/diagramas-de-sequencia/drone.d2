@@ -1,0 +1,19 @@
+Diagrama de Sequência da Comunicação com o Drone: {
+    shape: sequence_diagram
+    usuario: Usuário {shape: Person}
+    drone: Drone
+    computador local: Computador Local
+    servidor: Servidor
+    banco: Banco de Dados
+    
+    Fluxo: {
+        usuario -> drone: Captura imagens com o drone
+        drone -> computador local: Envia imagens
+        computador local -> servidor: Envia imagens
+        servidor -> banco: Armazena imagens
+        banco -> servidor: Confirmação de armazenamento
+        servidor -> computador local: Confirmação de armazenamento
+        computador local -> drone: Confirmação de armazenamento
+        drone -> usuario: Confirmação de armazenamento
+  }
+}

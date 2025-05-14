@@ -1,0 +1,21 @@
+import "../globals.css"
+import { Inter } from "next/font/google"
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: '--font-inter',
+  display: 'swap'
+})
+
+export const metadata = {
+  title: "Sistema Óptico de Deteção",
+  description: "Login page for Sistema Óptico de Deteção",
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="pt-BR" className={inter.variable}>
+      <body>{children}</body>
+    </html>
+  )
+}

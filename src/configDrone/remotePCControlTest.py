@@ -85,7 +85,7 @@ except KeyboardInterrupt:
     print(" Interrupted by user")
 
 finally:
-    tello.send_rc_control(0, 0, 0, 0)
+    tello.send_rc_control("p", "p", "p", "p")
     tello.streamoff()
     tello.end()
     cv2.destroyAllWindows()

@@ -5,4 +5,189 @@ custom_edit_url: null
 
 # Conexão com o Drone
 
-Relata o processo de integração com o drone, hipóteses formuladas, testes realizados, dados obtidos e aprendizados para evolução futura.
+## 1. Introdução
+
+Este documento apresenta a análise e os testes realizados com o drone Tello para avaliar sua viabilidade na captura de imagens para detecção de fissuras em revestimentos de argamassa em fachadas de edifícios. O projeto visa desenvolver um algoritmo especializado em processamento digital de imagens (PDI) para identificação e classificação dessas fissuras, conforme requisitado pelo Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT).
+
+### 1.1 Objetivo dos Testes com Drone
+
+Avaliar se a implementação de um drone como ferramenta de captura de imagens é viável e agrega valor ao projeto, considerando:
+- Qualidade das imagens capturadas
+- Facilidade de operação
+- Limitações técnicas
+- Viabilidade de integração com o algoritmo de PDI
+
+## 2. Equipamentos Utilizados
+
+### 2.1 Drone Educacional: Tello Just for Fun
+- **Fabricante**: Ryze Technology
+- **Características**:
+  - Câmera de 5MP (720p)
+  - Peso: 80g
+  - Tempo de voo: ~13 minutos
+  - Comunicação: Wi-Fi
+
+### 2.2 Drone Profissional (Cliente): DJI
+- Modelos profissionais da DJI possuem:
+  - Câmeras de alta resolução (até 4K)
+  - Maior estabilidade
+  - APIs mais robustas
+  - SDK completo para desenvolvimento
+
+## 3. Testes Realizados
+
+### 3.1 Teste de Transmissão de Vídeo (`videoStreamTest.py`)
+
+#### Cenário de Teste
+Avaliação da qualidade do streaming de vídeo do Tello e sua viabilidade para identificação de fissuras.
+
+#### Resultados
+- **Qualidade de Imagem**: A preencher
+- **Estabilidade de Conexão**: A preencher
+- **Latência**: A preencher
+
+### 3.2 Teste de Movimentação Básica (`app.py`)
+
+#### Cenário de Teste
+Avaliação da estabilidade do drone durante movimentos programados, essencial para captura de imagens nítidas de fachadas.
+
+#### Resultados
+- **Precisão de Movimentos**: Desvios de 10-20cm em movimentos laterais
+- **Estabilidade**: Oscilações perceptíveis durante voo estacionário
+- **Tempo de Bateria**: Suficiente para pequenas inspeções
+
+### 3.3 Teste de Controle Remoto via PC (`remotePCControlTest.py`)
+
+#### Cenário de Teste
+Avaliação da facilidade de controle manual do drone via teclado para posicionamento preciso diante de áreas com fissuras.
+
+#### Resultados
+- **Facilidade de Controle**: A preencher
+- **Responsividade**: A preencher
+- **Captura de Fotos**: A preencher
+- **Qualidade em Movimento**: A preencher
+- **Ambiente Controlado**: A preencher
+
+## 4. Limitações Identificadas
+
+### 4.1 Limitações do Tello Just for Fun
+
+1. **Limitação de Streaming**:
+   - Não permite dois streamings de vídeo simultâneos
+   - Apenas um dispositivo pode visualizar o stream por vez (PC ou smartphone)
+
+2. **Captura de Imagens**:
+   - Não possui função nativa para tirar fotos através da API
+   - Fotos podem ser capturadas salvando frames do streaming
+
+3. **Qualidade de Câmera**:
+   - Resolução de 720p para detecção de fissuras 
+
+4. **Estabilidade**:
+   - Oscilações em voo estacionário
+   - Sensibilidade a ventos leves
+
+### 4.2 Diferenças para o DJI Profissional
+
+1. **Qualidade de Câmera**:
+   - Drones DJI profissionais possuem câmeras de até 4K
+   - Melhor performance em condições adversas de iluminação
+
+2. **Estabilidade**:
+   - Melhores sistemas de estabilização (gimbal de 3 eixos)
+   - Maior resistência a ventos
+
+3. **SDK e API**:
+   - SDK mais completo com mais recursos
+   - Melhor documentação e suporte
+
+4. **Comunicação**:
+   - Desconhecimento da comunicação direta entre o aplicativo e o drone DJI
+   - Potenciais dificuldades de integração
+
+## 5. Possíveis Soluções
+
+### 5.1 Desenvolvimento de Aplicativo Proprietário
+
+#### Descrição
+Desenvolver um aplicativo específico para comunicação com o drone que integre:
+- Controle de voo
+- Captura de imagens de alta qualidade
+- Processamento preliminar das imagens
+- Envio para servidor para análise de fissuras
+
+#### Requisitos
+- Desenvolvimento para Android/iOS
+- Integração com SDK do DJI
+- Interface amigável para operadores
+- Capacidade de armazenamento local e sincronização
+
+#### Benefícios
+- Maior controle sobre o processo
+- Experiência do usuário otimizada
+- Possibilidade de processamento em tempo real
+- Melhor integração com o sistema de análise de fissuras
+
+### 5.2 Adaptação para Uso com Imagens Pré-capturadas
+
+#### Descrição
+Modificar a abordagem para trabalhar com imagens já capturadas por drones, sem necessidade de integração direta:
+- Criação de módulo de upload de imagens
+- Interface para organização das imagens por prédio/fachada
+- Algoritmo de análise focado em processamento posterior
+
+#### Requisitos
+- Interface web para upload
+- Sistema de organização e categorização
+- Processamento em lote
+
+#### Benefícios
+- Independência de hardware específico
+- Compatibilidade com diversas fontes de imagens
+- Menor complexidade técnica
+- Foco no core do projeto (análise de fissuras)
+
+### 5.3 Solução Híbrida com API Simplificada
+
+#### Descrição
+Desenvolver uma API simplificada que:
+- Receba imagens de diversas fontes (drone, upload manual)
+- Permita integração com drones DJI via SDK oficial
+- Ofereça módulo opcional para controle de voo simplificado
+
+#### Requisitos
+- API RESTful
+- Documentação clara
+- Suporte a diferentes fontes de imagem
+- Integração básica com SDK DJI
+
+#### Benefícios
+- Flexibilidade para diferentes cenários
+- Escalabilidade para futuros recursos
+- Balanceamento entre praticidade e funcionalidade
+
+## 6. Análise de Risco
+
+### 6.1 Riscos do Uso de Drones
+- **Regulatórios**: Necessidade de licenças e autorizações para voo em áreas urbanas
+- **Climáticos**: Condições de vento e chuva podem impedir operações
+- **Técnicos**: Falhas de hardware/software durante inspeções
+- **Operacionais**: Necessidade de operadores treinados
+- **Autonomia**: Limitação de tempo de voo para grandes edificações
+
+### 6.2 Riscos da Solução, independente dos Drones
+- **Qualidade de Imagem**: Dependência da fonte de captura
+- **Padronização**: Variação no ângulo e distância das imagens
+- **Cobertura**: Dificuldade em acessar áreas elevadas ou de difícil acesso
+- **Consistência**: Variação nas condições de iluminação
+
+## 7. Conclusão
+
+(Esta seção será preenchida após discussão final sobre a abordagem a ser adotada)
+
+## 8. Referências
+
+- Documentação DJI SDK: https://developer.dji.com/
+- Documentação Tello SDK: https://github.com/dji-sdk/Tello-Python
+- Biblioteca DJITelloPy: https://github.com/damiafuentes/DJITelloPy
+- OpenCV para processamento de imagens: https://opencv.org/

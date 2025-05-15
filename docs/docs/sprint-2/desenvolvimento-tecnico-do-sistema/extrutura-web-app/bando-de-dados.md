@@ -219,7 +219,7 @@ CREATE POLICY "Acesso de usuários às suas imagens" ON storage.objects
 
 ## Alinhamento com a Interface e Fluxo do Sistema
 
-A estrutura do banco de dados foi projetada para suportar as funcionalidades apresentadas no [protótipo de alta fidelidade](LINK_PARA_PROTOTIPO) do sistema, garantindo que todas as interações do usuário sejam devidamente persistidas:
+A estrutura do banco de dados foi projetada para suportar as funcionalidades apresentadas no [protótipo de alta fidelidade](docs\sprint-2\design-e-ux\prototipo-alta-fidelidade.md) do sistema, garantindo que todas as interações do usuário sejam devidamente persistidas:
 
 1. **Login e Cadastro**: Suportados pela tabela `users` e integração com autenticação
 2. **Upload de Imagens**: Implementado através da tabela `images` e bucket de armazenamento
@@ -228,7 +228,7 @@ A estrutura do banco de dados foi projetada para suportar as funcionalidades apr
 5. **Insights e Relatórios**: Suportados pelas tabelas `reports`, `reports_images` e relações com resultados
 6. **Histórico de Relatórios**: A estrutura temporal com timestamps permite acompanhamento cronológico de todas as análises e relatórios
 
-Esta estrutura também se integra com a [arquitetura do sistema](LINK_PARA_ARQUITETURA), principalmente no que se refere ao fluxo de dados entre os módulos de captura, processamento por IA, e visualização dos resultados.
+Esta estrutura também se integra com a [arquitetura do sistema](docs\sprint-2\desenvolvimento-tecnico-do-sistema\proposta-da-arquitetura.md), principalmente no que se refere ao fluxo de dados entre os módulos de captura, processamento por IA, e visualização dos resultados.
 
 ## Conclusão
 

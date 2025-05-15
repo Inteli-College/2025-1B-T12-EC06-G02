@@ -5,7 +5,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { useRouter, useSearchParams } from 'next/navigation'
 import { supabase } from '../../lib/supabase'
-import AuthGuard from '../../components/AuthGuard';
 
 export default function LoginPage() {
   const router = useRouter()
@@ -16,15 +15,39 @@ export default function LoginPage() {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [showInvalidLink, setShowInvalidLink] = useState(false);
 
-  const hasToken = !!searchParams.get('access_token');
+  const code = searchParams.get('code');
+  const accessToken = searchParams.get('access_token');
+  // const hasToken = !!(code || accessToken); // Removed hasToken
 
   useEffect(() => {
-    const token = searchParams.get('access_token');
-    if (!token) {
-      router.replace('/login');
+    async function handleCodeExchange() {
+      const { data: userData } = await supabase.auth.getUser();
+      if (!userData?.user && code) {
+        // Exchange code for session only if not authenticated
+        const { error } = await supabase.auth.exchangeCodeForSession(code);
+        if (error) {
+          setShowInvalidLink(true);
+          setTimeout(() => {
+            setShowInvalidLink(false);
+            router.replace('/login');
+          }, 8000);
+          return;
+        }
+      }
+      // If neither code nor access_token, show invalid link page for 8s then redirect
+      if (!code && !accessToken) {
+        setShowInvalidLink(true);
+        setTimeout(() => {
+          setShowInvalidLink(false);
+          router.replace('/login');
+        }, 8000);
+        return;
+      }
     }
-  }, [router, searchParams]);
+    handleCodeExchange();
+  }, [router, code, accessToken]);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -55,8 +78,18 @@ export default function LoginPage() {
     }
   }
 
-  if (!hasToken) {
-    return <AuthGuard>{/* ...existing code... */}</AuthGuard>;
+  if (showInvalidLink) {
+    return (
+      <main className="relative min-h-screen w-full flex items-center justify-center p-4">
+        <div className="w-full max-w-md bg-white/80 backdrop-blur-sm p-8 md:p-12 rounded shadow-lg text-center">
+          <h2 className="text-2xl font-medium mb-4 text-[#434343]">Link inválido ou expirado</h2>
+          <p className="mb-6 text-gray-700">O link de redefinição de senha é inválido, expirou ou já foi utilizado.</p>
+          <Link href="/forgot-password" className="inline-block px-8 py-3 bg-[#2d608d] text-white text-lg font-medium rounded hover:bg-[#245179] transition-colors">
+            Solicitar novo link
+          </Link>
+        </div>
+      </main>
+    );
   }
 
   return (

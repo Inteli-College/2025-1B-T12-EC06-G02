@@ -1,9 +1,12 @@
 import React from 'react';
+import AuthGuard from '../../components/AuthGuard';
 
 export default function SettingsPage() {
   return (
-    <div>
-      <h1>Página de Configurações</h1>
-    </div>
+    <AuthGuard>
+      <div>
+        <h1>Página de Configurações</h1>
+      </div>
+    </AuthGuard>
   );
 }

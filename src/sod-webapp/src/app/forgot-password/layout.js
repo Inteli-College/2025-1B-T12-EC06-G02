@@ -9,7 +9,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "Sistema Óptico de Deteção",
-  description: "Login",
+  description: "Esqueceu sua senha",
 }
 
 export default function RootLayout({ children }) {

@@ -183,7 +183,16 @@ Desenvolver uma API simplificada que:
 
 ## 7. Conclusão
 
-(Esta seção será preenchida após discussão final sobre a abordagem a ser adotada)
+Após testes e análises com o drone Tello, identificamos limitações significativas que impactam diretamente a implementação do projeto de detecção de fissuras em revestimentos de argamassa. A principal restrição observada foi a impossibilidade de manter dois streamings de vídeo simultâneos, permitindo apenas que um dispositivo visualize o stream por vez.
+
+Diante dessas limitações e considerando os objetivos do projeto para o Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT), decidimos que na próxima sprint iremos desenvolver uma aplicação de streaming dedicada para o drone. Esta solução permitirá:
+
+1. Contornar a limitação de streaming único através de uma arquitetura cliente-servidor que redistribua o fluxo de vídeo
+2. Implementar funcionalidade de captura de imagens em tempo real com qualidade otimizada
+3. Criar um canal de comunicação direto entre o streaming e nossa aplicação principal de detecção de fissuras
+4. Estabelecer um buffer local que permita armazenar temporariamente as imagens antes do envio ao servidor de processamento
+
+Esta abordagem representa um passo que nos permite avançar no desenvolvimento do algoritmo de detecção de fissuras com imagens reais, enquanto mantemos a flexibilidade para futura integração com equipamentos mais avançados como os drones profissionais DJI que o cliente dispõe.
 
 ## 8. Referências
 

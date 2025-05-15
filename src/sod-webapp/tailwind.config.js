@@ -1,31 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       colors: {
-        border: "var(--color-gray-light)",
-        input: "var(--color-gray-light)",
-        ring: "var(--color-primary-light)",
-        background: "var(--color-white)",
-        foreground: "var(--color-gray-dark)",
+        border: "var(--border)",
+        input: "var(--input)",
+        ring: "var(--ring)",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         primary: {
           DEFAULT: "var(--color-primary)",
           hover: "var(--color-primary-hover)",
           light: "var(--color-primary-light)",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
         },
         success: "var(--color-success)",
         error: "var(--color-error)",
@@ -37,14 +37,14 @@ module.exports = {
       },
       borderRadius: {
         DEFAULT: "5px",
-      },
-      boxShadow: {
-        DEFAULT: "var(--shadow-default)",
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        inter: ["var(--font-inter)"],
+        sans: ["var(--font-inter)"],
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 }

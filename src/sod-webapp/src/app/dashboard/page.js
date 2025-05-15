@@ -1,9 +1,12 @@
 import React from 'react';
+import AuthGuard from '../../components/AuthGuard';
 
 export default function DashboardPage() {
   return (
-    <div>
-      <h1>Página de Dashboard</h1>
-    </div>
+    <AuthGuard>
+      <div>
+        <h1>Página de Dashboard</h1>
+      </div>
+    </AuthGuard>
   );
 }

@@ -1,28 +1,22 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Inter } from 'next/font/google'
+import { AuthProvider } from '@/lib/auth-client'
+import './globals.css'
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: "Sistema Óptico de Detecção",
-  description: "Detecte fissuras em edificações de forma simplificada com nossa IA",
-  icons: {
-    icon: "/favicon.ico"
-  }
-};
+  title: 'SOD - Sistema de Observação de Deformação',
+  description: 'Sistema de análise de deformações estruturais',
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} font-sans antialiased`}
-        suppressHydrationWarning
-      >
-        {children}
+    <html lang="pt-BR">
+      <body className={inter.className}>
+        <AuthProvider>
+          {children}
+        </AuthProvider>
       </body>
     </html>
-  );
+  )
 }

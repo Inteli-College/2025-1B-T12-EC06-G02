@@ -1,8 +1,12 @@
-// Configuração do cliente Supabase
-export function initSupabase() {
-  // Inicialização do cliente Supabase
+'use client'
+
+import { createBrowserClient } from '@supabase/ssr'
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  throw new Error('Missing Supabase environment variables')
 }
 
-export function getSupabaseClient() {
-  // Obter instância do cliente Supabase
-}
+export const supabase = createBrowserClient(supabaseUrl, supabaseAnonKey)

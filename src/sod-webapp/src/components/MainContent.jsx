@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import { Button } from "../components/ui/button";
 import { Upload, History, Wifi } from "lucide-react";
 import Image from "next/image";
 

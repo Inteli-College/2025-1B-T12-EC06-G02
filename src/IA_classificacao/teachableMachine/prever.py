@@ -26,8 +26,8 @@ def prever(caminho):
 
     # (2) Estabelece os rótulos
     labels = {
-        0: "Retração",
-        1: "Térmica"
+        0: "Retracao",
+        1: "Termica"
     }
 
     # (3) Preprocessa a imagem
@@ -55,8 +55,11 @@ def prever(caminho):
     prediction = modelo.predict(data)
     index = np.argmax(prediction)
     classificacao = labels[index]
-    confidence_score = prediction[0][index]
+    confidence_score = float(prediction[0][index])
 
-    # Print prediction and confidence score
-    print("Classificação: ", classificacao, end="\n")
-    print("Confidence Score:", confidence_score)
+    # Retorna o resultado como dicionário para o backend
+    return {
+        "type": classificacao,
+        "trustability": int(confidence_score * 100),
+        "severity": int(confidence_score * 10),
+    }

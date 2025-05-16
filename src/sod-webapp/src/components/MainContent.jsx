@@ -32,12 +32,15 @@ export default function MainContent({ userName }) {
 
                     {/* Greeting */}
                     <h1 className="text-[#434343] text-4xl md:text-5xl font-medium mb-8 leading-tight">
-                        Olá, {userName}
+                        Olá, {userName}!
                     </h1>
 
                     {/* Upload Images Button */}
-                    <Button className="w-full p-4 bg-[#00c939] text-white text-lg font-medium rounded hover:bg-[#00b033] transition-colors flex items-center justify-center gap-2">
-                        <Upload size={20} />
+                    <Button
+                        className="w-full p-6 bg-[#00C939] text-white text-xl font-semibold rounded-lg hover:bg-[#00b033] transition-colors flex items-center justify-center gap-3"
+                        style={{ fontSize: "1.25rem", paddingTop: "2rem", paddingBottom: "2rem", paddingLeft: "2rem", paddingRight: "2rem" }}
+                    >
+                        <Upload size={28} />
                         Upload de Imagens
                     </Button>
 

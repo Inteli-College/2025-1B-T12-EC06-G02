@@ -31,7 +31,7 @@ export default function LoginPage() {
         throw error
       }
 
-      router.push('/dashboard')
+      router.push('/home')
       router.refresh()
     } catch (error) {
       setError(error.message)

@@ -59,3 +59,5 @@ def prever(caminho):
     # Print prediction and confidence score
     print("Classificação: ", classificacao, end="\n")
     print("Confidence Score:", confidence_score)
+
+    return classificacao, confidence_score

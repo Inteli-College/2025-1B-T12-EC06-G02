@@ -85,8 +85,8 @@ export default function MainContent({ userName }) {
             const aiData = await aiRes.json();
             if (!aiRes.ok) throw new Error(aiData.error || 'Erro na análise de IA');
             setUploadSuccess(true);
-            // Redirect to results page after AI analysis
-            window.location.href = '/results';
+            // Redirect to results page after AI analysis, passing result as query param
+            window.location.href = '/results?iaResult=' + encodeURIComponent(JSON.stringify(aiData.aiResult));
         } catch (err) {
             setUploadError('Erro ao analisar imagem: ' + err.message);
         } finally {

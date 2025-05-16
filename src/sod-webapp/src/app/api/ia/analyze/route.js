@@ -54,10 +54,19 @@ export async function POST(req) {
       // Loga o resultado bruto da IA
       console.log('=== AI RAW RESULT ===');
       console.log(aiResultRaw);
-      // Tentar parsear JSON da saída da IA
-      try {
-        aiResult = JSON.parse(aiResultRaw);
-      } catch (e) {
+      // Extrai a última linha JSON válida do stdout
+      let jsonLine = null;
+      const lines = aiResultRaw.split(/\r?\n/).reverse();
+      for (const line of lines) {
+        try {
+          const parsed = JSON.parse(line);
+          jsonLine = parsed;
+          break;
+        } catch (e) {}
+      }
+      if (jsonLine) {
+        aiResult = jsonLine;
+      } else {
         aiResult = { raw: aiResultRaw };
       }
     } catch (err) {
@@ -99,15 +108,19 @@ export async function POST(req) {
 
     // Salvar resultado detalhado na tabela results
     let resultId = null;
+    console.log('AI RESULT OBJ:', aiResult);
     if (reportId && aiResult && typeof aiResult === 'object') {
+      // Corrige para garantir que as chaves estejam corretas e não undefined
+      const resultPayload = {
+        user_id: null, // ou id do usuário
+        trustability: aiResult.trustability ?? null,
+        severity: aiResult.severity ?? null,
+        type: aiResult.type ?? aiResult.classificacao ?? null,
+        created_at: new Date().toISOString(),
+      };
+      console.log('RESULT PAYLOAD TO INSERT:', resultPayload);
       const { data: resultData, error: resultError } = await supabase.from('results').insert([
-        {
-          user_id: null, // ou id do usuário
-          trustability: aiResult.trustability ?? null,
-          severity: aiResult.severity ?? null,
-          type: aiResult.classificacao ?? aiResult.type ?? null,
-          created_at: new Date().toISOString(),
-        }
+        resultPayload
       ]).select();
       if (!resultError && resultData && resultData[0]) {
         resultId = resultData[0].id;

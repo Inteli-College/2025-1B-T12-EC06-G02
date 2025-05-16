@@ -30,10 +30,20 @@ export async function POST(req) {
     await fs.writeFile(tempFile, Buffer.from(arrayBuffer));
 
     // 2. Rodar a IA com o caminho local
+    // Caminho absoluto correto para main.py (ajustado para o local real do arquivo)
+    const mainPyPath = 'C:/Users/Inteli/Documents/GitHub/inteli-projetos/2025-1B-T12-EC06-G02/src/IA_classificacao/main.py';
+    const pythonPath = 'C:/Users/Inteli/AppData/Local/Programs/Python/Python310/python.exe';
+    console.log('=== mainPyPath ===');
+    console.log(mainPyPath);
     const runAI = () =>
       new Promise((resolve, reject) => {
-        exec(`python ../../../../IA_classificacao/main.py --image_path "${tempFile}"`, (error, stdout, stderr) => {
-          if (error) return reject(stderr || error.message);
+        exec(`"${pythonPath}" "${mainPyPath}" --image_path "${tempFile}"`, (error, stdout, stderr) => {
+          // Loga stdout e stderr para debug
+          console.log('=== PYTHON STDOUT ===');
+          console.log(stdout);
+          console.log('=== PYTHON STDERR ===');
+          console.log(stderr);
+          if (error) return reject(stderr || error.message || stdout);
           resolve(stdout);
         });
       });
@@ -41,6 +51,9 @@ export async function POST(req) {
     let aiResult;
     try {
       aiResultRaw = await runAI();
+      // Loga o resultado bruto da IA
+      console.log('=== AI RAW RESULT ===');
+      console.log(aiResultRaw);
       // Tentar parsear JSON da saída da IA
       try {
         aiResult = JSON.parse(aiResultRaw);
@@ -49,16 +62,63 @@ export async function POST(req) {
       }
     } catch (err) {
       await fs.unlink(tempFile).catch(() => {});
-      return NextResponse.json({ error: "AI analysis failed", details: err }, { status: 500 });
+      // Loga o erro detalhado
+      console.error('=== AI analysis failed ===');
+      console.error(err);
+      return NextResponse.json({ error: "AI analysis failed", details: String(err) }, { status: 500 });
     }
 
     // Limpar arquivo temporário
     await fs.unlink(tempFile).catch(() => {});
 
-    // Opcional: salvar resultado no banco
-    // ...
+    // Salvar resultado no banco de dados (tabela reports)
+    // Exemplo: campos mínimos para criar um report
+    const { data: reportData, error: reportError } = await supabase
+      .from('reports')
+      .insert([
+        {
+          user_id: null, // ou o id do usuário logado, se disponível
+          project_id: null, // ou o id do projeto, se disponível
+          file_path: file_path,
+          generated_at: new Date().toISOString(),
+          // Adicione outros campos se necessário
+        }
+      ])
+      .select();
+    if (reportError) {
+      return NextResponse.json({ error: 'Erro ao salvar report', details: reportError.message }, { status: 500 });
+    }
+    const reportId = reportData && reportData[0] && reportData[0].id;
 
-    return NextResponse.json({ success: true, aiResult });
+    // Vincular imagem ao report na tabela reports_images
+    if (reportId && image_id) {
+      await supabase.from('reports_images').insert([
+        { report_id: reportId, image_id }
+      ]);
+    }
+
+    // Salvar resultado detalhado na tabela results
+    let resultId = null;
+    if (reportId && aiResult && typeof aiResult === 'object') {
+      const { data: resultData, error: resultError } = await supabase.from('results').insert([
+        {
+          user_id: null, // ou id do usuário
+          trustability: aiResult.trustability ?? null,
+          severity: aiResult.severity ?? null,
+          type: aiResult.classificacao ?? aiResult.type ?? null,
+          created_at: new Date().toISOString(),
+        }
+      ]).select();
+      if (!resultError && resultData && resultData[0]) {
+        resultId = resultData[0].id;
+      }
+    }
+    // Atualiza o report para vincular o result_id
+    if (reportId && resultId) {
+      await supabase.from('reports').update({ result_id: resultId }).eq('id', reportId);
+    }
+
+    return NextResponse.json({ success: true, aiResult, reportId });
   } catch (err) {
     return NextResponse.json({ error: err.message }, { status: 500 });
   }

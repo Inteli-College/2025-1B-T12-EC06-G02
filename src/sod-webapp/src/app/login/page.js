@@ -22,13 +22,20 @@ export default function LoginPage() {
     const password = formData.get('password')
 
     try {
-      const { error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       })
 
       if (error) {
         throw error
+      }
+
+      // Atualiza o last_login na tabela users
+      if (data && data.user && data.user.id) {
+        await import('../../lib/api-service').then(({ ApiService }) =>
+          ApiService.updateLastLogin(data.user.id)
+        );
       }
 
       router.push('/home')

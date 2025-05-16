@@ -33,9 +33,14 @@ export default function LoginPage() {
 
     try {
       const { error } = await supabase.auth.signUp({
-        name,
         email,
         password,
+        options: {
+          data: {
+            name,
+            role: 'researcher',
+          },
+        },
       })
 
       if (error) {

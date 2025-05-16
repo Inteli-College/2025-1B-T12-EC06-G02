@@ -42,9 +42,9 @@ Avaliar se a implementação de um drone como ferramenta de captura de imagens �
 Avaliação da qualidade do streaming de vídeo do Tello e sua viabilidade para identificação de fissuras.
 
 #### Resultados
-- **Qualidade de Imagem**: A preencher
-- **Estabilidade de Conexão**: A preencher
-- **Latência**: A preencher
+- **Qualidade de Imagem**: Qualidade de 720p.
+- **Estabilidade de Conexão**: Estável, sucessível a interferências.
+- **Latência**: Variações entre 400ms e 600ms.
 
 ### 3.2 Teste de Movimentação Básica (`app.py`)
 
@@ -62,11 +62,10 @@ Avaliação da estabilidade do drone durante movimentos programados, essencial p
 Avaliação da facilidade de controle manual do drone via teclado para posicionamento preciso diante de áreas com fissuras.
 
 #### Resultados
-- **Facilidade de Controle**: A preencher
-- **Responsividade**: A preencher
-- **Captura de Fotos**: A preencher
-- **Qualidade em Movimento**: A preencher
-- **Ambiente Controlado**: A preencher
+- **Facilidade de Controle**: Razoavelmente complicado para iniciantes, requer costume com utilização de controles a base de WASD.
+- **Responsividade**: Responsivo, possui latência parecida ao video (400ms a 600ms).
+- **Captura de Fotos**: Funcional.
+- **Qualidade em Movimento**: Movimento simplificado, sem variações de velocidade, rotação (esquerda e direita) consideravelmente "robótica" em vez de constante.
 
 ## 4. Limitações Identificadas
 

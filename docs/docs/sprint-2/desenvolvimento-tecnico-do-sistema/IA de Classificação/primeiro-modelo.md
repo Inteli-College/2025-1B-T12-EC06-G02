@@ -151,6 +151,12 @@ Essas são apenas hipóteses. Consultar-se-á o parceiro na Sprint Review para v
 
 &emsp; Em suma, o primeiro modelo desenvolvido pela SOD marca um passo inicial importante no uso de IA para classificação de fissuras. Apesar de ainda não atingir a acurácia desejada, os resultados obtidos servem como base sólida para melhorias futuras, especialmente com o aprimoramento do pré-processamento. Não obstante, a diversidade do _dataset_ é uma limtação deste projeto.
 
+## Bibliografia
+
+* CHUN, P.; IZUMI, S.; YAMANE, T. Automatic detection method of cracks from concrete surface imagery using two‐step light gradient boosting machine. Computer-Aided Civil and Infrastructure Engineering, v. 36, n. 1, p. 61–72, 20 maio 2020.
+
+* GOOGLE. Teachable Machine. Disponível em: https://teachablemachine.withgoogle.com/. 
+
 
 
 

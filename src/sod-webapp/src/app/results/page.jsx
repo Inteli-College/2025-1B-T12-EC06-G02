@@ -1,13 +1,56 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Download, History } from "lucide-react";
+import { useEffect, useState } from "react";
+import { supabase } from "../../lib/supabase";
 
 export default function Dashboard() {
+  const [reports, setReports] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchReports() {
+      setLoading(true);
+      setError(null);
+      const { data, error } = await supabase
+        .from("reports")
+        .select(`*, reports_images (image_id)`)
+        .order("generated_at", { ascending: false });
+      if (error) setError(error.message);
+      setReports(data || []);
+      setLoading(false);
+    }
+    fetchReports();
+  }, []);
+
+  // Get the most recent report for insights
+  const latestReport = reports && reports.length > 0 ? reports[0] : null;
+  // Example: adjust these field names to match your DB schema
+  const retractionCracks = latestReport?.retraction_cracks ?? '--';
+  const thermalCracks = latestReport?.thermal_cracks ?? '--';
+  const risks = latestReport?.risks ?? '--';
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <span className="text-xl">Carregando relatórios...</span>
+      </div>
+    );
+  }
+  if (error) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <span className="text-xl text-red-600">Erro ao carregar relatórios: {error}</span>
+      </div>
+    );
+  }
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image src="/cityscape-background.jpg" alt="Cityscape background" fill className="object-cover" priority />
+        <Image src="/cityscape-background.png" alt="Cityscape background" fill className="object-cover" priority />
       </div>
 
       {/* Logout Button */}
@@ -43,27 +86,23 @@ export default function Dashboard() {
           <div className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-3">
             {/* Stat 1 */}
             <div className="flex flex-col items-center text-center">
-              <p className="text-7xl font-bold text-[#434343]">03</p>
+              <p className="text-7xl font-bold text-[#434343]">{retractionCracks}</p>
               <p className="mt-2 text-xl text-[#434343]">
-                Fissuras de
-                <br />
-                retração
+                Fissuras de<br />retração
               </p>
             </div>
 
             {/* Stat 2 */}
             <div className="flex flex-col items-center text-center">
-              <p className="text-7xl font-bold text-[#434343]">13</p>
+              <p className="text-7xl font-bold text-[#434343]">{thermalCracks}</p>
               <p className="mt-2 text-xl text-[#434343]">
-                Fissuras
-                <br />
-                térmicas
+                Fissuras<br />térmicas
               </p>
             </div>
 
             {/* Stat 3 */}
             <div className="flex flex-col items-center text-center">
-              <p className="text-7xl font-bold text-[#ff0000]">12</p>
+              <p className="text-7xl font-bold text-[#ff0000]">{risks}</p>
               <p className="mt-2 text-xl text-[#ff0000]">Riscos</p>
             </div>
           </div>
@@ -85,6 +124,31 @@ export default function Dashboard() {
               </button>
             </div>
           </div>
+
+          {/* Lista de Relatórios */}
+          {reports.length === 0 ? (
+            <div className="text-center text-lg text-gray-600">Nenhum relatório encontrado.</div>
+          ) : (
+            <div className="mb-12 space-y-8">
+              {reports.map((report) => (
+                <div key={report.id} className="border rounded-lg p-6 bg-white/80 shadow flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <div>
+                    <div className="font-semibold text-lg text-[#434343]">Relatório #{report.id}</div>
+                    <div className="text-sm text-gray-600">Gerado em: {new Date(report.generated_at).toLocaleString()}</div>
+                    <div className="text-sm text-gray-600">Projeto: {report.project_id}</div>
+                    <div className="text-sm text-gray-600">Imagens: {report.reports_images?.length || 0}</div>
+                  </div>
+                  <div className="flex gap-2 mt-4 md:mt-0">
+                    {report.file_path && (
+                      <a href={"/api/download-report?path=" + encodeURIComponent(report.file_path)} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-[#00c939] text-white rounded hover:bg-[#00b033]">
+                        <Download className="h-5 w-5" /> Baixar PDF
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>

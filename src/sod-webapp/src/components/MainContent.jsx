@@ -53,7 +53,8 @@ export default function MainContent({ userName }) {
         setUploadError(null);
         setUploadSuccess(false);
         try {
-            const { error: insertError } = await supabase
+            // Insert image metadata into Supabase
+            const { data: insertData, error: insertError } = await supabase
                 .from('images')
                 .insert([
                     {
@@ -68,11 +69,26 @@ export default function MainContent({ userName }) {
                         axis,
                         floor
                     }
-                ]);
+                ])
+                .select();
             if (insertError) throw insertError;
+            const imageId = insertData && insertData[0] && insertData[0].id;
+
+            // Call AI analysis endpoint
+            setUploadSuccess(false);
+            setUploading(true);
+            const aiRes = await fetch('/api/ia/analyze', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ file_path: filePath, image_id: imageId, floor, axis })
+            });
+            const aiData = await aiRes.json();
+            if (!aiRes.ok) throw new Error(aiData.error || 'Erro na análise de IA');
             setUploadSuccess(true);
+            // Redirect to results page after AI analysis
+            window.location.href = '/results';
         } catch (err) {
-            setUploadError('Erro ao salvar no banco: ' + err.message);
+            setUploadError('Erro ao analisar imagem: ' + err.message);
         } finally {
             setUploading(false);
         }
@@ -155,7 +171,7 @@ export default function MainContent({ userName }) {
                                 </div>
                             </div>
                             <Button className="w-full p-4 bg-[#2d608d] text-white text-lg font-medium rounded hover:bg-[#245179] transition-colors" onClick={handleAnalyzeImage} disabled={uploading || !axis || !floor}>
-                                {uploading ? "Enviando..." : "Analisar imagem com IA"}
+                                {uploading ? (uploadSuccess ? "Análise concluída!" : "Analisando...") : "Analisar imagem com IA"}
                             </Button>
                             {uploadError && <p className="text-red-600 text-sm">{uploadError}</p>}
                             {uploadSuccess && <p className="text-green-600 text-sm">Imagem enviada com sucesso!</p>}

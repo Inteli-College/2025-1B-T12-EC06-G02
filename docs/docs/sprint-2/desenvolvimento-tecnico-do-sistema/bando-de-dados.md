@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 custom_edit_url: null
 ---
 
@@ -111,7 +111,7 @@ reports_images: {
 <p style={{textAlign: 'center'}}>Figura 1: Estrutura do banco de dados</p>
 <div style={{margin: 25}}>
     <div style={{textAlign: 'center'}}>
-        <img src={require("../../../../static/img/database/database.png").default} style={{width: 800}} alt="Tela de login" />
+        <img src={require("../../../static/img/database/database.png").default} style={{width: 800}} alt="Tela de login" />
         <br />
     </div>
 </div>

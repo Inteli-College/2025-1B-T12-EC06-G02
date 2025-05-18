@@ -31,8 +31,12 @@ export async function POST(req) {
 
     // 2. Rodar a IA com o caminho local
     // Caminho absoluto correto para main.py (ajustado para o local real do arquivo)
-    const mainPyPath = 'C:/Users/Inteli/Documents/GitHub/inteli-projetos/2025-1B-T12-EC06-G02/src/IA_classificacao/main.py';
-    const pythonPath = 'C:/Users/Inteli/AppData/Local/Programs/Python/Python310/python.exe';
+    const mainPyPath = path.resolve(process.cwd(), '../IA_classificacao/main.py');
+    // Detecta o caminho do Python de forma multiplataforma
+    let pythonPath = "python3";
+    if (process.platform === "win32") {
+      pythonPath = "python";
+    }
     console.log('=== mainPyPath ===');
     console.log(mainPyPath);
     const runAI = () =>

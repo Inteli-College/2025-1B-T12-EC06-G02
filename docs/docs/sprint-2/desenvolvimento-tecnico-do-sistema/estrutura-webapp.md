@@ -1,6 +1,6 @@
 ---
-sidebar_position: 3
-slug: /desenvolvimento-tecnico/estrutura-webapp
+sidebar_position: 4
+custom_edit_url: null
 ---
 
 # Estrutura Geral do Web App

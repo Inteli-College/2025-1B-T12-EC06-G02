@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /desenvolvimento-tecnico/instrucoes-uso/rodar-webapp
+slug: /desenvolvimento-tecnico/instrucoes/rodando-webapp
 ---
 
 # Estrutura Web App
@@ -71,11 +71,12 @@ npm run dev
 - Environments: .env.local
 ✓ Ready in 4s
 ```
+> **Observação:**  
+> Até o momento da Sprint 2, a solução está em desenvolvimento. Portanto, será necessário inserir as variáveis de ambiente em um arquivo `.env.local` dentro do diretório da aplicação para que o servidor funcione corretamente.
 
 
 ### 5. **Acesse a aplicação no navegador** 
 &emsp;Abra o navegador e acesse: [http://localhost:3000](http://localhost:3000)
-
 
 > **Observação:** 
 > Durante o uso de funcionalidades de IA, mensagens do TensorFlow e logs do Python podem aparecer no terminal. Isso é esperado e indica o processamento dos modelos de Machine Learning integrados ao backend.

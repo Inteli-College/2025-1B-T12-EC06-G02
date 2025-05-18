@@ -1,0 +1,25 @@
+# d2 -w input.d2 out.svg
+# d2 --theme=300 --dark-theme=200 -l elk --pad 0 ./input.d2
+
+Diagrama de Sequência do Web App (Em desenvolvimento): {
+    shape: sequence_diagram
+    usuario: Usuário {shape: Person}
+    navegador: Navegador
+    proxy: Proxy de Tunelamento
+    servidor: Servidor
+    banco: Banco de Dados
+    
+    Fluxo local: {
+        usuario -> navegador: Acessa o Web App
+        navegador -> proxy: Requisição
+        proxy."Estabelece um túnel temporário para comunicação segura"
+        # Gera uma URL pública que redireciona para o servidor local
+        proxy -> servidor: Requisição
+        servidor -> banco: Requisição
+        banco."Armazena e gerencia os dados do sistema localmente"
+        banco -> servidor: Resposta
+        servidor -> proxy: Resposta
+        proxy -> navegador: Resposta
+        navegador -> usuario: Resposta
+    }
+  }

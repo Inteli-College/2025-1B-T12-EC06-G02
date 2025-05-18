@@ -1,4 +1,4 @@
-name: Deploy Docusaurus
+name: Deploy Docusaurus 2
 
 on:
   push:

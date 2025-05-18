@@ -2,8 +2,98 @@
 import { Button } from "../components/ui/button";
 import { Upload, History, Wifi } from "lucide-react";
 import Image from "next/image";
+import React, { useRef, useState } from "react";
+import { supabase } from "../lib/supabase";
 
 export default function MainContent({ userName }) {
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [previewUrl, setPreviewUrl] = useState(null);
+    const [uploading, setUploading] = useState(false);
+    const [uploadError, setUploadError] = useState(null);
+    const [uploadSuccess, setUploadSuccess] = useState(false);
+    const [filePath, setFilePath] = useState(null);
+    const [axis, setAxis] = useState("");
+    const [floor, setFloor] = useState("");
+    const fileInputRef = useRef(null);
+
+    const handleUploadClick = () => {
+        if (fileInputRef.current) {
+            fileInputRef.current.click();
+        }
+    };
+
+    const handleFileChange = async (e) => {
+        const file = e.target.files[0];
+        if (file) {
+            setSelectedImage(file);
+            setPreviewUrl(URL.createObjectURL(file));
+            setUploadError(null);
+            setUploadSuccess(false);
+            setUploading(true);
+            try {
+                const fileName = `${Date.now()}_${file.name}`;
+                const path = `uploads/${fileName}`;
+                const { error: storageError } = await supabase.storage
+                    .from('crack_images')
+                    .upload(path, file);
+                if (storageError) throw storageError;
+                setFilePath(path);
+            } catch (err) {
+                setUploadError('Erro ao enviar imagem: ' + err.message);
+                setFilePath(null);
+            } finally {
+                setUploading(false);
+            }
+        }
+    };
+
+    async function handleAnalyzeImage() {
+        if (!selectedImage || !filePath || !axis || !floor) return;
+        setUploading(true);
+        setUploadError(null);
+        setUploadSuccess(false);
+        try {
+            // Insert image metadata into Supabase
+            const { data: insertData, error: insertError } = await supabase
+                .from('images')
+                .insert([
+                    {
+                        user_id: null, // ou o id do usuário logado
+                        project_id: null, // pode ser mockado
+                        file_path: filePath,
+                        file_name: selectedImage.name,
+                        type: selectedImage.type,
+                        size_kb: Math.round(selectedImage.size / 1024),
+                        uploaded_at: new Date().toISOString(),
+                        metadata: {},
+                        axis,
+                        floor
+                    }
+                ])
+                .select();
+            if (insertError) throw insertError;
+            const imageId = insertData && insertData[0] && insertData[0].id;
+
+            // Call AI analysis endpoint
+            setUploadSuccess(false);
+            setUploading(true);
+            const aiRes = await fetch('/api/ia/analyze', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ file_path: filePath, image_id: imageId, floor, axis })
+            });
+            const aiData = await aiRes.json();
+            if (!aiRes.ok) throw new Error(aiData.error || 'Erro na análise de IA');
+            setUploadSuccess(true);
+            // Redirect to results page after AI analysis, passing result as query param
+            window.location.href = '/results?iaResult=' + encodeURIComponent(JSON.stringify(aiData.aiResult));
+        } catch (err) {
+            setUploadError('Erro ao analisar imagem: ' + err.message);
+        } finally {
+            setUploading(false);
+        }
+    }
+
     return (
         <main className="relative min-h-screen w-full">
             {/* Background Image with Filter */}
@@ -24,22 +114,69 @@ export default function MainContent({ userName }) {
             <div className="absolute min-h-screen w-full flex items-center justify-center p-4">
                 {/* Semi-transparent Card */}
                 <div className="w-full max-w-md bg-white/80 backdrop-blur-sm p-8 md:p-12 rounded shadow-lg space-y-6">
-                    {/* Connect Button
-                    <Button className="w-full p-4 bg-[#2d608d] text-white text-lg font-medium rounded hover:bg-[#245179] transition-colors flex items-center justify-center gap-2">
-                        <Wifi size={20} />
-                        Conectar com o drone
-                    </Button> */}
-
                     {/* Greeting */}
                     <h1 className="text-[#434343] text-4xl md:text-5xl font-medium mb-8 leading-tight">
-                        Olá, {userName}
+                        Olá, {userName}!
                     </h1>
 
                     {/* Upload Images Button */}
-                    <Button className="w-full p-4 bg-[#00c939] text-white text-lg font-medium rounded hover:bg-[#00b033] transition-colors flex items-center justify-center gap-2">
-                        <Upload size={20} />
+                    <input
+                        type="file"
+                        accept="image/*"
+                        ref={fileInputRef}
+                        style={{ display: "none" }}
+                        onChange={handleFileChange}
+                    />
+                    <Button
+                        className="w-full p-6 bg-[#00C939] text-white text-xl font-semibold rounded-lg hover:bg-[#00b033] transition-colors flex items-center justify-center gap-3"
+                        style={{ fontSize: "1.25rem", paddingTop: "2rem", paddingBottom: "2rem", paddingLeft: "2rem", paddingRight: "2rem" }}
+                        onClick={handleUploadClick}
+                    >
+                        <Upload size={28} />
                         Upload de Imagens
                     </Button>
+
+                    {/* Preview da Imagem */}
+                    {previewUrl && (
+                        <div className="flex flex-col items-center space-y-4 w-full">
+                            <img
+                                src={previewUrl}
+                                alt="Preview"
+                                className="w-full max-h-64 object-contain rounded border border-gray-300 shadow"
+                            />
+                            <div className="w-full flex flex-col md:flex-row gap-4">
+                                <div className="w-full">
+                                    <label className="block text-gray-700 text-sm mb-1">Piso</label>
+                                    <input
+                                        type="text"
+                                        className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[#2d608d]"
+                                        placeholder="Ex: 1, Térreo, 2, Cobertura..."
+                                        value={floor}
+                                        onChange={e => setFloor(e.target.value)}
+                                    />
+                                </div>
+                                <div className="w-full">
+                                    <label className="block text-gray-700 text-sm mb-1">Direção</label>
+                                    <select
+                                        className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[#2d608d]"
+                                        value={axis}
+                                        onChange={e => setAxis(e.target.value)}
+                                    >
+                                        <option value="">Selecione</option>
+                                        <option value="Norte">Norte</option>
+                                        <option value="Sul">Sul</option>
+                                        <option value="Leste">Leste</option>
+                                        <option value="Oeste">Oeste</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <Button className="w-full p-4 bg-[#2d608d] text-white text-lg font-medium rounded hover:bg-[#245179] transition-colors" onClick={handleAnalyzeImage} disabled={uploading || !axis || !floor}>
+                                {uploading ? (uploadSuccess ? "Análise concluída!" : "Analisando...") : "Analisar imagem com IA"}
+                            </Button>
+                            {uploadError && <p className="text-red-600 text-sm">{uploadError}</p>}
+                            {uploadSuccess && <p className="text-green-600 text-sm">Imagem enviada com sucesso!</p>}
+                        </div>
+                    )}
 
                     {/* Warning */}
                     <p className="text-sm italic text-gray-600 text-center">

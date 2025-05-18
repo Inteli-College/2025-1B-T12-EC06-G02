@@ -5,9 +5,15 @@ custom_edit_url: null
 
 # Conexão com o Drone
 
+:::caution Conclusão da Análise
+Após os testes realizados, concluímos que será necessário desenvolver uma aplicação de streaming dedicada para o drone na próxima sprint, devido às limitações encontradas no modelo Tello. Esta decisão permite avançar com o desenvolvimento do algoritmo de detecção de fissuras enquanto mantemos flexibilidade para futura integração com drones profissionais DJI.
+:::
+
 ## 1. Introdução
 
-Este documento apresenta a análise e os testes realizados com o drone Tello para avaliar sua viabilidade na captura de imagens para detecção de fissuras em revestimentos de argamassa em fachadas de edifícios. O projeto visa desenvolver um algoritmo especializado em processamento digital de imagens (PDI) para identificação e classificação dessas fissuras, conforme requisitado pelo Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT).
+Este documento apresenta a análise e os testes realizados com o drone Tello para avaliar sua viabilidade na captura de imagens. O projeto visa desenvolver um algoritmo especializado em processamento digital de imagens (PDI) para identificação e classificação dessas fissuras, conforme requisitado pelo Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT).
+
+Esta análise é essencial para complementar nossa [proposta de arquitetura](./proposta-da-arquitetura.md), considerando as necessidades específicas dos usuários identificados em nossas [personas](../../sprint-1/ux-ui/Personas.md).
 
 ### 1.1 Objetivo dos Testes com Drone
 
@@ -16,6 +22,8 @@ Avaliar se a implementação de um drone como ferramenta de captura de imagens �
 - Facilidade de operação
 - Limitações técnicas
 - Viabilidade de integração com o algoritmo de PDI
+
+Estes testes são fundamentais para validar as hipóteses levantadas durante a elaboração do [protótipo de alta fidelidade](../design-e-ux/prototipo-alta-fidelidade.md).
 
 ## 2. Equipamentos Utilizados
 
@@ -66,6 +74,8 @@ Avaliação da facilidade de controle manual do drone via teclado para posiciona
 - **Responsividade**: Responsivo, possui latência parecida ao video (400ms a 600ms).
 - **Captura de Fotos**: Funcional.
 - **Qualidade em Movimento**: Movimento simplificado, sem variações de velocidade, rotação (esquerda e direita) consideravelmente "robótica" em vez de constante.
+
+Estes resultados foram essenciais para definir o [diagrama de sequência](./diagrama-de-sequencia.md) e compreender as limitações que devemos considerar na implementação.
 
 ## 4. Limitações Identificadas
 
@@ -146,25 +156,6 @@ Modificar a abordagem para trabalhar com imagens já capturadas por drones, sem 
 - Menor complexidade técnica
 - Foco no core do projeto (análise de fissuras)
 
-### 5.3 Solução Híbrida com API Simplificada
-
-#### Descrição
-Desenvolver uma API simplificada que:
-- Receba imagens de diversas fontes (drone, upload manual)
-- Permita integração com drones DJI via SDK oficial
-- Ofereça módulo opcional para controle de voo simplificado
-
-#### Requisitos
-- API RESTful
-- Documentação clara
-- Suporte a diferentes fontes de imagem
-- Integração básica com SDK DJI
-
-#### Benefícios
-- Flexibilidade para diferentes cenários
-- Escalabilidade para futuros recursos
-- Balanceamento entre praticidade e funcionalidade
-
 ## 6. Análise de Risco
 
 ### 6.1 Riscos do Uso de Drones
@@ -182,7 +173,7 @@ Desenvolver uma API simplificada que:
 
 ## 7. Conclusão
 
-Após testes e análises com o drone Tello, identificamos limitações significativas que impactam diretamente a implementação do projeto de detecção de fissuras em revestimentos de argamassa. A principal restrição observada foi a impossibilidade de manter dois streamings de vídeo simultâneos, permitindo apenas que um dispositivo visualize o stream por vez.
+Após testes e análises com o drone Tello, identificamos limitações significativas que impactam diretamente a implementação do projeto de detecção de fissuras em revestimentos de argamassa. A principal restrição observada foi a **impossibilidade de manter dois streamings de vídeo simultâneos, permitindo apenas que um dispositivo visualize o stream por vez.**
 
 Diante dessas limitações e considerando os objetivos do projeto para o Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT), decidimos que na próxima sprint iremos desenvolver uma aplicação de streaming dedicada para o drone. Esta solução permitirá:
 
@@ -192,6 +183,8 @@ Diante dessas limitações e considerando os objetivos do projeto para o Institu
 4. Estabelecer um buffer local que permita armazenar temporariamente as imagens antes do envio ao servidor de processamento
 
 Esta abordagem representa um passo que nos permite avançar no desenvolvimento do algoritmo de detecção de fissuras com imagens reais, enquanto mantemos a flexibilidade para futura integração com equipamentos mais avançados como os drones profissionais DJI que o cliente dispõe.
+
+Essa conclusão está alinhada com as definições apresentadas no [protótipo de alta fidelidade](../design-e-ux/prototipo-alta-fidelidade.md) e com as necessidades identificadas na [arquitetura da informação](../design-e-ux/arquitetura-da-informacao.md).
 
 ## 8. Referências
 

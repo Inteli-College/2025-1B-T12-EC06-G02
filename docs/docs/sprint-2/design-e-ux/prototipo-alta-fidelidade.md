@@ -3,7 +3,7 @@ sidebar_position: 1
 custom_edit_url: null
 ---
 
-# Protótipo de alta fidelidade do sistema
+# Protótipo de Alta Fidelidade do Sistema
 
 ## Visão Geral do Projeto
 

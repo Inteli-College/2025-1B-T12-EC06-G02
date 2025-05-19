@@ -1,3 +1,8 @@
+---
+sidebar_position: 6
+custom_edit_url: null
+---
+
 # Diagramas de Sequência UML e Adaptação para a Produção
 
 &emsp;Os diagramas de sequência UML são ferramentas visuais utilizadas para descrever como os objetos em um sistema interagem entre si ao longo do tempo. Eles são amplamente empregados para modelar o fluxo de mensagens ou eventos entre diferentes componentes de um sistema, ajudando a compreender e documentar o comportamento dinâmico de aplicações. Esses diagramas são especialmente úteis para identificar dependências, validar requisitos e planejar implementações, sendo uma parte importante para o processo de desenvolvimento de software.

@@ -34,4 +34,12 @@ export class ApiService {
   static async deleteProject(id) {
     return supabase.from('projects').delete().eq('id', id)
   }
+
+  static async updateLastLogin(userId) {
+    return supabase
+      .from('users')
+      .update({ last_login: new Date().toISOString() })
+      .eq('id', userId)
+      .select();
+  }
 }

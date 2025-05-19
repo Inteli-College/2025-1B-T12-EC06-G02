@@ -5,9 +5,10 @@ from PIL import Image, ImageOps  # Install pillow instead of PIL
 import os
 from preProcessamento.preProcessamento import processa_imagem
 
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "keras_model.h5")
 # Créditos Google AI Developers Forum --> Serve para tornar compatível as versões de tensorflow entre o teachable machine e a mais nova
 
-f = h5py.File("./teachableMachine/keras_model.h5", mode="r+")
+f = h5py.File(MODEL_PATH, mode="r+")
 model_config_string = f.attrs.get("model_config")
 if model_config_string.find('"groups": 1,') != -1:
     model_config_string = model_config_string.replace('"groups": 1,', '')
@@ -21,12 +22,12 @@ f.close()
 # Créditos Teachable Machine
 def prever(caminho):
     # (1) Carrega o modelo treinado
-    modelo = tf.keras.models.load_model('./teachableMachine/keras_model.h5')
+    modelo = tf.keras.models.load_model(MODEL_PATH)
 
     # (2) Estabelece os rótulos
     labels = {
-        0: "Retração",
-        1: "Térmica"
+        0: "Retracao",
+        1: "Termica"
     }
 
     # (3) Preprocessa a imagem
@@ -54,8 +55,11 @@ def prever(caminho):
     prediction = modelo.predict(data)
     index = np.argmax(prediction)
     classificacao = labels[index]
-    confidence_score = prediction[0][index]
+    confidence_score = float(prediction[0][index])
 
-    # Print prediction and confidence score
-    print("Classificação: ", classificacao, end="\n")
-    print("Confidence Score:", confidence_score)
+    # Retorna o resultado como dicionário para o backend
+    return {
+        "type": classificacao,
+        "trustability": int(confidence_score * 100),
+        "severity": int(confidence_score * 10),
+    }

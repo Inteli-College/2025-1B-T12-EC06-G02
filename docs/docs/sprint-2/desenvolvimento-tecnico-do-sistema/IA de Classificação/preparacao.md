@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 slug: /desenvolvimento-tecnico/ia-classificacao/preparacao
+description: "Descrição do processo de pré-processamento"
 ---
 
 # Preparação dos Dados

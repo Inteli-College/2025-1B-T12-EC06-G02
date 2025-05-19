@@ -5,7 +5,7 @@ slug: /sprint-1/analise-de-negocios/analise-pestel
 
 # Análise PESTEL
 
-&emsp; Nesta sprint, diversas metodologias foram empregadas com o objetivo de proporcionar à SOD uma compreensão aprofundada tanto da solução a ser entregue quanto do papel de sua equipe na resolução do problema em questão. Dentre os instrumentos utilizados, destacam-se o [Canvas Proposta de Valor](./Canva_proposta_de_Valor.md), o [Business Model Canvas](./Business_Model_Canvas.md) e a [Matriz de Risco](./Matriz_de_Risco.md), os quais auxiliaram na construção de uma visão estratégica do projeto.
+&emsp; Nesta sprint, diversas metodologias foram empregadas com o objetivo de proporcionar à SOD uma compreensão aprofundada tanto da solução a ser entregue quanto do papel de sua equipe na resolução do problema em questão. Dentre os instrumentos utilizados, destacam-se o [Canvas Proposta de Valor](./Canva_proposta_de_Valor.md), o [Business Model Canvas](./business_model_canvas.md) e a [Matriz de Risco](./Matriz_de_Risco.md), os quais auxiliaram na construção de uma visão estratégica do projeto.
 
 &emsp; Todavia, nenhuma dessas ferramentas seria suficiente sem a devida análise do contexto em que o parceiro se encontra inserido. Isso, pois esse fator influencia diretamente a viabilidade da iniciativa. Sendo assim, recorre-se à análise PESTEL, buscando-se responder às seguintes perguntas:  
 - *Essa solução é possível de ser implementada no cenário brasileiro?*  

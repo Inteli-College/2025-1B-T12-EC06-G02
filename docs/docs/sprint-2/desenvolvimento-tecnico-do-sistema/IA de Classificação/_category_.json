@@ -1,0 +1,9 @@
+{
+    "label": "IA de Classificação",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "Trata do pré-processamento de imagens, treinamento, teste e validação da IA de classificação de fissuras"
+    }
+  }
+  

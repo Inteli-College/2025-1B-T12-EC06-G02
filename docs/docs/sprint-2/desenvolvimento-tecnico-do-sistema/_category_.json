@@ -1,0 +1,9 @@
+{
+    "label": "Desenvolvimento Técnico do Sistema",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "Reúne todas as entregas relacionadas à construção técnica do sistema, incluindo arquitetura, backend, frontend, integração com hardware e início da IA. Esta pasta representa o núcleo da implementação prática do projeto."
+    }
+  }
+  

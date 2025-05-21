@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BackgroundImage({ children }) {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -15,12 +15,11 @@ export default function BackgroundImage({ children }) {
         />
       </div>
 
-      {/* Semi-transparent Overlay */}
-      <div className="absolute inset-0 bg-white/60 backdrop-blur-sm" />
-
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        {children}
+        <div className="relative min-h-screen w-full flex items-center justify-center p-4">
+            {children}
+          </div>
       </div>
     </div>
   );

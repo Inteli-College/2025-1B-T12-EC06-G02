@@ -6,7 +6,7 @@ description: "Apresentação do Primeiro Modelo de IA para classificação"
 
 # Primeiro Modelo
 
-&emsp; Como exposto no [Business Model Canva](../../../sprint-1/analise-de-negocios/business_model_canvas.md), uma das atividades-chave da SOD é o "Desenvolvimento do algoritmo principal, com IA treinada para detecção e **classificação de fissuras**". Nesta sprint, o foco foi direcionado ao desenvolvimento do modelo de IA voltado especificamente para a classificação de fissuras, segunda etapa da atividade-chave prevista. O modelo treinado está na pasta [``src/IA_classificacao/teachableMachine``](../../../../../src/IA_classificacao/teachableMachine). Nessa seção, visualizar-se-á o processo de criação deste primeiro modelo desde a escolha da _Teachable Machine_ até a aplicação das métricas.
+&emsp; Como exposto no [Business Model Canva](../../../sprint-1/analise-de-negocios/business_model_canvas.md), uma das atividades-chave da SOD é o "Desenvolvimento do algoritmo principal, com IA treinada para detecção e **classificação de fissuras**". Nesta sprint, o foco foi direcionado ao desenvolvimento do modelo de IA voltado especificamente para a classificação de fissuras, segunda etapa da atividade-chave prevista. O modelo treinado está na pasta [``src/IA_classificacao/teachableMachine``]. Nessa seção, visualizar-se-á o processo de criação deste primeiro modelo desde a escolha da _Teachable Machine_ até a aplicação das métricas.
 
 ## Por que usar a _Teachable Machine_?
 
@@ -22,7 +22,7 @@ description: "Apresentação do Primeiro Modelo de IA para classificação"
 ## Treinando o modelo
 
 &emsp; Em vias de treinar o modelo, os seguintes passos foram tomados:
-1. Pré-processamento do _dataset_ usando a função presente no arquivo [``src/IA_classificacao/preProcessamento/preProcessamento.py``](../../../../../src/IA_classificacao/preProcessamento/preProcessamento.py);
+1. Pré-processamento do _dataset_ usando a função presente no arquivo [``src/IA_classificacao/preProcessamento/preProcessamento.py``];
 2. Separação das imagens pré-processadas de forma randomizada em três categorias com balanceamento das classes: 
     - Treinamento (80%)
     - Validação(10%)
@@ -42,7 +42,7 @@ description: "Apresentação do Primeiro Modelo de IA para classificação"
 
 ## Adequando o modelo
 
-&emsp; Após a exportação do modelo, era necessário, para atingir o [RF01](../../../sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md), uma função que recebesse apenas o caminho de uma imagem, a pré-processasse e devolvesse a previsão do modelo. Essa função está no arquivo [``src/IA_classificacao/teachableMachine/prever.py``](../../../../../src/IA_classificacao/teachableMachine/prever.py).
+&emsp; Após a exportação do modelo, era necessário, para atingir o [RF01](../../../sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md), uma função que recebesse apenas o caminho de uma imagem, a pré-processasse e devolvesse a previsão do modelo. Essa função está no arquivo [``src/IA_classificacao/teachableMachine/prever.py``].
 
 &emsp; Em primeiro lugar, o arquivo adequa a versão do modelo exportado pela Teachable Machine à versão mais recente do Tensorflow por meio de um [algoritmo criado pelo usuário Jurgen_Thomas do Google AI Developers Forum no tópico "Cannot load .h5 model"](https://discuss.ai.google.dev/t/cannot-load-h5-model/42465/3). Em seguida, a função prever é definida. Nela, carrega-se o modelo e os _labels_, e pré-processa-se a imagem usando a função ``processa_imagem`` apresentada na [seção anterior](./preparacao.md).
 

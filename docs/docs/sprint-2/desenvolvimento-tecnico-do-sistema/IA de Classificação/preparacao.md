@@ -66,7 +66,7 @@ Em que:
 </div>
 <p style={{textAlign: 'center'}}>Fonte: CHUN, P. et <i>al</i> (2020). </p>
 
-&emsp; Todas essas transformações estão expostas no seguinte arquivo: [``src/IA_classificacao/pre-processamento/pre-processamento.py``](/src/IA_classificacao/pre-processamento/pre-processamento.py) em que se define uma função para processar cada imagem e retorna a própria imagem filtrada.
+&emsp; Todas essas transformações estão expostas no seguinte arquivo: [``src/IA_classificacao/pre-processamento/pre-processamento.py``] em que se define uma função para processar cada imagem e retorna a própria imagem filtrada.
 
 ## Resultado
 

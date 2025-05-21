@@ -1,9 +1,7 @@
 name: Deploy Docusaurus 2
 
 on:
-  push:
-    branches: ["develop"]
-  workflow_dispatch:
+  workflow_dispatch:  # Apenas execução manual
 
 permissions:
   contents: write
@@ -42,7 +40,7 @@ jobs:
         run: npm run build
 
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3  # Updated to v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: docs/build
 

@@ -6,7 +6,7 @@ description: "Apresentação do Primeiro Modelo de IA para classificação"
 
 # Primeiro Modelo
 
-&emsp; Como exposto no [Business Model Canva](../../../sprint-1/analise-de-negocios/business_model_canvas.md), uma das atividades-chave da SOD é o "Desenvolvimento do algoritmo principal, com IA treinada para detecção e **classificação de fissuras**". Nesta sprint, o foco foi direcionado ao desenvolvimento do modelo de IA voltado especificamente para a classificação de fissuras, segunda etapa da atividade-chave prevista. O modelo treinado está na pasta [``src/IA_classificacao/teachableMachine``](../../../../../src/IA_classificacao/teachableMachine). Nessa seção, visualizar-se-á o processo de criação deste primeiro modelo desde a escolha da _Teachable Machine_ até a aplicação das métricas.
+&emsp; Como exposto no [Business Model Canva](../../../sprint-1/analise-de-negocios/business_model_canvas.md), uma das atividades-chave da SOD é o "Desenvolvimento do algoritmo principal, com IA treinada para detecção e **classificação de fissuras**". Nesta sprint, o foco foi direcionado ao desenvolvimento do modelo de IA voltado especificamente para a classificação de fissuras, segunda etapa da atividade-chave prevista. O modelo treinado está na pasta [``src/IA_classificacao/teachableMachine``]. Nessa seção, visualizar-se-á o processo de criação deste primeiro modelo desde a escolha da _Teachable Machine_ até a aplicação das métricas.
 
 ## Por que usar a _Teachable Machine_?
 

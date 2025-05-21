@@ -12,14 +12,14 @@ const inter = Inter({
 import React from 'react';
 import BackgroundImage from "../../components/BackgroundImage";
 import Navbar from "../../components/Navbar";
-import MainContent from "../../components/MainContent";
+import Homepage from "../../components/Homepage"
 
 export default function Home() {
     return (
         <div className={inter.className}>
             <BackgroundImage>
-                <Navbar />
-                <MainContent userName="Usuário" />
+                <Navbar/>
+                <Homepage/>
             </BackgroundImage>
         </div>
     );

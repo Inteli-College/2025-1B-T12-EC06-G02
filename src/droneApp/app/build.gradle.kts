@@ -33,6 +33,7 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.ui.tooling.preview)
     implementation(libs.androidx.appcompat)
+    implementation(libs.libvlc.core)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 

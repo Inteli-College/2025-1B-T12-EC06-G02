@@ -119,8 +119,16 @@ export default function LoginPage() {
               className="w-full p-4 bg-[#2d608d] text-white text-xl font-medium rounded hover:bg-[#245179] transition-colors disabled:opacity-50"
               disabled={isLoading}
             >
-              {isLoading ? 'Entrando...' : 'Login'}
-            </button>
+              {isLoading ? (
+                <div className="flex items-center justify-center space-x-2">
+                  <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"               viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></              circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                  </svg>
+                  <span>Entrando...</span>
+                </div>
+              ) : 'Login'}        
+              </button>
           </form>
 
           <div className="mt-4 text-center">

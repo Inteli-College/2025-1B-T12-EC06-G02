@@ -13,14 +13,19 @@ import React from 'react';
 import BackgroundImage from "../(components)/BackgroundImage";
 import Navbar from "../(components)/Navbar";
 import Homepage from "../(components)/Homepage"
+import { useDadosStore } from "../(stores)/useDados";
+import Uploads from "../(components)/Uploads"
 
-export default function Home() {
+
+export default function Upload() {
+    const {name, selection, images} = useDadosStore((state) => state.dados);
+    console.log(name, selection, images)
 
     return (
         <div className={inter.className}>
             <BackgroundImage>
                 <Navbar/>
-                <Homepage/>
+                <Uploads name={name} images={images}/>
             </BackgroundImage>
         </div>
     );

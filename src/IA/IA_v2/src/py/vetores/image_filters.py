@@ -1,11 +1,12 @@
 """
 Módulo de filtros para pré-processamento de imagens
 Contém implementações dos filtros: equalize, CLAHE e sharpen
+Módulo completamente independente - não importa outros módulos customizados
 """
 
 import cv2
 import numpy as np
-from typing import Optional, Tuple
+from typing import Tuple
 
 
 class ImageFilters:
@@ -105,45 +106,7 @@ class ImageFilters:
             raise ValueError("kernel_type deve ser 'laplacian' ou 'unsharp'")
 
 
-def apply_filter_sequence(image: np.ndarray, filters: list) -> np.ndarray:
-    """
-    Aplica uma sequência de filtros na imagem
-    
-    Args:
-        image: Imagem de entrada
-        filters: Lista de tuplas (nome_do_filtro, kwargs) ou apenas strings com nomes dos filtros
-        
-    Returns:
-        Imagem processada com todos os filtros aplicados
-    """
-    processed_image = image.copy()
-    filter_obj = ImageFilters()
-    
-    for filter_config in filters:
-        if isinstance(filter_config, str):
-            # Apenas o nome do filtro, usa parâmetros padrão
-            filter_name = filter_config
-            kwargs = {}
-        elif isinstance(filter_config, tuple) and len(filter_config) == 2:
-            # Nome do filtro e argumentos
-            filter_name, kwargs = filter_config
-        else:
-            raise ValueError("Filtro deve ser uma string ou tupla (nome, kwargs)")
-        
-        # Aplica o filtro correspondente
-        if filter_name == 'equalize':
-            processed_image = filter_obj.equalize(processed_image)
-        elif filter_name == 'clahe':
-            processed_image = filter_obj.clahe(processed_image, **kwargs)
-        elif filter_name == 'sharpen':
-            processed_image = filter_obj.sharpen(processed_image, **kwargs)
-        else:
-            raise ValueError(f"Filtro '{filter_name}' não reconhecido")
-    
-    return processed_image
-
-
-# Funções de conveniência para uso direto
+# Funções de conveniência para uso direto do módulo
 def equalize_image(image: np.ndarray) -> np.ndarray:
     """Função de conveniência para equalização de histograma"""
     return ImageFilters.equalize(image)
@@ -157,3 +120,43 @@ def clahe_image(image: np.ndarray, clip_limit: float = 2.0, tile_grid_size: Tupl
 def sharpen_image(image: np.ndarray, strength: float = 1.0, kernel_type: str = 'laplacian') -> np.ndarray:
     """Função de conveniência para sharpening"""
     return ImageFilters.sharpen(image, strength, kernel_type)
+
+
+if __name__ == "__main__":
+    """Teste independente do módulo de filtros"""
+    print("=== TESTE INDEPENDENTE DOS FILTROS ===")
+    
+    # Cria imagem sintética para teste
+    test_image = np.zeros((200, 300, 3), dtype=np.uint8)
+    cv2.rectangle(test_image, (50, 50), (250, 150), (100, 150, 200), -1)
+    cv2.circle(test_image, (150, 100), 30, (200, 100, 150), -1)
+    
+    # Adiciona ruído
+    noise = np.random.randint(0, 30, test_image.shape, dtype=np.uint8)
+    test_image = cv2.add(test_image, noise)
+    test_image = np.ascontiguousarray(test_image, dtype=np.uint8)
+    
+    filters = ImageFilters()
+    
+    print("✓ Testando equalize...")
+    equalized = filters.equalize(test_image)
+    print(f"  Input: {test_image.shape}, Output: {equalized.shape}")
+    
+    print("✓ Testando CLAHE...")
+    clahe_result = filters.clahe(test_image, clip_limit=3.0)
+    print(f"  Input: {test_image.shape}, Output: {clahe_result.shape}")
+    
+    print("✓ Testando sharpen...")
+    sharpened = filters.sharpen(test_image, strength=1.5)
+    print(f"  Input: {test_image.shape}, Output: {sharpened.shape}")
+    
+    print("✓ Testando funções de conveniência...")
+    conv_equalized = equalize_image(test_image)
+    conv_clahe = clahe_image(test_image)
+    conv_sharpen = sharpen_image(test_image)
+    
+    print(f"  Todas as funções funcionando: {conv_equalized.shape == conv_clahe.shape == conv_sharpen.shape}")
+    
+    print("\n🎉 Módulo de filtros testado com sucesso!")
+    print("Este módulo é completamente independente e pode ser usado sozinho.")
+    print("Importações: apenas cv2, numpy e typing")

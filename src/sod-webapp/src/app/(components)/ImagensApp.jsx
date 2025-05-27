@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { supabase } from '@/utils/supabase/client'
+import { supabase } from '../../backend/lib/supabase'
 
 export default function ImagensApp() {
   const [imagens, setImagens] = useState([])
@@ -15,8 +15,8 @@ export default function ImagensApp() {
         setError(null)
 
         const { data, error } = await supabase
-          .from('imagem')
-          .select('path')
+          .from('images')
+          .select('file_path')
           .eq('app', true)
 
         if (error) throw error
@@ -24,11 +24,11 @@ export default function ImagensApp() {
         const imagensComUrl = data.map((img) => {
           const { data: publicUrlData } = supabase
             .storage
-            .from('Imagens-de-Fissuras')
-            .getPublicUrl(img.path)
+            .from('Imagens de Fissuras/uploads')
+            .getPublicUrl(img.file_path)
 
           return {
-            path: img.path,
+            path: img.file_path,
             url: publicUrlData.publicUrl,
           }
         })
@@ -59,7 +59,7 @@ export default function ImagensApp() {
           <img
             key={idx}
             src={img.url}
-            alt={`Imagem ${idx}`}
+            alt={`Imagens ${idx}`}
             className="rounded-md shadow"
           />
         ))}

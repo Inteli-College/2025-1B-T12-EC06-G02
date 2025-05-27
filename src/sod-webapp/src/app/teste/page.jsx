@@ -1,4 +1,4 @@
-import ImagensApp from '@/app/components/ImagensApp'
+import ImagensApp from "../(components)/ImagensApp";
 
 export default function Page() {
   return (
@@ -9,7 +9,7 @@ export default function Page() {
           Esta é uma página teste para testar se o componente de busca de imagens do Supabase está funcionando corretamente.
         </p>
 
-        <ImagensApp />
+        <ImagensApp/>
       </div>
     </main>
   )

@@ -1,7 +1,0 @@
-torch
-torchvision
-albumentations
-mlflow
-opencv-python
-numpy
-scikit-learn

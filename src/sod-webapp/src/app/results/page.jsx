@@ -1,120 +1,116 @@
 "use client";
+import "../globals.css";
+import { Inter } from "next/font/google";
 
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { supabase } from "../../backend/lib/supabase";
-import { Download, History } from "lucide-react";
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+import { useState } from "react";
+import Layout from "../(components)/Layout";
+import { Button } from "../(components)/ui/button";
+import Resultado from "../(components)/Resultado";
+import IconeBaixar from "../../../public/icone-baixar.png";
 import { useRouter } from "next/navigation";
+import { supabase } from "../../backend/lib/supabase";
+import { useDadosStore } from "../(stores)/useDados";
 
-export default function Dashboard() {
-  const [result, setResult] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+
+export default function Result() {
   const router = useRouter();
+  const [pdfUrl, setPdfUrl] = useState("");
 
-  useEffect(() => {
-    async function fetchLatestResult() {
-      setLoading(true);
-      setError(null);
-      const { data, error } = await supabase
-        .from("results")
-        .select("*")
-        .order("created_at", { ascending: false })
-        .limit(1);
-      if (error) {
-        setError(error.message);
-      } else if (data && data.length > 0) {
-        setResult(data[0]);
+  async function handleClick() {
+    const res = await fetch("/api/gerar-pdf", {
+      method: "POST",
+      body: JSON.stringify({ nome: "Gov da Silva" }),
+      headers: { "Content-Type": "application/json" },
+    });
+
+    const data = await res.json();
+    setPdfUrl(data.url);
+    const file = data.buffer;
+    console.log(file)
+
+    function base64ToBlob(base64, mimeType = "application/pdf") {
+      const byteCharacters = atob(base64);
+      const byteNumbers = new Array(byteCharacters.length);
+      for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
       }
-      setLoading(false);
+      const byteArray = new Uint8Array(byteNumbers);
+      return new Blob([byteArray], { type: mimeType });
     }
-    fetchLatestResult();
-  }, []);
+
+    const pdfBlob = base64ToBlob(file);
+
+    const { error } = await supabase.storage
+      .from("relatorios")
+      .upload(`relatorio-${Date.now()}.pdf`, pdfBlob);
+
+    if (error) {
+      console.error("Erro ao fazer upload:", error);
+    }
+
+    // Forçar download
+    const link = document.createElement("a");
+    link.href = data.url;
+    link.download = `relatorio-${Date.now()}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Mandar para o preview
+    const dadosParaEnviar = {preview: pdfUrl};
+    useDadosStore.getState().setDados(dadosParaEnviar);
+  }
+
+  function handleHome() {
+    router.push("/home");
+  }
+
+  function handlePreview(){
+    router.push("/preview");
+  }
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/cityscape-background.png"
-          alt="Cityscape background"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
-      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-4">
-        <div className="w-full max-w-2xl rounded-lg bg-white/90 p-8 shadow-lg">
-          <h1 className="mb-16 text-center text-4xl font-bold text-[#434343] md:text-5xl">
-            Resultado da Análise de IA
-          </h1>
-          {loading ? (
-            <div className="text-center text-lg text-gray-600">
-              Carregando...
-            </div>
-          ) : error ? (
-            <div className="text-center text-lg text-red-600">
-              Erro: {error}
-            </div>
-          ) : result ? (
-            <>
-              <div className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-3">
-                <div className="flex flex-col items-center text-center">
-                  <p className="text-7xl font-bold text-[#434343]">
-                    {result.type === "Retracao" ? 1 : 0}
-                  </p>
-                  <p className="mt-2 text-xl text-[#434343]">
-                    Fissuras de
-                    <br />
-                    retração
-                  </p>
-                </div>
-                <div className="flex flex-col items-center text-center">
-                  <p className="text-7xl font-bold text-[#434343]">
-                    {result.type === "Termica" ? 1 : 0}
-                  </p>
-                  <p className="mt-2 text-xl text-[#434343]">
-                    Fissuras
-                    <br />
-                    térmicas
-                  </p>
-                </div>
-                <div className="flex flex-col items-center text-center">
-                  <p className="text-7xl font-bold text-[#ff0000]">
-                    {result.severity ?? "--"}
-                  </p>
-                  <p className="mt-2 text-xl text-[#ff0000]">Riscos</p>
-                </div>
-              </div>
-
-              {/* Botões */}
-              <div className="flex flex-col items-center gap-4">
-                <button className="flex w-full max-w-lg items-center justify-center gap-2 rounded-md bg-[#00c939] px-6 py-4 text-xl font-medium text-white transition-colors hover:bg-[#00b033]">
-                  <Download className="h-6 w-6" />
-                  Baixar relatório na íntegra
-                </button>
-
-                <div className="mt-4 flex w-full max-w-lg flex-col gap-4 sm:flex-row">
-                  <button
-                    className="flex-1 rounded-md bg-[#2d608d] px-6 py-3 text-xl font-medium text-white transition-colors hover:bg-[#265279]"
-                    onClick={() => router.push("/home")}
-                  >
-                    Nova Pesquisa
-                  </button>
-                  <button className="flex flex-1 items-center justify-center gap-2 rounded-md bg-[#2d608d] px-6 py-3 text-xl font-medium text-white transition-colors hover:bg-[#265279]">
-                    <History className="h-5 w-5" />
-                    Histórico
-                  </button>
-                </div>
-              </div>
-            </>
-          ) : (
-            <div className="text-center text-lg text-gray-600">
-              Nenhum resultado encontrado.
-            </div>
-          )}
+    <div className={inter.className}>
+      <Layout>
+        <h1 className="text-[#434343] text-4xl text-center mx-auto md:text-5xl font-medium leading-tight">
+          Principais Insights do Relatório
+        </h1>
+        <div
+          id="resultados"
+          className="flex flex-row justify-between gap-3 w-1/2"
+        >
+          <Resultado valor="03" label="Fissuras de Retração" />
+          <Resultado valor="02" label="Fissuras Térmicas" />
         </div>
-      </div>
+        <Button
+          className="!h-auto w-1/3 !p-4 bg-[#00C939] text-white !text-2xl rounded hover:bg-[#00b033] transition-colors"
+          color="#00C939"
+          onClick={handleClick}
+        >
+          <img src={IconeBaixar.src} className="h-6"></img>Baixar Relatório na
+          Íntegra
+        </Button>
+        <div className="flex flex-row gap-4">
+          <Button
+            className="!h-auto !p-2 text-white !text-xl rounded hover:bg-[#00b033] transition-colors"
+            onClick={handleHome}
+          >
+            Voltar para home
+          </Button>
+          <Button
+            className="!h-auto !p-2 text-white !text-xl rounded hover:bg-[#00b033] transition-colors"
+            onClick={handlePreview}
+          >
+            Preview do relatório
+          </Button>
+        </div>
+      </Layout>
     </div>
   );
 }

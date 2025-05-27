@@ -3,3 +3,9 @@ venv/
 .env
 venv
 .venv
+
+__pycache__/
+fissuras/
+
+retracao/
+termicas/

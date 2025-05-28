@@ -5,9 +5,9 @@ class Config:
     """Configurações"""
     
     # Dados
-    DATA_PATH = "data/raw"
-    PROCESSED_DATA_PATH = "data/processed" 
-    SPLITS_PATH = "data/splits"
+    DATA_PATH = "../data/raw"
+    PROCESSED_DATA_PATH = "../data/processed" 
+    SPLITS_PATH = "../data/splits"
     MODELS_PATH = "models"
     
     # Classes do dataset
@@ -17,6 +17,22 @@ class Config:
     # Configurações de imagem
     IMAGE_SIZE = 224
     IMAGE_CHANNELS = 3
+    
+    # === CONFIGURAÇÕES DE MODELO ===
+    # Opções: 'custom_cnn', 'resnet'
+    MODEL_TYPE = "resnet"
+    
+    # Configurações específicas por tipo de modelo
+    MODEL_CONFIGS = {
+        'custom_cnn': {
+            'dropout_rate': 0.5
+        },
+        'resnet': {
+            'model_name': 'resnet18',  # resnet18, resnet34, resnet50, resnet101
+            'pretrained': True,
+            'freeze_backbone': False  # True para fine-tuning apenas do classificador
+        }
+    }
     
     # Treinamento
     BATCH_SIZE = 32
@@ -65,9 +81,9 @@ class Config:
     NUM_WORKERS = 4 if os.cpu_count() > 4 else 2
     PIN_MEMORY = True if DEVICE == "cuda" else False
     
-    # MLflow
+    # MLflow (simplificado - desabilitado para evitar problemas)
     EXPERIMENT_NAME = "image_classification_retracao_termicas"
-    TRACKING_URI = "file:./mlruns"
+    USE_MLFLOW = False
     
     # Checkpoints
     SAVE_CHECKPOINTS = True
@@ -79,3 +95,67 @@ class Config:
     CALCULATE_RECALL = True
     CALCULATE_F1 = True
     CALCULATE_CONFUSION_MATRIX = True
+    
+    @classmethod
+    def get_model_config(cls):
+        """Retorna a configuração do modelo atual."""
+        return cls.MODEL_CONFIGS.get(cls.MODEL_TYPE, {})
+
+
+# Configurações pré-definidas para diferentes cenários
+class FastTrainingConfig(Config):
+    """Configuração para treinamento rápido/teste."""
+    MODEL_TYPE = "resnet"
+    MODEL_CONFIGS = {
+        **Config.MODEL_CONFIGS,
+        'resnet': {
+            'model_name': 'resnet18',
+            'pretrained': True,
+            'freeze_backbone': False
+        }
+    }
+    BATCH_SIZE = 64
+    EPOCHS = 20
+    LEARNING_RATE = 0.001
+    
+
+class HighAccuracyConfig(Config):
+    """Configuração para máxima acurácia."""
+    MODEL_TYPE = "resnet"
+    MODEL_CONFIGS = {
+        **Config.MODEL_CONFIGS,
+        'resnet': {
+            'model_name': 'resnet50',
+            'pretrained': True,
+            'freeze_backbone': False
+        }
+    }
+    BATCH_SIZE = 16  # Menor para modelos maiores
+    EPOCHS = 100
+    LEARNING_RATE = 0.0005
+    PATIENCE = 15
+
+
+class LightweightConfig(Config):
+    """Configuração para modelos leves."""
+    MODEL_TYPE = "custom_cnn"
+    BATCH_SIZE = 64
+    EPOCHS = 50
+    LEARNING_RATE = 0.002
+
+
+class FineTuningConfig(Config):
+    """Configuração para fine-tuning."""
+    MODEL_TYPE = "resnet"
+    MODEL_CONFIGS = {
+        **Config.MODEL_CONFIGS,
+        'resnet': {
+            'model_name': 'resnet50',
+            'pretrained': True,
+            'freeze_backbone': True  # Congela backbone, treina apenas classificador
+        }
+    }
+    BATCH_SIZE = 32
+    EPOCHS = 30
+    LEARNING_RATE = 0.01  # LR maior para classificador
+    PATIENCE = 8

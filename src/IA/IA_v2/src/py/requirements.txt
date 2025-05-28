@@ -1,0 +1,8 @@
+# Versão mínima funcional (sem sklearn)
+torch
+torchvision
+opencv-python
+Pillow
+albumentations
+tqdm
+matplotlib

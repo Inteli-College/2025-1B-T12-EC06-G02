@@ -1,5 +1,5 @@
 """
-Dataset personalizado para classificação de imagens com augmentation.
+Dataset personalizado para classificação de imagens com augmentation (versão simplificada).
 """
 
 import os
@@ -51,6 +51,10 @@ class ImageClassificationDataset(Dataset):
         self.num_classes = len(set(labels))
         self.class_counts = {i: labels.count(i) for i in range(self.num_classes)}
         
+        print(f"Dataset criado com {len(image_paths)} imagens")
+        for i in range(self.num_classes):
+            print(f"Classe {i}: {self.class_counts[i]} imagens")
+        
     def __len__(self) -> int:
         return len(self.image_paths)
     
@@ -78,6 +82,7 @@ class ImageClassificationDataset(Dataset):
             return image, label
             
         except Exception as e:
+            print(f"Erro ao carregar imagem {image_path}: {e}")
             fallback_image = self._create_fallback_image()
             
             if self.transform:
@@ -160,7 +165,10 @@ class ImageClassificationDataset(Dataset):
         
         for class_idx in range(self.num_classes):
             class_count = self.class_counts[class_idx]
-            weight = total_samples / (self.num_classes * class_count)
+            if class_count > 0:
+                weight = total_samples / (self.num_classes * class_count)
+            else:
+                weight = 1.0
             weights.append(weight)
         
         return torch.tensor(weights, dtype=torch.float32)
@@ -171,33 +179,17 @@ class AugmentationFactory:
     
     @staticmethod
     def get_training_transforms(config: Config) -> A.Compose:
-        """Cria transformações robustas para treinamento."""
+        """Cria transformações básicas para treinamento (sem problemas de compatibilidade)."""
         transforms = [
             A.Resize(config.IMAGE_SIZE, config.IMAGE_SIZE, interpolation=cv2.INTER_AREA),
             
-            # Augmentações geométricas
+            # Augmentações básicas
             A.HorizontalFlip(p=config.HORIZONTAL_FLIP_PROB),
             A.VerticalFlip(p=config.VERTICAL_FLIP_PROB),
             A.Rotate(
                 limit=config.ROTATION_LIMIT, 
                 p=config.ROTATION_PROB,
                 border_mode=cv2.BORDER_REFLECT_101
-            ),
-            A.ShiftScaleRotate(
-                shift_limit=0.1,
-                scale_limit=0.1,
-                rotate_limit=config.ROTATION_LIMIT,
-                p=0.3,
-                border_mode=cv2.BORDER_REFLECT_101
-            ),
-            
-            # Augmentações de zoom
-            A.RandomResizedCrop(
-                height=config.IMAGE_SIZE,
-                width=config.IMAGE_SIZE,
-                scale=(0.8, 1.0),
-                ratio=(0.9, 1.1),
-                p=config.ZOOM_PROB
             ),
             
             # Augmentações de cor
@@ -206,41 +198,19 @@ class AugmentationFactory:
                 contrast_limit=0.2,
                 p=config.BRIGHTNESS_CONTRAST_PROB
             ),
-            A.HueSaturationValue(
-                hue_shift_limit=10,
-                sat_shift_limit=15,
-                val_shift_limit=10,
-                p=0.3
-            ),
+            
+            # CLAHE
             A.CLAHE(
                 clip_limit=config.CLAHE_CLIP_LIMIT,
                 tile_grid_size=config.CLAHE_TILE_GRID_SIZE,
                 p=0.3
             ),
             
-            # Ruído e blur
-            A.OneOf([
-                A.GaussianBlur(blur_limit=(3, 5), p=1.0),
-                A.MotionBlur(blur_limit=3, p=1.0),
-                A.MedianBlur(blur_limit=3, p=1.0),
-            ], p=config.BLUR_PROB),
+            # Blur básico
+            A.GaussianBlur(blur_limit=(3, 5), p=config.BLUR_PROB),
             
-            A.OneOf([
-                A.GaussNoise(var_limit=(10, 50), p=1.0),
-                A.ISONoise(color_shift=(0.01, 0.05), intensity=(0.1, 0.5), p=1.0),
-            ], p=config.NOISE_PROB),
-            
-            # Dropout
-            A.CoarseDropout(
-                max_holes=8,
-                max_height=16,
-                max_width=16,
-                min_holes=1,
-                min_height=8,
-                min_width=8,
-                fill_value=0,
-                p=0.2
-            ),
+            # Ruído básico
+            A.GaussNoise(var_limit=(10, 50), p=config.NOISE_PROB),
             
             # Normalização
             A.Normalize(
@@ -298,6 +268,11 @@ def create_datasets(splits: dict, config: Config) -> Tuple[Dataset, Dataset, Dat
     train_paths, train_labels = splits['train']
     val_paths, val_labels = splits['val']
     test_paths, test_labels = splits['test']
+    
+    print(f"Criando datasets...")
+    print(f"Treino: {len(train_paths)} imagens")
+    print(f"Validação: {len(val_paths)} imagens") 
+    print(f"Teste: {len(test_paths)} imagens")
     
     train_dataset = ImageClassificationDataset(
         image_paths=train_paths,
@@ -362,6 +337,3 @@ def create_dataloaders(train_dataset: Dataset,
     )
     
     return train_loader, val_loader, test_loader
-
-
-

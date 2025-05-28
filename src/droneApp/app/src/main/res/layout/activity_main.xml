@@ -1,43 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <VideoView
-        android:id="@+id/videoView"
+    <!-- Video Feed -->
+    <SurfaceView
+        android:id="@+id/videoSurface"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_alignParentTop="true" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
 
-    <Button
-        android:id="@+id/btnTakeoff"
-        android:layout_width="wrap_content"
+
+
+    <!-- Top UI Bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Take Off"
-        android:layout_below="@id/videoView"
-        android:layout_marginTop="16dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp" />
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical|center_horizontal">
 
-    <Button
-        android:id="@+id/btnLand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Land"
-        android:layout_below="@id/videoView"
-        android:layout_marginTop="16dp"
-        android:layout_centerHorizontal="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnPhoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Photo"
-        android:layout_below="@id/videoView"
-        android:layout_marginTop="16dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="16dp" />
-</RelativeLayout>
+            <Button
+                android:id="@+id/btnPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:text="@string/power" />
 
+            <Button
+                android:id="@+id/btnTakeoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:text="@string/takeoff" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/status_placeholder"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"
+            android:text="@string/photo" />
+    </LinearLayout>
+
+    <!-- Left Joystick -->
+    <com.example.sodcontrol.ui.theme.JoystickView
+        android:id="@+id/leftJoystick"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp" />
+
+    <!-- Right Joystick -->
+    <com.example.sodcontrol.ui.theme.JoystickView
+        android:id="@+id/rightJoystick"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp" />
+
+</FrameLayout>

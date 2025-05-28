@@ -1,36 +1,43 @@
 import os
-import torch
 from pathlib import Path
+
+# Import torch only when CUDA check is needed
+def _get_device():
+    """Get device (cuda/cpu) with lazy torch import."""
+    try:
+        import torch
+        return "cuda" if torch.cuda.is_available() else "cpu"
+    except ImportError:
+        return "cpu"
+
+def _get_base_dir():
+    """Detecta o diretório base do projeto automaticamente."""
+    current_file = Path(__file__).resolve()
+    
+    # Procurar pela pasta 'data' subindo na hierarquia
+    for parent in current_file.parents:
+        # Procurar por src/data
+        data_dir = parent / "src" / "data"
+        if data_dir.exists():
+            return parent / "src"
+        
+        # Procurar diretamente pela pasta data
+        data_dir = parent / "data"
+        if data_dir.exists():
+            return parent
+            
+        # Procurar por IA_v2/src/data
+        ia_data_dir = parent / "IA_v2" / "src" / "data"
+        if ia_data_dir.exists():
+            return parent / "IA_v2" / "src"
+    
+    # Se não encontrar, usar o diretório do arquivo atual como base
+    return current_file.parent.parent
 
 class Config:
     """Configurações para o modelo de classificação de fissuras"""
     
     # Detectar diretório base automaticamente
-    @classmethod
-    def _get_base_dir(cls):
-        """Detecta o diretório base do projeto automaticamente."""
-        current_file = Path(__file__).resolve()
-        
-        # Procurar pela pasta 'data' subindo na hierarquia
-        for parent in current_file.parents:
-            # Procurar por src/data
-            data_dir = parent / "src" / "data"
-            if data_dir.exists():
-                return parent / "src"
-            
-            # Procurar diretamente pela pasta data
-            data_dir = parent / "data"
-            if data_dir.exists():
-                return parent
-                
-            # Procurar por IA_v2/src/data
-            ia_data_dir = parent / "IA_v2" / "src" / "data"
-            if ia_data_dir.exists():
-                return parent / "IA_v2" / "src"
-        
-        # Se não encontrar, usar o diretório do arquivo atual como base
-        return current_file.parent.parent
-    
     BASE_DIR = _get_base_dir()
     
     # Dados - usando pathlib para compatibilidade cross-platform
@@ -148,7 +155,7 @@ class Config:
     NORMALIZE_STD = [0.229, 0.224, 0.225]
     
     # Sistema
-    DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+    DEVICE = _get_device()  # Lazy import do torch
     NUM_WORKERS = 8 if os.cpu_count() > 8 else 4
     PIN_MEMORY = True if DEVICE == "cuda" else False
     MIXED_PRECISION = True

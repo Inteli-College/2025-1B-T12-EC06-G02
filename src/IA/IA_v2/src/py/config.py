@@ -1,14 +1,73 @@
 import os
 import torch
+from pathlib import Path
 
 class Config:
     """Configurações para o modelo de classificação de fissuras"""
     
-    # Dados
-    DATA_PATH = "data/raw"
-    PROCESSED_DATA_PATH = "data/processed" 
-    SPLITS_PATH = "data/splits"
-    MODELS_PATH = "models"
+    # Detectar diretório base automaticamente
+    @classmethod
+    def _get_base_dir(cls):
+        """Detecta o diretório base do projeto automaticamente."""
+        current_file = Path(__file__).resolve()
+        
+        # Procurar pela pasta 'data' subindo na hierarquia
+        for parent in current_file.parents:
+            # Procurar por src/data
+            data_dir = parent / "src" / "data"
+            if data_dir.exists():
+                return parent / "src"
+            
+            # Procurar diretamente pela pasta data
+            data_dir = parent / "data"
+            if data_dir.exists():
+                return parent
+                
+            # Procurar por IA_v2/src/data
+            ia_data_dir = parent / "IA_v2" / "src" / "data"
+            if ia_data_dir.exists():
+                return parent / "IA_v2" / "src"
+        
+        # Se não encontrar, usar o diretório do arquivo atual como base
+        return current_file.parent.parent
+    
+    BASE_DIR = _get_base_dir()
+    
+    # Dados - usando pathlib para compatibilidade cross-platform
+    DATA_PATH = str(BASE_DIR / "data" / "raw")
+    PROCESSED_DATA_PATH = str(BASE_DIR / "data" / "processed")
+    SPLITS_PATH = str(BASE_DIR / "data" / "splits")
+    MODELS_PATH = str(BASE_DIR / "models")
+    
+    # Criar diretórios se não existirem
+    @classmethod
+    def ensure_directories(cls):
+        """Cria diretórios necessários se não existirem."""
+        dirs_to_create = [
+            cls.DATA_PATH,
+            cls.PROCESSED_DATA_PATH, 
+            cls.SPLITS_PATH,
+            cls.MODELS_PATH
+        ]
+        
+        for dir_path in dirs_to_create:
+            os.makedirs(dir_path, exist_ok=True)
+            
+        print(f"Diretório base: {cls.BASE_DIR}")
+        print(f"Dados em: {cls.DATA_PATH}")
+        print(f"Modelos em: {cls.MODELS_PATH}")
+        
+        # Verificar se as pastas de classes existem
+        retracao_path = Path(cls.DATA_PATH) / "retracao"
+        termicas_path = Path(cls.DATA_PATH) / "termicas"
+        
+        if not retracao_path.exists():
+            retracao_path.mkdir(parents=True, exist_ok=True)
+            print(f"Criada pasta: {retracao_path}")
+            
+        if not termicas_path.exists():
+            termicas_path.mkdir(parents=True, exist_ok=True)
+            print(f"Criada pasta: {termicas_path}")
     
     # Classes do dataset
     CLASSES = ["retracao", "termicas"]

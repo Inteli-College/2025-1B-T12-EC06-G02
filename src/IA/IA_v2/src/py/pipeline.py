@@ -122,7 +122,7 @@ class ModelPipeline:
     def evaluate_model(self, model_path: str = None) -> Dict[str, Any]:
         """Avalia o modelo no conjunto de teste."""
         print(f"\nAvaliando modelo no conjunto de teste...")
-        
+                
         if model_path and os.path.exists(model_path):
             # Carregar melhor modelo
             checkpoint = torch.load(model_path, map_location=self.device)

@@ -9,11 +9,28 @@ import os
 import sys
 from pathlib import Path
 
-# Adicionar path do código
-current_dir = Path(__file__).parent
+# Detectar diretório do projeto automaticamente
+current_dir = Path(__file__).parent.resolve()
 src_dir = current_dir / "src"
 py_dir = src_dir / "py"
+
+# Verificar se os diretórios existem
+if not src_dir.exists():
+    print(f"ERRO: Diretório src não encontrado em {current_dir}")
+    print("Certifique-se de estar executando o script do diretório correto.")
+    sys.exit(1)
+
+if not py_dir.exists():
+    print(f"ERRO: Diretório py não encontrado em {src_dir}")
+    print("Estrutura esperada: IA_v2/src/py/")
+    sys.exit(1)
+
+# Adicionar path do código
 sys.path.insert(0, str(py_dir))
+
+print(f"Diretório atual: {current_dir}")
+print(f"Diretório src: {src_dir}")
+print(f"Diretório py: {py_dir}")
 
 def check_data_structure():
     """Verifica se a estrutura de dados está correta."""
@@ -21,33 +38,52 @@ def check_data_structure():
     retracao_path = data_path / "retracao"
     termicas_path = data_path / "termicas"
     
-    print("Verificando estrutura de dados...")
+    print("\nVerificando estrutura de dados...")
+    print(f"Procurando dados em: {data_path}")
     
     if not data_path.exists():
         print("Pasta data/raw não encontrada!")
-        print("Crie a estrutura:")
-        print("   data/raw/retracao/  <- imagens de fissuras de retração")
-        print("   data/raw/termicas/  <- imagens de fissuras térmicas")
+        print("Criando estrutura de diretórios...")
+        data_path.mkdir(parents=True, exist_ok=True)
+        retracao_path.mkdir(parents=True, exist_ok=True)
+        termicas_path.mkdir(parents=True, exist_ok=True)
+        print("Estrutura criada! Agora coloque as imagens em:")
+        print(f"   {retracao_path}  <- imagens de fissuras de retração")
+        print(f"   {termicas_path}  <- imagens de fissuras térmicas")
         return False
     
     if not retracao_path.exists() or not termicas_path.exists():
         print("Pastas de classes não encontradas!")
-        print("Crie as pastas:")
+        print("Criando pastas de classes...")
+        retracao_path.mkdir(parents=True, exist_ok=True)
+        termicas_path.mkdir(parents=True, exist_ok=True)
+        print("Pastas criadas:")
         print(f"   {retracao_path}")
         print(f"   {termicas_path}")
+        print("Coloque as imagens nas pastas correspondentes.")
         return False
     
-    # Contar imagens
-    retracao_imgs = list(retracao_path.glob("*.jpg")) + list(retracao_path.glob("*.png"))
-    termicas_imgs = list(termicas_path.glob("*.jpg")) + list(termicas_path.glob("*.png"))
+    # Contar imagens (buscar por vários formatos)
+    image_extensions = ["*.jpg", "*.jpeg", "*.png", "*.bmp", "*.tiff", "*.tif"]
+    
+    retracao_imgs = []
+    termicas_imgs = []
+    
+    for ext in image_extensions:
+        retracao_imgs.extend(list(retracao_path.glob(ext)))
+        retracao_imgs.extend(list(retracao_path.glob(ext.upper())))
+        termicas_imgs.extend(list(termicas_path.glob(ext)))
+        termicas_imgs.extend(list(termicas_path.glob(ext.upper())))
     
     print(f"Estrutura de dados OK!")
-    print(f"   Retração: {len(retracao_imgs)} imagens")
-    print(f"   Térmicas: {len(termicas_imgs)} imagens")
+    print(f"   Retração: {len(retracao_imgs)} imagens em {retracao_path}")
+    print(f"   Térmicas: {len(termicas_imgs)} imagens em {termicas_path}")
     
     if len(retracao_imgs) < 10 or len(termicas_imgs) < 10:
-        print("Poucas imagens! Recomendado: 100+ por classe")
-        return False
+        print("AVISO: Poucas imagens! Recomendado: 100+ por classe para bons resultados")
+        if len(retracao_imgs) == 0 or len(termicas_imgs) == 0:
+            print("ERRO: Pelo menos uma classe está vazia!")
+            return False
     
     return True
 
@@ -59,17 +95,21 @@ def train_model():
         from config import Config
         from pipeline import ModelPipeline
         
-        # Configuração otimizada para teste rápido
+        # Inicializar configuração e criar diretórios
         config = Config()
+        config.ensure_directories()
+        
+        # Configuração otimizada para teste rápido
         config.EPOCHS = 20  # Reduzido para teste rápido
         config.BATCH_SIZE = 8  # Menor para compatibilidade
         config.PATIENCE = 8   # Early stopping mais rápido
         
-        print(f"Configuração:")
+        print(f"\nConfiguração:")
         print(f"   Épocas: {config.EPOCHS}")
         print(f"   Batch Size: {config.BATCH_SIZE}")
         print(f"   Modelo: {config.MODEL_NAME}")
         print(f"   Device: {config.DEVICE}")
+        print(f"   Dados: {config.DATA_PATH}")
         
         # Executar pipeline
         pipeline = ModelPipeline(config=config)
@@ -83,10 +123,14 @@ def train_model():
         
     except Exception as e:
         print(f"Erro durante o treinamento: {str(e)}")
+        print(f"Tipo do erro: {type(e).__name__}")
+        import traceback
+        traceback.print_exc()
         print("\nPossíveis soluções:")
-        print("   1. Verificar se as dependências estão instaladas")
+        print("   1. Verificar se as dependências estão instaladas: pip install -r requirements.txt")
         print("   2. Verificar se há GPU disponível")
         print("   3. Reduzir BATCH_SIZE se erro de memória")
+        print("   4. Verificar se as imagens estão nos diretórios corretos")
         return None
 
 def test_model(model_path=None):

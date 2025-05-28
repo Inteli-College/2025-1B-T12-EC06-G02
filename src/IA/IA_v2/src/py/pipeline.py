@@ -14,11 +14,12 @@ warnings.filterwarnings('ignore')
 from config import Config
 from data_loader import DataOrganizer
 from dataset import create_datasets, create_dataloaders
-from model import create_model
+from model import create_model, create_best_model
+from trainer import AdvancedTrainer
 
 
 class ModelPipeline:
-    """Pipeline principal para treinamento de modelos de classificação."""
+    """Pipeline para treinamento de modelos de classificação com Swin Transformer."""
     
     def __init__(self, config: Config = None, experiment_name: str = None):
         self.config = config or Config()
@@ -36,15 +37,16 @@ class ModelPipeline:
         self.val_loader = None
         self.test_loader = None
         self.model = None
-        self.optimizer = None
-        self.scheduler = None
-        self.criterion = None
+        self.trainer = None
         
         os.makedirs(self.config.MODELS_PATH, exist_ok=True)
+        
+        print(f"Pipeline iniciado - Modelo: {self.config.MODEL_NAME}")
+        print(f"Device: {self.device}")
     
     def prepare_data(self) -> None:
-        """Prepara todos os dados para treinamento."""
-        print("Preparando dados...")
+        """Prepara dados para treinamento."""
+        print("\nPreparando dados...")
         
         # Mostrar filtros que serão aplicados
         filters_info = []
@@ -76,250 +78,107 @@ class ModelPipeline:
             config=self.config
         )
         
-        print(f"Treino: {len(self.train_dataset)} imagens, Validação: {len(self.val_dataset)} imagens")
+        print(f"Dados preparados:")
+        print(f"   Treino: {len(self.train_dataset)} imagens")
+        print(f"   Validação: {len(self.val_dataset)} imagens")
+        print(f"   Teste: {len(self.test_dataset)} imagens")
+        print(f"   Batch size: {self.config.BATCH_SIZE}")
     
     def setup_model(self) -> None:
-        """Configura o modelo, otimizador, scheduler e função de perda."""
-        print("Configurando modelo...")
+        """Configura o modelo e trainer."""
+        print(f"\nConfigurando modelo {self.config.MODEL_NAME}...")
         
-        self.model = create_model(num_classes=self.config.NUM_CLASSES)
+        # Criar modelo usando factory function
+        self.model = create_model(**self.config.get_model_config())
+        
+        # Mover para device
         self.model = self.model.to(self.device)
         
-        # Configurar otimizador
-        if self.config.OPTIMIZER.lower() == "adam":
-            self.optimizer = optim.Adam(
-                self.model.parameters(),
-                lr=self.config.LEARNING_RATE,
-                weight_decay=self.config.WEIGHT_DECAY
-            )
-        elif self.config.OPTIMIZER.lower() == "adamw":
-            self.optimizer = optim.AdamW(
-                self.model.parameters(),
-                lr=self.config.LEARNING_RATE,
-                weight_decay=self.config.WEIGHT_DECAY
-            )
-        elif self.config.OPTIMIZER.lower() == "sgd":
-            self.optimizer = optim.SGD(
-                self.model.parameters(),
-                lr=self.config.LEARNING_RATE,
-                momentum=0.9,
-                weight_decay=self.config.WEIGHT_DECAY
-            )
+        # Inicializar trainer
+        self.trainer = AdvancedTrainer(
+            model=self.model,
+            config=self.config,
+            device=self.device
+        )
         
-        # Configurar scheduler
-        if self.config.SCHEDULER.lower() == "cosine":
-            self.scheduler = optim.lr_scheduler.CosineAnnealingLR(
-                self.optimizer,
-                T_max=self.config.EPOCHS
-            )
-        elif self.config.SCHEDULER.lower() == "step":
-            self.scheduler = optim.lr_scheduler.StepLR(
-                self.optimizer,
-                step_size=self.config.EPOCHS // 3,
-                gamma=0.1
-            )
-        elif self.config.SCHEDULER.lower() == "plateau":
-            self.scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-                self.optimizer,
-                mode='max',
-                factor=0.5,
-                patience=self.config.PATIENCE // 2
-            )
-        
-        # Configurar função de perda
-        if hasattr(self.train_dataset, 'get_class_weights'):
-            class_weights = self.train_dataset.get_class_weights().to(self.device)
-            self.criterion = nn.CrossEntropyLoss(weight=class_weights)
-        else:
-            self.criterion = nn.CrossEntropyLoss()
-    
-    def train_epoch(self, epoch: int) -> Dict[str, float]:
-        """Executa uma época de treinamento."""
-        self.model.train()
-        
-        running_loss = 0.0
-        correct_predictions = 0
-        total_samples = 0
-        
-        for batch_idx, (images, labels) in enumerate(self.train_loader):
-            images = images.to(self.device, non_blocking=True)
-            labels = labels.to(self.device, non_blocking=True)
-            
-            self.optimizer.zero_grad()
-            
-            outputs = self.model(images)
-            loss = self.criterion(outputs, labels)
-            
-            loss.backward()
-            self.optimizer.step()
-            
-            running_loss += loss.item()
-            _, predicted = torch.max(outputs.data, 1)
-            total_samples += labels.size(0)
-            correct_predictions += (predicted == labels).sum().item()
-            
-            if batch_idx % self.config.LOG_INTERVAL == 0:
-                batch_accuracy = 100.0 * correct_predictions / total_samples
-                print(f"Batch {batch_idx}/{len(self.train_loader)} | Loss: {loss.item():.4f} | Acc: {batch_accuracy:.2f}%")
-        
-        epoch_loss = running_loss / len(self.train_loader)
-        epoch_accuracy = 100.0 * correct_predictions / total_samples
-        
-        return {
-            'train_loss': epoch_loss,
-            'train_accuracy': epoch_accuracy
-        }
-    
-    def validate_epoch(self) -> Dict[str, float]:
-        """Executa validação completa."""
-        self.model.eval()
-        
-        running_loss = 0.0
-        correct_predictions = 0
-        total_samples = 0
-        
-        with torch.no_grad():
-            for images, labels in self.val_loader:
-                images = images.to(self.device, non_blocking=True)
-                labels = labels.to(self.device, non_blocking=True)
-                
-                outputs = self.model(images)
-                loss = self.criterion(outputs, labels)
-                
-                running_loss += loss.item()
-                _, predicted = torch.max(outputs.data, 1)
-                total_samples += labels.size(0)
-                correct_predictions += (predicted == labels).sum().item()
-        
-        val_loss = running_loss / len(self.val_loader)
-        val_accuracy = 100.0 * correct_predictions / total_samples
-        
-        return {
-            'val_loss': val_loss,
-            'val_accuracy': val_accuracy
-        }
+        print(f"Modelo configurado:")
+        print(f"   Parâmetros: {sum(p.numel() for p in self.model.parameters())/1e6:.1f}M")
+        print(f"   Optimizer: {self.config.OPTIMIZER}")
+        print(f"   Scheduler: {self.config.SCHEDULER}")
+        print(f"   Classes: {self.config.CLASSES}")
     
     def train_model(self) -> Dict[str, Any]:
-        """Executa o treinamento completo do modelo."""
-        print("Iniciando treinamento...")
+        """Executa o treinamento."""
+        print(f"\nIniciando treinamento...")
         
-        if self.train_loader is None:
-            raise ValueError("Dados não preparados! Execute prepare_data() primeiro.")
+        results = self.trainer.train(
+            train_loader=self.train_loader,
+            val_loader=self.val_loader,
+            save_dir=self.config.MODELS_PATH
+        )
         
-        if self.model is None:
-            raise ValueError("Modelo não configurado! Execute setup_model() primeiro.")
-        
-        mlflow.set_experiment(self.experiment_name)
-        
-        with mlflow.start_run():
-            config_dict = {k: v for k, v in vars(self.config).items() 
-                          if not callable(v) and not k.startswith('_')}
-            mlflow.log_params(config_dict)
-            
-            best_val_accuracy = 0.0
-            patience_counter = 0
-            training_history = {
-                'train_loss': [],
-                'train_accuracy': [],
-                'val_loss': [],
-                'val_accuracy': [],
-                'learning_rates': []
-            }
-            
-            for epoch in range(self.config.EPOCHS):
-                print(f"\nÉpoca {epoch+1}/{self.config.EPOCHS}")
-                
-                train_metrics = self.train_epoch(epoch)
-                val_metrics = self.validate_epoch()
-                
-                if self.scheduler is not None:
-                    if isinstance(self.scheduler, optim.lr_scheduler.ReduceLROnPlateau):
-                        self.scheduler.step(val_metrics['val_accuracy'])
-                    else:
-                        self.scheduler.step()
-                
-                current_lr = self.optimizer.param_groups[0]['lr']
-                
-                training_history['train_loss'].append(train_metrics['train_loss'])
-                training_history['train_accuracy'].append(train_metrics['train_accuracy'])
-                training_history['val_loss'].append(val_metrics['val_loss'])
-                training_history['val_accuracy'].append(val_metrics['val_accuracy'])
-                training_history['learning_rates'].append(current_lr)
-                
-                mlflow.log_metrics({
-                    **train_metrics,
-                    **val_metrics,
-                    'learning_rate': current_lr
-                }, step=epoch)
-                
-                print(f"Treino - Loss: {train_metrics['train_loss']:.4f} | Acc: {train_metrics['train_accuracy']:.2f}%")
-                print(f"Validação - Loss: {val_metrics['val_loss']:.4f} | Acc: {val_metrics['val_accuracy']:.2f}%")
-                
-                if val_metrics['val_accuracy'] > best_val_accuracy:
-                    best_val_accuracy = val_metrics['val_accuracy']
-                    patience_counter = 0
-                    
-                    if self.config.SAVE_CHECKPOINTS:
-                        self._save_checkpoint(epoch, val_metrics['val_accuracy'], is_best=True)
-                    
-                    print(f"Nova melhor acurácia: {best_val_accuracy:.2f}%")
-                else:
-                    patience_counter += 1
-                
-                if self.config.SAVE_CHECKPOINTS and (epoch + 1) % self.config.CHECKPOINT_FREQ == 0:
-                    self._save_checkpoint(epoch, val_metrics['val_accuracy'], is_best=False)
-                
-                if patience_counter >= self.config.PATIENCE:
-                    print(f"Early stopping após {epoch+1} épocas. Melhor acurácia: {best_val_accuracy:.2f}%")
-                    break
-            
-            print(f"\nTreinamento concluído. Melhor acurácia: {best_val_accuracy:.2f}%")
-            
-            mlflow.log_metric("best_val_accuracy", best_val_accuracy)
-            mlflow.pytorch.log_model(self.model, "final_model")
-            
-            return {
-                'best_val_accuracy': best_val_accuracy,
-                'history': training_history,
-                'epochs_trained': epoch + 1
-            }
+        return results
     
-    def _save_checkpoint(self, epoch: int, accuracy: float, is_best: bool = False) -> None:
-        """Salva checkpoint do modelo."""
-        checkpoint = {
-            'epoch': epoch + 1,
-            'model_state_dict': self.model.state_dict(),
-            'optimizer_state_dict': self.optimizer.state_dict(),
-            'accuracy': accuracy,
-            'config': vars(self.config)
-        }
+    def evaluate_model(self, model_path: str = None) -> Dict[str, Any]:
+        """Avalia o modelo no conjunto de teste."""
+        print(f"\nAvaliando modelo no conjunto de teste...")
         
-        if self.scheduler is not None:
-            checkpoint['scheduler_state_dict'] = self.scheduler.state_dict()
+        if model_path and os.path.exists(model_path):
+            # Carregar melhor modelo
+            checkpoint = torch.load(model_path, map_location=self.device)
+            self.model.load_state_dict(checkpoint['model_state_dict'])
+            print(f"Modelo carregado de: {model_path}")
         
-        if is_best:
-            checkpoint_path = os.path.join(self.config.MODELS_PATH, "best_model.pth")
-        else:
-            checkpoint_path = os.path.join(self.config.MODELS_PATH, f"checkpoint_epoch_{epoch+1}.pth")
+        # Avaliar no conjunto de teste
+        test_results = self.trainer.validate_epoch(self.test_loader)
         
-        torch.save(checkpoint, checkpoint_path)
+        print(f"Resultados no teste:")
+        print(f"   Acurácia: {test_results['accuracy']:.2f}%")
+        print(f"   Precisão: {test_results['precision']:.2f}%")
+        print(f"   Recall: {test_results['recall']:.2f}%")
+        print(f"   F1-Score: {test_results['f1']:.2f}%")
+        if 'auc' in test_results:
+            print(f"   AUC: {test_results['auc']:.2f}%")
+        
+        return test_results
     
-    def run(self) -> Dict[str, Any]:
-        """Executa a pipeline completa de treinamento."""
-        print("Executando pipeline completa...")
+    def run(self, apply_custom_filters: bool = True) -> Dict[str, Any]:
+        """Executa pipeline completo de treinamento e avaliação."""
+        print("=" * 80)
+        print("PIPELINE DE CLASSIFICAÇÃO DE FISSURAS - SWIN TRANSFORMER")
+        print("=" * 80)
         
         try:
+            # Preparar dados
             self.prepare_data()
             
+            # Configurar modelo
             self.setup_model()
             
-            results = self.train_model()
+            # Treinar modelo
+            training_results = self.train_model()
             
-            print("Pipeline executada com sucesso!")
-            return results
+            # Avaliar no teste se temos um modelo treinado
+            test_results = None
+            if training_results.get('best_model_path'):
+                test_results = self.evaluate_model(training_results['best_model_path'])
+                training_results['test_results'] = test_results
+            
+            print("\n" + "=" * 80)
+            print("RESULTADOS FINAIS")
+            print("=" * 80)
+            print(f"Melhor acurácia validação: {training_results['best_val_accuracy']:.2f}%")
+            if test_results:
+                print(f"Acurácia no teste: {test_results['accuracy']:.2f}%")
+                print(f"F1-Score no teste: {test_results['f1']:.2f}%")
+            print(f"Modelo salvo em: {training_results.get('best_model_path', 'N/A')}")
+            print(f"Épocas treinadas: {training_results.get('epochs_trained', 'N/A')}")
+            print("=" * 80)
+            
+            return training_results
             
         except Exception as e:
-            print(f"Erro na pipeline: {e}")
+            print(f"\nErro durante o pipeline: {str(e)}")
             raise e
 
 
@@ -327,11 +186,6 @@ def main():
     """Função principal para executar a pipeline."""
     config = Config()
     pipeline = ModelPipeline(config)
-    
-    # Para testar diferentes filtros, modifique o config.py:
-    # config.USE_CLAHE = False  # Desabilitar CLAHE
-    # config.SHARPEN_STRENGTH = 2.0  # Aumentar força do sharpening
-    # config.USE_SQUARE_PADDING = False  # Desabilitar padding
     
     results = pipeline.run()
     

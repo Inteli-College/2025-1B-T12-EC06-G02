@@ -2,8 +2,6 @@
 agp = "8.10.0"
 appcompat = "1.7.0"
 coreKtxVersion = "1.12.0"
-virtualjoystick = "v1.0.1"
-libvlc = "3.5.1"
 kotlin = "2.0.21"
 coreKtx = "1.16.0"
 junit = "4.13.2"
@@ -20,8 +18,6 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-core-ktx-v1120 = { module = "androidx.core:core-ktx", version.ref = "coreKtxVersion" }
 androidx-lifecycle-runtime-ktx-v262 = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
-virtual-joystick = { module = "com.github.ControlWear:virtual-joystick-android", version.ref = "virtualjoystick" }
-libvlc-core = { module = "org.videolan.android:libvlc-all", version.ref = "libvlc" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

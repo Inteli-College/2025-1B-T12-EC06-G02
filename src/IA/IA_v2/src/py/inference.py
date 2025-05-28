@@ -41,7 +41,7 @@ class CrackClassifier:
         print(f"Carregando modelo de: {model_path}")
         
         # Carregar checkpoint
-        checkpoint = torch.load(model_path, map_location=self.device)
+        checkpoint = torch.load(model_path, map_location=self.device, weights_only=False)
         
         # Criar modelo
         model = create_model(**self.config.get_model_config())

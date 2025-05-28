@@ -125,7 +125,7 @@ class ModelPipeline:
                 
         if model_path and os.path.exists(model_path):
             # Carregar melhor modelo
-            checkpoint = torch.load(model_path, map_location=self.device)
+            checkpoint = torch.load(model_path, map_location=self.device, weights_only=False)
             self.model.load_state_dict(checkpoint['model_state_dict'])
             print(f"Modelo carregado de: {model_path}")
         

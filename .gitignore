@@ -7,5 +7,8 @@ venv
 __pycache__/
 fissuras/
 
+mlruns/
+models/
+
 retracao/
 termicas/

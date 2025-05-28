@@ -2,15 +2,19 @@
 
 import { useEffect, useState } from 'react'
 import { supabase } from '../../backend/lib/supabase'
+import MiniGaleria from "../(components)/miniGaleria"
+import { Button } from "../(components)/ui/button";
+import IconeServ from "../../../public/serv-icon.png";
+
 
 export default function ImagensApp() {
   const [imagens, setImagens] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  useEffect(() => { 
+  
     async function buscarImagensApp() {
-      try {
+        try {
         setLoading(true)
         setError(null)
 
@@ -24,12 +28,13 @@ export default function ImagensApp() {
         const imagensComUrl = data.map((img) => {
           const { data: publicUrlData } = supabase
             .storage
-            .from('Imagens de Fissuras/uploads')
+            .from('imagens')
             .getPublicUrl(img.file_path)
 
           return {
+            id: img.id,
             path: img.file_path,
-            url: publicUrlData.publicUrl,
+            previewUrl: publicUrlData.publicUrl,
           }
         })
 
@@ -44,26 +49,17 @@ export default function ImagensApp() {
       }
     }
 
-    buscarImagensApp()
-  }, [])
-
   return (
-    <div className="space-y-4">
-      <h2 className="text-xl font-semibold">Imagens com app = true</h2>
-
-      {loading && <p>Carregando imagens...</p>}
+    <div className="space-y-4 w-full flex items-center flex-col">
+      <Button
+        className="!h-auto w-1/3 !p-4 bg-[#00C939] text-white !text-2xl rounded hover:bg-[#00b033] transition-colors"
+        
+        onClick={buscarImagensApp}
+      >
+        <img src={IconeServ.src}></img>Carregar do servidor
+      </Button>
       {error && <p className="text-red-600">{error}</p>}
-
-      <div className="grid grid-cols-2 gap-4">
-        {imagens.map((img, idx) => (
-          <img
-            key={idx}
-            src={img.url}
-            alt={`Imagens ${idx}`}
-            className="rounded-md shadow"
-          />
-        ))}
-      </div>
+      {!loading && <MiniGaleria images={imagens} />}
     </div>
   )
 }

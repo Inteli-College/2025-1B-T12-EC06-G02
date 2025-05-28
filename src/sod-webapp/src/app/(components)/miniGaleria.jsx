@@ -60,7 +60,7 @@ export default function miniGaleria({ images }) {
         <div className="grid grid-cols-8 gap-4 mb-6">
           {selectedImages.map((image, index) => (
             <div
-              key={image.id}
+              key={index}
               className="relative aspect-square border border-gray-300 rounded overflow-hidden bg-white group"
             >
               <img
@@ -134,11 +134,16 @@ export default function miniGaleria({ images }) {
               />
 
               <div className="p-4 bg-gray-100 w-full text-center">
+                {selectedImageForModal?.file?.name ?
+                  <p className="text-sm text-gray-600">
+                    Nome: {selectedImageForModal?.file?.name}
+                  </p> :
+                  <a className="text-sm text-gray-600" href={selectedImageForModal?.previewUrl}>
+                    Link: {selectedImageForModal?.previewUrl}
+                  </a>
+                }
                 <p className="text-sm text-gray-600">
-                  Nome: {selectedImageForModal.file.name}
-                </p>
-                <p className="text-sm text-gray-600">
-                  Tamanho: {(selectedImageForModal.file.size / 1024 / 1024).toFixed(2)} MB
+                  Tamanho: {(selectedImageForModal?.file?.size / 1024 / 1024).toFixed(2)} MB
                 </p>
               </div>
             </div>

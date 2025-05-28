@@ -53,6 +53,7 @@ export default function miniGaleria({ images }) {
   const closeModal = () => {
     setSelectedImageForModal(null);
   };
+  console.log(selectedImages)
 
   return (
     <>

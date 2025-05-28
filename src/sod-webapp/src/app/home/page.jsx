@@ -92,7 +92,7 @@ export default function Home() {
               </Button>
               <Usuario nome={name} />
               <div className="w-full flex justify-center flex-col items-center">
-                <ImagensApp className="w-full"/>
+                <ImagensApp className="w-full" nome = {name}/>
                 <p className="text-[#7E7E7E] text-lg italic mb-6">
                   *O SOD pode cometer erros
                 </p>

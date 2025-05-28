@@ -22,12 +22,34 @@ export default function Result() {
   const router = useRouter();
   const [pdfGerado, setPdfGerado] = useState(false);
 
+  async function urlToFile(previewUrl, filename) {
+    const res = await fetch(previewUrl);
+    const blob = await res.blob();
+    return new File([blob], filename, { type: blob.type });
+  }
+
   useEffect(() => {
     async function gerarPdf() {
+      const formData = new FormData();
+
+      // Helper para processar cada grupo de imagens
+      async function appendImages(key, images) {
+        for (let i = 0; i < images.length; i++) {
+          const img = images[i];
+          const previewUrl = img.previewUrl;
+          const filename = img.path || `img-${i}.jpg`;
+
+          const file = await urlToFile(previewUrl, filename);
+          formData.append(key, file);
+        }
+      }
+
+      await appendImages("termica", termicaImgs);
+      await appendImages("retracao", retracaoImgs);
+      
       const res = await fetch("/api/gerar-pdf", {
         method: "POST",
-        body: JSON.stringify({ nome: "Gov da Silva" }),
-        headers: { "Content-Type": "application/json" },
+        body: formData,
       });
 
       const data = await res.json();

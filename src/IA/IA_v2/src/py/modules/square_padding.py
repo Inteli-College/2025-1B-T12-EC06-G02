@@ -1,9 +1,3 @@
-"""
-Módulo de Square Padding para transformar imagens em formato quadrado
-Mantém a proporção original e adiciona padding preto conforme necessário
-Módulo completamente independente - não importa outros módulos customizados
-"""
-
 import cv2
 import numpy as np
 from typing import Tuple, Union

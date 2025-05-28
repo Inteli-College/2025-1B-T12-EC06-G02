@@ -4,11 +4,15 @@ Arquivo principal para execução da pipeline de treinamento.
 
 import os
 import sys
+from pathlib import Path
 
-sys.path.append('py')
+# Adicionar o diretório py ao path Python
+current_dir = Path(__file__).parent
+py_dir = current_dir / "py"
+sys.path.insert(0, str(py_dir))
 
-from py.pipeline import ModelPipeline
-from py.config import Config
+from config import Config
+from pipeline import ModelPipeline
 
 def main():
     print("=" * 60)
@@ -58,7 +62,10 @@ def main():
 
 
 if __name__ == "__main__":
-    if not os.path.exists("py/config.py"):
+    # Verificar se o arquivo config.py existe
+    config_path = Path(__file__).parent / "py" / "config.py"
+    if not config_path.exists():
+        print(f"Arquivo config.py não encontrado em: {config_path}")
         print("Execute este script do diretório src/")
         print("Comando: python main.py")
         sys.exit(1)

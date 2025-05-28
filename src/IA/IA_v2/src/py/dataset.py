@@ -193,8 +193,7 @@ class AugmentationFactory:
             
             # Augmentações de zoom
             A.RandomResizedCrop(
-                height=config.IMAGE_SIZE,
-                width=config.IMAGE_SIZE,
+                size=(config.IMAGE_SIZE, config.IMAGE_SIZE),
                 scale=(0.8, 1.0),
                 ratio=(0.9, 1.1),
                 p=config.ZOOM_PROB

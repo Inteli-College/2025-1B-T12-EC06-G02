@@ -20,7 +20,7 @@ class Config:
     
     # Modelo
     MODEL_TYPE = "swin"
-    MODEL_NAME = "swinv2_cr_base_ns_224"
+    MODEL_NAME = "swin_base_patch4_window7_224"
     PRETRAINED = True
     DROPOUT_RATE = 0.2
     

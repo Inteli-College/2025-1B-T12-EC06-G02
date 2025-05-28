@@ -12,7 +12,8 @@ from pathlib import Path
 # Adicionar path do código
 current_dir = Path(__file__).parent
 src_dir = current_dir / "src"
-sys.path.append(str(src_dir))
+py_dir = src_dir / "py"
+sys.path.insert(0, str(py_dir))
 
 def check_data_structure():
     """Verifica se a estrutura de dados está correta."""
@@ -93,7 +94,7 @@ def test_model(model_path=None):
     print("\nTestando modelo...")
     
     try:
-        from py.inference import load_classifier
+        from inference import CrackClassifier
         
         # Encontrar modelo se não especificado
         if model_path is None:
@@ -112,7 +113,7 @@ def test_model(model_path=None):
         print(f"Carregando modelo: {model_path}")
         
         # Carregar classificador
-        classifier = load_classifier(model_path)
+        classifier = CrackClassifier.load_model(model_path)
         
         # Testar com imagens de exemplo
         data_path = src_dir / "data" / "raw"
@@ -199,10 +200,8 @@ def main():
         test_model(model_path)
     
     print("\n" + "="*80)
-    print("Quick Start concluído!")
-    print("Para uso avançado, consulte: GUIA_DE_USO.md")
-    print("MLflow UI: cd src && mlflow ui")
-    print("=" * 80)
+    print("EXECUÇÃO CONCLUÍDA!")
+    print("="*80)
 
 if __name__ == "__main__":
     main() 

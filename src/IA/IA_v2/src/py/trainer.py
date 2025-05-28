@@ -80,13 +80,17 @@ class AdvancedTrainer:
         scheduler_type = getattr(self.config, 'SCHEDULER', 'cosine')
         
         if scheduler_type == "cosine_warmup":
-            warmup_steps = getattr(self.config, 'WARMUP_EPOCHS', 5) * (total_steps // self.config.EPOCHS)
+            warmup_epochs = getattr(self.config, 'WARMUP_EPOCHS', 5)
+            # Garantir que warmup não seja maior que total de épocas
+            warmup_epochs = min(warmup_epochs, self.config.EPOCHS - 1)
+            warmup_steps = warmup_epochs * (total_steps // self.config.EPOCHS)
+            pct_start = max(0.1, min(0.3, warmup_steps / total_steps))  # Entre 0.1 e 0.3
             
             return optim.lr_scheduler.OneCycleLR(
                 self.optimizer,
                 max_lr=self.config.LEARNING_RATE,
                 total_steps=total_steps,
-                pct_start=warmup_steps / total_steps,
+                pct_start=pct_start,
                 anneal_strategy='cos',
                 div_factor=25.0,
                 final_div_factor=10000.0

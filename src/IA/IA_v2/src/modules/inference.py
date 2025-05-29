@@ -64,8 +64,8 @@ class UnifiedCrackClassifier:
                 return "swin"
         
         # Padrão para ResNet se não conseguir detectar
-        print("Aviso: Não foi possível detectar o tipo de modelo automaticamente. Usando ResNet como padrão.")
-        return "resnet"
+        print("Aviso: Não foi possível detectar o tipo de modelo automaticamente. Usando SwinTransformer como padrão.")
+        return "swin"
     
     def _find_model_directory(self) -> Path:
         """Encontra o diretório do modelo específico (resnet-18 ou swin-transformer-v2)."""

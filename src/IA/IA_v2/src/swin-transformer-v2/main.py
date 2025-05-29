@@ -6,10 +6,10 @@ import os
 import sys
 from pathlib import Path
 
-# Adicionar o diretório py ao path Python
+# Adicionar pasta pai (src) ao path para importar módulos compartilhados
 current_dir = Path(__file__).parent
-py_dir = current_dir / "py"
-sys.path.insert(0, str(py_dir))
+src_dir = current_dir.parent
+sys.path.insert(0, str(src_dir))
 
 from config import Config
 from pipeline import ModelPipeline
@@ -62,12 +62,11 @@ def main():
 
 
 if __name__ == "__main__":
-    # Verificar se o arquivo config.py existe
-    config_path = Path(__file__).parent / "py" / "config.py"
+    # Verificar se os arquivos necessários existem
+    config_path = Path(__file__).parent / "config.py"
     if not config_path.exists():
         print(f"Arquivo config.py não encontrado em: {config_path}")
-        print("Execute este script do diretório src/")
-        print("Comando: python main.py")
+        print("Execute este script da pasta swin-transformer-v2/")
         sys.exit(1)
     
     main()

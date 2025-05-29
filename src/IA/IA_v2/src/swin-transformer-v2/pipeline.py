@@ -11,8 +11,16 @@ from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
 
+import sys
+from pathlib import Path
+
+# Adicionar diretório pai para importar módulos compartilhados
+current_dir = Path(__file__).parent
+src_dir = current_dir.parent
+sys.path.insert(0, str(src_dir))
+
 from config import Config
-from data_loader import DataOrganizer
+from modules.data_loader import DataOrganizer
 from dataset import create_datasets, create_dataloaders
 from model import create_model, create_best_model
 from trainer import AdvancedTrainer

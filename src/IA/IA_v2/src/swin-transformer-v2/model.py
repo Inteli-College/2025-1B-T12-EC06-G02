@@ -6,10 +6,6 @@ import math
 
 
 class SwinTransformerClassifier(nn.Module):
-    """
-    Modelo baseado em Swin Transformer V2 para classificação de fissuras.
-    """
-    
     def __init__(self, num_classes: int = 2, model_name: str = "swinv2_cr_base_ns_224", 
                  pretrained: bool = True, dropout_rate: float = 0.2):
         super(SwinTransformerClassifier, self).__init__()

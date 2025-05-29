@@ -1,9 +1,7 @@
 import os
 from pathlib import Path
 
-# Import torch only when CUDA check is needed
 def _get_device():
-    """Get device (cuda/cpu) with lazy torch import."""
     try:
         import torch
         return "cuda" if torch.cuda.is_available() else "cpu"
@@ -35,7 +33,6 @@ def _get_base_dir():
     return current_file.parent.parent
 
 class Config:
-    """Configurações para o modelo de classificação de fissuras"""
     
     # Detectar diretório base automaticamente
     BASE_DIR = _get_base_dir()
@@ -44,7 +41,11 @@ class Config:
     DATA_PATH = str(BASE_DIR / "data" / "raw")
     PROCESSED_DATA_PATH = str(BASE_DIR / "data" / "processed")
     SPLITS_PATH = str(BASE_DIR / "data" / "splits")
-    MODELS_PATH = str(BASE_DIR / "models")
+    
+    # Modelos específicos desta versão do modelo
+    MODEL_DIR = Path(__file__).parent
+    MODELS_PATH = str(MODEL_DIR / "models")
+    MLFLOW_PATH = str(MODEL_DIR / "mlruns")
     
     # Criar diretórios se não existirem
     @classmethod
@@ -54,7 +55,8 @@ class Config:
             cls.DATA_PATH,
             cls.PROCESSED_DATA_PATH, 
             cls.SPLITS_PATH,
-            cls.MODELS_PATH
+            cls.MODELS_PATH,
+            cls.MLFLOW_PATH
         ]
         
         for dir_path in dirs_to_create:
@@ -63,6 +65,7 @@ class Config:
         print(f"Diretório base: {cls.BASE_DIR}")
         print(f"Dados em: {cls.DATA_PATH}")
         print(f"Modelos em: {cls.MODELS_PATH}")
+        print(f"MLflow em: {cls.MLFLOW_PATH}")
         
         # Verificar se as pastas de classes existem
         retracao_path = Path(cls.DATA_PATH) / "retracao"
@@ -160,9 +163,9 @@ class Config:
     PIN_MEMORY = True if DEVICE == "cuda" else False
     MIXED_PRECISION = True
     
-    # MLflow
-    EXPERIMENT_NAME = "crack_classification_swin_transformer"
-    TRACKING_URI = "file:./mlruns"
+    # MLflow - específico para este modelo
+    EXPERIMENT_NAME = "swin_transformer_v2_crack_classification"
+    TRACKING_URI = f"file://{MLFLOW_PATH}"
     
     # Checkpoints
     SAVE_CHECKPOINTS = True

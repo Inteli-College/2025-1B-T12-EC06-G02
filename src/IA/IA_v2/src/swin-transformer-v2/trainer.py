@@ -16,15 +16,14 @@ from pathlib import Path
 
 
 class AdvancedTrainer:
-    """
-    Trainer avançado para modelos de classificação de fissuras.
-    Inclui mixed precision, gradient clipping, label smoothing e MLflow integration.
-    """
     
     def __init__(self, model, config, device):
         self.model = model.to(device)
         self.config = config
         self.device = device
+        
+        # Configurar MLflow
+        mlflow.set_tracking_uri(config.TRACKING_URI)
         
         # Mixed precision
         self.scaler = GradScaler() if config.MIXED_PRECISION else None

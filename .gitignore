@@ -5,7 +5,8 @@ venv
 .venv
 
 __pycache__/
-fissuras/
+
+mlruns/
 
 retracao/
 termicas/

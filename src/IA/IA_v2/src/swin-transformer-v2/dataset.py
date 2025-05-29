@@ -1,7 +1,3 @@
-"""
-Dataset personalizado para classificação de imagens com augmentation.
-"""
-
 import os
 import cv2
 import torch
@@ -12,19 +8,26 @@ import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
 import sys
-sys.path.append('vetores')
+from pathlib import Path
+
+# Adicionar o diretório pai (src) ao path
+current_dir = Path(__file__).parent
+src_dir = current_dir.parent
+sys.path.insert(0, str(src_dir))
+
 try:
-    from vetores.image_filters import ImageFilters
-    from vetores.square_padding import SquarePadding
+    from modules.image_filters import ImageFilters
+    from modules.square_padding import SquarePadding
     CUSTOM_FILTERS_AVAILABLE = True
 except ImportError:
     CUSTOM_FILTERS_AVAILABLE = False
 
 from config import Config
+from modules.base_dataset import BaseImageDataset
 
 
-class ImageClassificationDataset(Dataset):
-    """Dataset personalizado para classificação de imagens."""
+class ImageClassificationDataset(BaseImageDataset):
+    """Dataset específico para o Swin Transformer."""
     
     def __init__(self, 
                  image_paths: List[str],
@@ -33,141 +36,11 @@ class ImageClassificationDataset(Dataset):
                  config: Config = None,
                  cache_processed: bool = False):
         
-        if len(image_paths) != len(labels):
-            raise ValueError(f"Número de imagens ({len(image_paths)}) deve ser igual ao número de labels ({len(labels)})")
-        
-        self.image_paths = image_paths
-        self.labels = labels
-        self.transform = transform
-        self.config = config or Config()
-        self.cache_processed = cache_processed
-        
-        # Inicializar filtros se disponíveis
-        if CUSTOM_FILTERS_AVAILABLE:
-            self.image_filters = ImageFilters()
-            self.square_padding = SquarePadding()
-        
-        self._image_cache = {} if cache_processed else None
-        self.num_classes = len(set(labels))
-        self.class_counts = {i: labels.count(i) for i in range(self.num_classes)}
-        
-    def __len__(self) -> int:
-        return len(self.image_paths)
-    
-    def __getitem__(self, idx: int) -> Tuple[torch.Tensor, int]:
-        if self._image_cache is not None and idx in self._image_cache:
-            return self._image_cache[idx]
-        
-        image_path = self.image_paths[idx]
-        label = self.labels[idx]
-        
-        try:
-            image = self._load_image(image_path)
-            
-            # Aplicar filtros customizados se disponíveis e habilitados
-            if CUSTOM_FILTERS_AVAILABLE:
-                image = self._apply_custom_filters(image)
-            
-            if self.transform:
-                transformed = self.transform(image=image)
-                image = transformed['image']
-            
-            if self._image_cache is not None:
-                self._image_cache[idx] = (image, label)
-            
-            return image, label
-            
-        except Exception as e:
-            fallback_image = self._create_fallback_image()
-            
-            if self.transform:
-                transformed = self.transform(image=fallback_image)
-                fallback_image = transformed['image']
-            
-            return fallback_image, label
-    
-    def _load_image(self, image_path: str) -> np.ndarray:
-        """Carrega uma imagem de forma robusta."""
-        if not os.path.exists(image_path):
-            raise FileNotFoundError(f"Arquivo não encontrado: {image_path}")
-        
-        image = cv2.imread(image_path, cv2.IMREAD_COLOR)
-        
-        if image is None:
-            image = cv2.imread(image_path, cv2.IMREAD_UNCHANGED)
-            
-            if image is None:
-                raise ValueError(f"Não foi possível carregar a imagem: {image_path}")
-            
-            if len(image.shape) == 2:
-                image = cv2.cvtColor(image, cv2.COLOR_GRAY2RGB)
-            elif len(image.shape) == 3 and image.shape[2] == 4:
-                image = cv2.cvtColor(image, cv2.COLOR_BGRA2RGB)
-            elif len(image.shape) == 3 and image.shape[2] == 3:
-                image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        else:
-            image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        
-        image = np.ascontiguousarray(image, dtype=np.uint8)
-        return image
-    
-    def _apply_custom_filters(self, image: np.ndarray) -> np.ndarray:
-        """Aplica filtros customizados baseado na configuração."""
-        try:
-            # 1. CLAHE (se habilitado)
-            if self.config.USE_CLAHE:
-                image = self.image_filters.clahe(
-                    image,
-                    clip_limit=self.config.CLAHE_CLIP_LIMIT,
-                    tile_grid_size=self.config.CLAHE_TILE_GRID_SIZE
-                )
-            
-            # 2. Equalização (se habilitado)
-            if self.config.USE_EQUALIZE:
-                image = self.image_filters.equalize(image)
-            
-            # 3. Sharpening (se habilitado)
-            if self.config.USE_SHARPEN:
-                image = self.image_filters.sharpen(
-                    image,
-                    strength=self.config.SHARPEN_STRENGTH,
-                    kernel_type=self.config.SHARPEN_KERNEL_TYPE
-                )
-            
-            # 4. Square Padding (se habilitado)
-            if self.config.USE_SQUARE_PADDING:
-                image = self.square_padding.apply_padding(
-                    image,
-                    target_size=(self.config.IMAGE_SIZE, self.config.IMAGE_SIZE),
-                    padding_color=self.config.SQUARE_PADDING_COLOR
-                )
-            
-        except Exception as e:
-            print(f"Erro ao aplicar filtros customizados: {e}")
-            # Em caso de erro, retorna a imagem original
-        
-        return image
-
-    
-    def _create_fallback_image(self) -> np.ndarray:
-        """Cria uma imagem de fallback quando há erro no carregamento."""
-        return np.zeros((self.config.IMAGE_SIZE, self.config.IMAGE_SIZE, 3), dtype=np.uint8)
-    
-    def get_class_weights(self) -> torch.Tensor:
-        """Calcula pesos das classes para lidar com desbalanceamento."""
-        total_samples = len(self.labels)
-        weights = []
-        
-        for class_idx in range(self.num_classes):
-            class_count = self.class_counts[class_idx]
-            weight = total_samples / (self.num_classes * class_count)
-            weights.append(weight)
-        
-        return torch.tensor(weights, dtype=torch.float32)
+        super().__init__(image_paths, labels, transform, config, cache_processed)
 
 
 class AugmentationFactory:
-    """Factory para criar diferentes configurações de augmentation."""
+    """Factory para criar transformações específicas do Swin Transformer."""
     
     @staticmethod
     def get_training_transforms(config: Config) -> A.Compose:
@@ -193,8 +66,7 @@ class AugmentationFactory:
             
             # Augmentações de zoom
             A.RandomResizedCrop(
-                height=config.IMAGE_SIZE,
-                width=config.IMAGE_SIZE,
+                size=(config.IMAGE_SIZE, config.IMAGE_SIZE),
                 scale=(0.8, 1.0),
                 ratio=(0.9, 1.1),
                 p=config.ZOOM_PROB

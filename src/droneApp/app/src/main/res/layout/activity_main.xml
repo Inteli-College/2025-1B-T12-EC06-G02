@@ -11,8 +11,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="center" />
 
-
-
     <!-- Top UI Bar -->
     <LinearLayout
         android:id="@+id/topBar"
@@ -54,12 +52,21 @@
             android:gravity="center" />
 
         <Button
-            android:id="@+id/btnPhoto"
+            android:id="@+id/btnDisconnect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/button_selector"
-            android:text="@string/photo" />
+            android:text="Disconnect" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/photo" />
 
     <!-- Left Joystick -->
     <com.example.sodcontrol.ui.theme.JoystickView

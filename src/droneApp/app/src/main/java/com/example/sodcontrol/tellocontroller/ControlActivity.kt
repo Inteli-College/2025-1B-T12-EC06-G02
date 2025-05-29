@@ -1,5 +1,6 @@
 package com.example.sodcontrol.tellocontroller
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.SurfaceHolder
 import android.view.SurfaceView
@@ -28,6 +29,7 @@ class ControlActivity : AppCompatActivity() {
         val takeoffButton = findViewById<Button>(R.id.btnTakeoff)
         val powerButton = findViewById<Button>(R.id.btnPower)
         val photoButton = findViewById<Button>(R.id.btnPhoto)
+        val disconnectButton = findViewById<Button>(R.id.btnDisconnect)
         val statusInfo = findViewById<TextView>(R.id.statusInfo)
         val leftJoystick = findViewById<JoystickView>(R.id.leftJoystick)
         val rightJoystick = findViewById<JoystickView>(R.id.rightJoystick)
@@ -39,7 +41,6 @@ class ControlActivity : AppCompatActivity() {
                 videoReceiver = TelloVideoReceiver(holder.surface)
                 videoReceiver.start()
 
-                // Send command to Tello to enable video
                 Thread {
                     TelloCommandSender.sendCommand("command")
                     Thread.sleep(100)
@@ -53,7 +54,6 @@ class ControlActivity : AppCompatActivity() {
             }
         })
 
-        // Buttons
         takeoffButton.setOnClickListener {
             Thread { TelloCommandSender.sendCommand("takeoff") }.start()
         }
@@ -66,11 +66,24 @@ class ControlActivity : AppCompatActivity() {
             }.start()
         }
 
-        photoButton.setOnClickListener {
-            // TODO: Add image capture from frame if desired
+        disconnectButton.setOnClickListener {
+            Thread {
+                sendRcControl(0, 0, 0, 0)
+                Thread.sleep(200)
+                TelloCommandSender.sendCommand("land")
+                videoReceiver.stop()
+                runOnUiThread {
+                    val intent = Intent(this, MainActivity::class.java)
+                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+                    startActivity(intent)
+                    finish()
+                }
+            }.start()
         }
 
-        // Joystick controls
+        photoButton.setOnClickListener {
+        }
+
         leftJoystick.setJoystickListener { x, y ->
             leftX = x * 100
             leftY = y * 100
@@ -81,7 +94,6 @@ class ControlActivity : AppCompatActivity() {
             rightY = y * 100
         }
 
-        // Periodic control sending
         val scheduler = Executors.newSingleThreadScheduledExecutor()
         scheduler.scheduleAtFixedRate({
             val lr = mapInput(rightX)
@@ -101,4 +113,3 @@ class ControlActivity : AppCompatActivity() {
         TelloCommandSender.sendCommand(command)
     }
 }
-

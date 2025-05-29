@@ -18,27 +18,32 @@ class TelloVideoReceiver(private val surface: Surface) {
     private var sps: ByteArray? = null
     private var pps: ByteArray? = null
     private var decoderConfigured = false
+    private var corruptedFrames = 0
 
     fun start() {
+        running.set(true)
         Thread {
             val buffer = ByteArray(2048)
             val packet = DatagramPacket(buffer, buffer.size)
 
-            while (true) {
-                socket.receive(packet)
-                val data = packet.data.copyOf(packet.length)
-                nalBuffer += data
+            while (running.get()) {
+                try {
+                    socket.receive(packet)
+                    val data = packet.data.copyOf(packet.length)
+                    nalBuffer += data
 
-                // Check if there's a full NAL unit (start code)
-                while (true) {
-                    val nalStart = findNalStart(nalBuffer)
-                    val nextStart = findNalStart(nalBuffer, nalStart + 4)
+                    while (true) {
+                        val nalStart = findNalStart(nalBuffer)
+                        val nextStart = findNalStart(nalBuffer, nalStart + 4)
 
-                    if (nalStart < 0 || nextStart < 0) break
+                        if (nalStart < 0 || nextStart < 0) break
 
-                    val nal = nalBuffer.copyOfRange(nalStart, nextStart)
-                    nalBuffer = nalBuffer.copyOfRange(nextStart, nalBuffer.size)
-                    handleNAL(nal)
+                        val nal = nalBuffer.copyOfRange(nalStart, nextStart)
+                        nalBuffer = nalBuffer.copyOfRange(nextStart, nalBuffer.size)
+                        handleNAL(nal)
+                    }
+                } catch (e: Exception) {
+                    e.printStackTrace()
                 }
             }
         }.start()
@@ -89,12 +94,16 @@ class TelloVideoReceiver(private val surface: Surface) {
     }
 
     private fun decode(nal: ByteArray) {
+        if (nal.size < 100) return // Discard suspiciously small NALs
+
         val inputIndex = decoder.dequeueInputBuffer(10_000)
         if (inputIndex >= 0) {
             val inputBuffer = decoder.getInputBuffer(inputIndex)
             inputBuffer?.clear()
             inputBuffer?.put(nal)
             decoder.queueInputBuffer(inputIndex, 0, nal.size, System.nanoTime() / 1000, 0)
+        } else {
+            corruptedFrames++
         }
 
         val bufferInfo = MediaCodec.BufferInfo()
@@ -102,6 +111,18 @@ class TelloVideoReceiver(private val surface: Surface) {
         while (outputIndex >= 0) {
             decoder.releaseOutputBuffer(outputIndex, true)
             outputIndex = decoder.dequeueOutputBuffer(bufferInfo, 0)
+        }
+
+        // Attempt recovery on persistent corruption
+        if (corruptedFrames > 10) {
+            try {
+                decoder.stop()
+                decoderConfigured = false
+                configureDecoder()
+                corruptedFrames = 0
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
         }
     }
 

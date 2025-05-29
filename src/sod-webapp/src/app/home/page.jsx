@@ -40,13 +40,6 @@ export default function Home() {
     });
   }, []);
 
-  const redirecionar = () => {
-    const dadosParaEnviar = { name, selection, images: selectedImages };
-    console.log(dadosParaEnviar);
-    useDadosStore.getState().setDados(dadosParaEnviar);
-    router.push("/upload");
-  };
-
   const handleFileChange = async (e) => {
     const files = Array.from(e.target.files);
     if (files.length > 0) {

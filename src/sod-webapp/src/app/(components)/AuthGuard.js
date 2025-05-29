@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { supabase } from '../backend/lib/supabase';
+import { supabase } from '../../backend/lib/supabase';
 import { useState } from 'react';
 
 export default function AuthGuard({ children }) {

@@ -2,16 +2,17 @@
 
 import { useEffect, useState } from 'react'
 import { supabase } from '../../backend/lib/supabase'
-import MiniGaleria from "../(components)/miniGaleria"
 import { Button } from "../(components)/ui/button";
 import IconeServ from "../../../public/serv-icon.png";
+import { useDadosStore } from '../(stores)/useDados';
+import { useRouter } from 'next/navigation';
 
 
-export default function ImagensApp() {
+export default function ImagensApp({name}) {
   const [imagens, setImagens] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-
+  const router = useRouter()
   
     async function buscarImagensApp() {
         try {
@@ -20,7 +21,7 @@ export default function ImagensApp() {
 
         const { data, error } = await supabase
           .from('images')
-          .select('file_path')
+          .select('file_path, id')
           .eq('app', true)
 
         if (error) throw error
@@ -40,7 +41,10 @@ export default function ImagensApp() {
 
         console.log('Imagens encontradas:', imagensComUrl)
 
-        setImagens(imagensComUrl)
+        const dadosParaEnviar = { name, selection:'servidor', images: imagensComUrl };
+        useDadosStore.getState().setDados(dadosParaEnviar);
+        router.push("/upload");
+
       } catch (err) {
         console.error('Erro ao buscar imagens:', err.message)
         setError('Erro ao carregar imagens.')
@@ -53,13 +57,12 @@ export default function ImagensApp() {
     <div className="space-y-4 w-full flex items-center flex-col">
       <Button
         className="!h-auto w-1/3 !p-4 bg-[#00C939] text-white !text-2xl rounded hover:bg-[#00b033] transition-colors"
-        
+        color = "#00C939"
         onClick={buscarImagensApp}
       >
         <img src={IconeServ.src}></img>Carregar do servidor
       </Button>
       {error && <p className="text-red-600">{error}</p>}
-      {!loading && <MiniGaleria images={imagens} />}
     </div>
   )
 }

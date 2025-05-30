@@ -27,61 +27,106 @@ export default function Result() {
     const blob = await res.blob();
     return new File([blob], filename, { type: blob.type });
   }
+  const {resultadoIA} = useDadosStore((state) => state.dados);
 
   useEffect(() => {
     async function gerarPdf() {
-      const formData = new FormData();
+      try {
+        const formData = new FormData();
 
-      // Helper para processar cada grupo de imagens
-      async function appendImages(key, images) {
-        for (let i = 0; i < images.length; i++) {
-          const img = images[i];
-          const previewUrl = img.previewUrl;
-          const filename = img.path || `img-${i}.jpg`;
+        // Helper para processar cada grupo de imagens
+        async function appendImages(key, images) {
+          for (let i = 0; i < images.length; i++) {
+            const img = images[i];
+            const previewUrl = img.previewUrl;
+            const filename = img.path || `img-${i}.jpg`;
 
-          const file = await urlToFile(previewUrl, filename);
-          formData.append(key, file);
+            const file = await urlToFile(previewUrl, filename);
+            formData.append(key, file);
+          }
         }
-      }
 
-      await appendImages("termica", termicaImgs);
-      await appendImages("retracao", retracaoImgs);
-      
-      const res = await fetch("/api/gerar-pdf", {
-        method: "POST",
-        body: formData,
-      });
+        const termicaImg = resultadoIA
+          .filter(item => item.prev === "termica")
+          .map(item => ({
+            id: item.id,
+            previewUrl: item.previewUrl
+          }));
 
-      const data = await res.json();
-      const nomeArquivo = `relatorio-${Date.now()}.pdf`;
-      const file = data.buffer;
+        const retracaoImg = resultadoIA
+          .filter(item => item.prev === "retracao")
+          .map(item => ({
+            id: item.id,
+            previewUrl: item.previewUrl
+          }));
 
-      function base64ToBlob(base64, mimeType = "application/pdf") {
-        const byteCharacters = atob(base64);
-        const byteNumbers = new Array(byteCharacters.length);
-        for (let i = 0; i < byteCharacters.length; i++) {
-          byteNumbers[i] = byteCharacters.charCodeAt(i);
+        await appendImages("termica", termicaImg);
+        await appendImages("retracao", retracaoImg);
+        
+        const res = await fetch("/api/gerar-pdf", {
+          method: "POST",
+          body: formData,
+        });
+        
+        // Check if response is successful before parsing JSON
+        if (!res.ok) {
+          const errorText = await res.text();
+          console.error("Error response from server:", errorText);
+          throw new Error(`Server error: ${res.status} - ${errorText}`);
         }
-        const byteArray = new Uint8Array(byteNumbers);
-        return new Blob([byteArray], { type: mimeType });
+
+        // Check if response has content
+        const contentType = res.headers.get("content-type");
+        if (!contentType || !contentType.includes("application/json")) {
+          const responseText = await res.text();
+          console.error("Non-JSON response:", responseText);
+          throw new Error("Server did not return JSON");
+        }
+
+        const data = await res.json();
+        
+        // Validate that the response contains the expected data
+        if (!data.buffer) {
+          console.error("Invalid response structure:", data);
+          throw new Error("Server response missing PDF buffer");
+        }
+
+        const nomeArquivo = `relatorio-${Date.now()}.pdf`;
+        const file = data.buffer;
+
+        function base64ToBlob(base64, mimeType = "application/pdf") {
+          const byteCharacters = atob(base64);
+          const byteNumbers = new Array(byteCharacters.length);
+          for (let i = 0; i < byteCharacters.length; i++) {
+            byteNumbers[i] = byteCharacters.charCodeAt(i);
+          }
+          const byteArray = new Uint8Array(byteNumbers);
+          return new Blob([byteArray], { type: mimeType });
+        }
+
+        const pdfBlob = base64ToBlob(file);
+
+        const { error } = await supabase.storage
+          .from("relatorios")
+          .upload(nomeArquivo, pdfBlob);
+
+        if (error) {
+          console.error("Erro ao fazer upload:", error);
+          throw new Error(`Upload error: ${error.message}`);
+        }
+
+        // Salvar no estado global
+        const dadosParaEnviar = { preview: nomeArquivo };
+        useDadosStore.getState().setDados(dadosParaEnviar);
+
+        // Marcar PDF como gerado
+        setPdfGerado(true);
+
+      } catch (error) {
+        console.error("Error generating PDF:", error);
+        // You might want to show an error message to the user here
+        // For example, set an error state and display it in the UI
       }
-
-      const pdfBlob = base64ToBlob(file);
-
-      const { error } = await supabase.storage
-        .from("relatorios")
-        .upload(nomeArquivo, pdfBlob);
-
-      if (error) {
-        console.error("Erro ao fazer upload:", error);
-      }
-
-      // Salvar no estado global
-      const dadosParaEnviar = { preview: nomeArquivo };
-      useDadosStore.getState().setDados(dadosParaEnviar);
-
-      // Marcar PDF como gerado
-      setPdfGerado(true);
     }
 
     gerarPdf();

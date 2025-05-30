@@ -1,44 +1,32 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-import formidable from 'formidable';
-import fs from 'fs';
-import { gerarPDF } from '../../../backend/reports/geraPdf';
+import { NextResponse } from "next/server";
+import { gerarPDF } from "../../../backend/reports/geraPdf";
 
-// Desativa o body parser padrão
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+export async function POST(req: Request) {
+  try {
+    const formData = await req.formData();
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Método não permitido' });
-  }
+    const termicaFiles = formData.getAll("termica") as File[];
+    const retracaoFiles = formData.getAll("retracao") as File[];
 
-  const form = formidable({ multiples: true });
-
-  form.parse(req, async (err, fields, files) => {
-    if (err) {
-      return res.status(500).json({ error: 'Erro ao processar formulário' });
-    }
-
-    // Extrai os arquivos de forma segura
-    const extractBuffers = (fileField: any): Buffer[] => {
-      if (!fileField) return [];
-
-      const fileArray = Array.isArray(fileField) ? fileField : [fileField];
-      return fileArray.map(f => fs.readFileSync(f.filepath));
+    const readFile = async (file: File) => {
+      const arrayBuffer = await file.arrayBuffer();
+      return Buffer.from(arrayBuffer);
     };
 
-    const termicaBuffers = extractBuffers(files.termica);
-    const retracaoBuffers = extractBuffers(files.retracao);
+    const termicaBuffers = await Promise.all(termicaFiles.map(readFile));
+    const retracaoBuffers = await Promise.all(retracaoFiles.map(readFile));
 
-    try {
-      const pdf = await gerarPDF(termicaBuffers, retracaoBuffers);
-      return res.status(200).json(pdf);
-    } catch (e) {
-      console.error(e);
-      return res.status(500).json({ error: 'Erro ao gerar o PDF' });
-    }
-  });
+    // Gera o PDF
+    const pdfBuffer = await gerarPDF(termicaBuffers, retracaoBuffers);
+
+    const base64 = pdfBuffer.toString("base64");
+
+    return NextResponse.json({ buffer: base64 });
+  } catch (error) {
+    console.error(error);
+    return NextResponse.json(
+      { error: "Erro ao gerar o PDF" },
+      { status: 500 }
+    );
+  }
 }

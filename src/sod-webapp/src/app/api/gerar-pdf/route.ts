@@ -18,8 +18,9 @@ export async function POST(req: Request) {
 
     // Gera o PDF
     const pdfBuffer = await gerarPDF(termicaBuffers, retracaoBuffers);
+    console.log(pdfBuffer)
 
-    const base64 = pdfBuffer.toString("base64");
+    const base64 = pdfBuffer.base64;
 
     return NextResponse.json({ buffer: base64 });
   } catch (error) {

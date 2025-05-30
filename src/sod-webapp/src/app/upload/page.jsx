@@ -9,7 +9,7 @@ const inter = Inter({
   display: "swap",
 });
 
-import React from "react";
+import React, { useState } from "react";
 import BackgroundImage from "../(components)/BackgroundImage";
 import Navbar from "../(components)/Navbar";
 import { useDadosStore } from "../(stores)/useDados";
@@ -18,32 +18,84 @@ import Usuario from "../(components)/Usuario";
 import MiniGaleria from "../(components)/miniGaleria"
 import { Button } from "../(components)/ui/button";
 import { useRouter } from "next/navigation";
+import Loading from "../(components)/Loading";
 
 export default function Upload() {
   const { name, selection, images } = useDadosStore((state) => state.dados);
+  const [imagens, setImagens] = useState(images)
   const router = useRouter()
+  const [loading, setLoading] = useState(false)
   
-  console.log(name, selection, images);
+async function handleClick() {
+  setLoading(true)
+  try {
+        // Converte um Blob (URL local) para base64
+    const blobToBase64 = (blobUrl) => {
+      return new Promise((resolve, reject) => {
+        fetch(blobUrl)
+          .then((res) => res.blob())
+          .then((blob) => {
+            const reader = new FileReader();
+            reader.onloadend = () => resolve(reader.result);
+            reader.onerror = reject;
+            reader.readAsDataURL(blob);
+          });
+      });
+    };
 
-  function handleClick(){
-    const resultadoIA = [{id:images[0].id,previewUrl:images[0].previewUrl, prev:"termica"}, {id:images[1].id,previewUrl:images[1].previewUrl, prev:"retracao"}]
+    // Mapeia as imagens: converte se tiver previewUrl tipo blob:
+    const imagensConvertidas = await Promise.all(
+      imagens.map(async (img) => {
+        if (img.previewUrl?.startsWith("blob:")) {
+          const base64 = await blobToBase64(img.previewUrl);
+          return {
+            ...img,
+            previewUrl: base64, // substitui o blob por base64
+          };
+        }
+        return img; // mantém a imagem original se não for blob
+      })
+    );
+    const response = await fetch("http://127.0.0.1:5000/api/ia/classify", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        images: imagensConvertidas,
+        model_path: "C:/Users/Inteli/Documents/GitHub/2025-1B-T12-EC06-G02/src/IA/IA_v2/src/swin-transformer-v2/models/best_model_epoch_7.pt"
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Erro na requisição: ${response.status}`);
+    }
+
+    const resultadoIA = await response.json();
+
     const dadosParaEnviar = { name, resultadoIA };
     useDadosStore.getState().setDados(dadosParaEnviar);
     router.push("/results");
+
+  } catch (error) {
+    console.error("Erro ao enviar dados para o backend:", error);
   }
+}
+
 
   return (
     <div className={inter.className}>
       <BackgroundImage>
         <Navbar />
         <Card>
+          { loading ? (<Loading />) :(<>
           <Usuario nome={name} />
-          <MiniGaleria images={images} />
+          <MiniGaleria images={imagens} handleImages={setImagens} />
 
           <Button color="#00C939" onClick={handleClick}>
             Iniciar processamento
           
-          </Button>
+          </Button></>) }
 
         </Card>
       </BackgroundImage>

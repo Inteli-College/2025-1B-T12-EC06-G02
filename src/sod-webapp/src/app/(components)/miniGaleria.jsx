@@ -3,8 +3,7 @@ import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 
-export default function miniGaleria({ images }) {
-  const [selectedImages, setSelectedImages] = useState(images);
+export default function miniGaleria({ images, handleImages }) {
   const [uploadError, setUploadError] = useState(null);
   const [uploadSuccess, setUploadSuccess] = useState(false);
   const [selectedImageForModal, setSelectedImageForModal] = useState(null);
@@ -30,14 +29,14 @@ export default function miniGaleria({ images }) {
         id: Math.random().toString(36).substring(2, 15),
       }));
 
-      setSelectedImages([...selectedImages, ...newImages]);
+      handleImages([...images, ...newImages]);
       setUploadError(null);
       setUploadSuccess(false);
     }
   };
 
   const handleDeleteImage = (imageId) => {
-    setSelectedImages((prevImages) => {
+    handleImages((prevImages) => {
       const imageToDelete = prevImages.find((img) => img.id === imageId);
       if (imageToDelete) {
         URL.revokeObjectURL(imageToDelete.previewUrl);
@@ -53,13 +52,13 @@ export default function miniGaleria({ images }) {
   const closeModal = () => {
     setSelectedImageForModal(null);
   };
-  console.log(selectedImages)
+  console.log(images)
 
   return (
     <>
       <div className="w-full max-w-4xl bg-gray-700/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
         <div className="grid grid-cols-8 gap-4 mb-6">
-          {selectedImages.map((image, index) => (
+          {images.map((image, index) => (
             <div
               key={index}
               className="relative aspect-square border border-gray-300 rounded overflow-hidden bg-white group"

@@ -18,6 +18,7 @@ export async function gerarPDF(termica: Buffer[], retracao: Buffer[]): Promise<{
 
   y -= 40;
 
+  if (termica.length > 0) {
   // Seção: Térmicas
   page.drawText('Fissuras Térmicas:', {
     x: 50,
@@ -26,6 +27,7 @@ export async function gerarPDF(termica: Buffer[], retracao: Buffer[]): Promise<{
     font: timesRomanFont,
     color: rgb(0.2, 0.2, 0.2),
   });
+  }
 
   y -= 20;
 
@@ -53,21 +55,23 @@ export async function gerarPDF(termica: Buffer[], retracao: Buffer[]): Promise<{
     y -= dims.height + 20;
   }
 
-  // Seção: Retração
-  if (y < 100) {
-    page = pdfDoc.addPage([600, 800]);
-    y = height - 50;
+  if (retracao.length > 0){
+    // Seção: Retração
+    if (y < 100) {
+      page = pdfDoc.addPage([600, 800]);
+      y = height - 50;
+    }
+
+    page.drawText('Fissuras de Retração:', {
+      x: 50,
+      y,
+      size: 14,
+      font: timesRomanFont,
+      color: rgb(0.2, 0.2, 0.2),
+    });
   }
 
-  page.drawText('Fissuras de Retração:', {
-    x: 50,
-    y,
-    size: 14,
-    font: timesRomanFont,
-    color: rgb(0.2, 0.2, 0.2),
-  });
-
-  y -= 20;
+    y -= 20;
 
   for (const imgBuffer of retracao) {
     let image;

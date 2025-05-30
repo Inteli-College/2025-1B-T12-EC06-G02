@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import "../globals.css";
 import { Inter } from "next/font/google";
-
+import { Button } from "../(components)/ui/button";
 import Card from "../(components)/Card";
 import { useDadosStore } from "../(stores)/useDados";
 import Layout from "../(components)/Layout";
@@ -16,7 +16,7 @@ const inter = Inter({
   display: "swap",
 });
 
-export default function Preview() {
+export default function Preview({ handlePreview }) {
   const dados = useDadosStore((state) => state.dados);
   const [signedUrl, setSignedUrl] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -42,25 +42,20 @@ export default function Preview() {
   }, [dados]);
 
   return (
-    <AuthGuard>
-      <div className={inter.className}>
-        <Layout>
-          <Card>
-            {loading ? (
-              <p>Carregando relatório...</p>
-            ) : signedUrl ? (
-              <embed
-                src={signedUrl}
-                type="application/pdf"
-                width="100%"
-                height="600px"
-              />
-            ) : (
-              <p>Não foi possível carregar o PDF.</p>
-            )}
-          </Card>
-        </Layout>
-      </div>
-    </AuthGuard>
+    <>
+      {loading ? (
+        <p>Carregando relatório...</p>
+      ) : signedUrl ? (
+        <embed
+          src={signedUrl}
+          type="application/pdf"
+          width="100%"
+          height="600px"
+        />
+      ) : (
+        <p>Não foi possível carregar o PDF.</p>
+      )}
+      <Button onClick={() => handlePreview(false)}>Voltar</Button>
+    </>
   );
 }

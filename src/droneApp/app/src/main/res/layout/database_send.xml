@@ -7,23 +7,15 @@
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/statusText"
+        android:id="@+id/statusTextDatabase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Press connect to initialize drone..."
+        android:text="Selecione as imagens de drone desejadas"
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/btnConnect"
+        android:id="@+id/btnConnectDatabase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connect to Tello" />
-
-    <Button
-        android:id="@+id/btnDatabase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send to Database" />
-
+        android:text="Abrir Galeria" />
 </LinearLayout>

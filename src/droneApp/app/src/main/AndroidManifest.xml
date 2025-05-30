@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
 
     <application
@@ -27,6 +28,11 @@
         <!-- Drone Control Screen -->
         <activity
             android:name="com.example.sodcontrol.tellocontroller.ControlActivity"
+            android:exported="false" />
+
+        <!-- Database Sender Screen -->
+        <activity
+            android:name="com.example.sodcontrol.tellocontroller.DatabaseSender"
             android:exported="false" />
 
     </application>

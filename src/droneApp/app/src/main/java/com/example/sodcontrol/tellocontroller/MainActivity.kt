@@ -1,5 +1,6 @@
 package com.example.sodcontrol.tellocontroller
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -9,13 +10,14 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.sodcontrol.R
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_connect)
 
         val statusText = findViewById<TextView>(R.id.statusText)
         val connectButton = findViewById<Button>(R.id.btnConnect)
-
+        val databaseButton = findViewById<Button>(R.id.btnDatabase)
         connectButton.setOnClickListener {
             Thread {
                 try {
@@ -35,6 +37,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }.start()
+        }
+
+        databaseButton.setOnClickListener {
+            runOnUiThread {
+                statusText.text = "Connected. Launching database screen..."
+                startActivity(Intent(this, DatabaseSender::class.java))
+                finish()
+            }
         }
     }
 }

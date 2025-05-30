@@ -10,4 +10,6 @@
     <string name="rotate_left">⟲</string>
     <string name="rotate_right">⟳</string>
     <string name="status_placeholder">Wi-Fi: ✓ | Battery: 100% | HS: 0m/s | H: 0m</string>
+    <item name="btnDatabase" type="id" />
+    <string name="database">Connect do Database</string>
 </resources>

@@ -95,6 +95,7 @@ class UnifiedCrackClassifier:
         if not self.model_path.exists():
             raise FileNotFoundError(f"Modelo não encontrado: {self.model_path}")
         
+
         checkpoint = torch.load(self.model_path, map_location=self.device, weights_only=False)
         
         if self.model_type == "resnet":

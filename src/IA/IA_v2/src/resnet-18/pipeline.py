@@ -3,13 +3,19 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-import mlflow
-import mlflow.pytorch
 from typing import Tuple, Dict, Any, Optional
 import numpy as np
 from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
+
+import sys
+from pathlib import Path
+
+# Adicionar o diretório modules ao path
+current_dir = Path(__file__).parent
+modules_dir = current_dir.parent / "modules"
+sys.path.insert(0, str(modules_dir))
 
 from config import Config
 from data_loader import DataOrganizer
@@ -25,6 +31,9 @@ class ModelPipeline:
         self.experiment_name = experiment_name or self.config.EXPERIMENT_NAME
         self.device = torch.device(self.config.DEVICE)
         
+        # Certificar que os diretórios existem
+        self.config.ensure_directories()
+        
         self.data_organizer = DataOrganizer(self.config)
         
         # Variáveis de estado
@@ -39,8 +48,6 @@ class ModelPipeline:
         self.optimizer = None
         self.scheduler = None
         self.criterion = None
-        
-        os.makedirs(self.config.MODELS_PATH, exist_ok=True)
     
     def prepare_data(self) -> None:
         """Prepara todos os dados para treinamento."""
@@ -81,9 +88,30 @@ class ModelPipeline:
     def setup_model(self) -> None:
         """Configura o modelo, otimizador, scheduler e função de perda."""
         print("Configurando modelo...")
+        print(f"Tipo de modelo: {self.config.MODEL_TYPE}")
         
-        self.model = create_model(num_classes=self.config.NUM_CLASSES)
+        # Obter configurações específicas do modelo
+        model_config = self.config.get_model_config()
+        print(f"Configurações do modelo: {model_config}")
+        
+        # Criar modelo usando a factory function
+        self.model = create_model(
+            num_classes=self.config.NUM_CLASSES,
+            model_type=self.config.MODEL_TYPE,
+            **model_config
+        )
+        
+        # Mover para device
         self.model = self.model.to(self.device)
+        
+        # Contar parâmetros
+        total_params = sum(p.numel() for p in self.model.parameters())
+        trainable_params = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
+        print(f"Parâmetros totais: {total_params:,}")
+        print(f"Parâmetros treináveis: {trainable_params:,}")
+        
+        # Usar learning rate único para todos os parâmetros
+        print(f"Usando learning rate único: {self.config.LEARNING_RATE}")
         
         # Configurar otimizador
         if self.config.OPTIMIZER.lower() == "adam":
@@ -130,6 +158,7 @@ class ModelPipeline:
         if hasattr(self.train_dataset, 'get_class_weights'):
             class_weights = self.train_dataset.get_class_weights().to(self.device)
             self.criterion = nn.CrossEntropyLoss(weight=class_weights)
+            print(f"Usando class weights: {class_weights}")
         else:
             self.criterion = nn.CrossEntropyLoss()
     
@@ -159,11 +188,11 @@ class ModelPipeline:
             correct_predictions += (predicted == labels).sum().item()
             
             if batch_idx % self.config.LOG_INTERVAL == 0:
-                batch_accuracy = 100.0 * correct_predictions / total_samples
+                batch_accuracy = 100.0 * correct_predictions / total_samples if total_samples > 0 else 0.0
                 print(f"Batch {batch_idx}/{len(self.train_loader)} | Loss: {loss.item():.4f} | Acc: {batch_accuracy:.2f}%")
         
         epoch_loss = running_loss / len(self.train_loader)
-        epoch_accuracy = 100.0 * correct_predictions / total_samples
+        epoch_accuracy = 100.0 * correct_predictions / total_samples if total_samples > 0 else 0.0
         
         return {
             'train_loss': epoch_loss,
@@ -192,7 +221,7 @@ class ModelPipeline:
                 correct_predictions += (predicted == labels).sum().item()
         
         val_loss = running_loss / len(self.val_loader)
-        val_accuracy = 100.0 * correct_predictions / total_samples
+        val_accuracy = 100.0 * correct_predictions / total_samples if total_samples > 0 else 0.0
         
         return {
             'val_loss': val_loss,
@@ -209,80 +238,64 @@ class ModelPipeline:
         if self.model is None:
             raise ValueError("Modelo não configurado! Execute setup_model() primeiro.")
         
-        mlflow.set_experiment(self.experiment_name)
+        best_val_accuracy = 0.0
+        patience_counter = 0
+        training_history = {
+            'train_loss': [],
+            'train_accuracy': [],
+            'val_loss': [],
+            'val_accuracy': [],
+            'learning_rates': []
+        }
         
-        with mlflow.start_run():
-            config_dict = {k: v for k, v in vars(self.config).items() 
-                          if not callable(v) and not k.startswith('_')}
-            mlflow.log_params(config_dict)
+        for epoch in range(self.config.EPOCHS):
+            print(f"\nÉpoca {epoch+1}/{self.config.EPOCHS}")
             
-            best_val_accuracy = 0.0
-            patience_counter = 0
-            training_history = {
-                'train_loss': [],
-                'train_accuracy': [],
-                'val_loss': [],
-                'val_accuracy': [],
-                'learning_rates': []
-            }
+            train_metrics = self.train_epoch(epoch)
+            val_metrics = self.validate_epoch()
             
-            for epoch in range(self.config.EPOCHS):
-                print(f"\nÉpoca {epoch+1}/{self.config.EPOCHS}")
-                
-                train_metrics = self.train_epoch(epoch)
-                val_metrics = self.validate_epoch()
-                
-                if self.scheduler is not None:
-                    if isinstance(self.scheduler, optim.lr_scheduler.ReduceLROnPlateau):
-                        self.scheduler.step(val_metrics['val_accuracy'])
-                    else:
-                        self.scheduler.step()
-                
-                current_lr = self.optimizer.param_groups[0]['lr']
-                
-                training_history['train_loss'].append(train_metrics['train_loss'])
-                training_history['train_accuracy'].append(train_metrics['train_accuracy'])
-                training_history['val_loss'].append(val_metrics['val_loss'])
-                training_history['val_accuracy'].append(val_metrics['val_accuracy'])
-                training_history['learning_rates'].append(current_lr)
-                
-                mlflow.log_metrics({
-                    **train_metrics,
-                    **val_metrics,
-                    'learning_rate': current_lr
-                }, step=epoch)
-                
-                print(f"Treino - Loss: {train_metrics['train_loss']:.4f} | Acc: {train_metrics['train_accuracy']:.2f}%")
-                print(f"Validação - Loss: {val_metrics['val_loss']:.4f} | Acc: {val_metrics['val_accuracy']:.2f}%")
-                
-                if val_metrics['val_accuracy'] > best_val_accuracy:
-                    best_val_accuracy = val_metrics['val_accuracy']
-                    patience_counter = 0
-                    
-                    if self.config.SAVE_CHECKPOINTS:
-                        self._save_checkpoint(epoch, val_metrics['val_accuracy'], is_best=True)
-                    
-                    print(f"Nova melhor acurácia: {best_val_accuracy:.2f}%")
+            if self.scheduler is not None:
+                if isinstance(self.scheduler, optim.lr_scheduler.ReduceLROnPlateau):
+                    self.scheduler.step(val_metrics['val_accuracy'])
                 else:
-                    patience_counter += 1
+                    self.scheduler.step()
+            
+            current_lr = self.optimizer.param_groups[0]['lr']
+            
+            training_history['train_loss'].append(train_metrics['train_loss'])
+            training_history['train_accuracy'].append(train_metrics['train_accuracy'])
+            training_history['val_loss'].append(val_metrics['val_loss'])
+            training_history['val_accuracy'].append(val_metrics['val_accuracy'])
+            training_history['learning_rates'].append(current_lr)
+            
+            print(f"Treino - Loss: {train_metrics['train_loss']:.4f} | Acc: {train_metrics['train_accuracy']:.2f}%")
+            print(f"Validação - Loss: {val_metrics['val_loss']:.4f} | Acc: {val_metrics['val_accuracy']:.2f}%")
+            
+            if val_metrics['val_accuracy'] > best_val_accuracy:
+                best_val_accuracy = val_metrics['val_accuracy']
+                patience_counter = 0
                 
-                if self.config.SAVE_CHECKPOINTS and (epoch + 1) % self.config.CHECKPOINT_FREQ == 0:
-                    self._save_checkpoint(epoch, val_metrics['val_accuracy'], is_best=False)
+                if self.config.SAVE_CHECKPOINTS:
+                    self._save_checkpoint(epoch, val_metrics['val_accuracy'], is_best=True)
                 
-                if patience_counter >= self.config.PATIENCE:
-                    print(f"Early stopping após {epoch+1} épocas. Melhor acurácia: {best_val_accuracy:.2f}%")
-                    break
+                print(f"Nova melhor acurácia: {best_val_accuracy:.2f}%")
+            else:
+                patience_counter += 1
             
-            print(f"\nTreinamento concluído. Melhor acurácia: {best_val_accuracy:.2f}%")
+            if self.config.SAVE_CHECKPOINTS and (epoch + 1) % self.config.CHECKPOINT_FREQ == 0:
+                self._save_checkpoint(epoch, val_metrics['val_accuracy'], is_best=False)
             
-            mlflow.log_metric("best_val_accuracy", best_val_accuracy)
-            mlflow.pytorch.log_model(self.model, "final_model")
-            
-            return {
-                'best_val_accuracy': best_val_accuracy,
-                'history': training_history,
-                'epochs_trained': epoch + 1
-            }
+            if patience_counter >= self.config.PATIENCE:
+                print(f"Early stopping após {epoch+1} épocas. Melhor acurácia: {best_val_accuracy:.2f}%")
+                break
+        
+        print(f"\nTreinamento concluído. Melhor acurácia: {best_val_accuracy:.2f}%")
+        
+        return {
+            'best_val_accuracy': best_val_accuracy,
+            'history': training_history,
+            'epochs_trained': epoch + 1
+        }
     
     def _save_checkpoint(self, epoch: int, accuracy: float, is_best: bool = False) -> None:
         """Salva checkpoint do modelo."""
@@ -303,10 +316,12 @@ class ModelPipeline:
             checkpoint_path = os.path.join(self.config.MODELS_PATH, f"checkpoint_epoch_{epoch+1}.pth")
         
         torch.save(checkpoint, checkpoint_path)
+        print(f"Checkpoint salvo: {checkpoint_path}")
     
     def run(self) -> Dict[str, Any]:
         """Executa a pipeline completa de treinamento."""
         print("Executando pipeline completa...")
+        print(f"Device: {self.device}")
         
         try:
             self.prepare_data()
@@ -325,17 +340,17 @@ class ModelPipeline:
 
 def main():
     """Função principal para executar a pipeline."""
+    print("=== PIPELINE RESNET-18 ===")
+    
     config = Config()
     pipeline = ModelPipeline(config)
     
-    # Para testar diferentes filtros, modifique o config.py:
-    # config.USE_CLAHE = False  # Desabilitar CLAHE
-    # config.SHARPEN_STRENGTH = 2.0  # Aumentar força do sharpening
-    # config.USE_SQUARE_PADDING = False  # Desabilitar padding
-    
     results = pipeline.run()
     
-    print(f"Treinamento finalizado com acurácia de {results['best_val_accuracy']:.2f}%")
+    print(f"\n=== RESULTADO FINAL ===")
+    print(f"Melhor acurácia: {results['best_val_accuracy']:.2f}%")
+    print(f"Épocas treinadas: {results['epochs_trained']}")
+    print(f"Modelo salvo em: {config.MODELS_PATH}/best_model.pth")
 
 
 if __name__ == "__main__":

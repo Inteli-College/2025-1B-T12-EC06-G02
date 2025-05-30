@@ -1,22 +1,15 @@
-"""
-Módulo para carregamento e organização dos dados de imagem.
-"""
-
 import os
 import glob
 import random
 import numpy as np
-from typing import List, Tuple, Dict
-from sklearn.model_selection import train_test_split
-
-from config import Config
+from typing import List, Tuple, Dict, Any
 
 
 class DataOrganizer:
     """Organiza e divide os dados de treino/validação/teste."""
     
-    def __init__(self, config: Config = None):
-        self.config = config or Config()
+    def __init__(self, config: Any = None):
+        self.config = config
         self.supported_extensions = ['.png', '.jpg', '.jpeg', '.bmp', '.tiff', '.tif']
         
     def discover_images(self) -> Tuple[List[str], List[int]]:
@@ -48,6 +41,8 @@ class DataOrganizer:
     
     def create_splits(self, image_paths: List[str], labels: List[int]) -> Dict[str, Tuple[List[str], List[int]]]:
         """Cria as divisões de treino, validação e teste."""
+        from sklearn.model_selection import train_test_split
+        
         random.seed(self.config.RANDOM_SEED)
         np.random.seed(self.config.RANDOM_SEED)
         

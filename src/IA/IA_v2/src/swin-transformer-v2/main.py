@@ -4,11 +4,15 @@ Arquivo principal para execução da pipeline de treinamento.
 
 import os
 import sys
+from pathlib import Path
 
-sys.path.append('py')
+# Adicionar pasta pai (src) ao path para importar módulos compartilhados
+current_dir = Path(__file__).parent
+src_dir = current_dir.parent
+sys.path.insert(0, str(src_dir))
 
-from py.pipeline import ModelPipeline
-from py.config import Config
+from config import Config
+from pipeline import ModelPipeline
 
 def main():
     print("=" * 60)
@@ -58,9 +62,11 @@ def main():
 
 
 if __name__ == "__main__":
-    if not os.path.exists("py/config.py"):
-        print("Execute este script do diretório src/")
-        print("Comando: python main.py")
+    # Verificar se os arquivos necessários existem
+    config_path = Path(__file__).parent / "config.py"
+    if not config_path.exists():
+        print(f"Arquivo config.py não encontrado em: {config_path}")
+        print("Execute este script da pasta swin-transformer-v2/")
         sys.exit(1)
     
     main()

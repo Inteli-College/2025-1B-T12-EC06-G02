@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'SOD - Sistema de Observação de Deformação',
+  title: 'SOD - Sistema Óptico de Detecção',
   description: 'Sistema de análise de deformações estruturais',
 }
 

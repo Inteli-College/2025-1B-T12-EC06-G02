@@ -12,7 +12,7 @@
 
 <sub>Figura 1 - Tela cadastro</sub>
 
-![Tela cadastro](/docs/static/img/telaCadastro.png)
+![Tela cadastro](/img/telaCadastro.png)
 
 <sup>Fonte: Autoria própria </sup>
 
@@ -22,7 +22,7 @@
 
 <sub>Figura 2 - Tela login</sub>
 
-![Tela login](/docs/static/img/telaLogin.png)
+![Tela login](/img/telaLogin.png)
 
 <sup>Fonte: Autoria própria </sup>
 
@@ -36,7 +36,7 @@
 
 <sub>Figura 3 - Tela home</sub>
 
-![Tela home](/docs/static/img/telaHome.png)
+![Tela home](/img/telaHome.png)
 
 <sup>Fonte: Autoria própria </sup>
 
@@ -50,7 +50,7 @@
 
 <sub>Figura 3 - Tela upload</sub>
 
-![Tela upload](/docs/static/img/telaUpload.png)
+![Tela upload](/img/telaUpload.png)
 
 <sup>Fonte: Autoria própria </sup>
 
@@ -64,7 +64,7 @@
 
 <sub>Figura 3 - Tela resultados</sub>
 
-![Tela resultados](/docs/static/img/telaResultados.png)
+![Tela resultados](/img/telaResultados.png)
 
 <sup>Fonte: Autoria própria </sup>
 
@@ -86,7 +86,7 @@
 
 <sub>Figura 4 - Tela Histórico</sub>
 
-![Tela Histórico](/docs/static/img/historico.png)
+![Tela Histórico](/img/historico.png)
 
 <sup>Fonte: Autoria própria </sup>
 
@@ -101,7 +101,7 @@
 
 <sub>Figura 4 - Tela Histórico</sub>
 
-![Preview do Relatório](/docs/static/img/preview.png)
+![Preview do Relatório](/img/preview.png)
 
 <sup>Fonte: Autoria própria </sup>
 

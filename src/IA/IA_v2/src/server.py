@@ -15,15 +15,11 @@ def classify():
             return jsonify({"error": "JSON inválido ou ausente"}), 400
 
         images = data.get("images", [])
-        model_path = data.get("model_path", "")
-
-        if not model_path:
-            return jsonify({"error": "'model_path' é obrigatório"}), 400
 
         if not images:
             return jsonify({"error": "'images' é obrigatório e não pode ser vazio"}), 400
 
-        results = classify_for_frontend(images, model_path)
+        results = classify_for_frontend(images)
 
         return jsonify(results)
 

@@ -17,9 +17,9 @@ from urllib.parse import urlparse
 
 class UnifiedCrackClassifier:
     
-    def __init__(self, model_path: str):
+    def __init__(self):
 
-        self.model_path = Path(model_path)
+        self.model_path = Path(Path(__file__).resolve().parent.parent / "swin-transformer-v2" / "models" / "best_model_epoch_7.pt")
         self.model_type = self._detect_model_type()
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
@@ -347,12 +347,12 @@ class UnifiedCrackClassifier:
         
         return results
 
-def load_classifier(model_path: str) -> UnifiedCrackClassifier:
-    return UnifiedCrackClassifier(model_path)
+def load_classifier() -> UnifiedCrackClassifier:
+    return UnifiedCrackClassifier()
 
 
-def classify_for_frontend(images: List[Dict], model_path: str) -> List[Dict]:
-    classifier = load_classifier(model_path)
+def classify_for_frontend(images: List[Dict]) -> List[Dict]:
+    classifier = load_classifier()
 
     # Extrair os campos necessários dos dicionários de entrada
     image_paths = [img["previewUrl"] for img in images]

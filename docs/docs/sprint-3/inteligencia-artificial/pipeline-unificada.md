@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 slug: /inteligencia-artificial/pipeline-unificada
 description: "Sistema unificado para inferência com múltiplos modelos"
 ---

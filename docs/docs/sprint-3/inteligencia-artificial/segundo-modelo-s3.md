@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 slug: /inteligencia-artificial/segundo-modelo
 description: "Apresentação do Segundo Modelo de IA para classificação - Swin Transformer V2"
 ---
@@ -8,17 +8,15 @@ description: "Apresentação do Segundo Modelo de IA para classificação - Swin
 
 &emsp; Após identificar limitações significativas no [primeiro modelo ResNet-18](./primeiro-modelo-s3), incluindo suspeitas de overfitting e baixa confiabilidade de generalização, foi necessário desenvolver uma solução mais robusta para atender ao [requisito não funcional 8](../../sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md) de acurácia mínima de 85%. A SOD desenvolveu um segundo modelo baseado no **Swin Transformer V2**, que se tornou a solução implementada no frontend do sistema. O modelo treinado está na pasta [`src/IA/IA_v2/src/swin-transformer-v2`].
 
-## Por que usar o Swin Transformer V2?
+## A Escolha do Swin Transformer V2
 
 &emsp; O Swin Transformer V2 foi escolhido como segunda abordagem pelos seguintes motivos técnicos e estratégicos:
 
-- **Estado da arte em visão computacional**: O Swin Transformer representa o estado da arte em tarefas de classificação de imagens, superando modelos baseados em CNN tradicionais;
-- **Arquitetura hierárquica**: Capacidade de capturar características em múltiplas escalas através de janelas deslizantes hierárquicas;
-- **Robustez a variações**: Maior resistência a variações de escala, posição e iluminação nas imagens;
-- **Mecanismo de atenção otimizado**: Processamento mais eficiente de relações espaciais complexas nas fissuras;
-- **Melhor generalização**: Capacidade superior de lidar com datasets limitados através de técnicas de transfer learning.
-
-&emsp; Diferentemente da abordagem anterior com ResNet-18, esta solução permite total controle sobre o processo de treinamento, implementando técnicas avançadas de otimização e regularização que previnem overfitting.
+- Melhor capacidade de capturar características hierárquicas em diferentes escalas
+- Performance superior em tarefas de visão computacional
+- Maior robustez a variações de escala e posição nas imagens
+- Capacidade de lidar com datasets maiores e mais complexos
+- Estado da arte em diversas tarefas de visão computacional
 
 ## Arquitetura do Modelo
 
@@ -35,7 +33,7 @@ description: "Apresentação do Segundo Modelo de IA para classificação - Swin
 - **Camada 2**: Linear (512 → 256) + BatchNorm + GELU + Dropout(0.1)
 - **Camada 3**: Linear (256 → 2) para classificação binária
 
-&emsp; Esta arquitetura totaliza aproximadamente **87.9M de parâmetros**, sendo substancialmente mais complexa que o modelo anterior, permitindo capturar padrões mais sutis nas fissuras.
+&emsp; Esta arquitetura totaliza aproximadamente 87.9M de parâmetros, sendo mais complexa que o modelo anterior, permitindo capturar padrões mais sutis nas fissuras.
 
 ## Configurações de Treinamento
 

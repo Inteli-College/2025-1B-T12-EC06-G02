@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 slug: /inteligencia-artificial/guia-execucao
 description: "Instruções para executar e usar os modelos de IA"
 ---
@@ -22,14 +22,13 @@ nvidia-smi
 ### Instalação
 ```bash
 # Clonar repositório e navegar
-cd IA_v2/src/
+cd src/IA/IA_v2
+
+# Criar uma venv 
+python -m venv venv
 
 # Instalar dependências
 pip install -r requirements.txt
-
-# Verificar instalação
-python -c "import torch; print(f'PyTorch: {torch.__version__}')"
-python -c "import torch; print(f'CUDA: {torch.cuda.is_available()}')"
 ```
 
 ### Estrutura de Dados
@@ -50,11 +49,10 @@ IA_v2/src/data/raw/
 ### Swin Transformer V2 (Produção)
 
 ```bash
-# Navegar para diretório
-cd swin-transformer-v2/
+# Navegar para diretório estando em 
+cd src/swin-transformer-v2/
 
-# Treinamento completo
-python main.py train
+python main.py
 
 # Treinamento com configurações específicas
 python main.py train --gpu    # Forçar GPU
@@ -207,101 +205,5 @@ mlflow ui --backend-store-uri file:./mlruns
 # Acessar: http://localhost:5000
 # Filtrar por métricas, visualizar curvas, comparar modelos
 ```
-
-## Solução de Problemas
-
-### Erro de Memória
-```python
-# Reduzir batch size
-BATCH_SIZE = 8  # Em vez de 16/32
-
-# Usar mixed precision (Swin Transformer)
-USE_MIXED_PRECISION = True
-
-# Limpar cache GPU
-import torch
-torch.cuda.empty_cache()
-```
-
-### Performance Lenta
-```bash
-# Verificar uso de GPU
-nvidia-smi
-
-# Otimizar workers (ajustar no config.py)
-NUM_WORKERS = 0   # Windows
-NUM_WORKERS = 4   # Linux/Mac
-```
-
-### Problemas de Importação
-```python
-# Verificar instalação
-pip list | grep torch
-pip list | grep albumentations
-
-# Reinstalar se necessário
-pip install --upgrade torch torchvision
-```
-
-## Deployment em Produção
-
-### Docker Container
-```dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-
-# Instalar dependências do sistema
-RUN apt-get update && apt-get install -y \
-    libglib2.0-0 libsm6 libxext6 libxrender-dev libgomp1 \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copiar requirements e instalar
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copiar código
-COPY . .
-
-# Expor porta
-EXPOSE 8000
-
-# Comando de inicialização
-CMD ["python", "app.py"]
-```
-
-### Build e Execução
-```bash
-# Build da imagem
-docker build -t sod-ia-classifier .
-
-# Executar container
-docker run -p 8000:8000 -v $(pwd)/models:/app/models sod-ia-classifier
-
-# Testar
-curl -X POST http://localhost:8000/classify \
-  -H "Content-Type: application/json" \
-  -d '{"image_path": "/path/to/image.jpg"}'
-```
-
-## Recomendações
-
-### Para Desenvolvimento
-- **Usar Swin Transformer V2** para desenvolvimento ativo
-- **ResNet-18 apenas para referência** e comparação
-- **Sempre validar** em conjunto de teste independente
-- **Monitorar com MLflow** para tracking de experimentos
-
-### Para Produção
-- **Swin Transformer V2 exclusivamente** para aplicações críticas
-- **Pipeline unificada** para flexibilidade
-- **Docker containers** para deployment consistente
-- **Monitoramento de logs** para debugging
-
-### Boas Práticas
-1. **Backup de modelos**: Manter cópias dos melhores checkpoints
-2. **Versionamento**: Usar MLflow para controle de versões
-3. **Validação**: Sempre testar em dados nunca vistos
-4. **Logging**: Registrar todas as predições para auditoria
 
 &emsp; Para dúvidas específicas sobre implementação ou problemas não cobertos neste guia, consulte a documentação técnica dos modelos individuais: [ResNet-18](./primeiro-modelo), [Swin Transformer V2](./segundo-modelo) ou [Pipeline Unificada](./pipeline-unificada).

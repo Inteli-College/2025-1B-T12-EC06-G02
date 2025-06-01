@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 slug: /inteligencia-artificial/primeiro-modelo-s3
 description: "Primeiro Modelo ResNet-18 - Baseline com Limitações Identificadas"
 ---
@@ -8,7 +8,7 @@ description: "Primeiro Modelo ResNet-18 - Baseline com Limitações Identificada
 
 &emsp; Este modelo desenvolvido pela SOD utiliza a arquitetura **ResNet-18** como baseline inicial para classificação de fissuras. Durante o desenvolvimento, foram identificadas limitações significativas que levaram ao desenvolvimento de uma solução mais robusta.
 
-## Justificativa da Escolha Inicial
+## Por que Começar com ResNet-18?
 
 &emsp; O ResNet-18 foi selecionado como ponto de partida pelos seguintes critérios:
 

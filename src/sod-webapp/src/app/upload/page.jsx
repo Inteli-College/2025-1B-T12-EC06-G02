@@ -63,7 +63,6 @@ async function handleClick() {
       },
       body: JSON.stringify({
         images: imagensConvertidas,
-        model_path: "C:/Users/Inteli/Documents/GitHub/2025-1B-T12-EC06-G02/src/IA/IA_v2/src/swin-transformer-v2/models/best_model_epoch_7.pt"
       }),
     });
 

@@ -8,7 +8,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Sistema Óptico de Deteção",
+  title: "Sistema Óptico de Detecção",
   description: "Atualizar senha",
 }
 

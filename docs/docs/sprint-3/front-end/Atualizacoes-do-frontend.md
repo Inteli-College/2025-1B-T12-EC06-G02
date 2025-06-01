@@ -107,7 +107,7 @@
 
 </div>
 
-&emsp; É importante destacar que, na imagem apresentada, o relatório ainda não está em sua versão final, uma vez que o desenvolvimento final do layout do relatório não constava no [escopo]() de desenvolvimento da Sprint 3. Logo, a imagem representa a demonstração da funcionalidade apenas.
+&emsp; É importante destacar que, na imagem apresentada, o relatório ainda não está em sua versão final, uma vez que o desenvolvimento final do layout do relatório não constava no escopo de desenvolvimento da Sprint 3. Logo, a imagem representa a demonstração da funcionalidade apenas.
 
 ## Conclusão
 

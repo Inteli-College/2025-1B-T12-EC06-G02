@@ -1,4 +1,4 @@
-# Fluxo do usuário na interface
+# Atualizações do Frontend
 
 ## Introdução
 
@@ -72,7 +72,7 @@
 
 ## Funcionalidades complementares
 
-&emsp; Além das funcionalidades apresentadas anteriormente no fluxo básico do usuário, foi identificado que a experiência do usuário poderia ser significativamente enriquecida com o desenvolvimento de funcionalidades complementares. Durante o processo de análise de uso e definição dos [requisitos](/docs/docs/sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md), observou-se que algumas necessidades adicionais não estavam sendo plenamente contempladas no escopo inicial da aplicação.
+&emsp; Além das funcionalidades apresentadas anteriormente no fluxo básico do usuário, foi identificado que a experiência do usuário poderia ser significativamente enriquecida com o desenvolvimento de funcionalidades complementares. Durante o processo de análise de uso e definição dos [requisitos](../sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md), observou-se que algumas necessidades adicionais não estavam sendo plenamente contempladas no escopo inicial da aplicação.
 
 &emsp; Entre essas necessidades, destacam-se a possibilidade de acesso a um histórico de relatórios gerados, e a visualização prévia dos relatórios gerados pela plataforma. Assim, conseguimos não só garantir mais controle do usuário, como também contribuimos para a rastreabilidade dos dados e a verificação dos resultados antes de sua utilização final.
 

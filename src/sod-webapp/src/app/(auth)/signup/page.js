@@ -79,7 +79,7 @@ export default function LoginPage() {
           <h1 className="text-[#434343] text-4xl md:text-5xl font-medium mb-8 leading-tight">
             Sistema Óptico
             <br />
-            de Deteção
+            de Detecção
           </h1>
 
           {error && (

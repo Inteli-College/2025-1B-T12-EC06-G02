@@ -2,12 +2,17 @@ import os
 import torch
 import torch.nn.functional as F
 import cv2
+import requests
+import base64
+import re
 import numpy as np
 from pathlib import Path
 from typing import Dict, List, Union, Optional, Tuple
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 import sys
+from urllib.parse import urlparse
+
 
 
 class UnifiedCrackClassifier:
@@ -90,6 +95,7 @@ class UnifiedCrackClassifier:
         if not self.model_path.exists():
             raise FileNotFoundError(f"Modelo não encontrado: {self.model_path}")
         
+
         checkpoint = torch.load(self.model_path, map_location=self.device, weights_only=False)
         
         if self.model_type == "resnet":
@@ -212,14 +218,33 @@ class UnifiedCrackClassifier:
         self.transform = A.Compose(transforms)
     
     def _load_image(self, image_path: Union[str, Path]) -> np.ndarray:
-        """Carrega e pré-processa uma imagem."""
+        """Carrega e pré-processa uma imagem de um caminho local ou URL."""
         image_path = str(image_path)
-        
-        # Carregar imagem
-        image = cv2.imread(image_path, cv2.IMREAD_COLOR)
+
+        # Se for uma data URL (base64)
+        if image_path.startswith("data:image/"):
+            try:
+                header, base64_data = image_path.split(",", 1)
+                image_data = base64.b64decode(base64_data)
+                image_array = np.asarray(bytearray(image_data), dtype=np.uint8)
+                image = cv2.imdecode(image_array, cv2.IMREAD_COLOR)
+            except Exception as e:
+                raise ValueError(f"Não foi possível carregar a imagem base64.\nErro: {e}")
+        # Verifica se é uma URL
+        elif urlparse(image_path).scheme in ('http', 'https'):
+            try:
+                response = requests.get(image_path, timeout=5)
+                response.raise_for_status()
+                image_array = np.asarray(bytearray(response.content), dtype=np.uint8)
+                image = cv2.imdecode(image_array, cv2.IMREAD_COLOR)
+            except Exception as e:
+                raise ValueError(f"Não foi possível carregar a imagem da URL: {image_path}\nErro: {e}")
+        else:
+            image = cv2.imread(image_path, cv2.IMREAD_COLOR)
+
         if image is None:
             raise ValueError(f"Não foi possível carregar a imagem: {image_path}")
-        
+
         # Converter BGR para RGB
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         return image
@@ -252,37 +277,39 @@ class UnifiedCrackClassifier:
             }
         }
     
-    def predict_batch_for_frontend(self, 
-                                  image_paths: List[Union[str, Path]], 
-                                  image_ids: List,
-                                  preview_urls: List[str]) -> List[Dict]:
-    
+    def predict_batch_from_objects(self, data: Dict) -> List[Dict]:
+        """Recebe JSON com chaves: images ([{id, previewUrl}]), model_path."""
         results = []
-        
-        for i, image_path in enumerate(image_paths):
+        image_entries = data.get("images", [])
+    
+        for i, entry in enumerate(image_entries):
             try:
-                # Predição individual
-                prediction = self.predict(image_path)
-                
-                # Formato específico para o frontend
+                image_id = entry.get("id")
+                preview_url = entry.get("previewUrl")
+                image_array = self._load_image_from_input(preview_url)
+                prediction = self.predict_from_array(image_array)
+    
                 result = {
-                    "id": image_ids[i],
-                    "previewUrl": preview_urls[i],
-                    "prev": prediction["predicted_class"]  # "retracao" ou "termica"
+                    "id": image_id,
+                    "previewUrl": preview_url,
+                    "prev": prediction["predicted_class"],
+                    "confidence": round(prediction["confidence"], 1),
+                    "probabilities": prediction["probabilities"]
                 }
-                
                 results.append(result)
-                
+    
             except Exception as e:
-                print(f"Erro ao processar imagem {image_path}: {e}")
-                # Adicionar resultado de erro
+                print(f"Erro ao processar imagem {i}: {e}")
                 results.append({
-                    "id": image_ids[i],
-                    "previewUrl": preview_urls[i],
-                    "prev": "erro"
+                    "id": entry.get("id", f"img_{i}"),
+                    "previewUrl": entry.get("previewUrl", ""),
+                    "prev": "erro",
+                    "confidence": 0.0,
+                    "error": str(e)
                 })
-        
+    
         return results
+
     
     def predict_with_confidence(self, 
                                image_paths: List[Union[str, Path]], 
@@ -324,10 +351,12 @@ def load_classifier(model_path: str) -> UnifiedCrackClassifier:
     return UnifiedCrackClassifier(model_path)
 
 
-def classify_for_frontend(image_paths: List[str], 
-                         image_ids: List,
-                         preview_urls: List[str],
-                         model_path: str) -> List[Dict]:
-
+def classify_for_frontend(images: List[Dict], model_path: str) -> List[Dict]:
     classifier = load_classifier(model_path)
-    return classifier.predict_batch_for_frontend(image_paths, image_ids, preview_urls)
+
+    # Extrair os campos necessários dos dicionários de entrada
+    image_paths = [img["previewUrl"] for img in images]
+    image_ids = [img["id"] for img in images]
+    preview_urls = [img["previewUrl"] for img in images]
+
+    return classifier.predict_with_confidence(image_paths, image_ids, preview_urls)

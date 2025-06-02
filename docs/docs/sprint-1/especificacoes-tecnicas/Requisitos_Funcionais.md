@@ -96,5 +96,17 @@ Garantir a qualidade final da análise, evitando erros de interpretação nas im
 
 ---
 
+### RF08 - Upload de Imagens via servidor
+**Descrição**:  
+O usuário deve conseguir puxar as imagens do servidor que foram enviadas pelo aplicativo do drone.
+
+**Tipo de usuário**:  
+Operador técnico / Especialista.
+
+**Propósito**:  
+Garantir a facilidade no processo de análise de imagem desde o uso do drone.
+
+---
+
 ## Conclusão
 Ter um conjunto claro de requisitos funcionais é o que nos garante que o sistema vai atender ao que é esperado pelos usuários. Cada funcionalidade listada foi pensada para tornar o processo de identificação e classificação de fissuras mais rápido, preciso e confiável. Seguindo essas diretrizes, o sistema terá uma base sólida para entregar valor real no dia a dia de quem vai utilizá-lo.

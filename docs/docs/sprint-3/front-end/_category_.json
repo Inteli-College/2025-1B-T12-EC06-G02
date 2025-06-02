@@ -1,0 +1,12 @@
+{
+  "label": "Frontend e Experiência do Usuário",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+<<<<<<< HEAD
+    "description": "Contém documentos sobre refatoração de interface, melhorias na experiência do usuário e integração visual com imagens da IA e drone.",
+=======
+    "description": "Contém documentos sobre refatoração de interface, melhorias na experiência do usuário e integração visual com imagens da IA e drone."
+>>>>>>> f975286b79bd457c5c8e6b2d689833180faf369c
+  }
+}

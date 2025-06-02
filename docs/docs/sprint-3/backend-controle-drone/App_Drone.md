@@ -1,11 +1,12 @@
 ---
 sidebar_position: 1
-custom_edit_url: null
+slug: /sprint-3/backend-drone/introducao
+description: "Apresenta a visão geral do aplicativo"
 ---
 
-# Aplicativo
+# Introdução ao Aplicativo
 ---
-## Introdução
+#
 
 Este aplicativo foi desenvolvido com o objetivo de permitir o controle completo do drone DJI Tello e possibilitar sua integração com os nossos sistemas. A utilização do aplicativo oficial do Tello não atende a essa necessidade por limitações do proprio app.
 

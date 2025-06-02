@@ -6,7 +6,7 @@ description: "Apresentação do Segundo Modelo de IA para classificação - Swin
 
 # Segundo Modelo - Swin Transformer V2
 
-&emsp; Após identificar limitações significativas no [primeiro modelo ResNet-18](./primeiro-modelo-s3), incluindo suspeitas de overfitting e baixa confiabilidade de generalização, foi necessário desenvolver uma solução mais robusta para atender ao [requisito não funcional 8](../../sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md) de acurácia mínima de 85%. A SOD desenvolveu um segundo modelo baseado no **Swin Transformer V2**, que se tornou a solução implementada no frontend do sistema. O modelo treinado está na pasta [`src/IA/IA_v2/src/swin-transformer-v2`].
+&emsp; Após identificar limitações significativas no [primeiro modelo ResNet-18](./primeiro-modelo-s3), incluindo suspeitas de overfitting e baixa confiabilidade de generalização, foi necessário desenvolver uma solução mais robusta para atender ao [requisito não funcional 8](../../../sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md) de acurácia mínima de 85%. A SOD desenvolveu um segundo modelo baseado no **Swin Transformer V2**, que se tornou a solução implementada no frontend do sistema. O modelo treinado está na pasta [`src/IA/IA_v2/src/swin-transformer-v2`].
 
 ## A Escolha do Swin Transformer V2
 
@@ -64,7 +64,7 @@ description: "Apresentação do Segundo Modelo de IA para classificação - Swin
 
 ## Pré-processamento Avançado
 
-&emsp; Manteve-se o mesmo [pré-processamento base da primeira versão](../../sprint-2/desenvolvimento-tecnico-do-sistema/IA%20de%20Classificação/preparacao.md), mas com melhorias:
+&emsp; Manteve-se o mesmo [pré-processamento base da primeira versão](../../../sprint-2/desenvolvimento-tecnico-do-sistema/IA%20de%20Classificação/preparacao.md), mas com melhorias:
 
 ### Filtros Aplicados
 - **CLAHE**: Clip limit de 3.0 e tile grid de (8,8) para melhoria de contraste
@@ -186,7 +186,7 @@ description: "Apresentação do Segundo Modelo de IA para classificação - Swin
 
 ## Implementação e Inferência
 
-&emsp; Para atender ao [RF01](../../sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md), foi desenvolvido um sistema unificado de inferência no arquivo [`src/IA/IA_v2/src/modules/inference.py`] que:
+&emsp; Para atender ao [RF01](../../../sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md), foi desenvolvido um sistema unificado de inferência no arquivo [`src/IA/IA_v2/src/modules/inference.py`] que:
 
 1. **Detecta automaticamente** o tipo de modelo (Swin ou ResNet, por enquanto - desenvolveremos mais modelos no futuro)
 2. **Carrega as configurações** específicas de cada arquitetura

@@ -1,5 +1,10 @@
+---
+sidebar_position: 1
+slug: /sprint-3/escopo
+description: "Escopo da sprint 3 no projeto"
+---
 
-# Sprint 3
+# Escopo da Sprint
 
 &emsp; Durante a Sprint 3, o grupo SOD concentrou seus esforços no desenvolvimento de novas funcionalidades e na implementação de mudanças fundamentais para o avanço do projeto. Os principais focos dessa etapa foram: o início do desenvolvimento do aplicativo de controle do drone, a atualização do sistema web com funcionalidades relevantes e o desenvolvimento de novos modelos de inteligência artificial (IA) para classificação de imagens.
 
@@ -9,7 +14,7 @@
 
 &emsp; Outra funcionalidade adicionada foi a de [preview de relatório](./front-end), que apresenta ao usuário a opção de visualizar o relatório com os resultados da análise gerada pela IA, essa funcionalidade é encontrada na tela de resultados junto com a opção de download e a visualização quantitativa dos diferentes tipos de fissuras identificadas. Além disso, foi criada uma tela de [histórico](./front-end) de relatórios, permitindo o acesso aos relatórios já gerados, com possibilidade de visualização e novo download a qualquer momento.
 
-&emsp; No campo da [inteligência artificial](./inteligencia-artificial), a equipe desenvolveu uma pipeline modular para o treinamento e avaliação de novos modelos de classificação. Essa abordagem permitiu testar diferentes filtros e modelos de IA de forma flexível e estruturada. Como resultado, dois novos [modelos](./inteligencia-artificial/Modelagem_Treinamento_Metricas.md) foram treinados, e um deles já foi integrado ao backend do sistema, viabilizando a geração automática de relatórios a partir das análises — embora o layout final do relatório ainda esteja em fase de desenvolvimento.
+&emsp; No campo da [inteligência artificial](./inteligencia-artificial/preprocessamento-imagens.md), a equipe desenvolveu uma pipeline modular para o treinamento e avaliação de novos modelos de classificação. Essa abordagem permitiu testar diferentes filtros e modelos de IA de forma flexível e estruturada. Como resultado, dois novos [modelos](./inteligencia-artificial/modelos/primeiro-modelo-s3.md) foram treinados, e um deles já foi integrado ao backend do sistema, viabilizando a geração automática de relatórios a partir das análises — embora o layout final do relatório ainda esteja em fase de desenvolvimento.
 
 ## Equipes Responsáveis
 

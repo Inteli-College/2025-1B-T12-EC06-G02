@@ -1,3 +1,9 @@
+---
+sidebar_position: 3
+slug: /sprint-3/atualizacoes-front
+description: "Apresentação do fluxo normal do usuário e complementos"
+---
+
 # Atualizações do Frontend
 
 ## Introdução

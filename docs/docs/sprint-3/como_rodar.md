@@ -1,6 +1,7 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 slug: /sprint-3/como-rodar
+description: "Instruções para rodar a solução"
 ---
 
 # Instruções para Rodar Localmente
@@ -26,6 +27,12 @@ Garantir a facilidade no processo de análise de imagem desde o uso do drone.
 &emsp; Os requisitos não funcionais [RNF02, RNF03 e RNF08](../sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md) também foram cumpridos nessa sprint.
 
 &emsp; Entretanto, devido ao aumento da complexidade do aplicativo, aumentou-se também suas instruções de uso, conforme demonstrado abaixo.
+
+:::warning[Aviso]
+
+Devido a não finalização do app, ainda não será possível testá-lo nessa sprint
+
+:::
 
 ## Pré-requisitos:
 

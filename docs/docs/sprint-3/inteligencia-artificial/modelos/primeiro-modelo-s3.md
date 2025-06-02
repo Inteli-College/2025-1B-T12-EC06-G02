@@ -48,22 +48,22 @@ description: "Primeiro Modelo ResNet-18 - Baseline com Limitações Identificada
           <tr>
             <td>Acurácia</td>
             <td>91.5%</td>
-            <td>⚠️ Suspeita de overfitting</td>
+            <td>Suspeita de overfitting</td>
           </tr>
           <tr>
             <td>Precisão</td>
             <td>92.3%</td>
-            <td>⚠️ Validação necessária</td>
+            <td>Validação necessária</td>
           </tr>
           <tr>
             <td>Recall</td>
             <td>90.8%</td>
-            <td>⚠️ Gap treino/validação</td>
+            <td>Gap entre treino e validação</td>
           </tr>
           <tr>
             <td>F1-Score</td>
             <td>91.5%</td>
-            <td>⚠️ Confiabilidade questionável</td>
+            <td>Confiabilidade questionável</td>
           </tr>
         </tbody>
     </table>

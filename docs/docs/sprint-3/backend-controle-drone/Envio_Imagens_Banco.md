@@ -1,7 +1,9 @@
 ---
-sidebar_position: 3
-custom_edit_url: null
+sidebar_position: 1
+slug: /sprint-3/backend-drone/envio-imagens
+description: "Apresenta o envio de imagens para o servidor"
 ---
+
 
 # Envio de imagens
 

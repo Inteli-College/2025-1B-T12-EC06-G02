@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
-custom_edit_url: null
+slug: /sprint-3/backend-drone/controle
+description: "Apresenta o controle do drone via aplicativo"
 ---
 
 # Controle e Streaming

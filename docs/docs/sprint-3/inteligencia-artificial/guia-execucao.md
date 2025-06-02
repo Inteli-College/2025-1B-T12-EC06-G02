@@ -206,4 +206,4 @@ mlflow ui --backend-store-uri file:./mlruns
 # Filtrar por métricas, visualizar curvas, comparar modelos
 ```
 
-&emsp; Para dúvidas específicas sobre implementação ou problemas não cobertos neste guia, consulte a documentação técnica dos modelos individuais: [ResNet-18](./primeiro-modelo), [Swin Transformer V2](./segundo-modelo) ou [Pipeline Unificada](./pipeline-unificada).
+&emsp; Para dúvidas específicas sobre implementação ou problemas não cobertos neste guia, consulte a documentação técnica dos modelos individuais: [ResNet-18](./modelos/primeiro-modelo-s3.md), [Swin Transformer V2](./modelos/segundo-modelo-s3.md) ou [Pipeline Unificada](./pipeline-unificada).

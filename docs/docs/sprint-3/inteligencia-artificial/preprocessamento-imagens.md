@@ -18,9 +18,73 @@ description: "Técnicas de pré-processamento de imagens para otimização da cl
 - **Normalização**: Ajuste de brilho e contraste para condições variadas de iluminação
 - **Aumento de robustez**: Preparação para diferentes condições de captura em campo
 
+## Validação Manual Inicial
+
+&emsp; Antes de implementar o pipeline final, foi feita uma validação manual para identificar as técnicas mais eficazes. Este processo experimental foi fundamental para entender quais filtros e transformações realmente faziam diferença na qualidade das imagens de fissuras.
+
+### Ferramentas de Teste Desenvolvidas
+
+&emsp; Para facilitar a experimentação, foram desenvolvidas três ferramentas específicas de validação:
+
+**1. Sistema de Comparação de Filtros (`filter-test.py`)**
+- Aplicação automática de diferentes filtros (Sobel, Canny, simulação de ANN)
+- Geração de comparações lado a lado para análise visual
+- Redimensionamento padronizado para avaliação consistente
+
+**2. Teste de Redimensionamento (`image-scaling-test.py`)**
+- Validação da técnica de Square Padding
+- Teste com diferentes cores de preenchimento
+- Verificação da preservação de proporções
+
+**3. Interface Interativa (`streamlit-preview-preprocess.py`)**
+- Aplicação de filtros sequenciais em tempo real
+- Teste interativo de parâmetros
+- Capacidade de aplicar até 8 filtros em sequência para análise
+
+### Processo de Validação
+
+&emsp; A validação manual seguiu uma metodologia sistemática:
+
+1. **Coleta de amostras**: Seleção de imagens representativas com diferentes tipos de fissuras
+2. **Teste individual**: Aplicação isolada de cada filtro para entender seus efeitos
+3. **Combinação sequencial**: Teste de diferentes sequências de filtros
+4. **Análise visual**: Avaliação qualitativa da visibilidade das fissuras
+5. **Validação quantitativa**: Medição de contraste e nitidez das bordas
+
+### Descobertas da Validação
+
+&emsp; O processo manual revelou informações que influenciaram o pipeline final:
+
+- **CLAHE demonstrou superioridade**: Entre todas as técnicas de melhoria de contraste testadas, o CLAHE com clip limit 3.0 apresentou os melhores resultados
+- **Sequência importa**: A ordem de aplicação dos filtros afeta significativamente o resultado final
+- **Square Padding preserva informação**: Comparado ao redimensionamento direto, o padding evita distorções nas características das fissuras
+- **Sharpening sutil é eficaz**: Valores de strength entre 1.0 e 1.2 realçam bordas sem introduzir artefatos
+
+### Impacto na Implementação Final
+
+&emsp; Os resultados da validação manual foram diretamente incorporados ao pipeline automatizado:
+
+```python
+# Sequência otimizada descoberta na validação manual
+def pipeline_validado_manualmente(image):
+    # 1. Square padding (validado como superior)
+    image = square_pad_resize(image, target_size)
+    
+    # 2. CLAHE com parâmetros testados manualmente
+    image = apply_clahe(image, clip_limit=3.0, tile_grid_size=(8, 8))
+    
+    # 3. Sharpening com strength otimizada
+    image = apply_sharpening(image, strength=1.2)
+    
+    # 4. Equalização seletiva (quando necessária)
+    image = selective_histogram_equalization(image)
+    
+    return image
+```
+
 ## Estratégia de Pré-processamento da SOD
 
-&emsp; A equipe desenvolveu um pipeline robusto que evoluiu consideravelmente ao longo do projeto. Inicialmente utilizavam-se técnicas mais simples, mas conforme os testes avançaram e o aprendizado se acumulou, foram incorporados métodos mais sofisticados para extrair o máximo de qualidade das imagens.
+&emsp; A foi desenvolvido um pipeline que evoluiu consideravelmente ao longo do projeto.
 
 ### Etapa 1: Validação e Carregamento
 
@@ -66,7 +130,7 @@ def square_pad_resize(image, target_size=224):
 
 ### Etapa 3: Melhoramento de Contraste
 
-&emsp; Após extensivos testes, a equipe descobriu que a técnica **CLAHE (Contrast Limited Adaptive Histogram Equalization)** oferece resultados excepcionais para realçar fissuras que às vezes são quase imperceptíveis:
+&emsp; Após extensivos testes, foi aplicado o **CLAHE (Contrast Limited Adaptive Histogram Equalization)**, que oferece resultados ótimos para realçar fissuras que às vezes são quase imperceptíveis:
 
 ```python
 def apply_clahe(image, clip_limit=3.0, tile_grid_size=(8, 8)):
@@ -130,63 +194,9 @@ def selective_histogram_equalization(image, apply_condition=True):
     return image
 ```
 
-## Evolução da Abordagem
-
-&emsp; Uma das características mais interessantes do projeto foi observar como os métodos de pré-processamento se aperfeiçoaram conforme o conhecimento se acumulava:
-
-<p style={{textAlign: 'center'}}>Tabela 1: Evolução do Pré-processamento</p>
-<div style={{margin: 25, textAlign: 'center', display: 'flex'}}>
-    <table style={{margin: 'auto'}}>
-        <thead>
-          <tr>
-            <th>Técnica</th>
-            <th>Versão 1 (ResNet-18)</th>
-            <th>Versão 2 (Swin Transformer)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>CLAHE</td>
-            <td>Clip limit: 2.0</td>
-            <td>Clip limit: 3.0 (otimizado)</td>
-          </tr>
-          <tr>
-            <td>Tile Grid</td>
-            <td>(4,4)</td>
-            <td>(8,8) - maior resolução</td>
-          </tr>
-          <tr>
-            <td>Sharpening</td>
-            <td>Strength: 1.0</td>
-            <td>Strength: 1.2 - realce aprimorado</td>
-          </tr>
-          <tr>
-            <td>Square Padding</td>
-            <td>Implementação básica</td>
-            <td>Centralização otimizada</td>
-          </tr>
-          <tr>
-            <td>Validação</td>
-            <td>Formatos limitados</td>
-            <td>Suporte amplo (.jpg, .png, .bmp, .tiff)</td>
-          </tr>
-        </tbody>
-    </table>
-</div>
-<p style={{textAlign: 'center'}}>Fonte: Desenvolvimento iterativo da SOD com validação empírica (2025). </p>
-
-### Fundamentos das Melhorias
-
-&emsp; As otimizações implementadas na segunda versão basearam-se em:
-
-1. **Experimentação sistemática**: Múltiplas configurações testadas até identificar as mais eficazes
-2. **Validação empírica**: Experimentos com diferentes parâmetros em subconjuntos dos dados
-3. **Pesquisa especializada**: Incorporação de técnicas avançadas para imagens de infraestrutura
-4. **Feedback dos modelos**: Ajustes baseados na resposta dos classificadores
-
 ## Técnicas Avançadas de Data Augmentation
 
-&emsp; Além do pré-processamento fundamental, a equipe implementou técnicas para simular diferentes condições que os modelos podem encontrar em aplicações reais:
+&emsp; Além do pré-processamento fundamental, foram implementadas técnicas para simular diferentes condições que os modelos podem encontrar em aplicações reais:
 
 ### Transformações Geométricas Relevantes
 ```python
@@ -225,136 +235,4 @@ def predict_with_tta(model, image, num_tta=5):
     return torch.mean(torch.stack(predictions), dim=0)
 ```
 
-## Impacto Quantificado do Pré-processamento
-
-&emsp; O pipeline otimizado demonstrou impacto substancial na performance dos modelos:
-
-<p style={{textAlign: 'center'}}>Tabela 2: Impacto do Pré-processamento na Performance</p>
-<div style={{margin: 25, textAlign: 'center', display: 'flex'}}>
-    <table style={{margin: 'auto'}}>
-        <thead>
-          <tr>
-            <th>Métrica</th>
-            <th>Sem Pré-processamento</th>
-            <th>Com Pipeline SOD</th>
-            <th>Melhoria</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Acurácia</td>
-            <td>78.3%</td>
-            <td>96.9%</td>
-            <td>+18.6%</td>
-          </tr>
-          <tr>
-            <td>Precisão</td>
-            <td>75.1%</td>
-            <td>97.0%</td>
-            <td>+21.9%</td>
-          </tr>
-          <tr>
-            <td>Recall</td>
-            <td>81.2%</td>
-            <td>96.9%</td>
-            <td>+15.7%</td>
-          </tr>
-          <tr>
-            <td>Robustez</td>
-            <td>Baixa (σ=4.2%)</td>
-            <td>Alta (σ=0.8%)</td>
-            <td>Estabilidade 5x</td>
-          </tr>
-        </tbody>
-    </table>
-</div>
-<p style={{textAlign: 'center'}}>Fonte: Experimentos controlados com modelo Swin Transformer V2 (2025). </p>
-
-&emsp; **Metodologia de avaliação**: Comparação realizada com o mesmo modelo (Swin Transformer V2) treinado em condições idênticas, variando exclusivamente a aplicação do pipeline de pré-processamento.
-
-## Implementação Unificada
-
-&emsp; Todo o desenvolvimento culminou em uma função integrada que qualquer membro da equipe pode utilizar facilmente:
-
-```python
-def preprocess_for_classification(image_path: str, 
-                                target_size: int = 224) -> torch.Tensor:
-    """
-    Pipeline completo de pré-processamento desenvolvido pela SOD
-    """
-    # 1. Validação de formato
-    if not validate_image_format(image_path):
-        raise ValueError(f"Formato não suportado: {image_path}")
-    
-    image = cv2.imread(image_path)
-    
-    # 2. Redimensionamento preservando proporções
-    image = square_pad_resize(image, target_size)
-    
-    # 3. Melhoramento de contraste
-    image = apply_clahe(image, clip_limit=3.0, tile_grid_size=(8, 8))
-    
-    # 4. Realce de bordas
-    image = apply_sharpening(image, strength=1.2)
-    
-    # 5. Equalização seletiva
-    image = selective_histogram_equalization(image)
-    
-    # 6. Preparação para o modelo
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    image = image.astype(np.float32) / 255.0
-    
-    # 7. Transformação em tensor
-    transform = transforms.Compose([
-        transforms.ToTensor(),
-        transforms.Normalize(
-            mean=[0.485, 0.456, 0.406],  # Padrão ImageNet
-            std=[0.229, 0.224, 0.225]
-        )
-    ])
-    
-    return transform(image)
-```
-
-## Considerações de Performance
-
-&emsp; O pipeline foi otimizado para equilibrar qualidade e eficiência operacional:
-
-- **Tempo de processamento**: ~45ms por imagem em CPU moderna
-- **Uso de memória**: Otimizado para processamento em lote
-- **Paralelização**: Compatibilidade com processamento multi-thread
-- **Escalabilidade**: Adequado para volumes de produção
-
-## Conclusões e Direções Futuras
-
-&emsp; O desenvolvimento do pipeline de pré-processamento pela SOD demonstra a importância crítica desta etapa no sucesso de sistemas de classificação de imagens. As melhorias implementadas resultaram em ganhos substantivos de performance, estabelecendo fundamentos sólidos para os modelos de classificação.
-
-### Contribuições Principais
-
-1. **Pipeline robusto**: Técnicas validadas especificamente para imagens de fissuras
-2. **Melhoria contínua**: Evolução baseada em resultados práticos e feedback
-3. **Flexibilidade**: Adaptabilidade a diferentes modelos e condições de captura
-4. **Reprodutibilidade**: Implementação padronizada e documentada
-
-### Desenvolvimentos Futuros
-
-&emsp; As próximas iterações do pipeline podem incluir:
-
-- **Adaptação automática**: Ajuste dinâmico de parâmetros baseado na qualidade da imagem
-- **Especialização por estrutura**: Técnicas específicas para diferentes tipos de infraestrutura
-- **Otimização de hardware**: Implementação GPU para processamento em tempo real
-- **Validação em campo**: Ajustes baseados em condições reais de operação
-
 &emsp; O trabalho estabelecido nesta etapa fornece os fundamentos necessários para a implementação bem-sucedida dos [modelos de classificação](./primeiro-modelo-s3) e da [pipeline unificada](./pipeline-unificada), garantindo que o sistema SOD opere com máxima eficiência e confiabilidade na detecção de fissuras em infraestrutura.
-
-## Bibliografia
-
-* PIZER, Stephen M. et al. Adaptive histogram equalization and its variations. **Computer Vision, Graphics, and Image Processing**, v. 39, n. 3, p. 355-368, 1987.
-
-* ZUIDERVELD, Karel. Contrast limited adaptive histogram equalization. **Graphics Gems IV**, p. 474-485, 1994.
-
-* GONZALEZ, Rafael C.; WOODS, Richard E. Digital Image Processing. **4th Edition**, Pearson, 2018.
-
-* SHORTEN, Connor; KHOSHGOFTAAR, Taghi M. A survey on image data augmentation for deep learning. **Journal of Big Data**, v. 6, n. 1, p. 1-48, 2019.
-
-* BUSLAEV, Alexander et al. Albumentations: fast and flexible image augmentations. **Information**, v. 11, n. 2, p. 125, 2020. 

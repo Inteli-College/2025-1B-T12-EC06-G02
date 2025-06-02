@@ -1,0 +1,8 @@
+{
+  "label": "Inteligência Artificial",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Reúne toda a documentação referente ao uso de IA no projeto, desde o pré-processamento até o treinamento e definição de métricas."
+  }
+}

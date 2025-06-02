@@ -33,7 +33,6 @@ export default function Result() {
     return new File([blob], filename, { type: blob.type });
   }
   const { resultadoIA, pdf } = useDadosStore((state) => state.dados);
-  console.log(resultadoIA);
 
   useEffect(() => {
     async function gerarPdf() {
@@ -103,9 +102,7 @@ export default function Result() {
 
         const nomeArquivo = `relatorio-${Date.now()}.pdf`;
         const file = data.buffer;
-        console.log("Tipo do buffer:", typeof data.buffer);
-        console.log("Tamanho do buffer base64:", data.buffer.length);
-        console.log("Preview base64:", data.buffer.slice(0, 100));
+
 
         function base64ToBlob(base64, mimeType = "application/pdf") {
           const binary = Uint8Array.from(atob(base64), (char) =>

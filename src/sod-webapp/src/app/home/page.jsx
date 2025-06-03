@@ -77,7 +77,7 @@ export default function Home() {
           ) : (
             <Card>
               <Button
-                className="!h-auto w-1/6 !p-2 text-white !text-xl rounded hover:bg-[#00b033] transition-colors mb-6"
+                className="!h-auto w-1/6 !p-2 text-white !text-xl rounded hover:bg-[#19354F] transition-colors mb-6"
                 onClick={handleUploadClick}
               >
                 <input

@@ -22,7 +22,8 @@ import { useRouter } from "next/navigation";
 import Loading from "../(components)/Loading";
 
 export default function Upload() {
-  const { name, selection, images } = useDadosStore((state) => state.dados);
+  const dados = useDadosStore((state) => state.dados) || {};
+  const { name = "Usuário", selection, images = [] } = dados;
   const [imagens, setImagens] = useState(images);
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -69,21 +70,32 @@ export default function Upload() {
         })
       );
 
-      const response = await fetch("http://127.0.0.1:5000/api/ia/classify", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          grupos: gruposProcessados, // Enviando os grupos organizados
-        }),
-      });
+      console.log("Enviando grupos processados:", gruposProcessados);
+      
+      let response;
+      try {
+        response = await fetch("http://127.0.0.1:5000/api/ia/classify", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            grupos: gruposProcessados,
+          }),
+        });
+      } catch (fetchError) {
+        console.error("Erro de conexão:", fetchError);
+        throw new Error(`Erro ao conectar com o servidor: ${fetchError.message}. Verifique se o backend está rodando na porta 5000.`);
+      }
 
       if (!response.ok) {
-        throw new Error(`Erro na requisição: ${response.status}`);
+        const errorText = await response.text();
+        console.error("Resposta do servidor:", errorText);
+        throw new Error(`Erro na requisição: ${response.status} - ${errorText}`);
       }
 
       const resultadoIA = await response.json();
+      console.log("Resultado recebido:", resultadoIA);
 
       const dadosParaEnviar = { name, resultadoIA, gruposOrganizados };
       useDadosStore.getState().setDados(dadosParaEnviar);
@@ -92,7 +104,7 @@ export default function Upload() {
       setMostrarOrganizador(false);
     } catch (error) {
       console.error("Erro ao enviar dados para o backend:", error);
-      alert("Erro ao processar imagens. Por favor, tente novamente.");
+      alert(`Erro ao processar imagens: ${error.message}`);
     } finally {
       setLoading(false);
     }

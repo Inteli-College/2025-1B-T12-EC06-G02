@@ -3,11 +3,11 @@ import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 
-export default function miniGaleria({ images, handleImages }) {
+export default function miniGaleria({ images = [], handleImages }) {
   const [uploadError, setUploadError] = useState(null);
   const [uploadSuccess, setUploadSuccess] = useState(false);
   const [selectedImageForModal, setSelectedImageForModal] = useState(null);
-  const [mounted, setMounted] = useState(false); // usado para aguardar montagem do DOM
+  const [mounted, setMounted] = useState(false);
   const fileInputRef = useRef(null);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function miniGaleria({ images, handleImages }) {
         id: Math.random().toString(36).substring(2, 15),
       }));
 
-      handleImages([...images, ...newImages]);
+      handleImages([...(images || []), ...newImages]);
       setUploadError(null);
       setUploadSuccess(false);
     }
@@ -38,7 +38,7 @@ export default function miniGaleria({ images, handleImages }) {
   const handleDeleteImage = (imageId) => {
     handleImages((prevImages) => {
       const imageToDelete = prevImages.find((img) => img.id === imageId);
-      if (imageToDelete) {
+      if (imageToDelete && imageToDelete.previewUrl?.startsWith('blob:')) {
         URL.revokeObjectURL(imageToDelete.previewUrl);
       }
       return prevImages.filter((img) => img.id !== imageId);
@@ -57,29 +57,31 @@ export default function miniGaleria({ images, handleImages }) {
     <>
       <div className="w-full max-w-4xl bg-gray-700/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
         <div className="grid grid-cols-8 gap-4 mb-6">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="relative aspect-square border border-gray-300 rounded overflow-hidden bg-white group"
-            >
-              <img
-                src={image.previewUrl}
-                alt={`Preview ${index + 1}`}
-                className="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity"
-                onClick={() => handleImageClick(image)}
-              />
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleDeleteImage(image.id);
-                }}
-                className="absolute top-1 right-1 bg-gray-500 hover:bg-gray-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity"
-                title="Deletar imagem"
+          {images && images.length > 0 ? (
+            images.map((image, index) => (
+              <div
+                key={image.id || index}
+                className="relative aspect-square border border-gray-300 rounded overflow-hidden bg-white group"
               >
-                ×
-              </button>
-            </div>
-          ))}
+                <img
+                  src={image.previewUrl}
+                  alt={`Preview ${index + 1}`}
+                  className="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => handleImageClick(image)}
+                />
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleDeleteImage(image.id);
+                  }}
+                  className="absolute top-1 right-1 bg-gray-500 hover:bg-gray-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+                  title="Deletar imagem"
+                >
+                  ×
+                </button>
+              </div>
+            ))
+          ) : null}
 
           <div
             className="aspect-square border border-gray-300 rounded flex items-center justify-center bg-gray-600 cursor-pointer hover:bg-gray-500 transition-colors"
@@ -133,21 +135,24 @@ export default function miniGaleria({ images, handleImages }) {
               />
 
               <div className="p-4 bg-gray-100 w-full text-center">
-                {selectedImageForModal?.file?.name ?
+                {selectedImageForModal?.file?.name ? (
                   <p className="text-sm text-gray-600">
-                    Nome: {selectedImageForModal?.file?.name}
-                  </p> :
+                    Nome: {selectedImageForModal.file.name}
+                  </p>
+                ) : (
                   <a className="text-sm text-gray-600" href={selectedImageForModal?.previewUrl}>
                     Link: {selectedImageForModal?.previewUrl}
                   </a>
-                }
-                <p className="text-sm text-gray-600">
-                  Tamanho: {(selectedImageForModal?.file?.size / 1024 / 1024).toFixed(2)} MB
-                </p>
+                )}
+                {selectedImageForModal?.file?.size && (
+                  <p className="text-sm text-gray-600">
+                    Tamanho: {(selectedImageForModal.file.size / 1024 / 1024).toFixed(2)} MB
+                  </p>
+                )}
               </div>
             </div>
           </div>,
-          document.getElementById("modal-root")
+          document.getElementById("modal-root") || document.body
         )}
     </>
   );

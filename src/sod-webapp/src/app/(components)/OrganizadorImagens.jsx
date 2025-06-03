@@ -1,20 +1,27 @@
 // src/app/(components)/OrganizadorImagens.jsx
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Button } from "./ui/button";
 import { X, Plus } from "lucide-react";
+import { createPortal } from "react-dom";
 
-export default function OrganizadorImagens({ images, onSubmit, onClose }) {
+export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
   const [grupos, setGrupos] = useState([
     { id: 1, andar: "", direcao: "", imagens: [] }
   ]);
   const [imagensNaoAgrupadas, setImagensNaoAgrupadas] = useState(images);
   const [imagensSelecionadas, setImagensSelecionadas] = useState(new Set());
   const [draggedImages, setDraggedImages] = useState([]);
+  const [imagemAmpliada, setImagemAmpliada] = useState(null);
+  const [mounted, setMounted] = useState(false);
   const scrollContainerRef = useRef(null);
 
   const direcoes = ["Norte", "Sul", "Leste", "Oeste", "Nordeste", "Noroeste", "Sudeste", "Sudoeste"];
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Adicionar novo grupo
   const adicionarGrupo = () => {
@@ -76,6 +83,11 @@ export default function OrganizadorImagens({ images, onSubmit, onClose }) {
     }
     
     setImagensSelecionadas(novoSet);
+  };
+
+  // Double click para ampliar imagem
+  const handleDoubleClick = (imagem) => {
+    setImagemAmpliada(imagem);
   };
 
   // Drag start
@@ -151,113 +163,122 @@ export default function OrganizadorImagens({ images, onSubmit, onClose }) {
     onSubmit(gruposComImagens);
   };
 
+  // Obter nome do arquivo
+  const getNomeArquivo = (imagem) => {
+    if (imagem.file?.name) return imagem.file.name;
+    if (imagem.path) return imagem.path.split('/').pop();
+    return `Imagem ${imagem.id}`;
+  };
+
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-lg w-full max-w-7xl h-[90vh] flex flex-col">
+    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+      <div className="bg-white/90 backdrop-blur-sm rounded-lg w-full max-w-[95vw] h-[92vh] flex flex-col shadow-2xl">
         {/* Header */}
-        <div className="flex justify-between items-center p-4 border-b">
-          <h2 className="text-2xl font-bold">Organizar Imagens por Localização</h2>
-          <Button
-            variant="ghost"
-            size="icon"
+        <div className="flex justify-between items-center px-8 py-6 border-b border-gray-200">
+          <h2 className="text-3xl font-bold text-[#434343]">Organizar Imagens por Localização</h2>
+          <button
             onClick={onClose}
-            className="hover:bg-gray-100"
+            className="text-gray-500 hover:text-gray-700 transition-colors"
           >
-            <X className="h-5 w-5" />
-          </Button>
+            <X className="h-6 w-6" />
+          </button>
         </div>
 
         {/* Instruções */}
-        <div className="px-4 py-2 bg-blue-50 text-sm text-blue-700">
+        <div className="px-8 py-4 bg-blue-50/50 text-sm text-blue-700 italic">
           <p>Para selecionar mais de uma imagem, pressione Ctrl + Click. Use Shift + Click para selecionar um intervalo.</p>
         </div>
 
         {/* Conteúdo */}
         <div className="flex-1 flex overflow-hidden">
           {/* Coluna de imagens não agrupadas */}
-          <div className="w-64 border-r p-4 overflow-y-auto">
-            <h3 className="font-semibold mb-3">Fotos submetidas ({imagensNaoAgrupadas.length})</h3>
+          <div className="w-[350px] border-r border-gray-200 p-8 overflow-y-auto bg-gray-50/50">
+            <h3 className="font-semibold text-xl mb-6 text-[#434343]">Fotos submetidas ({imagensNaoAgrupadas.length})</h3>
             <div 
-              className="grid grid-cols-2 gap-2 min-h-[200px] border-2 border-dashed border-gray-300 rounded p-2"
+              className="grid grid-cols-2 gap-4 min-h-[400px] border-2 border-dashed border-gray-300 rounded-lg p-6 bg-white/50"
               onDragOver={handleDragOver}
               onDrop={handleDropNaoAgrupadas}
             >
-              {imagensNaoAgrupadas.map((img) => (
+              {imagensNaoAgrupadas && imagensNaoAgrupadas.map((img) => (
                 <div
                   key={img.id}
-                  className={`relative cursor-pointer border-2 rounded overflow-hidden ${
-                    imagensSelecionadas.has(img.id) ? 'border-blue-500' : 'border-gray-300'
-                  }`}
-                  onClick={(e) => toggleSelecaoImagem(img.id, e)}
-                  draggable
-                  onDragStart={(e) => {
-                    if (imagensSelecionadas.has(img.id)) {
-                      // Arrastar todas as selecionadas
-                      const selecionadas = imagensNaoAgrupadas.filter(i => imagensSelecionadas.has(i.id));
-                      handleDragStart(e, selecionadas);
-                    } else {
-                      // Arrastar apenas esta
-                      handleDragStart(e, img);
-                    }
-                  }}
+                  className="group"
                 >
-                  <img
-                    src={img.previewUrl}
-                    alt={`Imagem ${img.id}`}
-                    className="w-full h-20 object-cover"
-                  />
-                  {imagensSelecionadas.has(img.id) && (
-                    <div className="absolute top-1 right-1 bg-blue-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
-                      ✓
-                    </div>
-                  )}
+                  <div
+                    className={`relative cursor-pointer border-2 rounded-lg overflow-hidden transition-all hover:shadow-lg ${
+                      imagensSelecionadas.has(img.id) ? 'border-[#00C939] shadow-md' : 'border-gray-300'
+                    }`}
+                    onClick={(e) => toggleSelecaoImagem(img.id, e)}
+                    onDoubleClick={() => handleDoubleClick(img)}
+                    draggable
+                    onDragStart={(e) => {
+                      if (imagensSelecionadas.has(img.id)) {
+                        const selecionadas = imagensNaoAgrupadas.filter(i => imagensSelecionadas.has(i.id));
+                        handleDragStart(e, selecionadas);
+                      } else {
+                        handleDragStart(e, img);
+                      }
+                    }}
+                  >
+                    <img
+                      src={img.previewUrl}
+                      alt={`Imagem ${img.id}`}
+                      className="w-full h-28 object-cover"
+                    />
+                    {imagensSelecionadas.has(img.id) && (
+                      <div className="absolute top-2 right-2 bg-[#00C939] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                        ✓
+                      </div>
+                    )}
+                  </div>
+                  <p className="text-xs text-gray-600 mt-1 truncate text-center">
+                    {getNomeArquivo(img)}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Grupos */}
-          <div className="flex-1 overflow-x-auto" ref={scrollContainerRef}>
-            <div className="flex h-full p-4 gap-4" style={{ minWidth: 'max-content' }}>
+          <div className="flex-1 overflow-x-auto bg-gray-100/30" ref={scrollContainerRef}>
+            <div className="flex h-full p-8 gap-8" style={{ minWidth: 'max-content' }}>
               {grupos.map((grupo) => (
                 <div
                   key={grupo.id}
-                  className="w-80 bg-gray-50 rounded-lg p-4 flex flex-col"
+                  className="w-[450px] bg-white/80 backdrop-blur-sm rounded-lg p-8 flex flex-col shadow-lg border border-gray-200"
                   onDragOver={handleDragOver}
                   onDrop={(e) => handleDropGrupo(e, grupo.id)}
                 >
-                  <div className="flex justify-between items-start mb-4">
-                    <h3 className="font-semibold">Grupo {grupo.id}</h3>
+                  <div className="flex justify-between items-start mb-6">
+                    <h3 className="font-semibold text-xl text-[#434343]">Grupo {grupo.id}</h3>
                     {grupos.length > 1 && (
-                      <Button
-                        variant="ghost"
-                        size="icon"
+                      <button
                         onClick={() => removerGrupo(grupo.id)}
-                        className="hover:bg-gray-200"
+                        className="text-gray-400 hover:text-red-600 transition-colors"
                       >
-                        <X className="h-4 w-4" />
-                      </Button>
+                        <X className="h-5 w-5" />
+                      </button>
                     )}
                   </div>
 
-                  <div className="space-y-3 mb-4">
+                  <div className="space-y-5 mb-8">
                     <div>
-                      <label className="block text-sm font-medium mb-1">ANDAR</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">ANDAR</label>
                       <input
                         type="number"
                         value={grupo.andar}
                         onChange={(e) => atualizarGrupo(grupo.id, 'andar', e.target.value)}
-                        className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00C939] focus:border-transparent"
                         placeholder="Ex: 3"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-1">DIREÇÃO</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">DIREÇÃO</label>
                       <select
                         value={grupo.direcao}
                         onChange={(e) => atualizarGrupo(grupo.id, 'direcao', e.target.value)}
-                        className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00C939] focus:border-transparent"
                       >
                         <option value="">Selecione...</option>
                         {direcoes.map(dir => (
@@ -267,69 +288,122 @@ export default function OrganizadorImagens({ images, onSubmit, onClose }) {
                     </div>
                   </div>
 
-                  <div className="flex-1 border-2 border-dashed border-gray-300 rounded p-2 overflow-y-auto">
-                    <div className="grid grid-cols-3 gap-2">
+                  <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg p-6 overflow-y-auto bg-gray-50/50 min-h-[350px]">
+                    <div className="grid grid-cols-3 gap-4">
                       {grupo.imagens.map((img) => (
                         <div
                           key={img.id}
-                          className="relative cursor-move"
-                          draggable
-                          onDragStart={(e) => handleDragStart(e, img)}
+                          className="group"
                         >
-                          <img
-                            src={img.previewUrl}
-                            alt={`Imagem ${img.id}`}
-                            className="w-full h-20 object-cover rounded border border-gray-300"
-                          />
+                          <div
+                            className="relative cursor-move border border-gray-300 rounded-lg overflow-hidden hover:shadow-md transition-all"
+                            draggable
+                            onDragStart={(e) => handleDragStart(e, img)}
+                            onDoubleClick={() => handleDoubleClick(img)}
+                          >
+                            <img
+                              src={img.previewUrl}
+                              alt={`Imagem ${img.id}`}
+                              className="w-full h-24 object-cover"
+                            />
+                          </div>
+                          <p className="text-xs text-gray-600 mt-1 truncate text-center">
+                            {getNomeArquivo(img)}
+                          </p>
                         </div>
                       ))}
                     </div>
                     {grupo.imagens.length === 0 && (
-                      <p className="text-gray-400 text-center mt-8">
-                        Arraste imagens para cá
-                      </p>
+                      <div className="flex items-center justify-center h-full">
+                        <p className="text-gray-400 text-center text-lg">
+                          Arraste imagens para cá
+                        </p>
+                      </div>
                     )}
                   </div>
 
-                  <p className="text-sm text-gray-600 mt-2">
+                  <p className="text-sm text-gray-600 mt-4 text-center">
                     {grupo.imagens.length} imagem(ns)
                   </p>
                 </div>
               ))}
 
               {/* Botão adicionar grupo */}
-              <div className="w-80 flex items-center justify-center">
-                <Button
+              <div className="w-[450px] flex items-center justify-center">
+                <button
                   onClick={adicionarGrupo}
-                  variant="outline"
-                  className="h-full min-h-[400px] border-2 border-dashed hover:bg-gray-50"
+                  className="h-full min-h-[600px] w-full border-2 border-dashed border-gray-400 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center group"
                 >
-                  <Plus className="h-8 w-8" />
-                </Button>
+                  <Plus className="h-12 w-12 text-gray-400 group-hover:text-gray-600" />
+                </button>
               </div>
             </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="flex justify-between items-center p-4 border-t">
-          <p className="text-sm text-gray-600">
+        <div className="flex justify-between items-center px-8 py-6 border-t border-gray-200 bg-gray-50/50">
+          <p className="text-gray-600">
             {imagensNaoAgrupadas.length} imagem(ns) não organizadas
           </p>
-          <div className="flex gap-2">
-            <Button variant="outline" onClick={onClose}>
+          <div className="flex gap-4">
+            <Button 
+              variant="outline" 
+              onClick={onClose}
+              className="px-6 py-2 border border-gray-300 text-gray-700 hover:bg-gray-50"
+            >
               Cancelar
             </Button>
             <Button 
               onClick={handleSubmit}
               disabled={imagensNaoAgrupadas.length > 0}
-              className="bg-[#00C939] hover:bg-[#00b033]"
+              className="px-6 py-2 bg-[#00C939] hover:bg-[#00b033] text-white disabled:bg-gray-300 disabled:cursor-not-allowed"
             >
               Iniciar processamento
             </Button>
           </div>
         </div>
       </div>
+
+      {/* Modal de imagem ampliada */}
+      {mounted && imagemAmpliada &&
+        createPortal(
+          <div
+            className="fixed inset-0 bg-black/80 flex items-center justify-center z-[60] p-4"
+            onClick={() => setImagemAmpliada(null)}
+          >
+            <div
+              className="relative w-full h-full max-w-6xl bg-black flex flex-col items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setImagemAmpliada(null)}
+                className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 flex items-center justify-center text-xl font-bold z-10 transition-colors"
+                title="Fechar"
+              >
+                ×
+              </button>
+
+              <img
+                src={imagemAmpliada.previewUrl}
+                alt="Imagem ampliada"
+                className="w-full max-h-[80vh] object-contain"
+              />
+
+              <div className="p-4 bg-gray-900 w-full text-center">
+                <p className="text-sm text-gray-300">
+                  {getNomeArquivo(imagemAmpliada)}
+                </p>
+                {imagemAmpliada.file?.size && (
+                  <p className="text-sm text-gray-400">
+                    Tamanho: {(imagemAmpliada.file.size / 1024 / 1024).toFixed(2)} MB
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>,
+          document.getElementById("modal-root") || document.body
+        )}
     </div>
   );
 }

@@ -7,7 +7,8 @@ import Navbar from "../(components)/Navbar";
 import Card from "../(components)/Card";
 import Download from "../../../public/download.png";
 import { supabase } from "../../backend/lib/supabase";
-import layout from "../(components)/Layout";
+import Pesquisar from "../(components)/Pesquisar";
+import { formatDate, downloadReport } from "../../utils/historico";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,6 +21,8 @@ export default function History() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [relatorio, handleRelatorio] = useState("");
+  const [data, handleData] = useState("");
   const reportsPerPage = 5;
 
   const fetchReports = async () => {
@@ -55,50 +58,31 @@ export default function History() {
     }
   };
 
-  const formatDate = (dateString) => {
-    if (!dateString) return "Data não disponível";
-
-    const date = new Date(dateString);
-    return date.toLocaleString("pt-BR", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    });
-  };
-
-  const downloadReport = async (fileName) => {
-    try {
-      const { data, error } = await supabase.storage
-        .from("relatorios")
-        .download(fileName);
-
-      if (error) throw error;
-
-      const url = URL.createObjectURL(data);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      URL.revokeObjectURL(url);
-    } catch (err) {
-      console.error("Erro ao fazer download:", err);
-      alert("Erro ao fazer download do arquivo. Tente novamente.");
-    }
-  };
-
   useEffect(() => {
     fetchReports();
   }, []);
 
-  // Lógica de paginação
+  // Resetar a página quando o termo de busca mudar
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [relatorio]);
+
+  // Filtragem por nome do relatório
+  const filteredReports = reports.filter((report) =>
+    report.name.toLowerCase().includes(relatorio.toLowerCase())
+  );
+
+  // Paginação baseada nos relatórios filtrados
   const indexOfLastReport = currentPage * reportsPerPage;
   const indexOfFirstReport = indexOfLastReport - reportsPerPage;
-  const currentReports = reports.slice(indexOfFirstReport, indexOfLastReport);
-  const totalPages = Math.ceil(reports.length / reportsPerPage);
+  const currentReports = filteredReports.slice(
+    indexOfFirstReport,
+    indexOfLastReport
+  );
+  const totalPages = Math.ceil(filteredReports.length / reportsPerPage);
+
+  console.log(relatorio);
+  console.log(currentReports);
 
   return (
     <div className={inter.className}>
@@ -123,7 +107,7 @@ export default function History() {
                   <p className="text-red-600 mb-4">{error}</p>
                   <button
                     onClick={fetchReports}
-                    className="bg-[#2d608d] hover:bg-[#244d70] text-white px-4 py-2 rounded-lg"
+                    className="bg-[#2d608d] hover:bg-[#244d70] text-white px-4 py-2 rounded-sm"
                   >
                     Tentar Novamente
                   </button>
@@ -137,7 +121,12 @@ export default function History() {
               )}
 
               {!loading && !error && reports.length > 0 && (
-                <>
+                <div className="flex gap-4 flex-col">
+                  <Pesquisar
+                    handleRelatorio={handleRelatorio}
+                    data={data}
+                    handleData={handleData}
+                  ></Pesquisar>
                   <div className="space-y-3 bg-black/30 p-5">
                     {currentReports.map((report) => (
                       <div
@@ -199,7 +188,7 @@ export default function History() {
                       Próxima
                     </button>
                   </div>
-                </>
+                </div>
               )}
             </div>
           </div>

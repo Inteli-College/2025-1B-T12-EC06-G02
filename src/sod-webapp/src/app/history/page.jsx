@@ -7,7 +7,7 @@ import Navbar from "../(components)/Navbar";
 import Card from "../(components)/Card";
 import Download from "../../../public/download.png";
 import { supabase } from "../../backend/lib/supabase";
-import layout from "../(components)/Layout"
+import layout from "../(components)/Layout";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,7 +20,7 @@ export default function History() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const reportsPerPage = 10;
+  const reportsPerPage = 5;
 
   const fetchReports = async () => {
     try {
@@ -138,38 +138,37 @@ export default function History() {
 
               {!loading && !error && reports.length > 0 && (
                 <>
-                  <div className="space-y-3">
+                  <div className="space-y-3 bg-black/30 p-5">
                     {currentReports.map((report) => (
                       <div
                         key={report.id || report.name}
-                        className="flex items-center justify-between bg-white p-4 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
+                        className="flex items-center justify-between bg-white p-4 rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
                       >
-                        <div className="flex items-center space-x-4">
-                          <button
-                            onClick={() => downloadReport(report.name)}
-                            className="w-10 h-10 bg-green-500 rounded flex items-center justify-center hover:bg-green-600 transition-colors duration-200 cursor-pointer"
-                          >
-                            <img src={Download.src} className="w-6 h-6" />
-                          </button>
-
-                          <div className="flex-1">
-                            <h3 className="text-lg font-medium text-gray-800">
-                              {report.name
-                                .replace(/^relatorio-/, "Relatório ")
-                                .replace(/\.[^/.]+$/, "")}
-                            </h3>
-                            <p className="text-sm text-gray-600">
-                              {report.formattedDate}
-                            </p>
-                          </div>
+                        <div className="flex-1">
+                          <h3 className="text-lg font-medium text-gray-800">
+                            {report.name
+                              .replace(/^relatorio-/, "Relatório ")
+                              .replace(/\.[^/.]+$/, "")}
+                          </h3>
+                          <p className="text-sm text-gray-600">
+                            {report.formattedDate}
+                          </p>
                         </div>
+                        <button
+                          onClick={() => downloadReport(report.name)}
+                          className="w-10 h-10 bg-[#204565] rounded flex items-center justify-center hover:bg-[#19354F] transition-colors duration-200 cursor-pointer"
+                        >
+                          <img src={Download.src} className="w-6 h-6" />
+                        </button>
                       </div>
                     ))}
                   </div>
 
                   <div className="flex justify-center items-center space-x-4 mt-6">
                     <button
-                      onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                      onClick={() =>
+                        setCurrentPage((prev) => Math.max(prev - 1, 1))
+                      }
                       disabled={currentPage === 1}
                       className={`px-4 py-2 rounded bg-[#2d608d] text-white ${
                         currentPage === 1

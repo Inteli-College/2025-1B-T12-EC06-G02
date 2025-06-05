@@ -29,7 +29,8 @@ export default function Pesquisar({ data, handleRelatorio, handleData }) {
       <div className="flex justify-evenly">
         <div id="nome" className="flex items-center">
           <TextField
-            label="Pesquisar relatório"
+            label="Insira o nº do relatório"
+            type="number"
             variant="standard"
             onChange={(event) => setRelatorioPesquisado(event.target.value)}
           />

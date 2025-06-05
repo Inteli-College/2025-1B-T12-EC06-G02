@@ -24,7 +24,7 @@ export default function History() {
   const [error, setError] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [relatorio, handleRelatorio] = useState("");
-  const [data, handleData] = useState("");
+  const [data, handleData] = useState(null);
   const reportsPerPage = 5;
 
   const fetchReports = async () => {
@@ -71,16 +71,18 @@ export default function History() {
 
   // Filtragem por nome do relatório
   const filteredReports = reports.filter((report) => {
-  const nomeCombina = report.name.toLowerCase().includes(relatorio.toLowerCase());
+    const nomeCombina = report.name
+      .toLowerCase()
+      .includes(relatorio.toLowerCase());
 
-  if (!data) return nomeCombina;
+    if (!data) return nomeCombina;
 
-  const dataSelecionada = dayjs(data).startOf("day");
-  const dataRelatorio = dayjs(report.created_at).startOf("day");
+    const dataSelecionada = dayjs(data).startOf("day");
+    const dataRelatorio = dayjs(report.created_at).startOf("day");
 
-  const mesmaData = dataRelatorio.isSame(dataSelecionada);
-  return nomeCombina && mesmaData;
-});
+    const mesmaData = dataRelatorio.isSame(dataSelecionada);
+    return nomeCombina && mesmaData;
+  });
 
   // Paginação baseada nos relatórios filtrados
   const indexOfLastReport = currentPage * reportsPerPage;
@@ -138,29 +140,33 @@ export default function History() {
                     handleData={handleData}
                   ></Pesquisar>
                   <div className="space-y-3 bg-black/30 p-5">
-                    {currentReports.map((report) => (
-                      <div
-                        key={report.id || report.name}
-                        className="flex items-center justify-between bg-white p-4 rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
-                      >
-                        <div className="flex-1">
-                          <h3 className="text-lg font-medium text-gray-800">
-                            {report.name
-                              .replace(/^relatorio-/, "Relatório ")
-                              .replace(/\.[^/.]+$/, "")}
-                          </h3>
-                          <p className="text-sm text-gray-600">
-                            {report.formattedDate}
-                          </p>
-                        </div>
-                        <button
-                          onClick={() => downloadReport(report.name)}
-                          className="w-10 h-10 bg-[#204565] rounded flex items-center justify-center hover:bg-[#19354F] transition-colors duration-200 cursor-pointer"
+                    {currentReports.length > 0 ? (
+                      currentReports.map((report) => (
+                        <div
+                          key={report.id || report.name}
+                          className="flex items-center justify-between bg-white p-4 rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
                         >
-                          <img src={Download.src} className="w-6 h-6" />
-                        </button>
-                      </div>
-                    ))}
+                          <div className="flex-1">
+                            <h3 className="text-lg font-medium text-gray-800">
+                              {report.name
+                                .replace(/^relatorio-/, "Relatório ")
+                                .replace(/\.[^/.]+$/, "")}
+                            </h3>
+                            <p className="text-sm text-gray-600">
+                              {report.formattedDate}
+                            </p>
+                          </div>
+                          <button
+                            onClick={() => downloadReport(report.name)}
+                            className="w-10 h-10 bg-[#204565] rounded flex items-center justify-center hover:bg-[#19354F] transition-colors duration-200 cursor-pointer"
+                          >
+                            <img src={Download.src} className="w-6 h-6" />
+                          </button>
+                        </div>
+                      ))
+                    ) : (
+                      <p>Nenhum relatório encontrado</p>
+                    )}
                   </div>
 
                   <div className="flex justify-center items-center space-x-4 mt-6">

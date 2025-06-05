@@ -103,7 +103,7 @@ export default function History() {
         <Card>
           <div className="w-full max-w-4xl mx-auto p-4">
             <div className="text-center mb-8">
-              <h1 className="text-4xl text-gray-800 mb-6">Histórico</h1>
+              <h1 className="text-2xl md:text-4xl text-gray-800 mb-6">Histórico</h1>
             </div>
 
             <div className="mt-8">
@@ -139,15 +139,15 @@ export default function History() {
                     data={data}
                     handleData={handleData}
                   ></Pesquisar>
-                  <div className="space-y-3 bg-black/30 p-5">
+                  <div className="space-y-3 md:bg-black/30 bg-transparent p-5">
                     {currentReports.length > 0 ? (
                       currentReports.map((report) => (
                         <div
                           key={report.id || report.name}
-                          className="flex items-center justify-between bg-white p-4 rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
+                          className="flex items-center justify-between bg-white p-2 md:p-4 rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
                         >
                           <div className="flex-1">
-                            <h3 className="text-lg font-medium text-gray-800">
+                            <h3 className="text-md md:text-lg font-medium text-gray-800">
                               {report.name
                                 .replace(/^relatorio-/, "Relatório ")
                                 .replace(/\.[^/.]+$/, "")}

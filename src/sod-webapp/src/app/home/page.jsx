@@ -16,7 +16,6 @@ import { Button } from "../(components)/ui/button";
 import { useState, useEffect, useRef } from "react";
 import { supabase } from "../../backend/lib/supabase";
 import IconeDoc from "../../../public/doc-icon.png";
-import IconeServ from "../../../public/serv-icon.png";
 import { useRouter } from "next/navigation";
 import { useDadosStore } from "../(stores)/useDados";
 import Usuario from "../(components)/Usuario";
@@ -77,7 +76,7 @@ export default function Home() {
           ) : (
             <Card>
               <Button
-                className="!h-auto w-1/6 !p-2 text-white !text-xl rounded hover:bg-[#19354F] transition-colors mb-6"
+                className="!h-auto !p-2 text-white !text-md !md:text-xl rounded hover:bg-[#19354F] transition-colors md:mb-6"
                 onClick={handleUploadClick}
               >
                 <input
@@ -93,7 +92,7 @@ export default function Home() {
               <Usuario nome={name} />
               <div className="w-full flex justify-center flex-col items-center">
                 <ImagensApp className="w-full" nome = {name}/>
-                <p className="text-[#7E7E7E] text-lg italic mb-6">
+                <p className="text-[#7E7E7E] text-sm md:text-lg italic mb-6">
                   *O SOD pode cometer erros
                 </p>
               </div>

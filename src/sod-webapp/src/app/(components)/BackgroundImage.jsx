@@ -17,7 +17,7 @@ export default function BackgroundImage({ children }) {
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="relative min-h-screen w-full flex items-center justify-center p-4">
+        <div className="relative min-h-screen w-full flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-center p-4">
             {children}
           </div>
       </div>

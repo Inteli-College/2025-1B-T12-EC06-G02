@@ -26,7 +26,7 @@ export default function Pesquisar({ data, handleRelatorio, handleData }) {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <div className="flex justify-evenly">
+      <div className="flex flex-col md:flex-row gap-3 md:gap-0 md:justify-evenly">
         <div id="nome" className="flex items-center">
           <TextField
             label="Insira o nº do relatório"

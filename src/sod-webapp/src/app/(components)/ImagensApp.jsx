@@ -54,7 +54,7 @@ export default function ImagensApp({ nome = "Usuário" }) {
   return (
     <div className="space-y-4 w-full flex items-center flex-col">
       <Button
-        className="!h-auto w-1/3 !p-4 bg-[#204565] text-white !text-2xl"
+        className="!h-auto !p-4 bg-[#204565] text-white !text-xl !md:text-2xl"
         variant="success"
         onClick={buscarImagensApp}
       >

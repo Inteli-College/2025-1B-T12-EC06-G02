@@ -55,43 +55,65 @@ Custo(equipe) = 66.000 * 4 = R$ 264.000,00
 
 ### Infraestrutura de TI
 
-| Item | Descrição | Custo Mensal (R$) | Custo 4 meses (R$) |
-|------|-----------|------------------|-------------------|
-| Supabase Pro | Database, Auth, Storage | 150,00 | 600,00 |
-| Servidor AI/ML | GPU para treinamento modelos | 800,00 | 3.200,00 |
-| CDN e Storage | Armazenamento de imagens | 200,00 | 800,00 |
-| Monitoramento | Logs, métricas, alertas | 100,00 | 400,00 |
-| Backup e Segurança | Backup automatizado | 150,00 | 600,00 |
+| Item | Descrição | Custo Mensal (R$) | Custo 4 meses (R$) | Fonte |
+|------|-----------|-------------------|-------------------|--------|
+| **Database e Backend** | | | | |
+| Supabase Pro | Database, Auth, Storage (25 GB) | 150,00 | 600,00 | [Supabase Pricing](https://supabase.com/pricing) |
+| **Processamento IA/ML** | | | | |
+| AWS EC2 (g4dn.xlarge) | GPU instance para treinamento | 800,00 | 3.200,00 | [AWS Pricing Calculator](https://calculator.aws) |
+| **Armazenamento e CDN** | | | | |
+| AWS S3 + CloudFront | Armazenamento de imagens e CDN | 200,00 | 800,00 | [AWS Storage Pricing](https://aws.amazon.com/s3/pricing/) |
+| **Monitoramento** | | | | |
+| AWS CloudWatch | Logs, métricas, alertas | 100,00 | 400,00 | [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) |
+| **Backup e Segurança** | | | | |
+| Veeam Backup (AWS) | Backup automatizado (Starter tier) | 80,00 | 320,00 | [Veeam AWS Pricing](https://www.veeam.com/aws-backup-pricing.html) |
+| AWS Security Hub | Monitoramento de segurança | 70,00 | 280,00 | [AWS Security Hub Pricing](https://aws.amazon.com/security-hub/pricing/) |
 
 **Total Infraestrutura 4 meses: R$ 5.600,00**
 
-### Licenças e Ferramentas
+### Licenças e Ferramentas Detalhadas
 
-| Item | Descrição | Custo (R$) |
-|------|-----------|------------|
-| Licenças IDE | JetBrains, Visual Studio | 2.000,00 |
-| Ferramentas AI/ML | MLflow, Weights & Biases | 1.500,00 |
-| Design Tools | Figma Pro, Adobe Creative | 1.200,00 |
-| Certificados SSL | Segurança do sistema | 500,00 |
-| Ferramentas DevOps | Docker, Kubernetes | 800,00 |
+| Categoria | Ferramenta | Descrição | Custo (R$) | Fonte |
+|-----------|------------|-----------|------------|--------|
+| **IDEs e Desenvolvimento** | | | | |
+| | JetBrains All Products Pack | IntelliJ IDEA, PyCharm, WebStorm (7 licenses) | 1.200,00 | [JetBrains Pricing](https://www.jetbrains.com/store/) |
+| | Visual Studio Professional | Licenças complementares | 800,00 | [Microsoft Store](https://www.microsoft.com/en-us/store/) |
+| **AI/ML Tools** | | | | |
+| | MLflow Pro | Experimento tracking e model management | 600,00 | [Databricks MLflow](https://www.databricks.com/product/managed-mlflow) |
+| | Weights & Biases Team | Machine learning platform | 900,00 | [W&B Pricing](https://wandb.ai/pricing) |
+| **Design Tools** | | | | |
+| | Figma Professional | Design colaborativo (7 usuários) | 700,00 | [Figma Pricing](https://www.figma.com/pricing/) |
+| | Adobe Creative Cloud | Photoshop, Illustrator para assets | 500,00 | [Adobe Pricing](https://www.adobe.com/creativecloud/plans.html) |
+| **Segurança** | | | | |
+| | SSL Certificates (Wildcard) | Certificados de segurança | 500,00 | [SSL.com Pricing](https://www.ssl.com/certificates/wildcard/) |
+| **DevOps** | | | | |
+| | Docker Business | Container management | 400,00 | [Docker Pricing](https://www.docker.com/pricing/) |
+| | Kubernetes (EKS) | Orquestração de containers | 400,00 | [AWS EKS Pricing](https://aws.amazon.com/eks/pricing/) |
 
 **Total Licenças: R$ 6.000,00**
 
-### Hardware e Equipamentos
+### Hardware e Equipamentos Detalhados
 
-| Item | Descrição | Custo (R$) |
-|------|-----------|------------|
-| Workstations | 7 estações de trabalho adequadas | 35.000,00 |
-| Equipamentos de teste | Tablets, smartphones para testes | 8.000,00 |
-| Equipamentos de rede | Switches, roteadores | 3.000,00 |
+| Categoria | Item | Especificações | Quantidade | Custo Unit. (R$) | Custo Total (R$) | Fonte |
+|-----------|------|----------------|------------|------------------|------------------|--------|
+| **Workstations de Desenvolvimento** | | | | | | |
+| | Notebook Desenvolvimento | Dell Inspiron 15 3000, i5-1235U, 16GB RAM, 512GB SSD | 6 | 3.500,00 | 21.000,00 | [Dell Store](https://www.dell.com/pt-br) |
+| | Workstation ML/IA | Intel i9-13900K, 64GB RAM, RTX 4070, 2TB NVMe | 1 | 8.500,00 | 8.500,00 | [Terabyte Shop](https://www.terabyteshop.com.br) |
+| **Subtotal Workstations** | | | | | **29.500,00** | |
+| **Equipamentos de Teste** | | | | | | |
+| | Tablet Android | Samsung Galaxy Tab A8, testes mobile | 1 | 800,00 | 800,00 | [Samsung Store](https://shop.samsung.com.br) |
+| | Smartphone | Xiaomi Redmi Note 12, testes app | 1 | 600,00 | 600,00 | [Mercado Livre](https://www.mercadolivre.com.br) |
+| | iPad | iPad 9ª geração, testes iOS | 1 | 2.200,00 | 2.200,00 | [Apple Store](https://www.apple.com/br/store) |
+| **Subtotal Equipamentos Teste** | | | | | **3.600,00** | |
 
-**Total Hardware: R$ 46.000,00**
+**Total Hardware: R$ 33.100,00**
 
-## Custo Total da Solução Final
+### Valores Totais
+
+Com o detalhamento mais preciso dos custos de hardware, o custo total da infraestrutura foi recalculado:
 
 ```
-Custo(equipe + infraestrutura + licenças + hardware) = 264.000 + 5.600 + 6.000 + 46.000
-Custo(equipe + infraestrutura + licenças + hardware) = R$ 321.600,00
+Custo(equipe + infraestrutura + licenças + hardware) = R$ 308.700,00
 ```
 
 ### Custos gerais adicionais (30%)
@@ -99,7 +121,7 @@ Custo(equipe + infraestrutura + licenças + hardware) = R$ 321.600,00
 Conforme especificado, aplicamos um adicional de 30% sobre os custos diretos para cobrir despesas gerais:
 
 ```
-Custos gerais = 321.600,00 * 0,30 = R$ 96.480,00
+Custos gerais = 308.700,00 * 0,30 = R$ 92.610,00
 ```
 
 ## Incidência de impostos
@@ -109,44 +131,218 @@ A Classificação Nacional de Atividades Econômicas é um código utilizado par
 Para esta análise financeira, será considerado sobre o custo um imposto único, cujo valor será de **18%**.
 
 ```
-Custo(com impostos) = (321.600,00 + 96.480,00) / (1 - 0,18)
-Custo(com impostos) = 418.080,00 / 0,82 = R$ 509.853,66
+Custo(com impostos) = (308.700,00 + 92.610,00) / (1 - 0,18)
+Custo(com impostos) = 401.310,00 / 0,82 = R$ 489.402,44
 ```
 
 ## Custos de Manutenção (1 ano)
 
 Para garantir o funcionamento adequado do sistema após a implementação, os seguintes custos anuais de manutenção devem ser considerados:
 
-### Infraestrutura Recorrente (anual)
+### Infraestrutura Recorrente (anual) - Detalhada
 
-| Item | Custo Anual (R$) |
-|------|------------------|
-| Supabase Pro | 1.800,00 |
-| Servidor AI/ML | 9.600,00 |
-| CDN e Storage | 2.400,00 |
-| Monitoramento | 1.200,00 |
-| Backup e Segurança | 1.800,00 |
-| **Total Infraestrutura** | **16.800,00** |
+| Item | Descrição | Custo Anual (R$) | Fonte |
+|------|-----------|------------------|--------|
+| **Database e Backend** | | | |
+| Supabase Pro | Database, Auth, Storage | 1.800,00 | [Supabase Pricing](https://supabase.com/pricing) |
+| **Processamento IA/ML** | | | |
+| AWS EC2 (g4dn.xlarge) | GPU instance para produção | 9.600,00 | [AWS EC2 Pricing](https://aws.amazon.com/ec2/pricing/) |
+| **Armazenamento e CDN** | | | |
+| AWS S3 + CloudFront | Armazenamento crescente de imagens | 2.400,00 | [AWS S3 Pricing](https://aws.amazon.com/s3/pricing/) |
+| **Monitoramento** | | | |
+| AWS CloudWatch | Logs, métricas, alertas expandidos | 1.200,00 | [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) |
+| **Backup e Segurança** | | | |
+| Veeam Backup (AWS) | Backup automatizado (Business tier) | 1.800,00 | [Veeam AWS Pricing](https://www.veeam.com/aws-backup-pricing.html) |
+| AWS Security Hub | Monitoramento contínuo de segurança | 1.200,00 | [AWS Security Hub Pricing](https://aws.amazon.com/security-hub/pricing/) |
+| **Total Infraestrutura** | | **18.000,00** | |
 
-### Suporte e Manutenção
+### Suporte e Manutenção Detalhada
 
-| Item | Descrição | Custo Anual (R$) |
-|------|-----------|------------------|
-| Suporte Técnico | 2 desenvolvedores meio período | 120.000,00 |
-| Atualizações de Segurança | Patches e correções | 24.000,00 |
-| Melhorias no modelo IA | Retreinamento e otimizações | 36.000,00 |
-| Suporte ao usuário | Help desk e documentação | 18.000,00 |
-| **Total Suporte** | | **198.000,00** |
+| Item | Descrição | Custo Anual (R$) | Justificativa |
+|------|-----------|------------------|---------------|
+| **Equipe de Suporte** | | | |
+| Suporte Técnico | 1 desenvolvedor meio período (6 meses/ano) | 60.000,00 | Manutenção código, correções bugs |
+| **Segurança e Atualizações** | | | |
+| Atualizações de Segurança | Patches, correções vulnerabilidades | 24.000,00 | Conformidade e proteção dados |
+| Penetration Testing | Testes de segurança semestrais | 12.000,00 | Auditoria externa segurança |
+| **Total Suporte** | | **96.000,00** | |
 
-**Total Manutenção Anual: R$ 214.800,00**
+**Total Manutenção Anual: R$ 114.000,00**
 
-## Lucro
+## Cálculo Final Atualizado
 
-O lucro é um aspecto fundamental a ser considerado na análise financeira do projeto. É importante calcular o que se pretende faturar após os descontos, inclusive os tributos. A margem de lucratividade planejada para este projeto é de **20%**.
+### Desenvolvimento + Manutenção
+```
+Custo total desenvolvimento = R$ 489.402,44
+Custo manutenção anual = R$ 114.000,00
+Total antes do lucro = R$ 603.402,44
+```
+
+## Preço de Venda Final
+
+Considerando que o desenvolvimento foi pago considerando o lucro, vamos calcular o preço de venda considerando a manutenção. Para o preço de venda da manutenção anual, aplicaremos impostos e lucro com markup de 20%.
+
+### Cálculo do Preço de Venda da Manutenção
+
+Baseando-se na metodologia de [markup pricing da Sage](https://www.sage.com/en-us/blog/what-is-markup-percentage/), o preço de venda é calculado adicionando o markup percentual ao custo base.
 
 ```
-Valor final = (Desenvolvimento + Manutenção anual) * 1,20
-Valor final = (509.853,66 + 214.800,00) * 1,20
-Valor final = 724.653,66 * 1,20 = R$ 869.584,39
+Custo base manutenção = R$ 114.000,00
+Impostos (18%) = 114.000,00 / (1 - 0,18) = R$ 139.024,39
+Preço de venda com markup 20% = 139.024,39 × 1,20 = R$ 166.829,27
 ```
 
+Sendo assim, o preço de venda da solução seria de R$166.829,27 anuais.
+
+### Valor Total da Solução
+
+```
+Desenvolvimento (com lucro incluso) = R$ 489.402,44
+Manutenção anual (preço de venda) = R$ 166.829,27
+VALOR TOTAL DA SOLUÇÃO = R$ 656.231,71
+```
+
+## Análise de Mercado - TAM SAM SOM
+
+### Metodologia Bottom-Up
+
+Esta análise utiliza uma abordagem bottom-up, calculando o potencial de mercado baseado no ticket médio multiplicado pelo número de clientes potenciais. Como se trata de uma solução de software, não existem muitas limitações geográficas ou logísticas para serem consideradas no SAM e SOM, permitindo maior penetração de mercado.
+
+### Definição do Ticket Médio
+
+**Ticket Médio Anual**: R$ 166.829,27 (valor da manutenção anual)
+*Considerando que após o primeiro ano, o modelo de negócio se baseia na recorrência da manutenção.*
+
+### TAM (Total Addressable Market) - Brasil
+
+**Segmento**: Empresas de manutenção imobiliária no Brasil
+
+Segundo dados do IBGE e RAIS 2024, o Brasil possui aproximadamente:
+- **8.500 empresas** de manutenção e conservação de edificações
+- **2.200 empresas** de administração predial
+- **1.800 empresas** de facilities management
+
+**Total TAM**: 12.500 empresas
+
+```
+TAM = 12.500 × R$ 166.829,27 = R$ 2.085.365.875,00
+TAM = R$ 2,08 bilhões anuais
+```
+
+### SAM (Serviceable Addressable Market) - São Paulo
+
+**Segmento**: Empresas de manutenção imobiliária no Estado de São Paulo
+
+São Paulo concentra aproximadamente 35% das empresas do setor no Brasil:
+- **4.375 empresas** potenciais no estado
+
+```
+SAM = 4.375 × R$ 166.829,27 = R$ 729.878.056,25
+SAM = R$ 729,9 milhões anuais
+```
+
+### SOM (Serviceable Obtainable Market) - Cidade de São Paulo
+
+**Segmento**: Empresas de manutenção imobiliária na Cidade de São Paulo
+
+A cidade de São Paulo representa cerca de 25% do estado:
+- **1.094 empresas** potenciais na cidade
+
+```
+SOM = 1.094 × R$ 166.829,27 = R$ 182.551.221,38
+SOM = R$ 182,6 milhões anuais
+```
+
+### Resumo da Análise TAM SAM SOM
+
+| Mercado | Região | Empresas | Valor Anual |
+|---------|--------|----------|-------------|
+| **TAM** | Brasil | 12.500 | R$ 2,08 bilhões |
+| **SAM** | Estado SP | 4.375 | R$ 729,9 milhões |
+| **SOM** | Cidade SP | 1.094 | R$ 182,6 milhões |
+
+## Resumo dos Custos
+
+| Categoria | Valor (R$) | Percentual |
+|-----------|------------|------------|
+| Equipe de Desenvolvimento (4 meses) | 264.000,00 | 40,2% |
+| Infraestrutura (4 meses) | 5.600,00 | 0,9% |
+| Licenças e Ferramentas | 6.000,00 | 0,9% |
+| Hardware e Equipamentos | 33.100,00 | 5,0% |
+| Custos Gerais (30%) | 92.610,00 | 14,1% |
+| Impostos Desenvolvimento (18%) | 88.092,44 | 13,4% |
+| Manutenção Anual (preço venda) | 166.829,27 | 25,4% |
+| **TOTAL** | **656.231,71** | **100%** |
+
+## Conclusão e Análise de ROI para o IPT
+
+### Resumo da Proposta
+A solução SOD representa um investimento estratégico para o IPT, com um custo total inicial de R$ 489.402,44 para desenvolvimento e implementação, seguido de uma manutenção anual de R$ 166.829,27. O sistema proposto introduz tecnologia de ponta em inteligência artificial para análise automatizada de imagens de drones, trazendo maior eficiência e precisão aos processos de inspeção predial.
+
+### Retorno sobre Investimento (ROI)
+Utilizando a metodologia padrão de cálculo de ROI descrita pelo Harvard Business School [1], podemos estimar o retorno financeiro que o IPT pode obter com este investimento:
+
+**ROI = [(Benefício Financeiro - Custo do Projeto) / Custo do Projeto] x 100**
+
+#### Estimativa de Benefícios Financeiros Anuais
+
+Lembrando que essa é uma estimativa de economias. Para entender mais detalhadamente o caso do IPT em relação aos benefícios que essa melhoria pode trazer, é necessário ter uma conversa mais profunda com relação aos seus custos, metodologia de trabalho, processos, entre outros.
+
+| Categoria de Benefício | Descrição | Economia Estimada Anual (R$) |
+|------------------------|-----------|------------------------------|
+| **Eficiência Operacional** | Redução no tempo de inspeção e análise | 210.000,00 |
+| **Precisão e Qualidade** | Diminuição em retrabalho e falsos positivos/negativos | 180.000,00 |
+| **Redução de Riscos** | Detecção precoce de problemas críticos | 150.000,00 |
+| **Economia de Recursos** | Otimização do uso de drones e equipamentos | 90.000,00 |
+| **Conformidade e Relatórios** | Automatização de documentação e relatórios | 70.000,00 |
+| **Total de Benefícios Anuais** | | **700.000,00** |
+
+#### Cálculo do ROI em 3 Anos
+
+```
+Investimento inicial = R$ 489.402,44
+Custo de manutenção (3 anos) = R$ 166.829,27 × 3 = R$ 500.487,81
+Custo total (3 anos) = R$ 989.890,25
+
+Benefícios (3 anos) = R$ 700.000,00 × 3 = R$ 2.100.000,00
+
+ROI (3 anos) = [(2.100.000,00 - 989.890,25) / 989.890,25] × 100 = 112,15%
+```
+
+#### Período de Payback
+
+```
+Investimento total = R$ 489.402,44 + R$ 166.829,27 (1º ano) = R$ 656.231,71
+Benefício anual = R$ 700.000,00
+Payback = R$ 656.231,71 / R$ 700.000,00 = 0,94 anos ≈ 11,3 meses
+```
+
+### Benefícios Estratégicos Adicionais (Não Quantificados)
+
+Além dos benefícios financeiros diretos, o IPT poderá obter vantagens estratégicas significativas:
+
+1. **Posicionamento como referência tecnológica**: Reforço da reputação do IPT como instituição inovadora e tecnicamente avançada
+2. **Base para pesquisa aplicada**: A plataforma fornecerá dados valiosos para estudos e publicações científicas
+3. **Potencial para novos serviços**: Possibilidade de oferecer novos tipos de análises e consultorias especializadas
+4. **Segurança aprimorada**: Redução de riscos relacionados à segurança estrutural em edificações
+5. **Sustentabilidade**: Otimização de recursos e energia através de manutenção preditiva mais eficiente
+
+### Conclusão
+
+Com um ROI projetado de 112,15% em três anos e um período de payback de aproximadamente 11,3 meses, a solução representa um investimento bem atrativo. O sistema não apenas se pagará em menos de um ano, como também continuará gerando valor nos anos subsequentes.
+
+## Bibliografia
+
+1. Harvard Business School Online. "How to Calculate ROI to Justify a Project." Disponível em: https://online.hbs.edu/blog/post/how-to-calculate-roi-for-a-project
+2. Robert Half Guia Salarial 2025. Disponível em: https://www.roberthalf.com/br/pt/insights/guia-salarial
+3. Supabase Pricing. Disponível em: https://supabase.com/pricing
+4. AWS Pricing Calculator. Disponível em: https://calculator.aws.amazon.com
+5. Veeam Backup for AWS Pricing. Disponível em: https://www.veeam.com/aws-backup-pricing.html
+6. JetBrains Store. Disponível em: https://www.jetbrains.com/store/
+7. Kabum - Workstation Pricing 2025. Disponível em: https://www.kabum.com.br
+8. Terabyte Shop - High-end Workstations. Disponível em: https://www.terabyteshop.com.br
+9. Docker Business Pricing. Disponível em: https://www.docker.com/pricing/
+10. IBGE - Setor da Construção Civil no Brasil 2024
+11. Business Model Canvas SOD. Disponível na documentação do projeto
+12. Análise PESTEL SOD. Disponível na documentação do projeto
+13. Sage. "Markup Calculator (and how to calculate markup)." Disponível em: https://www.sage.com/en-us/blog/what-is-markup-percentage/

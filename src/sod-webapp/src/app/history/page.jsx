@@ -9,6 +9,8 @@ import Download from "../../../public/download.png";
 import { supabase } from "../../backend/lib/supabase";
 import Pesquisar from "../(components)/Pesquisar";
 import { formatDate, downloadReport } from "../../utils/historico";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -65,12 +67,20 @@ export default function History() {
   // Resetar a página quando o termo de busca mudar
   useEffect(() => {
     setCurrentPage(1);
-  }, [relatorio]);
+  }, [relatorio, data]);
 
   // Filtragem por nome do relatório
-  const filteredReports = reports.filter((report) =>
-    report.name.toLowerCase().includes(relatorio.toLowerCase())
-  );
+  const filteredReports = reports.filter((report) => {
+  const nomeCombina = report.name.toLowerCase().includes(relatorio.toLowerCase());
+
+  if (!data) return nomeCombina;
+
+  const dataSelecionada = dayjs(data).startOf("day");
+  const dataRelatorio = dayjs(report.created_at).startOf("day");
+
+  const mesmaData = dataRelatorio.isSame(dataSelecionada);
+  return nomeCombina && mesmaData;
+});
 
   // Paginação baseada nos relatórios filtrados
   const indexOfLastReport = currentPage * reportsPerPage;
@@ -81,7 +91,7 @@ export default function History() {
   );
   const totalPages = Math.ceil(filteredReports.length / reportsPerPage);
 
-  console.log(relatorio);
+  console.log(data);
   console.log(currentReports);
 
   return (

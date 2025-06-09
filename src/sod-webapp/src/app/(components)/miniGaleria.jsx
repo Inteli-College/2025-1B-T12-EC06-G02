@@ -56,7 +56,7 @@ export default function miniGaleria({ images, handleImages }) {
   return (
     <>
       <div className="w-full max-w-4xl bg-gray-700/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
-        <div className="grid grid-cols-8 gap-4 mb-6">
+        <div className="grid grid-cols-3 md:grid-cols-8 gap-4 mb-6">
           {images.map((image, index) => (
             <div
               key={index}

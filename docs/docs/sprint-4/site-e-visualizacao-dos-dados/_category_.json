@@ -1,0 +1,8 @@
+{
+  "label": "Site e Visualização dos Dados",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Reúne as melhorias visuais e funcionais feitas no site, com foco na usabilidade da galeria e no layout dos relatórios para análise posterior."
+  }
+}

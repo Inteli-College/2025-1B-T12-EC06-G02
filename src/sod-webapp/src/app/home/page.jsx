@@ -23,6 +23,7 @@ import Historico from "../(components)/Historico";
 import Loading from "../(components)/Loading";
 import Card from "../(components)/Card";
 import ImagensApp from "../(components)/ImagensApp";
+import AuthGuard from "../(components)/AuthGuard";
 
 export default function Home() {
   const router = useRouter();
@@ -67,40 +68,42 @@ export default function Home() {
   const name = user?.user_metadata?.name.split(" ")[0] || "Usuário";
 
   return (
-    <div className={inter.className}>
-      <BackgroundImage>
-        <Navbar />
-        <>
-          {isLoading ? (
-            <Loading />
-          ) : (
-            <Card>
-              <Button
-                className="!h-auto !p-2 text-white !text-md !md:text-xl rounded hover:bg-[#19354F] transition-colors md:mb-6"
-                onClick={handleUploadClick}
-              >
-                <input
-                  type="file"
-                  accept="image/*"
-                  multiple
-                  ref={fileInputRef}
-                  style={{ display: "none" }}
-                  onChange={handleFileChange}
-                />
-                <img src={IconeDoc.src} className="h-6"></img>Upload Local
-              </Button>
-              <Usuario nome={name} />
-              <div className="w-full flex justify-center flex-col items-center">
-                <ImagensApp className="w-full" nome = {name}/>
-                <p className="text-[#7E7E7E] text-sm md:text-lg italic mb-6">
-                  *O SOD pode cometer erros
-                </p>
-              </div>
-              <Historico />
-            </Card>
-          )}
-        </>
-      </BackgroundImage>
-    </div>
+    <AuthGuard>
+      <div className={inter.className}>
+        <BackgroundImage>
+          <Navbar />
+          <>
+            {isLoading ? (
+              <Loading />
+            ) : (
+              <Card>
+                <Button
+                  className="!h-auto !p-2 text-white !text-md !md:text-xl rounded hover:bg-[#19354F] transition-colors md:mb-6"
+                  onClick={handleUploadClick}
+                >
+                  <input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    ref={fileInputRef}
+                    style={{ display: "none" }}
+                    onChange={handleFileChange}
+                  />
+                  <img src={IconeDoc.src} className="h-6"></img>Upload Local
+                </Button>
+                <Usuario nome={name} />
+                <div className="w-full flex justify-center flex-col items-center">
+                  <ImagensApp className="w-full" nome={name} />
+                  <p className="text-[#7E7E7E] text-sm md:text-lg italic mb-6">
+                    *O SOD pode cometer erros
+                  </p>
+                </div>
+                <Historico />
+              </Card>
+            )}
+          </>
+        </BackgroundImage>
+      </div>
+    </AuthGuard>
   );
 }

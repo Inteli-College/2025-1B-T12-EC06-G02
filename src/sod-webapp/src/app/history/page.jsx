@@ -11,6 +11,7 @@ import Pesquisar from "../(components)/Pesquisar";
 import { formatDate, downloadReport } from "../../utils/historico";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
+import AuthGuard from "../(components)/AuthGuard";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -97,119 +98,127 @@ export default function History() {
   console.log(currentReports);
 
   return (
-    <div className={inter.className}>
-      <BackgroundImage>
-        <Navbar />
-        <Card>
-          <div className="w-full max-w-4xl mx-auto p-4">
-            <div className="text-center mb-8">
-              <h1 className="text-2xl md:text-4xl text-gray-800 mb-6">Histórico</h1>
-            </div>
+    <AuthGuard>
+      <div className={inter.className}>
+        <BackgroundImage>
+          <Navbar />
+          <Card>
+            <div className="w-full max-w-4xl mx-auto p-4">
+              <div className="text-center mb-8">
+                <h1 className="text-2xl md:text-4xl text-gray-800 mb-6">
+                  Histórico
+                </h1>
+              </div>
 
-            <div className="mt-8">
-              {loading && (
-                <div className="text-center py-8">
-                  <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#2d608d]"></div>
-                  <p className="mt-2 text-gray-600">Carregando relatórios...</p>
-                </div>
-              )}
+              <div className="mt-8">
+                {loading && (
+                  <div className="text-center py-8">
+                    <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#2d608d]"></div>
+                    <p className="mt-2 text-gray-600">
+                      Carregando relatórios...
+                    </p>
+                  </div>
+                )}
 
-              {error && (
-                <div className="text-center py-8">
-                  <p className="text-red-600 mb-4">{error}</p>
-                  <button
-                    onClick={fetchReports}
-                    className="bg-[#2d608d] hover:bg-[#244d70] text-white px-4 py-2 rounded-sm"
-                  >
-                    Tentar Novamente
-                  </button>
-                </div>
-              )}
+                {error && (
+                  <div className="text-center py-8">
+                    <p className="text-red-600 mb-4">{error}</p>
+                    <button
+                      onClick={fetchReports}
+                      className="bg-[#2d608d] hover:bg-[#244d70] text-white px-4 py-2 rounded-sm"
+                    >
+                      Tentar Novamente
+                    </button>
+                  </div>
+                )}
 
-              {!loading && !error && reports.length === 0 && (
-                <div className="text-center py-8">
-                  <p className="text-gray-600">Nenhum relatório encontrado.</p>
-                </div>
-              )}
+                {!loading && !error && reports.length === 0 && (
+                  <div className="text-center py-8">
+                    <p className="text-gray-600">
+                      Nenhum relatório encontrado.
+                    </p>
+                  </div>
+                )}
 
-              {!loading && !error && reports.length > 0 && (
-                <div className="flex gap-4 flex-col">
-                  <Pesquisar
-                    handleRelatorio={handleRelatorio}
-                    data={data}
-                    handleData={handleData}
-                  ></Pesquisar>
-                  <div className="space-y-3 md:bg-black/30 bg-transparent p-5">
-                    {currentReports.length > 0 ? (
-                      currentReports.map((report) => (
-                        <div
-                          key={report.id || report.name}
-                          className="flex items-center justify-between bg-white p-2 md:p-4 rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
-                        >
-                          <div className="flex-1">
-                            <h3 className="text-md md:text-lg font-medium text-gray-800">
-                              {report.name
-                                .replace(/^relatorio-/, "Relatório ")
-                                .replace(/\.[^/.]+$/, "")}
-                            </h3>
-                            <p className="text-sm text-gray-600">
-                              {report.formattedDate}
-                            </p>
-                          </div>
-                          <button
-                            onClick={() => downloadReport(report.name)}
-                            className="w-10 h-10 bg-[#204565] rounded flex items-center justify-center hover:bg-[#19354F] transition-colors duration-200 cursor-pointer"
+                {!loading && !error && reports.length > 0 && (
+                  <div className="flex gap-4 flex-col">
+                    <Pesquisar
+                      handleRelatorio={handleRelatorio}
+                      data={data}
+                      handleData={handleData}
+                    ></Pesquisar>
+                    <div className="space-y-3 md:bg-black/30 bg-transparent p-5">
+                      {currentReports.length > 0 ? (
+                        currentReports.map((report) => (
+                          <div
+                            key={report.id || report.name}
+                            className="flex items-center justify-between bg-white p-2 md:p-4 rounded-sm shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200"
                           >
-                            <img src={Download.src} className="w-6 h-6" />
-                          </button>
-                        </div>
-                      ))
-                    ) : (
-                      <p>Nenhum relatório encontrado</p>
-                    )}
+                            <div className="flex-1">
+                              <h3 className="text-md md:text-lg font-medium text-gray-800">
+                                {report.name
+                                  .replace(/^relatorio-/, "Relatório ")
+                                  .replace(/\.[^/.]+$/, "")}
+                              </h3>
+                              <p className="text-sm text-gray-600">
+                                {report.formattedDate}
+                              </p>
+                            </div>
+                            <button
+                              onClick={() => downloadReport(report.name)}
+                              className="w-10 h-10 bg-[#204565] rounded flex items-center justify-center hover:bg-[#19354F] transition-colors duration-200 cursor-pointer"
+                            >
+                              <img src={Download.src} className="w-6 h-6" />
+                            </button>
+                          </div>
+                        ))
+                      ) : (
+                        <p>Nenhum relatório encontrado</p>
+                      )}
+                    </div>
+
+                    <div className="flex justify-center items-center space-x-4 mt-6">
+                      <button
+                        onClick={() =>
+                          setCurrentPage((prev) => Math.max(prev - 1, 1))
+                        }
+                        disabled={currentPage === 1}
+                        className={`px-4 py-2 rounded bg-[#2d608d] text-white ${
+                          currentPage === 1
+                            ? "opacity-50 cursor-not-allowed"
+                            : "hover:bg-[#244d70]"
+                        }`}
+                      >
+                        Anterior
+                      </button>
+
+                      <span className="text-gray-700">
+                        Página {currentPage} de {totalPages}
+                      </span>
+
+                      <button
+                        onClick={() =>
+                          setCurrentPage((prev) =>
+                            prev < totalPages ? prev + 1 : prev
+                          )
+                        }
+                        disabled={currentPage >= totalPages}
+                        className={`px-4 py-2 rounded bg-[#2d608d] text-white ${
+                          currentPage >= totalPages
+                            ? "opacity-50 cursor-not-allowed"
+                            : "hover:bg-[#244d70]"
+                        }`}
+                      >
+                        Próxima
+                      </button>
+                    </div>
                   </div>
-
-                  <div className="flex justify-center items-center space-x-4 mt-6">
-                    <button
-                      onClick={() =>
-                        setCurrentPage((prev) => Math.max(prev - 1, 1))
-                      }
-                      disabled={currentPage === 1}
-                      className={`px-4 py-2 rounded bg-[#2d608d] text-white ${
-                        currentPage === 1
-                          ? "opacity-50 cursor-not-allowed"
-                          : "hover:bg-[#244d70]"
-                      }`}
-                    >
-                      Anterior
-                    </button>
-
-                    <span className="text-gray-700">
-                      Página {currentPage} de {totalPages}
-                    </span>
-
-                    <button
-                      onClick={() =>
-                        setCurrentPage((prev) =>
-                          prev < totalPages ? prev + 1 : prev
-                        )
-                      }
-                      disabled={currentPage >= totalPages}
-                      className={`px-4 py-2 rounded bg-[#2d608d] text-white ${
-                        currentPage >= totalPages
-                          ? "opacity-50 cursor-not-allowed"
-                          : "hover:bg-[#244d70]"
-                      }`}
-                    >
-                      Próxima
-                    </button>
-                  </div>
-                </div>
-              )}
+                )}
+              </div>
             </div>
-          </div>
-        </Card>
-      </BackgroundImage>
-    </div>
+          </Card>
+        </BackgroundImage>
+      </div>
+    </AuthGuard>
   );
 }

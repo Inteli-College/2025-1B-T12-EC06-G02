@@ -7,6 +7,9 @@ Módulo completamente independente - não importa outros módulos customizados
 import cv2
 import numpy as np
 from typing import Tuple
+from skimage.filters import sato
+from skimage.color import rgb2gray
+
 
 
 class ImageFilters:
@@ -104,6 +107,32 @@ class ImageFilters:
         
         else:
             raise ValueError("kernel_type deve ser 'laplacian' ou 'unsharp'")
+        
+    @staticmethod
+    def sato_filter(image: np.ndarray) -> np.ndarray:
+        """
+        Aplica o filtro de Sato para realce de estruturas tubulares (rachaduras, vasos, etc.)
+
+        Args:
+            image: Imagem de entrada (BGR ou Grayscale)
+
+        Returns:
+            Imagem filtrada com o filtro de Sato (em escala de cinza, float32 normalizada)
+        """
+        # Converte para grayscale se necessário
+        if len(image.shape) == 3:
+            gray = rgb2gray(image)
+        else:
+            gray = image / 255.0  # Normaliza para 0-1 se já for grayscale uint8
+
+        # Aplica filtro de Sato
+        result = sato(gray)
+
+        #Converte resultado para uint8 para compatibilidade com OpenCV (0-255)
+        result = np.clip(result * 255, 0, 255).astype(np.uint8)
+
+        return result
+
 
 
 # Funções de conveniência para uso direto do módulo
@@ -120,6 +149,11 @@ def clahe_image(image: np.ndarray, clip_limit: float = 2.0, tile_grid_size: Tupl
 def sharpen_image(image: np.ndarray, strength: float = 1.0, kernel_type: str = 'laplacian') -> np.ndarray:
     """Função de conveniência para sharpening"""
     return ImageFilters.sharpen(image, strength, kernel_type)
+
+def sato_image(image: np.ndarray) -> np.ndarray:
+    """Função de conveniência para filtro de Sato"""
+    return ImageFilters.sato_filter(image)
+
 
 
 if __name__ == "__main__":
@@ -149,11 +183,16 @@ if __name__ == "__main__":
     print("✓ Testando sharpen...")
     sharpened = filters.sharpen(test_image, strength=1.5)
     print(f"  Input: {test_image.shape}, Output: {sharpened.shape}")
+
+    print("✓ Testando filtro de Sato...")
+    sato_result = filters.sato_filter(test_image)
+    print(f"  Input: {test_image.shape}, Output: {sato_result.shape}")
     
     print("✓ Testando funções de conveniência...")
     conv_equalized = equalize_image(test_image)
     conv_clahe = clahe_image(test_image)
     conv_sharpen = sharpen_image(test_image)
+    conv_sato = sato_image(test_image)
     
     print(f"  Todas as funções funcionando: {conv_equalized.shape == conv_clahe.shape == conv_sharpen.shape}")
     

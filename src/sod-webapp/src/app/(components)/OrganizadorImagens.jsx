@@ -13,7 +13,9 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
   const [imagensNaoAgrupadas, setImagensNaoAgrupadas] = useState(images);
   const [imagensSelecionadas, setImagensSelecionadas] = useState(new Set());
   const [draggedImages, setDraggedImages] = useState([]);
+  const [draggedFromGrupo, setDraggedFromGrupo] = useState(null);
   const [imagemAmpliada, setImagemAmpliada] = useState(null);
+  const [imagemParaDeletar, setImagemParaDeletar] = useState(null);
   const [mounted, setMounted] = useState(false);
   const scrollContainerRef = useRef(null);
 
@@ -28,7 +30,6 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
     const novoId = Math.max(...grupos.map(g => g.id)) + 1;
     setGrupos([...grupos, { id: novoId, andar: "", direcao: "", imagens: [] }]);
     
-    // Scroll para o novo grupo
     setTimeout(() => {
       if (scrollContainerRef.current) {
         scrollContainerRef.current.scrollLeft = scrollContainerRef.current.scrollWidth;
@@ -54,17 +55,16 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
 
   // Selecionar/deselecionar imagem
   const toggleSelecaoImagem = (imagemId, event) => {
+    event.stopPropagation();
     const novoSet = new Set(imagensSelecionadas);
     
     if (event.ctrlKey || event.metaKey) {
-      // Ctrl/Cmd + Click: toggle individual
       if (novoSet.has(imagemId)) {
         novoSet.delete(imagemId);
       } else {
         novoSet.add(imagemId);
       }
     } else if (event.shiftKey && imagensSelecionadas.size > 0) {
-      // Shift + Click: selecionar range
       const todasImagens = imagensNaoAgrupadas.map(img => img.id);
       const ultimaSelecionada = Array.from(imagensSelecionadas)[imagensSelecionadas.size - 1];
       const indexUltima = todasImagens.indexOf(ultimaSelecionada);
@@ -77,7 +77,6 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
         novoSet.add(todasImagens[i]);
       }
     } else {
-      // Click normal: selecionar apenas esta
       novoSet.clear();
       novoSet.add(imagemId);
     }
@@ -90,10 +89,40 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
     setImagemAmpliada(imagem);
   };
 
+  // Deletar imagem
+  const handleDeleteImage = (imagem, grupoId = null) => {
+    setImagemParaDeletar({ imagem, grupoId });
+  };
+
+  const confirmarDelecao = () => {
+    if (!imagemParaDeletar) return;
+
+    const { imagem, grupoId } = imagemParaDeletar;
+
+    if (grupoId) {
+      // Remover do grupo
+      setGrupos(grupos.map(g => 
+        g.id === grupoId 
+          ? { ...g, imagens: g.imagens.filter(img => img.id !== imagem.id) }
+          : g
+      ));
+    } else {
+      // Remover das não agrupadas
+      setImagensNaoAgrupadas(imagensNaoAgrupadas.filter(img => img.id !== imagem.id));
+      // Remover da seleção se estiver selecionada
+      const novoSet = new Set(imagensSelecionadas);
+      novoSet.delete(imagem.id);
+      setImagensSelecionadas(novoSet);
+    }
+
+    setImagemParaDeletar(null);
+  };
+
   // Drag start
-  const handleDragStart = (e, imagens) => {
+  const handleDragStart = (e, imagens, grupoOrigemId = null) => {
     const imagensParaArrastar = Array.isArray(imagens) ? imagens : [imagens];
     setDraggedImages(imagensParaArrastar);
+    setDraggedFromGrupo(grupoOrigemId);
     e.dataTransfer.effectAllowed = "move";
   };
 
@@ -104,46 +133,81 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
   };
 
   // Drop em grupo
-  const handleDropGrupo = (e, grupoId) => {
+  const handleDropGrupo = (e, grupoDestinoId) => {
     e.preventDefault();
     
-    const grupo = grupos.find(g => g.id === grupoId);
+    const grupo = grupos.find(g => g.id === grupoDestinoId);
     if (!grupo.andar || !grupo.direcao) {
       alert("Por favor, preencha o andar e a direção antes de adicionar imagens.");
       return;
     }
 
-    // Remover imagens da lista não agrupada
-    setImagensNaoAgrupadas(imagensNaoAgrupadas.filter(
-      img => !draggedImages.some(dragImg => dragImg.id === img.id)
-    ));
+    // Se está arrastando do mesmo grupo, não fazer nada
+    if (draggedFromGrupo === grupoDestinoId) {
+      setDraggedImages([]);
+      setDraggedFromGrupo(null);
+      return;
+    }
 
-    // Adicionar ao grupo
-    setGrupos(grupos.map(g => 
-      g.id === grupoId 
-        ? { ...g, imagens: [...g.imagens, ...draggedImages] }
-        : g
-    ));
+    if (draggedFromGrupo !== null) {
+      // Movendo de um grupo para outro
+      setGrupos(grupos.map(g => {
+        if (g.id === draggedFromGrupo) {
+          // Remover do grupo origem
+          return {
+            ...g,
+            imagens: g.imagens.filter(img => !draggedImages.some(dragImg => dragImg.id === img.id))
+          };
+        } else if (g.id === grupoDestinoId) {
+          // Adicionar ao grupo destino
+          return {
+            ...g,
+            imagens: [...g.imagens, ...draggedImages]
+          };
+        }
+        return g;
+      }));
+    } else {
+      // Movendo das não agrupadas para um grupo
+      setImagensNaoAgrupadas(imagensNaoAgrupadas.filter(
+        img => !draggedImages.some(dragImg => dragImg.id === img.id)
+      ));
 
-    // Limpar seleção
+      setGrupos(grupos.map(g => 
+        g.id === grupoDestinoId 
+          ? { ...g, imagens: [...g.imagens, ...draggedImages] }
+          : g
+      ));
+    }
+
+    // Limpar seleção e drag
     setImagensSelecionadas(new Set());
     setDraggedImages([]);
+    setDraggedFromGrupo(null);
   };
 
   // Drop na área não agrupada
   const handleDropNaoAgrupadas = (e) => {
     e.preventDefault();
     
-    // Remover de qualquer grupo
-    const novosGrupos = grupos.map(g => ({
-      ...g,
-      imagens: g.imagens.filter(img => !draggedImages.some(dragImg => dragImg.id === img.id))
-    }));
-    setGrupos(novosGrupos);
+    // Evitar duplicação
+    const imagensExistentes = new Set(imagensNaoAgrupadas.map(img => img.id));
+    const imagensParaAdicionar = draggedImages.filter(img => !imagensExistentes.has(img.id));
 
-    // Adicionar às não agrupadas
-    setImagensNaoAgrupadas([...imagensNaoAgrupadas, ...draggedImages]);
+    if (draggedFromGrupo !== null) {
+      // Remover do grupo origem
+      setGrupos(grupos.map(g => 
+        g.id === draggedFromGrupo
+          ? { ...g, imagens: g.imagens.filter(img => !draggedImages.some(dragImg => dragImg.id === img.id)) }
+          : g
+      ));
+
+      // Adicionar às não agrupadas apenas as que não existem
+      setImagensNaoAgrupadas([...imagensNaoAgrupadas, ...imagensParaAdicionar]);
+    }
+
     setDraggedImages([]);
+    setDraggedFromGrupo(null);
   };
 
   // Validar e submeter
@@ -202,8 +266,18 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
               {imagensNaoAgrupadas && imagensNaoAgrupadas.map((img) => (
                 <div
                   key={img.id}
-                  className="group"
+                  className="group relative"
                 >
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleDeleteImage(img);
+                    }}
+                    className="absolute -top-2 -right-2 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                    title="Deletar imagem"
+                  >
+                    ×
+                  </button>
                   <div
                     className={`relative cursor-pointer border-2 rounded-lg overflow-hidden transition-all hover:shadow-lg ${
                       imagensSelecionadas.has(img.id) ? 'border-[#00C939] shadow-md' : 'border-gray-300'
@@ -214,9 +288,9 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
                     onDragStart={(e) => {
                       if (imagensSelecionadas.has(img.id)) {
                         const selecionadas = imagensNaoAgrupadas.filter(i => imagensSelecionadas.has(i.id));
-                        handleDragStart(e, selecionadas);
+                        handleDragStart(e, selecionadas, null);
                       } else {
-                        handleDragStart(e, img);
+                        handleDragStart(e, img, null);
                       }
                     }}
                   >
@@ -293,12 +367,22 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
                       {grupo.imagens.map((img) => (
                         <div
                           key={img.id}
-                          className="group"
+                          className="group relative"
                         >
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleDeleteImage(img, grupo.id);
+                            }}
+                            className="absolute -top-2 -right-2 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                            title="Deletar imagem"
+                          >
+                            ×
+                          </button>
                           <div
                             className="relative cursor-move border border-gray-300 rounded-lg overflow-hidden hover:shadow-md transition-all"
                             draggable
-                            onDragStart={(e) => handleDragStart(e, img)}
+                            onDragStart={(e) => handleDragStart(e, img, grupo.id)}
                             onDoubleClick={() => handleDoubleClick(img)}
                           >
                             <img
@@ -399,6 +483,35 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
                     Tamanho: {(imagemAmpliada.file.size / 1024 / 1024).toFixed(2)} MB
                   </p>
                 )}
+              </div>
+            </div>
+          </div>,
+          document.getElementById("modal-root") || document.body
+        )}
+
+      {/* Modal de confirmação de deleção */}
+      {mounted && imagemParaDeletar &&
+        createPortal(
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[70] p-4">
+            <div className="bg-white rounded-lg p-6 max-w-md w-full shadow-xl">
+              <h3 className="text-lg font-semibold mb-4">Confirmar Exclusão</h3>
+              <p className="text-gray-600 mb-6">
+                Tem certeza que deseja apagar esta análise do relatório?
+              </p>
+              <div className="flex justify-end gap-3">
+                <Button
+                  variant="outline"
+                  onClick={() => setImagemParaDeletar(null)}
+                  className="px-4 py-2"
+                >
+                  Não
+                </Button>
+                <Button
+                  onClick={confirmarDelecao}
+                  className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white"
+                >
+                  Sim
+                </Button>
               </div>
             </div>
           </div>,

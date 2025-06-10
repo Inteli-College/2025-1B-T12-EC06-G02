@@ -6,6 +6,7 @@ from torch.utils.data import Dataset, DataLoader
 from typing import List, Tuple, Optional, Callable, Any
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
+import glob
 
 try:
     from image_filters import ImageFilters
@@ -209,4 +210,173 @@ def create_basic_dataloaders(train_dataset: Dataset,
         drop_last=False
     )
     
-    return train_loader, val_loader, test_loader 
+    return train_loader, val_loader, test_loader
+
+def process_and_save_images(
+    input_root: str,
+    output_root: str,
+    config: Any,
+    image_size: int = 224
+):
+    # Encontrar todas as imagens nas subpastas
+    for subfolder in ['retracao', 'termicas']:
+        input_folder = os.path.join(input_root, subfolder)
+        output_folder = os.path.join(output_root, subfolder)
+        os.makedirs(output_folder, exist_ok=True)
+        image_paths = glob.glob(os.path.join(input_folder, '*'))
+        for img_path in image_paths:
+            try:
+                # Carregar imagem
+                image = cv2.imread(img_path, cv2.IMREAD_COLOR)
+                if image is None:
+                    print(f"Não foi possível carregar {img_path}")
+                    continue
+                image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+                # Aplicar filtros customizados
+                if CUSTOM_FILTERS_AVAILABLE:
+                    filters = ImageFilters()
+                    padding = SquarePadding()
+                    # CLAHE
+                    if hasattr(config, 'USE_CLAHE') and config.USE_CLAHE:
+                        image = filters.clahe(
+                            image,
+                            clip_limit=getattr(config, 'CLAHE_CLIP_LIMIT', 3.0),
+                            tile_grid_size=getattr(config, 'CLAHE_TILE_GRID_SIZE', (8, 8))
+                        )
+                    # Equalização
+                    if hasattr(config, 'USE_EQUALIZE') and config.USE_EQUALIZE:
+                        image = filters.equalize(image)
+                    # Sharpen
+                    if hasattr(config, 'USE_SHARPEN') and config.USE_SHARPEN:
+                        image = filters.sharpen(
+                            image,
+                            strength=getattr(config, 'SHARPEN_STRENGTH', 1.2),
+                            kernel_type=getattr(config, 'SHARPEN_KERNEL_TYPE', 'laplacian')
+                        )
+                    # Square Padding
+                    if hasattr(config, 'USE_SQUARE_PADDING') and config.USE_SQUARE_PADDING:
+                        padding_color = getattr(config, 'SQUARE_PADDING_COLOR', (0, 0, 0))
+                        image = padding.apply_padding(
+                            image,
+                            target_size=(image_size, image_size),
+                            padding_color=padding_color
+                        )
+                # Converter de volta para BGR para salvar com OpenCV
+                image_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+                filename = os.path.basename(img_path)
+                output_path = os.path.join(output_folder, filename)
+                cv2.imwrite(output_path, image_bgr)
+                print(f"Processada e salva: {output_path}")
+            except Exception as e:
+                print(f"Erro ao processar {img_path}: {e}")
+
+if __name__ == "__main__":
+    # Exemplo de configuração (ajuste conforme necessário)
+    class DummyConfig:
+        USE_CLAHE = True
+        CLAHE_CLIP_LIMIT = 3.0
+        CLAHE_TILE_GRID_SIZE = (8, 8)
+        USE_EQUALIZE = False
+        USE_SHARPEN = True
+        SHARPEN_STRENGTH = 1.2
+        SHARPEN_KERNEL_TYPE = 'laplacian'
+        USE_SQUARE_PADDING = True
+        IMAGE_SIZE = 224
+        SQUARE_PADDING_COLOR = (0, 0, 0)
+    config = DummyConfig()
+    input_root = "../data/raw"
+    output_root = "../data/results_for_masks"
+
+    # Remove todas as imagens do diretório de saída antes de processar
+    for subfolder in ['retracao', 'termicas']:
+        output_folder = os.path.join(output_root, subfolder)
+        if os.path.isdir(output_folder):
+            for file in glob.glob(os.path.join(output_folder, '*')):
+                try:
+                    os.remove(file)
+                except Exception as e:
+                    print(f"Erro ao remover {file}: {e}")
+
+    # Apenas imprime as pastas existentes com imagens, sem criar novas
+    existing_subfolders = []
+    for subfolder in ['retracao', 'termicas']:
+        input_folder = os.path.join(input_root, subfolder)
+        output_folder = os.path.join(output_root, subfolder)
+        if os.path.isdir(input_folder):
+            print(f"Input: {input_folder} | Output: {output_folder}")
+            existing_subfolders.append(subfolder)
+        else:
+            print(f"Pasta não encontrada: {input_folder}")
+
+    # Cria as pastas de saída se não existirem
+    for subfolder in existing_subfolders:
+        output_folder = os.path.join(output_root, subfolder)
+        os.makedirs(output_folder, exist_ok=True)
+
+    def process_and_save_images_no_folder_creation(
+        input_root: str,
+        output_root: str,
+        config: Any,
+        image_size: int = 224,
+        allowed_subfolders: list = None
+    ):
+        # Encontrar todas as imagens nas subpastas permitidas
+        for subfolder in allowed_subfolders or []:
+            input_folder = os.path.join(input_root, subfolder)
+            output_folder = os.path.join(output_root, subfolder)
+            if not os.path.isdir(input_folder):
+                print(f"Pasta não encontrada: {input_folder}")
+                continue
+            if not os.path.isdir(output_folder):
+                print(f"Pasta de saída não existe: {output_folder}. Pulando criação e salvamento.")
+                continue
+            image_paths = glob.glob(os.path.join(input_folder, '*'))
+            for img_path in image_paths:
+                try:
+                    # Carregar imagem
+                    image = cv2.imread(img_path, cv2.IMREAD_COLOR)
+                    if image is None:
+                        print(f"Não foi possível carregar {img_path}")
+                        continue
+                    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+                    # Aplicar filtros customizados
+                    if CUSTOM_FILTERS_AVAILABLE:
+                        filters = ImageFilters()
+                        padding = SquarePadding()
+                        # CLAHE
+                        if hasattr(config, 'USE_CLAHE') and config.USE_CLAHE:
+                            image = filters.clahe(
+                                image,
+                                clip_limit=getattr(config, 'CLAHE_CLIP_LIMIT', 3.0),
+                                tile_grid_size=getattr(config, 'CLAHE_TILE_GRID_SIZE', (8, 8))
+                            )
+                        # Equalização
+                        if hasattr(config, 'USE_EQUALIZE') and config.USE_EQUALIZE:
+                            image = filters.equalize(image)
+                        # Sharpen
+                        if hasattr(config, 'USE_SHARPEN') and config.USE_SHARPEN:
+                            image = filters.sharpen(
+                                image,
+                                strength=getattr(config, 'SHARPEN_STRENGTH', 1.2),
+                                kernel_type=getattr(config, 'SHARPEN_KERNEL_TYPE', 'laplacian')
+                            )
+                        # Square Padding
+                        if hasattr(config, 'USE_SQUARE_PADDING') and config.USE_SQUARE_PADDING:
+                            padding_color = getattr(config, 'SQUARE_PADDING_COLOR', (0, 0, 0))
+                            image = padding.apply_padding(
+                                image,
+                                target_size=(image_size, image_size),
+                                padding_color=padding_color
+                            )
+                    # Converter de volta para BGR para salvar com OpenCV
+                    image_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+                    filename = os.path.basename(img_path)
+                    output_path = os.path.join(output_folder, filename)
+                    cv2.imwrite(output_path, image_bgr)
+                    print(f"Processada e salva: {output_path}")
+                except Exception as e:
+                    print(f"Erro ao processar {img_path}: {e}")
+
+    process_and_save_images_no_folder_creation(
+        input_root, output_root, config, image_size=config.IMAGE_SIZE, allowed_subfolders=existing_subfolders
+    )

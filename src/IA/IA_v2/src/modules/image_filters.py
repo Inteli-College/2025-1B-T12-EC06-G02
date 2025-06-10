@@ -36,6 +36,7 @@ class ImageFilters:
             # Imagem em grayscale
             return cv2.equalizeHist(image)
     
+    
     @staticmethod
     def clahe(image: np.ndarray, clip_limit: float = 2.0, tile_grid_size: Tuple[int, int] = (8, 8)) -> np.ndarray:
         """
@@ -160,3 +161,6 @@ if __name__ == "__main__":
     print("\n🎉 Módulo de filtros testado com sucesso!")
     print("Este módulo é completamente independente e pode ser usado sozinho.")
     print("Importações: apenas cv2, numpy e typing")
+
+    # manipulando imagens do diretório data
+    

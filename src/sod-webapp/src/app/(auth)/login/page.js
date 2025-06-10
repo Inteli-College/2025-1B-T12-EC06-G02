@@ -142,7 +142,7 @@ export default function LoginPage() {
           <div className="text-center">
             <Link
               href="/signup"
-              className="inline-block px-12 py-4 bg-[#00c939] text-white text-xl font-medium rounded hover:bg-[#00b033] transition-colors"
+              className="inline-block px-12 py-4 bg-[#204565] text-white text-xl font-medium rounded hover:bg-[#19354F] transition-colors"
             >
               Criar conta
             </Link>

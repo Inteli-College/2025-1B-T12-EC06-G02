@@ -9,7 +9,7 @@ function Button({ className, variant = "primary", size = "default", color, asChi
 
   const variantStyles = {
     primary: "bg-[#2d608d] text-white hover:bg-[#245179]",
-    success: "bg-[#00c939] text-white hover:bg-[#00b033]",
+    success: "bg-[#204565] text-white hover:bg-[#19354F]",
     outline: "border bg-white text-gray-700 hover:bg-gray-100",
   };
 

@@ -136,7 +136,15 @@ class BaseImageDataset(Dataset):
                     target_size=(image_size, image_size),
                     padding_color=padding_color
                 )
-            
+                
+            # 5. Sato Filter (se habilitado)
+            if hasattr(self.config, 'USE_SATO_FILTER') and self.config.USE_SATO_FILTER:
+                image = self.image_filters.sato_filter(
+                    image,
+                    kernel_size=getattr(self.config, 'SATO_KERNEL_SIZE', 5),
+                    sigma=getattr(self.config, 'SATO_SIGMA', 1.0)
+                )
+
         except Exception as e:
             print(f"Erro ao aplicar filtros customizados: {e}")
             # Em caso de erro, retorna a imagem original

@@ -91,7 +91,7 @@ async function handleClick() {
           <Usuario nome={name} />
           <MiniGaleria images={imagens} handleImages={setImagens} />
 
-          <Button color="#00C939" onClick={handleClick}>
+          <Button variant="success" onClick={handleClick}>
             Iniciar processamento
           
           </Button></>) }

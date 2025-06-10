@@ -54,9 +54,9 @@ export default function ImagensApp({ nome = "Usuário" }) {
   return (
     <div className="space-y-4 w-full flex items-center flex-col">
       <Button
-        className="!h-auto w-1/3 !p-4 bg-[#00C939] text-white !text-2xl rounded hover:bg-[#00b033] transition-colors"
+        className="!h-auto w-1/3 !p-4 bg-[#204565] text-white !text-2xl"
+        variant="success"
         onClick={buscarImagensApp}
-        color = '#00C939'
       >
         <Image src={IconeServ} alt="Ícone Servidor" width={24} height={24} className="mr-2" />
         Carregar do servidor

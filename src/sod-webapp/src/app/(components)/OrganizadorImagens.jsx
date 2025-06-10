@@ -235,31 +235,31 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-      <div className="bg-white/90 backdrop-blur-sm rounded-lg w-full max-w-[95vw] h-[92vh] flex flex-col shadow-2xl">
-        {/* Header */}
-        <div className="flex justify-between items-center px-8 py-6 border-b border-gray-200">
-          <h2 className="text-3xl font-bold text-[#434343]">Organizar Imagens por Localização</h2>
+    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-2">
+      <div className="bg-white/90 backdrop-blur-sm rounded-lg w-full max-w-[98vw] h-[96vh] flex flex-col shadow-2xl">
+        {/* Header compacto */}
+        <div className="flex justify-between items-center px-3 py-2 border-b border-gray-200">
+          <h2 className="text-lg font-bold text-[#434343]">Organizar Imagens por Localização</h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 transition-colors"
+            className="text-gray-500 hover:text-gray-700 transition-colors p-1"
           >
-            <X className="h-6 w-6" />
+            <X className="h-4 w-4" />
           </button>
         </div>
 
-        {/* Instruções */}
-        <div className="px-8 py-4 bg-blue-50/50 text-sm text-blue-700 italic">
-          <p>Para selecionar mais de uma imagem, pressione Ctrl + Click. Use Shift + Click para selecionar um intervalo.</p>
+        {/* Instruções compactas */}
+        <div className="px-3 py-1.5 bg-blue-50/50 text-[10px] text-blue-700 italic">
+          <p>Ctrl + Click: selecionar múltiplas | Shift + Click: selecionar intervalo | Duplo clique: ampliar</p>
         </div>
 
         {/* Conteúdo */}
         <div className="flex-1 flex overflow-hidden">
           {/* Coluna de imagens não agrupadas */}
-          <div className="w-[350px] border-r border-gray-200 p-8 overflow-y-auto bg-gray-50/50">
-            <h3 className="font-semibold text-xl mb-6 text-[#434343]">Fotos submetidas ({imagensNaoAgrupadas.length})</h3>
+          <div className="w-[180px] border-r border-gray-200 p-2 overflow-y-auto bg-gray-50/50">
+            <h3 className="font-semibold text-xs mb-2 text-[#434343]">Fotos submetidas ({imagensNaoAgrupadas.length})</h3>
             <div 
-              className="grid grid-cols-2 gap-4 min-h-[400px] border-2 border-dashed border-gray-300 rounded-lg p-6 bg-white/50"
+              className="grid grid-cols-2 gap-1 min-h-[150px] border border-dashed border-gray-300 rounded p-2 bg-white/50"
               onDragOver={handleDragOver}
               onDrop={handleDropNaoAgrupadas}
             >
@@ -273,14 +273,14 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
                       e.stopPropagation();
                       handleDeleteImage(img);
                     }}
-                    className="absolute -top-2 -right-2 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                    className="absolute -top-1 -right-1 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-3 h-3 flex items-center justify-center text-[8px] font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-sm"
                     title="Deletar imagem"
                   >
                     ×
                   </button>
                   <div
-                    className={`relative cursor-pointer border-2 rounded-lg overflow-hidden transition-all hover:shadow-lg ${
-                      imagensSelecionadas.has(img.id) ? 'border-[#00C939] shadow-md' : 'border-gray-300'
+                    className={`relative cursor-pointer border rounded overflow-hidden transition-all hover:shadow-sm ${
+                      imagensSelecionadas.has(img.id) ? 'border-[#00C939] shadow-sm' : 'border-gray-300'
                     }`}
                     onClick={(e) => toggleSelecaoImagem(img.id, e)}
                     onDoubleClick={() => handleDoubleClick(img)}
@@ -294,18 +294,20 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
                       }
                     }}
                   >
-                    <img
-                      src={img.previewUrl}
-                      alt={`Imagem ${img.id}`}
-                      className="w-full h-28 object-cover"
-                    />
+                    <div className="w-full aspect-square">
+                      <img
+                        src={img.previewUrl}
+                        alt={`Imagem ${img.id}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                     {imagensSelecionadas.has(img.id) && (
-                      <div className="absolute top-2 right-2 bg-[#00C939] text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold">
+                      <div className="absolute top-0.5 right-0.5 bg-[#00C939] text-white rounded-full w-3 h-3 flex items-center justify-center text-[8px] font-bold">
                         ✓
                       </div>
                     )}
                   </div>
-                  <p className="text-xs text-gray-600 mt-1 truncate text-center">
+                  <p className="text-[8px] text-gray-600 mt-0.5 truncate text-center">
                     {getNomeArquivo(img)}
                   </p>
                 </div>
@@ -315,44 +317,44 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
 
           {/* Grupos */}
           <div className="flex-1 overflow-x-auto bg-gray-100/30" ref={scrollContainerRef}>
-            <div className="flex h-full p-8 gap-8" style={{ minWidth: 'max-content' }}>
+            <div className="flex h-full p-2 gap-2" style={{ minWidth: 'max-content' }}>
               {grupos.map((grupo) => (
                 <div
                   key={grupo.id}
-                  className="w-[450px] bg-white/80 backdrop-blur-sm rounded-lg p-8 flex flex-col shadow-lg border border-gray-200"
+                  className="w-[200px] bg-white/80 backdrop-blur-sm rounded-lg p-2 flex flex-col shadow-lg border border-gray-200 h-full"
                   onDragOver={handleDragOver}
                   onDrop={(e) => handleDropGrupo(e, grupo.id)}
                 >
-                  <div className="flex justify-between items-start mb-6">
-                    <h3 className="font-semibold text-xl text-[#434343]">Grupo {grupo.id}</h3>
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="font-semibold text-xs text-[#434343]">Grupo {grupo.id}</h3>
                     {grupos.length > 1 && (
                       <button
                         onClick={() => removerGrupo(grupo.id)}
                         className="text-gray-400 hover:text-red-600 transition-colors"
                       >
-                        <X className="h-5 w-5" />
+                        <X className="h-3 w-3" />
                       </button>
                     )}
                   </div>
 
-                  <div className="space-y-5 mb-8">
+                  <div className="space-y-1.5 mb-2">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">ANDAR</label>
+                      <label className="block text-[9px] font-medium text-gray-700 mb-0.5">ANDAR</label>
                       <input
                         type="number"
                         value={grupo.andar}
                         onChange={(e) => atualizarGrupo(grupo.id, 'andar', e.target.value)}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00C939] focus:border-transparent"
+                        className="w-full px-1.5 py-0.5 text-[10px] border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[#00C939] focus:border-transparent"
                         placeholder="Ex: 3"
                       />
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">DIREÇÃO</label>
+                      <label className="block text-[9px] font-medium text-gray-700 mb-0.5">DIREÇÃO</label>
                       <select
                         value={grupo.direcao}
                         onChange={(e) => atualizarGrupo(grupo.id, 'direcao', e.target.value)}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00C939] focus:border-transparent"
+                        className="w-full px-1.5 py-0.5 text-[10px] border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-[#00C939] focus:border-transparent"
                       >
                         <option value="">Selecione...</option>
                         {direcoes.map(dir => (
@@ -362,8 +364,8 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
                     </div>
                   </div>
 
-                  <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg p-6 overflow-y-auto bg-gray-50/50 min-h-[350px]">
-                    <div className="grid grid-cols-3 gap-4">
+                  <div className="flex-1 border border-dashed border-gray-300 rounded-lg p-1.5 overflow-y-auto bg-gray-50/50">
+                    <div className="grid grid-cols-3 gap-1">
                       {grupo.imagens.map((img) => (
                         <div
                           key={img.id}
@@ -374,74 +376,76 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
                               e.stopPropagation();
                               handleDeleteImage(img, grupo.id);
                             }}
-                            className="absolute -top-2 -right-2 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                            className="absolute -top-1 -right-1 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full w-3 h-3 flex items-center justify-center text-[8px] font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-sm"
                             title="Deletar imagem"
                           >
                             ×
                           </button>
                           <div
-                            className="relative cursor-move border border-gray-300 rounded-lg overflow-hidden hover:shadow-md transition-all"
+                            className="relative cursor-move border border-gray-300 rounded overflow-hidden hover:shadow-sm transition-all"
                             draggable
                             onDragStart={(e) => handleDragStart(e, img, grupo.id)}
                             onDoubleClick={() => handleDoubleClick(img)}
                           >
-                            <img
-                              src={img.previewUrl}
-                              alt={`Imagem ${img.id}`}
-                              className="w-full h-24 object-cover"
-                            />
+                            <div className="w-full aspect-square">
+                              <img
+                                src={img.previewUrl}
+                                alt={`Imagem ${img.id}`}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
                           </div>
-                          <p className="text-xs text-gray-600 mt-1 truncate text-center">
+                          <p className="text-[8px] text-gray-600 mt-0.5 truncate text-center">
                             {getNomeArquivo(img)}
                           </p>
                         </div>
                       ))}
                     </div>
                     {grupo.imagens.length === 0 && (
-                      <div className="flex items-center justify-center h-full">
-                        <p className="text-gray-400 text-center text-lg">
+                      <div className="flex items-center justify-center h-full min-h-[120px]">
+                        <p className="text-gray-400 text-center text-[10px]">
                           Arraste imagens para cá
                         </p>
                       </div>
                     )}
                   </div>
 
-                  <p className="text-sm text-gray-600 mt-4 text-center">
+                  <p className="text-[9px] text-gray-600 mt-1.5 text-center">
                     {grupo.imagens.length} imagem(ns)
                   </p>
                 </div>
               ))}
 
               {/* Botão adicionar grupo */}
-              <div className="w-[450px] flex items-center justify-center">
+              <div className="w-[200px] flex items-center justify-center h-full">
                 <button
                   onClick={adicionarGrupo}
-                  className="h-full min-h-[600px] w-full border-2 border-dashed border-gray-400 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center group"
+                  className="h-full w-full border border-dashed border-gray-400 rounded-lg hover:bg-gray-50 transition-colors flex items-center justify-center group"
                 >
-                  <Plus className="h-12 w-12 text-gray-400 group-hover:text-gray-600" />
+                  <Plus className="h-5 w-5 text-gray-400 group-hover:text-gray-600" />
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="flex justify-between items-center px-8 py-6 border-t border-gray-200 bg-gray-50/50">
-          <p className="text-gray-600">
+        {/* Footer compacto */}
+        <div className="flex justify-between items-center px-3 py-2 border-t border-gray-200 bg-gray-50/50">
+          <p className="text-xs text-gray-600">
             {imagensNaoAgrupadas.length} imagem(ns) não organizadas
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             <Button 
               variant="outline" 
               onClick={onClose}
-              className="px-6 py-2 border border-gray-300 text-gray-700 hover:bg-gray-50"
+              className="px-3 py-1 text-xs border border-gray-300 text-gray-700 hover:bg-gray-50"
             >
               Cancelar
             </Button>
             <Button 
               onClick={handleSubmit}
               disabled={imagensNaoAgrupadas.length > 0}
-              className="px-6 py-2 bg-[#00C939] hover:bg-[#00b033] text-white disabled:bg-gray-300 disabled:cursor-not-allowed"
+              className="px-3 py-1 text-xs bg-[#00C939] hover:bg-[#00b033] text-white disabled:bg-gray-300 disabled:cursor-not-allowed"
             >
               Iniciar processamento
             </Button>

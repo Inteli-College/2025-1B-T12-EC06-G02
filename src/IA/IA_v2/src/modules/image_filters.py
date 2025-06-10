@@ -134,6 +134,24 @@ class ImageFilters:
 
         return result
 
+    @staticmethod
+    def grayscale(image: np.ndarray) -> np.ndarray:
+        """
+        Converte a imagem para escala de cinza (grayscale).
+
+        Args:
+            image: Imagem de entrada (BGR ou RGB ou Grayscale)
+
+        Returns:
+            Imagem em escala de cinza (uint8)
+        """
+        if len(image.shape) == 3:
+            # Assume BGR (OpenCV padrão)
+            return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        else:
+            # Já está em grayscale
+            return image
+        
 
 
 # Funções de conveniência para uso direto do módulo
@@ -154,8 +172,6 @@ def sharpen_image(image: np.ndarray, strength: float = 1.0, kernel_type: str = '
 def sato_image(image: np.ndarray) -> np.ndarray:
     """Função de conveniência para filtro de Sato"""
     return ImageFilters.sato_filter(image)
-
-
 
 if __name__ == "__main__":
     """Teste independente do módulo de filtros"""

@@ -111,6 +111,10 @@ export default function Upload() {
   }
 
   function handleClick() {
+    if (!imagens || imagens.length === 0) {
+      alert("É necessário enviar no mínimo uma imagem para realizar esta ação");
+      return;
+    }
     setMostrarOrganizador(true);
   }
 
@@ -129,7 +133,11 @@ export default function Upload() {
               <Button 
                 color="#00C939" 
                 onClick={handleClick}
-                className="bg-[#00C939] hover:bg-[#00b033] text-white"
+                className={`${
+                  imagens && imagens.length > 0 
+                    ? "bg-[#00C939] hover:bg-[#00b033]" 
+                    : "bg-gray-400 cursor-not-allowed"
+                } text-white transition-colors`}
               >
                 Organizar e Processar
               </Button>

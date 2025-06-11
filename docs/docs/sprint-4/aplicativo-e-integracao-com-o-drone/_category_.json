@@ -1,0 +1,8 @@
+{
+  "label": "Aplicativo e Integração com Drone",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Documenta a finalização do desenvolvimento do aplicativo móvel, com foco na estabilidade da comunicação com o drone e fluxo de uso."
+  }
+}

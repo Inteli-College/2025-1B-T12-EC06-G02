@@ -7,21 +7,21 @@ sidebar_position: 1
 
 ## Introdução
 
-A solução final proposta pelo SOD para o IPT tem como finalidade implementar, na prática, o conceito teórico demonstrado de forma resumida na prova de conceito.
+&emsp; A solução final proposta pelo SOD para o IPT tem como finalidade implementar, na prática, a POC desenvolvida ao longo de 10 semanas no Inteli.
 
-Para tanto, é importante ressaltar que dificilmente será encontrada uma solução comercializada já pronta no mercado que esteja disponível para compra e uso imediato neste domínio específico. Isso torna necessária uma equipe de profissionais capacitados não apenas para idealizar, prototipar e produzir o sistema final, mas também para integrar com as tecnologias que atendam às necessidades específicas identificadas nas [personas do projeto](../ux-ui/Personas.md) - que depois foram concretizadas em [requisitos funcionais](/docs/docs/sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md) e [não funcionais](/docs/docs/sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md). No caso do IPT, podemos citar como exemplo dessa parte o drone que eles utilizam da DJI e o sistema de armazenamento de imagens e relatórios que eles já tem internamente.
+&emsp; Para tanto, é importante ressaltar que dificilmente será encontrada uma solução comercializada já pronta no mercado que esteja disponível para compra e uso imediato que atenda as necessidades do IPT como um todo. Isso torna necessária uma equipe de profissionais capacitados não apenas para idealizar, prototipar e produzir o sistema final, mas também para integrar com as tecnologias que atendam às necessidades específicas identificadas nas [personas do projeto](../ux-ui/Personas.md) - que depois foram concretizadas em [requisitos funcionais](/docs/docs/sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md) e [não funcionais](/docs/docs/sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md). No caso do IPT, podemos citar como exemplos dessas necessidades específicas o drone que eles utilizam da DJI e o sistema de armazenamento de imagens e relatórios que eles já tem internamente.
 
-Nesse sentido, o que compete à análise financeira da solução final é examinar: (1) o custo da **equipe multidisciplinar** de profissionais que trabalharão desenvolvendo o sistema; (2) os custos de **infraestrutura e tecnologia**; (3) a incidência dos **impostos** sobre o projeto; (4) os **custos de manutenção** por um ano; e (5) o **lucro** almejado pela equipe. Alguns outros custos, como o drone, citado no último parágrafo, não são contemplados aqui, visto que o [modelo de negócios](/docs/docs/sprint-1/analise-de-negocios/business_model_canvas.md) adotado pelo grupo não engloba atuar dessa forma.
+&emsp; Nesse sentido, o que compete à análise financeira da solução final é examinar: (1) o custo da **equipe multidisciplinar** de profissionais que trabalharão desenvolvendo o sistema; (2) os custos de **infraestrutura e tecnologia**; (3) a incidência dos **impostos** sobre o projeto; (4) os **custos de manutenção** por um ano; e (5) o **lucro** almejado pela equipe. Alguns outros custos, como o drone, citado no último parágrafo, não são contemplados aqui, visto que o [modelo de negócios](/docs/docs/sprint-1/analise-de-negocios/business_model_canvas.md) adotado pelo grupo não engloba atuar dessa forma.
 
-Dito isso, é possível então começar a análise financeira.
+&emsp; Com isso em mente, é possível então começar a análise financeira.
 
 ## Equipe de Desenvolvimento
 
 ### Composição da equipe
 
-Visando o sucesso do projeto, é indispensável que profissionais com diferentes especializações trabalhem juntos. Para a solução SOD, que envolve inteligência artificial, desenvolvimento web, aplicativo móvel e interface de usuário, é necessária uma equipe multidisciplinar que contenha as seguintes especialidades:
+&emsp; Visando o sucesso do projeto, é indispensável que profissionais com diferentes especializações trabalhem juntos. Para a solução SOD, que envolve inteligência artificial, desenvolvimento web, aplicativo móvel e interface de usuário, é necessária uma equipe multidisciplinar.
 
-Para tornar a solução final algo tangível e escalável, sugere-se uma equipe de **máximo 7 profissionais** - semelhante ao grupo que produziu a POC do prjeto - que trabalharão no projeto por um período de **4 meses**. Esses integrantes estarão distribuídos da seguinte forma:
+&emsp; Sendo assim, para tornar a solução final algo tangível e escalável, sugere-se uma equipe de **7 profissionais** - semelhante ao grupo que produziu a POC do prjeto - que trabalharão no projeto por um período de **4 meses**. Esses integrantes estarão distribuídos da seguinte forma:
 
 - **1 Product Owner** - Gestão do produto e alinhamento com stakeholders
 - **1 Cientista de Dados/IA** - Desenvolvimento e otimização dos modelos de IA
@@ -32,7 +32,7 @@ Para tornar a solução final algo tangível e escalável, sugere-se uma equipe 
 
 ### Salários da equipe
 
-A partir de pesquisas em sites especializados como Glassdoor, Robert Half e Pesquisa Salarial Código Fonte TV 2024, é possível chegar às médias salariais brasileiras dos cargos necessários. As seguintes médias foram consideradas:
+&emsp; A partir de pesquisas em sites especializados como Glassdoor, Robert Half e Pesquisa Salarial Código Fonte TV 2024, é possível chegar às médias salariais brasileiras dos cargos necessários. As seguintes médias foram consideradas:
 
 | Cargo | Média salarial mensal (BRL) | Especialização |
 |-------|----------------------------|----------------|
@@ -43,7 +43,7 @@ A partir de pesquisas em sites especializados como Glassdoor, Robert Half e Pesq
 | Engenheiro DevOps | 11.000 | Cloud, CI/CD, monitoramento |
 | UX/UI Designer | 7.500 | Design de sistemas e interfaces |
 
-Para a quantidade de pessoas de cada área e pelo período de 4 meses, o cálculo fica da seguinte forma:
+&emsp; Para a quantidade de pessoas de cada área e pelo período de 4 meses, o cálculo fica da seguinte forma:
 
 ```
 Custo(equipe) = (9.500 + 12.000 + 8.500*2 + 9.000 + 11.000 + 7.500) * 4
@@ -75,22 +75,13 @@ Custo(equipe) = 66.000 * 4 = R$ 264.000,00
 
 | Categoria | Ferramenta | Descrição | Custo (R$) | Fonte |
 |-----------|------------|-----------|------------|--------|
-| **IDEs e Desenvolvimento** | | | | |
-| | JetBrains All Products Pack | IntelliJ IDEA, PyCharm, WebStorm (7 licenses) | 1.200,00 | [JetBrains Pricing](https://www.jetbrains.com/store/) |
-| | Visual Studio Professional | Licenças complementares | 800,00 | [Microsoft Store](https://www.microsoft.com/en-us/store/) |
-| **AI/ML Tools** | | | | |
-| | MLflow Pro | Experimento tracking e model management | 600,00 | [Databricks MLflow](https://www.databricks.com/product/managed-mlflow) |
-| | Weights & Biases Team | Machine learning platform | 900,00 | [W&B Pricing](https://wandb.ai/pricing) |
-| **Design Tools** | | | | |
-| | Figma Professional | Design colaborativo (7 usuários) | 700,00 | [Figma Pricing](https://www.figma.com/pricing/) |
-| | Adobe Creative Cloud | Photoshop, Illustrator para assets | 500,00 | [Adobe Pricing](https://www.adobe.com/creativecloud/plans.html) |
 | **Segurança** | | | | |
 | | SSL Certificates (Wildcard) | Certificados de segurança | 500,00 | [SSL.com Pricing](https://www.ssl.com/certificates/wildcard/) |
 | **DevOps** | | | | |
 | | Docker Business | Container management | 400,00 | [Docker Pricing](https://www.docker.com/pricing/) |
 | | Kubernetes (EKS) | Orquestração de containers | 400,00 | [AWS EKS Pricing](https://aws.amazon.com/eks/pricing/) |
 
-**Total Licenças: R$ 6.000,00**
+**Total Licenças: R$ 1.300,00**
 
 ### Hardware e Equipamentos Detalhados
 
@@ -110,34 +101,34 @@ Custo(equipe) = 66.000 * 4 = R$ 264.000,00
 
 ### Valores Totais
 
-Com o detalhamento mais preciso dos custos de hardware, o custo total da infraestrutura foi recalculado:
+&emsp; Com o detalhamento mais preciso dos custos de hardware, o custo total da infraestrutura foi recalculado:
 
 ```
-Custo(equipe + infraestrutura + licenças + hardware) = R$ 308.700,00
+Custo(equipe + infraestrutura + licenças + hardware) = R$ 304.000,00
 ```
 
 ### Custos gerais adicionais (30%)
 
-Conforme especificado, aplicamos um adicional de 30% sobre os custos diretos para cobrir despesas gerais:
+&emsp; Conforme especificado, aplicamos um adicional de 30% sobre os custos diretos para cobrir despesas gerais:
 
 ```
-Custos gerais = 308.700,00 * 0,30 = R$ 92.610,00
+Custos gerais = 304.000,00 * 0,30 = R$ 91.200,00
 ```
 
 ## Incidência de impostos
 
-A Classificação Nacional de Atividades Econômicas é um código utilizado para identificar quais são as atividades econômicas exercidas por uma empresa. O projeto da solução SOD pode se enquadrar no CNAE 6201-5/00 (Desenvolvimento de programas de computador sob encomenda), o que sujeita o negócio a diferentes impostos como PIS, COFINS, ISS, entre outros.
+&emsp; A Classificação Nacional de Atividades Econômicas é um código utilizado para identificar quais são as atividades econômicas exercidas por uma empresa. O projeto da solução SOD pode se enquadrar no CNAE 6201-5/00 (Desenvolvimento de programas de computador sob encomenda), o que sujeita o negócio a diferentes impostos como PIS, COFINS, ISS, entre outros.
 
-Para esta análise financeira, será considerado sobre o custo um imposto único, cujo valor será de **18%**.
+&emsp; Para esta análise financeira, será considerado sobre o custo um imposto único, cujo valor será de **18%**.
 
 ```
-Custo(com impostos) = (308.700,00 + 92.610,00) / (1 - 0,18)
-Custo(com impostos) = 401.310,00 / 0,82 = R$ 489.402,44
+Custo(com impostos) = (304.000,00 + 91.200,00) / (1 - 0,18)
+Custo(com impostos) = 395.200,00 / 0,82 = R$ 481.951,22
 ```
 
 ## Custos de Manutenção (1 ano)
 
-Para garantir o funcionamento adequado do sistema após a implementação, os seguintes custos anuais de manutenção devem ser considerados:
+&emsp; Para garantir o funcionamento adequado do sistema após a implementação, os seguintes custos anuais de manutenção devem ser considerados:
 
 ### Infraestrutura Recorrente (anual) - Detalhada
 
@@ -173,18 +164,18 @@ Para garantir o funcionamento adequado do sistema após a implementação, os se
 
 ### Desenvolvimento + Manutenção
 ```
-Custo total desenvolvimento = R$ 489.402,44
+Custo total desenvolvimento = R$ 481.951,22
 Custo manutenção anual = R$ 114.000,00
-Total antes do lucro = R$ 603.402,44
+Total antes do lucro = R$ 595.951,22
 ```
 
 ## Preço de Venda Final
 
-Considerando que o desenvolvimento foi pago considerando o lucro, vamos calcular o preço de venda considerando a manutenção. Para o preço de venda da manutenção anual, aplicaremos impostos e lucro com markup de 20%.
+&emsp; Considerando que o desenvolvimento foi pago considerando o lucro, vamos calcular o preço de venda considerando a manutenção. Para o preço de venda da manutenção anual, aplicaremos impostos e lucro com markup de 20%.
 
 ### Cálculo do Preço de Venda da Manutenção
 
-Baseando-se na metodologia de [markup pricing da Sage](https://www.sage.com/en-us/blog/what-is-markup-percentage/), o preço de venda é calculado adicionando o markup percentual ao custo base.
+&emsp; Baseando-se na metodologia de [markup pricing da Sage](https://www.sage.com/en-us/blog/what-is-markup-percentage/), o preço de venda é calculado adicionando o markup percentual ao custo base.
 
 ```
 Custo base manutenção = R$ 114.000,00
@@ -192,21 +183,21 @@ Impostos (18%) = 114.000,00 / (1 - 0,18) = R$ 139.024,39
 Preço de venda com markup 20% = 139.024,39 × 1,20 = R$ 166.829,27
 ```
 
-Sendo assim, o preço de venda da solução seria de R$166.829,27 anuais.
+&emsp; Sendo assim, o preço de venda da solução seria de R$166.829,27 anuais.
 
 ### Valor Total da Solução
 
 ```
-Desenvolvimento (com lucro incluso) = R$ 489.402,44
+Desenvolvimento (com lucro incluso) = R$ 481.951,22
 Manutenção anual (preço de venda) = R$ 166.829,27
-VALOR TOTAL DA SOLUÇÃO = R$ 656.231,71
+VALOR TOTAL DA SOLUÇÃO = R$ 648.780,49
 ```
 
 ## Análise de Mercado - TAM SAM SOM
 
 ### Metodologia Bottom-Up
 
-Esta análise utiliza uma abordagem bottom-up, calculando o potencial de mercado baseado no ticket médio multiplicado pelo número de clientes potenciais. Como se trata de uma solução de software, não existem muitas limitações geográficas ou logísticas para serem consideradas no SAM e SOM, permitindo maior penetração de mercado.
+&emsp; Esta análise utiliza uma abordagem bottom-up, calculando o potencial de mercado baseado no ticket médio multiplicado pelo número de clientes potenciais. Como se trata de uma solução de software, não existem muitas limitações geográficas ou logísticas para serem consideradas no SAM e SOM, permitindo maior penetração de mercado.
 
 ### Definição do Ticket Médio
 
@@ -233,7 +224,7 @@ TAM = R$ 2,08 bilhões anuais
 
 **Segmento**: Empresas de manutenção imobiliária no Estado de São Paulo
 
-São Paulo concentra aproximadamente 35% das empresas do setor no Brasil:
+&emsp; São Paulo concentra aproximadamente 35% das empresas do setor no Brasil:
 - **4.375 empresas** potenciais no estado
 
 ```
@@ -245,7 +236,7 @@ SAM = R$ 729,9 milhões anuais
 
 **Segmento**: Empresas de manutenção imobiliária na Cidade de São Paulo
 
-A cidade de São Paulo representa cerca de 25% do estado:
+&emsp; A cidade de São Paulo representa cerca de 25% do estado:
 - **1.094 empresas** potenciais na cidade
 
 ```
@@ -265,28 +256,28 @@ SOM = R$ 182,6 milhões anuais
 
 | Categoria | Valor (R$) | Percentual |
 |-----------|------------|------------|
-| Equipe de Desenvolvimento (4 meses) | 264.000,00 | 40,2% |
+| Equipe de Desenvolvimento (4 meses) | 264.000,00 | 40,7% |
 | Infraestrutura (4 meses) | 5.600,00 | 0,9% |
-| Licenças e Ferramentas | 6.000,00 | 0,9% |
-| Hardware e Equipamentos | 33.100,00 | 5,0% |
-| Custos Gerais (30%) | 92.610,00 | 14,1% |
-| Impostos Desenvolvimento (18%) | 88.092,44 | 13,4% |
-| Manutenção Anual (preço venda) | 166.829,27 | 25,4% |
-| **TOTAL** | **656.231,71** | **100%** |
+| Licenças e Ferramentas | 1.300,00 | 0,2% |
+| Hardware e Equipamentos | 33.100,00 | 5,1% |
+| Custos Gerais (30%) | 91.200,00 | 14,1% |
+| Impostos Desenvolvimento (18%) | 87.151,22 | 13,4% |
+| Manutenção Anual (preço venda) | 166.829,27 | 25,7% |
+| **TOTAL** | **648.780,49** | **100%** |
 
 ## Conclusão e Análise de ROI para o IPT
 
 ### Resumo da Proposta
-A solução SOD representa um investimento estratégico para o IPT, com um custo total inicial de R$ 489.402,44 para desenvolvimento e implementação, seguido de uma manutenção anual de R$ 166.829,27. O sistema proposto introduz tecnologia de ponta em inteligência artificial para análise automatizada de imagens de drones, trazendo maior eficiência e precisão aos processos de inspeção predial.
+&emsp; A solução SOD representa um investimento estratégico para o IPT, com um custo total inicial de R$ 481.951,22 para desenvolvimento e implementação, seguido de uma manutenção anual de R$ 166.829,27. O sistema proposto introduz tecnologia de ponta em inteligência artificial para análise automatizada de imagens de drones, trazendo maior eficiência e precisão aos processos de inspeção predial.
 
 ### Retorno sobre Investimento (ROI)
-Utilizando a metodologia padrão de cálculo de ROI descrita pelo Harvard Business School [1], podemos estimar o retorno financeiro que o IPT pode obter com este investimento:
+&emsp; Utilizando a metodologia padrão de cálculo de ROI descrita pelo Harvard Business School [1], podemos estimar o retorno financeiro que o IPT pode obter com este investimento:
 
 **ROI = [(Benefício Financeiro - Custo do Projeto) / Custo do Projeto] x 100**
 
 #### Estimativa de Benefícios Financeiros Anuais
 
-Lembrando que essa é uma estimativa de economias. Para entender mais detalhadamente o caso do IPT em relação aos benefícios que essa melhoria pode trazer, é necessário ter uma conversa mais profunda com relação aos seus custos, metodologia de trabalho, processos, entre outros.
+&emsp; Lembrando que essa é uma estimativa de economias. Para entender mais detalhadamente o caso do IPT em relação aos benefícios que essa melhoria pode trazer, é necessário ter uma conversa mais profunda com relação aos seus custos, metodologia de trabalho, processos, entre outros.
 
 | Categoria de Benefício | Descrição | Economia Estimada Anual (R$) |
 |------------------------|-----------|------------------------------|
@@ -300,26 +291,26 @@ Lembrando que essa é uma estimativa de economias. Para entender mais detalhadam
 #### Cálculo do ROI em 3 Anos
 
 ```
-Investimento inicial = R$ 489.402,44
+Investimento inicial = R$ 481.951,22
 Custo de manutenção (3 anos) = R$ 166.829,27 × 3 = R$ 500.487,81
-Custo total (3 anos) = R$ 989.890,25
+Custo total (3 anos) = R$ 982.440,03
 
 Benefícios (3 anos) = R$ 700.000,00 × 3 = R$ 2.100.000,00
 
-ROI (3 anos) = [(2.100.000,00 - 989.890,25) / 989.890,25] × 100 = 112,15%
+ROI (3 anos) = [(2.100.000,00 - 982.440,03) / 982.440,03] × 100 = 113,75%
 ```
 
 #### Período de Payback
 
 ```
-Investimento total = R$ 489.402,44 + R$ 166.829,27 (1º ano) = R$ 656.231,71
+Investimento total = R$ 481.951,22 + R$ 166.829,27 (1º ano) = R$ 648.780,49
 Benefício anual = R$ 700.000,00
-Payback = R$ 656.231,71 / R$ 700.000,00 = 0,94 anos ≈ 11,3 meses
+Payback = R$ 648.780,49 / R$ 700.000,00 = 0,93 anos ≈ 11,2 meses
 ```
 
 ### Benefícios Estratégicos Adicionais (Não Quantificados)
 
-Além dos benefícios financeiros diretos, o IPT poderá obter vantagens estratégicas significativas:
+&emsp; Além dos benefícios financeiros diretos, o IPT poderá obter vantagens estratégicas significativas:
 
 1. **Posicionamento como referência tecnológica**: Reforço da reputação do IPT como instituição inovadora e tecnicamente avançada
 2. **Base para pesquisa aplicada**: A plataforma fornecerá dados valiosos para estudos e publicações científicas
@@ -329,7 +320,7 @@ Além dos benefícios financeiros diretos, o IPT poderá obter vantagens estrat�
 
 ### Conclusão
 
-Com um ROI projetado de 112,15% em três anos e um período de payback de aproximadamente 11,3 meses, a solução representa um investimento bem atrativo. O sistema não apenas se pagará em menos de um ano, como também continuará gerando valor nos anos subsequentes.
+&emsp; Com um ROI projetado de 113,75% em três anos e um período de payback de aproximadamente 11,2 meses, a solução representa um investimento bem atrativo. O sistema não apenas se pagará em menos de um ano, como também continuará gerando valor nos anos subsequentes.
 
 ## Bibliografia
 

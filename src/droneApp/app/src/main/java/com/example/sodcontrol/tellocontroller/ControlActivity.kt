@@ -21,6 +21,8 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
+import androidx.core.content.ContextCompat
+
 
 class ControlActivity : AppCompatActivity() {
 
@@ -45,6 +47,7 @@ class ControlActivity : AppCompatActivity() {
         val statusInfo = findViewById<TextView>(R.id.statusInfo)
         val leftJoystick = findViewById<JoystickView>(R.id.leftJoystick)
         val rightJoystick = findViewById<JoystickView>(R.id.rightJoystick)
+
 
         textureView.surfaceTextureListener = object : TextureView.SurfaceTextureListener {
             override fun onSurfaceTextureAvailable(surfaceTexture: SurfaceTexture, width: Int, height: Int) {
@@ -113,6 +116,28 @@ class ControlActivity : AppCompatActivity() {
             rightX = x * 100
             rightY = y * 100
         }
+
+
+        val arrow = ContextCompat.getDrawable(this, R.drawable.arrow)
+        val doubleArrow = ContextCompat.getDrawable(this, R.drawable.double_arrow)
+        val rotate = ContextCompat.getDrawable(this, R.drawable.rotate)
+
+
+        leftJoystick.setJoystickIconsWithRotationAndFlip(
+            doubleArrow, 270f, false, false,        // Top
+            doubleArrow, 90f, false, false,       // Bottom
+            rotate, 0f, true, false,       // Left
+            rotate, 0f, false, false        // Right
+        )
+
+
+        rightJoystick.setJoystickIconsWithRotationAndFlip(
+            arrow, 270f, false, false,   // Top
+            arrow, 90f, false, false,   // Bottom
+            arrow, 180f, false, false,   // Left
+            arrow, 0f, false, false   // Right
+        )
+
 
         val scheduler = Executors.newSingleThreadScheduledExecutor()
         scheduler.scheduleAtFixedRate({

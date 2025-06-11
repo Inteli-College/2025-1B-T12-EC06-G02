@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootLayout"
+    android:background="#161616"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -30,15 +31,25 @@
                 android:id="@+id/btnPower"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_selector"
-                android:text="@string/power" />
+                android:background="@drawable/rounded_transparent_button"
+                android:text="@string/power"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:elevation="4dp"
+                android:layout_margin="8dp" />
 
             <Button
                 android:id="@+id/btnTakeoff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button_selector"
-                android:text="@string/takeoff" />
+                android:background="@drawable/rounded_transparent_button"
+                android:text="@string/takeoff"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:elevation="4dp"
+                android:layout_margin="8dp"/>
+
+
         </LinearLayout>
 
         <TextView
@@ -55,8 +66,12 @@
             android:id="@+id/btnDisconnect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"
-            android:text="Disconnect" />
+            android:background="@drawable/rounded_transparent_button"
+            android:text="Disconnect"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:elevation="4dp"
+            android:layout_margin="8dp"/>
     </LinearLayout>
 
     <Button
@@ -65,22 +80,22 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center|end"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/button_selector"
+        android:background="@drawable/rounded_transparent_button"
         android:text="@string/photo" />
 
     <!-- Left Joystick -->
     <com.example.sodcontrol.ui.theme.JoystickView
         android:id="@+id/leftJoystick"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="bottom|start"
         android:layout_margin="16dp" />
 
     <!-- Right Joystick -->
     <com.example.sodcontrol.ui.theme.JoystickView
         android:id="@+id/rightJoystick"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp" />
 

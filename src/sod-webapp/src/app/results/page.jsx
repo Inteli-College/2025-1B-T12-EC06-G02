@@ -99,7 +99,7 @@ export default function Result() {
           console.error("Invalid response structure:", data);
           throw new Error("Server response missing PDF buffer");
         }
-
+ 
         const nomeArquivo = `relatorio-${Date.now()}.pdf`;
         const file = data.buffer;
 
@@ -111,31 +111,31 @@ export default function Result() {
           return new Blob([binary], { type: mimeType });
         }
 
-        const pdfBlob = base64ToBlob(file);
-        const url = URL.createObjectURL(pdfBlob);
-        setPdfUrl(url);
+         const pdfBlob = base64ToBlob(file);
+         const url = URL.createObjectURL(pdfBlob);
+         setPdfUrl(url);
 
-        const { error } = await supabase.storage
-          .from("relatorios")
-          .upload(nomeArquivo, pdfBlob);
+         const { error } = await supabase.storage
+           .from("relatorios")
+           .upload(nomeArquivo, pdfBlob);
 
-        if (error) {
-          console.error("Erro ao fazer upload:", error);
-          throw new Error(`Upload error: ${error.message}`);
-        }
+         if (error) {
+           console.error("Erro ao fazer upload:", error);
+           throw new Error(`Upload error: ${error.message}`);
+         }
 
-        // Salvar no estado global
-        const dadosParaEnviar = { preview: nomeArquivo };
-        useDadosStore.getState().setDados(dadosParaEnviar);
+         // Salvar no estado global
+         const dadosParaEnviar = { preview: nomeArquivo };
+         useDadosStore.getState().setDados(dadosParaEnviar);
 
-        // Marcar PDF como gerado
-        setPdfGerado(true);
-      } catch (error) {
-        console.error("Error generating PDF:", error);
-        // You might want to show an error message to the user here
-        // For example, set an error state and display it in the UI
-      }
-    }
+         // Marcar PDF como gerado
+         setPdfGerado(true);
+       } catch (error) {
+         console.error("Error generating PDF:", error);
+         // You might want to show an error message to the user here
+         // For example, set an error state and display it in the UI
+       }
+     }
 
     gerarPdf();
   }, []);
@@ -168,35 +168,35 @@ export default function Result() {
               <Loading />
             ) : (
               <>
-                <h1 className="text-[#434343] text-4xl text-center mx-auto md:text-5xl font-medium leading-tight">
+                <h1 className="text-[#434343] text-2xl md:text-4xl px-3 text-center mx-auto font-medium leading-tight">
                   Principais Insights do Relatório
                 </h1>
                 <div
                   id="resultados"
-                  className="flex flex-row justify-between gap-3 w-1/2"
+                  className="flex flex-row justify-between gap-3 w-3/4 md:w-1/2"
                 >
                   <Resultado valor={nRetracao} label="Fissuras de Retração" />
                   <Resultado valor={nTermicas} label="Fissuras Térmicas" />
                 </div>
                 <Button
-                  className="!h-auto w-1/3 !p-4 bg-[#00C939] text-white !text-2xl rounded hover:bg-[#00b033] transition-colors"
-                  color="#00C939"
+                  className="!h-auto !p-4 bg-[#00C939] text-white md:text-2xl rounded hover:bg-[#00b033] transition-colors"
                   onClick={handleClick}
+                  color="#00C939"
                   disabled={!pdfGerado}
                 >
-                  <img src={IconeBaixar.src} className="h-6" />
+                  <img src={IconeBaixar.src} className="md:h-6 h-4" />
                   Baixar Relatório na Íntegra
                 </Button>
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-row gap-2 md:gap-4">
                   <Button
-                    className="!h-auto !p-2 text-white !text-xl rounded hover:bg-[#00b033] transition-colors"
+                    className="!h-auto !p-2 text-white text-md md:text-xl rounded transition-colors"
                     onClick={handleHome}
                     disabled={!pdfGerado}
                   >
                     Voltar para home
                   </Button>
                   <Button
-                    className="!h-auto !p-2 text-white !text-xl rounded hover:bg-[#00b033] transition-colors"
+                    className="!h-auto !p-2 text-white text-md md:text-xl rounded hover:bg-[#00b033] transition-colors"
                     onClick={handlePreview}
                     disabled={!pdfGerado}
                   >

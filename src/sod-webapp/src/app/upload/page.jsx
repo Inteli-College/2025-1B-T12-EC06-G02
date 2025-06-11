@@ -19,6 +19,7 @@ import MiniGaleria from "../(components)/miniGaleria"
 import { Button } from "../(components)/ui/button";
 import { useRouter } from "next/navigation";
 import Loading from "../(components)/Loading";
+import AuthGuard from "../(components)/AuthGuard";
 
 export default function Upload() {
   const { name, selection, images } = useDadosStore((state) => state.dados);
@@ -83,6 +84,7 @@ async function handleClick() {
 
 
   return (
+    <AuthGuard>
     <div className={inter.className}>
       <BackgroundImage>
         <Navbar />
@@ -99,5 +101,5 @@ async function handleClick() {
         </Card>
       </BackgroundImage>
     </div>
-  );
+  </AuthGuard>);
 }

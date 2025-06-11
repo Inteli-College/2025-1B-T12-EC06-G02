@@ -131,11 +131,11 @@ export default function Upload() {
               <MiniGaleria images={imagens} handleImages={setImagens} />
 
               <Button 
-                color="#00C939" 
+                color="##2d608d" 
                 onClick={handleClick}
                 className={`${
                   imagens && imagens.length > 0 
-                    ? "bg-[#00C939] hover:bg-[#00b033]" 
+                    ? "bg-[#2d608d] hover:bg-[#2d608d]" 
                     : "bg-gray-400 cursor-not-allowed"
                 } text-white transition-colors`}
               >

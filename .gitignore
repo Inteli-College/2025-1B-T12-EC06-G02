@@ -11,7 +11,6 @@ mlruns/
 retracao/
 termicas/
 
-train/
-test/
-valid/
-runs/
+train
+test
+valid

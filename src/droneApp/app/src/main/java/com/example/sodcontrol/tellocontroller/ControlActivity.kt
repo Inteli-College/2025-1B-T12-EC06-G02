@@ -126,8 +126,8 @@ class ControlActivity : AppCompatActivity() {
         leftJoystick.setJoystickIconsWithRotationAndFlip(
             doubleArrow, 270f, false, false,        // Top
             doubleArrow, 90f, false, false,       // Bottom
-            rotate, 0f, true, false,       // Left
-            rotate, 0f, false, false        // Right
+            rotate, 0f, false, false,       // Left
+            rotate, 0f, true, false        // Right
         )
 
 

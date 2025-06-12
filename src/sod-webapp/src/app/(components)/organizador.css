@@ -1,0 +1,90 @@
+/* src/app/(components)/organizador.css */
+
+/* Scrollbar customizada para todos os containers com scroll */
+.organizador-scroll::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.organizador-scroll::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.organizador-scroll::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.organizador-scroll::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Animação de drag */
+.dragging {
+  opacity: 0.5;
+  cursor: grabbing !important;
+}
+
+/* Highlight de drop zone */
+.drop-zone-active {
+  background-color: rgba(0, 201, 57, 0.1) !important;
+  border-color: #00C939 !important;
+}
+
+/* Seleção múltipla */
+.imagem-selecionada {
+  box-shadow: 0 0 0 3px #00C939;
+  transform: scale(1.05);
+}
+
+/* Transições suaves */
+.grupo-container {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grupo-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+/* Indicador visual de área vazia */
+.empty-drop-zone {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9CA3AF;
+  font-size: 14px;
+}
+
+/* Efeito glassmorphism */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Animação de hover nas imagens */
+.image-hover {
+  transition: all 0.2s ease;
+}
+
+.image-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo do contador de imagens */
+.image-counter {
+  background: rgba(0, 201, 57, 0.1);
+  color: #00C939;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}

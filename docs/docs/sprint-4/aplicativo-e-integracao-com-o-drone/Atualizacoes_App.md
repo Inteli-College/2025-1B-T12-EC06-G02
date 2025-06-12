@@ -28,7 +28,7 @@ O logo ja implementado no App para representar parte do produto SOD.
 
 ## Tela Inicial
 
-A nova versão da tela inicial do aplicativo simplifica as os caminhos disponíveis para o usuário.
+A nova versão da tela inicial do aplicativo simplifica os caminhos disponíveis para o usuário.
 
 ![Tela inicial do app com logo e opções](../../../static/img/DroneApp/UI2/HomeScreen.png)
 

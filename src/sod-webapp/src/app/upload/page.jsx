@@ -20,6 +20,7 @@ import OrganizadorImagens from "../(components)/OrganizadorImagens";
 import { Button } from "../(components)/ui/button";
 import { useRouter } from "next/navigation";
 import Loading from "../(components)/Loading";
+import AuthGuard from "../(components)/AuthGuard";
 
 export default function Upload() {
   const dados = useDadosStore((state) => state.dados) || {};
@@ -119,6 +120,7 @@ export default function Upload() {
   }
 
   return (
+    <AuthGuard>
     <div className={inter.className}>
       <BackgroundImage>
         <Navbar />
@@ -154,5 +156,5 @@ export default function Upload() {
         </Card>
       </BackgroundImage>
     </div>
-  );
+  </AuthGuard>);
 }

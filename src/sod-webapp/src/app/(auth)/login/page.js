@@ -22,23 +22,22 @@ export default function LoginPage() {
     const password = formData.get('password')
 
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
-      })
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
 
-      if (error) {
-        throw error
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Erro ao fazer login');
       }
 
-      // Atualiza o last_login na tabela users
-      if (data && data.user && data.user.id) {
-        await import('../../../backend/lib/api-service').then(({ ApiService }) =>
-          ApiService.updateLastLogin(data.user.id)
-        );
-      }
-
-      router.push('/home')
+      // Redireciona após login
+      router.push('/home');
       router.refresh()
     } catch (error) {
       setError(error.message)
@@ -142,7 +141,7 @@ export default function LoginPage() {
           <div className="text-center">
             <Link
               href="/signup"
-              className="inline-block px-12 py-4 bg-[#00c939] text-white text-xl font-medium rounded hover:bg-[#00b033] transition-colors"
+              className="inline-block px-12 py-4 bg-[#204565] text-white text-xl font-medium rounded hover:bg-[#19354F] transition-colors"
             >
               Criar conta
             </Link>

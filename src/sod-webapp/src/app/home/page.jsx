@@ -65,7 +65,7 @@ export default function Home() {
     }
   }
 
-const name = user?.user_metadata?.name?.split(" ")[0] || "Usuário";
+const name = user?.user_metadata?.name?.split(" ")[0] || "usuário";
 
   return (
     <AuthGuard>

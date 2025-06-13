@@ -24,7 +24,7 @@ Garantir a facilidade no processo de análise de imagem desde o uso do drone.
 
 &emsp; Este requisito está quase finalizado. O fluxo necessário para o seu funcionamento já acontece: é possível enviar imagens do aplicativo SOD para o servidor e recuperá-las via *webapp*. Entretanto, é necessário aumentar a usabilidade, principalmente no que tange à quais imagens recuperar.
 
-&emsp; Os requisitos não funcionais [RNF02, RNF03 e RNF08](../sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md) também foram cumpridos nessa sprint.
+&emsp; Os requisitos não funcionais [RNF01, RNF02 e RNF07](../sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md) também foram cumpridos nessa sprint.
 
 &emsp; Entretanto, devido ao aumento da complexidade do aplicativo, aumentou-se também suas instruções de uso, conforme demonstrado abaixo.
 

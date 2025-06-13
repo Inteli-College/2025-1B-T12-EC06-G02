@@ -347,6 +347,30 @@ class UnifiedCrackClassifier:
         
         return results
 
+    def process_grupos(self, grupos: List[Dict]) -> List[Dict]:
+        """Processa imagens organizadas em grupos"""
+        all_results = []
+        
+        for grupo in grupos:
+            imagens = grupo.get("imagens", [])
+            andar = grupo.get("andar", "")
+            direcao = grupo.get("direcao", "")
+            
+            image_paths = [img["previewUrl"] for img in imagens]
+            image_ids = [img["id"] for img in imagens]
+            preview_urls = [img["previewUrl"] for img in imagens]
+            
+            results = self.predict_with_confidence(image_paths, image_ids, preview_urls)
+            
+            # Adicionar metadata do grupo
+            for result in results:
+                result["andar"] = andar
+                result["direcao"] = direcao
+                
+            all_results.extend(results)
+            
+        return all_results
+
 def load_classifier() -> UnifiedCrackClassifier:
     return UnifiedCrackClassifier()
 
@@ -360,3 +384,14 @@ def classify_for_frontend(images: List[Dict]) -> List[Dict]:
     preview_urls = [img["previewUrl"] for img in images]
 
     return classifier.predict_with_confidence(image_paths, image_ids, preview_urls)
+
+def classify_grupos(data: Dict) -> List[Dict]:
+    """Classifica imagens organizadas em grupos"""
+    classifier = load_classifier()
+    
+    grupos = data.get("grupos", [])
+    if not grupos:
+        # Fallback para formato antigo
+        return classify_for_frontend(data.get("images", []))
+        
+    return classifier.process_grupos(grupos)

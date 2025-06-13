@@ -1,6 +1,7 @@
 package com.example.sodcontrol.tellocontroller
 
 import android.os.Bundle
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sodcontrol.R
 import android.content.pm.PackageManager
@@ -62,6 +63,14 @@ class DatabaseSender : AppCompatActivity() {
                 requestStoragePermission()
             }
         }
+
+        val backButton = findViewById<Button>(R.id.btnBackToMain)
+        backButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 
     private fun getFileNameFromUri(uri: Uri): String? {
@@ -116,6 +125,7 @@ class DatabaseSender : AppCompatActivity() {
             )
         }
     }
+
 
     override fun onRequestPermissionsResult(
         requestCode: Int,

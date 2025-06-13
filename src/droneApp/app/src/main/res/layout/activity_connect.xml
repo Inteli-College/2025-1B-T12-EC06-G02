@@ -2,28 +2,50 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#161616"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="227dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/sodnobg" />
+
 
     <TextView
         android:id="@+id/statusText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Press connect to initialize drone..."
-        android:textSize="18sp" />
+        android:elevation="4dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
 
     <Button
         android:id="@+id/btnConnect"
-        android:layout_width="wrap_content"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
-        android:text="Connect to Tello" />
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_transparent_button"
+        android:elevation="4dp"
+        android:text="Connect to Tello"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/btnDatabase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send to Database" />
+        android:layout_width="141dp"
+        android:layout_height="42dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/rounded_transparent_button"
+        android:elevation="4dp"
+        android:text="Image Upload"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
 
 </LinearLayout>

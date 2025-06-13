@@ -26,14 +26,14 @@ class MainActivity : AppCompatActivity() {
                     TelloCommandSender.sendCommand("streamon")
 
                     runOnUiThread {
-                        statusText.text = "Connected. Launching control screen..."
+                        statusText.text = "Conectado, iniciando controle..."
                         startActivity(Intent(this, ControlActivity::class.java))
                         finish()
                     }
                 } catch (e: Exception) {
                     runOnUiThread {
                         Toast.makeText(this, "Failed to connect to Tello", Toast.LENGTH_LONG).show()
-                        statusText.text = "Connection failed. Please try again."
+                        statusText.text = "Falha de conexão, cheque conexão Wi-Fi com o Drone."
                     }
                 }
             }.start()
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         databaseButton.setOnClickListener {
             runOnUiThread {
-                statusText.text = "Connected. Launching database screen..."
+                statusText.text = "Iniciando..."
                 startActivity(Intent(this, DatabaseSender::class.java))
                 finish()
             }

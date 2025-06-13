@@ -1,31 +1,45 @@
 package com.example.sodcontrol.tellocontroller
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.SurfaceTexture
+import android.media.MediaScannerConnection
 import android.os.Bundle
-import android.view.SurfaceHolder
-import android.view.SurfaceView
+import android.os.Environment
+import android.view.Surface
+import android.view.TextureView
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sodcontrol.R
 import com.example.sodcontrol.ui.theme.JoystickView
+import java.io.File
+import java.io.FileOutputStream
+import java.text.SimpleDateFormat
+import java.util.*
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
+import androidx.core.content.ContextCompat
+
 
 class ControlActivity : AppCompatActivity() {
 
     private lateinit var videoReceiver: TelloVideoReceiver
+    private lateinit var textureView: TextureView
 
     private var leftX = 0f
     private var leftY = 0f
     private var rightX = 0f
     private var rightY = 0f
 
+    @SuppressLint("DiscouragedApi")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val surfaceView = findViewById<SurfaceView>(R.id.videoSurface)
+        textureView = findViewById(R.id.videoSurface)
         val takeoffButton = findViewById<Button>(R.id.btnTakeoff)
         val powerButton = findViewById<Button>(R.id.btnPower)
         val photoButton = findViewById<Button>(R.id.btnPhoto)
@@ -34,11 +48,11 @@ class ControlActivity : AppCompatActivity() {
         val leftJoystick = findViewById<JoystickView>(R.id.leftJoystick)
         val rightJoystick = findViewById<JoystickView>(R.id.rightJoystick)
 
-        // Initialize video receiver when surface is ready
-        val holder = surfaceView.holder
-        holder.addCallback(object : SurfaceHolder.Callback {
-            override fun surfaceCreated(holder: SurfaceHolder) {
-                videoReceiver = TelloVideoReceiver(holder.surface)
+
+        textureView.surfaceTextureListener = object : TextureView.SurfaceTextureListener {
+            override fun onSurfaceTextureAvailable(surfaceTexture: SurfaceTexture, width: Int, height: Int) {
+                val surface = Surface(surfaceTexture)
+                videoReceiver = TelloVideoReceiver(surface)
                 videoReceiver.start()
 
                 Thread {
@@ -48,11 +62,14 @@ class ControlActivity : AppCompatActivity() {
                 }.start()
             }
 
-            override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {}
-            override fun surfaceDestroyed(holder: SurfaceHolder) {
+            override fun onSurfaceTextureSizeChanged(surface: SurfaceTexture, width: Int, height: Int) {}
+            override fun onSurfaceTextureDestroyed(surface: SurfaceTexture): Boolean {
                 videoReceiver.stop()
+                return true
             }
-        })
+
+            override fun onSurfaceTextureUpdated(surface: SurfaceTexture) {}
+        }
 
         takeoffButton.setOnClickListener {
             Thread { TelloCommandSender.sendCommand("takeoff") }.start()
@@ -82,6 +99,12 @@ class ControlActivity : AppCompatActivity() {
         }
 
         photoButton.setOnClickListener {
+            val bitmap = textureView.bitmap
+            if (bitmap != null) {
+                saveBitmapToGallery(bitmap)
+            } else {
+                Toast.makeText(this, "Failed to capture frame", Toast.LENGTH_SHORT).show()
+            }
         }
 
         leftJoystick.setJoystickListener { x, y ->
@@ -94,6 +117,28 @@ class ControlActivity : AppCompatActivity() {
             rightY = y * 100
         }
 
+
+        val arrow = ContextCompat.getDrawable(this, R.drawable.arrow)
+        val doubleArrow = ContextCompat.getDrawable(this, R.drawable.double_arrow)
+        val rotate = ContextCompat.getDrawable(this, R.drawable.rotate)
+
+
+        leftJoystick.setJoystickIconsWithRotationAndFlip(
+            doubleArrow, 270f, false, false,        // Top
+            doubleArrow, 90f, false, false,       // Bottom
+            rotate, 0f, false, false,       // Left
+            rotate, 0f, true, false        // Right
+        )
+
+
+        rightJoystick.setJoystickIconsWithRotationAndFlip(
+            arrow, 270f, false, false,   // Top
+            arrow, 90f, false, false,   // Bottom
+            arrow, 180f, false, false,   // Left
+            arrow, 0f, false, false   // Right
+        )
+
+
         val scheduler = Executors.newSingleThreadScheduledExecutor()
         scheduler.scheduleAtFixedRate({
             val lr = mapInput(rightX)
@@ -102,7 +147,56 @@ class ControlActivity : AppCompatActivity() {
             val yaw = mapInput(leftX)
             sendRcControl(lr, fb, ud, yaw)
         }, 0, 100, TimeUnit.MILLISECONDS)
+
+        val batteryAndWifiScheduler = Executors.newSingleThreadScheduledExecutor()
+
+        batteryAndWifiScheduler.scheduleAtFixedRate({
+            val battery = TelloCommandSender.sendCommandWithResponse("battery?")
+            val wifi = TelloCommandSender.sendCommandWithResponse("wifi?")
+
+            runOnUiThread {
+                statusInfo.text = "Battery: ${battery ?: "?"}%  |  Wi-Fi: ${wifi ?: "?"} SNR"
+            }
+        }, 0, 5, TimeUnit.SECONDS)
     }
+
+    private fun saveBitmapToGallery(bitmap: Bitmap) {
+        val contentValues = android.content.ContentValues().apply {
+            val timestamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
+            put(android.provider.MediaStore.Images.Media.DISPLAY_NAME, "Tello_$timestamp.jpg")
+            put(android.provider.MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
+            put(android.provider.MediaStore.Images.Media.RELATIVE_PATH, "Pictures/SOD")
+            put(android.provider.MediaStore.Images.Media.IS_PENDING, 1)
+        }
+
+        val contentResolver = contentResolver
+        val uri = contentResolver.insert(android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)
+
+        uri?.let {
+            try {
+                contentResolver.openOutputStream(uri)?.use { out ->
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out)
+                }
+
+                contentValues.clear()
+                contentValues.put(android.provider.MediaStore.Images.Media.IS_PENDING, 0)
+                contentResolver.update(uri, contentValues, null, null)
+
+                runOnUiThread {
+                    Toast.makeText(this, "Photo saved to gallery in SOD", Toast.LENGTH_SHORT).show()
+                }
+
+            } catch (e: Exception) {
+                e.printStackTrace()
+                runOnUiThread {
+                    Toast.makeText(this, "Failed to save photo", Toast.LENGTH_SHORT).show()
+                }
+            }
+        } ?: runOnUiThread {
+            Toast.makeText(this, "Could not create MediaStore entry", Toast.LENGTH_SHORT).show()
+        }
+    }
+
 
     private fun mapInput(raw: Float): Int {
         return raw.coerceIn(-100f, 100f).toInt()

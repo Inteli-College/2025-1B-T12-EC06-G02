@@ -5,10 +5,26 @@ const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 export async function POST(req: Request) {
-  const { email, password } = await req.json();
+  try {
+    if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+      console.error('Missing Supabase environment variables');
+      return NextResponse.json(
+        { error: 'Configuration error' },
+        { status: 500 }
+      );
+    }
 
-  // Chamada direta à API REST de autenticação do Supabase
-  const response = await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`, {
+    const { email, password } = await req.json();
+
+    if (!email || !password) {
+      return NextResponse.json(
+        { error: 'Email and password are required' },
+        { status: 400 }
+      );
+    }
+
+    // Chamada direta à API REST de autenticação do Supabase
+    const response = await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`, {
     method: 'POST',
     headers: {
       'apikey': SUPABASE_ANON_KEY,
@@ -39,10 +55,26 @@ export async function POST(req: Request) {
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',
   });
-
-  const res = NextResponse.json({ message: 'Login com sucesso' });
+  // Cria uma resposta com os cookies
+  const res = NextResponse.json({
+    message: 'Login com sucesso',
+    session: {
+      access_token: data.access_token,
+      refresh_token: data.refresh_token,
+      user: data.user
+    }
+  });
+  
+  // Adiciona os cookies
   res.headers.append('Set-Cookie', accessToken);
   res.headers.append('Set-Cookie', refreshToken);
-
+  
   return res;
+  } catch (error) {
+    console.error('Login error:', error);
+    return NextResponse.json(
+      { error: 'An error occurred during login' },
+      { status: 500 }
+    );
+  }
 }

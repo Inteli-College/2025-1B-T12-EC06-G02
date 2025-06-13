@@ -28,13 +28,17 @@ export default function LoginPage() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email, password }),
-      });
-
-      const result = await response.json();
+      });      const result = await response.json();
 
       if (!response.ok) {
         throw new Error(result.error || 'Erro ao fazer login');
       }
+
+      // Atualiza a sessão no Supabase client
+      await supabase.auth.setSession({
+        access_token: result.session.access_token,
+        refresh_token: result.session.refresh_token
+      });
 
       // Redireciona após login
       router.push('/home');

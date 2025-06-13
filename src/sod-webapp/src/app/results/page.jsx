@@ -51,6 +51,11 @@ export default function Result() {
           }
         }
 
+        if (!resultadoIA || !Array.isArray(resultadoIA)) {
+          console.error("Dados de IA inválidos:", resultadoIA);
+          throw new Error("Dados de classificação inválidos");
+        }
+
         const termicaImg = resultadoIA
           .filter((item) => item.prev === "termica")
           .map((item) => ({
@@ -68,6 +73,19 @@ export default function Result() {
           }));
 
         setNRetracao(retracaoImg.length);
+        
+        // Adicionar metadados do relatório se disponível
+        const metadata = {
+          cliente: "Cliente de Exemplo",
+          cnpj: "XX.XXX.XXX/0001-XX",
+          endereco: "Endereço da Obra",
+          naturezaTrabalho: "Análise de Fissuração em Concreto",
+          referencia: "Projeto SOD-Control",
+        };
+        
+        Object.entries(metadata).forEach(([key, value]) => {
+          formData.append(key, value);
+        });
 
         await appendImages("termica", termicaImg);
         await appendImages("retracao", retracaoImg);
@@ -132,6 +150,7 @@ export default function Result() {
          setPdfGerado(true);
        } catch (error) {
          console.error("Error generating PDF:", error);
+         alert(`Erro ao gerar o relatório: ${error.message}`);
          // You might want to show an error message to the user here
          // For example, set an error state and display it in the UI
        }

@@ -98,7 +98,13 @@ export default function Upload() {
       const resultadoIA = await response.json();
       console.log("Resultado recebido:", resultadoIA);
 
-      const dadosParaEnviar = { name, resultadoIA, gruposOrganizados };
+      // Armazena os dados para a página de resultados
+      // Preservando as informações dos grupos para o relatório
+      const dadosParaEnviar = { 
+        name, 
+        resultadoIA, 
+        gruposOrganizados: gruposProcessados
+      };
       useDadosStore.getState().setDados(dadosParaEnviar);
       router.push("/results");
 

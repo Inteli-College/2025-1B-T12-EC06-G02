@@ -1,8 +1,0 @@
-{
-  "label": "Testes e Validação",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Contém os testes previstos ou executados durante a sprint, visando garantir a qualidade do sistema em suas partes principais."
-  }
-}

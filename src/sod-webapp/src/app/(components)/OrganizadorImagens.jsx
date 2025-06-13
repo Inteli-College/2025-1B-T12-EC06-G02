@@ -505,16 +505,16 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
               <div className="flex justify-end gap-3">
                 <Button
                   variant="outline"
+                  onClick={confirmarDelecao}
+                  className="px-4 py-2 border-red-500 hover:bg-red-600 text-red-500 hover:text-white"
+                >
+                  Sim
+                </Button>
+                <Button
                   onClick={() => setImagemParaDeletar(null)}
                   className="px-4 py-2"
                 >
                   Não
-                </Button>
-                <Button
-                  onClick={confirmarDelecao}
-                  className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white"
-                >
-                  Sim
                 </Button>
               </div>
             </div>

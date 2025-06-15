@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#161616"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="24dp">
@@ -10,12 +11,32 @@
         android:id="@+id/statusTextDatabase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
         android:text="Selecione as imagens de drone desejadas"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnConnectDatabase"
-        android:layout_width="wrap_content"
+        android:layout_width="174dp"
         android:layout_height="wrap_content"
-        android:text="Abrir Galeria" />
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_transparent_button"
+        android:elevation="4dp"
+        android:text="Abrir Galeria"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnBackToMain"
+        android:layout_width="164dp"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_transparent_button"
+        android:elevation="2dp"
+        android:text="Voltar para Início"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
 </LinearLayout>

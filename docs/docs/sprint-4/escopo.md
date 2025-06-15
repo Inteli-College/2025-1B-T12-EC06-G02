@@ -6,7 +6,7 @@ description: "Escopo da sprint 4 no projeto"
 
 # Escopo da Sprint
 
-&emsp; Durante a Sprint 4, o grupo concentrou seus esforços na finalização do desenvolvimento do aplicativo, no aprimoramento da  interface do site, na implementação de um modelo de segmentação e na elaboração de uma análise financeira. 
+&emsp; Durante a Sprint 4, o grupo concentrou seus esforços na finalização do desenvolvimento do aplicativo, no aprimoramento da interface do site, na implementação de um modelo de segmentação e na elaboração de uma análise financeira. 
 
 &emsp; No que diz respeito ao aplicativo mobile, o foco foi a conclusão das funcionalidades pendentes, como a captura de imagens, e a integração com o drone, garantindo que o sistema possa ser utilizado de forma completa via dispositivo móvel.
 

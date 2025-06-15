@@ -91,4 +91,4 @@ pip install -r requirements.txt
 ```
 
 ### 3. Observações
-&emsp;Para poder rodar o fluxo do Segment Anything propriamente, é necessário ter o arquivo .pt de 1GB.
+&emsp;Para poder rodar o fluxo do Segment Anything propriamente, é necessário ter o arquivo .pth de 1GB no diretório correspondente ao modelo.

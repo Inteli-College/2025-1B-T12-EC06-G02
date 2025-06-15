@@ -12,6 +12,15 @@ description: "Novas funcionalidades implementadas no frontend"
 
 ## Sistema de Projetos
 
+<p style={{textAlign: 'center'}}>Figura 1: Tela Principal de Projetos</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/projetos1.png").default} style={{width: 800}} alt="Tela principal do sistema de projetos mostrando a listagem organizada dos projetos criados" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
+
 &emsp; Uma das principais demandas identificadas durante o desenvolvimento foi a necessidade de organizar os trabalhos de análise de forma mais estruturada. Até então, todas as análises eram processadas de forma isolada, sem agrupamento ou contexto organizacional, dificultando o controle e acompanhamento de múltiplas inspeções.
 
 &emsp; Para resolver essa questão, foi implementado um **Sistema de Projetos** completo, que permite aos usuários criar, organizar e gerenciar diferentes projetos de inspeção de forma centralizada. Cada projeto funciona como um contêiner que agrupa todas as análises relacionadas a uma edificação ou conjunto de edificações específicas.
@@ -22,10 +31,28 @@ description: "Novas funcionalidades implementadas no frontend"
 
 - **Criação de Projetos**: Os usuários podem criar novos projetos fornecendo informações como nome, descrição, número identificador, CEP, CNPJ e endereço completo
 - **Listagem Organizada**: Todos os projetos são exibidos em uma interface limpa e organizada, mostrando informações essenciais e data de criação
-- **Associação de Análises**: Cada análise de imagens realizada fica automaticamente associada ao projeto selecionado
 - **Contexto Geográfico**: Integração com dados de localização para melhor organização territorial dos projetos
 
+<p style={{textAlign: 'center'}}>Figura 2: Modal de Criação de Projeto</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        <img src={require("../../../static/img/projetos2.png").default} style={{width: 800}} alt="Modal de criação de novo projeto com campos para nome, descrição, CEP, CNPJ e endereço" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
+
 ## Sistema de Organização por Drag and Drop
+
+<p style={{textAlign: 'center'}}>Figura 3: Interface de Organização por Drag and Drop</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        {/* Inserir aqui a imagem da interface completa de drag and drop */}
+        <img src={require("../../../static/img/ded1.png").default} style={{width: 800}} alt="Interface completa do sistema de drag and drop mostrando as três colunas: imagens disponíveis, grupos criados e visualização detalhada" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 &emsp; A segunda funcionalidade implementada foi o **Sistema de Organização por Drag and Drop**, desenvolvido especificamente para atender uma dor crítica identificada pelo parceiro: a necessidade de separar e categorizar rachaduras por andar e direção durante a análise.
 
@@ -49,6 +76,16 @@ description: "Novas funcionalidades implementadas no frontend"
 - **Seleção Individual com Ctrl**: Permite selecionar imagens específicas não contíguas
 - **Arrastar e Soltar**: Interface intuitiva para mover imagens entre grupos
 - **Reorganização**: Possibilidade de mover imagens entre diferentes grupos após a organização inicial
+
+<p style={{textAlign: 'center'}}>Figura 4: Criação de Grupos por Andar e Direção</p>
+<div style={{margin: 25}}>
+    <div style={{textAlign: 'center'}}>
+        {/* Inserir aqui a imagem mostrando a criação de grupos com seleção de andar e direção */}
+        <img src={require("../../../static/img/ded2.png").default} style={{width: 800}} alt="Interface de criação de grupos mostrando os campos para seleção de andar e direção (rosa dos ventos)" />
+        <br />
+    </div>
+</div>
+<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
 ### Impacto na Geração de Relatórios
 

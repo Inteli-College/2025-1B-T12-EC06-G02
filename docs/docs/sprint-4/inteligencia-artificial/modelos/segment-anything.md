@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 slug: /inteligencia-artificial/modelo-sam
 description: "Modelo: Segment Anything - Mal-Sucedido"
 ---

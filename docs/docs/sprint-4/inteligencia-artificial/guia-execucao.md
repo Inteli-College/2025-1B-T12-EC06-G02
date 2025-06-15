@@ -90,4 +90,5 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Agora o ambiente está configurado para executar o Segment Anything.
+### 3. Observações
+&emsp;Para poder rodar o fluxo do Segment Anything propriamente, é necessário ter o arquivo .pt de 1GB.

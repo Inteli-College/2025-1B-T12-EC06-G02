@@ -67,6 +67,27 @@ pip install -r requirements.txt
 
 3. No VS Code, o interpretador Python correspondente ao ambiente virtual `.venv` já será reconhecido (normalmente aparece no canto inferior esquerdo). Assim, os notebooks e scripts utilizarão o Python 3.11 configurado.
 
+---
 
-## Segment-Anything (SAM)
-&emsp;Para executar o SAM, será necessário realizar os seguintes passos:
+## Segment Anything (SAM)
+
+Para executar o SAM, siga os passos abaixo para criar um ambiente virtual e instalar as dependências:
+
+### 1. Criar e ativar um ambiente virtual
+
+No diretório do SAM:
+
+```bash
+cd /home/inteli/projetos/inteli/2025-1B-T12-EC06-G02/src/IA/IA_v2/src/sam
+python3.11 -m venv .venv
+source .venv/bin/activate
+```
+
+### 2. Instalar as dependências
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Agora o ambiente está configurado para executar o Segment Anything.

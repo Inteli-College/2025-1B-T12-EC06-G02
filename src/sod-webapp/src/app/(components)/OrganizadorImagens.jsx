@@ -236,7 +236,7 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-2">
-      <div className="bg-white/90 backdrop-blur-sm rounded-lg w-full max-w-[98vw] h-[96vh] flex flex-col shadow-2xl">
+      <div className="bg-white/90  mt-2 backdrop-blur-sm rounded-lg w-full max-w-[98vw] h-[96vh] flex flex-col shadow-2xl">
         {/* Header compacto */}
         <div className="flex justify-between items-center px-3 py-2 border-b border-gray-200">
           <h2 className="text-lg font-bold text-[#434343]">Organizar Imagens por Localização</h2>
@@ -505,16 +505,16 @@ export default function OrganizadorImagens({ images = [], onSubmit, onClose }) {
               <div className="flex justify-end gap-3">
                 <Button
                   variant="outline"
+                  onClick={confirmarDelecao}
+                  className="px-4 py-2 border-red-500 hover:bg-red-600 text-red-500 hover:text-white"
+                >
+                  Sim
+                </Button>
+                <Button
                   onClick={() => setImagemParaDeletar(null)}
                   className="px-4 py-2"
                 >
                   Não
-                </Button>
-                <Button
-                  onClick={confirmarDelecao}
-                  className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white"
-                >
-                  Sim
                 </Button>
               </div>
             </div>

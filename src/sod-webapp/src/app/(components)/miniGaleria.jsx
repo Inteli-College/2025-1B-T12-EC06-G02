@@ -38,7 +38,7 @@ export default function miniGaleria({ images = [], handleImages }) {
   const handleDeleteImage = (imageId) => {
     handleImages((prevImages) => {
       const imageToDelete = prevImages.find((img) => img.id === imageId);
-      if (imageToDelete && imageToDelete.previewUrl?.startsWith('blob:')) {
+      if (imageToDelete && imageToDelete.previewUrl?.startsWith("blob:")) {
         URL.revokeObjectURL(imageToDelete.previewUrl);
       }
       return prevImages.filter((img) => img.id !== imageId);
@@ -56,32 +56,30 @@ export default function miniGaleria({ images = [], handleImages }) {
   return (
     <>
       <div className="w-full max-w-4xl bg-gray-700/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
-        <div className="grid grid-cols-8 gap-4 mb-6">
-          {images && images.length > 0 ? (
-            images.map((image, index) => (
-              <div
-                key={image.id || index}
-                className="relative aspect-square border border-gray-300 rounded overflow-hidden bg-white group"
+        <div className="grid grid-cols-3 md:grid-cols-8 gap-4 mb-6">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="relative aspect-square border border-gray-300 rounded overflow-hidden bg-white group"
+            >
+              <img
+                src={image.previewUrl}
+                alt={`Preview ${index + 1}`}
+                className="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                onClick={() => handleImageClick(image)}
+              />
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleDeleteImage(image.id);
+                }}
+                className="absolute top-1 right-1 bg-gray-500 hover:bg-gray-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+                title="Deletar imagem"
               >
-                <img
-                  src={image.previewUrl}
-                  alt={`Preview ${index + 1}`}
-                  className="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity"
-                  onClick={() => handleImageClick(image)}
-                />
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleDeleteImage(image.id);
-                  }}
-                  className="absolute top-1 right-1 bg-gray-500 hover:bg-gray-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity"
-                  title="Deletar imagem"
-                >
-                  ×
-                </button>
-              </div>
-            ))
-          ) : null}
+                ×
+              </button>
+            </div>
+          ))}
 
           <div
             className="aspect-square border border-gray-300 rounded flex items-center justify-center bg-gray-600 cursor-pointer hover:bg-gray-500 transition-colors"
@@ -110,7 +108,8 @@ export default function miniGaleria({ images = [], handleImages }) {
       </div>
 
       {/* MODAL COM PORTAL */}
-      {mounted && selectedImageForModal &&
+      {mounted &&
+        selectedImageForModal &&
         createPortal(
           <div
             className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
@@ -140,13 +139,18 @@ export default function miniGaleria({ images = [], handleImages }) {
                     Nome: {selectedImageForModal.file.name}
                   </p>
                 ) : (
-                  <a className="text-sm text-gray-600" href={selectedImageForModal?.previewUrl}>
+                  <a
+                    className="text-sm text-gray-600"
+                    href={selectedImageForModal?.previewUrl}
+                  >
                     Link: {selectedImageForModal?.previewUrl}
                   </a>
                 )}
                 {selectedImageForModal?.file?.size && (
                   <p className="text-sm text-gray-600">
-                    Tamanho: {(selectedImageForModal.file.size / 1024 / 1024).toFixed(2)} MB
+                    Tamanho:{" "}
+                    {(selectedImageForModal.file.size / 1024 / 1024).toFixed(2)}{" "}
+                    MB
                   </p>
                 )}
               </div>

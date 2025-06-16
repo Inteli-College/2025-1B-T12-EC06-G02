@@ -1,0 +1,8 @@
+{
+  "label": "Modelos",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Contém os modelos trabalhados nessa sprint"
+  }
+}

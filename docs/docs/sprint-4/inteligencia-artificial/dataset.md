@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /inteligencia-artificial/roboflow
+slug: sprint-4/inteligencia-artificial/roboflow
 description: "Ferramenta utilizada para fazer labels no dataset"
 ---
 
@@ -20,7 +20,7 @@ description: "Ferramenta utilizada para fazer labels no dataset"
 
 &emsp; O próximo passo foi a anotação das imagens. As anotações foram realizadas diretamente na interface do Roboflow, que permite desenhar bounding boxes sobre as imagens e atribuir a elas classes específicas — neste caso, a classe principal foi "fissuras", mas fizemos a separação de quias eram de retração e quais eram térmicas. A interface de anotação é intuitiva e possibilita zoom, movimentação da imagem, revisão das anotações já feitas e sugestões automáticas com ferramentas de AutoLabel, que podem acelerar o processo em datasets maiores. Também é possível revisar as anotações manualmente antes de seguir para a próxima etapa.
 
-&emsp; Após as anotações, utilizamos o recurso de geração do Roboflow para criar uma versão do dataset consolidada. Essa versão foi exportada em formato YOLOv5, que consiste em arquivos .txt contendo as anotações de cada imagem no seguinte formato: <class_id> <x_center> <y_center> <width> <height>, todos com valores normalizados entre 0 e 1. O arquivo de anotação acompanha cada imagem e é armazenado na mesma pasta. A estrutura final gerada pela exportação incluía diretórios separados para treino, validação e teste, cada um contendo suas respectivas imagens e anotações.
+&emsp; Após as anotações, utilizamos o recurso de geração do Roboflow para criar uma versão do dataset consolidada. Essa versão foi exportada em formato YOLOv5, que consiste em arquivos .txt contendo as anotações de cada imagem no seguinte formato:  ``class_id`` ``x_center`` ``y_center`` ``width`` ``height``, todos com valores normalizados entre 0 e 1. O arquivo de anotação acompanha cada imagem e é armazenado na mesma pasta. A estrutura final gerada pela exportação incluía diretórios separados para treino, validação e teste, cada um contendo suas respectivas imagens e anotações.
 
 ## Conclusão
 

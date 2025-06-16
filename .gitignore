@@ -4,6 +4,8 @@ venv/
 venv
 .venv
 
+dataset
+
 __pycache__/
 
 mlruns/

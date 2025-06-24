@@ -81,16 +81,109 @@ O SOD (Sistema Óptico de Detecção) é uma solução desenvolvida para auxilia
 
 ## 📁 Estrutura de Pastas
 
-A ser definida conforme o desenvolvimento do projeto.
+```
+2025-1B-T12-EC06-G02-main/
+├── .github/
+│   └── workflows/
+│       └── deploydocusaurus.yml
+├── docs/
+│   └── docs
+        ├── sprint-1
+        ├── sprint-2
+        ├── sprint-3
+        ├── sprint-4
+        ├── sprint-4
+    └── src
+        ├── components
+        ├── css
+        ├── pages
+    └── static
+        ├── img
+├── src/
+    ├── configDrone
+│   ├── droneApp/
+│   │   ├── .gradle
+|   |   ├── .idea
+|   |   ├── .kotlin
+|   |   ├── app
+|   |   ├── gradle
+│   └── sod-webapp/
+│       ├── public
+│       ├── src/
+│       │   ├── app/
+│       │   │   ├── (auth)/
+│       │   │   │   ├── forgot-password
+│       │   │   │   ├── login
+│       │   │   │   ├── signup
+│       │   │   │   └── update-password
+│       │   │   ├── (components)
+│       │   │   ├── (preview)
+│       │   │   ├── (stores)
+│       │   │   ├── api
+│       │   │   ├── history
+│       │   │   ├── home
+│       │   │   ├── projects
+│       │   │   ├── results/
+│       │   │   └── upload
+│       │   ├── backend/
+│       │   │   ├── ia
+│       │   │   ├── images
+│       │   │   ├── lib
+│       │   │   ├── projects
+│       │   │   ├── reports
+│       │   │   ├── results
+│       │   │   └── users
+│       │   └── utils/
+│       │       ├── constants.js
+│       │       ├── historico.js
+│       │       └── supabase/
+│       │           ├── client.js
+│       │           ├── middleware.js
+│       │           └── server.js
+│       ├── tailwind.config.js
+│       └── tsconfig.json
+└── README.md
+
+```
+
 
 ## 💻 Execução do Projeto
 
-A ser definida conforme o desenvolvimento do projeto.
+### 📚 Documentação
+
+A documentação do SOD pode ser acessada de maneira online através desse [link](https://inteli-college.github.io/2025-1B-T12-EC06-G02/)
+
+Além dessa maneira, também é possível rodar localmente com os seguintes comandos:
+
+```
+
+git clone https://github.com/Inteli-College/2025-1B-T12-EC06-G02.git
+cd docs
+npm install
+npm run start
+
+```
+
+### <img src="docs/static/img/logo-Photoroom.png" width="42" height="42" style="vertical-align: middle;">  Execução da aplicação completa
+
+Para ter acesso ao guia completo de execução da aplicação completa acesse [aqui](/docs/docs/sprint-5/instrucao-de-execucao-do-projeto.md)
 
 ## 🗃 Histórico de lançamentos
 
-* 0.1.0 - 
-    - Início do projeto
+* 0.5.0  
+  - Ajustes finais do projeto e testes com usuários
+
+* 0.4.0 
+  - Implementação da integração do drone com o aplicativo e do modelo de segmentação
+
+* 0.3.0 
+  - Melhoria do modelo de classificação e da aplicação web
+
+* 0.2.0 
+  - Implementação do modelo de classificação e primeira versão da aplicação web
+
+* 0.1.0 
+  - Entendimento do problema e definição do escopo da solução
 
 ## 📋 Licença/License
 

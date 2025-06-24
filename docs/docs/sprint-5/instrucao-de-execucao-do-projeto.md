@@ -145,5 +145,107 @@ Pronto, agora você pode aproveitar plenamente das funcionalidades da aplicaçã
 
 ## Instruções de Uso - Aplicativo do Drone
 
+## Requisitos
+
+* **Sistema Operacional:** Windows 10 ou 11
+* **IDE:** [Android Studio](https://developer.android.com/studio)
+* **Dispositivo Android:** Tablet ou smartphone
+* **Cabo USB:** Para conexão entre o PC e o dispositivo Android
+
+---
+
+## Passo a Passo para Executar o App
+
+### 1. Clone o Repositório
+
+Clone o repositório principal que contém o aplicativo:
+
+Para clonar o repositório, você pode seguir esse [tutorial](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+---
+
+### 2. Abra o Projeto no Android Studio
+
+1. Inicie o Android Studio
+2. Vá em **File > Open**
+3. Navegue até o diretório clonado
+4. Acesse a pasta `src/droneApp` e selecione-a
+
+### A raiz do app **deve ser o "droneApp"**
+
+---
+
+### 3. Faça o Sync do Gradle
+
+Após abrir o projeto:
+
+* Aguarde ou clique em **"Sync Now"** para o Gradle baixar as dependências automaticamente.
+
+Se o Sync não acontecer automaticamente, clique no icone do elefante com uma seta no topo direito!
+
+---
+
+### 4. Configure o arquivo `local.properties`
+
+No diretório `droneApp`, abra o arquivo `local.properties` e adicione suas credenciais Supabase logo abaixo do `sdk.dir`:
+
+```properties
+sdk.dir=C:exemplo
+
+// Adicione assim:
+BASE_URL=https://sua-supabase-url.supabase.co
+SUPABASE_API_KEY=sua-api-key
+SUPABASE_BEARER_TOKEN=seu-bearer-token
+```
+
+> Importante: Essas credenciais são sensíveis. Não compartilhe esse arquivo em repositórios públicos.
+
+---
+
+### 5. Conecte seu Dispositivo Android
+
+* Use um cabo USB para conectar seu tablet ou celular ao computador.
+* Certifique-se de que a **depuração USB** esteja ativada nas configurações do dispositivo Android.
+
+---
+
+### 6. Configure o Dispositivo no Android Studio
+
+1. No Android Studio, vá até a seção **"Device Manager"** no canto superior direito
+2. Clique no botão **"+"**
+3. Selecione o seu dispositivo Android real (ele deve aparecer listado)
+4. Aguarde a conexão e autorização do dispositivo
+
+---
+
+### 7. Compile e Rode o App
+
+* Clique no ícone de play (seta) no topo da janela do Android Studio
+* O projeto será compilado e implantado diretamente no dispositivo conectado
+
+---
+
+## Links Úteis
+
+* [Download do Android Studio](https://developer.android.com/studio)
+* [Documentação da Supabase](https://supabase.com/docs)
+* [Como ativar a Depuração USB](https://developer.android.com/studio/debug/dev-options)
 
 
+## Requisitos das Funcionalidades
+
+### Envio de Imagens
+
+* Permite selecionar e enviar imagens da galeria do dispositivo para um banco de dados na nuvem (Supabase).
+* **Requisitos para funcionar corretamente:**
+
+  * O Supabase deve estar configurado corretamente no arquivo `local.properties`.
+  * O dispositivo Android precisa estar conectado à internet (Wi-Fi ou dados móveis).
+
+### Controle do Drone
+
+* Oferece uma interface para controlar um drone Tello diretamente pelo aplicativo.
+* **Requisitos para funcionar corretamente:**
+
+  * O dispositivo Android deve estar conectado à rede Wi-Fi gerada pelo drone Tello.
+  * É necessário que o drone esteja ligado e com a conexão ativa no momento da execução do app.

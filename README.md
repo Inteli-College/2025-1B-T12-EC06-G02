@@ -164,9 +164,16 @@ npm run start
 
 ```
 
-### <img src="docs/static/img/logo-Photoroom.png" width="42" height="42" style="vertical-align: middle;">  Execução da aplicação completa
+<div style="display: flex; align-items: center;">
+  <img src="docs/static/img/logo-Photoroom.png" width="42" height="42" style="margin-right: 8px;">
+  <h3>Execução da aplicação completa
+</div>
 
 Para ter acesso ao guia completo de execução da aplicação completa acesse [aqui](/docs/docs/sprint-5/instrucao-de-execucao-do-projeto.md)
+
+### 📚 Build deploy docusaurus
+
+Após clonar o repositório, é necessário mudar a base do build/deploy do docusaurus. Para ter acesso à esse tutorial acesse esse [aqui](/docs/docs/sprint-5/instrucao-de-execucao-do-projeto.md#alterar-base-de-build-e-deploy)
 
 ## 🗃 Histórico de lançamentos
 

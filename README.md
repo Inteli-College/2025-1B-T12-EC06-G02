@@ -164,8 +164,9 @@ npm run start
 
 ```
 
-<div style="display: flex; align-items: center;">
-  <img src="docs/static/img/logo-Photoroom.png" width="42" height="42" style="margin-right: 8px;"><h3>Execução da aplicação completa
+<div style="display: flex; align-items: center; gap: 8px;">
+  <img src="docs/static/img/logo-Photoroom.png" width="42" height="42">
+  <h3 style="margin: 0;">Execução da aplicação completa</h3>
 </div>
 
 Para ter acesso ao guia completo de execução da aplicação completa acesse [aqui](/docs/docs/sprint-5/instrucao-de-execucao-do-projeto.md)

@@ -173,7 +173,31 @@ Para ter acesso ao guia completo de execução da aplicação completa acesse [a
 
 ### 📚 Build deploy docusaurus
 
-Após clonar o repositório, é necessário mudar a base do build/deploy do docusaurus. Para ter acesso à esse tutorial acesse esse [aqui](/docs/docs/sprint-5/instrucao-de-execucao-do-projeto.md#alterar-base-de-build-e-deploy)
+Após clonar o repositório, é necessário mudar a base do build/deploy do docusaurus. 
+
+1. Acesse os "settings" na página do GitHub
+
+<div align="center" width="100%">
+ <sub>Figura 1: Primeiro passo</sub><br>
+<img src="docs/static/img/passo1.png">
+<sup>Fonte: Produzida pelos Autores (2025)</sup>
+</div>
+
+2. Acesse a página "Pages"
+
+<div align="center" width="100%">
+ <sub>Figura 2: Segundo passo<</sub><br>
+<img src="docs/static/img/passo2.png">
+<sup>Fonte: Produzida pelos Autores (2025)</sup>
+</div>
+
+3. Em "Source" troque "Deploy from a branch" para "GitHub Actions"
+
+<div align="center" width="100%">
+ <sub>Figura 3: Terceiro passo<</sub><br>
+<img src="docs/static/img/passo2.png">
+<sup>Fonte: Produzida pelos Autores (2025)</sup>
+</div>
 
 ## 🗃 Histórico de lançamentos
 

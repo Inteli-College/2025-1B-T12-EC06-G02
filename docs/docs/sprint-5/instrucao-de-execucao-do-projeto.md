@@ -249,39 +249,3 @@ SUPABASE_BEARER_TOKEN=seu-bearer-token
 
   * O dispositivo Android deve estar conectado à rede Wi-Fi gerada pelo drone Tello.
   * É necessário que o drone esteja ligado e com a conexão ativa no momento da execução do app.
-
-
-## Alterar base de build e deploy
-
-1. Acesse os "settings" na página do GitHub
-
-<p style={{textAlign: 'center'}}>Figura 1: Primeiro passo</p>
-<div style={{margin: 25}}>
-    <div style={{textAlign: 'center'}}>
-        <img src={require("../../../static/img/passo1.png").default} style={{width: 800}} alt="Primeiro passo" />
-        <br />
-    </div>
-</div>
-<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
-
-2. Acesse a página "Pages"
-
-<p style={{textAlign: 'center'}}>Figura 2: Segundo passo</p>
-<div style={{margin: 25}}>
-    <div style={{textAlign: 'center'}}>
-        <img src={require("../../../static/img/passo2.png").default} style={{width: 800}} alt="Segundo passo" />
-        <br />
-    </div>
-</div>
-<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
-
-3. Em "Source" troque "Deploy from a branch" para "GitHub Actions"
-
-<p style={{textAlign: 'center'}}>Figura 3: Terceiro passo</p>
-<div style={{margin: 25}}>
-    <div style={{textAlign: 'center'}}>
-        <img src={require("../../../static/img/passo3.png").default} style={{width: 800}} alt="Terceiro passo" />
-        <br />
-    </div>
-</div>
-<p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>

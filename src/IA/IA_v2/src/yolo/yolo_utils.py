@@ -40,7 +40,7 @@ def detect_and_crop(peso_modelo, pasta_imagens, pasta_saida='crops', conf_thresh
 # ------------------------------------------
 
 # Etapa 1: Treinar o modelo (caso necessário)
-# treinar_modelo(
+# train(
 #     model_path='yolov8n.pt',
 #     data_path='data-v1/data.yaml',
 #     epochs=50,

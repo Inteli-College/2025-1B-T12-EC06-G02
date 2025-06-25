@@ -47,6 +47,40 @@ Vídeo 2
 
 ## Processamento de Imagem e IA
 
+&emsp; Para a implementação do sistema de classificação, foram utilizados dois modelos distintos. O **ResNet-18** foi empregado como um modelo experimental de classificação, utilizado para testes e comparações iniciais, permitindo avaliar a viabilidade da abordagem proposta. Enquanto, o **Swin Transformer V2** foi selecionado como o modelo de classificação implementado em produção, escolhido por sua capacidade de generalização e melhor desempenho na tarefa de classificação de fissuras em diferentes condições de captura.Nesse sentido, o pré-processamento é necessário para padronizar as entradas, melhorar a qualidade das imagens, reduzir ruídos, normalizar brilho e contraste, e aumentar a robustez do sistema frente a diversas condições de captura. Dessa forma, foram necessários alguns passos e tecnologias que estão descritos abaixo:
+
+1.  **Carregamento:** Suporte a formatos de imagem comuns (`.jpg`, `.jpeg`, `.png`, `.bmp`, `.tiff`).
+2.  **Redimensionamento:** Utilização da técnica de **Square Padding** para preservar as proporções originais das imagens, resultando em um tamanho consistente de 224x224 pixels, evitando distorções.
+3.  **Melhoramento de Contraste:** Aplicação do **CLAHE** com `clipLimit=3.0` e `tileGridSize=(8,8)` no espaço de cor LAB para realçar fissuras sutis.
+4.  **Realce de Bordas:** Uso do **Sharpening Laplaciano** com `strength=1.2` para destacar as transições que caracterizam as fissuras.
+5.  **Equalização Seletiva:** Aplicação condicional de equalização de histograma no espaço de cor YUV para preservar informações cromáticas.
+
+&emsp; Além do modelo de classificação, um modelo de segmentação foi criado para a delimitação de fissuras. Para sua elaboração, foram utilizadas tecnologias como o YOLOv8, empregado na detecção de objetos para identificar a localização das fissuras nas imagens. Como também, o Segment Anything Model (SAM) foi testado para tarefas de segmentação, permitindo uma delimitação mais precisa das fissuras.
+
+## Resultados do Sistema
+
+- Acurácias
+
+## Resultados do Sistema
+
+&emsp; O Sistema de Detecção de Fissuras da SOD foi concebido para fornecer uma solução completa, desde a captura das imagens até a análise final das fissuras, com o objetivo de permitir manutenções preventivas e aumentar a segurança das edificações. Nesse sentido, apresenta-se os resultados obtidos a partir de dois modelos de rede neural convolucional: ResNet18 e Swin Transformer V2. Segue abaixo os dados obtidos de cada modelo:
+
+| Métrica - ResNet18       | Valor     |
+|--------------------------|-----------|
+| Acurácia de validação    | 100%      |
+| Loss de validação        | 0.0211    |
+| Acurácia de treinamento  | 95.31%    |
+| Loss de treinamento      | 0.0928    |
+
+
+| Métrica - Swin Transformer V2 | Valor     |
+|--------------------------|-----------|
+| Acurácia de validação    | 96.87%    |
+| Loss de validação        | 0.223     |
+| Acurácia de treinamento  | 97.92%    |
+| Loss de treinamento      | 0.252     |
+
+Com base nos resultados apresentados, o sistema demonstra ser uma ferramenta promissora para a manutenção preventiva e o aumento da segurança em edificações, ao automatizar a detecção e análise de fissuras. 
 
 
 

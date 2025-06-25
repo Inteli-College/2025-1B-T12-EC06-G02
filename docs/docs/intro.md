@@ -28,7 +28,7 @@ Existe a necessidade de criar uma solução inovadora para auxiliar na detecçã
 Desenvolver um algoritmo especializado na identificação, análise e monitoramento de fissuras em revestimentos de argamassa. Por meio do uso de imagens capturadas por drones ou câmeras de alta resolução, aliado a técnicas avançadas de processamento de imagens e inteligência artificial, o algoritmo proporcionará uma solução automatizada e precisa para diagnosticar fissuras em edifícios, prever a sua evolução ao longo do tempo e permitir a tomada de decisões de manutenção preventiva mais eficazes.
 
 ## A Solução
-Um software para a detecção e monitoramento de fissuras em edificações que utiliza técnicas avançadas de processamento de imagens e inteligência artificial para identificar fissuras, classificar sua gravidade e prever sua evolução ao longo do tempo, permitindo manutenções preventivas e aumentando a segurança das edificações.
+Um sistema para a detecção de fissuras em edificações que utiliza técnicas avançadas de processamento de imagens e inteligência artificial para identificar fissuras, permitindo manutenções preventivas e aumentando a segurança das edificações.
 
 ## Apresentações da Sprint Review
 

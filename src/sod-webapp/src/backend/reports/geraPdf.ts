@@ -1,4 +1,31 @@
-import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
+import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
+
+type ArquivoProcessado = {
+  name: string; // Ex: 'termica-Sul-1'
+  filename: string; // Ex: 'relatorioTermica.pdf'
+  buffer: Buffer;
+};
+
+type Agrupado = {
+  [direcao: string]: {
+    [andar: string]: ArquivoProcessado[];
+  };
+};
+
+function agruparPorDirecaoEAndar(arquivos: ArquivoProcessado[]): Agrupado {
+  const resultado: Agrupado = {};
+
+  for (const arquivo of arquivos) {
+    const [_, direcao, andar] = arquivo.name.split("-");
+
+    if (!resultado[direcao]) resultado[direcao] = {};
+    if (!resultado[direcao][andar]) resultado[direcao][andar] = [];
+
+    resultado[direcao][andar].push(arquivo);
+  }
+
+  return resultado;
+}
 
 interface DadosRelatorio {
   numeroRelatorio?: string;
@@ -21,8 +48,8 @@ interface DadosRelatorio {
   crq?: string;
 }
 
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
 const loadImage = (imagePath: string): Buffer | null => {
   try {
@@ -33,9 +60,15 @@ const loadImage = (imagePath: string): Buffer | null => {
   }
 };
 
-const headerBuffer = loadImage(path.join(process.cwd(), 'public', 'header.png'));
-const disclaimerBuffer = loadImage(path.join(process.cwd(), 'public', 'disclaimer.png'));
-const footerBuffer = loadImage(path.join(process.cwd(), 'public', 'footer.png'));
+const headerBuffer = loadImage(
+  path.join(process.cwd(), "public", "header.png")
+);
+const disclaimerBuffer = loadImage(
+  path.join(process.cwd(), "public", "disclaimer.png")
+);
+const footerBuffer = loadImage(
+  path.join(process.cwd(), "public", "footer.png")
+);
 
 export interface ImagensIPT {
   header?: Buffer;
@@ -46,12 +79,12 @@ export interface ImagensIPT {
 const imagensIPT = {
   header: headerBuffer,
   disclaimer: disclaimerBuffer,
-  footer: footerBuffer
+  footer: footerBuffer,
 };
 
 export async function gerarPDF(
-  termica: Buffer[], 
-  retracao: Buffer[], 
+  termica: ArquivoProcessado[],
+  retracao: ArquivoProcessado[],
   dados: DadosRelatorio = {},
   imagensIPT: ImagensIPT = {}
 ): Promise<{ base64: string }> {
@@ -64,7 +97,7 @@ export async function gerarPDF(
 
   // Embed das imagens do IPT
   let headerImage, disclaimerImage, footerImage;
-  
+
   if (imagensIPT.header) {
     try {
       headerImage = await pdfDoc.embedPng(imagensIPT.header);
@@ -72,7 +105,7 @@ export async function gerarPDF(
       headerImage = await pdfDoc.embedJpg(imagensIPT.header);
     }
   }
-  
+
   if (imagensIPT.disclaimer) {
     try {
       disclaimerImage = await pdfDoc.embedPng(imagensIPT.disclaimer);
@@ -80,7 +113,7 @@ export async function gerarPDF(
       disclaimerImage = await pdfDoc.embedJpg(imagensIPT.disclaimer);
     }
   }
-  
+
   if (imagensIPT.footer) {
     try {
       footerImage = await pdfDoc.embedPng(imagensIPT.footer);
@@ -111,15 +144,15 @@ export async function gerarPDF(
       });
     } else {
       // Fallback para texto se não houver imagem
-      page.drawText('IPT', {
+      page.drawText("IPT", {
         x: 50,
         y: height - 50,
         size: 24,
         font: fontBold,
         color: rgb(0, 0, 0.8),
       });
-      
-      page.drawText('INSTITUTO DE PESQUISAS TECNOLÓGICAS', {
+
+      page.drawText("INSTITUTO DE PESQUISAS TECNOLÓGICAS", {
         x: 100,
         y: height - 45,
         size: 12,
@@ -127,7 +160,7 @@ export async function gerarPDF(
         color: rgb(0, 0, 0),
       });
 
-      page.drawText('HABITAÇÃO E EDIFICAÇÕES', {
+      page.drawText("HABITAÇÃO E EDIFICAÇÕES", {
         x: 50,
         y: height - 65,
         size: 10,
@@ -150,48 +183,57 @@ export async function gerarPDF(
     } else {
       // Fallback para texto se não houver imagem
       const footerY = 80;
-      
-      page.drawText('Os resultados apresentados neste documento se aplicam somente ao item ensaiado ou calibração.', {
-        x: 50,
-        y: footerY,
-        size: 8,
-        font: font,
-        color: rgb(0, 0, 0),
-      });
-      
-      page.drawText('Este documento não dá direito ao uso do nome ou da marca IPT, para quaisquer fins, sob pena de indenização.', {
-        x: 50,
-        y: footerY - 10,
-        size: 8,
-        font: font,
-        color: rgb(0, 0, 0),
-      });
-      
-      page.drawText('A reprodução deste documento só poderá ser feita integralmente, sem nenhuma alteração.', {
-        x: 50,
-        y: footerY - 20,
-        size: 8,
-        font: font,
-        color: rgb(0, 0, 0),
-      });
 
-      page.drawText('Av. Prof. Almeida Prado, 532 | Butantã', {
+      page.drawText(
+        "Os resultados apresentados neste documento se aplicam somente ao item ensaiado ou calibração.",
+        {
+          x: 50,
+          y: footerY,
+          size: 8,
+          font: font,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      page.drawText(
+        "Este documento não dá direito ao uso do nome ou da marca IPT, para quaisquer fins, sob pena de indenização.",
+        {
+          x: 50,
+          y: footerY - 10,
+          size: 8,
+          font: font,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      page.drawText(
+        "A reprodução deste documento só poderá ser feita integralmente, sem nenhuma alteração.",
+        {
+          x: 50,
+          y: footerY - 20,
+          size: 8,
+          font: font,
+          color: rgb(0, 0, 0),
+        }
+      );
+
+      page.drawText("Av. Prof. Almeida Prado, 532 | Butantã", {
         x: 50,
         y: footerY - 40,
         size: 8,
         font: font,
         color: rgb(0, 0, 0),
       });
-      
-      page.drawText('São Paulo SP | 05508-901', {
+
+      page.drawText("São Paulo SP | 05508-901", {
         x: 50,
         y: footerY - 50,
         size: 8,
         font: font,
         color: rgb(0, 0, 0),
       });
-      
-      page.drawText('Tel +55 11 3767 4000 | ipt@ipt.br | www.ipt.br', {
+
+      page.drawText("Tel +55 11 3767 4000 | ipt@ipt.br | www.ipt.br", {
         x: 50,
         y: footerY - 60,
         size: 8,
@@ -209,7 +251,7 @@ export async function gerarPDF(
   y = height - 140;
 
   // Título do relatório
-  const numeroRelatorio = dados.numeroRelatorio || 'XXX XXX XX-203';
+  const numeroRelatorio = dados.numeroRelatorio || "XXX XXX XX-203";
   page.drawText(`RELATÓRIO DE ENSAIO N° ${numeroRelatorio}`, {
     x: 50,
     y,
@@ -257,7 +299,8 @@ export async function gerarPDF(
   y -= 10;
 
   // Natureza do trabalho
-  const natureza = dados.naturezaTrabalho || 'Ensaios de classificação de fissuras';
+  const natureza =
+    dados.naturezaTrabalho || "Ensaios de classificação de fissuras";
   page.drawText(`NATUREZA DO TRABALHO: ${natureza}`, {
     x: 50,
     y,
@@ -283,7 +326,7 @@ export async function gerarPDF(
 
   // Seção 1 - MATERIAL
   checkNewPage(40);
-  page.drawText('1 MATERIAL', {
+  page.drawText("1 MATERIAL", {
     x: 50,
     y,
     size: 12,
@@ -293,7 +336,8 @@ export async function gerarPDF(
 
   y -= 20;
 
-  const materialDesc = dados.material || 'Material analisado conforme especificações técnicas.';
+  const materialDesc =
+    dados.material || "Material analisado conforme especificações técnicas.";
   page.drawText(materialDesc, {
     x: 50,
     y,
@@ -306,7 +350,7 @@ export async function gerarPDF(
 
   // Seção 2 - ESCOPO DE ENSAIOS
   checkNewPage(60);
-  page.drawText('2 ESCOPO DE ENSAIOS', {
+  page.drawText("2 ESCOPO DE ENSAIOS", {
     x: 50,
     y,
     size: 12,
@@ -316,7 +360,7 @@ export async function gerarPDF(
 
   y -= 20;
 
-  page.drawText('2.1 Ensaios realizados e métodos empregados', {
+  page.drawText("2.1 Ensaios realizados e métodos empregados", {
     x: 50,
     y,
     size: 10,
@@ -339,7 +383,7 @@ export async function gerarPDF(
       y -= 15;
     }
   } else {
-    page.drawText('• Análise visual de fissuras térmicas', {
+    page.drawText("• Análise visual de fissuras térmicas", {
       x: 60,
       y,
       size: 10,
@@ -347,7 +391,7 @@ export async function gerarPDF(
       color: rgb(0, 0, 0),
     });
     y -= 15;
-    page.drawText('• Análise visual de fissuras de retração', {
+    page.drawText("• Análise visual de fissuras de retração", {
       x: 60,
       y,
       size: 10,
@@ -361,7 +405,7 @@ export async function gerarPDF(
 
   // Seção 3 - RESULTADOS
   checkNewPage(40);
-  page.drawText('3 RESULTADOS', {
+  page.drawText("3 RESULTADOS", {
     x: 50,
     y,
     size: 12,
@@ -371,99 +415,167 @@ export async function gerarPDF(
 
   y -= 20;
 
+    let figuraIndex = 1;
+
   // Fissuras Térmicas
   if (termica.length > 0) {
+    page = pdfDoc.addPage([595, 842]);
+    y = height - 80;
+    addHeader();
+    addFooter();
     checkNewPage(40);
-    page.drawText('3.1 Fissuras Térmicas:', {
+    page.drawText("3.1 Fissuras Térmicas", {
       x: 50,
       y,
       size: 11,
       font: fontBold,
       color: rgb(0.2, 0.2, 0.2),
     });
-
     y -= 20;
 
-    for (let i = 0; i < termica.length; i++) {
-      let image;
-      try {
-        image = await pdfDoc.embedPng(termica[i]);
-      } catch {
-        image = await pdfDoc.embedJpg(termica[i]);
-      }
+    const termicaAgrupada = agruparPorDirecaoEAndar(termica);
 
-      const dims = image.scale(0.4);
-      checkNewPage(dims.height + 40);
-
-      page.drawText(`Figura ${i + 1} - Fissura térmica identificada`, {
-        x: 50,
+    for (const direcao of Object.keys(termicaAgrupada).sort()) {
+      checkNewPage(30);
+      page.drawText(`Direção: ${direcao}`, {
+        x: 60,
         y,
-        size: 9,
-        font: font,
-        color: rgb(0, 0, 0),
+        size: 10,
+        font: fontBold,
+        color: rgb(0.1, 0.1, 0.1),
       });
+      y -= 20;
 
-      y -= 15;
+      const andares = termicaAgrupada[direcao];
+      for (const andar of Object.keys(andares).sort(
+        (a, b) => Number(a) - Number(b)
+      )) {
+        checkNewPage(30);
+        page.drawText(`Andar: ${andar}`, {
+          x: 70,
+          y,
+          size: 9,
+          font: fontBold,
+          color: rgb(0.2, 0.2, 0.2),
+        });
+        y -= 15;
 
-      page.drawImage(image, {
-        x: 50,
-        y: y - dims.height,
-        width: dims.width,
-        height: dims.height,
-      });
+        for (const arquivo of andares[andar]) {
+          let image;
+          try {
+            image = await pdfDoc.embedPng(arquivo.buffer);
+          } catch {
+            image = await pdfDoc.embedJpg(arquivo.buffer);
+          }
 
-      y -= dims.height + 15;
+          const dims = image.scale(0.4);
+          checkNewPage(dims.height + 40);
+
+          page.drawText(`Figura ${figuraIndex} - Fissura Térmica Detectada ${figuraIndex}`, {
+            x: 80,
+            y,
+            size: 9,
+            font,
+            color: rgb(0, 0, 0),
+          });
+          figuraIndex++
+
+          y -= 15;
+
+          page.drawImage(image, {
+            x: 80,
+            y: y - dims.height,
+            width: dims.width,
+            height: dims.height,
+          });
+
+          y -= dims.height + 15;
+        }
+      }
     }
   }
+  
 
-  // Fissuras de Retração
-  if (retracao.length > 0) {
-    checkNewPage(40);
-    page.drawText('3.2 Fissuras de Retração:', {
-      x: 50,
+  // Fissuras Retração
+if (retracao.length > 0) {
+  page = pdfDoc.addPage([595, 842]);
+  y = height - 80;
+  addHeader();
+  addFooter();
+  checkNewPage(40);
+  page.drawText('3.2 Fissuras Retração', {
+    x: 50,
+    y,
+    size: 11,
+    font: fontBold,
+    color: rgb(0.2, 0.2, 0.2),
+  });
+  y -= 20;
+
+  const retracaoAgrupada = agruparPorDirecaoEAndar(retracao);
+
+  for (const direcao of Object.keys(retracaoAgrupada).sort()) {
+    checkNewPage(30);
+    page.drawText(`Direção: ${direcao}`, {
+      x: 60,
       y,
-      size: 11,
+      size: 10,
       font: fontBold,
-      color: rgb(0.2, 0.2, 0.2),
+      color: rgb(0.1, 0.1, 0.1),
     });
-
     y -= 20;
 
-    for (let i = 0; i < retracao.length; i++) {
-      let image;
-      try {
-        image = await pdfDoc.embedPng(retracao[i]);
-      } catch {
-        image = await pdfDoc.embedJpg(retracao[i]);
-      }
-
-      const dims = image.scale(0.4);
-      checkNewPage(dims.height + 40);
-
-      page.drawText(`Figura ${termica.length + i + 1} - Fissura de retração identificada`, {
-        x: 50,
+    const andares = retracaoAgrupada[direcao];
+    for (const andar of Object.keys(andares).sort((a, b) => Number(a) - Number(b))) {
+      checkNewPage(30);
+      page.drawText(`Andar: ${andar}`, {
+        x: 70,
         y,
         size: 9,
-        font: font,
-        color: rgb(0, 0, 0),
+        font: fontBold,
+        color: rgb(0.2, 0.2, 0.2),
       });
-
       y -= 15;
 
-      page.drawImage(image, {
-        x: 50,
-        y: y - dims.height,
-        width: dims.width,
-        height: dims.height,
-      });
+      for (const arquivo of andares[andar]) {
+        let image;
+        try {
+          image = await pdfDoc.embedPng(arquivo.buffer);
+        } catch {
+          image = await pdfDoc.embedJpg(arquivo.buffer);
+        }
 
-      y -= dims.height + 15;
+        const dims = image.scale(0.4);
+        checkNewPage(dims.height + 40);
+
+        page.drawText(`Figura ${figuraIndex} - Fissura de Retração Detectada ${figuraIndex}`, {
+          x: 80,
+          y,
+          size: 9,
+          font,
+          color: rgb(0, 0, 0),
+        });
+        figuraIndex++
+
+        y -= 15;
+
+        page.drawImage(image, {
+          x: 80,
+          y: y - dims.height,
+          width: dims.width,
+          height: dims.height,
+        });
+
+        y -= dims.height + 15;
+      }
     }
   }
+}
+
 
   // Seção 4 - REQUISITOS
   checkNewPage(100);
-  page.drawText('4 REQUISITOS', {
+  page.drawText("4 REQUISITOS", {
     x: 50,
     y,
     size: 12,
@@ -475,7 +587,7 @@ export async function gerarPDF(
 
   // Tabela de classificação (se fornecida)
   if (dados.requisitos && dados.requisitos.length > 0) {
-    page.drawText('Tabela 1 - Classificação dos ensaios realizados', {
+    page.drawText("Tabela 1 - Classificação dos ensaios realizados", {
       x: 50,
       y,
       size: 10,
@@ -486,7 +598,7 @@ export async function gerarPDF(
     y -= 25;
 
     // Cabeçalho da tabela
-    page.drawText('Ensaio', {
+    page.drawText("Ensaio", {
       x: 50,
       y,
       size: 9,
@@ -494,7 +606,7 @@ export async function gerarPDF(
       color: rgb(0, 0, 0),
     });
 
-    page.drawText('Resultado', {
+    page.drawText("Resultado", {
       x: 200,
       y,
       size: 9,
@@ -502,7 +614,7 @@ export async function gerarPDF(
       color: rgb(0, 0, 0),
     });
 
-    page.drawText('Classificação', {
+    page.drawText("Classificação", {
       x: 350,
       y,
       size: 9,
@@ -546,7 +658,7 @@ export async function gerarPDF(
   // Equipe técnica
   checkNewPage(120);
   y -= 20;
-  page.drawText('EQUIPE TÉCNICA', {
+  page.drawText("EQUIPE TÉCNICA", {
     x: 50,
     y,
     size: 12,
@@ -573,10 +685,10 @@ export async function gerarPDF(
 
   // Data
   const hoje = new Date();
-  const dataFormatada = hoje.toLocaleDateString('pt-BR', { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
+  const dataFormatada = hoje.toLocaleDateString("pt-BR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
 
   page.drawText(`São Paulo, ${dataFormatada}.`, {
@@ -599,7 +711,7 @@ export async function gerarPDF(
       color: rgb(0, 0, 0),
     });
     y -= 15;
-    page.drawText('Pesquisador', {
+    page.drawText("Pesquisador", {
       x: 50,
       y,
       size: 9,
@@ -628,7 +740,7 @@ export async function gerarPDF(
       color: rgb(0, 0, 0),
     });
     y -= 15;
-    page.drawText('Gerente Técnico', {
+    page.drawText("Gerente Técnico", {
       x: 50,
       y,
       size: 9,
@@ -651,7 +763,7 @@ export async function gerarPDF(
   if (disclaimerImage) {
     const disclaimerDims = disclaimerImage.scale(0.8);
     checkNewPage(disclaimerDims.height + 40);
-    
+
     page.drawImage(disclaimerImage, {
       x: 50,
       y: y - disclaimerDims.height,
@@ -663,6 +775,6 @@ export async function gerarPDF(
   const pdfBytes = await pdfDoc.save();
 
   return {
-    base64: Buffer.from(pdfBytes).toString('base64'),
+    base64: Buffer.from(pdfBytes).toString("base64"),
   };
 }

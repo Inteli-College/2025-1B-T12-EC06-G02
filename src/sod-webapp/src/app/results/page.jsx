@@ -38,6 +38,7 @@ export default function Result() {
     async function gerarPdf() {
       try {
         const formData = new FormData();
+        console.log(resultadoIA)
 
         // Helper para processar cada grupo de imagens
         async function appendImages(key, images) {
@@ -45,9 +46,10 @@ export default function Result() {
             const img = images[i];
             const previewUrl = img.previewUrl;
             const filename = img.path || `img-${i}.jpg`;
+            const resultado_andar_direcao = key + '-' + img.direcao + '-' + img.andar
 
             const file = await urlToFile(previewUrl, filename);
-            formData.append(key, file);
+            formData.append(resultado_andar_direcao, file);
           }
         }
 
@@ -60,7 +62,10 @@ export default function Result() {
           .filter((item) => item.prev === "termica")
           .map((item) => ({
             id: item.id,
+            path: item.path,
             previewUrl: item.previewUrl,
+            direcao: item.direcao,
+            andar: item.andar,
           }));
 
         setNTermicas(termicaImg.length);
@@ -69,16 +74,21 @@ export default function Result() {
           .filter((item) => item.prev === "retracao")
           .map((item) => ({
             id: item.id,
+            direcao: item.direcao,
+            andar: item.andar,
             previewUrl: item.previewUrl,
           }));
+
+        const numeroRelatorio = `${Date.now()}-203` 
 
         setNRetracao(retracaoImg.length);
         
         // Adicionar metadados do relatório se disponível
         const metadata = {
-          cliente: "Cliente de Exemplo",
+          numeroRelatorio: numeroRelatorio,
+          cliente: "Conde Empreendimentos",
           cnpj: "XX.XXX.XXX/0001-XX",
-          endereco: "Endereço da Obra",
+          endereco: "Av. Paulista, 1125 - Bela Vista - São Paulo, SP - Brasil",
           naturezaTrabalho: "Análise de Fissuração em Concreto",
           referencia: "Projeto SOD-Control",
         };
@@ -118,7 +128,7 @@ export default function Result() {
           throw new Error("Server response missing PDF buffer");
         }
  
-        const nomeArquivo = `relatorio-${Date.now()}.pdf`;
+        const nomeArquivo = `relatorio-${numeroRelatorio}.pdf`;
         const file = data.buffer;
 
 

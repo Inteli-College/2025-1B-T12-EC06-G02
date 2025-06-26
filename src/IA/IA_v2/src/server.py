@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from modules.inference import classify_for_frontend, classify_grupos
-from yolo.yolo_utils import train, detect_and_crop, send_to_classifier
+from yolo.yolo_utils import detect_and_crop
 import traceback
 import uuid
 from flask_cors import CORS
@@ -66,4 +66,4 @@ def classify():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001) 
+    app.run(debug=True, port=5000) 

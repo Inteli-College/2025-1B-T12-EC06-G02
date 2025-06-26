@@ -1,6 +1,7 @@
 ---
-sidebar_position: 2
-custom_edit_url: null
+sidebar_position: 3
+slug: /sprint-5/entrega-final
+description: "Resumo da entrega final"
 ---
 
 # Entrega Final
@@ -150,11 +151,9 @@ custom_edit_url: null
 &emsp; Ademais, a equipe idealizou próximos passos que podem definir o próximo nível dessa tecnologia:
 
 1. Adaptar o aplicativo para controlar outros drones, além do DIJ Tello;
-2. Retreinar o YoloV8 para imagens tiradas à maior distância da fissura;
+2. Implementar o processo de auditoria humana, conforme o [RF07](../sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md)
 3. Conseguir classificar outros tipos de fissura;
 4. Implementar uma inteligência artificial para prever a evolução da fissura;
 
-&emsp; A realização desses passos permitirá elevar a maturidade tecnológica da solução, aproximando-a de um produto pronto para o mercado. Com a adaptação para outros modelos de drone, amplia-se a aplicabilidade em diferentes contextos operacionais. O retreinamento do modelo YoloV8 visa garantir maior acurácia na detecção mesmo em cenários com menor proximidade do alvo, enquanto a classificação de diferentes tipos de fissura poderá ampliar o escopo de uso em inspeções diversas. Por fim, o desenvolvimento de uma IA preditiva representará um avanço significativo, permitindo que as instituições atuem de forma preventiva, evitando danos maiores e reduzindo custos operacionais ao longo do tempo.
-
-&emsp; Com isso, a solução deixa de ser apenas uma prova de conceito e passa a configurar-se como uma ferramenta estratégica de monitoramento, alinhada às necessidades do IPT e de organizações similares.
+&emsp; A realização desses passos permitirá elevar a maturidade tecnológica da solução, aproximando-a de um produto pronto para o mercado. Com a adaptação para outros modelos de drone, amplia-se a aplicabilidade em diferentes contextos operacionais. A implementação de auditoria humana aumentaria a acurácia da solução, enquanto a classificação de diferentes tipos de fissura poderá ampliar o escopo de uso em inspeções diversas. Por fim, o desenvolvimento de uma IA preditiva representará um avanço significativo, permitindo que as instituições atuem de forma preventiva, evitando danos maiores e reduzindo custos operacionais ao longo do tempo.
 

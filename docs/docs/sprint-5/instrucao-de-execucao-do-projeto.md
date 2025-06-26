@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 slug: /sprint-5/instrucao-de-execucao-do-projeto
 description: "Instruções para rodar a solução"
 ---

@@ -53,7 +53,7 @@ custom_edit_url: null
 
 &emsp; Na primeira sprint do projeto, definiu-se os [requisitos funcionais](../sprint-1/especificacoes-tecnicas/Requisitos_Funcionais.md) e [não funcionais](../sprint-1/especificacoes-tecnicas/Requisitos_Nao_Funcionais.md) de um sistema que seria capaz de detectar fissuras em edificações. Além disso, concebeu-se a sua [arquitetura inicial](../sprint-1/especificacoes-tecnicas/Arquitetura_Inicial.md), a qual foi iterada na sprint 2 - ver [Atualizações na Arquitetura](../sprint-2/desenvolvimento-tecnico-do-sistema/proposta-da-arquitetura.md). Contemplava-se nessas seções um sistema dividido em três partes: Captura, Processamento e Análise.
 
-&emsp; A primeira parte, integrada ao sistema _a posteriori_ e _ad captandum_, reserva-se ao piloto. À ele, é dada a tarefa de capturar fotos de fissuras por meio de drones como as que se seguem:
+&emsp; A primeira parte, integrada ao sistema _a posteriori_, reserva-se ao piloto. À ele, é dada a tarefa de capturar fotos de fissuras por meio de drones como as que se seguem:
 
 <p style={{textAlign: 'center'}}>Figura 1: Imagens de fissura tiradas por drone</p>
 <div style={{margin: 25}}>
@@ -78,7 +78,7 @@ custom_edit_url: null
 </div>
 <p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
-&emsp; Então, o sistema entra a etapa do processamento. Primeiro, uma inteligência artificial detecta onde estão as fissuras em cada imagem recebida. Essas detecções aparecem como quadrados na figura - exemplos de detecções reais podem ser vistas abaixo
+&emsp; Então, inicia-se a etapa do processamento. Primeiro, uma inteligência artificial detecta onde estão as fissuras em cada imagem recebida. Essas detecções aparecem como quadrados na figura - exemplos de detecções reais podem ser vistas abaixo.
 
 <p style={{textAlign: 'center'}}>Figura 2: Detecções reais de fissuras</p>
 <div style={{margin: 25}}>
@@ -99,21 +99,21 @@ custom_edit_url: null
 </div>
 <p style={{textAlign: 'center'}}>Fonte: Produzida pelos Autores (2025). </p>
 
-&emsp; Então, cada imagem de fissura passa por um processamento que a padroniza para ser adequamente recebida pela próxima IA. Esse processo foi finalizado na [sprint 4](../sprint-4/inteligencia-artificial/modelos/yolov8.md).
+&emsp; Em seguida, cada imagem de fissura passa por um processamento que a padroniza para ser adequamente recebida pela próxima IA. Esse processo foi finalizado na [sprint 4](../sprint-4/inteligencia-artificial/modelos/yolov8.md).
 
-&emsp; A última etapa do processo é a análise, responsável pelo auxílio real ao pesquisador. Após o processamento, outra inteligência artificial recebe essas imagens. Ela, então, analisa cada uma para decidir:
+&emsp; Por fim, inicia-se a etapa de análise, responsável pelo auxílio real ao pesquisador. Primeiro, outra inteligência artificial recebe essas imagens. Ela, então, analisa cada uma para decidir:
 
 - É uma fissura **de retração**;
 - ou é uma fissura **térmica**.
 
-&emsp; Essas decisões individuais são condensadas em um relatório conforme _template_ do IPT. Essa etapa foi finalizada na [sprint 3](../sprint-3/inteligencia-artificial/modelos/segundo-modelo-s3.md) e integrada na última sprint. [Um dos relatórios produzidos podem ser acessados via Google Drive aqui](https://drive.google.com/file/d/1PvO6_B9amQCWWPqQ5Z1rJVm6Q_GNVlK6/view?usp=sharing)
+&emsp; Essas decisões individuais são condensadas em um relatório conforme _template_ do IPT. Essa etapa foi finalizada na [sprint 3](../sprint-3/inteligencia-artificial/modelos/segundo-modelo-s3.md) e integrada na última sprint. [Um dos relatórios produzidos podem ser acessados via Google Drive, clicando aqui.](https://drive.google.com/file/d/1PvO6_B9amQCWWPqQ5Z1rJVm6Q_GNVlK6/view?usp=sharing)
 
 
 ### Processamento de Imagem e IA
 
 &emsp; Para a implementação do sistema de classificação, foram utilizados dois modelos distintos. O **ResNet-18** foi empregado como um modelo experimental de classificação, utilizado para testes e comparações iniciais, permitindo avaliar a viabilidade da abordagem proposta. Enquanto, o **Swin Transformer V2** foi selecionado como o modelo de classificação implementado em produção, escolhido por sua capacidade de generalização e melhor desempenho na tarefa de classificação de fissuras em diferentes condições de captura.
 
-&emsp; Então, para padronizar as entradas do Swin Transformer V2 frente a diversas condições de captura é realizado automaticamente um pré-processamento. Esse pré-processamneto é descrito abaixo:
+&emsp; Então, para padronizar as entradas do Swin Transformer V2 frente a diversas condições de captura é realizado automaticamente um pré-processamento. Esse pré-processamneto, realizado na etapa geral de [processamento](#problema) é descrito abaixo:
 
 1.  **Carregamento:** Suporte a formatos de imagem comuns (`.jpg`, `.jpeg`, `.png`, `.bmp`, `.tiff`).
 2.  **Redimensionamento:** Utilização da técnica de **Square Padding** para preservar as proporções originais das imagens, resultando em um tamanho consistente de 224x224 pixels, evitando distorções.
@@ -121,7 +121,7 @@ custom_edit_url: null
 4.  **Realce de Bordas:** Uso do **Sharpening Laplaciano** com `strength=1.2` para destacar as transições que caracterizam as fissuras.
 5.  **Equalização Seletiva:** Aplicação condicional de equalização de histograma no espaço de cor YUV para preservar informações cromáticas.
 
-&emsp; Além do modelo de classificação, na etapa de detecção, foi utilizado [YOLOv8](https://yolov8.com/), empregado para identificar a localização das fissuras nas imagens.
+&emsp; Além do modelo de classificação, na etapa de detecção, foi utilizado [YOLOv8](https://yolov8.com/), empregado para identificar a localização das fissuras nas imagens. [Esse modelo é amplamente reconhecido por sua eficiência em tarefas de detecção de objetos.](../sprint-4/inteligencia-artificial/modelos/yolov8.md)
 
 ## Resultados do Sistema
 

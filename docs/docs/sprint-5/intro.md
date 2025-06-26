@@ -143,6 +143,13 @@ custom_edit_url: null
 
 &emsp; Com base nos resultados apresentados, o sistema demonstra ser uma ferramenta promissora para a manutenção preventiva e o aumento da segurança em edificações, ao automatizar a detecção e análise de fissuras.
 
+## Testes 
+
+&emsp; Este documento apresenta os resultados de uma série de testes de usuário conduzidos com o objetivo de avaliar a usabilidade e a experiência geral de um novo sistema. Os testes foram desenhados para simular cenários de uso reais, abrangendo desde o processo inicial de cadastro e login até tarefas mais complexas, como o upload e organização de imagens para processamento por inteligência artificial, download de relatórios e registro de projetos. Durante as sessões, foram observadas as interações dos participantes com o sistema, registrando-se as dificuldades encontradas, os pontos fortes e as áreas que necessitam de melhoria.
+
+Link para a tabela de testes: [Testes](https://docs.google.com/spreadsheets/d/1at2blUQKvejzAVJVXDZdqZFijH8p6N0RNbcikerFWuM/edit?usp=sharing)
+
+
 ## Próximos Passos
 
 &emsp; A solução apresentada nessa seção se trata de uma Prova de Conceito (POC). Não obstante, a equipe realizou uma análise financeira que suporta a implementação real do projeto no IPT ou em qualquer outra instituição no mesmo ramo, conforme o [Business Model Canva da SOD](../sprint-1/analise-de-negocios/business_model_canvas.md). Essa análise pode ser encontrada [aqui](../sprint-4/analise-financeira/analise-financeira-solucao-final.md). Adianta-se, porém, que o preço da solução ficou em R$ 481.951,22 para desenvolvimento e implementação, seguido de uma manutenção anual de R$ 166.829,27.

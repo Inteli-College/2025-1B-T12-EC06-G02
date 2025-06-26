@@ -7,11 +7,17 @@ custom_edit_url: null
 
 ## Introdução
 
-A ser incluida pela Luiza
+&nbsp;&nbsp;&nbsp;&nbsp;A detecção precoce de manifestações patológicas em edificações, como as fissuras em fachadas, constitui uma etapa fundamental para a manutenção da segurança estrutural e da durabilidade das construções. Entretanto, os métodos tradicionalmente empregados para essa finalidade atualmente baseiam-se, em grande parte, em inspeções visuais manuais, as quais apresentam limitações significativas em termos de padronização, precisão e reprodutibilidade dos resultados. Além disso, a ausência de registros e históricos compromete o acompanhamento da evolução dessas patologias, dificultando a formulação de diagnósticos e intervenções eficazes.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Com base nisso, há uma necessidade de soluções tecnológicas que viabilizem a automação e a qualificação dos processos de inspeção predial. O projeto atual, desenvolvido em parceria com o Instituto de Pesquisas Tecnológicas(IPT), propõe a implementação de um sistema inteligente de detecção e análise de fissuras, baseado em técnicas de visão computacional e aprendizagem profunda. A proposta visa mitigar os problemas associados à subjetividade das inspeções manuais, bem como fornecer subsídios técnicos para a tomada de decisões fundamentadas em dados quantitativos e estruturados.
+
+&nbsp;&nbsp;&nbsp;&nbsp;A solução desenvolvida contempla um fluxo completo, que abrange desde a captura automatizada de imagens por meio de drones, até o processamento e classificação das fissuras por meio de redes neurais convolucionais. Os resultados obtidos demonstram a viabilidade técnica da abordagem e indicam seu potencial de aplicação em ambientes reais, contribuindo para o avanço das práticas de monitoramento de edificações e para a consolidação de estratégias de manutenção preditiva.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Esta documentação apresenta a fundamentação, o desenvolvimento metodológico, os resultados obtidos e as perspectivas futuras da solução proposta.
 
 ## O parceiro de projeto: IPT 
 
-&nbsp;&nbsp;&nbsp;&nbsp;O Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT) é uma instituição pública vinculada à Secretaria de Desenvolvimento Econômico do Estado de São Paulo. Com mais de 125 anos de atuação, o IPT é reconhecido por sua excelência em pesquisa aplicada, desenvolvimento tecnológico e prestação de serviços especializados.
+&nbsp;&nbsp;&nbsp;&nbsp;Como citado na introdução, o parceiro de projeto é o IPT. O Instituto de Pesquisas Tecnológicas do Estado de São Paulo (IPT) é uma instituição pública vinculada à Secretaria de Desenvolvimento Econômico do Estado de São Paulo. Com mais de 125 anos de atuação, o IPT é reconhecido por sua excelência em pesquisa aplicada, desenvolvimento tecnológico e prestação de serviços especializados.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Dentro desse contexto, destaca-se o Laboratório de Materiais para Produtos da Construção (LMPC), que desempenha um papel central neste projeto. O LMPC é responsável por pesquisas e testes de desempenho de materiais utilizados na construção civil e contribui significativamente para a qualidade, segurança e sustentabilidade dos edificios. Com sua parceria para este projeto, é garantido o embasamento técnico necessário para orientar o desenvolvimento da solução e validar seus resultados referente a identificação e classificação de fissuras.
 

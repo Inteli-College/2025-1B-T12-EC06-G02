@@ -145,6 +145,8 @@ custom_edit_url: null
 
 ## Testes 
 
+&emsp; Este documento apresenta os resultados de uma série de testes de usuário conduzidos com o objetivo de avaliar a usabilidade e a experiência geral de um novo sistema. Os testes foram desenhados para simular cenários de uso reais, abrangendo desde o processo inicial de cadastro e login até tarefas mais complexas, como o upload e organização de imagens para processamento por inteligência artificial, download de relatórios e registro de projetos. Durante as sessões, foram observadas as interações dos participantes com o sistema, registrando-se as dificuldades encontradas, os pontos fortes e as áreas que necessitam de melhoria.
+
 Link para a tabela de testes: [Testes](https://docs.google.com/spreadsheets/d/1at2blUQKvejzAVJVXDZdqZFijH8p6N0RNbcikerFWuM/edit?usp=sharing)
 
 

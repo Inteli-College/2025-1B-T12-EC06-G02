@@ -4,7 +4,7 @@
 
 </div>
 
-## 🎥 Espaço reservado para o vídeo da solução
+## 🎥 [Acesse o vídeo da nossa solução aqui!](https://youtu.be/NGvNnz2DfgE)
 
 ## 👥 Grupo - SOD
 <p align="center">

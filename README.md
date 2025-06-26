@@ -195,7 +195,7 @@ Após clonar o repositório, é necessário mudar a base do build/deploy do docu
 
 <div align="center" width="100%">
  <sub>Figura 3: Terceiro passo<</sub><br>
-<img src="docs/static/img/passo2.png">
+<img src="docs/static/img/passo3.png">
 <sup>Fonte: Produzida pelos Autores (2025)</sup>
 </div>
 

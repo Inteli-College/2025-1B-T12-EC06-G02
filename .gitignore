@@ -3,3 +3,12 @@ venv/
 .env
 venv
 .venv
+
+dataset
+
+__pycache__/
+
+mlruns/
+
+retracao/
+termicas/

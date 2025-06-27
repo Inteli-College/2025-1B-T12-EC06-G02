@@ -34,7 +34,7 @@ Para clonar o repositório você pode seguir esse [tutorial](https://docs.github
 Abra o terminal do VSCode e rode o comando:
 ```bash
 
-cd src/IA_classificacao
+cd src/IA_v1
 
 ```
 

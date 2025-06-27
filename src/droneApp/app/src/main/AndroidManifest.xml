@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sodcontrol">
+
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:label="Tello Controller"
+        android:supportsRtl="true"
+        android:screenOrientation="landscape"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.SODControl">
+
+        <!-- Connect Screen (Launcher) -->
+        <activity
+            android:name="com.example.sodcontrol.tellocontroller.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Drone Control Screen -->
+        <activity
+            android:name="com.example.sodcontrol.tellocontroller.ControlActivity"
+            android:exported="false" />
+
+        <!-- Database Sender Screen -->
+        <activity
+            android:name="com.example.sodcontrol.tellocontroller.DatabaseSender"
+            android:exported="false" />
+
+    </application>
+</manifest>

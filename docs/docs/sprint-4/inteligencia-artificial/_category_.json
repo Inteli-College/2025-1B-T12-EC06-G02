@@ -1,0 +1,8 @@
+{
+  "label": "Inteligência Artificial",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Contém os documentos relacionados à construção e evolução do modelo de segmentação para análise das imagens capturadas."
+  }
+}

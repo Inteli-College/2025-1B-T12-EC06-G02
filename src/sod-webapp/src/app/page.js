@@ -1,5 +1,5 @@
 import { cookies } from 'next/headers'
-import { supabase } from '../lib/supabase'
+import { supabase } from '../backend/lib/supabase'
 import { redirect } from 'next/navigation'
 
 export default async function Home() {

@@ -1,0 +1,8 @@
+{
+  "label": "Análise Financeira",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Registra a análise feita sobre os custos e viabilidade do sistema."
+  }
+}

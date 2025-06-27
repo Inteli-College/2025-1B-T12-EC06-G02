@@ -1,0 +1,25 @@
+# Modelos treinados
+models/
+*.pth
+*.pt
+*.pkl
+
+# MLflow
+mlruns/
+mlflow-runs/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+
+# Tensorboard
+runs/
+logs/
+
+# Checkpoints temporários
+checkpoints/
+*.ckpt 

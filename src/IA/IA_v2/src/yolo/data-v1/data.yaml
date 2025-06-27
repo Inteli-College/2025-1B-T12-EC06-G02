@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['fissura']
+
+roboflow:
+  workspace: iaec06
+  project: deteccao-de-fissuras-ppmzv
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/iaec06/deteccao-de-fissuras-ppmzv/dataset/2

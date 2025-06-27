@@ -7,7 +7,29 @@ sidebar_position: 1
 # Apresentação
 
 ## O Projeto
-Espaço para inserir o vídeo de apresentação do projeto ao final do módulo.
+<div style={{
+  position: 'relative',
+  paddingBottom: '56.25%', // proporção 16:9
+  height: 0,
+  overflow: 'hidden',
+  maxWidth: '100%',
+}}>
+  <iframe
+    src="https://www.youtube.com/embed/NGvNnz2DfgE?si=ol4UsmH2iLq2YzBY"
+    title="YouTube video player"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+    }}
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+</div>
 
 ## Empresa parceira
 
@@ -28,15 +50,15 @@ Existe a necessidade de criar uma solução inovadora para auxiliar na detecçã
 Desenvolver um algoritmo especializado na identificação, análise e monitoramento de fissuras em revestimentos de argamassa. Por meio do uso de imagens capturadas por drones ou câmeras de alta resolução, aliado a técnicas avançadas de processamento de imagens e inteligência artificial, o algoritmo proporcionará uma solução automatizada e precisa para diagnosticar fissuras em edifícios, prever a sua evolução ao longo do tempo e permitir a tomada de decisões de manutenção preventiva mais eficazes.
 
 ## A Solução
-Um software para a detecção e monitoramento de fissuras em edificações que utiliza técnicas avançadas de processamento de imagens e inteligência artificial para identificar fissuras, classificar sua gravidade e prever sua evolução ao longo do tempo, permitindo manutenções preventivas e aumentando a segurança das edificações.
+Um sistema para a detecção de fissuras em edificações que utiliza técnicas avançadas de processamento de imagens e inteligência artificial para identificar fissuras, permitindo manutenções preventivas e aumentando a segurança das edificações.
 
 ## Apresentações da Sprint Review
 
 - Sprint 1: [Link da Apresentação](https://www.canva.com/design/DAGmDGK0Juw/5zK5xsdb1bs6sSiYo70f0Q/edit?utm_content=DAGmDGK0Juw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - Sprint 2: [Link da Apresentação](https://www.canva.com/design/DAGnc4m8RTw/jn6v49VORaMM6s0eGxST3w/view?utm_content=DAGnc4m8RTw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h17d5c65e0a)
 - Sprint 3: [Link da Apresentação](https://www.canva.com/design/DAGo1UBsMFw/Jf4l1ZC9XDJXsThrpf9ykQ/view?utm_content=DAGo1UBsMFw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1b1555f8cc)
-- Sprint 4: Em breve
-- Sprint 5: Em breve
+- Sprint 4: [Link da Apresentação](https://www.canva.com/design/DAGqK2pruUo/cwZXDZlsRAbaWlMQspj81A/view?utm_content=DAGqK2pruUo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb95d5b4381)
+- Sprint 5: [Link da Apresentação](https://www.canva.com/design/DAGraf76oeg/YCVkrAZTsIRelAMJQ4OVfw/view?utm_content=DAGraf76oeg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=heebfa05f66)
 
 ## Integrantes da equipe
 

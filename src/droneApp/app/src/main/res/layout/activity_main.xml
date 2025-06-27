@@ -59,8 +59,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/status_placeholder"
-            android:textColor="#2A2A2A"
-            android:textSize="14sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btnDisconnect"

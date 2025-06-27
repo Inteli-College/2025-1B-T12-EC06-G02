@@ -4,7 +4,7 @@
 
 </div>
 
-## 🎥 Espaço reservado para o vídeo da solução
+## 🎥 [Acesse o vídeo da nossa solução aqui!](https://youtu.be/NGvNnz2DfgE)
 
 ## 👥 Grupo - SOD
 <p align="center">
@@ -81,16 +81,140 @@ O SOD (Sistema Óptico de Detecção) é uma solução desenvolvida para auxilia
 
 ## 📁 Estrutura de Pastas
 
-A ser definida conforme o desenvolvimento do projeto.
+```
+2025-1B-T12-EC06-G02-main/
+├── .github/
+│   └── workflows/
+│       └── deploydocusaurus.yml
+├── docs/
+│   └── docs
+        ├── sprint-1
+        ├── sprint-2
+        ├── sprint-3
+        ├── sprint-4
+        ├── sprint-4
+    └── src
+        ├── components
+        ├── css
+        ├── pages
+    └── static
+        ├── img
+├── src/
+    ├── configDrone
+│   ├── droneApp/
+│   │   ├── .gradle
+|   |   ├── .idea
+|   |   ├── .kotlin
+|   |   ├── app
+|   |   ├── gradle
+│   └── sod-webapp/
+│       ├── public
+│       ├── src/
+│       │   ├── app/
+│       │   │   ├── (auth)/
+│       │   │   │   ├── forgot-password
+│       │   │   │   ├── login
+│       │   │   │   ├── signup
+│       │   │   │   └── update-password
+│       │   │   ├── (components)
+│       │   │   ├── (preview)
+│       │   │   ├── (stores)
+│       │   │   ├── api
+│       │   │   ├── history
+│       │   │   ├── home
+│       │   │   ├── projects
+│       │   │   ├── results/
+│       │   │   └── upload
+│       │   ├── backend/
+│       │   │   ├── ia
+│       │   │   ├── images
+│       │   │   ├── lib
+│       │   │   ├── projects
+│       │   │   ├── reports
+│       │   │   ├── results
+│       │   │   └── users
+│       │   └── utils/
+│       │       ├── constants.js
+│       │       ├── historico.js
+│       │       └── supabase/
+│       │           ├── client.js
+│       │           ├── middleware.js
+│       │           └── server.js
+│       ├── tailwind.config.js
+│       └── tsconfig.json
+└── README.md
+
+```
+
 
 ## 💻 Execução do Projeto
 
-A ser definida conforme o desenvolvimento do projeto.
+### 📚 Documentação
+
+A documentação do SOD pode ser acessada de maneira online através desse [link](https://inteli-college.github.io/2025-1B-T12-EC06-G02/)
+
+Além dessa maneira, também é possível rodar localmente com os seguintes comandos:
+
+```
+
+git clone https://github.com/Inteli-College/2025-1B-T12-EC06-G02.git
+cd docs
+npm install
+npm run start
+
+```
+
+<div style="display: flex; align-items: center; gap: 8px;">
+  <img src="docs/static/img/logo-Photoroom.png" width="42" height="42">
+  <h3 style="margin: 0;">Execução da aplicação completa</h3>
+</div>
+
+Para ter acesso ao guia completo de execução da aplicação completa acesse [aqui](/docs/docs/sprint-5/instrucao-de-execucao-do-projeto.md)
+
+### 📚 Build deploy docusaurus
+
+Após clonar o repositório, é necessário mudar a base do build/deploy do docusaurus. 
+
+1. Acesse os "settings" na página do GitHub
+
+<div align="center" width="100%">
+ <sub>Figura 1: Primeiro passo</sub><br>
+<img src="docs/static/img/passo1.png">
+<sup>Fonte: Produzida pelos Autores (2025)</sup>
+</div>
+
+2. Acesse a página "Pages"
+
+<div align="center" width="100%">
+ <sub>Figura 2: Segundo passo<</sub><br>
+<img src="docs/static/img/passo2.png">
+<sup>Fonte: Produzida pelos Autores (2025)</sup>
+</div>
+
+3. Em "Source" troque "Deploy from a branch" para "GitHub Actions"
+
+<div align="center" width="100%">
+ <sub>Figura 3: Terceiro passo<</sub><br>
+<img src="docs/static/img/passo3.png">
+<sup>Fonte: Produzida pelos Autores (2025)</sup>
+</div>
 
 ## 🗃 Histórico de lançamentos
 
-* 0.1.0 - 
-    - Início do projeto
+* 0.5.0  
+  - Ajustes finais do projeto e testes com usuários
+
+* 0.4.0 
+  - Implementação da integração do drone com o aplicativo e do modelo de segmentação
+
+* 0.3.0 
+  - Melhoria do modelo de classificação e da aplicação web
+
+* 0.2.0 
+  - Implementação do modelo de classificação e primeira versão da aplicação web
+
+* 0.1.0 
+  - Entendimento do problema e definição do escopo da solução
 
 ## 📋 Licença/License
 

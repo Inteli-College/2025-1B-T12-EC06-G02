@@ -33,7 +33,7 @@ Seu perfil é altamente técnico e analítico, prezando por soluções que traga
 
 Entre as principais necessidades da persona, destacam-se a agilidade na análise de imagens, a padronização dos diagnósticos e a possibilidade de reduzir o tempo gasto em inspeções presenciais, que hoje são manuais e demandam alto esforço. Suas dores estão ligadas à falta de integração entre coleta de dados e relatórios, à dificuldade em prever a evolução das fissuras apenas com registros manuais e ao risco de inconsistências nos laudos técnicos.
 
-A adoção de uma solução tecnológica que atenda essas demandas terá um impacto direto na produtividade e na confiabilidade do trabalho de Carolina, possibilitando diagnósticos mais objetivos, rastreáveis e auditáveis. Carolina representa um perfil de usuária que exige precisão técnica, facilidade de uso e suporte a processos científicos rigorosos, sendo de grande importÂncia que o sistema seja desenhado para integrar essas necessidades de forma intuitiva e eficiente para o usuário
+A adoção de uma solução tecnológica que atenda essas demandas terá um impacto direto na produtividade e na confiabilidade do trabalho de Carolina, possibilitando diagnósticos mais objetivos, rastreáveis e auditáveis. Carolina representa um perfil de usuária que exige precisão técnica, facilidade de uso e suporte a processos científicos rigorosos, sendo de grande importância que o sistema seja desenhado para integrar essas necessidades de forma intuitiva e eficiente para o usuário
 
 ## Persona 02: Técnico de edificações
 
